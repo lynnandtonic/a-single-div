@@ -1,7 +1,7 @@
 A Single Div
 ============
 
-## Whuut
+### Whuut
 
 This is a fun, little project to see how much can be accomplished with CSS. Every drawing consists of a single HTML element (in this case, the beloved div).
 
