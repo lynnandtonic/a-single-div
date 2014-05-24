@@ -21,6 +21,11 @@ header p a {
   text-decoration: none;
   border-bottom: 1px dotted;
 }
+@media (max-width: 400px) {
+  header {
+    padding: 15px;
+  }
+}
 .entry {
   text-align: center;
   min-height: 400px;
