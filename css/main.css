@@ -1,3 +1,26 @@
+header {
+  padding: 10px 15px 7px;
+  background: #333;
+  color: #fff;
+  font-family: Georgia, Times, serif;
+  font-size: 15px;
+  font-style: italic;
+}
+header h1,
+header p {
+  display: inline-block;
+}
+header h1 {
+  margin-bottom: 5px;
+}
+header p {
+  color: #bed4dc;
+}
+header p a {
+  color: #67b1cd;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
 .entry {
   text-align: center;
   min-height: 400px;
