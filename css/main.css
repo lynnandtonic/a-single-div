@@ -96,16 +96,17 @@ header p a {
 }
 #bloody-mary div:before {
   width: 40px;
-  height: 120px;
-  margin-left: 35px;
+  height: 95px;
+  margin-left: 40px;
   top: -140px;
   left: 50%;
   z-index: 1;
   background: #d7e17f;
   background: linear-gradient(to right, #cdeca8 0%, #cdeca8 10%, #a2d269 18%, #a2d269 25%, #bde192 45%, #bde192 55%, #95c260 75%, #95c260 82%, #bde192 90%, #bde192 100%);
-  border-top-left-radius: 20px 5px;
-  border-top-right-radius: 20px 5px;
+  border-top-left-radius: 20px 3px;
+  border-top-right-radius: 20px 3px;
   border-top: 5px solid #95c260;
+  box-shadow: -65px 111px 0 14px #eee;
   -webkit-transform: rotate(15deg);
   transform: rotate(15deg);
 }
