@@ -1,0 +1,108 @@
+/*-----------------------------
+
+Watermelon slice
+
+-----------------------------*/
+
+$bg-color = powderblue
+
+#bloody-mary
+  background: $bg-color
+
+  //- bottom of glass
+  div
+    width: 180px
+    height: 100px
+    margin-left: -(@width/2)
+    margin-top: 10px
+
+    z-index: 2
+
+    background: linear-gradient(to right,
+                                          #eee 0%,
+                                          #db493e 3%,
+                                          #b8423a 5%,
+                                          #53646e 7%,
+                                          #b8423a 9%,
+                                          #53646e 11%,
+                                          #53646e 14%,
+                                          #bfc9ca 33%,
+                                          #eee 41%,
+                                          #eee 75%,
+                                          #95a4a3 85%,
+                                          #556168 90%,
+                                          #7c8285 98%,
+                                          white 100% )
+
+    border-bottom-left-radius: 80px 10px
+    border-bottom-right-radius: 80px 10px
+    border-bottom: 2px solid #ddd
+
+    box-shadow: 0 3px 4px -3px rgba(0,0,0,.4),
+                0 8px 7px -3px rgba(0,0,0,.2)
+
+    //- celery
+    &:before
+      width: 40px
+      height: 120px
+      margin-left: 35px
+
+      top: -140px
+      left: 50%
+      z-index: 1
+
+      background: #d7e17f
+
+      background: linear-gradient(to right,
+                                          #cdeca8 0%,
+                                          #cdeca8 10%,
+                                          #a2d269 18%,
+                                          #a2d269 25%,
+                                          #bde192 45%,
+                                          #bde192 55%,
+                                          #95c260 75%,
+                                          #95c260 82%,
+                                          #bde192 90%,
+                                          #bde192 100%)
+
+      border-top-left-radius: 20px 5px
+      border-top-right-radius: 20px 5px
+      border-top: 5px solid #95c260
+
+      -webkit-transform: rotate(15deg)
+
+    //- main part of glass
+    &:after
+      width: 177px
+      height: 170px
+      margin-left: -90px
+
+      top: -105px
+      left: 50%
+      z-index: 3
+
+      background: 
+                  linear-gradient(to right,
+                                          rgba(0,0,0,.1) 0%,
+                                          transparent 15%,
+                                          transparent 45%,
+                                          rgba(255,255,255,.3) 55%,
+                                          rgba(255,255,255,.3) 65%,
+                                          transparent 80%,
+                                          rgba(0,0,0,.2) 100%),
+                  linear-gradient(to bottom,
+                                          transparent 0%,
+                                          transparent 30%,
+                                          #e04435 30%,
+                                          #ab2e22 100%)
+
+      border: 1px solid #ddd
+      border-right-width: 2px
+      border-bottom-width: 5px
+      border-top-width: 2px
+      border-top-color: #eee
+      border-bottom-left-radius: 150px 15px
+      border-bottom-right-radius: 150px 15px
+      border-top-left-radius: 100px 15px
+      border-top-right-radius: 100px 15px
+
