@@ -14,6 +14,12 @@
   content: '';
   position: absolute;
 }
+@media (max-width: 400px) {
+  .entry div {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
 #camera {
   background: #ffa500;
 }
@@ -50,12 +56,6 @@
   border-radius: 50%;
   box-shadow: 0 3px 2px #999, 1px -2px 0 #fff, -1px -3px 2px #555, 0 0 0 15px #c2c2c2, 0 -2px 0 15px #fff, -2px -5px 1px 17px #666, 0 10px 10px 15px rgba(0,0,0,0.3), -90px -51px 1px -43px #aaa, -90px -50px 1px -40px #888, -90px -51px 0 -34px #ccc, -90px -50px 0 -30px #aaa, -90px -48px 1px -28px rgba(0,0,0,0.2), -124px -73px 1px -48px #eee, -125px -72px 0 -46px #666, -85px -73px 1px -48px #eee, -86px -72px 0 -46px #666, 42px -82px 1px -48px #eee, 41px -81px 0 -46px #777, 67px -73px 1px -48px #eee, 66px -72px 0 -46px #666, -46px -86px 1px -45px #444, -44px -87px 0 -38px #333, -44px -86px 0 -37px #ccc, -44px -85px 0 -34px #999, 14px -89px 1px -48px #eee, 12px -84px 1px -48px #999, 23px -85px 0 -47px #444, 23px -87px 0 -46px #888;
 }
-@media (max-width: 400px) {
-  #camera div {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-}
 #bloody-mary {
   background: #b0e0e6;
 }
@@ -84,6 +84,7 @@
   border-top-right-radius: 20px 5px;
   border-top: 5px solid #95c260;
   -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
 }
 #bloody-mary div:after {
   width: 177px;
