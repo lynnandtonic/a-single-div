@@ -128,3 +128,41 @@ header p a {
   border-top-left-radius: 120px 15px;
   border-top-right-radius: 120px 15px;
 }
+#cpt-america {
+  background: #808000;
+}
+#cpt-america div {
+  width: 250px;
+  height: 250px;
+  margin-left: -125px;
+  margin-top: -140px;
+  z-index: 1;
+  background: linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 65%), linear-gradient(-45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 65%), linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 65%), linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 65%), radial-gradient(ellipse at center, #0033b0 0%, #0033b0 20%, #ce0021 20%, #ce0021 35%, #bbb 35%, #bbb 55%, #ce0021 55%, #ce0021 100%);
+  border-radius: 50%;
+  box-shadow: 0 3px 0 #a20917;
+}
+#cpt-america div:before {
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -35px;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  background: rgba(0,80,170,0.5);
+  border-radius: 50%;
+  content: '★';
+  font-size: 70px;
+  color: #ddd;
+  line-height: 65px;
+  text-shadow: -1px 1px 0 #3e92ff, 1px -1px 0 #1e436d;
+}
+#cpt-america div:after {
+  width: 200px;
+  height: 30px;
+  margin-left: -100px;
+  top: 215px;
+  left: 50%;
+  border-radius: 50%;
+  box-shadow: 0 50px 20px rgba(0,0,0,0.15);
+}
