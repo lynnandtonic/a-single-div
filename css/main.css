@@ -116,7 +116,7 @@ header p a {
   top: -105px;
   left: 50%;
   z-index: 3;
-  background: linear-gradient(to right, rgba(0,0,0,0.1) 0%, transparent 15%, transparent 45%, rgba(255,255,255,0.3) 55%, rgba(255,255,255,0.3) 65%, transparent 80%, rgba(0,0,0,0.2) 100%), linear-gradient(to bottom, transparent 0%, transparent 30%, #e04435 30%, #ab2e22 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 45%, rgba(255,255,255,0.3) 55%, rgba(255,255,255,0.3) 65%, rgba(255,255,255,0) 80%, rgba(0,0,0,0.2) 100%), linear-gradient(to bottom, transparent 0%, transparent 30%, #e04435 30%, #ab2e22 100%);
   border: 1px solid #ddd;
   border-right-width: 2px;
   border-bottom-width: 5px;
@@ -124,6 +124,6 @@ header p a {
   border-top-color: #eee;
   border-bottom-left-radius: 150px 15px;
   border-bottom-right-radius: 150px 15px;
-  border-top-left-radius: 100px 15px;
-  border-top-right-radius: 100px 15px;
+  border-top-left-radius: 120px 15px;
+  border-top-right-radius: 120px 15px;
 }
