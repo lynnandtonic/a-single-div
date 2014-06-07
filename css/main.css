@@ -48,6 +48,20 @@ header p a {
     transform: scale(0.8);
   }
 }
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+@media all and (min-width: 960px) {
+  .entry {
+    float: left;
+    width: 50%;
+  }
+}
 #camera {
   background: #ffa500;
 }

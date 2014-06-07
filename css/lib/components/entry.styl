@@ -23,3 +23,18 @@ Entry styles
 
       -webkit-transform: scale(.8)
       transform: scale(.8)
+
+.cf
+  &:before,
+  &:after
+    content: " "
+    display: table
+
+  &:after
+    clear: both
+
+@media all and (min-width: 960px )
+
+  .entry
+    float: left
+    width: 50%
