@@ -226,7 +226,7 @@ header p a {
 #battery div {
   width: 250px;
   height: 120px;
-  margin-left: -125px;
+  margin-left: -130px;
   margin-top: -60px;
   border-radius: 10px/30px;
   border-left: 2px solid rgba(255,255,255,0.2);
