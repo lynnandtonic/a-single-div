@@ -197,8 +197,8 @@ header p a {
   margin-left: -105px;
   margin-top: -105px;
   border-radius: 50%;
-  background: #eee;
-  box-shadow: 0 0 0 20px #fff, 0 6px 0 20px #eee, 0 12px 4px 20px rgba(0,0,0,0.2);
+  background: #f7f7f7;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.1), 0 0 0 20px #fff, 0 6px 0 20px #eee, 0 12px 4px 20px rgba(0,0,0,0.2);
 }
 #breakfast div:before {
   width: 140px;
