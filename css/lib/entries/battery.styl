@@ -1,0 +1,119 @@
+/*-----------------------------
+
+iPhone battery
+
+-----------------------------*/
+
+#battery
+  background: black
+
+  div
+    width: 250px
+    height: 120px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    border-radius: 10px/30px
+
+    border-left: 2px solid rgba(255,255,255,.2)
+    border-right: 2px solid rgba(255,255,255,.2)
+
+    background-image: linear-gradient(to right,
+                                      transparent 0%,
+                                      transparent 5%,
+                                      #316d08 5%,
+                                      #316d08 7%,
+                                      #60b939 8%,
+                                      #60b939 10%,
+                                      #51aa31 11%,
+                                      #51aa31 60%,
+                                      #64ce11 61%,
+                                      #64ce11 63%,
+                                      #255405 63%,
+                                      black 68%,
+                                      black 95%,
+                                      transparent 95%),
+                      linear-gradient(to bottom,
+                                    rgba(255,255,255,.5) 0%,
+                                    rgba(255,255,255,.4) 4%,
+                                    rgba(255,255,255,.2) 7%,
+                                    rgba(255,255,255,.2) 14%,
+                                    rgba(255,255,255,.8) 14%,
+                                    rgba(255,255,255,.2) 40%,
+                                    rgba(255,255,255,0) 41%,
+                                    rgba(255,255,255,0) 80%,
+                                    rgba(255,255,255,.2) 80%,
+                                    rgba(255,255,255,.4) 86%,
+                                    rgba(255,255,255,.6) 90%,
+                                    rgba(255,255,255,.1) 92%,
+                                    rgba(255,255,255,.1) 95%,
+                                    rgba(255,255,255,.5) 98%,
+                                    rgba(255,255,255,.5) 100%)
+
+    &:before
+      width: 12px
+      height: 55px
+
+      right: -(@width + 2px)
+      top: 32px
+
+      border-top-right-radius: 6px 10px
+      border-bottom-right-radius: 6px 10px
+
+      background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,.5) 0%,
+                                      rgba(255,255,255,0) 14%,
+                                      rgba(255,255,255,.8) 14%,
+                                      rgba(255,255,255,.3) 40%,
+                                      rgba(255,255,255,0) 41%,
+                                      rgba(255,255,255,0) 80%,
+                                      rgba(255,255,255,.2) 80%,
+                                      rgba(255,255,255,.4) 86%,
+                                      rgba(255,255,255,.6) 90%,
+                                      rgba(255,255,255,.1) 92%,
+                                      rgba(255,255,255,.1) 95%,
+                                      rgba(255,255,255,.5) 98%,
+                                      rgba(255,255,255,.5) 100%)
+
+    &:after
+      width: 220px
+      height: 120px
+
+      left: 10px
+
+      border-radius: 5px/30px
+
+      border-left: 4px solid black
+      border-right: 4px solid black
+
+      background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,.3) 0%,
+                                      rgba(255,255,255,.3) 4%,
+                                      rgba(255,255,255,.2) 5%,
+                                      transparent 5%,
+                                      transparent 14%,
+                                      rgba(255,255,255,.3) 14%,
+                                      rgba(255,255,255,.12) 40%,
+                                      rgba(0,0,0,.05) 42%,
+                                      rgba(0,0,0,.05) 48%,
+                                      transparent 60%,
+                                      transparent 80%,
+                                      rgba(255,255,255,.3) 87%,
+                                      rgba(255,255,255,.3) 92%,
+                                      transparent 92%,
+                                      transparent 97%,
+                                      rgba(255,255,255,.4) 97%),
+                        linear-gradient(to left,
+                                      rgba(255,255,255,.2) 0%,
+                                      rgba(255,255,255,.2) 2%,
+                                      black 2%,
+                                      black 6%,
+                                      transparent 6%),
+                        linear-gradient(to bottom,
+                                      rgba(255,255,255,0) 0%,
+                                      rgba(255,255,255,0) 35%,
+                                      rgba(255,255,255,.3) 90%,
+                                      rgba(255,255,255,0) 90%)
+
+
+
