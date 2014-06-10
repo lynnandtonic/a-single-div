@@ -1,0 +1,70 @@
+/*-----------------------------
+
+Sushi
+
+-----------------------------*/
+
+#sushi
+  background: skyblue
+
+  div
+    width: 250px
+    height: 100px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 13)
+
+    background: white
+
+    border-top-left-radius: 80px 50px
+    border-top-right-radius: 80px 50px
+    border-bottom-left-radius: 40px 50px
+    border-bottom-right-radius: 40px 50px
+
+    background-image: linear-gradient(to bottom,
+                                                 rgba(0,0,0,.08) 0%,
+                                                 rgba(0,0,0,.08) 32%,
+                                                 transparent 32%),
+                      linear-gradient(85deg,
+                                             transparent 39%,
+                                             rgba(0,0,0,.05) 39%,
+                                             rgba(0,0,0,.05) 45%,
+                                             transparent 45%)
+
+    box-shadow: 0 25px 0 -20px rgba(0,0,0,.1)
+
+    &:before
+      width:260px
+      height: 25px
+      margin-left: -(@width/2)
+
+      left: 50%
+
+      border-top-left-radius: 90px 30px
+      border-top-right-radius: 80px 20px
+
+      background: #f19861
+
+      background-image: linear-gradient(to bottom, transparent 70%,
+                                                   rgba(0,0,0,.05) 70%),
+                        linear-gradient(to right, transparent 41%,
+                                                   rgba(0,0,0,.1) 41%,
+                                                   rgba(0,0,0,.1) 50%,
+                                                   transparent 50%),
+                        repeating-linear-gradient(45deg,
+                                                  #f19861,
+                                                  #f19861 20px,
+                                                  #ffcdaf 20px,
+                                                  #ffcdaf 25px)
+
+    &:after
+      width: 40px
+      height: 103px
+      margin-left: -(@width/2)
+
+      left: 50%
+      top: -2px
+
+      background: #465b45
+
+      background-image: linear-gradient(to right, transparent 60%,
+                                                  rgba(0,0,0,.1) 60%)
