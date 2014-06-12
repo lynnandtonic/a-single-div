@@ -151,7 +151,7 @@ header p a {
   border-top-right-radius: 120px 15px;
 }
 #cpt-america {
-  background: #808000;
+  background: #899d4e;
 }
 #cpt-america div {
   width: 250px;
@@ -320,38 +320,65 @@ header p a {
   background: #465b45;
   background-image: linear-gradient(to right, transparent 60%, rgba(0,0,0,0.1) 60%);
 }
-#sushi {
-  background: #87ceeb;
+#brazil {
+  background: #f0e68c;
 }
-#sushi div {
-  width: 250px;
-  height: 100px;
-  margin-left: -125px;
-  margin-top: -37px;
+#brazil div {
+  width: 300px;
+  height: 200px;
+  margin-left: -150px;
+  margin-top: -100px;
+  background: #fee63c;
+  background-image: linear-gradient(30deg, #019f6f 30%, transparent 30%), linear-gradient(-30deg, #019f6f 30%, transparent 30%), linear-gradient(210deg, #019f6f 30%, transparent 30%), linear-gradient(-210deg, #019f6f 30%, transparent 30%);
+  box-shadow: 7px 7px 0 rgba(0,0,0,0.1);
+}
+#brazil div:before {
+  width: 90px;
+  height: 90px;
+  margin-left: -45px;
+  margin-top: -45px;
+  left: 50%;
+  top: 50%;
+  background: #2765ae;
+  background-image: radial-gradient(circle at 0 175px, transparent 71%, #fff 72%, #fff 78%, transparent 79%);
+  border-radius: 50%;
+}
+#brazil div:after {
+  width: 4px;
+  height: 4px;
+  top: 80px;
+  left: 160px;
   background: #fff;
-  border-top-left-radius: 80px 50px;
-  border-top-right-radius: 80px 50px;
-  border-bottom-left-radius: 40px 50px;
-  border-bottom-right-radius: 40px 50px;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.08) 32%, transparent 32%), linear-gradient(85deg, transparent 39%, rgba(0,0,0,0.05) 39%, rgba(0,0,0,0.05) 45%, transparent 45%);
-  box-shadow: 0 25px 0 -20px rgba(0,0,0,0.1);
+  border-radius: 50%;
+  box-shadow: -45px 15px 0 0 #fff, -40px 30px 0 0 #fff, -27px 43px 0 0 #fff, -10px 36px 0 0 #fff, 13px 38px 0 0 #fff, -47px 32px 0 -1px #fff, -35px 25px 0 -1px #fff, -25px 20px 0 -1px #fff, -33px 34px 0 -1px #fff, -35px 40px 0 -1px #fff, -5px 22px 0 -1px #fff, -15px 26px 0 -1px #fff, -17px 32px 0 -1px #fff, -10px 29px 0 -1px #fff, -12px 53px 0 -1px #fff, 0px 42px 0 -1px #fff, 5px 48px 0 -1px #fff, 6px 43px 0 -1px #fff, 8px 40px 0 -1px #fff, 12px 45px 0 -1px #fff, 17px 35px 0 -1px #fff, 23px 37px 0 -1px #fff;
 }
-#sushi div:before {
-  width: 260px;
-  height: 25px;
-  margin-left: -130px;
-  left: 50%;
-  border-top-left-radius: 90px 30px;
-  border-top-right-radius: 80px 20px;
-  background: #f19861;
-  background-image: linear-gradient(to bottom, transparent 70%, rgba(0,0,0,0.05) 70%), linear-gradient(to right, transparent 41%, rgba(0,0,0,0.1) 41%, rgba(0,0,0,0.1) 50%, transparent 50%), repeating-linear-gradient(45deg, #f19861, #f19861 20px, #ffcdaf 20px, #ffcdaf 25px);
+#soccer {
+  background: #afeeee;
 }
-#sushi div:after {
-  width: 40px;
-  height: 103px;
-  margin-left: -20px;
+#soccer div {
+  width: 300px;
+  height: 70px;
+  margin-left: -150px;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+#soccer div:before {
+  width: 150px;
+  height: 100px;
+  margin-left: -80px;
   left: 50%;
-  top: -2px;
-  background: #465b45;
-  background-image: linear-gradient(to right, transparent 60%, rgba(0,0,0,0.1) 60%);
+  top: -95px;
+  background: repeating-linear-gradient(45deg, transparent, transparent 10px, #fff 10px, #fff 11px), repeating-linear-gradient(-45deg, transparent, transparent 10px, #fff 10px, #fff 11px);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 6px solid #fff;
+  border-bottom: none;
+}
+#soccer div:after {
+  width: 20px;
+  height: 20px;
+  left: 170px;
+  top: 20px;
+  border: 3px solid #fff;
+  border-radius: 50%;
 }
