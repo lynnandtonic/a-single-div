@@ -124,7 +124,7 @@ header p a {
   left: 50%;
   z-index: 1;
   background: #d7e17f;
-  background: linear-gradient(to right, #cdeca8 0%, #cdeca8 10%, #a2d269 18%, #a2d269 25%, #bde192 45%, #bde192 55%, #95c260 75%, #95c260 82%, #bde192 90%, #bde192 100%);
+  background: linear-gradient(to right, #cdeca8 10%, #a2d269 18%, #a2d269 25%, #bde192 45%, #bde192 55%, #95c260 75%, #95c260 82%, #bde192 90%);
   border-top-left-radius: 20px 3px;
   border-top-right-radius: 20px 3px;
   border-top: 5px solid #95c260;
@@ -139,7 +139,7 @@ header p a {
   top: -105px;
   left: 50%;
   z-index: 3;
-  background: linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 45%, rgba(255,255,255,0.3) 55%, rgba(255,255,255,0.3) 65%, rgba(255,255,255,0) 80%, rgba(0,0,0,0.2) 100%), linear-gradient(to bottom, transparent 0%, transparent 30%, #e04435 30%, #ab2e22 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 45%, rgba(255,255,255,0.3) 55%, rgba(255,255,255,0.3) 65%, rgba(255,255,255,0) 80%, rgba(0,0,0,0.2) 100%), linear-gradient(to bottom, transparent 30%, #e04435 30%, #ab2e22 100%);
   border: 1px solid #ddd;
   border-right-width: 2px;
   border-bottom-width: 5px;
@@ -151,7 +151,7 @@ header p a {
   border-top-right-radius: 120px 15px;
 }
 #cpt-america {
-  background: #808000;
+  background: #899d4e;
 }
 #cpt-america div {
   width: 250px;
@@ -159,7 +159,7 @@ header p a {
   margin-left: -125px;
   margin-top: -140px;
   z-index: 1;
-  background: linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 65%), linear-gradient(-45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 65%), linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 65%), linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 65%), radial-gradient(ellipse at center, #0033b0 0%, #0033b0 20%, #ce0021 20%, #ce0021 35%, #bbb 35%, #bbb 55%, #ce0021 55%, #ce0021 100%);
+  background: linear-gradient(45deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 65%), linear-gradient(-45deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 65%), linear-gradient(to right, rgba(0,0,0,0) 35%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 65%), linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 65%), radial-gradient(ellipse at center, #0033b0 20%, #ce0021 20%, #ce0021 35%, #bbb 35%, #bbb 55%, #ce0021 55%);
   border-radius: 50%;
   box-shadow: 0 3px 0 #a20917;
 }
@@ -231,7 +231,7 @@ header p a {
   border-radius: 10px/30px;
   border-left: 2px solid rgba(255,255,255,0.2);
   border-right: 2px solid rgba(255,255,255,0.2);
-  background-image: linear-gradient(to right, transparent 0%, transparent 5%, #316d08 5%, #316d08 7%, #60b939 8%, #60b939 10%, #51aa31 11%, #51aa31 60%, #64ce11 61%, #64ce11 63%, #255405 63%, #000 68%, #000 95%, transparent 95%), linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.4) 4%, rgba(255,255,255,0.2) 7%, rgba(255,255,255,0.2) 14%, rgba(255,255,255,0.8) 14%, rgba(255,255,255,0.2) 40%, rgba(255,255,255,0) 41%, rgba(255,255,255,0) 80%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0.4) 86%, rgba(255,255,255,0.6) 90%, rgba(255,255,255,0.1) 92%, rgba(255,255,255,0.1) 95%, rgba(255,255,255,0.5) 98%, rgba(255,255,255,0.5) 100%);
+  background-image: linear-gradient(to right, transparent 5%, #316d08 5%, #316d08 7%, #60b939 8%, #60b939 10%, #51aa31 11%, #51aa31 60%, #64ce11 61%, #64ce11 63%, #255405 63%, #000 68%, #000 95%, transparent 95%), linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.4) 4%, rgba(255,255,255,0.2) 7%, rgba(255,255,255,0.2) 14%, rgba(255,255,255,0.8) 14%, rgba(255,255,255,0.2) 40%, rgba(255,255,255,0) 41%, rgba(255,255,255,0) 80%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0.4) 86%, rgba(255,255,255,0.6) 90%, rgba(255,255,255,0.1) 92%, rgba(255,255,255,0.1) 95%, rgba(255,255,255,0.5) 98%);
 }
 #battery div:before {
   width: 12px;
@@ -240,7 +240,7 @@ header p a {
   top: 32px;
   border-top-right-radius: 6px 10px;
   border-bottom-right-radius: 6px 10px;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 14%, rgba(255,255,255,0.8) 14%, rgba(255,255,255,0.3) 40%, rgba(255,255,255,0) 41%, rgba(255,255,255,0) 80%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0.4) 86%, rgba(255,255,255,0.6) 90%, rgba(255,255,255,0.1) 92%, rgba(255,255,255,0.1) 95%, rgba(255,255,255,0.5) 98%, rgba(255,255,255,0.5) 100%);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 14%, rgba(255,255,255,0.8) 14%, rgba(255,255,255,0.3) 40%, rgba(255,255,255,0) 41%, rgba(255,255,255,0) 80%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0.4) 86%, rgba(255,255,255,0.6) 90%, rgba(255,255,255,0.1) 92%, rgba(255,255,255,0.1) 95%, rgba(255,255,255,0.5) 98%);
 }
 #battery div:after {
   width: 220px;
@@ -249,7 +249,7 @@ header p a {
   border-radius: 5px/30px;
   border-left: 4px solid #000;
   border-right: 4px solid #000;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 4%, rgba(255,255,255,0.2) 5%, transparent 5%, transparent 14%, rgba(255,255,255,0.3) 14%, rgba(255,255,255,0.12) 40%, rgba(0,0,0,0.05) 42%, rgba(0,0,0,0.05) 48%, transparent 60%, transparent 80%, rgba(255,255,255,0.3) 87%, rgba(255,255,255,0.3) 92%, transparent 92%, transparent 97%, rgba(255,255,255,0.4) 97%), linear-gradient(to left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 2%, #000 2%, #000 6%, transparent 6%), linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0.3) 90%, rgba(255,255,255,0) 90%);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.3) 4%, rgba(255,255,255,0.2) 5%, transparent 5%, transparent 14%, rgba(255,255,255,0.3) 14%, rgba(255,255,255,0.12) 40%, rgba(0,0,0,0.05) 42%, rgba(0,0,0,0.05) 48%, transparent 60%, transparent 80%, rgba(255,255,255,0.3) 87%, rgba(255,255,255,0.3) 92%, transparent 92%, transparent 97%, rgba(255,255,255,0.4) 97%), linear-gradient(to left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 2%, #000 2%, #000 6%, transparent 6%), linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0.3) 90%, rgba(255,255,255,0) 90%);
 }
 #marshmallow {
   background: #66cdaa;
@@ -319,4 +319,66 @@ header p a {
   top: -2px;
   background: #465b45;
   background-image: linear-gradient(to right, transparent 60%, rgba(0,0,0,0.1) 60%);
+}
+#brazil {
+  background: #f0e68c;
+}
+#brazil div {
+  width: 300px;
+  height: 200px;
+  margin-left: -150px;
+  margin-top: -100px;
+  background: #fee63c;
+  background-image: linear-gradient(30deg, #019f6f 30%, transparent 30%), linear-gradient(-30deg, #019f6f 30%, transparent 30%), linear-gradient(210deg, #019f6f 30%, transparent 30%), linear-gradient(-210deg, #019f6f 30%, transparent 30%);
+  box-shadow: 7px 7px 0 rgba(0,0,0,0.1);
+}
+#brazil div:before {
+  width: 90px;
+  height: 90px;
+  margin-left: -45px;
+  margin-top: -45px;
+  left: 50%;
+  top: 50%;
+  background: #2765ae;
+  background-image: radial-gradient(circle at 0 175px, transparent 71%, #fff 72%, #fff 78%, transparent 79%);
+  border-radius: 50%;
+}
+#brazil div:after {
+  width: 4px;
+  height: 4px;
+  top: 80px;
+  left: 160px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: -45px 15px 0 0 #fff, -40px 30px 0 0 #fff, -27px 43px 0 0 #fff, -10px 36px 0 0 #fff, 13px 38px 0 0 #fff, -47px 32px 0 -1px #fff, -35px 25px 0 -1px #fff, -25px 20px 0 -1px #fff, -33px 34px 0 -1px #fff, -35px 40px 0 -1px #fff, -5px 22px 0 -1px #fff, -15px 26px 0 -1px #fff, -17px 32px 0 -1px #fff, -10px 29px 0 -1px #fff, -12px 53px 0 -1px #fff, 0px 42px 0 -1px #fff, 5px 48px 0 -1px #fff, 6px 43px 0 -1px #fff, 8px 40px 0 -1px #fff, 12px 45px 0 -1px #fff, 17px 35px 0 -1px #fff, 23px 37px 0 -1px #fff;
+}
+#soccer {
+  background: #afeeee;
+}
+#soccer div {
+  width: 300px;
+  height: 70px;
+  margin-left: -150px;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+#soccer div:before {
+  width: 150px;
+  height: 100px;
+  margin-left: -80px;
+  left: 50%;
+  top: -95px;
+  background: repeating-linear-gradient(45deg, transparent, transparent 10px, #fff 10px, #fff 11px), repeating-linear-gradient(-45deg, transparent, transparent 10px, #fff 10px, #fff 11px);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 6px solid #fff;
+  border-bottom: none;
+}
+#soccer div:after {
+  width: 20px;
+  height: 20px;
+  left: 170px;
+  top: 20px;
+  border: 3px solid #fff;
+  border-radius: 50%;
 }

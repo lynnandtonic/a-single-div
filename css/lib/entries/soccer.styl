@@ -1,0 +1,51 @@
+/*-----------------------------
+
+Soccer
+
+-----------------------------*/
+
+#soccer
+  background: paleturquoise
+
+  div
+    width: 300px
+    height: 70px
+    margin-left: -(@width/2)
+
+    border-top: 3px solid white
+    border-bottom: 3px solid white
+
+    &:before
+      width: 150px
+      height: 100px
+      margin-left: -(@width/2 + 5px)
+
+      left: 50%
+      top: -95px
+
+      background: repeating-linear-gradient(45deg,
+                                                  transparent,
+                                                  transparent 10px,
+                                                  white 10px,
+                                                  white 11px),
+                  repeating-linear-gradient(-45deg,
+                                                  transparent,
+                                                  transparent 10px,
+                                                  white 10px,
+                                                  white 11px)
+
+      border-top-right-radius: 5px
+      border-top-left-radius: 5px
+
+      border: 6px solid white
+      border-bottom: none
+
+    &:after
+      width: 20px
+      height: 20px
+
+      left: 170px
+      top: 20px
+
+      border: 3px solid white
+      border-radius: 50%
