@@ -396,8 +396,8 @@ header p a {
 }
 @media (max-width: 500px) {
   #key div {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
     margin-left: -150px;
   }
 }
