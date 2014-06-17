@@ -398,7 +398,7 @@ header p a {
   #key div {
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
-    margin-left: -150px;
+    margin-left: -140px;
   }
 }
 #key div:before {
