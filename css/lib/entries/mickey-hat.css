@@ -1,0 +1,16 @@
+/*-----------------------------
+
+Mickey Hat
+
+-----------------------------*/
+#mickey-hat {
+  background: #800080;
+}
+#mickey-hat div {
+  width: 250px;
+  height: 250px;
+  margin-left: -125px;
+  margin-top: -125px;
+  border-radius: 50%;
+  background: #ffa500;
+}
