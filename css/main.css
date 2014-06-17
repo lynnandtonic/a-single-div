@@ -396,8 +396,8 @@ header p a {
 }
 @media (max-width: 500px) {
   #key div {
-    -webkit-transform: scale(0.75);
-    transform: scale(0.75);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
     margin-left: -150px;
   }
 }
@@ -442,8 +442,8 @@ header p a {
 }
 @media (max-width: 500px) {
   #mickey-hat div {
-    -webkit-transform: scale(0.75) rotate(-45deg);
-    transform: scale(0.75) rotate(-45deg);
+    -webkit-transform: scale(0.7) rotate(-45deg);
+    transform: scale(0.7) rotate(-45deg);
   }
 }
 #mickey-hat div:before {
@@ -454,7 +454,7 @@ header p a {
   background: #333;
   background-image: radial-gradient(circle at 80px 0px, transparent 60%, rgba(255,255,255,0.2) 90%);
   border-radius: 50%;
-  box-shadow: -3px 3px 0 4px #222;
+  box-shadow: -4px 4px 0 4px #222;
 }
 #mickey-hat div:after {
   width: 110px;
@@ -464,5 +464,5 @@ header p a {
   background: #333;
   background-image: radial-gradient(circle at 80px 0px, transparent 60%, rgba(255,255,255,0.2) 90%);
   border-radius: 50%;
-  box-shadow: -3px 3px 0 4px #222, -144px -45px 0 -44px #222, -115px -15px 0 -44px #222, -142px -22px 0 -53px #222, -138px -18px 0 -53px #222, -143px -17px 0 -54px #fff, -144px -16px 0 -51px #222, -142px -23px 0 -50px #fff, -137px -18px 0 -50px #fff, -151px -9px 0 -54px #e95b4f, -150px -10px 0 -52px #222, -142px -18px 0 -40px #d3b579, -141px -19px 0 -36px #222, -141px -19px 0 -28px #fff, -141px -18px 0 -11px #e95b4f;
+  box-shadow: -4px 4px 0 4px #222, -144px -45px 0 -44px #222, -115px -15px 0 -44px #222, -142px -22px 0 -53px #222, -138px -18px 0 -53px #222, -143px -17px 0 -54px #fff, -144px -16px 0 -51px #222, -142px -23px 0 -50px #fff, -137px -18px 0 -50px #fff, -151px -9px 0 -54px #e95b4f, -150px -10px 0 -52px #222, -142px -18px 0 -40px #d3b579, -141px -19px 0 -36px #222, -141px -19px 0 -28px #fff, -141px -18px 0 -11px #e95b4f;
 }
