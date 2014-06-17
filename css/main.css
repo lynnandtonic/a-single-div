@@ -440,10 +440,10 @@ header p a {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #mickey-hat div {
-    -webkit-transform: scale(0.8) rotate(-45deg);
-    transform: scale(0.8) rotate(-45deg);
+    -webkit-transform: scale(0.75) rotate(-45deg);
+    transform: scale(0.75) rotate(-45deg);
   }
 }
 #mickey-hat div:before {
