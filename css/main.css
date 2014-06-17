@@ -447,22 +447,22 @@ header p a {
   }
 }
 #mickey-hat div:before {
-  width: 90px;
-  height: 90px;
-  top: -80px;
-  left: 55px;
+  width: 110px;
+  height: 110px;
+  top: -102px;
+  left: 29px;
   background: #333;
   background-image: radial-gradient(circle at 80px 0px, transparent 60%, rgba(255,255,255,0.2) 90%);
   border-radius: 50%;
   box-shadow: -3px 3px 0 4px #222;
 }
 #mickey-hat div:after {
-  width: 90px;
-  height: 90px;
-  top: 55px;
-  left: 190px;
+  width: 110px;
+  height: 110px;
+  top: 56px;
+  left: 192px;
   background: #333;
   background-image: radial-gradient(circle at 80px 0px, transparent 60%, rgba(255,255,255,0.2) 90%);
   border-radius: 50%;
-  box-shadow: -3px 3px 0 4px #222, -132px -34px 0 -34px #222, -103px -5px 0 -34px #222, -130px -7px 0 -44px #fff, -131px -6px 0 -41px #222, -130px -12px 0 -43px #222, -125px -7px 0 -43px #222, -129px -13px 0 -40px #fff, -124px -8px 0 -40px #fff, -138px 1px 0 -44px #e95b4f, -137px 0 0 -42px #222, -130px -7px 0 -30px #d3b579, -129px -8px 0 -26px #222, -129px -8px 0 -18px #fff, -129px -7px 0 -1px #e95b4f;
+  box-shadow: -3px 3px 0 4px #222, -144px -45px 0 -44px #222, -115px -15px 0 -44px #222, -142px -22px 0 -53px #222, -138px -18px 0 -53px #222, -143px -17px 0 -54px #fff, -144px -16px 0 -51px #222, -142px -23px 0 -50px #fff, -137px -18px 0 -50px #fff, -151px -9px 0 -54px #e95b4f, -150px -10px 0 -52px #222, -142px -18px 0 -40px #d3b579, -141px -19px 0 -36px #222, -141px -19px 0 -28px #fff, -141px -18px 0 -11px #e95b4f;
 }
