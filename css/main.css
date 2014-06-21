@@ -466,3 +466,40 @@ header p a {
   border-radius: 50%;
   box-shadow: -4px 4px 0 4px #222, -144px -45px 0 -44px #222, -115px -15px 0 -44px #222, -142px -22px 0 -53px #222, -138px -18px 0 -53px #222, -143px -17px 0 -54px white, -144px -16px 0 -51px #222, -142px -23px 0 -50px white, -137px -18px 0 -50px white, -151px -9px 0 -54px #e95b4f, -150px -10px 0 -52px #222, -142px -18px 0 -40px #d3b579, -141px -19px 0 -36px #222, -141px -19px 0 -28px white, -141px -18px 0 -11px #e95b4f;
 }
+#hobbit-door {
+  background: #d2b48c;
+}
+#hobbit-door div {
+  width: 250px;
+  height: 250px;
+  margin-left: -125px;
+  margin-top: -140px;
+  z-index: 1;
+  background-color: #825034;
+  background-image: linear-gradient(to right, transparent 45%, #bb7a56 45%, #bb7a56 55%, transparent 55%), linear-gradient(76deg, transparent 45%, #ae6a46 45%, #ae6a46 55%, transparent 55%), linear-gradient(-76deg, transparent 45%, #b7714b 45%, #b7714b 55%, transparent 55%), linear-gradient(60deg, transparent 45%, #bb7a56 45%, #bb7a56 55%, transparent 55%), linear-gradient(-60deg, transparent 45%, #c48b6c 45%, #c48b6c 55%, transparent 55%), linear-gradient(42deg, transparent 45%, #ca977b 45%, #ca977b 55%, transparent 55%), linear-gradient(-42deg, transparent 45%, #bb7a56 45%, #bb7a56 55%, transparent 55%), linear-gradient(-24deg, transparent 45%, #ca977b 45%, #ca977b 55%, transparent 55%), linear-gradient(25deg, transparent 45%, #985d3d 45%, #985d3d 55%, transparent 55%), linear-gradient(-9deg, transparent 45%, #c48b6c 45%, #c48b6c 55%, transparent 55%), linear-gradient(7deg, transparent 44%, #bb7a56 44%, #bb7a56 55%, transparent 55%);
+  border-radius: 50%;
+  box-shadow: 0 5px #985d3d;
+}
+#hobbit-door div:before {
+  width: 190px;
+  height: 190px;
+  margin-left: -95px;
+  margin-top: -95px;
+  top: 50%;
+  left: 50%;
+  background: #468e60;
+  background-image: repeating-linear-gradient(to right, transparent, transparent 22px, #26603b 22px, #26603b 24px, #73b38a 24px, #73b38a 25px);
+  border-radius: 50%;
+  box-shadow: inset 0 5px 0 #6c422c, inset 0 12px 5px rgba(0,0,0,0.3), inset 0 -4px 3px rgba(0,0,0,0.2);
+}
+#hobbit-door div:after {
+  width: 25px;
+  height: 25px;
+  margin-left: -12.5px;
+  margin-top: -12.5px;
+  top: 50%;
+  left: 50%;
+  background: #ffeb8f;
+  border-radius: 50%;
+  box-shadow: inset 0 -6px 5px rgba(111,74,24,0.5), 0 5px 3px rgba(0,0,0,0.4);
+}

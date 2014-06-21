@@ -1,0 +1,124 @@
+/*-----------------------------
+
+Hobbit door
+
+-----------------------------*/
+
+$brick = #c48b6c
+
+#hobbit-door
+  background: tan
+
+  div
+    width: 250px
+    height: 250px
+    margin-left: -(@width/2)
+    margin-top: -140px
+
+    z-index: 1
+
+    background-color: darken($brick, 40%)
+
+    background-image: linear-gradient(to right,
+                                        transparent 45%,
+                                        darken($brick, 10%) 45%,
+                                        darken($brick, 10%) 55%,
+                                        transparent 55%),
+                      linear-gradient(76deg,
+                                        transparent 45%,
+                                        darken($brick, 20%) 45%,
+                                        darken($brick, 20%) 55%,
+                                        transparent 55%),
+                      linear-gradient(-76deg,
+                                        transparent 45%,
+                                        darken($brick, 15%) 45%,
+                                        darken($brick, 15%) 55%,
+                                        transparent 55%),
+                      linear-gradient(60deg,
+                                        transparent 45%,
+                                        darken($brick, 10%) 45%,
+                                        darken($brick, 10%) 55%,
+                                        transparent 55%),
+                      linear-gradient(-60deg,
+                                        transparent 45%,
+                                        $brick 45%,
+                                        $brick 55%,
+                                        transparent 55%),
+                      linear-gradient(42deg,
+                                        transparent 45%,
+                                        lighten($brick, 10%) 45%,
+                                        lighten($brick, 10%) 55%,
+                                        transparent 55%),
+                      linear-gradient(-42deg,
+                                        transparent 45%,
+                                        darken($brick, 10%) 45%,
+                                        darken($brick, 10%) 55%,
+                                        transparent 55%),
+                      linear-gradient(-24deg,
+                                        transparent 45%,
+                                        lighten($brick, 10%) 45%,
+                                        lighten($brick, 10%) 55%,
+                                        transparent 55%),
+                      linear-gradient(25deg,
+                                        transparent 45%,
+                                        darken($brick, 30%) 45%,
+                                        darken($brick, 30%) 55%,
+                                        transparent 55%),
+                      linear-gradient(-9deg,
+                                        transparent 45%,
+                                        $brick 45%,
+                                        $brick 55%,
+                                        transparent 55%),
+                      linear-gradient(7deg,
+                                        transparent 44%,
+                                        darken($brick, 10%) 44%,
+                                        darken($brick, 10%) 55%,
+                                        transparent 55%)
+
+    border-radius: 50%
+
+    box-shadow: 0 5px darken($brick, 30%)
+
+    &:before
+      width: 190px
+      height: 190px
+      margin-left: -(@width/2)
+      margin-top: -(@height/2)
+
+      top: 50%
+      left: 50%
+
+      background: #468e60
+
+      background-image: repeating-linear-gradient(to right,
+                                                    transparent,
+                                                    transparent 22px,
+                                                    #26603b 22px,
+                                                    #26603b 24px,
+                                                    #73b38a 24px,
+                                                    #73b38a 25px)
+
+
+      border-radius: 50%
+
+      box-shadow: inset 0 5px 0 darken($brick, 50%),
+                  inset 0 12px 5px black(.3),
+                  inset 0 -4px 3px black(.2)
+
+    &:after
+      width: 25px
+      height: 25px
+      margin-left: -(@width/2)
+      margin-top: -(@height/2)
+
+      top: 50%
+      left: 50%
+
+      background: #ffeb8f
+
+      border-radius: 50%
+
+      box-shadow: inset 0 -6px 5px rgba(111,74,24,.5),
+                        0 5px 3px black(.4)
+
+
