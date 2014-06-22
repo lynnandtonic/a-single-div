@@ -1,0 +1,152 @@
+/*-----------------------------
+
+Tardis
+
+-----------------------------*/
+
+$tardis = #295185
+
+#tardis
+  background: darkslategray
+
+  div
+    width: 170px
+    height: 250px
+    margin-left: -(@width/2)
+    margin-top: -110px
+
+    background: darken($tardis, 5%)
+    background-image: linear-gradient(to right, 
+                                        $tardis 15px,
+                                        darken($tardis, 20%) 15px,
+                                        darken($tardis, 20%) 17px,
+                                        darken($tardis, 8%) 17px,
+                                        darken($tardis, 8%) 20px,
+                                        darken($tardis, 20%) 20px,
+                                        darken($tardis, 20%) 22px,
+                                        darken($tardis, 5%) 22px,
+                                        darken($tardis, 5%) 32px,
+                                        transparent 32px,
+                                        transparent 83px,
+                                        darken($tardis, 30%) 83px,
+                                        darken($tardis, 30%) 85px,
+                                        darken($tardis, 20%) 85px,
+                                        darken($tardis, 20%) 87px,
+                                        darken($tardis, 30%) 87px,
+                                        darken($tardis, 30%) 89px,
+                                        transparent 90px),
+                      linear-gradient(to left, 
+                                        $tardis 15px,
+                                        darken($tardis, 20%) 15px,
+                                        darken($tardis, 20%) 17px,
+                                        darken($tardis, 8%) 17px,
+                                        darken($tardis, 8%) 20px,
+                                        darken($tardis, 20%) 20px,
+                                        darken($tardis, 20%) 22px,
+                                        darken($tardis, 5%) 22px,
+                                        darken($tardis, 5%) 32px,
+                                        transparent 32px,
+                                        transparent 75px,
+                                        darken($tardis, 5%) 75px,
+                                        darken($tardis, 5%) 95px,
+                                        transparent 95px),
+                      linear-gradient(to bottom,
+                                        transparent 85px,
+                                        darken($tardis, 12%) 85px,
+                                        darken($tardis, 12%) 130px,
+                                        transparent 130px,
+                                        transparent 140px,
+                                        darken($tardis, 12%) 140px,
+                                        darken($tardis, 12%) 185px,
+                                        transparent 185px,
+                                        transparent 195px,
+                                        darken($tardis, 12%) 195px,
+                                        darken($tardis, 12%) 240px,
+                                        transparent 240px),
+                      linear-gradient(to bottom, 
+                                        transparent 52px,
+                                        darken($tardis, 5%) 52px,
+                                        darken($tardis, 5%) 54px,
+                                        transparent 54px),
+                      linear-gradient(to right, 
+                                        transparent 44px,
+                                        darken($tardis, 5%) 44px,
+                                        darken($tardis, 5%) 46px,
+                                        transparent 46px,
+                                        transparent 60px,
+                                        darken($tardis, 5%) 60px,
+                                        darken($tardis, 5%) 62px,
+                                        transparent 62px,
+                                        transparent 108px,
+                                        darken($tardis, 5%) 108px,
+                                        darken($tardis, 5%) 110px,
+                                        transparent 110px,
+                                        transparent 124px,
+                                        darken($tardis, 5%) 124px,
+                                        darken($tardis, 5%) 126px,
+                                        transparent 126px),
+                      linear-gradient(to bottom, 
+                                        transparent 30px,
+                                        white(.4) 30px,
+                                        white(.9) 75px,
+                                        transparent 75px)
+
+    border-bottom: 8px solid lighten($tardis, 3%)
+
+    box-shadow: 0 12px 0 darken($tardis, 20%),
+                0 18px 8px -3px black(.3)
+
+    &:before
+      width: 150px
+      height: 18px
+      margin-left: -(@width/2)
+      margin-top: -8px
+
+      left: 50%
+
+      content: 'POLICE BOX'
+      font-family: Verdana, Helvetica, sans-serif
+      font-size: 10px
+      letter-spacing: 5px
+      line-height: 18px
+      color: white(.8)
+
+      background: #333
+
+      box-shadow: 0 0 0 4px $tardis,
+                  0 4px 4px 4px black(.3),
+                  0 -15px 0 $tardis,
+                  0 -27px 0 -6px $tardis,
+                  0 -32px 0 -6px $tardis
+
+    &:after
+      width: 15px
+      height: 20px
+      margin-left: -(@width/2)
+
+      left: 50%
+      top: -62px
+
+      background: white(.7)
+      background-image: linear-gradient(to right,
+                                              transparent 5px,
+                                              lighten($tardis, 10%) 5px,
+                                              lighten($tardis, 10%) 6px,
+                                              transparent 6px),
+                        linear-gradient(to bottom,
+                                              transparent 5px,
+                                              lighten($tardis, 10%) 5px,
+                                              lighten($tardis, 10%) 6px,
+                                              transparent 6px,
+                                              transparent 13px,
+                                              lighten($tardis, 10%) 13px,
+                                              lighten($tardis, 10%) 14px,
+                                              transparent 14px)
+
+
+      border-bottom: 3px solid lighten($tardis, 10%)
+      border-top: 5px solid lighten($tardis, 10%)
+
+      box-shadow: 0 -2px 10px -1px white(.5),
+                  -39px 155px 0 white(.6),
+                  -24px 155px 0 white(.6)
