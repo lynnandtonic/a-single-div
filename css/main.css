@@ -529,7 +529,7 @@ header p a {
   line-height: 18px;
   color: rgba(255,255,255,0.8);
   background: #333;
-  box-shadow: 0 0 0 4px #295185, 0 4px 4px 4px rgba(0,0,0,0.3), 0 -15px 0 #295185, 0 -27px 0 -6px #295185, 0 -32px 0 -6px #295185;
+  box-shadow: 0 0 0 4px #295185, 0 4px 4px 4px rgba(0,0,0,0.3), 0 -15px 0 #274d7e, 0 -27px 0 -6px #295185, 0 -32px 0 -6px #295185;
 }
 #tardis div:after {
   width: 15px;
