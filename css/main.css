@@ -552,7 +552,7 @@ header p a {
   margin-left: -80px;
   margin-top: -110px;
   background: #f00;
-  background-image: radial-gradient(circle at 25px 23px, white 7%, transparent 40%);
+  background-image: radial-gradient(circle at 25px 23px, white 7%, rgba(255,255,255,0) 40%);
   box-shadow: inset -5px -5px 10px #f00, inset -18px -23px 15px rgba(0,0,0,0.2);
   border-radius: 50%;
 }
@@ -561,14 +561,14 @@ header p a {
   height: 150px;
   top: 80px;
   left: 34px;
-  background-image: linear-gradient(to right, #eee 3px, #777 12px, transparent 12px), linear-gradient(-20deg, transparent 37px, #b2afaf 44px, #b2afaf 45px, transparent 52px);
+  background-image: linear-gradient(to right, #eee 3px, #777 12px, transparent 12px), linear-gradient(-20deg, rgba(178,175,175,0) 37px, #b2afaf 44px, #b2afaf 45px, rgba(178,175,175,0) 52px);
 }
 #marker div:after {
   width: 60px;
   height: 45px;
   top: 152px;
   left: 147px;
-  background-image: linear-gradient(20deg, #b2afaf 30%, transparent 90%);
+  background-image: linear-gradient(20deg, #b2afaf 30%, rgba(178,175,175,0) 90%);
   border-radius: 50%;
   box-shadow: -1px 2px 3px #b2afaf;
   -webkit-transform: rotate(20deg);
