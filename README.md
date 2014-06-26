@@ -5,6 +5,15 @@ A Single Div
 
 This is a fun, little project to see how much can be accomplished with CSS. Every drawing consists of a single HTML element (in this case, the beloved div).
 
+### But, but!
+
+Yes, this isn't super practical.
+
+Yes, SVG is an easier and better medium for illustrations.
+
+Yes, browser support is not broad.
+
+Yes, it is super fun to do this anyway. ;)
 
 ### Project Details
 
