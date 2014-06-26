@@ -543,3 +543,33 @@ header p a {
   border-top: 5px solid #31619f;
   box-shadow: 0 -2px 10px -1px rgba(255,255,255,0.5), -39px 155px 0 rgba(255,255,255,0.6), -24px 155px 0 rgba(255,255,255,0.6);
 }
+#marker {
+  background: #dcdcdc;
+}
+#marker div {
+  width: 80px;
+  height: 80px;
+  margin-left: -80px;
+  margin-top: -110px;
+  background: #f00;
+  background-image: radial-gradient(circle at 25px 23px, white 7%, transparent 40%);
+  box-shadow: inset -5px -5px 10px #f00, inset -18px -23px 15px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+#marker div:before {
+  width: 130px;
+  height: 150px;
+  top: 80px;
+  left: 34px;
+  background-image: linear-gradient(to right, #eee 3px, #777 12px, transparent 12px), linear-gradient(-20deg, transparent 37px, #b2afaf 44px, #b2afaf 45px, transparent 52px);
+}
+#marker div:after {
+  width: 60px;
+  height: 45px;
+  top: 152px;
+  left: 147px;
+  background-image: linear-gradient(20deg, #b2afaf 30%, transparent 90%);
+  border-radius: 50%;
+  box-shadow: -1px 2px 3px #b2afaf;
+  -webkit-transform: rotate(20deg);
+}
