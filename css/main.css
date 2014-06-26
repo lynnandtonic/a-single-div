@@ -572,4 +572,5 @@ header p a {
   border-radius: 50%;
   box-shadow: -1px 2px 3px #b2afaf;
   -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
 }
