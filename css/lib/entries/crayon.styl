@@ -1,0 +1,86 @@
+/*-----------------------------
+
+Crayon
+
+-----------------------------*/
+
+#crayon
+  background: #f3c114
+
+  div
+    width: 250px
+    height: 40px
+    margin-left: -(@width/2 - 15px)
+    margin-top: -(@height/2)
+
+    z-index: 1
+
+    background: #237449
+
+    background-image: radial-gradient(ellipse at top,
+                                        black(.6) 50px,
+                                        transparent 54px),
+                      linear-gradient(to right,
+                                    transparent 25px,
+                                    black(.6) 25px,
+                                    black(.6) 30px,
+                                    transparent 30px,
+                                    transparent 35px,
+                                    black(.6) 35px,
+                                    black(.6) 40px,
+                                    transparent 40px,
+                                    transparent 210px,
+                                    black(.6) 210px,
+                                    black(.6) 215px,
+                                    transparent 215px,
+                                    transparent 220px,
+                                    black(.6) 220px,
+                                    black(.6) 225px,
+                                    transparent 225px),
+                      linear-gradient(to right,
+                                    transparent 12px,
+                                    rgba(41,237,133,.6) 12px,
+                                    rgba(41,237,133,.6) 235px,
+                                    transparent 235px),
+                      linear-gradient(to bottom,
+                                    transparent 62%,
+                                    black(.3) 100%)
+
+    border-radius: 2px
+
+    box-shadow: 2px 2px 3px black(.3)
+
+    &:before
+      height: 10px
+
+      left: -48px
+      top: 2px
+
+      border-right: 48px solid #237449
+      border-bottom: 13px solid transparent
+      border-top: 13px solid transparent
+
+    &:after
+      width: 251px
+      height: 23px
+
+      content: 'green'
+      font-family: Arial, sans-serif
+      font-size: 12px
+      font-weight: bold
+      color: black(.3)
+      text-align: right
+      padding-right: 47px
+      padding-top: 17px
+
+      left: -48px
+
+      background-image: linear-gradient(to right,
+                                          transparent 46px,
+                                          black(.3) 48px,
+                                          transparent 48px),
+                        linear-gradient(to bottom,
+                                          white(0) 12px,
+                                          white(.2) 17px,
+                                          white(.2) 19px,
+                                          white(0) 24px)

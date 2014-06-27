@@ -574,3 +574,39 @@ header p a {
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
 }
+#crayon {
+  background: #f3c114;
+}
+#crayon div {
+  width: 250px;
+  height: 40px;
+  margin-left: -110px;
+  margin-top: -20px;
+  z-index: 1;
+  background: #237449;
+  background-image: radial-gradient(ellipse at top, rgba(0,0,0,0.6) 50px, transparent 54px), linear-gradient(to right, transparent 25px, rgba(0,0,0,0.6) 25px, rgba(0,0,0,0.6) 30px, transparent 30px, transparent 35px, rgba(0,0,0,0.6) 35px, rgba(0,0,0,0.6) 40px, transparent 40px, transparent 210px, rgba(0,0,0,0.6) 210px, rgba(0,0,0,0.6) 215px, transparent 215px, transparent 220px, rgba(0,0,0,0.6) 220px, rgba(0,0,0,0.6) 225px, transparent 225px), linear-gradient(to right, transparent 12px, rgba(41,237,133,0.6) 12px, rgba(41,237,133,0.6) 235px, transparent 235px), linear-gradient(to bottom, transparent 62%, rgba(0,0,0,0.3) 100%);
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+#crayon div:before {
+  height: 10px;
+  left: -48px;
+  top: 2px;
+  border-right: 48px solid #237449;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+}
+#crayon div:after {
+  width: 251px;
+  height: 23px;
+  content: 'green';
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.3);
+  text-align: right;
+  padding-right: 47px;
+  padding-top: 17px;
+  left: -48px;
+  background-image: linear-gradient(to right, transparent 46px, rgba(0,0,0,0.3) 48px, transparent 48px), linear-gradient(to bottom, rgba(255,255,255,0) 12px, rgba(255,255,255,0.2) 17px, rgba(255,255,255,0.2) 19px, rgba(255,255,255,0) 24px);
+}
