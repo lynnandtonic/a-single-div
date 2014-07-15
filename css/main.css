@@ -610,3 +610,63 @@ header p a {
   left: -48px;
   background-image: linear-gradient(to right, transparent 46px, rgba(0,0,0,0.3) 48px, transparent 48px), linear-gradient(to bottom, rgba(255,255,255,0) 12px, rgba(255,255,255,0.2) 17px, rgba(255,255,255,0.2) 19px, rgba(255,255,255,0) 24px);
 }
+#mint {
+  background: #faf0e6;
+}
+#mint div {
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  background: white;
+  background-image: radial-gradient(circle at center, white 35%, transparent 45%), linear-gradient(150deg, transparent 46%, #f00 48%, #f00 52%, transparent 54%), linear-gradient(120deg, transparent 46%, #f00 48%, #f00 52%, transparent 54%), linear-gradient(90deg, transparent 45%, #f00 47%, #f00 53%, transparent 55%), linear-gradient(60deg, transparent 46%, #f00 48%, #f00 52%, transparent 54%), linear-gradient(30deg, transparent 46%, #f00 48%, #f00 52%, transparent 54%), linear-gradient(0deg, transparent 45%, #f00 47%, #f00 53%, transparent 55%);
+  border-radius: 50%;
+  box-shadow: inset 0 -4px 6px rgba(0,0,0,0.2);
+}
+#mint div:before {
+  width: 150px;
+  height: 200px;
+  left: -19px;
+  top: -50px;
+  background-image: linear-gradient(135deg, rgba(255,255,255,0) 50%, #ebe4db 50%), linear-gradient(-135deg, rgba(255,255,255,0) 50%, #ebe4db 50%), linear-gradient(45deg, rgba(255,255,255,0) 50%, #ebe4db 50%), linear-gradient(-45deg, rgba(255,255,255,0) 50%, #ebe4db 50%);
+  background-position: top center, top center, bottom center, bottom center;
+  background-size: 1.1rem 1.1rem, 1.1rem 1.1rem, 1.1rem 1.1rem, 1.1rem 1.1rem;
+  background-repeat: repeat-x;
+}
+#mint div:after {
+  width: 150px;
+  height: 164px;
+  left: -19px;
+  top: -33px;
+  background-color: rgba(0,0,0,0.05);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 3px, rgba(255,255,255,0.3) 3px, rgba(255,255,255,0.3) 5px, rgba(255,255,255,0) 5px, rgba(255,255,255,0) 7px, rgba(255,255,255,0.3) 7px, rgba(255,255,255,0.3) 9px, rgba(255,255,255,0) 9px), linear-gradient(to top, rgba(255,255,255,0) 3px, rgba(255,255,255,0.3) 3px, rgba(255,255,255,0.3) 5px, rgba(255,255,255,0) 5px, rgba(255,255,255,0) 6px, rgba(255,255,255,0.3) 6px, rgba(255,255,255,0.3) 8px, rgba(255,255,255,0) 8px), linear-gradient(-70deg, rgba(255,255,255,0.3) 35%, rgba(255,255,255,0) 37%), linear-gradient(105deg, rgba(0,0,0,0.05) 0, rgba(0,0,0,0) 25%);
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+#moleskine {
+  background: #faf0e6;
+}
+#moleskine div {
+  width: 170px;
+  height: 250px;
+  margin-left: -85px;
+  margin-top: -133px;
+  background-image: linear-gradient(to bottom, #444 0, #222 100%);
+  border-radius: 3px 10px 10px 3px;
+  box-shadow: 0 5px 0 white, 0 7px 0 #222, 3px 10px 2px rgba(0,0,0,0.3);
+}
+#moleskine div:before {
+  width: 170px;
+  height: 257px;
+  background-image: linear-gradient(to right, transparent 130px, #333 130px, #333 140px, transparent 140px), linear-gradient(to bottom, transparent 33%, #ff8613 33%, #ff8613 68%, transparent 68%), linear-gradient(to right, #444 3px, rgba(255,255,255,0.1) 4px, rgba(255,255,255,0) 8px);
+}
+#moleskine div:after {
+  width: 60px;
+  height: 40px;
+  left: 13px;
+  top: 105px;
+  background: white;
+  background-image: linear-gradient(to right, transparent 29px, #777 29px, #777 31px, transparent 31px);
+  border: 2px solid #777;
+  box-shadow: -20px 125px 0 -21px #777;
+}

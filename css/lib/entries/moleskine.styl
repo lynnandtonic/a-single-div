@@ -1,0 +1,62 @@
+/*-----------------------------
+
+Moleskine notebook
+
+-----------------------------*/
+
+#moleskine
+  background: linen
+
+  div
+    width: 170px
+    height: 250px
+    margin-left: -(@width/2)
+    margin-top: -133px
+
+    background-image: linear-gradient(to bottom,
+                                            #444 0,
+                                            #222 100%)
+
+    border-radius: 3px 10px 10px 3px
+
+    box-shadow: 0 5px 0 white,
+                0 7px 0 #222,
+                3px 10px 2px black(.3)
+
+    &:before
+      width: 170px
+      height: 257px
+
+      background-image: linear-gradient(to right,
+                                            transparent 130px,
+                                            #333 130px,
+                                            #333 140px,
+                                            transparent 140px),
+                        linear-gradient(to bottom,
+                                            transparent 33%,
+                                            #ff8613 33%,
+                                            #ff8613 68%,
+                                            transparent 68%),
+                        linear-gradient(to right,
+                                            #444 3px,
+                                            white(.1) 4px,
+                                            white(0) 8px)
+
+    &:after
+      width: 60px
+      height: 40px
+
+      left: 13px
+      top: 105px
+
+      background: white
+
+      background-image: linear-gradient(to right,
+                                            transparent 29px,
+                                            #777 29px,
+                                            #777 31px,
+                                            transparent 31px)
+
+      border: 2px solid #777
+
+      box-shadow: -20px 125px 0 -21px #777
