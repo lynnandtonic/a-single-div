@@ -1,0 +1,65 @@
+/*-----------------------------
+
+French macarons
+
+-----------------------------*/
+
+#macarons
+  background: #eee
+
+  div
+    width: 110px
+    height: 180px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background-image: linear-gradient(to top, transparent 21px,
+                                              #7b5354 21px,
+                                              #7b5354 26px,
+                                              transparent 26px,
+                                              transparent 66px,
+                                              #ffd889 66px,
+                                              #ffd889 71px,
+                                              transparent 71px,
+                                              transparent 110px,
+                                              #548355 110px,
+                                              #548355 115px,
+                                              transparent 115px,
+                                              transparent 155px,
+                                              #965537 155px,
+                                              #965537 160px,
+                                              transparent 160px)
+
+    //- bottom halves
+    &:before
+      width: 110px
+      height: 20px
+
+      bottom: 0
+
+      border-radius: 6px
+      border-bottom-left-radius: 80px 20px
+      border-bottom-right-radius: 80px 20px
+
+      background: #fa8780
+
+      box-shadow: 0 -45px 0 #ffba10,
+                  0 -89px 0 #a8daa9,
+                  0 -134px 0 #d1a574
+
+    //- top halves
+    &:after
+      width: 110px
+      height: 20px
+
+      bottom: 25px
+
+      border-radius: 6px
+      border-top-left-radius: 80px 20px
+      border-top-right-radius: 80px 20px
+
+      background: #fa8780
+
+      box-shadow: 0 -44px 0 #ffba10,
+                  0 -89px 0 #a8daa9,
+                  0 -134px 0 #d1a574

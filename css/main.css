@@ -644,7 +644,7 @@ header p a {
   border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 #moleskine {
-  background: #faf0e6;
+  background: #84c3c9;
 }
 #moleskine div {
   width: 170px;
@@ -669,4 +669,34 @@ header p a {
   background-image: linear-gradient(to right, transparent 29px, #777 29px, #777 31px, transparent 31px);
   border: 2px solid #777;
   box-shadow: -20px 125px 0 -21px #777;
+}
+#macarons {
+  background: #eee;
+}
+#macarons div {
+  width: 110px;
+  height: 180px;
+  margin-left: -55px;
+  margin-top: -90px;
+  background-image: linear-gradient(to top, transparent 21px, #7b5354 21px, #7b5354 26px, transparent 26px, transparent 66px, #ffd889 66px, #ffd889 71px, transparent 71px, transparent 110px, #548355 110px, #548355 115px, transparent 115px, transparent 155px, #965537 155px, #965537 160px, transparent 160px);
+}
+#macarons div:before {
+  width: 110px;
+  height: 20px;
+  bottom: 0;
+  border-radius: 6px;
+  border-bottom-left-radius: 80px 20px;
+  border-bottom-right-radius: 80px 20px;
+  background: #fa8780;
+  box-shadow: 0 -45px 0 #ffba10, 0 -89px 0 #a8daa9, 0 -134px 0 #d1a574;
+}
+#macarons div:after {
+  width: 110px;
+  height: 20px;
+  bottom: 25px;
+  border-radius: 6px;
+  border-top-left-radius: 80px 20px;
+  border-top-right-radius: 80px 20px;
+  background: #fa8780;
+  box-shadow: 0 -44px 0 #ffba10, 0 -89px 0 #a8daa9, 0 -134px 0 #d1a574;
 }
