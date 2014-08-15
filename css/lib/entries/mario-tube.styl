@@ -1,0 +1,69 @@
+/*-----------------------------
+
+Super Mario Tube
+
+-----------------------------*/
+
+#mario-tube
+  background: #8cb4ff
+
+  div
+    width: 170px
+    height: 250px
+    margin-left: -(@width/2)
+    margin-top: -50px
+
+    background-image: linear-gradient(to bottom,
+                                          black(.5) 4%,
+                                          black(0) 10%),
+                      linear-gradient(-150deg,
+                                          black(.4) 10%,
+                                          black(0) 20%),
+                      linear-gradient(to right,
+                                          #2a7d2f 0%,
+                                          #78fc73 25%,
+                                          #78fc73 35%,
+                                          #113e15 95%)
+
+    border-left: 1px solid #236d22
+
+    &:before
+      width: 210px
+      height: 60px
+      margin-left: -20px
+
+      top: -@height
+
+      background-image: linear-gradient(to bottom,
+                                          white(0) 1px,
+                                          white(.3) 2px,
+                                          white(.3) 3px,
+                                          white(0) 4px),
+                        linear-gradient(to top,
+                                          black(.4) 3px,
+                                          white(.2) 5px,
+                                          white(0) 6px),
+                        linear-gradient(to right,
+                                          #2a7d2f 0%,
+                                          #78fc73 25%,
+                                          #78fc73 35%,
+                                          #113e15 95%)
+
+      border-radius: 5px
+
+    &:after
+      width: 40px
+      height: 2px
+
+      background: linear-gradient(to right,
+                                      white(0) 5%,
+                                      white(.7) 20%,
+                                      white(.7) 80%,
+                                      white(0) 95%)
+
+      top: -58px
+      left: 30px
+
+    @media (max-width: 400px)
+
+      margin-top: -25px
