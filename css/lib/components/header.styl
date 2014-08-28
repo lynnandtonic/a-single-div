@@ -5,7 +5,8 @@ Header and global styles
 -----------------------------*/
 
 header
-  padding: 10px 15px 7px
+  padding: 10px 80px 7px 15px
+  position: relative
   background: #333;
   color: white
   font-family: Georgia, Times, serif
@@ -26,6 +27,21 @@ header
       text-decoration: none
       border-bottom: 1px dotted
 
-  @media (max-width: 400px)
+  .share-link
+    padding: 15px 10px 7px
+    position: absolute
+    right: 15px
+    top: -8px
+    background: #55acee
+    border-radius: 5px
+    color: white
+    text-decoration: none
+    font-style: normal
+    font-size: 12px
+    font-family: Helvetica, Arial, sans-serif
+    &:hover
+      background: #469cd1
 
-    padding: 15px
+  @media (max-width: 500px)
+
+    padding: 15px 80px 15px 15px
