@@ -1,0 +1,118 @@
+/*-----------------------------
+
+Vacancy
+
+-----------------------------*/
+
+#vacancy
+  background: #111
+
+  div
+    width: 350px
+    height: 200px
+    margin-left: -190px
+    margin-top: -(@height/2)
+    top: 50%
+    left: 50%
+    background: #222
+    background-image: linear-gradient(to right,
+                                                  #222 20px,
+                                                  transparent 20px,
+                                                  transparent 190px,
+                                                  #222 190px,
+                                                  #222 210px,
+                                                  transparent 210px,
+                                                  transparent 330px,
+                                                  #222 330px),
+                      linear-gradient(to bottom,
+                                                  #222 30px,
+                                                  transparent 30px,
+                                                  transparent 170px,
+                                                  #222 170px),
+                      linear-gradient(to bottom,
+                                                  #333 40px,
+                                                  transparent 40px,
+                                                  transparent 160px,
+                                                  #333 160px),
+                      linear-gradient(to right,
+                                                  #333 30px,
+                                                  transparent 30px,
+                                                  transparent 180px,
+                                                  #333 180px,
+                                                  #333 220px,
+                                                  transparent 220px,
+                                                  transparent 320px,
+                                                  #333 320px),
+                      repeating-linear-gradient(to bottom,
+                                                  transparent 7px,
+                                                  black(.8) 9px,
+                                                  black(.8) 13px,
+                                                  transparent 13px)
+    border-top: 15px solid #333
+    border-left: 15px solid #111
+    border-right: 15px solid #111
+    border-bottom: 6px solid #222
+
+    &:after
+      padding: 50px
+      content: 'VACANCY'
+      left: -5px
+      top: 35px
+      color: #faf37e
+      overflow: hidden
+      font-family: Verdana
+      font-size: 23px
+      text-shadow: 0 0 5px orange,
+                   0 0 15px orange,
+                   0 0 25px orange,
+                   0 0 40px orange,
+                   0 0 60px red,
+                   0 0 80px red,
+                   0 0 105px red,
+                   0 0 250px red
+
+    &:before
+      padding: 50px
+      content: 'NO'
+      left: 10px
+      top: 10px
+      color: #111
+      overflow: hidden
+      font-family: Verdana
+      font-size: 18px
+      animation: blinky 10s infinite
+      -webkit-animation: blinky 10s infinite
+
+    @media (max-width: 500px)
+
+      -webkit-transform: scale(.75)
+      transform: scale(.75)
+
+// Animation CSS demo from Peter Gasston at broken-links.com
+@keyframes blinky
+  21%, 39%, 45%, 47%, 53%
+    color: #111
+    text-shadow: none
+  26%, 38%, 40%, 44%, 46%, 48%
+    color: #faf37e
+    text-shadow: 0 0 5px orange,
+                 0 0 15px orange,
+                 0 0 25px orange,
+                 0 0 35px red,
+                 0 0 50px red,
+                 0 0 65px red,
+                 0 0 100px red
+
+@-webkit-keyframes blinky
+  21%, 39%, 45%, 47%, 53%
+    color: #111
+    text-shadow: none
+  26%, 38%, 40%, 44%, 46%, 48%
+    color: #faf37e
+    text-shadow: 0 0 5px orange,
+                 0 0 15px orange,
+                 0 0 25px orange,
+                 0 0 35px red,
+                 0 0 50px red,
+                 0 0 65px red,
+                 0 0 100px red

@@ -1,0 +1,54 @@
+/*-----------------------------
+
+Cupcake
+
+-----------------------------*/
+
+#cupcake
+  background: pink
+
+  div
+    width: 240px
+    height: 150px
+    margin-left: -(@width/2)
+    margin-top: -30px
+    background: #61381c
+    background-image: radial-gradient(circle at top center,
+                                                  transparent 55%,
+                                                  rgba(73,41,20,.9) 75%),
+                      repeating-linear-gradient(to right,
+                                                  transparent,
+                                                  transparent 7px,
+                                                  black(.7) 9px,
+                                                  black(.7) 20px,
+                                                  transparent 22px),
+                      linear-gradient(to bottom,
+                                                  transparent 15px,
+                                                  white(.5) 16px,
+                                                  white(.3) 40px,
+                                                  transparent 42px)
+    border-bottom-right-radius: 120px 30px
+    border-bottom-left-radius: 120px 30px
+    box-shadow: 0 10px 5px -3px black(.3)
+
+    &:before
+      width: 240px
+      height: 80px
+      margin-left: -(@width/2)
+      left: 50%
+      top: -70px
+      background: mistyrose
+      border-radius: 60% 60% 50px 50px
+      box-shadow: 0 20px 0 6px #3d241c,
+                  inset 0 -15px 25px rgba(145,102,146,.5)
+
+    &:after
+      width: 60px
+      height: 60px
+      margin-left: -(@width/2)
+      top: -95px
+      left: 50%
+      background: crimson
+      border-radius: 50%
+      box-shadow: inset 0 -10px 10px black(.2)
+
