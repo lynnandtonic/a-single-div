@@ -808,7 +808,7 @@ header .share-link:hover {
   overflow: hidden;
   font-family: Verdana;
   font-size: 23px;
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 25px #ffa500, 0 0 40px #ffa500, 0 0 60px #f00, 0 0 80px #f00, 0 0 105px #f00, 0 0 250px #f00;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 25px #ffa500, 0 0 40px #ffa500, 0 0 60px #f00, 0 0 80px #f00, 0 0 105px #f00;
 }
 #vacancy div:before {
   padding: 50px;
