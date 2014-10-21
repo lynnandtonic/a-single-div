@@ -757,7 +757,7 @@ header .share-link:hover {
   margin-left: -120px;
   margin-top: -30px;
   background: #61381c;
-  background-image: radial-gradient(circle at top center, transparent 55%, rgba(73,41,20,0.9) 75%), repeating-linear-gradient(to right, transparent, transparent 7px, rgba(0,0,0,0.7) 9px, rgba(0,0,0,0.7) 20px, transparent 22px), linear-gradient(to bottom, transparent 15px, rgba(255,255,255,0.5) 16px, rgba(255,255,255,0.3) 40px, transparent 42px);
+  background-image: radial-gradient(circle at top center, rgba(73,41,20,0) 55%, rgba(73,41,20,0.9) 75%), repeating-linear-gradient(to right, transparent, transparent 7px, rgba(0,0,0,0.7) 9px, rgba(0,0,0,0.7) 20px, transparent 22px), linear-gradient(to bottom, transparent 15px, rgba(255,255,255,0.5) 16px, rgba(255,255,255,0.3) 40px, transparent 42px);
   border-bottom-right-radius: 120px 30px;
   border-bottom-left-radius: 120px 30px;
   box-shadow: 0 10px 5px -3px rgba(0,0,0,0.3);
