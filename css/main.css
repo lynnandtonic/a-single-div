@@ -894,3 +894,69 @@ header .share-link:hover {
     text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 25px #ffa500, 0 0 35px #f00, 0 0 50px #f00, 0 0 65px #f00, 0 0 100px #f00;
   }
 }
+#candy-apple {
+  background: #faebd7;
+}
+#candy-apple div {
+  width: 150px;
+  height: 150px;
+  margin-left: -75px;
+  margin-top: -20px;
+  background: #dc143c;
+  background-image: radial-gradient(ellipse at 22% 25%, rgba(255,255,255,0.9) 0, rgba(255,255,255,0) 10%);
+  border-radius: 80px 80px 100px 100px;
+}
+#candy-apple div:before {
+  width: 130px;
+  height: 30px;
+  margin-left: -65px;
+  left: 50%;
+  top: 122px;
+  background: #dc143c;
+  border-radius: 50%;
+}
+#candy-apple div:after {
+  width: 40px;
+  height: 150px;
+  margin-left: -20px;
+  left: 50%;
+  top: -130px;
+  background-image: linear-gradient(to right, transparent 30%, #deb887 30%, #d3a05f 70%, transparent 70%);
+  border-bottom-right-radius: 30px 10px;
+  border-bottom-left-radius: 30px 10px;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+}
+#corn-dog {
+  background: #ffe4c4;
+}
+#corn-dog div {
+  width: 16px;
+  height: 150px;
+  margin-left: -8px;
+  margin-top: 0;
+  background: #deb887;
+  background-image: linear-gradient(to right, #deb887, #d3a05f);
+  border-radius: 20px;
+}
+#corn-dog div:before {
+  width: 80px;
+  height: 220px;
+  margin-left: -40px;
+  left: 50%;
+  top: -150px;
+  z-index: 2;
+  background: #cd853f;
+  box-shadow: inset -5px -5px 30px rgba(0,0,0,0.2);
+  border-radius: 50px/70px 70px 100px 100px;
+}
+#corn-dog div:after {
+  width: 18px;
+  height: 23px;
+  margin-left: -9px;
+  left: 50%;
+  top: 65px;
+  background: #cd853f;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.2));
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 5px;
+}

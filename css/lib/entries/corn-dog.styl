@@ -1,0 +1,53 @@
+/*-----------------------------
+
+Corn Dog
+
+-----------------------------*/
+
+#corn-dog
+  background: bisque
+
+  div
+    width: 16px
+    height: 150px
+    margin-left: -(@width/2)
+    margin-top: 0
+
+    background: burlywood
+    background-image: linear-gradient(to right, burlywood, darken(burlywood, 10))
+
+    border-radius: 20px
+
+    &:before
+      width: 80px
+      height: 220px
+      margin-left: -(@width/2)
+      left: 50%
+      top: -150px
+      z-index: 2
+
+      background: peru
+
+      box-shadow: inset -5px -5px 30px black(.2)
+
+      border-radius: 50px / 70px 70px 100px 100px
+
+    &:after
+      width: 18px
+      height: 23px
+      margin-left: -(@width/2)
+      left: 50%
+      top: 65px
+
+      background: peru
+      background-image: linear-gradient(to right, black(0), black(.2))
+
+      border-bottom-right-radius: 15px
+      border-bottom-left-radius: 5px
+
+
+
+
+
+
+

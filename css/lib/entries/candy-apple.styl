@@ -1,0 +1,48 @@
+/*-----------------------------
+
+Candy Apple
+
+-----------------------------*/
+
+#candy-apple
+  background: antiquewhite
+
+  div
+    width: 150px
+    height: 150px
+    margin-left: -(@width/2)
+    margin-top: -20px
+
+    background: crimson
+    background-image: radial-gradient(ellipse at 22% 25%,
+                                                      white(.9) 0,
+                                                      white(0) 10%)
+
+    border-radius: 80px 80px 100px 100px
+
+    &:before
+      width: 130px
+      height: 30px
+      margin-left: -(@width/2)
+      left: 50%
+      top: 122px
+
+      background: crimson
+      border-radius: 50%
+
+    &:after
+      width: 40px
+      height: 150px
+      margin-left: -(@width/2)
+      left: 50%
+      top: -130px
+
+      background-image: linear-gradient(to right, transparent 30%,
+                                                  burlywood 30%,
+                                                  darken(burlywood, 10) 70%,
+                                                  transparent 70%)
+
+      border-bottom-right-radius: 30px 10px
+      border-bottom-left-radius: 30px 10px
+
+      box-shadow: 0 3px 0 black(.2)
