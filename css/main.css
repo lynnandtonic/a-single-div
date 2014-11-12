@@ -454,7 +454,7 @@ header .share-link:hover {
   background: #222;
   background-image: radial-gradient(circle at 170px 220px, rgba(255,255,255,0) 70%, rgba(255,255,255,0.15) 90%), radial-gradient(circle at 50px 80px, transparent 60%, #000 90%);
   box-shadow: -7px 7px 6px -2px rgba(0,0,0,0.3);
-  -webkit-transform: rotate(-45deg);
+  -webkit-transform: rotate(315deg);
   transform: rotate(-45deg);
 }
 @media (max-width: 500px) {
