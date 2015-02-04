@@ -14,21 +14,24 @@ Candy Apple
     margin-top: -20px
 
     background: crimson
-    background-image: radial-gradient(ellipse at 22% 25%,
+    background-image: radial-gradient(ellipse at 22% 30%,
                                                       white(.9) 0,
-                                                      white(0) 10%)
+                                                      white(0) 15%)
 
     border-radius: 80px 80px 100px 100px
+    box-shadow: inset -8px -8px 8px black(.1)
 
     &:before
       width: 130px
-      height: 30px
+      height: 26px
       margin-left: -(@width/2)
       left: 50%
-      top: 122px
+      top: 125px
 
       background: crimson
       border-radius: 50%
+      box-shadow: inset 0 -10px 8px crimson,
+                  inset -5px -18px 8px black(.1)
 
     &:after
       width: 40px
@@ -39,7 +42,7 @@ Candy Apple
 
       background-image: linear-gradient(to right, transparent 30%,
                                                   burlywood 30%,
-                                                  darken(burlywood, 10) 70%,
+                                                  darken(burlywood, 20) 70%,
                                                   transparent 70%)
 
       border-bottom-right-radius: 30px 10px
