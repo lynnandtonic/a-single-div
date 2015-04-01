@@ -1,0 +1,54 @@
+/*-----------------------------
+
+Luggage Tag
+
+-----------------------------*/
+
+#luggage-tag1
+  background: skyblue
+
+  div
+    width: 180px
+    height: 220px
+    margin-left: -(@width/2)
+    margin-top: -90px
+    top: 50%
+    left: 50%
+    box-shadow: 3px 5px 0 black(.1)
+    color: #f2353b
+
+    &:before
+      width: 180px
+      height: 180px
+      padding-top: 80px
+      margin-top: -40px
+      content: 'PHX'
+      font-family: Impact, Arial, sans-serif
+      font-size: 80px
+      background-image: linear-gradient(to bottom, transparent 45px,
+                                                   #f2353b 45px,
+                                                   #f2353b 60px,
+                                                   #f7c791 60px),
+                        linear-gradient(135deg, transparent 30px,
+                                                #f2353b 30px,
+                                                #f2353b 95px,
+                                                transparent 95px),
+                        linear-gradient(225deg, transparent 30px,
+                                                #f2353b 30px,
+                                                #f2353b 95px,
+                                                transparent 95px)
+
+    &:after
+      width: 180px
+      height: 65px
+      padding-top: 160px
+      bottom: 35px
+      background-image: radial-gradient(ellipse at center, skyblue 20%, #df2228 21%, #df2228 45%, transparent 45%)
+      background-size: 65px 65px
+      background-position: 50% 0
+      background-repeat: no-repeat
+      border-bottom: 1px dashed #666
+      content: 'PHOENIX'
+      font-family: Helvetica, Arial, sans-serif
+      font-size: 27px
+      font-weight: bold

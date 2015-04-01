@@ -1,0 +1,52 @@
+/*-----------------------------
+
+Luggage Tag 2
+
+-----------------------------*/
+
+#luggage-tag2
+  background: #f6dfc6
+
+  div
+    width: 200px
+    height: 250px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    top: 50%
+    left: 50%
+    background: white
+    background-image: linear-gradient(to bottom, #f7f7f7 30%,
+                                                 #71bad7 30%,
+                                                 #71bad7 70%,
+                                                 #f7f7f7 70%)
+    box-shadow: 3px 5px 0 black(.1)
+    border-radius: 10px
+    font-family: Helvetica, Arial, sans-serif
+    font-weight: bold
+    color: white
+
+    &:before
+      width: 200px
+      height: 112px
+      padding-top: 68px
+      margin-top: -40px
+      bottom: 30px
+      background-image: linear-gradient(to right, transparent 100px,
+                                                 #71bad7 100px,
+                                                 #71bad7 101px,
+                                                 transparent 101px)
+      border-bottom: 1px solid #71bad7
+      content: 'SFO'
+      font-size: 70px
+
+    &:after
+      width: 200px
+      height: 30px
+      padding-top: 85px
+      top: 0
+      background-image: radial-gradient(ellipse at center, #f8e9d8 20%, white 21%, white 45%, transparent 45%)
+      background-size: 65px 65px
+      background-position: 50% 0
+      background-repeat: no-repeat
+      content: 'SAN FRANCISCO'
+      font-size: 16px
