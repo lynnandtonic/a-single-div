@@ -1,0 +1,85 @@
+/*-----------------------------
+
+Moonrise Kingdom
+
+-----------------------------*/
+
+#moonrise-kingdom
+  background: burlywood
+
+  div
+    width: 180px
+    height: 250px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background-image: 
+                      linear-gradient(to top, transparent 100px,
+                                              #63cbe4 100px),
+                      linear-gradient(to right, cornsilk 15px,
+                                              transparent 15px),
+                      linear-gradient(to left, cornsilk 15px,
+                                              transparent 15px),
+                      linear-gradient(to top, cornsilk 15px,
+                                              transparent 15px,
+                                              transparent 42px,
+                                              #e0d9bf 42px,
+                                              #e0d9bf 50px,
+                                              cornsilk 50px,
+                                              cornsilk 100px,
+                                              transparent 100px)
+
+    border-radius: 7px 7px 3px 3px
+
+    &:before
+      width: 12px
+      height: 12px
+      bottom: 68px
+      left: 33px
+      background: #666
+      border-radius: 50%
+      box-shadow: 0 0 0 7px #ddd,
+                  0 0 0 11px #666,
+                  50px 0 0 #666, // middle circle
+                  50px 0 0 7px #ddd,
+                  50px 0 0 11px #666,
+                  100px 0 0 #666, // right circle
+                  100px 0 0 7px #ddd,
+                  100px 0 0 11px #666,
+                  -5px -75px 0 -2px black(.4),
+                  -5px -60px 0 -2px black(.4),
+                  -5px -45px 0 -2px black(.4),
+                  10px -75px 0 -2px black(.4),
+                  10px -60px 0 -2px black(.4),
+                  10px -45px 0 -2px black(.4),
+                  27px -75px 0 -2px black(.4),
+                  27px -60px 0 -2px black(.4),
+                  27px -45px 0 -2px black(.4),
+                  44px -75px 0 -2px black(.4),
+                  44px -60px 0 -2px black(.4),
+                  44px -45px 0 -2px black(.4),
+                  60px -75px 0 -2px black(.4),
+                  60px -60px 0 -2px black(.4),
+                  60px -45px 0 -2px black(.4),
+                  75px -75px 0 -2px black(.4),
+                  75px -60px 0 -2px black(.4),
+                  75px -45px 0 -2px black(.4),
+                  90px -75px 0 -2px black(.4),
+                  90px -60px 0 -2px black(.4),
+                  90px -45px 0 -2px black(.4),
+                  105px -75px 0 -2px black(.4),
+                  105px -60px 0 -2px black(.4),
+                  105px -45px 0 -2px black(.4)
+
+    &:after
+      width: 120px
+      margin-left: -62px
+      padding: 2px
+      left: 50%
+      top: 70px
+      content: 'BARRINGTON'
+      background: white
+      font-family: Helvetica
+      font-size: 10px
+      font-weight: bold
+      color: #666

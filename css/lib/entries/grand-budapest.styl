@@ -1,0 +1,58 @@
+/*-----------------------------
+
+Grand Budapest
+
+-----------------------------*/
+
+$mendls-pink = #fbd0e4
+$mendls-red = #f93050
+$mendls-blue = #90baff
+
+#grand-budapest
+  background: #efabb3
+
+  div
+    width: 100px
+    height: 100px
+    margin-left: -(@width/2)
+    top: 0
+    background: transparent
+    box-shadow: 0 205px 0 -6px $mendls-pink,
+                0 205px 0 -5px $mendls-red,
+                0 205px $mendls-pink,
+                -105px 205px 0 -6px $mendls-pink,
+                -105px 205px 0 -5px $mendls-red,
+                -105px 205px $mendls-pink,
+                115px 205px 0 -6px $mendls-pink,
+                115px 205px 0 -5px $mendls-red,
+                115px 205px $mendls-pink,
+                -80px 104px 0 -6px $mendls-pink,
+                -80px 104px 0 -5px $mendls-red,
+                -80px 104px $mendls-pink,
+                40px 104px 0 -6px $mendls-pink,
+                40px 104px 0 -5px $mendls-red,
+                40px 104px $mendls-pink
+
+    @media (max-width: 400px)
+      top: 30px
+
+    &:before
+      content: 'MENDL’S'
+      display: inline-block
+      top: 250px
+      left: -82px
+      font-size: 12px
+      font-family: 'Lucida Grande'
+      font-weight: bold
+      color: $mendls-red
+      text-shadow: 220px 0 0 $mendls-red,
+                   24px -101px $mendls-red
+
+    &:after
+      width: 8px
+      height: 100px
+      top: 206px
+      left: -60px
+      background: $mendls-blue
+      box-shadow: 220px 0 $mendls-blue,
+                  145px -101px $mendls-blue
