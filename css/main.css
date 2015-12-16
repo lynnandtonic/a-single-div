@@ -157,46 +157,56 @@ header .share-link:hover {
 }
 @-moz-keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
 @-webkit-keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
 @-o-keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
 @-ms-keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
 @keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
@@ -1405,46 +1415,56 @@ header .share-link:hover {
 }
 @-moz-keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
 @-webkit-keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
 @-o-keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
 @-ms-keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
 @keyframes spin {
   0 {
+    -webkit-transform: rotate(0deg) translateZ(0);
     transform: rotate(0deg) translateZ(0);
   }
 
   100% {
+    -webkit-transform: rotate(-360deg) translateZ(0);
     transform: rotate(-360deg) translateZ(0);
   }
 }
