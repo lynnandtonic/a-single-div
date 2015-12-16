@@ -60,7 +60,7 @@ header .share-link:hover {
   position: absolute;
 }
 @media (max-width: 400px) {
-  .entry div {
+  .entry div:not(.no-scale) {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
   }
