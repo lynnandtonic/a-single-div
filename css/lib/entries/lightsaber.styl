@@ -1,0 +1,172 @@
+/*-----------------------------
+
+Star Wars Light Saber
+
+-----------------------------*/
+
+#lightsaber-darth
+  background: #aaa
+
+  div
+    width: 40px
+    height: 250px
+    margin-left: -(@width/2)
+    left: 50%
+    top: 70px
+    background-color: #ccc
+    background-image: linear-gradient(to right, black(.2) 0,
+                                                transparent 30%,
+                                                transparent 70%,
+                                                black(.2) 100%),
+                      radial-gradient(circle at 26px 75px, #444 5px, transparent 5px),
+                      radial-gradient(circle at 26px 62px, #444 5px, transparent 5px),
+                      linear-gradient(to bottom, transparent 37px,
+                                                 black(.2) 37px,
+                                                 black(.2) 39px,
+                                                 transparent 39px),
+                      linear-gradient(to bottom, #444 20%,
+                                                 transparent 20%),
+                      linear-gradient(to right, transparent 20%,
+                                                white(.4) 25%,
+                                                white(.4) 35%,
+                                                transparent 40%),
+                      linear-gradient(to bottom, transparent 37%,
+                                                 #444 37%,
+                                                 #444 50%,
+                                                 transparent 50%),
+                      linear-gradient(to bottom, #ccc 50%,
+                                                 transparent 50%,
+                                                 transparent 98%,
+                                                 #ddd 98%),
+                      linear-gradient(to right, #444 20%,
+                                                transparent 20%,
+                                                transparent 35%,
+                                                #444 35%,
+                                                #444 65%,
+                                                transparent 65%,
+                                                transparent 80%,
+                                                #444 80%),
+                      linear-gradient(to top, transparent 10px,
+                                              #888 10px,
+                                              #888 12px,
+                                              transparent 12px,
+                                              transparent 14px,
+                                              #888 14px,
+                                              #888 16px,
+                                              transparent 16px,
+                                              transparent 18px,
+                                              #888 18px,
+                                              #888 20px,
+                                              transparent 20px,
+                                              transparent 22px,
+                                              #888 22px,
+                                              #888 24px,
+                                              transparent 24px)
+    border-top-right-radius: 80px 60px
+    border-bottom-right-radius: 40px 10px
+    border-bottom-left-radius: 40px 10px
+
+    &:before
+      width: 8px
+      height: 55px
+      background: #444
+      left: -8px
+      top 20px
+      border-top-left-radius: 10px 20px
+
+    &:after
+      width: 12px
+      height: 34px
+      right: -12px
+      top: 91px
+      background: #444
+      background-image: radial-gradient(circle at center center, #888 3px, transparent 3px)
+
+#lightsaber-luke
+  background: #f7f7f7
+
+  div
+    width: 24px
+    height: 96px
+    margin-left: -(@width/2)
+    left: 50%
+    top: 70px
+    background-image: linear-gradient(to bottom, #ccc 20px,
+                                                goldenrod 20px,
+                                                goldenrod 60px,
+                                                #444 60px)
+
+    &:before
+      width: 40px
+      height: 250px
+      margin-left: -(@width/2)
+      left: 50%
+      background-image: linear-gradient(to right, transparent 25%,
+                                                  white(.4) 35%,
+                                                  transparent 45%,
+                                                  transparent 55%,
+                                                  white(.4) 65%,
+                                                  transparent 75%),
+                        linear-gradient(to bottom, #ccc 10px,
+                                                   transparent 10px,
+                                                   transparent 45px,
+                                                   goldenrod 45px,
+                                                   goldenrod 60px,
+                                                   #ccc 60px,
+                                                   #ccc 65px,
+                                                   transparent 65px),
+                        linear-gradient(to top, transparent 20px,
+                                                black(.1) 20px,
+                                                black(.1) 22px,
+                                                transparent 22px),
+                        linear-gradient(to top, #ccc 90px,
+                                                #444 90px,
+                                                #444 98px,
+                                                #ccc 98px,
+                                                #ccc 102px,
+                                                #444 102px,
+                                                #444 106px,
+                                                #ccc 106px,
+                                                #ccc 110px,
+                                                #444 110px,
+                                                #444 114px,
+                                                #ccc 114px,
+                                                #ccc 118px,
+                                                #444 118px,
+                                                #444 122px,
+                                                #ccc 122px,
+                                                #ccc 126px,
+                                                #444 126px,
+                                                #444 130px,
+                                                #ccc 130px,
+                                                #ccc 134px,
+                                                #444 134px,
+                                                #444 138px,
+                                                #ccc 138px,
+                                                #ccc 142px,
+                                                #444 142px,
+                                                #444 146px,
+                                                #ccc 146px,
+                                                #ccc 150px,
+                                                #444 150px,
+                                                #444 154px,
+                                                #ccc 154px,
+                                                #ccc 158px,
+                                                transparent 158px)
+      border-bottom-right-radius: 40px 10px
+      border-bottom-left-radius: 40px 10px
+
+    &:after
+      width: 10px
+      height: 44px
+      background-image: radial-gradient(circle at 7px 15px, tomato 2px,
+                                                             transparent 2px),
+                        radial-gradient(circle at 7px 7px, lime 2px,
+                                                             transparent 2px),
+                        linear-gradient(to bottom, #ccc 50%,
+                                                   #444 50%)
+      left: -24px
+      bottom: -112px
+      border-left: 4px solid goldenrod
+      border-right: 4px solid #ccc
+      box-shadow: 1px 0 0 black(.2)

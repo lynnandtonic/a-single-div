@@ -1,0 +1,137 @@
+/*-----------------------------
+
+Star Wars BB8
+
+-----------------------------*/
+
+
+@keyframes spin
+  0
+    transform: rotate(0deg)
+  100%
+    transform: rotate(-360deg)
+
+#bb8
+  background: #444
+  z-index: -3
+
+  // head
+  div
+    width: 120px
+    height: 78px
+    margin-left: -(@width/2)
+    top: 60px
+    left: 50%
+    background-color: white
+    background-image: radial-gradient(circle at 85px 50px, #555 5px, transparent 6px),
+                      radial-gradient(circle at 85px 50px, white 7px, transparent 8px),
+                      radial-gradient(circle at 85px 50px, #555 10px, transparent 11px),
+                      radial-gradient(circle at 58px 32px, white(.9) 2px, transparent 3px),
+                      radial-gradient(circle at 52px 36px, #333 12px, transparent 13px),
+                      radial-gradient(circle at 52px 36px, #555 16px, transparent 17px),
+                      radial-gradient(circle at 52px 37px, white 20px, transparent 20px),
+                      linear-gradient(to top, #aaa 7px, transparent 7px),
+                      linear-gradient(to bottom, white 7px,
+                                                 #ccc 7px,
+                                                 #aaa 15px,
+                                                 white 15px,
+                                                 white 18px,
+                                                 orange 18px,
+                                                 orange 24px,
+                                                 transparent 24px),
+                      linear-gradient(to right, transparent 29px,
+                                                #ccc 30px,
+                                                #ccc 31px,
+                                                transparent 31px,
+                                                transparent 60px,
+                                                #ccc 61px,
+                                                #ccc 62px,
+                                                transparent 62px),
+                      linear-gradient(to right, transparent 5px,
+                                                white 5px,
+                                                white 10px,
+                                                transparent 10px,
+                                                transparent 30px,
+                                                white 30px,
+                                                white 40px,
+                                                transparent 40px,
+                                                transparent 50px,
+                                                white 50px,
+                                                white 100px,
+                                                transparent 100px,
+                                                transparent 115px,
+                                                white 115px),
+                      linear-gradient(to top, orange 16px, transparent 16px)
+
+    border-radius: 50% / 60px
+    border-bottom-right-radius: 50px 10px
+    border-bottom-left-radius: 50px 10px
+    border-bottom: 8px solid #ccc
+    box-shadow: inset -5px -2px 20px black(.4)
+
+    // body
+    &:before
+      width: 200px
+      height: @width
+      margin-left: -(@width/2)
+      margin-top: 79px
+      left: 50%
+      background-color: white
+      background-image: radial-gradient(ellipse at top right, orange 50px, transparent 50px),
+                        radial-gradient(ellipse at bottom right, orange 50px, transparent 50px),
+                        radial-gradient(ellipse at top left, orange 50px, transparent 50px),
+                        radial-gradient(ellipse at bottom left, orange 50px, transparent 50px),
+                        radial-gradient(circle at 100px 100px, transparent 60px, white 61px),
+                        radial-gradient(circle at 100px 100px, transparent 44px, orange 45px),
+                        linear-gradient(to bottom, transparent 90px,
+                                                   white 90px,
+                                                   white 93px,
+                                                   transparent 93px,
+                                                   transparent 99px,
+                                                   white 99px,
+                                                   white 103px,
+                                                   transparent 103px,
+                                                   transparent 108px,
+                                                   white 108px,
+                                                   white 112px,
+                                                   transparent 112px),
+                        radial-gradient(circle at 100px 100px, #aaa 24px, transparent 25px),
+                        radial-gradient(circle at 100px 100px, white 28px, transparent 29px),
+                        linear-gradient(-45deg, transparent 132px,
+                                                white 132px,
+                                                white 136px,
+                                                orange 136px,
+                                                orange 152px,
+                                                white 152px,
+                                                white 155px,
+                                                transparent 155px),
+                        linear-gradient(45deg,  transparent 129px,
+                                                white 129px,
+                                                white 133px,
+                                                orange 133px,
+                                                orange 150px,
+                                                white 150px,
+                                                white 153px,
+                                                transparent 153px),
+                        linear-gradient(to bottom, transparent 75px,
+                                                   white 75px,
+                                                   white 119px,
+                                                   transparent 119px),
+                        radial-gradient(circle at 100px 100px, #aaa 40px, transparent 41px),
+                        radial-gradient(circle at 100px 100px, white 44px, transparent 45px)
+
+      border-radius: 50%
+      z-index: -2
+      animation: spin .8s infinite linear
+
+    // body shadows
+    &:after
+      width: 200px
+      height: @width
+      margin-left: -(@width/2)
+      margin-top: 79px
+      left: 50%
+      border-radius: 50%
+      background-image: linear-gradient(to bottom, black(.6) 10px, transparent 15px)
+      box-shadow: inset 0 -20px 30px black(.5)
+      z-index: -1
