@@ -129,7 +129,7 @@ header .share-link:hover {
   border-bottom-right-radius: 50px 10px;
   border-bottom-left-radius: 50px 10px;
   border-bottom: 8px solid #ccc;
-  box-shadow: inset -5px -2px 20px rgba(0,0,0,0.4), 0 26px 5px -25px rgba(0,0,0,0.6), 0 25px 5px -18px rgba(0,0,0,0.4);
+  box-shadow: inset -5px -2px 20px rgba(0,0,0,0.4), 0 26px 5px -25px rgba(0,0,0,0.6), 0 23px 5px -18px rgba(0,0,0,0.4);
 }
 #bb8 div:before {
   width: 200px;
@@ -1376,7 +1376,7 @@ header .share-link:hover {
   border-bottom-right-radius: 50px 10px;
   border-bottom-left-radius: 50px 10px;
   border-bottom: 8px solid #ccc;
-  box-shadow: inset -5px -2px 20px rgba(0,0,0,0.4), 0 26px 5px -25px rgba(0,0,0,0.6), 0 25px 5px -18px rgba(0,0,0,0.4);
+  box-shadow: inset -5px -2px 20px rgba(0,0,0,0.4), 0 26px 5px -25px rgba(0,0,0,0.6), 0 23px 5px -18px rgba(0,0,0,0.4);
 }
 #bb8 div:before {
   width: 200px;
