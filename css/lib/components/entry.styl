@@ -19,10 +19,11 @@ Entry styles
       content: ''
       position: absolute
 
-    @media (max-width: 400px)
+@media (max-width: 400px)
 
-      -webkit-transform: scale(.8)
-      transform: scale(.8)
+  .entry div:not(.no-scale)
+    -webkit-transform: scale(.8)
+    transform: scale(.8)
 
 .cf
   &:before,
