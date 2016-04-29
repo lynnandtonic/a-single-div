@@ -1,0 +1,140 @@
+/*-----------------------------
+
+Pizza <3
+
+-----------------------------*/
+
+#pizza-works
+  background: cornsilk
+
+  div
+    width: 200px
+    height: 200px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background: tan
+    background-image: radial-gradient(circle, rgba(255,215,0,.24) 30%,
+                                              transparent 58%),
+                      radial-gradient(circle, lemonchiffon 55%,
+                                              transparent 58%),
+                      radial-gradient(circle, firebrick 60%,
+                                              transparent 61%),
+                      radial-gradient(circle, rgba(139,69,19,.4) 58%,
+                                              transparent 64%),
+                      radial-gradient(circle, transparent 66%,
+                                              saddlebrown 81%)
+
+    border-radius: 50%
+    box-shadow: 2px 2px 5px black(.2)
+
+    //- pepperoni and sausage
+    &:before
+      width: 25px
+      height: 25px
+      left: 50px
+      top: 50px
+
+      background: firebrick
+      border-radius: 50%
+
+      box-shadow: 20px 20px 0 -5px peru,
+                  30px -20px 0 -5px peru,
+                  -15px 25px 0 -5px peru,
+                  30px 60px 0 -5px peru,
+                  68px 25px 0 -5px peru,
+                  85px 80px 0 -5px peru,
+                  45px 25px 0 firebrick,
+                  60px -15px 0 firebrick,
+                  -10px 50px 0 firebrick,
+                  90px 30px 0 firebrick,
+                  20px 90px 0 firebrick,
+                  65px 70px 0 firebrick
+
+    //- peppers and onions
+    &:after
+      width: 6px
+      height: 6px
+      left: 80px
+      top: 60px
+
+      background: seagreen
+      border-radius: 2px
+
+      box-shadow: 50px 10px 0 seagreen,
+                  -20px 30px 0 seagreen,
+                  -10px 55px 0 seagreen,
+                  -25px 80px 0 seagreen,
+                  35px 50px 0 seagreen,
+                  40px 90px 0 seagreen,
+                  70px 60px 0 seagreen,
+                  70px 0px 0 white,
+                  25px -10px 0 white,
+                  -10px -15px 0 white,
+                  -15px 40px 0 white,
+                  10px 30px 0 white,
+                  20px 70px 0 white,
+                  50px 50px 0 white,
+                  55px 85px 0 white
+
+#pizza-marg
+  background: blanchedalmond
+
+  div
+    width: 200px
+    height: 200px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background: burlywood
+    background-image: radial-gradient(circle, rgba(139,0,0,.3) 25%,
+                                              transparent 58%),
+                      radial-gradient(circle, firebrick 63%,
+                                              transparent 65%),
+                      radial-gradient(circle, transparent 65%,
+                                              saddlebrown 84%)
+
+    border-radius: 50%
+    box-shadow: 2px 2px 5px black(.2)
+
+    //- mozzarella, pepper
+    &:before
+      width: 32px
+      height: 32px
+      left: 45px
+      top: 48px
+
+      background: white
+      border-radius: 50%
+
+      box-shadow: 50px -23px 0 white,
+                  91px 20px 0 white,
+                  36px 30px 0 white,
+                  -10px 60px 0 white,
+                  25px 89px 0 white,
+                  80px 80px 0 white,
+                  20px -30px 0 -14px black(.4),
+                  -30px 10px 0 -14px black(.5),
+                  -5px 35px 0 -14px black(.4),
+                  16px 16px 0 -14px black(.5),
+                  90px -10px 0 -14px black(.4),
+                  58px 10px 0 -14px black(.5),
+                  60px 60px 0 -14px black(.5),
+                  105px 55px 0 -14px black(.4),
+                  -5px 90px 0 -14px black(.5),
+                  55px 105px 0 -14px black(.5)
+
+    //- basil
+    &:after
+      width: 20px
+      height: 20px
+      left: 65px
+      top: 45px
+
+      background: seagreen
+      border-radius: 35px 5px
+
+      box-shadow: 50px 55px 0 seagreen,
+                  70px -10px 0 -2px seagreen,
+                  -10px 80px 0 -2px seagreen,
+                  40px 105px 0 -2px seagreen
