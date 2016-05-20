@@ -1,0 +1,39 @@
+#watch
+  background: #5DC2A6
+  div
+    width: 96px
+    height: 150px
+    transform: rotate(90deg)
+    margin-top: -100px
+    margin-left: 144px
+    background: #393939
+    box-shadow: -55px 92px 0 -42px #CBCACA,
+                56px 92px 0 -42px #CBCACA,
+                -55px 267px 0 -42px #CBCACA,
+                56px 267px 0 -42px #CBCACA,
+                0px 360px 0 0px #393939
+    &:before
+      content: ''
+      width: 200px
+      height: 200px
+      position: absolute
+      left: 50%
+      bottom: -206px
+      transform: translateX(-50%)
+      background: #737474
+      background-image: radial-gradient(circle, #3d3d3d 5%, rgba(0, 0, 0, 0) 0%), 
+                        radial-gradient(circle, white 54%, rgba(0, 0, 0, 0) 38%), 
+                        radial-gradient(circle, #f3f3f3 59%, rgba(0, 0, 0, 0) 54%), 
+                        radial-gradient(circle, #b3b3b3 60%, rgba(0, 0, 0, 0) 54%), 
+                        radial-gradient(circle, #e4e5e5 68%, rgba(0, 0, 0, 0) 64%)
+      border-radius: 50%
+    &:after
+      content: ''
+      width: 55px
+      height: 6px
+      position: absolute
+      background: #3D3D3D
+      bottom: -109px
+      left: 50px
+      border-radius: 2px
+      box-shadow: -61px 0px 0px -2px #3d3d3d
