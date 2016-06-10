@@ -1,0 +1,89 @@
+/*-----------------------------
+
+Cassette
+
+-----------------------------*/
+
+#cassette
+  background: #ccc
+
+  div
+    width: 180px
+    height: 120px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    border-radius: 5px
+    background-image: linear-gradient(to right, #444 10px, transparent 10px),
+                      linear-gradient(to left, #444 10px, transparent 10px),
+                      linear-gradient(135deg, #444 20px, transparent 20px),
+                      linear-gradient(-135deg, #444 20px, transparent 20px),
+                      linear-gradient(to bottom, transparent 35px,
+                                                 #be0974 35px,
+                                                 #be0974 43px,
+                                                 #da6a57 43px,
+                                                 #da6a57 51px,
+                                                 #eebc31 51px,
+                                                 #eebc31 59px,
+                                                 #92a25b 59px,
+                                                 #92a25b 67px,
+                                                 #46a7c0 67px,
+                                                 #46a7c0 75px,
+                                                 transparent 75px),
+                      linear-gradient(to bottom, transparent 10px,
+                                                 #f7f7f7 10px,
+                                                 #f7f7f7 85px,
+                                                 transparent 85px),
+                      linear-gradient(to top, transparent 26px,
+                                              #444 26px),
+                      linear-gradient(105deg, #444 70px,
+                                              #333 70px,
+                                              #333 73px,
+                                              transparent 73px),
+                      linear-gradient(-105deg, #444 70px,
+                                              #333 70px,
+                                              #333 73px,
+                                              transparent 73px),
+                      linear-gradient(to top, #444 24px,
+                                              #777 24px,
+                                              #777 26px,
+                                              #444 26px)
+    box-shadow: -4px -4px 2px black(.2)
+
+    &:before
+      width: 90px
+      height: 26px
+      margin-left: -(@width/2)
+      left: 50%
+      top: 41px
+      background-color: #ccc
+      background-image: linear-gradient(to bottom, #444 5px, transparent 5px),
+                        linear-gradient(to top, #444 5px, transparent 5px),
+                        linear-gradient(to right, #444 30px, transparent 30px),
+                        linear-gradient(to left, #444 30px, transparent 30px),
+                        radial-gradient(circle at 10px 12px, sienna 32px, transparent 32px)
+      border-radius: 30px
+
+    &:after
+      width: 5px
+      height: 5px
+      background: #999
+      border-radius: 50%
+      box-shadow: 165px   0   0 #999,
+                    0   104px 0 #999,
+                  165px 104px 0 #999,
+                   55px 101px 0 1px #222,
+                   68px  98px 0 1px #222,
+                   98px  98px 0 1px #222,
+                  110px 101px 0 1px #222,
+                   51px  38px 0 #444,
+                  114px  38px 0 #444,
+                   44px  46px 0 #444,
+                   58px  46px 0 #444,
+                  107px  46px 0 #444,
+                  121px  46px 0 #444,
+                   51px  53px 0 #444,
+                  114px  53px 0 #444,
+                   51px  46px 0 6px #ccc,
+                  114px  46px 0 6px #ccc
+      left: 5px
+      top: 5px

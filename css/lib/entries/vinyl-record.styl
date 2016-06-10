@@ -1,0 +1,61 @@
+/*-----------------------------
+
+Vinyl Record
+
+-----------------------------*/
+
+#vinyl-record
+  background: #ddd
+
+  div
+    width: 160px
+    height: 160px
+    margin-left: -(@width/2)
+    margin-top: -140px
+    border-radius: 50%
+    background: linear-gradient(50deg, white(0) 40%,
+                                      white(.15) 50%,
+                                      white(0) 60%),
+                linear-gradient(-50deg, white(0) 40%,
+                                      white(.15) 50%,
+                                      white(0) 60%),
+                repeating-radial-gradient(circle, #333 0,
+                                                  #333 2px,
+                                                  #444 2px,
+                                                  #444 4px)
+    box-shadow: -3px -3px 2px black(.2)
+
+    &:before
+      width: 45px
+      height: 45px
+      margin-left: -(@width/2)
+      margin-top: -(@height/2)
+      top: 50%
+      left: 50%
+      background-color: beige
+      background-image: radial-gradient(circle, #333 5px, transparent 5px),
+                        linear-gradient(to bottom, tan 35%, transparent 35%)
+      border-radius: 50%
+      box-shadow: 0 0 0 10px black(.3)
+
+    &:after
+      width: 160px
+      height: 160px
+      margin-left: -8px
+      top: 100px
+      background-color: #f7f7f7
+      background-image: linear-gradient(-45deg, #be0974 20px,
+                                                #da6a57 20px,
+                                                #da6a57 40px,
+                                                #eebc31 40px,
+                                                #eebc31 60px,
+                                                #92a25b 60px,
+                                                #92a25b 80px,
+                                                #46a7c0 80px,
+                                                #46a7c0 100px,
+                                                transparent 100px)
+      border-radius: 4px
+      border: 8px solid #f7f7f7
+      box-shadow: 0 -2px 3px black(.1),
+                  0 -12px 0 -3px white,
+                  -4px -4px 2px black(.1)

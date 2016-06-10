@@ -81,6 +81,9 @@ header .share-link:hover {
   .entry.wide {
     width: 100%;
   }
+  .entry.threes {
+    width: 33.333%;
+  }
 }
 #battery {
   background: black;
@@ -419,6 +422,69 @@ header .share-link:hover {
   border-bottom-right-radius: 30px 10px;
   border-bottom-left-radius: 30px 10px;
   box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+}
+#cassette {
+  background: #ccc;
+}
+#cassette div {
+  width: 180px;
+  height: 120px;
+  margin-left: -90px;
+  margin-top: -60px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #444 10px, transparent 10px), linear-gradient(to left, #444 10px, transparent 10px), linear-gradient(135deg, #444 20px, transparent 20px), linear-gradient(-135deg, #444 20px, transparent 20px), linear-gradient(to bottom, transparent 35px, #be0974 35px, #be0974 43px, #da6a57 43px, #da6a57 51px, #eebc31 51px, #eebc31 59px, #92a25b 59px, #92a25b 67px, #46a7c0 67px, #46a7c0 75px, transparent 75px), linear-gradient(to bottom, transparent 10px, #f7f7f7 10px, #f7f7f7 85px, transparent 85px), linear-gradient(to top, transparent 26px, #444 26px), linear-gradient(105deg, #444 70px, #333 70px, #333 73px, transparent 73px), linear-gradient(-105deg, #444 70px, #333 70px, #333 73px, transparent 73px), linear-gradient(to top, #444 24px, #777 24px, #777 26px, #444 26px);
+  box-shadow: -4px -4px 2px rgba(0,0,0,0.2);
+}
+#cassette div:before {
+  width: 90px;
+  height: 26px;
+  margin-left: -45px;
+  left: 50%;
+  top: 41px;
+  background-color: #ccc;
+  background-image: linear-gradient(to bottom, #444 5px, transparent 5px), linear-gradient(to top, #444 5px, transparent 5px), linear-gradient(to right, #444 30px, transparent 30px), linear-gradient(to left, #444 30px, transparent 30px), radial-gradient(circle at 10px 12px, #a0522d 32px, transparent 32px);
+  border-radius: 30px;
+}
+#cassette div:after {
+  width: 5px;
+  height: 5px;
+  background: #999;
+  border-radius: 50%;
+  box-shadow: 165px 0 0 #999, 0 104px 0 #999, 165px 104px 0 #999, 55px 101px 0 1px #222, 68px 98px 0 1px #222, 98px 98px 0 1px #222, 110px 101px 0 1px #222, 51px 38px 0 #444, 114px 38px 0 #444, 44px 46px 0 #444, 58px 46px 0 #444, 107px 46px 0 #444, 121px 46px 0 #444, 51px 53px 0 #444, 114px 53px 0 #444, 51px 46px 0 6px #ccc, 114px 46px 0 6px #ccc;
+  left: 5px;
+  top: 5px;
+}
+#cd {
+  background: #bbb;
+}
+#cd div {
+  width: 140px;
+  height: 140px;
+  margin-left: -70px;
+  margin-top: -140px;
+  border-radius: 50%;
+  background-color: #eee;
+  background-image: radial-gradient(circle, #bbb 10px, #ddd 10px, #ddd 20px, #999 20px, #999 23px, transparent 23px), linear-gradient(55deg, transparent 40%, rgba(0,0,0,0.1) 50%, transparent 60%), linear-gradient(-80deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 65%), linear-gradient(20deg, rgba(255,255,255,0) 35%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 65%);
+  box-shadow: 0 0 0 4px #ccc, -6px -6px 2px rgba(0,0,0,0.2);
+}
+#cd div:before {
+  width: 160px;
+  height: 146px;
+  left: -12px;
+  top: 114px;
+  background-color: #eee;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.15), transparent 10px), linear-gradient(to top, #eee 60%, transparent 60%), linear-gradient(to left, transparent 35px, #be0974 35px, #be0974 55px, #da6a57 55px, #da6a57 75px, #eebc31 75px, #eebc31 95px, #92a25b 95px, #92a25b 115px, #46a7c0 115px, #46a7c0 135px, transparent 135px);
+  box-shadow: -2px -1px 2px 0 rgba(0,0,0,0.2);
+}
+#cd div:after {
+  width: 186px;
+  height: 154px;
+  left: -34px;
+  top: 110px;
+  background-color: rgba(255,255,255,0.2);
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 14px, rgba(255,255,255,0.4) 14px, rgba(255,255,255,0.4) 16px, rgba(255,255,255,0) 16px), linear-gradient(30deg, rgba(255,255,255,0) 30px, rgba(255,255,255,0.4) 60px, rgba(255,255,255,0) 90px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: -3px -3px 2px rgba(0,0,0,0.2), inset -5px -5px 2px rgba(0,0,0,0.15), inset 3px 3px 2px rgba(0,0,0,0.1);
 }
 #corn-dog {
   background: #ffe4c4;
@@ -1422,4 +1488,39 @@ header .share-link:hover {
     color: #faf37e;
     text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 25px #ffa500, 0 0 35px #f00, 0 0 50px #f00, 0 0 65px #f00, 0 0 100px #f00;
   }
+}
+#vinyl-record {
+  background: #ddd;
+}
+#vinyl-record div {
+  width: 160px;
+  height: 160px;
+  margin-left: -80px;
+  margin-top: -140px;
+  border-radius: 50%;
+  background: linear-gradient(50deg, rgba(255,255,255,0) 40%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 60%), linear-gradient(-50deg, rgba(255,255,255,0) 40%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 60%), repeating-radial-gradient(circle, #333 0, #333 2px, #444 2px, #444 4px);
+  box-shadow: -3px -3px 2px rgba(0,0,0,0.2);
+}
+#vinyl-record div:before {
+  width: 45px;
+  height: 45px;
+  margin-left: -22.5px;
+  margin-top: -22.5px;
+  top: 50%;
+  left: 50%;
+  background-color: #f5f5dc;
+  background-image: radial-gradient(circle, #333 5px, transparent 5px), linear-gradient(to bottom, #d2b48c 35%, transparent 35%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(0,0,0,0.3);
+}
+#vinyl-record div:after {
+  width: 160px;
+  height: 160px;
+  margin-left: -8px;
+  top: 100px;
+  background-color: #f7f7f7;
+  background-image: linear-gradient(-45deg, #be0974 20px, #da6a57 20px, #da6a57 40px, #eebc31 40px, #eebc31 60px, #92a25b 60px, #92a25b 80px, #46a7c0 80px, #46a7c0 100px, transparent 100px);
+  border-radius: 4px;
+  border: 8px solid #f7f7f7;
+  box-shadow: 0 -2px 3px rgba(0,0,0,0.1), 0 -12px 0 -3px white, -4px -4px 2px rgba(0,0,0,0.1);
 }

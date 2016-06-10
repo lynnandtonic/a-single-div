@@ -1,0 +1,74 @@
+/*-----------------------------
+
+CD
+
+-----------------------------*/
+
+#cd
+  background: #bbb
+
+  div
+    width: 140px
+    height: 140px
+    margin-left: -(@width/2)
+    margin-top: -140px
+    border-radius: 50%
+    background-color: #eee
+    background-image: radial-gradient(circle, #bbb 10px,
+                                        #ddd 10px,
+                                        #ddd 20px,
+                                        #999 20px,
+                                        #999 23px,
+                                        transparent 23px),
+                      linear-gradient(55deg, transparent 40%,
+                                             black(.1) 50%,
+                                             transparent 60%),
+                      linear-gradient(-80deg, white(0) 35%,
+                                              white(.8) 50%,
+                                              white(0) 65%),
+                      linear-gradient(20deg, white(0) 35%,
+                                             white(.8) 50%,
+                                             white(0) 65%)
+
+    box-shadow: 0 0 0 4px #ccc,
+                -6px -6px 2px black(.2)
+
+    &:before
+      width: 160px
+      height: 146px
+      left: -12px
+      top: 114px
+      background-color: #eee
+      background-image: linear-gradient(to right, black(.15), transparent 10px),
+                        linear-gradient(to top, #eee 60%, transparent 60%),
+                        linear-gradient(to left, transparent 35px,
+                                                  #be0974 35px,
+                                                  #be0974 55px,
+                                                  #da6a57 55px,
+                                                  #da6a57 75px,
+                                                  #eebc31 75px,
+                                                  #eebc31 95px,
+                                                  #92a25b 95px,
+                                                  #92a25b 115px,
+                                                  #46a7c0 115px,
+                                                  #46a7c0 135px,
+                                                  transparent 135px)
+      box-shadow: -2px -1px 2px 0 black(.2)
+
+    &:after
+      width: 186px
+      height: 154px
+      left: -34px
+      top: 110px
+      background-color: white(.2)
+      background-image: linear-gradient(to right, white(0) 14px,
+                                                  white(.4) 14px,
+                                                  white(.4) 16px,
+                                                  white(0) 16px),
+                        linear-gradient(30deg, white(0) 30px,
+                                               white(.4) 60px,
+                                               white(0) 90px)
+      border: 1px solid white(.2)
+      box-shadow: -3px -3px 2px black(.2),
+                  inset -5px -5px 2px black(.15),
+                  inset 3px 3px 2px black(.1)
