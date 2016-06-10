@@ -889,7 +889,7 @@ header .share-link:hover {
   height: 180px;
   margin-left: -55px;
   margin-top: -90px;
-  background-image: linear-gradient(to top, transparent 21px, #7b5354 21px, #7b5354 26px, transparent 26px, transparent 66px, #ffd889 66px, #ffd889 71px, transparent 71px, transparent 110px, #548355 110px, #548355 115px, transparent 115px, transparent 155px, #965537 155px, #965537 160px, transparent 160px);
+  background-image: linear-gradient(to top, transparent 20px, #7b5354 20px, #7b5354 25px, transparent 25px, transparent 65px, #ffd889 65px, #ffd889 70px, transparent 70px, transparent 109px, #548355 109px, #548355 114px, transparent 114px, transparent 154px, #965537 154px, #965537 159px, transparent 159px);
 }
 #macarons div:before {
   width: 110px;
