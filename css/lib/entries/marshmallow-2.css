@@ -4,15 +4,15 @@ Marshmallow 2
 
 -----------------------------*/
 #marshmallow2 {
-  background: #afeeee;
+  background: #97e9e9;
 }
 #marshmallow2 div {
   width: 100px;
   height: 120px;
   margin-left: -50px;
   margin-top: -62px;
-  background-color: #f5f5f5;
-  background-image: radial-gradient(circle at 50% -70px, #fff 48%, transparent 53%), linear-gradient(-80deg, black(0.08), transparent 30%, transparent 60%, white(0.8) 100%);
+  background-color: #eee;
+  background-image: radial-gradient(circle at 50% -70px, white(0.85) 48%, white(0) 53%), linear-gradient(-80deg, black(0.09), white(0) 30%, white(0) 60%, white(0.8) 100%);
   border-top-left-radius: 100px 32px;
   border-top-right-radius: 100px 32px;
   border-bottom-left-radius: 100px 40px;

@@ -1081,7 +1081,7 @@ header .share-link:hover {
   margin-left: -50px;
   margin-top: -62px;
   background-color: #eee;
-  background-image: radial-gradient(circle at 50% -70px, rgba(255,255,255,0.85) 48%, transparent 53%), linear-gradient(-80deg, rgba(0,0,0,0.09), transparent 30%, transparent 60%, rgba(255,255,255,0.8) 100%);
+  background-image: radial-gradient(circle at 50% -70px, rgba(255,255,255,0.85) 48%, rgba(255,255,255,0) 53%), linear-gradient(-80deg, rgba(0,0,0,0.09), rgba(255,255,255,0) 30%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.8) 100%);
   border-top-left-radius: 100px 32px;
   border-top-right-radius: 100px 32px;
   border-bottom-left-radius: 100px 40px;
