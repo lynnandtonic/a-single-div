@@ -1,0 +1,71 @@
+/*-----------------------------
+
+Graham Cracker
+
+-----------------------------*/
+
+$graham-drk = #88734e
+
+#graham-cracker
+  background: paleturquoise
+
+  div
+    width: 170px
+    height: 170px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background: linear-gradient(140deg, tan, darken(tan,13%))
+    border-radius: 4px
+    box-shadow: 7px 7px 0 -2px black(.1),
+                inset 5px 5px 4px white(.4),
+                inset -5px -5px 5px black(.17)
+
+    &:before
+      height: 170px
+      margin-left: 85px
+      border-right: 2px dashed white(.15)
+      border-left: 2px dashed black(.15)
+
+    &:after
+      width: 6px
+      height: 6px
+      left: 20px
+      top: 19px
+      background: $graham-drk
+      border-radius: 50%
+      box-shadow:   0     3px 2px 3px white(.15),    // first row
+                   37px   0   0 $graham-drk,
+                   37px   3px 2px 3px white(.15),
+                   87px   0   0 $graham-drk,
+                   87px   3px 2px 3px white(.15),
+                  120px   0   0 $graham-drk,
+                  120px   3px 2px 3px white(.15),
+                   19px  25px 0 $graham-drk,  // second row
+                   19px  28px 2px 3px white(.15),
+                  104px  25px 0 $graham-drk,
+                  104px  28px 2px 3px white(.15),
+                    0    50px 0 $graham-drk,  // third row
+                    2px  53px 2px 3px white(.15),
+                   37px  50px 0 $graham-drk,
+                   37px  53px 2px 3px white(.15),
+                   87px  50px 0 $graham-drk,
+                   87px  53px 2px 3px white(.15),
+                  120px  50px 0 $graham-drk,
+                  120px  53px 2px 3px white(.15),
+                   19px  75px 0 $graham-drk,  // fourth row
+                   19px  78px 2px 3px white(.15),
+                  104px  75px 0 $graham-drk,
+                  104px  78px 2px 3px white(.15),
+                    0   100px 0 $graham-drk,  // fifth row
+                    0   103px 2px 3px white(.15),
+                   37px 100px 0 $graham-drk,
+                   37px 103px 2px 3px white(.15),
+                   87px 100px 0 $graham-drk,
+                   87px 103px 2px 3px white(.15),
+                  120px 100px 0 $graham-drk,
+                  120px 103px 2px 3px white(.15),
+                   19px 125px 0 $graham-drk,  // sixth row
+                   19px 128px 2px 3px white(.15),
+                  104px 125px 0 $graham-drk,
+                  104px 128px 2px 3px white(.15)

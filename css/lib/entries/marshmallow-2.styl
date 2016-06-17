@@ -1,0 +1,30 @@
+/*-----------------------------
+
+Marshmallow 2
+
+-----------------------------*/
+
+#marshmallow2
+  background: darken(paleturquoise,7%)
+
+  div
+    width: 100px
+    height: 120px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 2px)
+
+    background-color: #eee
+    background-image: radial-gradient(circle at 50% -70px,
+                                                        white(.85) 48%,
+                                                        transparent 53%),
+                      linear-gradient(-80deg, black(.09),
+                                               transparent 30%,
+                                               transparent 60%,
+                                               white(.8) 100%)
+
+    border-top-left-radius: 100px 32px
+    border-top-right-radius: 100px 32px
+    border-bottom-left-radius: 100px 40px
+    border-bottom-right-radius: 100px 40px
+
+    box-shadow: 6px 6px 0 -2px black(.07)

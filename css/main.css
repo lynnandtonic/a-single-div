@@ -486,6 +486,45 @@ header .share-link:hover {
   border: 1px solid rgba(255,255,255,0.2);
   box-shadow: -3px -3px 2px rgba(0,0,0,0.2), inset -5px -5px 2px rgba(0,0,0,0.15), inset 3px 3px 2px rgba(0,0,0,0.1);
 }
+#chocolate {
+  background: #7ce3e3;
+}
+#chocolate div {
+  width: 150px;
+  height: 150px;
+  margin-left: -75px;
+  margin-top: -80px;
+  background: linear-gradient(140deg, #8b4513, #793c11);
+  border-radius: 5px;
+  border: 3px solid rgba(255,255,255,0.35);
+  border-right-color: rgba(0,0,0,0.3);
+  border-bottom-color: rgba(0,0,0,0.3);
+  box-shadow: 7px 7px 0 -2px rgba(0,0,0,0.1);
+}
+#chocolate div:before {
+  top: 4px;
+}
+#chocolate div:after {
+  bottom: 3px;
+}
+#chocolate div:before,
+#chocolate div:after {
+  width: 133px;
+  height: 20px;
+  padding: 22px 0 18px;
+  left: 4px;
+  background: #7d3e11;
+  border: 5px solid rgba(255,255,255,0.35);
+  border-right-color: rgba(0,0,0,0.3);
+  border-bottom-color: rgba(0,0,0,0.3);
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 14px #8b4513, inset 0 -16px 1px rgba(255,255,255,0.3), inset 17px 17px 1px rgba(0,0,0,0.25);
+  content: 'HERSHEY’S';
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 15px;
+  color: rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.15);
+}
 #corn-dog {
   background: #ffe4c4;
 }
@@ -627,6 +666,33 @@ header .share-link:hover {
   background: #dc143c;
   border-radius: 50%;
   box-shadow: inset 0 -10px 10px rgba(0,0,0,0.2);
+}
+#graham-cracker {
+  background: #afeeee;
+}
+#graham-cracker div {
+  width: 170px;
+  height: 170px;
+  margin-left: -85px;
+  margin-top: -85px;
+  background: linear-gradient(140deg, #d2b48c, #c59f6b);
+  border-radius: 4px;
+  box-shadow: 7px 7px 0 -2px rgba(0,0,0,0.1), inset 5px 5px 4px rgba(255,255,255,0.4), inset -5px -5px 5px rgba(0,0,0,0.17);
+}
+#graham-cracker div:before {
+  height: 170px;
+  margin-left: 85px;
+  border-right: 2px dashed rgba(255,255,255,0.15);
+  border-left: 2px dashed rgba(0,0,0,0.15);
+}
+#graham-cracker div:after {
+  width: 6px;
+  height: 6px;
+  left: 20px;
+  top: 19px;
+  background: #88734e;
+  border-radius: 50%;
+  box-shadow: 0 3px 2px 3px rgba(255,255,255,0.15), 37px 0 0 #88734e, 37px 3px 2px 3px rgba(255,255,255,0.15), 87px 0 0 #88734e, 87px 3px 2px 3px rgba(255,255,255,0.15), 120px 0 0 #88734e, 120px 3px 2px 3px rgba(255,255,255,0.15), 19px 25px 0 #88734e, 19px 28px 2px 3px rgba(255,255,255,0.15), 104px 25px 0 #88734e, 104px 28px 2px 3px rgba(255,255,255,0.15), 0 50px 0 #88734e, 2px 53px 2px 3px rgba(255,255,255,0.15), 37px 50px 0 #88734e, 37px 53px 2px 3px rgba(255,255,255,0.15), 87px 50px 0 #88734e, 87px 53px 2px 3px rgba(255,255,255,0.15), 120px 50px 0 #88734e, 120px 53px 2px 3px rgba(255,255,255,0.15), 19px 75px 0 #88734e, 19px 78px 2px 3px rgba(255,255,255,0.15), 104px 75px 0 #88734e, 104px 78px 2px 3px rgba(255,255,255,0.15), 0 100px 0 #88734e, 0 103px 2px 3px rgba(255,255,255,0.15), 37px 100px 0 #88734e, 37px 103px 2px 3px rgba(255,255,255,0.15), 87px 100px 0 #88734e, 87px 103px 2px 3px rgba(255,255,255,0.15), 120px 100px 0 #88734e, 120px 103px 2px 3px rgba(255,255,255,0.15), 19px 125px 0 #88734e, 19px 128px 2px 3px rgba(255,255,255,0.15), 104px 125px 0 #88734e, 104px 128px 2px 3px rgba(255,255,255,0.15);
 }
 #grand-budapest {
   background: #efabb3;
@@ -1005,6 +1071,22 @@ header .share-link:hover {
   box-shadow: -1px 2px 3px #b2afaf;
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
+}
+#marshmallow2 {
+  background: #97e9e9;
+}
+#marshmallow2 div {
+  width: 100px;
+  height: 120px;
+  margin-left: -50px;
+  margin-top: -62px;
+  background-color: #eee;
+  background-image: radial-gradient(circle at 50% -70px, rgba(255,255,255,0.85) 48%, transparent 53%), linear-gradient(-80deg, rgba(0,0,0,0.09), transparent 30%, transparent 60%, rgba(255,255,255,0.8) 100%);
+  border-top-left-radius: 100px 32px;
+  border-top-right-radius: 100px 32px;
+  border-bottom-left-radius: 100px 40px;
+  border-bottom-right-radius: 100px 40px;
+  box-shadow: 6px 6px 0 -2px rgba(0,0,0,0.07);
 }
 #marshmallow {
   background: #66cdaa;

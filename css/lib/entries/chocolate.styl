@@ -1,0 +1,53 @@
+/*-----------------------------
+
+Chocolate
+
+-----------------------------*/
+
+#chocolate
+  background: darken(paleturquoise,15%)
+
+  div
+    width: 150px
+    height: 150px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 5px)
+
+    background: linear-gradient(140deg, saddlebrown, darken(saddlebrown,13%))
+
+    border-radius: 5px
+    border: 3px solid white(.35)
+    border-right-color: black(.3)
+    border-bottom-color:black(.3)
+
+    box-shadow: 7px 7px 0 -2px black(.1)
+
+    &:before
+      top: 4px
+
+    &:after
+      bottom: 3px
+
+    &:before,
+    &:after
+      width: 133px
+      height: 20px
+      padding: 22px 0 18px
+      left: 4px
+
+      background: darken(saddlebrown,10%)
+
+      border: 5px solid white(.35)
+      border-right-color: black(.3)
+      border-bottom-color:black(.3)
+      border-radius: 3px
+
+      box-shadow: inset 0 0 0 14px saddlebrown,
+                  inset 0 -16px 1px white(.3),
+                  inset 17px 17px 1px black(.25)
+
+      content: 'HERSHEY’S'
+      font-family: Tahoma, Geneva, sans-serif
+      font-size: 15px
+      color: black(.4)
+      text-shadow: 1px 1px 0 white(.15)

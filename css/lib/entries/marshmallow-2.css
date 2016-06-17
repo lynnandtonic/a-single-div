@@ -1,0 +1,21 @@
+/*-----------------------------
+
+Marshmallow 2
+
+-----------------------------*/
+#marshmallow2 {
+  background: #afeeee;
+}
+#marshmallow2 div {
+  width: 100px;
+  height: 120px;
+  margin-left: -50px;
+  margin-top: -62px;
+  background-color: #f5f5f5;
+  background-image: radial-gradient(circle at 50% -70px, #fff 48%, transparent 53%), linear-gradient(-80deg, black(0.08), transparent 30%, transparent 60%, white(0.8) 100%);
+  border-top-left-radius: 100px 32px;
+  border-top-right-radius: 100px 32px;
+  border-bottom-left-radius: 100px 40px;
+  border-bottom-right-radius: 100px 40px;
+  box-shadow: 6px 6px 0 -2px black(0.07);
+}
