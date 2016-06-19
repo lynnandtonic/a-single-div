@@ -1620,9 +1620,9 @@ header .share-link:hover {
   left: 50%;
   z-index: 1;
   background: #90ee90;
-  background-image: linear-gradient(to left, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.05) 46%, rgba(0,0,0,0) 46%), radial-gradient(rgba(255,255,255,0.4) 15%, rgba(255,255,255,0) 16%), radial-gradient(rgba(255,255,255,0.4) 15%, rgba(255,255,255,0) 16%), repeating-linear-gradient(to right, #90ee90, #90ee90 8px, #5ee65e 8px, #5ee65e 16px);
-  background-size: auto auto, 15px 15px, 15px 15px, auto auto;
-  background-position: 0 0, 0 0, 30px 30px, 0 0;
+  background-image: linear-gradient(to left, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.05) 46%, rgba(0,0,0,0) 46%), radial-gradient(rgba(255,255,255,0.8) 15%, rgba(255,255,255,0) 16%), repeating-linear-gradient(to right, #90ee90, #90ee90 8px, #5ee65e 8px, #5ee65e 16px);
+  background-size: auto auto, 15px 15px, auto auto;
+  background-position: 0 0, 30px 30px, 0 0;
   border: 5px solid #b8860b;
 }
 #cactus1 {
