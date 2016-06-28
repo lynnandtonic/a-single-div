@@ -15,6 +15,7 @@ header h1 {
   margin-bottom: 5px;
 }
 header p {
+  line-height: 1.4;
   color: #bed4dc;
 }
 header p a {
