@@ -1,0 +1,42 @@
+/*-----------------------------
+
+Popsicle
+
+-----------------------------*/
+
+#popsicle
+  background: lighten(skyblue,30%)
+
+  div
+    width: 90px
+    height: 150px
+    margin-left: -(@width/2)
+    margin-top: -110px
+
+    background: deeppink
+    border-radius: 40px 40px 9px 9px
+    box-shadow: 0 9px 0 white,
+                -5px 13px 0 0 black(.1),
+                inset -10px 5px 0 -4px white(.5),
+                inset  7px -2px 0 black(.05)
+
+    &:before
+      width: 24px
+      height: 60px
+      margin-left: -(@width/2)
+      left: 50%
+      bottom: -(@height + 4px)
+      background: darken(wheat,20%)
+      background-image: linear-gradient(to bottom, black(.15) 12px, black(0) 12px)
+      border-radius: 0 0 15px 15px
+      box-shadow:  0 4px 0 darken(wheat,35%),
+                  -8px 9px 0 black(.1)
+
+    &:after
+      width: 18px
+      height: 110px
+      left: 20px
+      top: 24px
+      background: black(.05)
+      border-radius: 7px
+      box-shadow: 30px 0 0 black(.05)

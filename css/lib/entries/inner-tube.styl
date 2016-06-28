@@ -1,0 +1,51 @@
+/*-----------------------------
+
+Inner Tube
+
+-----------------------------*/
+
+#inner-tube
+  background: skyblue
+
+  div, div:before, div:after
+    box-sizing: border-box
+    width: 150px
+    height: 150px
+    border-radius: 50%
+
+  div
+    margin-left: -120px
+    margin-top: -40px
+
+    border: 42px solid black(.05)
+
+    &:before
+      margin-top: -90px
+      border: 42px solid deeppink
+      border-top-color: lightyellow
+      border-bottom-color: lightyellow
+      box-shadow: inset -5px 5px 0 black(.15),
+                        -5px 5px 0 black(.15),
+                  -30px    0   0   2px white(.1),
+                    0    -30px 0  -2px white(.15),
+                   30px    0 0     2px white(.1),
+                    0     30px 0  -2px white(.15),
+                  120px   90px 0 -60px white(.1),
+                  100px  100px 0 -50px white(.1),
+                  110px  -90px 0 -60px white(.1),
+                 -120px -120px 0 -50px white(.1)
+
+    &:after
+      left: 0
+      top: -90px
+      background: radial-gradient(circle, black(0) 32px,
+                                          black(.06) 32px,
+                                          black(.06) 40px,
+                                          black(0) 40px,
+                                          white(0) 55px,
+                                          white(.7) 55px,
+                                          white(.7) 62px,
+                                          white(0) 62px,
+                                          black(0) 70px,
+                                          black(.06) 70px)
+      border-radius: 50%

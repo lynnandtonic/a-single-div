@@ -1684,3 +1684,64 @@ header .share-link:hover {
   border-bottom-left-radius: 40px 50px;
   box-shadow: 0 -48px 0 -30px #fa8072, 0 -48px 0 -25px #b8860b;
 }
+#inner-tube {
+  background: #87ceeb;
+}
+#inner-tube div,
+#inner-tube div:before,
+#inner-tube div:after {
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#inner-tube div {
+  margin-left: -120px;
+  margin-top: -40px;
+  border: 42px solid rgba(0,0,0,0.05);
+}
+#inner-tube div:before {
+  margin-top: -90px;
+  border: 42px solid #ff1493;
+  border-top-color: #ffffe0;
+  border-bottom-color: #ffffe0;
+  box-shadow: inset -5px 5px 0 rgba(0,0,0,0.15), -5px 5px 0 rgba(0,0,0,0.15), -30px 0 0 2px rgba(255,255,255,0.1), 0 -30px 0 -2px rgba(255,255,255,0.15), 30px 0 0 2px rgba(255,255,255,0.1), 0 30px 0 -2px rgba(255,255,255,0.15), 120px 90px 0 -60px rgba(255,255,255,0.1), 100px 100px 0 -50px rgba(255,255,255,0.1), 110px -90px 0 -60px rgba(255,255,255,0.1), -120px -120px 0 -50px rgba(255,255,255,0.1);
+}
+#inner-tube div:after {
+  left: 0;
+  top: -90px;
+  background: radial-gradient(circle, rgba(0,0,0,0) 32px, rgba(0,0,0,0.06) 32px, rgba(0,0,0,0.06) 40px, rgba(0,0,0,0) 40px, rgba(255,255,255,0) 55px, rgba(255,255,255,0.7) 55px, rgba(255,255,255,0.7) 62px, rgba(255,255,255,0) 62px, rgba(0,0,0,0) 70px, rgba(0,0,0,0.06) 70px);
+  border-radius: 50%;
+}
+#popsicle {
+  background: #abddf1;
+}
+#popsicle div {
+  width: 90px;
+  height: 150px;
+  margin-left: -45px;
+  margin-top: -110px;
+  background: #ff1493;
+  border-radius: 40px 40px 9px 9px;
+  box-shadow: 0 9px 0 white, -5px 13px 0 0 rgba(0,0,0,0.1), inset -10px 5px 0 -4px rgba(255,255,255,0.5), inset 7px -2px 0 rgba(0,0,0,0.05);
+}
+#popsicle div:before {
+  width: 24px;
+  height: 60px;
+  margin-left: -12px;
+  left: 50%;
+  bottom: -64px;
+  background: #ebbd68;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.15) 12px, rgba(0,0,0,0) 12px);
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 0 #e4a530, -8px 9px 0 rgba(0,0,0,0.1);
+}
+#popsicle div:after {
+  width: 18px;
+  height: 110px;
+  left: 20px;
+  top: 24px;
+  background: rgba(0,0,0,0.05);
+  border-radius: 7px;
+  box-shadow: 30px 0 0 rgba(0,0,0,0.05);
+}
