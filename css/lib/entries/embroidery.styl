@@ -1,0 +1,164 @@
+/*-----------------------------
+
+Embroidery
+
+-----------------------------*/
+
+$sw = 7px
+$sh = 8px
+
+#embroidery
+  background: linen
+  z-index: -3
+
+  // top pieces, shadows
+  div
+    width: 50px
+    height: 20px
+    margin-left: -(@width/2)
+    margin-top: -125px
+    background: linear-gradient(to right, transparent 5px,
+                                          peru 5px,
+                                          lighten(peru,70%) 15px,
+                                          lighten(peru,25%) 20px,
+                                          transparent 20px,
+                                          transparent 25px,
+                                          peru 25px,
+                                          lighten(peru,70%) 30px,
+                                          lighten(peru,25%) 35px,
+                                          transparent 35px),
+                linear-gradient(to bottom, transparent 7px,
+                                           lighten(sienna,20%) 7px,
+                                           darken(sienna,20%) 11px,
+                                           transparent 11px),
+                radial-gradient(ellipse at bottom center, black(.1),
+                                                          black(0) 60%)
+    border-radius: 50%
+
+    box-shadow:  50px  20px 10px      black(.05), // right side shadows
+                 80px  45px 10px      white(.4),
+                 90px  70px  4px -9px black(.2),
+                100px  70px 10px -4px black(.07),
+                100px  95px 10px      white(.4),
+                97px 120px 10px -7px black(.2),
+                100px 120px 20px      black(.1),
+                110px 165px 40px      white(.8),
+                 60px 200px 18px -2px black(.1),
+                 80px 200px 25px      black(.1),
+                  0   230px 20px      black(.1), // middle bottom shadow
+                -65px  45px 30px  5px black(.1), // left shadows
+               -100px  70px 10px -9px black(.2),
+                -97px  70px 20px -4px black(.1),
+               -100px  90px 10px      white(.4),
+               -108px 120px 10px -7px black(.15),
+               -120px 120px 25px      black(.1),
+                -80px 200px 30px -5px black(.3),
+                -50px 220px 10px      white(.4)
+
+    // hoop
+    &:before
+      box-sizing: border-box
+      width: 220px
+      height: @width
+      margin-left: -(@width/2)
+      left: 50%
+      top: 14px
+
+      background: lighten(linen,25%)
+      border: 6px solid lighten(tan,10%)
+      border-radius: 50%
+      box-shadow: inset -2px 2px 0 white(.9),
+                  inset 2px -2px 5px black(.15),
+                  0 5px 0 1px darken(tan, 20%),
+                  -6px 8px 3px black(.2),
+                  -12px 14px 5px black(.1)
+
+    // embroidery
+    &:after
+      content: '×'
+      font-size: 12px
+      line-height: 1
+      font-weight: bold
+      color: steelblue
+      top: 120px
+      left: -42px
+      text-shadow:     0 $sh,      // letter C
+                       0 $sh*2,
+                       0 $sh*3,
+                       0 $sh*4,
+                     $sw $sh*(-1),
+                     $sw $sh*5,
+                   $sw*2 $sh*(-1),
+                   $sw*2 $sh*5,
+                   $sw*3 $sh*(-1),
+                   $sw*3 $sh*5,
+                   $sw*4     0,
+                   $sw*4 $sh*4,
+                   $sw*6     0,    // letter S
+                   $sw*6 $sh,
+                   $sw*6 $sh*5,
+                   $sw*7 $sh*(-1),
+                   $sw*7 $sh*2,
+                   $sw*7 $sh*4,
+                   $sw*8 $sh*(-1),
+                   $sw*8 $sh*2,
+                   $sw*8 $sh*5,
+                   $sw*9 $sh*(-1),
+                   $sw*9 $sh*2,
+                   $sw*9 $sh*5,
+                   $sw*10    0,
+                   $sw*10 $sh*2,
+                   $sw*10 $sh*5,
+                   $sw*11 $sh*(-1),
+                   $sw*11 $sh*3,
+                   $sw*11 $sh*4,
+                   $sw*13     0,    // letter S
+                   $sw*13 $sh,
+                   $sw*13 $sh*5,
+                   $sw*14 $sh*(-1),
+                   $sw*14 $sh*2,
+                   $sw*14 $sh*4,
+                   $sw*15 $sh*(-1),
+                   $sw*15 $sh*2,
+                   $sw*15 $sh*5,
+                   $sw*16 $sh*(-1),
+                   $sw*16 $sh*2,
+                   $sw*16 $sh*5,
+                   $sw*17    0,
+                   $sw*17 $sh*2,
+                   $sw*17 $sh*5,
+                   $sw*18 $sh*(-1),
+                   $sw*18 $sh*3,
+                   $sw*18 $sh*4,
+                   $sw*6  $sh*(-8) mediumvioletred, // heart
+                   $sw*6  $sh*(-7) mediumvioletred,
+                   $sw*7  $sh*(-9) mediumvioletred,
+                   $sw*7  $sh*(-8) mediumvioletred,
+                   $sw*7  $sh*(-7) mediumvioletred,
+                   $sw*7  $sh*(-6) mediumvioletred,
+                   $sw*8  $sh*(-9) mediumvioletred,
+                   $sw*8  $sh*(-8) mediumvioletred,
+                   $sw*8  $sh*(-7) mediumvioletred,
+                   $sw*8  $sh*(-6) mediumvioletred,
+                   $sw*8  $sh*(-5) mediumvioletred,
+                   $sw*9  $sh*(-8) mediumvioletred,
+                   $sw*9  $sh*(-7) mediumvioletred,
+                   $sw*9  $sh*(-6) mediumvioletred,
+                   $sw*9  $sh*(-5) mediumvioletred,
+                   $sw*9  $sh*(-4) mediumvioletred,
+                   $sw*10 $sh*(-9) mediumvioletred,
+                   $sw*10 $sh*(-8) mediumvioletred,
+                   $sw*10 $sh*(-7) mediumvioletred,
+                   $sw*10 $sh*(-6) mediumvioletred,
+                   $sw*10 $sh*(-5) mediumvioletred,
+                   $sw*11 $sh*(-9) mediumvioletred,
+                   $sw*11 $sh*(-8) mediumvioletred,
+                   $sw*11 $sh*(-7) mediumvioletred,
+                   $sw*11 $sh*(-6) mediumvioletred,
+                   $sw*12 $sh*(-8) mediumvioletred,
+                   $sw*12 $sh*(-7) mediumvioletred
+
+@media (max-width: 400px)
+
+  #embroidery div
+    margin-top: -100px

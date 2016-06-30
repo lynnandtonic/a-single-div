@@ -1283,7 +1283,6 @@ header .share-link:hover {
   height: 78px;
   margin-left: -60px;
   margin-top: -145px;
-  left: 50%;
   background-color: white;
   background-image: radial-gradient(circle at 85px 50px, #555 5px, transparent 6px), radial-gradient(circle at 85px 50px, white 7px, transparent 8px), radial-gradient(circle at 85px 50px, #555 10px, transparent 11px), radial-gradient(circle at 58px 32px, rgba(255,255,255,0.9) 2px, transparent 3px), radial-gradient(circle at 52px 36px, #333 12px, transparent 13px), radial-gradient(circle at 52px 36px, #555 16px, transparent 17px), radial-gradient(circle at 52px 37px, white 20px, transparent 20px), linear-gradient(to top, #aaa 7px, transparent 7px), linear-gradient(to bottom, white 7px, #ccc 7px, #aaa 15px, white 15px, white 18px, #ffa500 18px, #ffa500 24px, transparent 24px), linear-gradient(to right, transparent 29px, #ccc 30px, #ccc 31px, transparent 31px, transparent 60px, #ccc 61px, #ccc 62px, transparent 62px), linear-gradient(to right, transparent 5px, white 5px, white 10px, transparent 10px, transparent 30px, white 30px, white 40px, transparent 40px, transparent 50px, white 50px, white 100px, transparent 100px, transparent 115px, white 115px), linear-gradient(to top, #ffa500 16px, transparent 16px);
   border-radius: 50%/60px;
@@ -1745,4 +1744,44 @@ header .share-link:hover {
   background: rgba(0,0,0,0.05);
   border-radius: 7px;
   box-shadow: 30px 0 0 rgba(0,0,0,0.05);
+}
+#embroidery {
+  background: #faf0e6;
+  z-index: -3;
+}
+#embroidery div {
+  width: 50px;
+  height: 20px;
+  margin-left: -25px;
+  margin-top: -125px;
+  background: linear-gradient(to right, transparent 5px, #cd853f 5px, #f0dac5 15px, #d9a46f 20px, transparent 20px, transparent 25px, #cd853f 25px, #f0dac5 30px, #d9a46f 35px, transparent 35px), linear-gradient(to bottom, transparent 7px, #c96d41 7px, #804224 11px, transparent 11px), radial-gradient(ellipse at bottom center, rgba(0,0,0,0.1), rgba(0,0,0,0) 60%);
+  border-radius: 50%;
+  box-shadow: 50px 20px 10px rgba(0,0,0,0.05), 80px 45px 10px rgba(255,255,255,0.4), 90px 70px 4px -9px rgba(0,0,0,0.2), 100px 70px 10px -4px rgba(0,0,0,0.07), 100px 95px 10px rgba(255,255,255,0.4), 97px 120px 10px -7px rgba(0,0,0,0.2), 100px 120px 20px rgba(0,0,0,0.1), 110px 165px 40px rgba(255,255,255,0.8), 60px 200px 18px -2px rgba(0,0,0,0.1), 80px 200px 25px rgba(0,0,0,0.1), 0 230px 20px rgba(0,0,0,0.1), -65px 45px 30px 5px rgba(0,0,0,0.1), -100px 70px 10px -9px rgba(0,0,0,0.2), -97px 70px 20px -4px rgba(0,0,0,0.1), -100px 90px 10px rgba(255,255,255,0.4), -108px 120px 10px -7px rgba(0,0,0,0.15), -120px 120px 25px rgba(0,0,0,0.1), -80px 200px 30px -5px rgba(0,0,0,0.3), -50px 220px 10px rgba(255,255,255,0.4);
+}
+#embroidery div:before {
+  box-sizing: border-box;
+  width: 220px;
+  height: 220px;
+  margin-left: -110px;
+  left: 50%;
+  top: 14px;
+  background: #fbf4ec;
+  border: 6px solid #d7bc98;
+  border-radius: 50%;
+  box-shadow: inset -2px 2px 0 rgba(255,255,255,0.9), inset 2px -2px 5px rgba(0,0,0,0.15), 0 5px 0 1px #be935a, -6px 8px 3px rgba(0,0,0,0.2), -12px 14px 5px rgba(0,0,0,0.1);
+}
+#embroidery div:after {
+  content: '×';
+  font-size: 12px;
+  line-height: 1;
+  font-weight: bold;
+  color: #4682b4;
+  top: 120px;
+  left: -42px;
+  text-shadow: 0 8px, 0 16px, 0 24px, 0 32px, 7px -8px, 7px 40px, 14px -8px, 14px 40px, 21px -8px, 21px 40px, 28px 0, 28px 32px, 42px 0, 42px 8px, 42px 40px, 49px -8px, 49px 16px, 49px 32px, 56px -8px, 56px 16px, 56px 40px, 63px -8px, 63px 16px, 63px 40px, 70px 0, 70px 16px, 70px 40px, 77px -8px, 77px 24px, 77px 32px, 91px 0, 91px 8px, 91px 40px, 98px -8px, 98px 16px, 98px 32px, 105px -8px, 105px 16px, 105px 40px, 112px -8px, 112px 16px, 112px 40px, 119px 0, 119px 16px, 119px 40px, 126px -8px, 126px 24px, 126px 32px, 42px -64px #c71585, 42px -56px #c71585, 49px -72px #c71585, 49px -64px #c71585, 49px -56px #c71585, 49px -48px #c71585, 56px -72px #c71585, 56px -64px #c71585, 56px -56px #c71585, 56px -48px #c71585, 56px -40px #c71585, 63px -64px #c71585, 63px -56px #c71585, 63px -48px #c71585, 63px -40px #c71585, 63px -32px #c71585, 70px -72px #c71585, 70px -64px #c71585, 70px -56px #c71585, 70px -48px #c71585, 70px -40px #c71585, 77px -72px #c71585, 77px -64px #c71585, 77px -56px #c71585, 77px -48px #c71585, 84px -64px #c71585, 84px -56px #c71585;
+}
+@media (max-width: 400px) {
+  #embroidery div {
+    margin-top: -100px;
+  }
 }
