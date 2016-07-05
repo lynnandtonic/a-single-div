@@ -1843,7 +1843,7 @@ header .share-link:hover {
   border-bottom-right-radius: 80px 40px;
   border-bottom-left-radius: 80px 40px;
   border: 2px dashed #8fa1c2;
-  box-shadow: 0 0 0 8px #5872a3, 0 0 0 10px rgba(0,0,0,0.1), 5px 5px 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 8px #5872a3, 0 0 0 10px rgba(0,0,0,0.1), 5px 5px 0 8px rgba(0,0,0,0.2);
 }
 #jeans-pocket div:before {
   width: 220px;
@@ -1852,12 +1852,12 @@ header .share-link:hover {
   top: -15px;
   margin-left: -110px;
   background: #556e9d no-repeat;
-  background-image: linear-gradient(to bottom, #8fa1c2 3px, transparent 3px), linear-gradient(to right, #8fa1c2 3px, rgba(0,0,0,0.2) 3px, rgba(0,0,0,0.2) 6px, #8fa1c2 6px, #8fa1c2 9px, transparent 9px);
+  background-image: linear-gradient(to bottom, #8fa1c2 3px, transparent 3px), linear-gradient(to right, #8fa1c2 3px, rgba(0,0,0,0.3) 3px, rgba(0,0,0,0.3) 6px, #8fa1c2 6px, #8fa1c2 9px, transparent 9px);
   background-size: 9px 3px, 9px 40px;
   background-position: center 35%, center 60%;
   border-radius: 5px 5px 50% 50%;
   border: 2px dashed #8fa1c2;
-  box-shadow: 0 0 0 8px #5872a3, 0 0 0 10px rgba(0,0,0,0.1), 0 8px 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 8px #5872a3, 0 0 0 10px rgba(0,0,0,0.1), 0 8px 0 8px rgba(0,0,0,0.2);
 }
 #jeans-pocket div:after {
   width: 34px;
