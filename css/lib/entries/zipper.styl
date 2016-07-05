@@ -1,0 +1,80 @@
+/*-----------------------------
+
+Zipper
+
+-----------------------------*/
+
+#zipper
+  background: #4E6590
+
+  div
+    width: 46px
+    height: 240px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 5px)
+
+    background: black(.06) no-repeat
+    background-image: linear-gradient(to top, transparent 10px,
+                                              #aaa 10px,
+                                              #aaa 15px,
+                                              #ccc 15px,
+                                              #ccc 30px,
+                                              transparent 30px),
+                      repeating-linear-gradient(to bottom, transparent,
+                                                           transparent 5px,
+                                                           #ddd 5px,
+                                                           #ddd 10px),
+                      repeating-linear-gradient(to bottom, #ccc,
+                                                           #ccc 5px,
+                                                           transparent 5px,
+                                                           transparent 10px)
+    background-size: 26px 100%, 15px 230px, 15px 230px
+    background-position: 10px 0, 10px 0, 21px 0
+    border-radius: 0 0 5px 5px
+    border: 2px dashed lighten(#4E6590,40%)
+    border-top: none
+
+    &:before
+      width: 40px
+      height: 24px
+      margin-left: -(@width/2)
+      left: 50%
+      top: -10px
+      background: linear-gradient(to right, transparent 35%,
+                                            #ddd 35%,
+                                            #ddd 50%,
+                                            #ccc 50%,
+                                            #ccc 65%,
+                                            black(.1) 65%,
+                                            black(.1) 75%,
+                                            transparent 75%),
+                  linear-gradient(to right, #aaa 50%, #999 50%)
+      border-radius: 50px / 15px
+      box-shadow: 0 5px 0 black(.2)
+
+    &:after
+      box-sizing: border-box
+      width: 32px
+      height: 70px
+      margin-left: -(@width/2)
+      left: 50%
+      top: 8px
+      background: black(.4) no-repeat
+      background-image: linear-gradient(to bottom, transparent 16px,
+                                                   #ccc 16px,
+                                                   #ccc 50px,
+                                                   transparent 50px),
+                        linear-gradient(to right, transparent 3px,
+                                            #ddd 3px,
+                                            #ddd 9px,
+                                            #ccc 9px,
+                                            #ccc 15px,
+                                            black(.1) 15px,
+                                            black(.1) 18px,
+                                            transparent 18px),
+                        linear-gradient(to bottom, #ccc 7px, transparent 7px)
+      background-size: 100% 100%, 100% 12px
+      border-radius: 2px 2px 4px 4px
+      border: 7px solid #ccc
+      border-top: none
+      box-shadow: 0 5px 0 black(.3)

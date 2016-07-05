@@ -1785,3 +1785,90 @@ header .share-link:hover {
     margin-top: -100px;
   }
 }
+#zipper {
+  background: #4e6590;
+}
+#zipper div {
+  width: 46px;
+  height: 240px;
+  margin-left: -23px;
+  margin-top: -115px;
+  background: rgba(0,0,0,0.06) no-repeat;
+  background-image: linear-gradient(to top, transparent 10px, #aaa 10px, #aaa 15px, #ccc 15px, #ccc 30px, transparent 30px), repeating-linear-gradient(to bottom, transparent, transparent 5px, #ddd 5px, #ddd 10px), repeating-linear-gradient(to bottom, #ccc, #ccc 5px, transparent 5px, transparent 10px);
+  background-size: 26px 100%, 15px 230px, 15px 230px;
+  background-position: 10px 0, 10px 0, 21px 0;
+  border-radius: 0 0 5px 5px;
+  border: 2px dashed #8fa1c2;
+  border-top: none;
+}
+#zipper div:before {
+  width: 40px;
+  height: 24px;
+  margin-left: -20px;
+  left: 50%;
+  top: -10px;
+  background: linear-gradient(to right, transparent 35%, #ddd 35%, #ddd 50%, #ccc 50%, #ccc 65%, rgba(0,0,0,0.1) 65%, rgba(0,0,0,0.1) 75%, transparent 75%), linear-gradient(to right, #aaa 50%, #999 50%);
+  border-radius: 50px/15px;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.2);
+}
+#zipper div:after {
+  box-sizing: border-box;
+  width: 32px;
+  height: 70px;
+  margin-left: -16px;
+  left: 50%;
+  top: 8px;
+  background: rgba(0,0,0,0.4) no-repeat;
+  background-image: linear-gradient(to bottom, transparent 16px, #ccc 16px, #ccc 50px, transparent 50px), linear-gradient(to right, transparent 3px, #ddd 3px, #ddd 9px, #ccc 9px, #ccc 15px, rgba(0,0,0,0.1) 15px, rgba(0,0,0,0.1) 18px, transparent 18px), linear-gradient(to bottom, #ccc 7px, transparent 7px);
+  background-size: 100% 100%, 100% 12px;
+  border-radius: 2px 2px 4px 4px;
+  border: 7px solid #ccc;
+  border-top: none;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.3);
+}
+#jeans-pocket {
+  background: #5872a3;
+}
+#jeans-pocket div,
+#jeans-pocket div:before,
+#jeans-pocket div:after {
+  box-sizing: border-box;
+}
+#jeans-pocket div {
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -94px;
+  background: #536c99;
+  border-bottom-right-radius: 80px 40px;
+  border-bottom-left-radius: 80px 40px;
+  border: 2px dashed #8fa1c2;
+  box-shadow: 0 0 0 8px #5872a3, 0 0 0 10px rgba(0,0,0,0.1), 5px 5px 0 8px rgba(0,0,0,0.1);
+}
+#jeans-pocket div:before {
+  width: 220px;
+  height: 100px;
+  left: 50%;
+  top: -15px;
+  margin-left: -110px;
+  background: #556e9d no-repeat;
+  background-image: linear-gradient(to bottom, #8fa1c2 3px, transparent 3px), linear-gradient(to right, #8fa1c2 3px, rgba(0,0,0,0.2) 3px, rgba(0,0,0,0.2) 6px, #8fa1c2 6px, #8fa1c2 9px, transparent 9px);
+  background-size: 9px 3px, 9px 40px;
+  background-position: center 35%, center 60%;
+  border-radius: 5px 5px 50% 50%;
+  border: 2px dashed #8fa1c2;
+  box-shadow: 0 0 0 8px #5872a3, 0 0 0 10px rgba(0,0,0,0.1), 0 8px 0 8px rgba(0,0,0,0.1);
+}
+#jeans-pocket div:after {
+  width: 34px;
+  height: 34px;
+  left: 50%;
+  top: 36px;
+  margin-left: -17px;
+  background: #b68c70;
+  background-image: radial-gradient(circle, #a88b51 2px, rgba(0,0,0,0.3) 2px, rgba(0,0,0,0.3) 5px, #b79c59 5px, #b79c59 8px, rgba(0,0,0,0.4) 8px);
+  border-radius: 50%;
+  border: 3px solid #948042;
+  border-top-color: #dbc178;
+  box-shadow: 2px 3px 0 rgba(0,0,0,0.15);
+}
