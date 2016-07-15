@@ -1,0 +1,70 @@
+/*-----------------------------
+
+ECTO-1 License Plate
+
+-----------------------------*/
+
+$ecto-yellow = #feb81c
+$ecto-yellow-drk = #ff991d
+
+#ecto-1
+  background: #ccc
+
+  div
+    width: 250px
+    height: 130px
+    margin-left: -(@width/2 + 3px)
+    margin-top: -(@height/2 + 3px)
+    background-color: $ecto-yellow
+    background-image: linear-gradient(210deg, $ecto-yellow, $ecto-yellow-drk)
+    border-radius: 5px
+    border: 3px solid midnightblue
+    box-shadow: 0 4px 0 black(.2),
+                0 -3px 0 white(.6),
+                0 0 0 6px $ecto-yellow,
+                0 5px 0 6px black(.13),
+                inset 2px 0 $ecto-yellow-drk,
+                inset -2px 0 $ecto-yellow,
+                inset 0 5px 0 black(.2),
+                inset 0 -3px 0 white(.5)
+
+    &:before,
+    &:after
+      width: 250px
+      text-align: center
+      font-family: 'HelveticaNeue-CondensedBold', 'Arial Narrow', 'Trebuchet MS', Impact, 'Roboto', sans-serif
+      // font-family: 'Arial Narrow', Impact, 'Roboto', sans-serif
+      // font-family: 'Trebuchet MS', Impact, 'Roboto', sans-serif
+      // font-family: Impact, 'Roboto', sans-serif
+      // font-family: 'Roboto', sans-serif
+      font-weight: bold
+      color: midnightblue
+
+    &:before
+      padding-top: 20px
+      height: 130px - @padding-top
+      background-image: linear-gradient(to bottom, white(.5) 50%, midnightblue 50%),
+                        linear-gradient(to right, midnightblue, midnightblue)
+      background-repeat: no-repeat
+      background-size: 50px 6px, 3px 34px
+      background-position: 100% 90px, 200px 100%
+
+      content: 'ECTO-1'
+      font-size: 68px
+      line-height: 68px
+      text-shadow: 0 -2px 0 white(.7),
+                   0 3px 0 black(.15)
+
+    &:after
+      padding-top: 90px
+      height: 130px - @padding-top
+      background-image: radial-gradient(circle at 15px 14px, #999 5px, black(0) 5px),
+                        radial-gradient(circle at 55px 118px, #888 5px, black(0) 5px),
+                        radial-gradient(circle at 235px 14px, #999 5px, black(0) 5px),
+                        radial-gradient(circle at 192px 118px, #888 5px, black(0) 5px)
+
+      content: 'NEW YORK'
+      font-size: 20px
+      text-shadow: 0 -2px 0 white(.6),
+                   0 2px 0 black(.15)
+      letter-spacing: 3px

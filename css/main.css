@@ -1872,3 +1872,85 @@ header .share-link:hover {
   border-top-color: #dbc178;
   box-shadow: 2px 3px 0 rgba(0,0,0,0.15);
 }
+#ecto-1 {
+  background: #ccc;
+}
+#ecto-1 div {
+  width: 250px;
+  height: 130px;
+  margin-left: -128px;
+  margin-top: -68px;
+  background-color: #feb81c;
+  background-image: linear-gradient(210deg, #feb81c, #ff991d);
+  border-radius: 5px;
+  border: 3px solid #191970;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.2), 0 -3px 0 rgba(255,255,255,0.6), 0 0 0 6px #feb81c, 0 5px 0 6px rgba(0,0,0,0.13), inset 2px 0 #ff991d, inset -2px 0 #feb81c, inset 0 5px 0 rgba(0,0,0,0.2), inset 0 -3px 0 rgba(255,255,255,0.5);
+}
+#ecto-1 div:before,
+#ecto-1 div:after {
+  width: 250px;
+  text-align: center;
+  font-family: 'HelveticaNeue-CondensedBold', 'Arial Narrow', 'Trebuchet MS', Impact, 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #191970;
+}
+#ecto-1 div:before {
+  padding-top: 20px;
+  height: 110px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.5) 50%, #191970 50%), linear-gradient(to right, #191970, #191970);
+  background-repeat: no-repeat;
+  background-size: 50px 6px, 3px 34px;
+  background-position: 100% 90px, 200px 100%;
+  content: 'ECTO-1';
+  font-size: 68px;
+  line-height: 68px;
+  text-shadow: 0 -2px 0 rgba(255,255,255,0.7), 0 3px 0 rgba(0,0,0,0.15);
+}
+#ecto-1 div:after {
+  padding-top: 90px;
+  height: 40px;
+  background-image: radial-gradient(circle at 15px 14px, #999 5px, rgba(0,0,0,0) 5px), radial-gradient(circle at 55px 118px, #888 5px, rgba(0,0,0,0) 5px), radial-gradient(circle at 235px 14px, #999 5px, rgba(0,0,0,0) 5px), radial-gradient(circle at 192px 118px, #888 5px, rgba(0,0,0,0) 5px);
+  content: 'NEW YORK';
+  font-size: 20px;
+  text-shadow: 0 -2px 0 rgba(255,255,255,0.6), 0 2px 0 rgba(0,0,0,0.15);
+  letter-spacing: 3px;
+}
+#stay-puft {
+  background: #bbb;
+}
+#stay-puft div {
+  width: 170px;
+  height: 50px;
+  margin-left: -85px;
+  margin-top: 20px;
+  background-color: #000080;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 10%, rgba(255,255,255,0.3) 20%, rgba(255,255,255,0.3) 30%, rgba(255,255,255,0) 40%);
+  border-bottom-right-radius: 60px 20px;
+  border-bottom-left-radius: 60px 20px;
+  box-shadow: inset -60px 20px 10px rgba(0,0,0,0.3), 0 7px 5px rgba(0,0,0,0.15);
+}
+#stay-puft div:before {
+  width: 230px;
+  height: 90px;
+  left: 50%;
+  margin-left: -115px;
+  top: -75px;
+  background: white;
+  background-image: radial-gradient(ellipse at 49% 10px, rgba(255,255,255,0.3) 5px, rgba(255,255,255,0) 12px), radial-gradient(ellipse at 50% 15px, #000080 15px, transparent 15px), radial-gradient(ellipse at 52% 18px, rgba(0,0,0,0.2) 12px, transparent 18px);
+  border-top-left-radius: 100px 50px;
+  border-top-right-radius: 100px 50px;
+  border-bottom-left-radius: 70px 40px;
+  border-bottom-right-radius: 70px 40px;
+  box-shadow: inset -35px -10px 10px rgba(0,0,0,0.07);
+}
+#stay-puft div:after {
+  height: 25px;
+  left: 56px;
+  top: -60px;
+  border-left: 9px solid #dc143c;
+  border-right: 9px solid #b13;
+  border-bottom: 9px solid transparent;
+  border-top: 3px solid #000080;
+  box-shadow: 8px -5px 3px -5px rgba(0,0,0,0.2);
+  transform: rotate(40deg);
+}

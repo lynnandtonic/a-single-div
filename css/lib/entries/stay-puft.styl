@@ -1,0 +1,50 @@
+/*-----------------------------
+
+Stay Puft
+
+-----------------------------*/
+
+#stay-puft
+  background: #bbb
+
+  div
+    width: 170px
+    height: 50px
+    margin-left: -(@width/2)
+    margin-top: 20px
+    background-color: navy
+    background-image: linear-gradient(to right, white(0) 10%,
+                                                white(.3) 20%,
+                                                white(.3) 30%,
+                                                white(0) 40%)
+    border-bottom-right-radius: 60px 20px
+    border-bottom-left-radius: 60px 20px
+    box-shadow: inset -60px 20px 10px black(.3),
+                0 7px 5px black(.15)
+
+    &:before
+      width: 230px
+      height: 90px
+      left: 50%
+      margin-left: -(@width/2)
+      top: -75px
+      background: white
+      background-image: radial-gradient(ellipse at 49% 10px, white(.3) 5px, white(0) 12px),
+                        radial-gradient(ellipse at 50% 15px, navy 15px, transparent 15px),
+                        radial-gradient(ellipse at 52% 18px, black(.2) 12px, transparent 18px)
+      border-top-left-radius: 100px 50px
+      border-top-right-radius: 100px 50px
+      border-bottom-left-radius: 70px 40px
+      border-bottom-right-radius: 70px 40px
+      box-shadow: inset -35px -10px 10px black(.07)
+
+    &:after
+      height: 25px
+      left: 56px
+      top: -60px
+      border-left: 9px solid crimson
+      border-right: 9px solid darken(crimson,15%)
+      border-bottom: 9px solid transparent
+      border-top: 3px solid navy
+      box-shadow: 8px -5px 3px -5px black(.2)
+      transform: rotate(40deg)
