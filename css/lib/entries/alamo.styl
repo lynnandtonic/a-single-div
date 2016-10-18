@@ -1,0 +1,168 @@
+/*-----------------------------
+
+Alamo
+
+-----------------------------*/
+
+$alamo-body = linear-gradient(to right, bisque 50%, tan 50%)
+$alamo-border = linear-gradient(to right, floralwhite, floralwhite)
+
+
+#alamo
+  background: goldenrod
+
+  div
+    width: 350px
+    height: 250px
+    margin-left: -(@width/2 + 5px)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: $alamo-body, // body
+                      $alamo-body, // step 1
+                      $alamo-body, // step 2
+                      $alamo-body, // step 3
+                      radial-gradient(ellipse at top left, transparent 40px, bisque 40px), // left curve
+                      radial-gradient(ellipse at top right, transparent 40px, tan 40px),  // right curve
+                      radial-gradient(ellipse at top left, transparent 40px, floralwhite 40px), // left curve border
+                      radial-gradient(ellipse at top right, transparent 40px, floralwhite 40px), // right curve border
+                      $alamo-border,  // body border
+                      $alamo-border,  // step 1 border
+                      $alamo-border,  // step 2 border
+                      $alamo-border,   // step 3 border,
+                      radial-gradient(circle, floralwhite 35px, transparent 35px) // circle border
+
+    background-size: 330px 120px,   // body
+                     220px 18px,    // step 1
+                     180px 10px,    // step 2
+                     90px 50px,     // step 3
+                     120px 75px,    // left curve
+                     120px 75px,    // right curve
+                     120px 75px,    // left curve border
+                     120px 75px,    // right border
+                     340px 130px,   // body border
+                     230px 28px,    // step 1 border
+                     190px 20px,    // step 2 border
+                     100px 60px,    // step 3 border
+                     100px 100px    // circle border
+
+    background-position: 10px 100px,  // body
+                         65px 85px,   // step 1
+                         85px 76px,   // step 2
+                         130px 50px,   // step 3
+                         92px 52px,     // left curve
+                         138px 52px,    // right curve
+                         88px 48px,     // left curve border
+                         142px 48px,    // right curve border
+                         5px 95px,      // body border
+                         60px 80px,     // step 1 border
+                         80px 71px,     // step 2 border
+                         125px 45px,    // step 3 border
+                         125px 3px      // circle border
+
+    &:before
+      width: 60px
+      height: 80px
+      margin-left: -(@width/2)
+      left: 50%
+      top: 23px
+      border-radius: 30px 30px 0 0
+      background: linear-gradient(to right, bisque 50%, tan 50%)
+      box-shadow:   2px 128px 0 -11px rgba(205,133,63,.3),
+                    0   126px 0 -9px rgba(63,22,16,.6), // door
+                  -58px  55px 0 -26px darken(bisque,3%),
+                  -60px  53px 0 -24px tan,
+                  -60px  52px 0 -19px white(.4),
+                  -58px 116px 0 -26px darken(bisque,3%),
+                  -60px 114px 0 -24px tan,
+                  -60px 113px 0 -19px white(.4),
+                   62px  55px 0 -26px darken(tan,3%),
+                   60px  53px 0 -24px darken(tan,15%),
+                   60px  52px 0 -19px white(.2),
+                   62px 116px 0 -26px darken(tan,3%),
+                   60px 114px 0 -24px darken(tan,15%),
+                   60px 113px 0 -19px white(.2)
+
+    &:after
+      width: 330px
+      height: 120px
+      top: 100px
+      left: 10px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to bottom, white(.5) 60%, black(.1) 60%),
+                        linear-gradient(to right, black(.1), black(.1)),
+                        linear-gradient(to bottom, white(.5) 60%, black(.15) 60%),
+                        linear-gradient(to bottom, white(.3) 60%, black(.15) 60%),
+                        linear-gradient(to right, white(.6), white(.6)), // column 1
+                        linear-gradient(to right, black(.1), black(.1)), // shadow 1
+                        linear-gradient(to right, white(.6), white(.6)), // base 1
+                        linear-gradient(to right, black(.1), black(.1)), // shadow 1
+                        linear-gradient(to right, white(.6), white(.6)), // column 2
+                        linear-gradient(to right, black(.1), black(.1)), // shadow 2
+                        linear-gradient(to right, white(.6), white(.6)), // base 2
+                        linear-gradient(to right, black(.1), black(.1)), // shadow 2
+                        linear-gradient(to right, white(.4), white(.4)), // column 3
+                        linear-gradient(to right, black(.12), black(.12)), // shadow 3
+                        linear-gradient(to right, white(.4), white(.4)), // base 3
+                        linear-gradient(to right, black(.12), black(.12)), // shadow 3
+                        linear-gradient(to right, white(.4), white(.4)), // column 4
+                        linear-gradient(to right, black(.12), black(.12)), // shadow 4
+                        linear-gradient(to right, white(.4), white(.4)), // base 4
+                        linear-gradient(to right, black(.12), black(.12)), // shadow 4
+                        linear-gradient(to right, rgba(63,22,16,.6), rgba(63,22,16,.6)), // middle window
+                        linear-gradient(to right, white(.4) 50%, white(.2) 50%),
+                        linear-gradient(to right, rgba(63,22,16,.6), rgba(63,22,16,.6)), // top left window
+                        linear-gradient(to right, rgba(63,22,16,.6), rgba(63,22,16,.6)), // bottom left window
+                        linear-gradient(to right, rgba(63,22,16,.7), rgba(63,22,16,.7)),  // top right window
+                        linear-gradient(to right, rgba(63,22,16,.7), rgba(63,22,16,.7)) // bottom right window
+      background-size: 190px 5px,
+                       190px 2px,
+                       144px 5px,
+                       144px 5px,
+                       8px 60px, // column 1
+                       3px 57px, // shadow 1
+                       14px 20px, // base 1
+                       3px 20px, // base 1
+                       8px 60px, // column 2
+                       3px 57px, // shadow 2
+                       14px 20px, // base 2
+                       3px 20px, // base 2
+                       8px 60px, // column 3
+                       3px 57px, // shadow 3
+                       14px 20px, // base 3
+                       3px 20px, // base 3
+                       8px 60px, // column 4
+                       3px 57px, // shadow 4
+                       14px 20px, // base 4
+                       3px 20px, // base 4
+                       22px 30px, // middle window
+                       32px 38px,
+                       15px 25px, // top left window
+                       15px 20px, // bottom left window
+                       15px 25px, // top right window
+                       15px 20px // bottom right window
+      background-position: 70px 40px,
+                           70px 50px,
+                           0 101px,
+                           186px 101px,
+                           74px 40px, // column 1
+                           82px 43px, // shadow 1
+                           71px 100px, // base 1
+                           85px 103px, // shadow 1
+                           125px 40px, // column 2
+                           133px 43px, // shadow 2
+                           122px 100px, // base 2
+                           136px 103px, // shadow 2
+                           195px 40px, // column 3
+                           203px 43px, // shadow 3
+                           192px 100px, // base 3
+                           206px 103px, // shadow 3
+                           245px 40px, // column 4
+                           253px 43px, // shadow 4
+                           241px 100px, // base 4
+                           255px 103px, // shadow 4
+                           154px 4px,
+                           149px 0,
+                           25px 15px, // top left window
+                           25px 65px, // bottom left window
+                           292px 15px, // top right window
+                           292px 65px // bottom right window
