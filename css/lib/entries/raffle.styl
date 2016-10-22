@@ -7,13 +7,11 @@ Raffle ticket
 .raffle
 
   div
-    width: 250px
-    height: 120px
+    width: 220px
+    height: 110px
     margin-left: -(@width/2)
     margin-top: -(@height/2)
     background-repeat: no-repeat
-    background-size: 50% 50%
-    background-position: top left, top right, bottom left, bottom right
 
     &:before,
     &:after
@@ -21,86 +19,101 @@ Raffle ticket
       color: #333
 
     &:before
-      width: 264px
-      height: 80px
-      left: -7px
-      top: 20px
-      background-size: 7px 7px
-      background-repeat: repeat-y
-      background-position: 0 0, 0 0, 100% 0, 100% 0
+      font-family: 'HelveticaNeue-CondensedBold', 'Arial Narrow', Impact, 'Roboto', sans-serif
+      letter-spacing: 2px
+      text-transform: uppercase
 
     &:after
-      width: 80px
-      height: 210px
-      padding-top: 184px
-      top: -45px
-      left: 85px
       border-radius: 10px
       transform: rotate(-90deg)
-      font-size: 15px
+      font-size: 14px
       font-family: monospace
+      text-align: center
+      line-height: 1
 
 #raffle-red
   background: thistle 
 
+  $raffle-red-corner = transparent 17px, crimson 17px
+  $raffle-red-sawtooth = transparent 75%, crimson 75%
+
   div
-    background-image: radial-gradient(circle at top left, transparent 20px, crimson 20px),
-                      radial-gradient(circle at top right, transparent 20px, crimson 20px),
-                      radial-gradient(circle at bottom left, transparent 20px, crimson 20px),
-                      radial-gradient(circle at bottom right, transparent 20px, crimson 20px)
-    box-shadow: 0 50px 14px -45px black(.3)
+    background-image: radial-gradient(circle at top left, $raffle-red-corner),
+                      radial-gradient(circle at top right, $raffle-red-corner),
+                      radial-gradient(circle at bottom left, $raffle-red-corner),
+                      radial-gradient(circle at bottom right, $raffle-red-corner)
+    box-shadow: 0 38px 14px -35px black(.3)
+    background-size: 50% 50%
+    background-position: top left, top right, bottom left, bottom right
 
     &:before
       content: 'ticket'
-      padding-left: 45px
-      // Sawtooth borrowed from Bobby Jones - http://codepen.io/BobbyJones/details/Cesty
-      background-image: linear-gradient(45deg, transparent 75%, crimson 75%),
-                        linear-gradient(135deg, transparent 75%, crimson 75%),
-                        linear-gradient(-45deg, transparent 75%, crimson 75%),
-                        linear-gradient(-135deg, transparent 75%, crimson 75%)
-      letter-spacing: 2px
-      line-height: 1.7
-      font-family: 'HelveticaNeue-CondensedBold', 'Arial Narrow', 'Trebuchet MS', Impact, 'Roboto', sans-serif
-      font-size: 50px
+      width: 233px
+      height: 76px
+      padding-left: 40px
+      left: -7px
+      top: 17px
+      background-size: 7px 7px
+      background-repeat: repeat-y
+      background-position: 0 0, 0 0, 100% 0, 100% 0
+      // Sawtooth technique by Bobby Jones - http://codepen.io/BobbyJones/details/Cesty
+      background-image: linear-gradient(45deg, $raffle-red-sawtooth),
+                        linear-gradient(135deg, $raffle-red-sawtooth),
+                        linear-gradient(-45deg, $raffle-red-sawtooth),
+                        linear-gradient(-135deg, $raffle-red-sawtooth)
+      line-height: 1.9
+      font-size: 42px
       text-align: left
-      text-transform: uppercase
 
     &:after
       content: 'DC143C'
-      background: linear-gradient(to bottom, transparent 175px,
-                                             salmon 175px,
-                                             salmon 178px,
-                                             transparent 178px)
+      width: 75px
+      height: 185px
+      padding-top: 162px
+      top: -37px
+      left: 72px
+      background: linear-gradient(to bottom, transparent 155px,
+                                             salmon 155px,
+                                             salmon 158px,
+                                             transparent 158px)
       border: 3px solid salmon
 
-#raffle-blue
-  background: cadetblue
+#raffle-yellow
+  background: linen 
+
+  $raffle-yellow-corner = transparent 17px, darken(khaki,10%) 17px
 
   div
-    background-image: radial-gradient(circle at top left, transparent 20px, skyblue 20px),
-                      radial-gradient(circle at top right, transparent 20px, skyblue 20px),
-                      radial-gradient(circle at bottom left, transparent 20px, skyblue 20px),
-                      radial-gradient(circle at bottom right, transparent 20px, skyblue 20px)
-    box-shadow: 0 50px 14px -45px black(.2)
+    background-image: radial-gradient(circle at top left, $raffle-yellow-corner),
+                      radial-gradient(circle at top right, $raffle-yellow-corner),
+                      radial-gradient(circle at center left, $raffle-yellow-corner),
+                      radial-gradient(circle at center right, $raffle-yellow-corner),
+                      radial-gradient(circle at bottom left, $raffle-yellow-corner),
+                      radial-gradient(circle at bottom right, $raffle-yellow-corner)
+    background-size: 50% 33.7%
+    background-position: top left, top right, center left, center right, bottom left, bottom right
+    box-shadow: 0 38px 14px -35px black(.2)
 
     &:before
       content: 'keep this coupon'
-      padding: 12px 60px 10px 40px
-      // Sawtooth borrowed from Bobby Jones - http://codepen.io/BobbyJones/details/Cesty
-      background-image: linear-gradient(45deg, transparent 75%, skyblue 75%),
-                        linear-gradient(135deg, transparent 75%, skyblue 75%),
-                        linear-gradient(-45deg, transparent 75%, skyblue 75%),
-                        linear-gradient(-135deg, transparent 75%, skyblue 75%)
-      letter-spacing: 4px
-      line-height: 1.2
-      font-family: 'HelveticaNeue-CondensedBold', 'Arial Narrow', 'Trebuchet MS', Impact, 'Roboto', sans-serif
-      font-size: 24px
-      text-transform: uppercase
+      width: 140px
+      height: 76px
+      padding-top: 18px
+      left: 30px
+      top: 17px
+      line-height: 1
+      font-size: 22px
+      text-align: center
 
     &:after
-      content: '87CEEB'
-      background: linear-gradient(to bottom, transparent 175px,
-                                             rgba(205,92,92,.5) 175px,
-                                             rgba(205,92,92,.5) 178px,
-                                             transparent 178px)
-      border: 3px solid rgba(205,92,92,.5)
+      content: 'F0E68C'
+      width: 75px
+      height: 160px
+      padding-top: 136px
+      top: -25px
+      left: 73px
+      background: linear-gradient(to bottom, transparent 130px,
+                                             salmon 130px,
+                                             salmon 133px,
+                                             transparent 133px)
+      border: 3px solid salmon
