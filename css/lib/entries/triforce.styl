@@ -1,0 +1,70 @@
+/*-----------------------------
+
+Triforce
+
+-----------------------------*/
+
+$tf-gold-light = #FFE39A
+$tf-gold = #F9A500
+$tf-gold-dark = #CA8600
+$tf-gold-darker = #563804
+
+$tf-width = 120px
+$tf-height = 110px
+
+#triforce
+  background: #111
+
+  div
+    margin-left: -($tf-width/2)
+    margin-top: -118px
+    
+    &:before,
+    &:after
+      top: $tf-height
+    
+    &:before
+      left: -($tf-width/2)
+    
+    &:after
+      left: ($tf-width/2)
+
+  div,
+  div:before,
+  div:after
+    width: $tf-width
+    height: $tf-height
+    background-image: linear-gradient(150deg, transparent 18%,
+                                              $tf-gold-darker 18%),
+                      linear-gradient(-150deg, transparent 18%,
+                                              $tf-gold-darker 18%),
+                      linear-gradient(119deg, transparent 50%,
+                                             $tf-gold-light 50%,
+                                             $tf-gold-light 57%,
+                                             transparent 57%),
+                      linear-gradient(-119deg, transparent 50%,
+                                             $tf-gold-dark 50%,
+                                             $tf-gold-dark 57%,
+                                             transparent 57%),
+                      linear-gradient(-62deg, white(0) 55%,
+                                              white(.6) 62%,
+                                              white(0) 68%),
+                      linear-gradient(119deg, transparent 50%,
+                                              $tf-gold 50%),
+                      linear-gradient(-119deg, transparent 50%,
+                                              $tf-gold 50%)
+    background-repeat: no-repeat
+    background-size: 50% 7%,
+                     50% 7%,
+                     50% 100%,
+                     50% 100%,
+                     100% 65%,
+                     50% 100%,
+                     50% 100%
+    background-position: bottom left,
+                         bottom right,
+                         top left,
+                         top right,
+                         bottom left,
+                         top left,
+                         top right

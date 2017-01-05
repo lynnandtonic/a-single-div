@@ -2076,3 +2076,30 @@ header .share-link:hover {
   background: linear-gradient(to bottom, transparent 130px, #fa8072 130px, #fa8072 133px, transparent 133px);
   border: 3px solid #fa8072;
 }
+#triforce {
+  background: #111;
+}
+#triforce div {
+  margin-left: -60px;
+  margin-top: -118px;
+}
+#triforce div:before,
+#triforce div:after {
+  top: 110px;
+}
+#triforce div:before {
+  left: -60px;
+}
+#triforce div:after {
+  left: 60px;
+}
+#triforce div,
+#triforce div:before,
+#triforce div:after {
+  width: 120px;
+  height: 110px;
+  background-image: linear-gradient(150deg, transparent 18%, #563804 18%), linear-gradient(-150deg, transparent 18%, #563804 18%), linear-gradient(119deg, transparent 50%, #ffe39a 50%, #ffe39a 57%, transparent 57%), linear-gradient(-119deg, transparent 50%, #ca8600 50%, #ca8600 57%, transparent 57%), linear-gradient(-62deg, rgba(255,255,255,0) 55%, rgba(255,255,255,0.6) 62%, rgba(255,255,255,0) 68%), linear-gradient(119deg, transparent 50%, #f9a500 50%), linear-gradient(-119deg, transparent 50%, #f9a500 50%);
+  background-repeat: no-repeat;
+  background-size: 50% 7%, 50% 7%, 50% 100%, 50% 100%, 100% 65%, 50% 100%, 50% 100%;
+  background-position: bottom left, bottom right, top left, top right, bottom left, top left, top right;
+}
