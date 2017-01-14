@@ -2103,3 +2103,43 @@ header .share-link:hover {
   background-size: 50% 7%, 50% 7%, 50% 100%, 50% 100%, 100% 65%, 50% 100%, 50% 100%;
   background-position: bottom left, bottom right, top left, top right, bottom left, top left, top right;
 }
+#panda-cub {
+  background: #48d1cc;
+}
+#panda-cub div {
+  width: 210px;
+  height: 160px;
+  margin-left: -105px;
+  margin-top: -80px;
+  background-color: white;
+  background-image: radial-gradient(ellipse at 50% 60%, #333 12px, transparent 12px), radial-gradient(ellipse at 50% 80%, #555 6px, transparent 6px);
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border-bottom-left-radius: 110px 60px;
+  border-bottom-right-radius: 110px 60px;
+  border: 5px solid #333;
+  border-bottom-width: 10px;
+  box-shadow: inset 10px -10px 0 #eee;
+}
+#panda-cub div:before {
+  width: 70px;
+  height: 40px;
+  left: 29px;
+  top: 55px;
+  background-color: #333;
+  background-image: radial-gradient(circle at 51px 20px, white 3px, transparent 3px), radial-gradient(circle at 46px 20px, #333 7px, transparent 7px), radial-gradient(circle at 45px 20px, white 10px, transparent 10px);
+  border-radius: 50% 50% 45% 42%;
+  transform: rotate(-45deg);
+  box-shadow: 10px -72px 0 -4px #333;
+}
+#panda-cub div:after {
+  width: 70px;
+  height: 40px;
+  left: 111px;
+  top: 55px;
+  background-color: #333;
+  background-image: radial-gradient(circle at 24px 15px, white 3px, transparent 3px), radial-gradient(circle at 24px 20px, #333 7px, transparent 7px), radial-gradient(circle at 25px 20px, white 10px, transparent 10px);
+  border-radius: 50% 50% 42% 45%;
+  transform: rotate(45deg);
+  box-shadow: -10px -72px 0 -4px #333;
+}
