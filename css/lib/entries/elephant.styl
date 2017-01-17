@@ -1,0 +1,75 @@
+/*-----------------------------
+
+Elephant #dailycssimages
+
+-----------------------------*/
+
+#elephant
+  background: mediumpurple
+
+  //- Elephant body
+  div
+    width: 180px
+    height: 150px
+    margin-left: -(@width/2 - 8px)
+    margin-top: -(@height/2)
+    background-color: lightsteelblue
+    background-image: linear-gradient(to right, midnightblue, midnightblue),
+                      linear-gradient(to right, black(.1), black(.1))
+    background-repeat: no-repeat
+    background-size: 80px 5px, 96px 13px
+    background-position: 60px 100%, 52px 100%
+    border-radius: 100px 100px 8px 8px
+    border: 8px solid midnightblue
+    box-shadow: inset -8px 8px 0 black(.1)
+
+    //- head/trunk
+    &:before
+      width: 70px
+      height: 150px
+      margin-left: -40px
+      margin-top: -8px
+      background-color: lightsteelblue
+      background-image: linear-gradient(to right, lightsteelblue 8px,
+                                                  midnightblue 8px,
+                                                  midnightblue 16px,
+                                                  black(.1) 16px),
+                        linear-gradient(45deg, transparent 35px,
+                                                midnightblue 35px,
+                                                midnightblue 43px,
+                                                transparent 43px),
+                        linear-gradient(to top, transparent 30px,
+                                                midnightblue 30px,
+                                                midnightblue 38px,
+                                                transparent 38px,
+                                                transparent 46px,
+                                                midnightblue 46px,
+                                                midnightblue 54px,
+                                                transparent 54px),
+                        radial-gradient(circle at 35px 45px, midnightblue 6px, transparent 6px)
+                        
+      background-repeat: no-repeat
+      background-size: 24px 30px, 50px 30px, 10px 100%, 100% 100%
+      background-position: 33px 97px, 90% 120px, 0 0, 0 0
+      border: 8px solid midnightblue
+      border-radius: 50px 30px 50px 30px
+      border-right-color: transparent
+      box-shadow: inset 8px 8px 0 black(.1)
+
+    //- ear  
+    &:after
+      width: 70px
+      height: 90px
+      margin-top: -8px
+      margin-left: 4px
+      background-image: linear-gradient(to top, midnightblue 8px, transparent 8px),
+                        linear-gradient(70deg, transparent 40px, lightsteelblue 40px)
+      background-repeat: no-repeat
+      background-size: 60% 100%, 100% 100%
+      background-position: 100% 0, 0 0
+      border-radius: 50px 50px 5px 0
+      border: 8px solid midnightblue
+      border-left-color: transparent
+      border-bottom: none
+      box-shadow: 8px 0 0 black(.1)
+      transform: rotate(20deg)
