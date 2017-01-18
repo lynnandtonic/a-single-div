@@ -1,0 +1,80 @@
+/*-----------------------------
+
+Beaver #dailycssimages
+
+-----------------------------*/
+
+#beaver
+  background: paleturquoise
+
+  div
+    width: 80px
+    height: 150px
+    margin-left: 10px
+    margin-top: -50px
+    background-color: saddlebrown
+    background-image: repeating-linear-gradient(75deg, transparent,
+                                                       transparent 10px,
+                                                       black(.2) 10px,
+                                                       black(.2) 12px),
+                      repeating-linear-gradient(-15deg, transparent,
+                                                       transparent 10px,
+                                                       black(.2) 10px,
+                                                       black(.2) 12px)
+    border-radius: 40px
+    border-bottom-left-radius: 40px 100px
+    border-bottom-right-radius: 40px 100px
+    box-shadow: inset -15px -5px 0 black(.2)
+    transform: rotate(45deg)
+
+    &:before
+      width: 120px
+      height: 200px
+      margin-left: -95px
+      margin-top: 10px
+      background-image: radial-gradient(ellipse at center 100%, lighten(peru,20%) 30px, transparent 30px),
+                        linear-gradient(70deg, transparent 20%, white 20%),
+                        linear-gradient(-70deg, transparent 20%, white 20%),
+                        radial-gradient(circle at center 20px, peru 80px, transparent 80px),
+                        radial-gradient(ellipse at center 100%, peru 50px, transparent 50px),
+                        radial-gradient(ellipse at 35px 180px, darken(peru,12%) 35px, transparent 35px),
+                        radial-gradient(ellipse at 85px 180px, darken(peru,12%) 35px, transparent 35px)
+      background-repeat: no-repeat
+      background-size: 100% 100%,
+                       10px 15px,
+                       10px 15px,
+                       100% 100%,
+                       100% 100%,
+                       100% 100%,
+                       100% 100%
+      background-position: 0 0,
+                           48px 70px,
+                           59px 70px,
+                           0 0,
+                           0 0,
+                           0 0,
+                           0 0
+      border-top-left-radius: 60px 80px
+      border-top-right-radius: 60px 80px
+      border-bottom-left-radius: 60px 20px
+      border-bottom-right-radius: 60px 20px
+      box-shadow: 0 5px 0 -1px black(.15),
+                  0 60px 5px -6px black(.03)
+      transform: rotate(-45deg)
+
+    //- Ear and facial features
+    &:after
+      width: 24px
+      height: 24px
+      margin-left: -130px
+      margin-top: 80px
+      background-color: peru
+      border-radius: 50%
+      box-shadow: 65px -65px 0 peru,
+                  28px -15px 0 -9px #222,
+                  47px -34px 0 -9px #222,
+                  49px -13px 0 -5px #222,
+                  45px 0 0 3px lighten(peru,20%),
+                  62px -17px 0 3px lighten(peru,20%)
+
+      
