@@ -1,0 +1,122 @@
+/*-----------------------------
+
+Nibbler #dailycssimages
+
+-----------------------------*/
+
+#nibbler
+  background: firebrick
+
+  div
+    width: 180px
+    height: 240px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 5px)
+    background-image: linear-gradient(to top, palegoldenrod 40px, transparent 40px), // chin
+                      radial-gradient(black 70%, transparent 70%),
+                      radial-gradient(black 70%, transparent 70%)
+    background-repeat: no-repeat
+    background-size: 100% 100%,
+                     100% 164px,
+                     48px 30px
+    background-position: 0 0,
+                         0 74px,
+                         center 65px
+    border-bottom-left-radius: 90px 88px
+    border-bottom-right-radius: 100px 85px
+    box-shadow: 0 7px 0 -3px black
+    
+    &:before
+      width: 170px
+      height: 42px
+      margin-left: -(@width/2 - 4px)
+      left: 50%
+      bottom: 32px
+      background: palegoldenrod
+      border-top-left-radius: 100px 40px
+      border-top-right-radius: 100px 40px
+      border-bottom-left-radius: 20px 10px
+      border-bottom-right-radius: 100px 10px
+      box-shadow: inset 0 3px 0 black,
+                  inset 3px 0 0 black,
+                  inset 22px 0 0 palegoldenrod,
+                  inset -3px -3px 0 black
+    
+    &:after
+      width: 230px
+      height: 280px
+      margin-left: -(@width/2)
+      left: 50%
+      margin-top: -15px
+      background-image: radial-gradient(circle at 57px 142px, black 7px, transparent 7px), // eyes
+                        radial-gradient(circle at 43px 156px, white 33px,
+                                                              black 33px,
+                                                              black 35px,
+                                                              transparent 35px),
+                        radial-gradient(circle at 201px 140px, black 7px, transparent 7px),
+                        radial-gradient(circle at 186px 154px, white 33px,
+                                                              black 33px,
+                                                              black 35px,
+                                                              transparent 35px),
+                        radial-gradient(black 70%, transparent 70%), // eyebrows
+                        radial-gradient(gray 70%, transparent 70%),
+                        radial-gradient(black 70%, transparent 70%),
+                        radial-gradient(gray 70%, transparent 70%),
+                        radial-gradient(circle at 53% 18px, black 6px, transparent 6px), // top eye
+                        radial-gradient(circle at center 24px, white 20px,
+                                                              black 20px,
+                                                              black 23px,
+                                                              transparent 23px),
+                        linear-gradient(87deg, transparent 35%, black 35%, black 65%, transparent 65%),
+                        radial-gradient(black 65%, transparent 65%), // nose thing
+                        radial-gradient(palegoldenrod 65%, transparent 65%),
+                        radial-gradient(palegoldenrod 65%, transparent 65%),
+                        radial-gradient(black 65%, transparent 65%),
+                        radial-gradient(circle at 50px 215px, palegoldenrod 10px, transparent 10px), // mouth cover
+                        linear-gradient(75deg, transparent 45%, white 45%), // left tooth
+                        linear-gradient(-75deg, transparent 45%, white 45%),
+                        linear-gradient(75deg, transparent 45%, black 45%),
+                        linear-gradient(-75deg, transparent 45%, black 45%),
+                        linear-gradient(75deg, transparent 45%, white 45%), // right tooth
+                        linear-gradient(-75deg, transparent 45%, white 45%),
+                        linear-gradient(75deg, transparent 45%, black 45%),
+                        linear-gradient(-75deg, transparent 45%, black 45%)
+      background-repeat: no-repeat
+      background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%,
+                       60px 30px, // eyebrows
+                       28px 20px,
+                       60px 30px,
+                       28px 20px,
+                       100% 100%, 100% 100%, 40px 50px,
+                       36px 15px, // nose thing
+                       64px 25px,
+                       44px 15px,
+                       68px 27px,
+                       100% 100%, // mouth cover
+                       10px 32px, // left tooth
+                       10px 32px,
+                       15px 35px,
+                       15px 35px,
+                       10px 34px, // right tooth
+                       10px 34px,
+                       15px 37px,
+                       15px 37px
+      background-position: 0 0, 0 0, 0 0, 0 0,
+                           15px 110px, // eyebrows
+                           44px 111px,
+                           150px 105px,
+                           153px 106px,
+                           0 0, 0 0, 96px 40px,
+                           center 175px, // nose thing
+                           center 169px,
+                           center 186px,
+                           center 169px,
+                           0 0, // mouth cover
+                           74px 223px, // left tooth
+                           84px 223px,
+                           70px 223px,
+                           84px 223px,
+                           155px 221px, // right tooth
+                           165px 221px,
+                           151px 220px,
+                           165px 220px
