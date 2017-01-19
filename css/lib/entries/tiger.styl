@@ -1,0 +1,83 @@
+/*-----------------------------
+
+Tiger #dailycssimages
+
+-----------------------------*/
+
+#tiger
+  background: #899d4e
+
+  div
+    width: 200px
+    height: 150px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-color: darkorange
+    background-image: linear-gradient(100deg, transparent 42%, orangered 42%), // nose bridge
+                      linear-gradient(-100deg, transparent 42%, orangered 42%),
+                      linear-gradient(15deg, transparent 45%, darkorange 45%), // eyes
+                      linear-gradient(-15deg, transparent 45%, darkorange 45%),
+                      radial-gradient(circle at 65px 65px, white 3px, transparent 3px),
+                      radial-gradient(circle at 62px 68px, black 5px, transparent 5px),
+                      radial-gradient(circle at 62px 68px, gold 11px, transparent 11px),
+                      radial-gradient(ellipse at 60px 70px, black 26px, transparent 26px),
+                      radial-gradient(circle at 140px 65px, white 3px, transparent 3px),
+                      radial-gradient(circle at 137px 68px, black 5px, transparent 5px),
+                      radial-gradient(circle at 137px 68px, gold 11px, transparent 11px),
+                      radial-gradient(ellipse at 139px 70px, black 26px, transparent 26px),
+                      radial-gradient(circle at center 65px, transparent 66%, oldlace 66%), // neck scruff
+                      radial-gradient(ellipse at center 90px, darkorange 52%, transparent 52%),
+                      radial-gradient(ellipse at center 40px, transparent 63%, black 63%),
+                      radial-gradient(ellipse at center 5px, black 7px, transparent 7px), // stripes
+                      radial-gradient(ellipse at 75px 2px, black 6px, transparent 6px),
+                      radial-gradient(ellipse at 125px 2px, black 6px, transparent 6px)
+    background-repeat: no-repeat
+    background-size: 15px 68px,
+                     15px 68px,
+                     60px 20px,
+                     60px 20px,
+                     100% 100%, 100% 100%, 100% 100%, 100% 100%,
+                     100% 100%, 100% 100%, 100% 100%, 100% 100%,
+                     100% 100%, 100% 100%, 100% 100%,
+                     100% 100%, 100% 100%, 100%
+    background-position: 85px 30px,
+                         100px 30px,
+                         40px 50px,
+                         102px 50px,
+                         0 0, 0 0, 0 0, 0 0,
+                         0 0, 0 0, 0 0, 0 0,
+                         0 0, 0 0, 0 0,
+                         0 0, 0 0, 0 0
+    border-top-left-radius: 80px 100px
+    border-top-right-radius: 80px 100px
+    border-bottom-left-radius: 100px 40px
+    border-bottom-right-radius: 100px 40px
+    
+    &:before
+      width: 60px
+      height: 45px
+      left: 50%
+      bottom: 10px
+      margin-left: -55px
+      background-color: wheat
+      border-radius: 50%
+      box-shadow: 50px 0 0 wheat,
+                  25px 15px 0 -16px black,
+                  25px 20px 0 -3px darken(wheat,15%)
+    
+    &:after
+      width: 30px
+      height: 12px
+      left: 50%
+      bottom: 42px
+      margin-left: -(@width/2)
+      background-color: black
+      border-radius: 2px 2px 10px 10px
+      box-shadow: -85px -75px 0 -2px black(.3),
+                  -81px -80px 0 10px darkorange,
+                   84px -75px 0 -2px black(.3),
+                   80px -80px 0 10px darkorange,
+                  -48px 8px 0 -5px white,
+                  -50px 18px 0 -5px white,
+                   48px 8px 0 -5px white,
+                   50px 18px 0 -5px white
