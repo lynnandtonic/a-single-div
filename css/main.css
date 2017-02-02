@@ -2310,3 +2310,116 @@ header .share-link:hover {
   background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 60px 30px, 28px 20px, 60px 30px, 28px 20px, 100% 100%, 100% 100%, 40px 50px, 36px 15px, 64px 25px, 44px 15px, 68px 27px, 100% 100%, 10px 32px, 10px 32px, 15px 35px, 15px 35px, 10px 34px, 10px 34px, 15px 37px, 15px 37px;
   background-position: 0 0, 0 0, 0 0, 0 0, 15px 110px, 44px 111px, 150px 105px, 153px 106px, 0 0, 0 0, 96px 40px, center 175px, center 169px, center 186px, center 169px, 0 0, 74px 223px, 84px 223px, 70px 223px, 84px 223px, 155px 221px, 165px 221px, 151px 220px, 165px 220px;
 }
+#clock {
+  background: #dcdcdc;
+}
+#clock div {
+  width: 150px;
+  height: 150px;
+  margin-left: -75px;
+  margin-top: -75px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: radial-gradient(circle at center, #708090 8px, transparent 8px), radial-gradient(circle at center 53%, rgba(0,0,0,0.2) 8px, transparent 8px), radial-gradient(circle at center, white 47%, transparent 47%, transparent 57%, white 57%), linear-gradient(to right, transparent 50%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%), linear-gradient(to bottom, transparent 50%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%), linear-gradient(60deg, transparent 50%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%), linear-gradient(30deg, transparent 50%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%), linear-gradient(-60deg, transparent 50%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%), linear-gradient(-30deg, transparent 50%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%);
+  border: 10px solid white;
+  box-shadow: 0 0 0 2px #708090, inset 0 4px 2px 4px rgba(0,0,0,0.1), 0 3px 2px 3px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+}
+#clock div:before {
+  width: 48px;
+  height: 6px;
+  left: 46%;
+  top: 48%;
+  background-color: #4e5a65;
+  border-radius: 4px;
+  box-shadow: -2px 6px 3px rgba(0,0,0,0.1);
+}
+#clock div:after {
+  width: 30px;
+  height: 7px;
+  top: 42%;
+  left: 30%;
+  background-color: #4e5a65;
+  border-radius: 4px;
+  box-shadow: 6px 6px 3px rgba(0,0,0,0.1);
+  transform: rotate(32deg);
+}
+#supplies {
+  background: #cfcfcf;
+}
+#supplies div {
+  width: 80px;
+  height: 100px;
+  margin-left: -100px;
+  margin-top: -24px;
+  background-color: white;
+  background-image: radial-gradient(circle at 10px 15px, #708090 4px, transparent 4px), radial-gradient(circle at 10px 50px, #708090 4px, transparent 4px), radial-gradient(circle at 10px 85px, #708090 4px, transparent 4px), linear-gradient(to right, #afeeee 22px, white 22px, white 35px, transparent 35px, transparent 65px, white 65px), linear-gradient(to bottom, transparent 20px, #d3d3d3 20px, #d3d3d3 22px, transparent 22px, transparent 28px, #d3d3d3 28px, #d3d3d3 30px, transparent 30px, transparent 36px, #d3d3d3 36px, #d3d3d3 38px, transparent 38px);
+  border-radius: 3px;
+  border: 2px solid #708090;
+  box-shadow: 0 4px 0 -2px #d3d3d3, 0 4px 0 #708090, 0 7px 2px rgba(0,0,0,0.2);
+}
+#supplies div:before {
+  width: 117px;
+  height: 18px;
+  margin-top: -50px;
+  margin-left: 20px;
+  background-color: #f5deb3;
+  background-image: repeating-linear-gradient(to right, transparent, transparent 5px, #708090 5px, #708090 7px, transparent 7px);
+  background-size: 100% 50%;
+  background-repeat: repeat-x;
+  border-radius: 3px;
+  border: 2px solid #708090;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.2);
+}
+#supplies div:after {
+  width: 110px;
+  height: 90px;
+  margin-left: 100px;
+  margin-top: -10px;
+  background-color: white;
+  background-image: radial-gradient(circle at 30px 8px, #708090 3px, transparent 3px), radial-gradient(circle at 81px 8px, #708090 3px, transparent 3px), linear-gradient(to bottom, #fa8072, #fa8072 18px, #d3d3d3 18px, #d3d3d3 20px, transparent 20px, transparent 36px, #d3d3d3 36px, #d3d3d3 38px, transparent 38px, transparent 54px, #d3d3d3 54px, #d3d3d3 56px, transparent 56px, transparent 72px, #d3d3d3 72px, #d3d3d3 74px, transparent 74px), repeating-linear-gradient(to right, transparent, transparent 14px, #d3d3d3 14px, #d3d3d3 16px, transparent 16px);
+  border-radius: 3px;
+  border: 2px solid #708090;
+  box-shadow: 0 4px 0 -2px #d3d3d3, 0 4px 0 #708090, 0 8px 0 -2px #d3d3d3, 0 8px 0 #708090, 0 11px 2px rgba(0,0,0,0.2);
+}
+#pencil-cup {
+  background: #c3c3c3;
+}
+#pencil-cup div {
+  width: 68px;
+  height: 100px;
+  margin-left: -34px;
+  margin-top: -70px;
+  background-image: repeating-linear-gradient(to right, transparent, transparent 8px, #708090 8px, #708090 10px), linear-gradient(to bottom, #ffc0cb 10px, #c0c0c0 10px, #c0c0c0 16px, transparent 16px), linear-gradient(to right, #fffacd 20px, #eee8aa 20px, #eee8aa 30px, #fffacd 30px, #fffacd 50px, #eee8aa 50px);
+  border-radius: 3px;
+  border: 2px solid #708090;
+}
+#pencil-cup div:before {
+  content: 'PENCILS';
+  width: 78px;
+  height: 70px;
+  margin-left: -7px;
+  margin-top: 50px;
+  padding-top: 20px;
+  z-index: 2;
+  background-color: white;
+  border-radius: 3px 3px 10px 10px;
+  border: 2px solid #708090;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.2), inset 0 -7px 2px rgba(0,0,0,0.1), inset -20px 0 2px rgba(0,0,0,0.05);
+  font-family: Helvetica, Arial;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #d3d3d3;
+}
+#pencil-cup div:after {
+  width: 8px;
+  height: 100px;
+  margin-left: 34px;
+  margin-top: -7px;
+  background-image: linear-gradient(to bottom, #ffc0cb 10px, #c0c0c0 10px, #c0c0c0 16px, #eee8aa 16px);
+  border-radius: 3px;
+  border: 2px solid #708090;
+  box-shadow: 3px 6px 2px rgba(0,0,0,0.2);
+  transform: rotate(12deg);
+}

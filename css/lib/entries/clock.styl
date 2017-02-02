@@ -1,0 +1,70 @@
+/*-----------------------------
+
+Clock
+
+-----------------------------*/
+
+#clock
+  background: gainsboro
+
+  div
+    width: 150px
+    height: 150px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    border-radius: 50%
+    background-color: white
+    background-image: radial-gradient(circle at center, slategrey 8px, transparent 8px),
+                      radial-gradient(circle at center 53%, black(.2) 8px, transparent 8px),
+                      radial-gradient(circle at center, white 47%,
+                                                        transparent 47%,
+                                                        transparent 57%,
+                                                        white 57%),
+                      linear-gradient(to right, transparent 50%,
+                                                lightgray 50%,
+                                                lightgray 51%,
+                                                transparent 51%),
+                      linear-gradient(to bottom, transparent 50%,
+                                                lightgray 50%,
+                                                lightgray 51%,
+                                                transparent 51%),
+                      linear-gradient(60deg, transparent 50%,
+                                                lightgray 50%,
+                                                lightgray 51%,
+                                                transparent 51%),
+                      linear-gradient(30deg, transparent 50%,
+                                                lightgray 50%,
+                                                lightgray 51%,
+                                                transparent 51%),
+                      linear-gradient(-60deg, transparent 50%,
+                                                lightgray 50%,
+                                                lightgray 51%,
+                                                transparent 51%),
+                      linear-gradient(-30deg, transparent 50%,
+                                                lightgray 50%,
+                                                lightgray 51%,
+                                                transparent 51%)
+    border: 10px solid white
+    box-shadow: 0 0 0 2px slategrey,
+                inset 0 4px 2px 4px black(.1),
+                0 3px 2px 3px black(.2)
+    box-sizing: border-box
+    
+    &:before
+      width: 48px
+      height: 6px
+      left: 46%
+      top: 48%
+      background-color: darken(slategrey, 15)
+      border-radius: 4px
+      box-shadow: -2px 6px 3px black(.1)
+    
+    &:after
+      width: 30px
+      height: 7px
+      top: 42%
+      left: 30%
+      background-color: darken(slategrey, 15)
+      border-radius: 4px
+      box-shadow: 6px 6px 3px black(.1)
+      transform: rotate(32deg)

@@ -1,0 +1,64 @@
+/*-----------------------------
+
+Pencil Cup
+
+-----------------------------*/
+
+#pencil-cup
+  background: darken(gainsboro,10)
+
+  div
+    width: 68px
+    height: 100px
+    margin-left: -(@width/2)
+    margin-top: -70px
+    background-image: repeating-linear-gradient(to right, transparent,
+                                                          transparent 8px,
+                                                          slategrey 8px,
+                                                          slategrey 10px),
+                      linear-gradient(to bottom, pink 10px,
+                                                 silver 10px,
+                                                 silver 16px,
+                                                 transparent 16px),
+                      linear-gradient(to right, lemonchiffon 20px,
+                                                palegoldenrod 20px,
+                                                palegoldenrod 30px,
+                                                lemonchiffon 30px,
+                                                lemonchiffon 50px,
+                                                palegoldenrod 50px)
+    border-radius: 3px
+    border: 2px solid slategrey
+
+    &:before
+      content: 'PENCILS'
+      width: 78px
+      height: 70px
+      margin-left: -7px
+      margin-top: 50px
+      padding-top: 20px
+      z-index: 2
+      background-color: white
+      border-radius: 3px 3px 10px 10px
+      border: 2px solid slategrey
+      box-shadow: 0 3px 2px black(.2),
+                  inset 0 -7px 2px black(.1),
+                  inset -20px 0 2px black(.05)
+      font-family: Helvetica, Arial
+      font-size: 9px
+      font-weight: bold
+      letter-spacing: 1px
+      color: lightgray
+    
+    &:after
+      width: 8px
+      height: 100px
+      margin-left: 34px
+      margin-top: -7px
+      background-image: linear-gradient(to bottom, pink 10px,
+                                                   silver 10px,
+                                                   silver 16px,
+                                                   palegoldenrod 16px)
+      border-radius: 3px
+      border: 2px solid slategrey
+      box-shadow: 3px 6px 2px black(.2)
+      transform: rotate(12deg)
