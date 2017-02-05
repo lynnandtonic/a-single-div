@@ -1,0 +1,56 @@
+/*-----------------------------
+
+Hamburger
+
+-----------------------------*/
+
+#hamburger
+  background: darken(beige,3)
+
+  div
+    width: 100px
+    height: 34px
+    margin-left: -(@width/2 + 3px)
+    margin-top: -50px
+    border-radius: 50px 50px 10px 10px
+    background-color: tan
+    background-image: radial-gradient(wheat 15%, transparent 16%),
+                      radial-gradient(wheat 15%, transparent 16%)
+    background-size: 10px 10px
+    background-position: 0 0, 5px 5px
+    border: 3px solid darken(tan,20)
+
+    &:before
+      width: 100px
+      height: 15px
+      margin-left: -3px
+      top: 73px
+      border-radius: 8px
+      background-color: tan
+      border: 3px solid darken(tan,20)
+      box-shadow: 0 -18px 0 -2px saddlebrown,
+                  0 -36px 0 -2px saddlebrown
+    
+    &:after
+      width: 120px
+      height: 100px
+      margin-left: -10px
+      background-repeat: no-repeat
+      background-image: linear-gradient(lighten(gold,10), lighten(gold,10)),
+                        linear-gradient(150deg, lighten(gold,10) 30%, transparent 30%),
+                        linear-gradient(-150deg, lighten(gold,10) 30%, transparent 30%),
+                        linear-gradient(lighten(gold,10), lighten(gold,10)),
+                        linear-gradient(150deg, lighten(gold,10) 30%, transparent 30%),
+                        linear-gradient(-150deg, lighten(gold,10) 30%, transparent 30%)
+      background-size: 96px 3px,
+                       30px 16px,
+                       30px 16px,
+                       96px 3px,
+                       30px 16px,
+                       30px 16px
+      background-position: 12px 55px,
+                           40px 55px,
+                           10px 55px,
+                           12px 37px,
+                           80px 37px,
+                           50px 37px

@@ -1,0 +1,57 @@
+/*-----------------------------
+
+Taco
+
+-----------------------------*/
+
+#taco
+  background: darken(beige,5)
+
+  div
+    width: 100px
+    height: 50px
+    margin-left: -(@width/2 + 5px)
+    margin-top: -(@height/2 + 10px)
+    background-color: lighten(orange,5)
+    background-image: radial-gradient(darken(orange,4) 15%, transparent 16%),
+                      radial-gradient(darken(orange,4) 15%, transparent 16%)
+    background-size: 10px 10px
+    background-position: 0 0, 5px 5px
+    border: 3px solid darken(orange,1)
+    border-radius: 50px 50px 5px 5px
+    
+    &:before
+      width: 10px
+      height: 10px
+      top: 40px
+      left: -6px
+      background-color: saddlebrown
+      border-radius: 50%
+      box-shadow: 13px -22px 0 palegreen,
+                  16px -26px 0 palegreen,
+                  22px -28px 0 palegreen,
+                  28px -29px 0 palegreen,
+                  3px 5px 0 saddlebrown,
+                  6px 5px 0 saddlebrown,
+                  6px 0 0 saddlebrown,
+                  3px -5px 0 saddlebrown,
+                  5px -5px 0 saddlebrown,
+                  6px -9px 0 saddlebrown,
+                  9px -10px 0 saddlebrown,
+                  8px -15px 0 saddlebrown,
+                  12px -17px 0 saddlebrown
+
+
+    &:after
+      width: 100px
+      height: 50px
+      margin-left: 5px
+      margin-top: 5px
+      background-color: lighten(orange,20)
+      background-image: radial-gradient(orange 15%, transparent 16%),
+                        radial-gradient(orange 15%, transparent 16%)
+      background-size: 10px 10px
+      background-position: 0 0, 5px 5px
+      border: 3px solid orange
+      border-radius: 50px 50px 5px 5px
+      

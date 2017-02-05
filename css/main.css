@@ -1422,6 +1422,29 @@ header .share-link:hover {
   border-radius: 35px 5px;
   box-shadow: 50px 55px 0 #2e8b57, 70px -10px 0 -2px #2e8b57, -10px 80px 0 -2px #2e8b57, 40px 105px 0 -2px #2e8b57;
 }
+#pizza-pie {
+  background-color: #f5f5dc;
+}
+#pizza-pie div {
+  width: 120px;
+  height: 120px;
+  margin-left: -63px;
+  margin-top: -63px;
+  background-color: #deb887;
+  background-image: radial-gradient(#ffe970 50px, transparent 50px), radial-gradient(#cd853f 15%, transparent 16%), radial-gradient(#cd853f 15%, transparent 16%);
+  background-size: 100% 100%, 10px 10px, 10px 10px;
+  background-position: center center, 0 0, 5px 5px;
+  border-radius: 50%;
+  border: 3px solid #c88937;
+}
+#pizza-pie div:before {
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(#b22222 50%, transparent 50%), radial-gradient(#b22222 50%, transparent 50%), radial-gradient(#b22222 50%, transparent 50%), radial-gradient(#b22222 50%, transparent 50%), radial-gradient(#b22222 50%, transparent 50%), radial-gradient(#b22222 50%, transparent 50%), radial-gradient(#b22222 50%, transparent 50%);
+  background-size: 24px 24px;
+  background-position: 24px 26px, 52px 16px, 78px 36px, 48px 46px, 18px 54px, 38px 76px, 70px 68px;
+}
 #vinyl-record {
   background: #ddd;
 }
@@ -2422,4 +2445,74 @@ header .share-link:hover {
   border: 2px solid #708090;
   box-shadow: 3px 6px 2px rgba(0,0,0,0.2);
   transform: rotate(12deg);
+}
+#hamburger {
+  background: #f2f2d0;
+}
+#hamburger div {
+  width: 100px;
+  height: 34px;
+  margin-left: -53px;
+  margin-top: -50px;
+  border-radius: 50px 50px 10px 10px;
+  background-color: #d2b48c;
+  background-image: radial-gradient(#f5deb3 15%, transparent 16%), radial-gradient(#f5deb3 15%, transparent 16%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  border: 3px solid #b28446;
+}
+#hamburger div:before {
+  width: 100px;
+  height: 15px;
+  margin-left: -3px;
+  top: 73px;
+  border-radius: 8px;
+  background-color: #d2b48c;
+  border: 3px solid #b28446;
+  box-shadow: 0 -18px 0 -2px #8b4513, 0 -36px 0 -2px #8b4513;
+}
+#hamburger div:after {
+  width: 120px;
+  height: 100px;
+  margin-left: -10px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#ffdf33, #ffdf33), linear-gradient(150deg, #ffdf33 30%, transparent 30%), linear-gradient(-150deg, #ffdf33 30%, transparent 30%), linear-gradient(#ffdf33, #ffdf33), linear-gradient(150deg, #ffdf33 30%, transparent 30%), linear-gradient(-150deg, #ffdf33 30%, transparent 30%);
+  background-size: 96px 3px, 30px 16px, 30px 16px, 96px 3px, 30px 16px, 30px 16px;
+  background-position: 12px 55px, 40px 55px, 10px 55px, 12px 37px, 80px 37px, 50px 37px;
+}
+#taco {
+  background: #efefc8;
+}
+#taco div {
+  width: 100px;
+  height: 50px;
+  margin-left: -55px;
+  margin-top: -35px;
+  background-color: #ffae1a;
+  background-image: radial-gradient(#eb9800 15%, transparent 16%), radial-gradient(#eb9800 15%, transparent 16%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  border: 3px solid #faa200;
+  border-radius: 50px 50px 5px 5px;
+}
+#taco div:before {
+  width: 10px;
+  height: 10px;
+  top: 40px;
+  left: -6px;
+  background-color: #8b4513;
+  border-radius: 50%;
+  box-shadow: 13px -22px 0 #98fb98, 16px -26px 0 #98fb98, 22px -28px 0 #98fb98, 28px -29px 0 #98fb98, 3px 5px 0 #8b4513, 6px 5px 0 #8b4513, 6px 0 0 #8b4513, 3px -5px 0 #8b4513, 5px -5px 0 #8b4513, 6px -9px 0 #8b4513, 9px -10px 0 #8b4513, 8px -15px 0 #8b4513, 12px -17px 0 #8b4513;
+}
+#taco div:after {
+  width: 100px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: #ffc966;
+  background-image: radial-gradient(#ffa500 15%, transparent 16%), radial-gradient(#ffa500 15%, transparent 16%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  border: 3px solid #ffa500;
+  border-radius: 50px 50px 5px 5px;
 }
