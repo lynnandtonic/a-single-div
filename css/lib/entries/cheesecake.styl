@@ -1,0 +1,69 @@
+/*-----------------------------
+
+Cheesecake
+
+-----------------------------*/
+
+#cheesecake
+  background: mediumpurple
+
+  div
+    width: 240px
+    height: 90px
+    margin-left: -(@width/2)
+    margin-top: -30px
+
+    background: white
+    border-radius: 50%
+    box-shadow: 0 5px 0 #ddd,
+                0 8px 2px black(.1)
+
+    &:before
+      width: 200px
+      height: 80px
+      left: 50%
+      margin-left: -(@width/2)
+      margin-top: 0
+
+      background-color: darken(floralwhite,7)
+      background-image: linear-gradient(to right, darken(tan,15), tan 60%, transparent 60%),
+                        linear-gradient(to right, transparent 40%, tan 40%, darken(tan,15)),
+                        linear-gradient(-45deg, white 23%, transparent 23%),
+                        linear-gradient(45deg, white 23%, transparent 23%),
+                        linear-gradient(to right, transparent 30%,
+                                                  lighten(burlywood,12) 50%,
+                                                  transparent 70%)
+      background-size: 50% 100%
+      background-position: 0 0,
+                           100% 0,
+                           0 0,
+                           100% 0,
+                           50% 0
+      background-repeat: no-repeat
+      border-bottom-right-radius: 100px 40px
+      border-bottom-left-radius: 100px 40px
+    
+
+    &:after
+      width: 200px
+      height: 75px
+      left: 50%
+      margin-left: -(@width/2)
+      top: -35px
+      background-image: radial-gradient(darken(crimson,2) 50%, transparent 50%),
+                        radial-gradient(crimson 50%, transparent 50%),
+                        radial-gradient(darken(crimson,10) 50%, transparent 52%),
+                        linear-gradient(-40deg, transparent 22%, darken(floralwhite,2) 22%),
+                        linear-gradient(40deg, transparent 22%, darken(floralwhite,2) 22%)
+      background-size: 20px 20px,
+                       19px 19px,
+                       18px 18px,
+                       50% 100%,
+                       50% 100%
+      background-position: 83px 12px,
+                           98px 15px,
+                           93px 7px,
+                           0 0,
+                           100% 0
+      background-repeat: no-repeat
+      border-radius: 50%

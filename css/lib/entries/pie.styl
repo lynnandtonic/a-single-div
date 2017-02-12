@@ -1,0 +1,94 @@
+/*-----------------------------
+
+Pie
+
+-----------------------------*/
+
+#pie
+  background: darkcyan
+
+  div
+    width: 240px
+    height: 90px
+    margin-left: -(@width/2)
+    margin-top: -30px
+    background: white
+    border-radius: 50%
+    box-shadow: 0 5px 0 #ddd,
+                0 8px 2px black(.1)
+
+    &:before
+      width: 180px
+      height: 45px
+      left: 50%
+      margin-left: -(@width/2)
+      margin-top: 25px
+
+      background-color: darken(floralwhite,7)
+      background-image: linear-gradient(68deg, white 10%, transparent 10%),
+                        linear-gradient(-68deg, white 10%, transparent 10%),
+                        linear-gradient(to right, darken(silver,25),
+                                                  silver 30%,
+                                                  white(.1) 40%,
+                                                  silver 70%,
+                                                  darken(silver,25) 100%)
+      border-bottom-right-radius: 80px 35px
+      border-bottom-left-radius: 80px 35px
+
+    &:after
+      width: 180px
+      height: 60px
+      left: 50%
+      margin-left: -(@width/2)
+      top: -18px
+      
+      background-image: radial-gradient(white 50%, transparent 50%),
+                        radial-gradient(white 50%, transparent 50%),
+                        radial-gradient(white 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(peru 50%, transparent 50%),
+                        radial-gradient(ellipse at center, orange 40%,
+                                                           darkorange 60%)
+      background-repeat: no-repeat
+      background-size: 40px 15px,
+                       28px 10px,
+                       10px 20px,
+                       25px 18px,
+                       25px 18px,
+                       30px 20px,
+                       30px 20px,
+                       30px 20px,
+                       30px 20px,
+                       30px 20px,
+                       30px 20px,
+                       30px 20px,
+                       25px 18px,
+                       25px 18px,
+                       100% 100%
+      background-position: 70px 20px,
+                           75px 16px,
+                           86px 10px,
+                           -15px 30px,
+                           0 40px,
+                           15px 45px,
+                           35px 50px,
+                           55px 52px,
+                           75px 52px,
+                           95px 52px,
+                           115px 50px,
+                           135px 45px,
+                           155px 40px,
+                           170px 30px,
+                           0 0
+      border-radius: 50%
+      box-shadow: 0 0 0 8px peru,
+                  0 3px 0 9px silver
