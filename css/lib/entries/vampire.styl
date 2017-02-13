@@ -1,0 +1,97 @@
+/*-----------------------------
+
+Vampire
+
+-----------------------------*/
+
+#vampire
+  background: #444
+
+  div
+    width: 130px
+    height: 160px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background-image: linear-gradient(to top, black(.1), black(.1)),
+                      linear-gradient(to right, linen, linen),
+                      radial-gradient(ellipse at center -10px, linen 50%, transparent 50%),
+                      radial-gradient(ellipse at center -10px, linen 50%, transparent 50%)
+    background-repeat: no-repeat
+    background-size: 50px 15px,
+                     50px 80%,
+                     30px 40px,
+                     30px 40px
+    background-position: center 92%,
+                         center 100%,
+                         -2px 68%,
+                         103% 68%
+
+    &:before
+      width: 100px
+      height: 135px
+      left: 15px
+      background-color: #333
+      background-image: radial-gradient(circle, #222 15%,
+                                                tomato 15%,
+                                                tomato 30%,
+                                                white 30%,
+                                                white 50%,
+                                                transparent 50%),
+                        radial-gradient(circle, #222 15%,
+                                                tomato 15%,
+                                                tomato 30%,
+                                                white 30%,
+                                                white 50%,
+                                                transparent 50%),
+                        radial-gradient(ellipse, black(.1) 50%, transparent 50%),
+                        radial-gradient(ellipse, black(.1) 50%, transparent 50%),
+                        linear-gradient(linen, linen),
+                        radial-gradient(circle, linen 40%,
+                                                darken(linen,15) 40%,
+                                                darken(linen,15) 53%,
+                                                transparent 42%),
+                        linear-gradient(linen, linen),
+                        linear-gradient(45deg, transparent 20%, white 20%),
+                        linear-gradient(-45deg, transparent 20%, white 20%),
+                        radial-gradient(ellipse, #333 50%, transparent 50%),
+                        radial-gradient(circle, linen 50%, transparent 50%),
+                        radial-gradient(circle, linen 50%, transparent 50%),
+                        linear-gradient(to bottom, #222 34%, linen 34%)
+      background-repeat: no-repeat
+      background-size: 24px 24px,
+                       24px 24px,
+                       50px 40px,
+                       50px 40px,
+                       25px 13px,
+                       25px 25px,
+                       60px 15px,
+                       8px 20px,
+                       8px 20px,
+                       65px 30px,
+                       65px 80px,
+                       65px 80px,
+                       100% 100%
+      background-position: 18px 70px,
+                           56px 70px,
+                           4px 62px,
+                           44px 62px,
+                           center 70%,
+                           center 75%,
+                           center 81%,
+                           35px 85%,
+                           57px 85%,
+                           center 95%,
+                           -6px 5px,
+                           42px 5px,
+                           0 0
+      border-radius: 35px 35px 20px 20px
+
+    &:after
+      width: 36px
+      height: 10px
+      left: 25px
+      top: 68px
+      background-color: #222
+      border-radius: 4px
+      box-shadow: 42px 0 0 #222

@@ -1,0 +1,116 @@
+/*-----------------------------
+
+Zombie
+
+-----------------------------*/
+
+#zombie
+  background: #555
+
+  div
+    width: 130px
+    height: 160px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background-image: linear-gradient(to top, black(.15), black(.15)),
+                      linear-gradient(to right, palegreen, palegreen),
+                      radial-gradient(circle, lighten(seagreen,20) 25%,
+                                              palegreen 25%,
+                                              palegreen 50%,
+                                              transparent 50%),
+                      radial-gradient(circle, lighten(seagreen,20) 25%,
+                                              palegreen 25%,
+                                              palegreen 50%,
+                                              transparent 50%),
+                      radial-gradient(circle, pink 50%, transparent 50%),
+                      radial-gradient(circle, pink 50%, transparent 50%),
+                      radial-gradient(circle, pink 50%, transparent 50%),
+                      radial-gradient(circle, pink 50%, transparent 50%)
+    background-repeat: no-repeat
+    background-size: 50px 15px,
+                     50px 80%,
+                     30px 30px,
+                     30px 30px,
+                     40px 40px,
+                     40px 40px,
+                     40px 40px,
+                     40px 40px
+    background-position: center 92%,
+                         center 100%,
+                         -2px 60%,
+                         103% 60%,
+                         30px -5px,
+                         50px -5px,
+                         65px 0,
+                         78px 14px
+
+    &:before
+      width: 100px
+      height: 135px
+      left: 15px
+      background-image: radial-gradient(circle, #222 15%,
+                                                gold 15%,
+                                                gold 30%,
+                                                white 30%,
+                                                white 50%,
+                                                transparent 50%),
+                        radial-gradient(circle, #222 15%,
+                                                gold 15%,
+                                                gold 30%,
+                                                white 30%,
+                                                white 50%,
+                                                transparent 50%),
+                        radial-gradient(ellipse, black(.2) 50%, transparent 50%),
+                        radial-gradient(ellipse, black(.2) 50%, transparent 50%),
+                        linear-gradient(palegreen, palegreen),
+                        radial-gradient(circle, palegreen 40%,
+                                                lighten(seagreen,20) 40%,
+                                                lighten(seagreen,20) 53%,
+                                                transparent 42%),
+                        linear-gradient(25deg, palegreen 80%, transparent 80%)
+      background-repeat: no-repeat
+      background-size: 24px 24px,
+                       24px 24px,
+                       50px 40px,
+                       50px 40px,
+                       25px 13px,
+                       25px 25px,
+                       100% 100%
+      background-position: 18px 67px,
+                           56px 67px,
+                           4px 57px,
+                           44px 57px,
+                           center 70%,
+                           center 75%,
+                           0 0
+      border-radius: 20px 20px 30px 30px
+
+    &:after
+      width: 42px
+      height: 23px
+      margin-left: -(@width/2)
+      left: 50%
+      top: 70%
+      background-color: black(.3)
+      background-image: repeating-linear-gradient(to right, white,
+                                                            white 4px,
+                                                            transparent 4px,
+                                                            transparent 7px),
+                        repeating-linear-gradient(to right, white,
+                                                            white 4px,
+                                                            transparent 4px,
+                                                            transparent 7px),
+                        linear-gradient(to right, black(.2), black(.2))
+      background-repeat: repeat-x,
+                         repeat-x,
+                         no-repeat
+      background-size: 100% 6px,
+                       100% 6px,
+                       31px 15px
+      background-position: 1px 2px,
+                           1px 18px,
+                           5px 5px
+      border-radius: 6px
+      box-shadow: -8px 5px 0 palegreen,
+                  8px 5px 0 palegreen

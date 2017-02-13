@@ -1,0 +1,103 @@
+/*-----------------------------
+
+Frankenstein
+
+-----------------------------*/
+
+#frankenstein
+  background: #444
+
+  div
+    width: 130px
+    height: 160px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background-image: linear-gradient(to top, black(.1), black(.1)),
+                      linear-gradient(to right, seagreen, seagreen),
+                      linear-gradient(to bottom, darken(silver,10) 50%, silver 50%),
+                      radial-gradient(circle, darken(seagreen,10) 25%,
+                                              seagreen 25%,
+                                              seagreen 50%,
+                                              transparent 50%),
+                      radial-gradient(circle, darken(seagreen,10) 25%,
+                                              seagreen 25%,
+                                              seagreen 50%,
+                                              transparent 50%)
+    background-repeat: no-repeat
+    background-size: 50px 15px,
+                     50px 100%,
+                     70px 10px,
+                     30px 30px,
+                     30px 30px
+    background-position: center 92%,
+                         center 0,
+                         center 95%,
+                         -2px 60%,
+                         103% 60%
+
+    &:before
+      width: 100px
+      height: 135px
+      left: 15px
+      background-color: seagreen
+      background-image: linear-gradient(to bottom, #222, #222),
+                        radial-gradient(ellipse, #222 50%, transparent 50%),
+                        radial-gradient(ellipse, #222 50%, transparent 50%),
+                        radial-gradient(ellipse, #222 50%, transparent 50%),
+                        radial-gradient(ellipse, #222 50%, transparent 50%),
+                        radial-gradient(ellipse, #222 50%, transparent 50%),
+                        radial-gradient(circle, #222 15%,
+                                                tomato 15%,
+                                                tomato 30%,
+                                                white 30%,
+                                                white 50%,
+                                                transparent 50%),
+                        radial-gradient(circle, #222 15%,
+                                                tomato 15%,
+                                                tomato 30%,
+                                                white 30%,
+                                                white 50%,
+                                                transparent 50%),
+                        linear-gradient(seagreen, seagreen),
+                        radial-gradient(circle, seagreen 40%,
+                                                darken(seagreen,10) 40%,
+                                                darken(seagreen,10) 53%,
+                                                transparent 42%),
+                        linear-gradient(#333, #333)
+      background-repeat: no-repeat
+      background-size: 100% 15px,
+                       15px 40px,
+                       15px 40px,
+                       15px 40px,
+                       15px 40px,
+                       15px 40px,
+                       24px 24px,
+                       24px 24px,
+                       25px 13px,
+                       25px 25px,
+                       40px 2px
+      background-position: 0 0,
+                           -5px -10px,
+                           6px -14px,
+                           17px -12px,
+                           93% -14px,
+                           106% -10px,
+                           18px 70px,
+                           56px 70px,
+                           center 70%,
+                           center 75%,
+                           center 85%
+      border-radius: 6px 6px 15px 15px
+
+    &:after
+      width: 35px
+      height: 12px
+      left: 28px
+      top: 68px
+      background-color: #222
+      border-radius: 4px
+      box-shadow: 38px 0 0 #222,
+                  -2px -8px 0 4px darken(seagreen,4),
+                  30px -8px 0 4px darken(seagreen,4),
+                  41px -8px 0 4px darken(seagreen,4)

@@ -2590,3 +2590,106 @@ header .share-link:hover {
   border-radius: 50%;
   box-shadow: 0 0 0 8px #cd853f, 0 3px 0 9px #c0c0c0;
 }
+#frankenstein {
+  background: #444;
+}
+#frankenstein div {
+  width: 130px;
+  height: 160px;
+  margin-left: -65px;
+  margin-top: -80px;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), linear-gradient(to right, #2e8b57, #2e8b57), linear-gradient(to bottom, #a7a7a7 50%, #c0c0c0 50%), radial-gradient(circle, #21653f 25%, #2e8b57 25%, #2e8b57 50%, transparent 50%), radial-gradient(circle, #21653f 25%, #2e8b57 25%, #2e8b57 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 50px 15px, 50px 100%, 70px 10px, 30px 30px, 30px 30px;
+  background-position: center 92%, center 0, center 95%, -2px 60%, 103% 60%;
+}
+#frankenstein div:before {
+  width: 100px;
+  height: 135px;
+  left: 15px;
+  background-color: #2e8b57;
+  background-image: linear-gradient(to bottom, #222, #222), radial-gradient(ellipse, #222 50%, transparent 50%), radial-gradient(ellipse, #222 50%, transparent 50%), radial-gradient(ellipse, #222 50%, transparent 50%), radial-gradient(ellipse, #222 50%, transparent 50%), radial-gradient(ellipse, #222 50%, transparent 50%), radial-gradient(circle, #222 15%, #ff6347 15%, #ff6347 30%, white 30%, white 50%, transparent 50%), radial-gradient(circle, #222 15%, #ff6347 15%, #ff6347 30%, white 30%, white 50%, transparent 50%), linear-gradient(#2e8b57, #2e8b57), radial-gradient(circle, #2e8b57 40%, #21653f 40%, #21653f 53%, transparent 42%), linear-gradient(#333, #333);
+  background-repeat: no-repeat;
+  background-size: 100% 15px, 15px 40px, 15px 40px, 15px 40px, 15px 40px, 15px 40px, 24px 24px, 24px 24px, 25px 13px, 25px 25px, 40px 2px;
+  background-position: 0 0, -5px -10px, 6px -14px, 17px -12px, 93% -14px, 106% -10px, 18px 70px, 56px 70px, center 70%, center 75%, center 85%;
+  border-radius: 6px 6px 15px 15px;
+}
+#frankenstein div:after {
+  width: 35px;
+  height: 12px;
+  left: 28px;
+  top: 68px;
+  background-color: #222;
+  border-radius: 4px;
+  box-shadow: 38px 0 0 #222, -2px -8px 0 4px #297c4d, 30px -8px 0 4px #297c4d, 41px -8px 0 4px #297c4d;
+}
+#zombie {
+  background: #555;
+}
+#zombie div {
+  width: 130px;
+  height: 160px;
+  margin-left: -65px;
+  margin-top: -80px;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), linear-gradient(to right, #98fb98, #98fb98), radial-gradient(circle, #57c889 25%, #98fb98 25%, #98fb98 50%, transparent 50%), radial-gradient(circle, #57c889 25%, #98fb98 25%, #98fb98 50%, transparent 50%), radial-gradient(circle, #ffc0cb 50%, transparent 50%), radial-gradient(circle, #ffc0cb 50%, transparent 50%), radial-gradient(circle, #ffc0cb 50%, transparent 50%), radial-gradient(circle, #ffc0cb 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 50px 15px, 50px 80%, 30px 30px, 30px 30px, 40px 40px, 40px 40px, 40px 40px, 40px 40px;
+  background-position: center 92%, center 100%, -2px 60%, 103% 60%, 30px -5px, 50px -5px, 65px 0, 78px 14px;
+}
+#zombie div:before {
+  width: 100px;
+  height: 135px;
+  left: 15px;
+  background-image: radial-gradient(circle, #222 15%, #ffd700 15%, #ffd700 30%, white 30%, white 50%, transparent 50%), radial-gradient(circle, #222 15%, #ffd700 15%, #ffd700 30%, white 30%, white 50%, transparent 50%), radial-gradient(ellipse, rgba(0,0,0,0.2) 50%, transparent 50%), radial-gradient(ellipse, rgba(0,0,0,0.2) 50%, transparent 50%), linear-gradient(#98fb98, #98fb98), radial-gradient(circle, #98fb98 40%, #57c889 40%, #57c889 53%, transparent 42%), linear-gradient(25deg, #98fb98 80%, transparent 80%);
+  background-repeat: no-repeat;
+  background-size: 24px 24px, 24px 24px, 50px 40px, 50px 40px, 25px 13px, 25px 25px, 100% 100%;
+  background-position: 18px 67px, 56px 67px, 4px 57px, 44px 57px, center 70%, center 75%, 0 0;
+  border-radius: 20px 20px 30px 30px;
+}
+#zombie div:after {
+  width: 42px;
+  height: 23px;
+  margin-left: -21px;
+  left: 50%;
+  top: 70%;
+  background-color: rgba(0,0,0,0.3);
+  background-image: repeating-linear-gradient(to right, white, white 4px, transparent 4px, transparent 7px), repeating-linear-gradient(to right, white, white 4px, transparent 4px, transparent 7px), linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  background-repeat: repeat-x, repeat-x, no-repeat;
+  background-size: 100% 6px, 100% 6px, 31px 15px;
+  background-position: 1px 2px, 1px 18px, 5px 5px;
+  border-radius: 6px;
+  box-shadow: -8px 5px 0 #98fb98, 8px 5px 0 #98fb98;
+}
+#vampire {
+  background: #444;
+}
+#vampire div {
+  width: 130px;
+  height: 160px;
+  margin-left: -65px;
+  margin-top: -80px;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), linear-gradient(to right, #faf0e6, #faf0e6), radial-gradient(ellipse at center -10px, #faf0e6 50%, transparent 50%), radial-gradient(ellipse at center -10px, #faf0e6 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 50px 15px, 50px 80%, 30px 40px, 30px 40px;
+  background-position: center 92%, center 100%, -2px 68%, 103% 68%;
+}
+#vampire div:before {
+  width: 100px;
+  height: 135px;
+  left: 15px;
+  background-color: #333;
+  background-image: radial-gradient(circle, #222 15%, #ff6347 15%, #ff6347 30%, white 30%, white 50%, transparent 50%), radial-gradient(circle, #222 15%, #ff6347 15%, #ff6347 30%, white 30%, white 50%, transparent 50%), radial-gradient(ellipse, rgba(0,0,0,0.1) 50%, transparent 50%), radial-gradient(ellipse, rgba(0,0,0,0.1) 50%, transparent 50%), linear-gradient(#faf0e6, #faf0e6), radial-gradient(circle, #faf0e6 40%, #edcaa6 40%, #edcaa6 53%, transparent 42%), linear-gradient(#faf0e6, #faf0e6), linear-gradient(45deg, transparent 20%, white 20%), linear-gradient(-45deg, transparent 20%, white 20%), radial-gradient(ellipse, #333 50%, transparent 50%), radial-gradient(circle, #faf0e6 50%, transparent 50%), radial-gradient(circle, #faf0e6 50%, transparent 50%), linear-gradient(to bottom, #222 34%, #faf0e6 34%);
+  background-repeat: no-repeat;
+  background-size: 24px 24px, 24px 24px, 50px 40px, 50px 40px, 25px 13px, 25px 25px, 60px 15px, 8px 20px, 8px 20px, 65px 30px, 65px 80px, 65px 80px, 100% 100%;
+  background-position: 18px 70px, 56px 70px, 4px 62px, 44px 62px, center 70%, center 75%, center 81%, 35px 85%, 57px 85%, center 95%, -6px 5px, 42px 5px, 0 0;
+  border-radius: 35px 35px 20px 20px;
+}
+#vampire div:after {
+  width: 36px;
+  height: 10px;
+  left: 25px;
+  top: 68px;
+  background-color: #222;
+  border-radius: 4px;
+  box-shadow: 42px 0 0 #222;
+}
