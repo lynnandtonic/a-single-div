@@ -2693,3 +2693,92 @@ header .share-link:hover {
   border-radius: 4px;
   box-shadow: 42px 0 0 #222;
 }
+#mike-wazowski {
+  background: #808000;
+}
+#mike-wazowski div {
+  width: 150px;
+  height: 90px;
+  margin-left: -75px;
+  margin-top: -155px;
+  background: transparent;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  box-shadow: 0 30px 3px 1px #ffe4c4, 0 18px 0 4px #555;
+}
+@media (max-width: 400px) {
+  #mike-wazowski div {
+    margin-top: -125px;
+  }
+}
+#mike-wazowski div:before {
+  width: 200px;
+  height: 220px;
+  margin-left: -100px;
+  top: 45px;
+  left: 50%;
+  background-color: #9acd32;
+  background-image: radial-gradient(circle, white 50%, transparent 50%), radial-gradient(circle, #444 50%, transparent 50%), radial-gradient(circle, #20b2aa 30%, rgba(34,139,34,0) 80%), radial-gradient(circle, #444 50%, transparent 50%), radial-gradient(ellipse, white 35%, #ddd 60%, transparent 60%), radial-gradient(ellipse, #333 45%, #9acd32 55%, #9acd32 60%, transparent 60%), radial-gradient(ellipse, rgba(34,139,34,0.9) 45%, #9acd32 55%, #9acd32 60%, transparent 60%), radial-gradient(ellipse, #9acd32 55%, rgba(34,139,34,0.5) 56%, rgba(34,139,34,0) 63%), radial-gradient(circle, rgba(34,139,34,0) 30%, rgba(34,139,34,0.6) 60%);
+  background-repeat: no-repeat;
+  background-size: 8px 8px, 20px 20px, 25px 25px, 50px 50px, 110px 95px, 120px 110px, 130px 110px, 115px 95px, 250px 260px;
+  background-position: 53% 57px, center 59px, 49% 59px, center 45px, center 25px, center 13px, center -2px, center 35px, 0 -40px;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+}
+#mike-wazowski div:after {
+  width: 70px;
+  height: 40px;
+  margin-left: -35px;
+  left: 50%;
+  top: 185px;
+  background: #444;
+  background-image: radial-gradient(ellipse, white 50%, transparent 50%), radial-gradient(ellipse, white 50%, transparent 50%), radial-gradient(ellipse, white 50%, transparent 50%), radial-gradient(ellipse, white 50%, transparent 50%), radial-gradient(ellipse, rgba(255,255,255,0.2) 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 25px 18px, 25px 18px, 25px 18px, 25px 18px, 56px 30px;
+  background-position: -5px 30px, 15px 32px, 35px 32px, 55px 28px, center 20px;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  box-shadow: 0 6px 0 #9acd32, 0 15px 3px -4px rgba(34,139,34,0.9);
+}
+#sully {
+  background: #afeeee;
+}
+#sully div {
+  width: 160px;
+  height: 62px;
+  margin-left: -80px;
+  margin-top: -150px;
+  background: transparent;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  box-shadow: 0 7px 7px 3px #ffe4c4, 0 15px 0 10px rgba(0,0,0,0.25), 0 15px 0 10px #ffe4c4;
+}
+#sully div:before {
+  width: 180px;
+  height: 230px;
+  margin-left: -90px;
+  top: 30px;
+  left: 50%;
+  background-color: #00ced1;
+  background-image: radial-gradient(ellipse, rgba(0,0,0,0.4) 50%, transparent 50%), radial-gradient(ellipse, rgba(0,0,0,0.4) 50%, transparent 50%), radial-gradient(ellipse, #00696b 50%, transparent 50%), radial-gradient(circle, white 50%, transparent 50%), radial-gradient(circle, #444 50%, transparent 50%), radial-gradient(circle, #9370db 30%, rgba(147,112,219,0) 70%), radial-gradient(circle, #444 50%, transparent 50%), radial-gradient(ellipse, white 30%, #ddd 60%, transparent 60%), radial-gradient(ellipse, #333 45%, #48d1cc 55%, #48d1cc 60%, transparent 60%), radial-gradient(circle, white 50%, transparent 50%), radial-gradient(circle, #444 50%, transparent 50%), radial-gradient(circle, #9370db 30%, rgba(147,112,219,0) 70%), radial-gradient(circle, #444 50%, transparent 50%), radial-gradient(ellipse, white 30%, #ddd 60%, transparent 60%), radial-gradient(ellipse, #333 45%, #48d1cc 55%, #48d1cc 60%, transparent 60%), radial-gradient(ellipse, #00abad 40%, rgba(0,206,209,0) 50%), radial-gradient(ellipse, #009c9e 40%, rgba(0,206,209,0) 50%), radial-gradient(ellipse, #9370db 30%, rgba(147,112,219,0) 60%), radial-gradient(ellipse, #9370db 30%, rgba(147,112,219,0) 60%), radial-gradient(circle, rgba(0,206,209,0) 35%, #009c9e 65%);
+  background-repeat: no-repeat;
+  background-size: 20px 10px, 20px 10px, 75px 40px, 5px 5px, 13px 13px, 19px 19px, 34px 34px, 50px 45px, 54px 58px, 5px 5px, 13px 13px, 19px 19px, 34px 34px, 50px 45px, 54px 58px, 100px 40px, 170px 90px, 45px 40px, 45px 40px, 220px 350px;
+  background-position: 70px 118px, 90px 118px, center 95px, 68px 70px, 60px 71px, 58px 68px, 50px 60px, 40px 55px, 38px 47px, 114px 70px, 106px 71px, 102px 68px, 95px 60px, 90px 55px, 88px 47px, center 90px, center 30px, 50px -17px, 95px 10px, 0 -80px;
+  border-radius: 50% 50% 50% 50%/60% 60% 30% 30%;
+  box-shadow: 0 0 20px #009c9e, 0 10px 10px #008384, inset 0 -15px 0 13px rgba(0,0,0,0.03);
+}
+@media (max-width: 400px) {
+  #sully div {
+    margin-top: -122px;
+  }
+}
+#sully div:after {
+  width: 70px;
+  height: 15px;
+  margin-left: -35px;
+  left: 50%;
+  top: 180px;
+  background: #444;
+  background-image: radial-gradient(ellipse, white 50%, transparent 50%), radial-gradient(ellipse, white 50%, transparent 50%), radial-gradient(ellipse, white 50%, transparent 50%), radial-gradient(ellipse, white 50%, transparent 50%), radial-gradient(ellipse, white 50%, transparent 50%), radial-gradient(ellipse, white 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 16px 25px;
+  background-position: -5px 7px, 7px 4px, 19px 7px, 31px 7px, 43px 4px, 55px 7px;
+  border-radius: 60% 60% 40% 40%/50% 50% 50% 50%;
+  box-shadow: 0 6px 0 #48d1cc, 0 15px 3px -4px #009c9e, 0 -106px 6px -2px rgba(255,255,255,0.2), -20px -114px 6px 7px #00abad, 20px -114px 6px 7px #00abad, -20px -105px 5px 5px rgba(0,0,0,0.15), 20px -105px 5px 5px rgba(0,0,0,0.15);
+}

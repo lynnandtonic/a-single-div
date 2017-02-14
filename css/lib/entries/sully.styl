@@ -1,0 +1,144 @@
+/*-----------------------------
+
+Sully
+
+-----------------------------*/
+
+turq(alpha)
+  rgba(0,206,209,alpha)
+
+purp(alpha)
+  rgba(147,112,219,alpha)
+
+
+#sully
+  background: paleturquoise
+
+  div
+    width: 160px
+    height: 62px
+    margin-left: -(@width/2)
+    margin-top: -150px
+    background: transparent
+    border-radius: 50% 50% 50% 50% / 60%  60%  40% 40%
+    box-shadow: 0 7px 7px 3px bisque,
+                0 15px 0 10px black(.25),
+                0 15px 0 10px bisque
+
+    &:before
+      width: 180px
+      height: 230px
+      margin-left: -(@width/2)
+      top: 30px
+      left: 50%
+      background-color: darkturquoise
+      background-image: radial-gradient(ellipse, black(.4) 50%, transparent 50%),
+                        radial-gradient(ellipse, black(.4) 50%, transparent 50%),
+                        radial-gradient(ellipse, darken(darkturquoise,20) 50%, transparent 50%), // nose
+                        radial-gradient(circle, white 50%, transparent 50%), // left eye
+                        radial-gradient(circle, #444 50%, transparent 50%),
+                        radial-gradient(circle, mediumpurple 30%,
+                                                purp(0) 70%),
+                        radial-gradient(circle, #444 50%, transparent 50%),
+                        radial-gradient(ellipse, white 30%,
+                                                 #ddd 60%,
+                                                 transparent 60%),
+                        radial-gradient(ellipse, #333 45%,
+                                                 mediumturquoise 55%,
+                                                 mediumturquoise 60%,
+                                                 transparent 60%),
+                        radial-gradient(circle, white 50%, transparent 50%), // right eye
+                        radial-gradient(circle, #444 50%, transparent 50%),
+                        radial-gradient(circle, mediumpurple 30%,
+                                                purp(0) 70%),
+                        radial-gradient(circle, #444 50%, transparent 50%),
+                        radial-gradient(ellipse, white 30%,
+                                                 #ddd 60%,
+                                                 transparent 60%),
+                        radial-gradient(ellipse, #333 45%,
+                                                 mediumturquoise 55%,
+                                                 mediumturquoise 60%,
+                                                 transparent 60%),
+                        radial-gradient(ellipse, darken(darkturquoise,7) 40%, turq(0) 50%), // nose shadow
+                        radial-gradient(ellipse, darken(darkturquoise,10) 40%, turq(0) 50%), // eye shadow
+                        radial-gradient(ellipse, mediumpurple 30%, purp(0) 60%), // purple spots
+                        radial-gradient(ellipse, mediumpurple 30%, purp(0) 60%),
+                        radial-gradient(circle, turq(0) 35%, darken(darkturquoise,10) 65%) // shadow
+      background-repeat: no-repeat
+      background-size: 20px 10px,
+                       20px 10px,
+                       75px 40px,
+                       5px 5px, // left eye
+                       13px 13px,
+                       19px 19px,
+                       34px 34px,
+                       50px 45px,
+                       54px 58px,
+                       5px 5px,  // right eye
+                       13px 13px,
+                       19px 19px,
+                       34px 34px,
+                       50px 45px,
+                       54px 58px,
+                       100px 40px, // nose shadow
+                       170px 90px, // eye shadow
+                       45px 40px, // purple spots
+                       45px 40px,
+                       220px 350px // shadow
+      background-position: 70px 118px,
+                           90px 118px,
+                           center 95px,
+                           68px 70px, // left eye
+                           60px 71px,
+                           58px 68px,
+                           50px 60px,
+                           40px 55px,
+                           38px 47px,
+                           114px 70px,  // right eye
+                           106px 71px,
+                           102px 68px,
+                           95px 60px,
+                           90px 55px,
+                           88px 47px,
+                           center 90px, // nose shadow
+                           center 30px, // eye shadow
+                           50px -17px, // purple spots
+                           95px 10px,
+                           0 -80px // shadow
+      border-radius: 50% 50% 50% 50% / 60%  60%  30% 30%
+      box-shadow: 0 0 20px darken(darkturquoise,10),
+                  0 10px 10px darken(darkturquoise,15),
+                  inset 0 -15px 0 13px black(.03)
+
+    @media (max-width: 400px)
+      margin-top: -122px
+
+    &:after
+      width: 70px
+      height: 15px
+      margin-left: -(@width/2)
+      left: 50%
+      top: 180px
+      background: #444
+      background-image: radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white 50%, transparent 50%)
+      background-repeat: no-repeat
+      background-size: 16px 25px
+      background-position: -5px 7px,
+                           7px 4px,
+                           19px 7px,
+                           31px 7px,
+                           43px 4px,
+                           55px 7px
+      border-radius: 60%  60%  40% 40% / 50% 50% 50% 50%
+      box-shadow: 0 6px 0 mediumturquoise,
+                  0 15px 3px -4px darken(darkturquoise,10),
+                  0 -106px 6px -2px white(.2),
+                  -20px -114px 6px 7px darken(darkturquoise,7),
+                   20px -114px 6px 7px darken(darkturquoise,7),
+                  -20px -105px 5px 5px black(.15),
+                   20px -105px 5px 5px black(.15)

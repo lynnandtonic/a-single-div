@@ -1,0 +1,99 @@
+/*-----------------------------
+
+Mike Wazowski
+
+-----------------------------*/
+
+forest(alpha)
+  rgba(34,139,34,alpha)
+
+#mike-wazowski
+  background: olive
+
+  div
+    width: 150px
+    height: 90px
+    margin-left: -(@width/2)
+    margin-top: -155px
+    background: transparent
+    border-radius: 50% 50% 50% 50% / 60%  60%  40% 40%
+    box-shadow: 0 30px 3px 1px bisque,
+                0 18px 0 4px #555
+
+    @media (max-width: 400px)
+      margin-top: -125px
+    
+    &:before
+      width: 200px
+      height: 220px
+      margin-left: -(@width/2)
+      top: 45px
+      left: 50%
+      background-color: yellowgreen
+      background-image: radial-gradient(circle, white 50%, transparent 50%),
+                        radial-gradient(circle, #444 50%, transparent 50%),
+                        radial-gradient(circle, lightseagreen 30%,
+                                                forest(0) 80%),
+                        radial-gradient(circle, #444 50%, transparent 50%),
+                        radial-gradient(ellipse, white 35%,
+                                                 #ddd 60%,
+                                                 transparent 60%),
+                        radial-gradient(ellipse, #333 45%,
+                                                 yellowgreen 55%,
+                                                 yellowgreen 60%,
+                                                 transparent 60%),
+                        radial-gradient(ellipse, forest(.9) 45%,
+                                                 yellowgreen 55%,
+                                                 yellowgreen 60%,
+                                                 transparent 60%),
+                        radial-gradient(ellipse, yellowgreen 55%,
+                                                 forest(.5) 56%,
+                                                 forest(0) 63%),
+                        radial-gradient(circle, forest(0) 30%, forest(.6) 60% )
+      background-repeat: no-repeat
+      background-size: 8px 8px,
+                       20px 20px,
+                       25px 25px,
+                       50px 50px,
+                       110px 95px,
+                       120px 110px,
+                       130px 110px,
+                       115px 95px,
+                       250px 260px
+      background-position: 53% 57px,
+                           center 59px,
+                           49% 59px,
+                           center 45px,
+                           center 25px,
+                           center 13px,
+                           center -2px,
+                           center 35px,
+                           0 -40px
+      border-radius: 50% 50% 50% 50% / 60%  60%  40% 40%
+
+    &:after
+      width: 70px
+      height: 40px
+      margin-left: -(@width/2)
+      left: 50%
+      top: 185px
+      background: #444
+      background-image: radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white(.2) 50%, transparent 50%)
+      background-repeat: no-repeat
+      background-size: 25px 18px,
+                       25px 18px,
+                       25px 18px,
+                       25px 18px,
+                       56px 30px
+      background-position: -5px 30px,
+                           15px 32px,
+                           35px 32px,
+                           55px 28px,
+                           center 20px
+      border-radius: 50% 50% 50% 50% / 60%  60%  40% 40%
+      box-shadow: 0 6px 0 yellowgreen,
+                  0 15px 3px -4px forest(.9)
