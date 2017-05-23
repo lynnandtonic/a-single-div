@@ -2535,7 +2535,7 @@ header .share-link:hover {
   margin-left: -100px;
   margin-top: 0;
   background-color: #fec;
-  background-image: linear-gradient(to right, #bc9055, #d2b48c 60%, transparent 60%), linear-gradient(to right, transparent 40%, #d2b48c 40%, #bc9055), linear-gradient(-45deg, white 23%, transparent 23%), linear-gradient(45deg, white 23%, transparent 23%), linear-gradient(to right, transparent 30%, #ebd4b7 50%, transparent 70%);
+  background-image: linear-gradient(to right, #bc9055, #d2b48c 60%, rgba(255,255,255,0) 60%), linear-gradient(to right, rgba(255,255,255,0) 40%, #d2b48c 40%, #bc9055), linear-gradient(-45deg, white 23%, rgba(255,255,255,0) 23%), linear-gradient(45deg, white 23%, rgba(255,255,255,0) 23%), linear-gradient(to right, rgba(255,255,255,0) 30%, #ebd4b7 50%, rgba(255,255,255,0) 70%);
   background-size: 50% 100%;
   background-position: 0 0, 100% 0, 0 0, 100% 0, 50% 0;
   background-repeat: no-repeat;
@@ -2548,7 +2548,7 @@ header .share-link:hover {
   left: 50%;
   margin-left: -100px;
   top: -35px;
-  background-image: radial-gradient(#d31339 50%, transparent 50%), radial-gradient(#dc143c 50%, transparent 50%), radial-gradient(#ad102f 50%, transparent 52%), linear-gradient(-40deg, transparent 22%, #fff7e6 22%), linear-gradient(40deg, transparent 22%, #fff7e6 22%);
+  background-image: radial-gradient(#d31339 50%, transparent 50%), radial-gradient(#dc143c 50%, transparent 50%), radial-gradient(#ad102f 50%, transparent 52%), linear-gradient(-40deg, rgba(255,255,255,0) 22%, #fff7e6 22%), linear-gradient(40deg, rgba(255,255,255,0) 22%, #fff7e6 22%);
   background-size: 20px 20px, 19px 19px, 18px 18px, 50% 100%, 50% 100%;
   background-position: 83px 12px, 98px 15px, 93px 7px, 0 0, 100% 0;
   background-repeat: no-repeat;
@@ -2781,4 +2781,34 @@ header .share-link:hover {
   background-position: -5px 7px, 7px 4px, 19px 7px, 31px 7px, 43px 4px, 55px 7px;
   border-radius: 60% 60% 40% 40%/50% 50% 50% 50%;
   box-shadow: 0 6px 0 #48d1cc, 0 15px 3px -4px #009c9e, 0 -106px 6px -2px rgba(255,255,255,0.2), -20px -114px 6px 7px #00abad, 20px -114px 6px 7px #00abad, -20px -105px 5px 5px rgba(0,0,0,0.15), 20px -105px 5px 5px rgba(0,0,0,0.15);
+}
+#birthday {
+  background: #ffe4e1;
+}
+#birthday div {
+  width: 170px;
+  height: 140px;
+  margin-left: -85px;
+  margin-top: -60px;
+  background-image: linear-gradient(to bottom, #db7093 0, #db7093 35%, #d2b48c 35%, #d2b48c 75%, #db7093 75%, #db7093 78%, #d2b48c 78%);
+  border-radius: 15px 15px 0 0;
+}
+#birthday div:before {
+  width: 10px;
+  height: 50px;
+  top: 35px;
+  left: 0;
+  background: #db7093;
+  border-radius: 10px;
+  box-shadow: 10px 5px 0 #d2b48c, 20px -20px 0 #db7093, 30px -2px 0 #d2b48c, 40px 0 0 #db7093, 50px 5px 0 #d2b48c, 60px -10px 0 #db7093, 70px 5px 0 #d2b48c, 80px -20px 0 #db7093, 90px -5px 0 #d2b48c, 100px 5px 0 #db7093, 110px 5px 0 #d2b48c, 120px -25px 0 #db7093, 130px 8px 0 #d2b48c, 140px -10px 0 #db7093, 150px 0 0 #d2b48c, 160px -5px 0 #db7093;
+}
+#birthday div:after {
+  width: 190px;
+  height: 250px;
+  margin-left: -10px;
+  top: -60px;
+  background-image: repeating-linear-gradient(45deg, #afeeee, #afeeee 3px, #5f9ea0 3px, #5f9ea0 6px), repeating-linear-gradient(45deg, #afeeee, #afeeee 3px, #5f9ea0 3px, #5f9ea0 6px), repeating-linear-gradient(45deg, #afeeee, #afeeee 3px, #5f9ea0 3px, #5f9ea0 6px), radial-gradient(ellipse, #fffacd 70%, transparent 70%), radial-gradient(ellipse, #fffacd 70%, transparent 70%), radial-gradient(ellipse, #fffacd 70%, transparent 70%), radial-gradient(ellipse, #ffa500 70%, transparent 70%), radial-gradient(ellipse, #ffa500 70%, transparent 70%), radial-gradient(ellipse, #ffa500 70%, transparent 70%), linear-gradient(#555, #555), linear-gradient(#555, #555), linear-gradient(#555, #555), linear-gradient(to top, transparent 46px, white 46px, white 52px, transparent 52px), radial-gradient(circle at 100% 20%, transparent 70%, white 70%), radial-gradient(circle at 0 20%, transparent 70%, white 70%);
+  background-repeat: no-repeat;
+  background-size: 6px 35px, 6px 35px, 6px 35px, 4px 8px, 4px 8px, 4px 8px, 10px 20px, 10px 20px, 10px 20px, 2px 6px, 2px 6px, 2px 6px, 100% 100%, 100px 50px, 100px 50px;
+  background-position: 64px 25px, center 25px, 120px 25px, 65px 10px, center 10px, 121px 10px, 62px 0, center 0, 118px 0, 66px 20px, center 20px, 122px 20px, 0 0, right bottom, left bottom;
 }

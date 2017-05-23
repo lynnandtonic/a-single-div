@@ -1,0 +1,115 @@
+/*-----------------------------
+
+Birthday
+
+-----------------------------*/
+
+$frosting = palevioletred
+
+#birthday
+  background: mistyrose
+
+  div
+    width: 170px
+    height: 140px
+    margin-left: -(@width/2)
+    margin-top: -60px
+
+    background-image: linear-gradient(to bottom, $frosting 0,
+                                                 $frosting 35%,
+                                                 tan 35%,
+                                                 tan 75%,
+                                                 $frosting 75%,
+                                                 $frosting 78%,
+                                                 tan 78%)
+    border-radius: 15px 15px 0 0
+
+    &:before
+      width: 10px
+      height: 50px
+      top: 35px
+      left: 0
+      background: $frosting
+      border-radius: 10px
+      box-shadow:  @width      5px 0 tan,
+                   @width*2  -20px 0 $frosting,
+                   @width*3   -2px 0 tan,
+                   @width*4    0   0 $frosting,
+                   @width*5    5px 0 tan,
+                   @width*6  -10px 0 $frosting,
+                   @width*7    5px 0 tan,
+                   @width*8  -20px 0 $frosting,
+                   @width*9   -5px 0 tan,
+                   @width*10   5px 0 $frosting,
+                   @width*11   5px 0 tan,
+                   @width*12 -25px 0 $frosting,
+                   @width*13   8px 0 tan,
+                   @width*14 -10px 0 $frosting,
+                   @width*15   0   0 tan,
+                   @width*16  -5px 0 $frosting
+
+    &:after
+      width: 190px
+      height: 250px
+      margin-left: -10px
+      top: -60px
+      background-image: repeating-linear-gradient(45deg, paleturquoise,
+                                                         paleturquoise 3px,
+                                                         cadetblue 3px,
+                                                         cadetblue 6px),
+                        repeating-linear-gradient(45deg, paleturquoise,
+                                                         paleturquoise 3px,
+                                                         cadetblue 3px,
+                                                         cadetblue 6px),
+                        repeating-linear-gradient(45deg, paleturquoise,
+                                                         paleturquoise 3px,
+                                                         cadetblue 3px,
+                                                         cadetblue 6px),
+                        radial-gradient(ellipse, lemonchiffon 70%, transparent 70%),
+                        radial-gradient(ellipse, lemonchiffon 70%, transparent 70%),
+                        radial-gradient(ellipse, lemonchiffon 70%, transparent 70%),
+                        radial-gradient(ellipse, orange 70%, transparent 70%),
+                        radial-gradient(ellipse, orange 70%, transparent 70%),
+                        radial-gradient(ellipse, orange 70%, transparent 70%),
+                        linear-gradient(#555, #555),
+                        linear-gradient(#555, #555),
+                        linear-gradient(#555, #555),
+                        linear-gradient(to top, transparent 46px,
+                                                white 46px,
+                                                white 52px,
+                                                transparent 52px),
+                        radial-gradient(circle at 100% 20%, transparent 70%,
+                                                 white 70%),
+                        radial-gradient(circle at 0 20%, transparent 70%,
+                                                 white 70%)
+      background-repeat: no-repeat
+      background-size: 6px 35px,
+                       6px 35px,
+                       6px 35px,
+                       4px 8px,
+                       4px 8px,
+                       4px 8px,
+                       10px 20px,
+                       10px 20px,
+                       10px 20px,
+                       2px 6px,
+                       2px 6px,
+                       2px 6px,
+                       100% 100%,
+                       100px 50px,
+                       100px 50px
+      background-position: 64px 25px,
+                           center 25px,
+                           120px 25px,
+                           65px 10px,
+                           center 10px,
+                           121px 10px,
+                           62px 0,
+                           center 0,
+                           118px 0,
+                           66px 20px,
+                           center 20px,
+                           122px 20px,
+                           0 0,
+                           right bottom,
+                           left bottom
