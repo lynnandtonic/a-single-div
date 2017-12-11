@@ -22,12 +22,6 @@ Entry styles
       content: ''
       position: absolute
 
-@media (max-width: 400px)
-
-  .entry div:not(.no-scale)
-    -webkit-transform: scale(.8)
-    transform: scale(.8)
-
 .cf
   &:before,
   &:after
@@ -36,6 +30,22 @@ Entry styles
 
   &:after
     clear: both
+
+
+@media (max-width: 400px)
+
+  .entry div:not(.no-scale)
+    -webkit-transform: scale(.8)
+    transform: scale(.8)
+
+@media all and (min-width: 650px) and (max-width: 959px)
+
+  .entry
+    float: left
+    width: 100%
+
+    &.fours
+      width: 50%
 
 @media all and (min-width: 960px )
 
@@ -48,3 +58,6 @@ Entry styles
 
     &.threes
       width: 33.333%
+
+    &.fours
+      width: 25%

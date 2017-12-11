@@ -1,0 +1,320 @@
+/*-----------------------------
+
+Elf four food groups
+#candy
+#candycorn
+#candycane
+#syrup
+
+-----------------------------*/
+
+lollipop(alpha)
+  rgba(220,20,60,alpha)
+
+#candy
+  background: linear-gradient(to bottom, lightskyblue, white)
+
+  div
+    width: 14px
+    height: 210px
+    margin-left: -(@width/2)
+    background-color: white
+    background-image: linear-gradient(to right, black(.1),
+                                                transparent 30%,
+                                                transparent 50%,
+                                                black(.2) 100%),
+                      linear-gradient(to bottom, black(.3) 25px,
+                                                 transparent 50px)
+    border-radius: 0 0 5px 5px
+
+    @media (max-width: 400px)
+      margin-top: -50px
+
+    &:before
+      width: 120px
+      height: @width
+      margin-left: -(@width/2)+7
+      margin-top: -95px
+      background: lollipop(.9)
+      background-image: linear-gradient(to bottom, transparent 70%,
+                                                   black(.2) 70%,
+                                                   transparent 80%),
+                        radial-gradient(ellipse at 80px 30px, white(.5) 0,
+                                                              white(.4) 4%,
+                                                              white(0) 18%),
+                        radial-gradient(ellipse at 75px 103px, white(.2) 0,
+                                                              white(0) 10%)
+      border-radius: 50%
+      box-shadow: inset -4px 7px 8px white(.2),
+                  inset 3px -3px 5px white(.3),
+                  inset 14px -5px 10px black(.15),
+                  inset 25px -7px 14px black(.2)
+
+    &:after
+      width: 128px
+      height: 40px
+      margin-left: -(@width/2)+7
+      margin-top: -50px
+      background: lollipop(.9)
+      background-image: linear-gradient(to bottom, white(.15) 0,
+                                                   white(0) 14%),
+                        linear-gradient(to right, black(.3) 5%,
+                                                  black(.2) 24%,
+                                                  transparent 40%,
+                                                  white(0) 55%,
+                                                  white(.3) 70%,
+                                                  white(.3) 75%,
+                                                  white(0) 85%,
+                                                  black(.2) 100%)
+      border-radius: 3px
+
+
+#candycorn
+  background: linear-gradient(to bottom, lightskyblue, white)
+
+  div
+    width: 80px
+    height: 120px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-color: seashell
+    background-image: radial-gradient(ellipse at center, gold 40%, white(0) 48%),
+                      radial-gradient(ellipse at center, darkorange 40%, white(0) 43%)
+    background-size: 200px 80px,
+                     200px 400px
+    background-position: -50px 210%,
+                         center -55px
+    background-repeat: no-repeat
+    border-top-left-radius: 50% 100%
+    border-top-right-radius: 60% 100%
+    box-shadow: inset 15px 2px 5px -10px black(.15),
+                inset 25px -5px 8px -10px black(.1),
+                inset -4px 4px 5px white(.3)
+
+    &:before
+      width: 80px
+      height: 25px
+      background: gold
+      bottom: -@height
+      border-bottom-left-radius: 40px 20px
+      border-bottom-right-radius: 40px 20px
+      box-shadow: inset 5px -5px 5px black(.15),
+                  inset 10px -8px 8px 5px black(.1)
+
+    &:after
+      width: 50px
+      height: 90px
+      margin-left: -(@width/2)
+      left: 50%
+      top: 42%
+      background: radial-gradient(circle at 70% 80%, white(.3) 6%, white(0) 20%),
+                  linear-gradient(to top, white(.09), white(0) 50%)
+      border-top-left-radius: 40% 100%
+      border-top-right-radius: 40% 100%
+      border-bottom-left-radius: 20px
+      border-bottom-right-radius: 20px
+      box-shadow: -10px 0 5px -5px black(.03),
+                  7px 0 5px -5px black(.05),
+                  inset -15px 0 5px -10px white(.1)
+
+#candycane
+  background: linear-gradient(to bottom, darken(skyblue,3), white)
+  
+  div
+    width: 140px
+    height: 70px
+    margin-left: -70px
+    margin-top: -110px
+    background: no-repeat
+    background-image: radial-gradient(circle at center bottom, transparent 40px,
+                                                               black(.2) 40px,
+                                                               black(.2) 44px,
+                                                               transparent 52px),
+                      radial-gradient(circle at center bottom, transparent 40px,
+                                                               crimson 40px,
+                                                               crimson 50px,
+                                                               white 50px,
+                                                               white 70px,
+                                                               transparent 70px)
+    border-radius: 70px 70px 0 0
+    box-shadow: inset 2px 3px 5px white,
+                inset -10px 10px 5px black(.2),
+                inset -10px 5px 0 crimson,
+                inset -16px 14px 0 white,
+                inset -20px 22px 0 crimson,
+                inset -17px 25px 0 white,
+                inset 2px 4px 0 white,
+                inset 8px 10px 0 crimson
+    
+    @media (max-width: 400px)
+      margin-top: -140px
+
+
+    &:before
+      width: 30px
+      height: 50px
+      top: 70px
+      background: white
+      background-image: linear-gradient(87deg, transparent 23px,
+                                               crimson 23px)
+      border-radius: 0 0 15px 15px
+      box-shadow: inset 2px -3px 5px white,
+                  inset -9px -10px 5px black(.2),
+                  inset 2px 0 0 white,
+                  inset 9px 0 0 crimson
+    
+    &:after
+      width: 30px
+      height: 260px
+      top: 70px
+      right: 0
+      background: white
+      background-image: linear-gradient(to left, black(.2) 5px, transparent 15px),
+                        linear-gradient(91deg, black(.2) 3px,
+                                                  transparent 7px),
+                        linear-gradient(88deg, white(0) 21px,
+                                               white(.7) 23px,
+                                               white(.7) 26px,
+                                               white(0) 29px),
+                        linear-gradient(-100deg, crimson 10px,
+                                                 transparent 10px,
+                                                 transparent 17px,
+                                                 crimson 17px,
+                                                 crimson 30px,
+                                                 transparent 30px,
+                                                 transparent 40px,
+                                                 crimson 40px,
+                                                 crimson 50px,
+                                                 transparent 50px,
+                                                 transparent 62px,
+                                                 crimson 62px,
+                                                 crimson 72px,
+                                                 transparent 72px)
+      border-radius: 0 0 15px 15px
+      box-shadow: inset 0 -5px 5px black(.2)
+
+#syrup
+  background: linear-gradient(to bottom, darken(skyblue,3), white)
+
+  div
+    width: 120px
+    height: 170px
+    margin-left: -(@width/2)
+    margin-top: -54px
+    background-color: chocolate
+    background-repeat: no-repeat
+    background-image: linear-gradient(to bottom, gold, gold),
+                      radial-gradient(ellipse at center, sandybrown 40%, transparent 40%),
+                      radial-gradient(ellipse at center, darken(sandybrown,15%) 40%, transparent 40%),
+                      radial-gradient(ellipse at center, sandybrown 40%, transparent 40%),
+                      radial-gradient(ellipse at center, darken(sandybrown,15%) 40%, transparent 40%),
+                      radial-gradient(ellipse at center, sandybrown 40%, transparent 40%),
+                      radial-gradient(ellipse at center, darken(sandybrown,15%) 40%, transparent 40%),
+                      radial-gradient(circle at center, rgba(165,42,42,.3) 20%, transparent 30%)
+    background-size: 20px 10px,
+                     100% 30%,
+                     100% 30%,
+                     100% 30%,
+                     100% 30%,
+                     100% 30%,
+                     100% 30%,
+                     300% 80%
+    background-position: center 57%,
+                         20% 60%,
+                         20% 62%,
+                         20% 65%,
+                         20% 67%,
+                         20% 70%,
+                         20% 72%,
+                         center -80%
+    border-radius: 60px 60px 10px 10px
+    box-shadow: inset 0 4px 1px 6px black(.2),
+                inset 0 -12px 0 -10px black(.3),
+                inset 0 -9px 0 -5px white(.8),
+                inset 0 -17px 1px -10px black(.2),
+                inset 0 -30px 1px -10px white,
+                inset 0 -33px 3px -10px black(.1),
+                inset 15px -8px 3px -5px black(.2),
+                inset -15px -8px 3px -5px black(.2),
+                inset 10px 8px 1px chocolate,
+                inset -10px 8px 1px chocolate,
+                inset 15px 0 1px white(.75),
+                inset -15px 0 1px white(.75)
+
+    &:before
+      width: 34px
+      height: 80px
+      left: 50%
+      margin-left: -(@width/2)
+      margin-top: -67px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, black(.3),
+                                                  transparent 20%,
+                                                  white(0) 30%,
+                                                  white(.3) 50%,
+                                                  white(0) 70%,
+                                                  transparent 80%,
+                                                  black(.3) 100%),
+                        repeating-linear-gradient(to right, black(.3),
+                                                            black(.3) 1px,
+                                                            transparent 1px,
+                                                            transparent 2px),
+                        linear-gradient(to bottom, brown, brown),
+                        linear-gradient(to bottom, transparent, black(.2) 50%, transparent 100%),
+                        linear-gradient(to right, white(0), white(.4) 50%, white(0) 100%),
+                        radial-gradient(ellipse at center, chocolate 90%, transparent 90%),
+                        linear-gradient(to right, white(.3) 1px,
+                                                  black(.2) 3px, transparent 7px),
+                        linear-gradient(to left, white(.3) 1px,
+                                                  black(.2) 3px, transparent 7px),
+                        linear-gradient(to right, white(.5), white(.5))
+      background-size: 100% 30%,
+                       100% 30%,
+                       100% 30%,
+                       90% 5%,
+                       90% 100%,
+                       98% 16%,
+                       90% 100%,
+                       90% 100%,
+                       90% 100%
+      background-position: center top,
+                           center top,
+                           center top,
+                           center 87%,
+                           center top,
+                           center bottom,
+                           center top,
+                           center top,
+                           center top
+      border-radius: 4px
+      border-bottom-left-radius: 20px 15px
+      border-bottom-right-radius: 20px 15px
+
+    &:after
+      width: 50px
+      height: 40px
+      left: 62%
+      margin-top: -40px
+      background: no-repeat
+      background-image: radial-gradient(ellipse, black(.3) 40%,
+                                                 transparent 45%),
+                        radial-gradient(ellipse, black(.3) 40%,
+                                                 transparent 45%),
+                        radial-gradient(circle, transparent 25%,
+                                                black(.2) 27%,
+                                                transparent 30%,
+                                                transparent 42%,
+                                                black(.2) 48%,
+                                                transparent 50%),
+                        radial-gradient(circle, transparent 25%,
+                                                white(.6) 25%,
+                                                white(.6) 50%,
+                                                transparent 50%)
+      background-size: 5px 12px,
+                       5px 12px,
+                       100% 100%,
+                       100% 100%
+      background-position: -1px 3px,
+                           -1px 25px,
+                           -20px 0,
+                           -20px 0
