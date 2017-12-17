@@ -2975,3 +2975,36 @@ header .share-link:hover {
   background-size: 5px 12px, 5px 12px, 100% 100%, 100% 100%;
   background-position: -1px 3px, -1px 25px, -20px 0, -20px 0;
 }
+#crait {
+  background: #f5fffa;
+}
+#crait div {
+  width: 10px;
+  height: 5px;
+  left: 40%;
+  margin-top: 70px;
+  background: #b22222;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 7px 0 0 0 #b22222, 14px 0 0 0 #b22222, 23px -1px 0 1px #b22222, 34px -2px 0 2px #b22222, 46px -3px 0 3px #b22222, 60px -4px 0 4px #b22222, 75px -5px 0 5px #b22222, 95px -7px 0 7px #b22222, 120px -10px 0 10px #b22222, 152px -20px 0 20px #b22222, 200px -30px 0 30px #b22222, 240px -25px 0 25px #b22222, 280px -15px 0 15px #b22222, 300px -5px 0 5px #b22222, -98px -7px 0 -2px #f08080, -92px -8px 0 -1px #f08080, -84px -9px 0 0 #f08080, -75px -9px 0 0 #f08080, -65px -10px 0 1px #f08080, -53px -11px 0 2px #f08080, -38px -13px 0 4px #f08080, -18px -16px 0 7px #f08080, 7px -18px 0 9px #f08080, 38px -24px 0 15px #f08080, 77px -33px 0 23px #f08080, 120px -27px 0 18px #f08080;
+}
+#crait div:before {
+  width: 80px;
+  height: 60px;
+  margin-left: -53px;
+  margin-top: -55px;
+  background: no-repeat;
+  background-image: radial-gradient(ellipse at center top, #222 50%, transparent 50%), radial-gradient(ellipse at center bottom, #222 50%, transparent 50%), radial-gradient(ellipse at center bottom, #222 50%, transparent 50%), radial-gradient(ellipse at center top, transparent 40%, #222 40%, #222 50%, transparent 50%), radial-gradient(ellipse at center center, transparent 40%, #222 40%, #222 50%, transparent 50%), linear-gradient(to right, #222, #222), linear-gradient(to right, #222, #222), linear-gradient(to right, #222, #222), linear-gradient(to right, #222, #222), linear-gradient(to right, #222, #222), linear-gradient(60deg, transparent 28%, #222 28%, #222 35%, transparent 35%, transparent 37%, #222 37%, #222 42%, transparent 42%);
+  background-size: 65px 17px, 45px 22px, 25px 10px, 45px 10px, 45px 10px, 20px 2px, 20px 3px, 4px 5px, 15px 6px, 16px 8px, 20px 30px;
+  background-position: 0 65%, 60% 19%, 30% 35%, 40% 72%, 60% 60%, 0 49%, 80% 47%, 84% 43%, 98% 34%, 100% 52%, 70% 100%;
+}
+#crait div:after {
+  width: 80px;
+  height: 60px;
+  margin-left: -143px;
+  margin-top: -55px;
+  background: no-repeat;
+  background-image: radial-gradient(ellipse at center top, #555 50%, transparent 50%), radial-gradient(ellipse at center bottom, #555 50%, transparent 50%), radial-gradient(ellipse at center bottom, #555 50%, transparent 50%), radial-gradient(ellipse at center top, transparent 40%, #555 40%, #555 50%, transparent 50%), radial-gradient(ellipse at center center, transparent 40%, #555 40%, #555 50%, transparent 50%), linear-gradient(to right, #555, #555), linear-gradient(to right, #555, #555), linear-gradient(to right, #555, #555), linear-gradient(to right, #555, #555), linear-gradient(to right, #555, #555), linear-gradient(63deg, transparent 28%, #555 28%, #555 35%, transparent 35%, transparent 37%, #555 37%, #555 42%, transparent 42%);
+  background-size: 65px 17px, 45px 22px, 25px 10px, 45px 10px, 45px 10px, 20px 3px, 20px 4px, 4px 5px, 15px 6px, 16px 8px, 20px 30px;
+  background-position: 0 65%, 60% 19%, 26% 35%, 42% 72%, 60% 60%, 3px 49%, 80% 47%, 84% 48%, 98% 38%, 100% 56%, 70% 100%;
+  transform: scale(0.7);
+}
