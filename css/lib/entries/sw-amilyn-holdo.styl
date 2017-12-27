@@ -1,0 +1,129 @@
+/*-----------------------------
+
+Star Wars Ladies - Holdo
+
+-----------------------------*/
+
+#amilyn-holdo
+  background-color: darkmagenta
+
+  //hair and collar
+  div
+    width: 100px
+    height: 145px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse, mediumorchid 55%, transparent 55%),
+                      radial-gradient(ellipse, transparent 41%,
+                                               silver 41%,
+                                               silver 43%,
+                                               transparent 43%),
+                      radial-gradient(ellipse, transparent 41%,
+                                               silver 41%,
+                                               silver 43%,
+                                               transparent 43%),
+                      linear-gradient(to top, transparent 40px,
+                                              mediumorchid 40px,
+                                              mediumorchid 70%,
+                                              transparent 70%),
+                      radial-gradient(ellipse, black(.15) 60%, transparent 60%),
+                      radial-gradient(ellipse, rosybrown 60%, transparent 60%),
+                      radial-gradient(ellipse, black(.2) 60%, transparent 60%),
+                      radial-gradient(ellipse, rosybrown 60%, transparent 60%)
+    background-size: 140% 80%,
+                     100% 80%,
+                     90% 70%,
+                     100% 100%,
+                     50% 80%,
+                     55% 90%,
+                     60% 100%,
+                     70% 100%
+    background-position: 50% -3px,
+                         50% -22px,
+                         50% -14px,
+                         50% 0,
+                         50% 17px,
+                         50% 12px,
+                         50% 5px,
+                         50% 10px
+
+    // face
+    &:before
+      width: 70px
+      height: 84px
+      left: 50%
+      top: 28px
+      margin-left: -(@width/2)
+      background-color: darken(bisque,6%)
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, cadetblue 50%, transparent 50%),
+                        radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, cadetblue 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, darksalmon 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, darksalmon 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% -20%, darksalmon 50%, transparent 50%)
+      background-size: 4px 4px,
+                       14px 14px,
+                       4px 4px,
+                       14px 14px,
+                       15px 7px,
+                       15px 7px,
+                       18px 7px
+      background-position: 13px 37px,
+                           10px 34px,
+                           49px 37px,
+                           46px 34px,
+                           23px 59px,
+                           32px 59px,
+                           50% 66px
+      border-top-left-radius: 110px 80px
+      border-top-right-radius: 110px 80px
+      border-bottom-left-radius: 110px
+      border-bottom-right-radius: 110px
+      box-shadow: inset 5px 0 0 black(.15),
+                  inset -5px 0 0 black(.15),
+                  0 5px 0 black(.1)
+
+    // hair waves
+    &:after
+      width: 140px
+      height: 100px
+      left: 50%
+      top: 25px
+      margin-left: -(@width/2)
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse at 100% 100%, transparent 60%, mediumorchid 60%),
+                        radial-gradient(ellipse at 100% 0, mediumorchid 50%, transparent 50%),
+                        radial-gradient(circle, mediumorchid 50%, transparent 50%),
+                        radial-gradient(circle, mediumorchid 50%, transparent 50%),
+                        radial-gradient(circle at 0 50%, transparent 40%, mediumorchid 40%),
+                        radial-gradient(circle at 100% 50%, mediumorchid 40%, transparent 40%),
+                        radial-gradient(circle at 0 50%, transparent 40%, mediumorchid 40%),
+                        radial-gradient(circle, mediumorchid 50%, transparent 50%),
+                        radial-gradient(circle at 100% 50%, transparent 40%, mediumorchid 40%),
+                        radial-gradient(circle at 0 50%, mediumorchid 40%, transparent 40%),
+                        radial-gradient(circle at 100% 50%, transparent 40%, mediumorchid 40%)
+      background-size: 40px 55px,
+                       55px 45px,
+                       40px 40px,
+                       30px 30px,
+                       26px 20px,
+                       30px 20px,
+                       30px 20px,
+                       30px 30px,
+                       26px 20px,
+                       30px 20px,
+                       30px 20px
+      background-position: 30px 3px,
+                           50px 0,
+                           10px 40px,
+                           7px -2px,
+                           9px 20px,
+                           -8px 40px,
+                           6px 60px,
+                           103px -2px,
+                           105px 20px,
+                           118px 40px,
+                           104px 60px

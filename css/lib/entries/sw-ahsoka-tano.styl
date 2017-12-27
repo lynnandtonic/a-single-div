@@ -1,0 +1,230 @@
+/*-----------------------------
+
+Star Wars Ladies - Ahsoka Tano
+
+-----------------------------*/
+
+#ahsoka-tano
+  background-color: desaturate(coral,20%)
+
+  // hair pieces
+  div
+    width: 110px
+    height: 170px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 10)
+    background-repeat: no-repeat
+    background-image: linear-gradient(70deg, transparent 39%, black(.1) 39%),
+                      linear-gradient(70deg, transparent 30%, slategrey 30%),
+                      linear-gradient(-82deg, transparent 15%, slategrey 15%),
+                      linear-gradient(70deg, transparent 40%, oldlace 40%),
+                      linear-gradient(-80deg, transparent 40%, oldlace 40%),
+                      linear-gradient(74deg, transparent 30%, slategrey 30%),
+                      linear-gradient(-80deg, transparent 40%, slategrey 40%),
+                      radial-gradient(ellipse at 50% 0, slategrey 30%, transparent 30%),
+                      linear-gradient(-70deg, transparent 73%, black(.1) 73%),
+                      linear-gradient(82deg, transparent 15%, slategrey 15%),
+                      linear-gradient(-70deg, transparent 30%, slategrey 30%),
+                      linear-gradient(80deg, transparent 40%, oldlace 40%),
+                      linear-gradient(-70deg, transparent 40%, oldlace 40%),
+                      linear-gradient(80deg, transparent 40%, slategrey 40%),
+                      linear-gradient(-74deg, transparent 30%, slategrey 30%),
+                      radial-gradient(ellipse at 50% 0, slategrey 30%, transparent 30%)
+    background-size: 10px 60px,
+                     20px 30px,
+                     20px 30px,
+                     18px 20px,
+                     18px 20px,
+                     12px 20px,
+                     12px 20px,
+                     17px 18px,
+                     10px 90px,
+                     20px 30px,
+                     20px 30px,
+                     18px 20px,
+                     18px 20px,
+                     12px 20px,
+                     12px 20px,
+                     17px 18px
+    background-position: 0 70px,
+                         0 90px,
+                         20px 90px,
+                         7px 120px,
+                         23px 120px,
+                         17px 140px,
+                         23px 140px,
+                         17px 157px,
+                         100% 90px,
+                         70px 90px,
+                         90px 90px,
+                         69px 120px,
+                         85px 120px,
+                         75px 140px,
+                         81px 140px,
+                         76px 157px
+
+    // face
+    &:before
+      width: 70px
+      height: 80px
+      left: 50%
+      top: 30px
+      margin-left: -(@width/2)
+      z-index: 2
+      background-color: chocolate
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, steelblue 50%, transparent 50%),
+                        radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, steelblue 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, darken(rosybrown,45%) 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, darken(rosybrown,45%) 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% -20%, darken(rosybrown,45%) 50%, transparent 50%),
+                        linear-gradient(80deg, transparent 40%,
+                                               oldlace 40%,
+                                               oldlace 60%,
+                                               transparent 60%),
+                        linear-gradient(-80deg, transparent 40%,
+                                               oldlace 40%,
+                                               oldlace 60%,
+                                               transparent 60%),
+                        linear-gradient(-50deg, transparent 40%,
+                                               oldlace 40%,
+                                               oldlace 60%,
+                                               transparent 60%),
+                        linear-gradient(50deg, transparent 40%,
+                                               oldlace 40%,
+                                               oldlace 60%,
+                                               transparent 60%),
+                        linear-gradient(50deg, transparent 40%,
+                                               oldlace 40%,
+                                               oldlace 60%,
+                                               transparent 60%),
+                        linear-gradient(-50deg, transparent 40%,
+                                               oldlace 40%,
+                                               oldlace 60%,
+                                               transparent 60%),
+                        linear-gradient(-80deg, transparent 40%,
+                                               oldlace 40%,
+                                               oldlace 60%,
+                                               transparent 60%),
+                        linear-gradient(80deg, transparent 40%,
+                                               oldlace 40%,
+                                               oldlace 60%,
+                                               transparent 60%),
+                        radial-gradient(ellipse at 50% 100%, transparent 40%,
+                                                          oldlace 40%,
+                                                          oldlace 55%,
+                                                          transparent 55%),
+                        radial-gradient(ellipse at 50% 100%, transparent 40%,
+                                                          oldlace 40%,
+                                                          oldlace 55%,
+                                                          transparent 55%),
+                        linear-gradient(-45deg, transparent 30%,
+                                               oldlace 30%,
+                                               oldlace 70%,
+                                               transparent 70%),
+                        linear-gradient(45deg, transparent 30%,
+                                               oldlace 30%,
+                                               oldlace 70%,
+                                               transparent 70%),
+                        radial-gradient(circle, chocolate 50%, transparent 50%),
+                        linear-gradient(50deg, chocolate 40%, transparent 40%),
+                        radial-gradient(ellipse at 100% 0, transparent 30%,
+                                                        oldlace 30%,
+                                                        oldlace 50%,
+                                                        transparent 50%),
+                        radial-gradient(circle, chocolate 50%, transparent 50%),
+                        linear-gradient(-50deg, chocolate 40%, transparent 40%),
+                        radial-gradient(ellipse at 0 0, transparent 30%,
+                                                        oldlace 30%,
+                                                        oldlace 50%,
+                                                        transparent 50%)
+      background-size: 4px 4px,
+                       14px 14px,
+                       4px 4px,
+                       14px 14px,
+                       15px 7px,
+                       15px 7px,
+                       18px 7px,
+                       10px 10px,
+                       10px 10px,
+                       10px 6px,
+                       10px 6px,
+                       10px 6px,
+                       10px 6px,
+                       10px 10px,
+                       10px 10px,
+                       35px 10px,
+                       35px 10px,
+                       5px 10px,
+                       5px 10px,
+                       10px 10px,
+                       8px 8px,
+                       13px 30px,
+                       10px 10px,
+                       8px 8px,
+                       13px 30px
+      background-position: 13px 33px,
+                           10px 30px,
+                           49px 33px,
+                           46px 30px,
+                           23px 55px,
+                           32px 55px,
+                           50% 62px,
+                           42% 0,
+                           58% 0,
+                           40% 10px,
+                           60% 10px,
+                           40% 16px,
+                           60% 16px,
+                           42% 22px,
+                           58% 22px,
+                           0 22px,
+                           100% 22px,
+                           22% 8px,
+                           78% 8px,
+                           12% 40px,
+                           11% 50px,
+                           7% 45px,
+                           88% 40px,
+                           89% 50px,
+                           93% 45px
+      border-top-left-radius: 110px 80px
+      border-top-right-radius: 110px 80px
+      border-bottom-left-radius: 110px
+      border-bottom-right-radius: 110px
+      box-shadow: inset 3px 0 0 black(.2),
+                  inset -3px 0 0 black(.2),
+                  inset 7px 0 0 black(.1),
+                  inset -7px 0 0 black(.1),
+                  0 5px 0 black(.1),
+                  0 -2px 0 black(.2),
+                  0 -28px 0 -22px olive,
+                  -13px -20px 0 -20px olive,
+                  13px -20px 0 -20px olive,
+                  -20px -12px 0 -20px olive,
+                  20px -12px 0 -20px olive
+
+    // hair main
+    &:after
+      width: 110px
+      height: 105px
+      left: 50%
+      margin-left: -(@width/2)
+      z-index: 1
+      background-repeat: no-repeat
+      background-image: linear-gradient(56deg, slategrey 70%, transparent 70%),
+                        linear-gradient(-56deg, slategrey 70%, transparent 70%)
+      background-size: 40% 35px
+      background-position: 0 0,
+                           100% 0
+      border-top-left-radius: 80px 150px
+      border-top-right-radius: 80px 150px
+      border-bottom-left-radius: 100px 30px
+      border-bottom-right-radius: 100px 30px
+      box-shadow: inset 38px 0 0 -30px black(.1),
+                  inset -38px 0 0 -30px black(.1),
+                  inset 0 -72px 0 -50px oldlace,
+                  inset 0 -50px 0 slategrey,
+                  inset 0 -82px 0 oldlace

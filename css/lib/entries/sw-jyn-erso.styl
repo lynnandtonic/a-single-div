@@ -1,0 +1,127 @@
+/*-----------------------------
+
+Star Wars Ladies - Jyn Erso
+
+-----------------------------*/
+
+$jyn-hair = darken(saddlebrown,20%)
+
+#jyn-erso
+  background-color: darken(cyan,20%)
+
+  // scarf and hair
+  div
+    width: 110px
+    height: 145px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse, $jyn-hair 50%, transparent 50%),
+                      linear-gradient(2deg, slategrey 9%, transparent 9%),
+                      linear-gradient(-3deg, darken(slategrey,20%) 15%, transparent 15%),
+                      linear-gradient(5deg, slategrey 23%, transparent 23%),
+                      linear-gradient(-5deg, darken(slategrey,20%) 25%, transparent 25%),
+                      linear-gradient(12deg, darken(slategrey,20%) 25%, transparent 25%),
+                      linear-gradient(18deg, darken(slategrey,40%) 30%, transparent 30%)
+    background-size: 100% 80%,
+                     100% 100%,
+                     100% 100%,
+                     100% 100%,
+                     90% 100%,
+                     90% 100%,
+                     60% 100%
+    background-position: 50% -35%,
+                         0 100%,
+                         0 100%,
+                         0 100%,
+                         50% 100%,
+                         50% 100%,
+                         50% 100%
+    border-bottom-left-radius: 90px 50px
+    border-bottom-right-radius: 70px 50px
+
+    // face
+    &:before
+      width: 70px
+      height: 80px
+      left: 50%
+      top: 32px
+      margin-left: -(@width/2)
+      background-color: darken(bisque,6%)
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, darkolivegreen 50%, transparent 50%),
+                        radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, darkolivegreen 50%, transparent 50%),
+                        radial-gradient(circle, lighten(sandybrown,20%) 50%, transparent 50%),
+                        radial-gradient(circle, lighten(sandybrown,20%) 50%, transparent 50%),
+                        radial-gradient(circle, lighten(sandybrown,20%) 50%, transparent 50%),
+                        radial-gradient(circle, lighten(sandybrown,20%) 50%, transparent 50%),
+                        radial-gradient(circle, lighten(sandybrown,20%) 50%, transparent 50%),
+                        radial-gradient(circle, lighten(sandybrown,20%) 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, darksalmon 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, darksalmon 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% -20%, darksalmon 50%, transparent 50%)
+      background-size: 4px 4px,
+                       14px 14px,
+                       4px 4px,
+                       14px 14px,
+                       3px 3px,
+                       3px 3px,
+                       3px 3px,
+                       3px 3px,
+                       3px 3px,
+                       3px 3px,
+                       15px 7px,
+                       15px 7px,
+                       18px 7px
+      background-position: 13px 33px,
+                           10px 30px,
+                           49px 33px,
+                           46px 30px,
+                           13px 48px,
+                           17px 53px,
+                           20px 48px,
+                           48px 48px,
+                           52px 53px,
+                           55px 48px,
+                           23px 55px,
+                           32px 55px,
+                           50% 62px
+      border-top-left-radius: 110px 80px
+      border-top-right-radius: 110px 80px
+      border-bottom-left-radius: 110px
+      border-bottom-right-radius: 110px
+      box-shadow: inset 5px 0 0 black(.15),
+                  inset -5px 0 0 black(.15),
+                  -5px 20px 0 -10px black(.15)
+
+    // hair pieces
+    &:after
+      width: 94px
+      height: 120px
+      left: 50%
+      top: 11px
+      margin-left: -(@width/2)
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse, $jyn-hair 50%, transparent 50%),
+                        radial-gradient(ellipse, black(.1) 50%, transparent 50%),
+                        radial-gradient(ellipse, $jyn-hair 50%, transparent 50%),
+                        radial-gradient(ellipse, black(.1) 50%, transparent 50%),
+                        radial-gradient(ellipse, darken(bisque,6%) 50%, transparent 50%),
+                        radial-gradient(ellipse, $jyn-hair 50%, transparent 50%)
+      background-size: 80px 100px,
+                       80px 100px,
+                       80px 100px,
+                       80px 100px,
+                       50px 52px,
+                       50px 50px
+      background-position: 35px -42px,
+                           35px -37px,
+                           -21px -42px,
+                           -21px -37px,
+                           42px 0,
+                           37px 0
+      border-radius: 50%
+      box-shadow: inset -13px 7px 0 $jyn-hair,
+                  inset 11px 5px 0 $jyn-hair

@@ -1,0 +1,131 @@
+/*-----------------------------
+
+Star Wars Ladies - Rose Tico
+
+-----------------------------*/
+
+#rose-tico
+  background-color: lighten(olive,15%)
+
+  // hair and collar
+  div
+    width: 110px
+    height: 145px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse, #222 55%, transparent 55%),
+                      radial-gradient(ellipse, black(.3) 50%, transparent 50%),
+                      radial-gradient(ellipse, maroon 50%, transparent 50%),
+                      radial-gradient(ellipse, maroon 50%, transparent 50%)
+    background-size: 98% 80%,
+                     50% 20%,
+                     95% 40%,
+                     50% 80%
+    background-position: 50% -35%,
+                         50% 87%,
+                         50% 100%,
+                         50% 50px
+    border-bottom-left-radius: 50%
+    border-bottom-right-radius: 50%
+
+    // face
+    &:before
+      width: 70px
+      height: 80px
+      left: 50%
+      top: 32px
+      margin-left: -(@width/2)
+      background-color: peru
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, #222 50%, transparent 50%),
+                        radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, #222 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, sienna 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, sienna 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% -20%, sienna 50%, transparent 50%),
+                        linear-gradient(80deg, peru 30%, #222 30%),
+                        linear-gradient(-80deg, peru 30%, #222 30%),
+                        linear-gradient(-60deg, peru 30%, #222 30%),
+                        linear-gradient(-80deg, peru 30%, #222 30%),
+                        linear-gradient(to bottom, #222 30%, transparent 30%)
+      background-size: 4px 4px,
+                       14px 14px,
+                       4px 4px,
+                       14px 14px,
+                       15px 7px,
+                       15px 7px,
+                       18px 7px,
+                       10px 10px,
+                       8px 6px,
+                       14px 11px,
+                       8px 7px,
+                       100% 100%
+      background-position: 13px 33px,
+                           10px 30px,
+                           49px 33px,
+                           46px 30px,
+                           23px 55px,
+                           32px 55px,
+                           50% 62px,
+                           10px 14px,
+                           22px 18px,
+                           35px 13px,
+                           49px 18px,
+                           0 0
+      border-top-left-radius: 110px 80px
+      border-top-right-radius: 110px 80px
+      border-bottom-left-radius: 110px
+      border-bottom-right-radius: 110px
+      box-shadow: inset 5px 0 0 black(.15),
+                  inset -5px 0 0 black(.15),
+                  0 -13px 0 #222,
+                  0 -17px 0 white(.1),
+                  0 32px 0 -26px black(.2),
+                  0 32px 0 -26px peru
+
+    // hair pieces
+    &:after
+      width: 120px
+      height: 80px
+      left: 50%
+      top: 50px
+      margin-left: -(@width/2)
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse at 90% 20%, transparent 30%,
+                                                 #222 30%,
+                                                 #222 45%,
+                                                 transparent 45%),
+                        radial-gradient(ellipse at 90% 20%, transparent 30%,
+                                                 #222 30%,
+                                                 #222 40%,
+                                                 transparent 40%),
+                        radial-gradient(ellipse at 90% 20%, transparent 30%,
+                                                 #222 30%,
+                                                 #222 40%,
+                                                 transparent 40%),
+                        radial-gradient(ellipse at 0 20%, transparent 30%,
+                                                 #222 30%,
+                                                 #222 45%,
+                                                 transparent 45%),
+                        radial-gradient(ellipse at 0 20%, transparent 30%,
+                                                 #222 30%,
+                                                 #222 40%,
+                                                 transparent 40%),
+                        radial-gradient(ellipse at 0 20%, transparent 30%,
+                                                 #222 30%,
+                                                 #222 40%,
+                                                 transparent 40%)
+      background-size: 20px 50px,
+                       34px 68px,
+                       40px 85px,
+                       20px 48px,
+                       34px 69px,
+                       40px 89px
+      background-position: 90% 0,
+                           93% 0,
+                           94% 0,
+                           11% 0,
+                           8% 0,
+                           7% 0

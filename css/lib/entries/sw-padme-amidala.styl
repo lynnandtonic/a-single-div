@@ -1,0 +1,123 @@
+/*-----------------------------
+
+Star Wars Ladies - Padme
+
+-----------------------------*/
+
+#padme-amidala
+  background: crimson
+
+  // hair and headpiece
+  div
+    width: 150px
+    height: 120px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background-color: darken(saddlebrown,40%)
+    background-repeat: no-repeat
+    background-image: linear-gradient(to right, darken(crimson,10%), darken(crimson,10%)),
+                      linear-gradient(115deg, transparent 40%, goldenrod 40%),
+                      linear-gradient(-115deg, transparent 40%, goldenrod 40%),
+                      radial-gradient(ellipse, goldenrod 50%, transparent 50%),
+                      linear-gradient(to top, darken(saddlebrown,40%) 45%, transparent 45%),
+                      radial-gradient(ellipse, transparent 54%,
+                                               sienna 54%,
+                                               sienna 60%,
+                                               transparent 60%)
+    background-size: 12px 50%,
+                     25% 50%,
+                     25% 50%,
+                     105% 80%,
+                     100% 100%,
+                     100% 105%
+    background-position: 50% 0,
+                         33% 0,
+                         68% 0,
+                         50% 130%,
+                         0 0,
+                         0 0
+    border-top-left-radius: 110px
+    border-top-right-radius: 110px
+    border-bottom-left-radius: 110px 70px
+    border-bottom-right-radius: 110px 70px
+    box-shadow: inset 6px -8px 0 black(.3),
+                inset -6px -8px 0 black(.3)
+
+    // face
+    &:before
+      width: 70px
+      height: 80px
+      left: 50%
+      top: 44px
+      margin-left: -(@width/2)
+      background-color: lavenderblush
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white(.5) 50%, transparent 50%),
+                        radial-gradient(circle, darken(crimson,20%) 35%,
+                                                 goldenrod 35%,
+                                                 goldenrod 50%,
+                                                 transparent 50%),
+                        radial-gradient(circle, black(.1) 50%, transparent 50%),
+                        linear-gradient(to right, darken(crimson,10%), darken(crimson,10%)),
+                        radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, darken(sienna,30%) 50%, transparent 50%),
+                        radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, darken(sienna,30%) 50%, transparent 50%),
+                        radial-gradient(circle, crimson 50%, transparent 50%),
+                        radial-gradient(circle, crimson 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, crimson 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, crimson 50%, transparent 50%),
+                        linear-gradient(to right, crimson, crimson)
+      background-size: 8px 8px,
+                       24px 24px,
+                       24px 24px,
+                       12px 10px,
+                       4px 4px,
+                       14px 14px,
+                       4px 4px,
+                       14px 14px,
+                       6px 6px,
+                       6px 6px,
+                       15px 7px,
+                       15px 7px,
+                       6px 6px
+      background-position: 47% 10px,
+                           50% 3px,
+                           57% 5px,
+                           50% 0,
+                           13px 33px,
+                           10px 30px,
+                           49px 33px,
+                           46px 30px,
+                           14px 48px,
+                           51px 48px,
+                           23px 55px,
+                           32px 55px,
+                           50% 61px
+      border-top-left-radius: 110px 80px
+      border-top-right-radius: 110px 80px
+      border-bottom-left-radius: 110px
+      border-bottom-right-radius: 110px
+      box-shadow: inset 7px 0 0 black(.15),
+                  inset -7px 0 0 black(.15),
+                  -5px 0 0 black(.1),
+                  5px 0 0 black(.1),
+                  0 -10px 0 12px black(.1)
+
+    // wings
+    &:after
+      width: 90px
+      height: 150px
+      left: 50%
+      top: -10px
+      margin-left: -(@width/2)
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse at center 120%, goldenrod 50%, transparent 50%)
+      background-size: 13px 13px
+      background-position: 50% -4px
+      border-radius: 10% 10% 70% 70%
+      box-shadow: inset 10px 5px 0 -5px goldenrod,
+                  inset 15px 5px 0 -5px darken(crimson,20%),
+                  inset -10px 5px 0 -5px goldenrod,
+                  inset -15px 5px 0 -5px darken(crimson,20%)

@@ -9,6 +9,9 @@ Entry styles
   min-height: 400px
   position: relative
 
+  &.short
+    min-height: 320px
+
   &.tall
     min-height: 450px
 
@@ -44,7 +47,8 @@ Entry styles
     float: left
     width: 100%
 
-    &.fours
+    &.fours,
+    &.six
       width: 50%
 
 @media all and (min-width: 960px )
@@ -61,3 +65,6 @@ Entry styles
 
     &.fours
       width: 25%
+
+    &.six
+      width: 33.333%

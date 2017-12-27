@@ -49,6 +49,9 @@ header .share-link:hover {
   min-height: 400px;
   position: relative;
 }
+.entry.short {
+  min-height: 320px;
+}
 .entry.tall {
   min-height: 450px;
 }
@@ -82,7 +85,8 @@ header .share-link:hover {
     float: left;
     width: 100%;
   }
-  .entry.fours {
+  .entry.fours,
+  .entry.six {
     width: 50%;
   }
 }
@@ -99,6 +103,9 @@ header .share-link:hover {
   }
   .entry.fours {
     width: 25%;
+  }
+  .entry.six {
+    width: 33.333%;
   }
 }
 #camera {
@@ -3007,4 +3014,388 @@ header .share-link:hover {
   background-size: 65px 17px, 45px 22px, 25px 10px, 45px 10px, 45px 10px, 20px 3px, 20px 4px, 4px 5px, 15px 6px, 16px 8px, 20px 30px;
   background-position: 0 65%, 60% 19%, 26% 35%, 42% 72%, 60% 60%, 3px 49%, 80% 47%, 84% 48%, 98% 38%, 100% 56%, 70% 100%;
   transform: scale(0.7);
+}
+#padme-amidala {
+  background: #dc143c;
+}
+#padme-amidala div {
+  width: 150px;
+  height: 120px;
+  margin-left: -75px;
+  margin-top: -60px;
+  background-color: #53290b;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #c61236, #c61236), linear-gradient(115deg, transparent 40%, #daa520 40%), linear-gradient(-115deg, transparent 40%, #daa520 40%), radial-gradient(ellipse, #daa520 50%, transparent 50%), linear-gradient(to top, #53290b 45%, transparent 45%), radial-gradient(ellipse, transparent 54%, #a0522d 54%, #a0522d 60%, transparent 60%);
+  background-size: 12px 50%, 25% 50%, 25% 50%, 105% 80%, 100% 100%, 100% 105%;
+  background-position: 50% 0, 33% 0, 68% 0, 50% 130%, 0 0, 0 0;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border-bottom-left-radius: 110px 70px;
+  border-bottom-right-radius: 110px 70px;
+  box-shadow: inset 6px -8px 0 rgba(0,0,0,0.3), inset -6px -8px 0 rgba(0,0,0,0.3);
+}
+#padme-amidala div:before {
+  width: 70px;
+  height: 80px;
+  left: 50%;
+  top: 44px;
+  margin-left: -35px;
+  background-color: #fff0f5;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.5) 50%, transparent 50%), radial-gradient(circle, #b01030 35%, #daa520 35%, #daa520 50%, transparent 50%), radial-gradient(circle, rgba(0,0,0,0.1) 50%, transparent 50%), linear-gradient(to right, #c61236, #c61236), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #703920 50%, transparent 50%), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #703920 50%, transparent 50%), radial-gradient(circle, #dc143c 50%, transparent 50%), radial-gradient(circle, #dc143c 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #dc143c 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #dc143c 50%, transparent 50%), linear-gradient(to right, #dc143c, #dc143c);
+  background-size: 8px 8px, 24px 24px, 24px 24px, 12px 10px, 4px 4px, 14px 14px, 4px 4px, 14px 14px, 6px 6px, 6px 6px, 15px 7px, 15px 7px, 6px 6px;
+  background-position: 47% 10px, 50% 3px, 57% 5px, 50% 0, 13px 33px, 10px 30px, 49px 33px, 46px 30px, 14px 48px, 51px 48px, 23px 55px, 32px 55px, 50% 61px;
+  border-top-left-radius: 110px 80px;
+  border-top-right-radius: 110px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  box-shadow: inset 7px 0 0 rgba(0,0,0,0.15), inset -7px 0 0 rgba(0,0,0,0.15), -5px 0 0 rgba(0,0,0,0.1), 5px 0 0 rgba(0,0,0,0.1), 0 -10px 0 12px rgba(0,0,0,0.1);
+}
+#padme-amidala div:after {
+  width: 90px;
+  height: 150px;
+  left: 50%;
+  top: -10px;
+  margin-left: -45px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse at center 120%, #daa520 50%, transparent 50%);
+  background-size: 13px 13px;
+  background-position: 50% -4px;
+  border-radius: 10% 10% 70% 70%;
+  box-shadow: inset 10px 5px 0 -5px #daa520, inset 15px 5px 0 -5px #b01030, inset -10px 5px 0 -5px #daa520, inset -15px 5px 0 -5px #b01030;
+}
+#leia-organa {
+  background-color: #1e90ff;
+}
+#leia-organa div {
+  width: 140px;
+  height: 110px;
+  margin-left: -70px;
+  margin-top: -55px;
+  background-color: #80ffff;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse at 50% 80%, transparent 50%, rgba(0,0,0,0.2) 50%), linear-gradient(to right, #ffe4c4, #ffe4c4), radial-gradient(ellipse, #8b4513 50%, transparent 50%), radial-gradient(ellipse, #8b4513 50%, transparent 50%), radial-gradient(ellipse, #8b4513 50%, transparent 50%), linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  background-size: 100% 100%, 2px 25px, 76% 90%, 44px 80px, 44px 80px, 100% 100%;
+  background-position: 0 0, 50% 10px, 50% -25%, 3% 90%, 97% 90%, 0 0;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border-bottom-left-radius: 30px 50px;
+  border-bottom-right-radius: 30px 50px;
+  box-shadow: inset 0 6px 0 10px #80ffff, 0 0 60px 10px #0ff;
+}
+#leia-organa div:before {
+  width: 70px;
+  height: 80px;
+  left: 50%;
+  top: 34px;
+  margin-left: -35px;
+  background-color: #ffe4c4;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #7d3e11 50%, transparent 50%), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #7d3e11 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #e9967a 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #e9967a 50%, transparent 50%), radial-gradient(ellipse at 50% -20%, #e9967a 50%, transparent 50%);
+  background-size: 4px 4px, 14px 14px, 4px 4px, 14px 14px, 15px 7px, 15px 7px, 18px 7px;
+  background-position: 13px 33px, 10px 30px, 49px 33px, 46px 30px, 23px 55px, 32px 55px, 50% 62px;
+  border-top-left-radius: 110px 80px;
+  border-top-right-radius: 110px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  box-shadow: inset 7px 0 0 rgba(0,0,0,0.1), inset -7px 0 0 rgba(0,0,0,0.1), -5px 0 0 rgba(0,0,0,0.1), 5px 0 0 rgba(0,0,0,0.1);
+}
+#rey {
+  background-color: #a0522d;
+}
+#rey div {
+  width: 90px;
+  height: 140px;
+  margin-left: -45px;
+  margin-top: -70px;
+  background-color: #d2b48c;
+  border-radius: 100px 100px 110% 110%;
+  box-shadow: -3px 11px 0 -7px rgba(139,69,19,0.4), 0 20px 0 -6px #caa778, inset 8px 0 0 rgba(0,0,0,0.07);
+}
+#rey div:before {
+  width: 70px;
+  height: 80px;
+  left: 50%;
+  top: 34px;
+  margin-left: -35px;
+  background-color: #f5a968;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #4d523e 50%, transparent 50%), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #4d523e 50%, transparent 50%), radial-gradient(circle, #d29152 50%, transparent 50%), radial-gradient(circle, #d29152 50%, transparent 50%), radial-gradient(circle, #d29152 50%, transparent 50%), radial-gradient(circle, #d29152 50%, transparent 50%), radial-gradient(circle, #d29152 50%, transparent 50%), radial-gradient(circle, #d29152 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #cd853f 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #cd853f 50%, transparent 50%), radial-gradient(ellipse at 50% -20%, #cd853f 50%, transparent 50%);
+  background-size: 4px 4px, 14px 14px, 4px 4px, 14px 14px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 15px 7px, 15px 7px, 18px 7px;
+  background-position: 13px 33px, 10px 30px, 49px 33px, 46px 30px, 13px 48px, 17px 53px, 20px 48px, 48px 48px, 52px 53px, 55px 48px, 23px 55px, 32px 55px, 50% 62px;
+  border-top-left-radius: 110px 80px;
+  border-top-right-radius: 110px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  box-shadow: inset 3px 0 rgba(0,0,0,0.2), inset -3px 0 rgba(0,0,0,0.2), inset 9px 0 rgba(0,0,0,0.1), inset -9px 0 rgba(0,0,0,0.1), 3px 5px 0 5px #d2b48c, 7px 14px 0 rgba(139,69,19,0.4);
+}
+#rey div:after {
+  width: 28px;
+  height: 14px;
+  left: 10px;
+  top: 28px;
+  background: #444;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: -25px -5px 0 -6px #b08245, -25px 5px 0 -6px #b08245, 65px -5px 0 -6px #b08245, 65px 5px 0 -6px #b08245, 40px 0 0 #444, 0 0 0 8px #cba97a, 40px 0 0 8px #cba97a, 0 0 0 14px #b98b4d, 40px 0 0 14px #b98b4d, 0 4px 0 14px rgba(0,0,0,0.15), 40px 4px 0 14px rgba(0,0,0,0.15);
+}
+#jyn-erso {
+  background-color: #0cc;
+}
+#jyn-erso div {
+  width: 110px;
+  height: 145px;
+  margin-left: -55px;
+  margin-top: -72.5px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse, #6f370f 50%, transparent 50%), linear-gradient(2deg, #708090 9%, transparent 9%), linear-gradient(-3deg, #596673 15%, transparent 15%), linear-gradient(5deg, #708090 23%, transparent 23%), linear-gradient(-5deg, #596673 25%, transparent 25%), linear-gradient(12deg, #596673 25%, transparent 25%), linear-gradient(18deg, #434d56 30%, transparent 30%);
+  background-size: 100% 80%, 100% 100%, 100% 100%, 100% 100%, 90% 100%, 90% 100%, 60% 100%;
+  background-position: 50% -35%, 0 100%, 0 100%, 0 100%, 50% 100%, 50% 100%, 50% 100%;
+  border-bottom-left-radius: 90px 50px;
+  border-bottom-right-radius: 70px 50px;
+}
+#jyn-erso div:before {
+  width: 70px;
+  height: 80px;
+  left: 50%;
+  top: 32px;
+  margin-left: -35px;
+  background-color: #ffd8a9;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #556b2f 50%, transparent 50%), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #556b2f 50%, transparent 50%), radial-gradient(circle, #f6b680 50%, transparent 50%), radial-gradient(circle, #f6b680 50%, transparent 50%), radial-gradient(circle, #f6b680 50%, transparent 50%), radial-gradient(circle, #f6b680 50%, transparent 50%), radial-gradient(circle, #f6b680 50%, transparent 50%), radial-gradient(circle, #f6b680 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #e9967a 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #e9967a 50%, transparent 50%), radial-gradient(ellipse at 50% -20%, #e9967a 50%, transparent 50%);
+  background-size: 4px 4px, 14px 14px, 4px 4px, 14px 14px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 15px 7px, 15px 7px, 18px 7px;
+  background-position: 13px 33px, 10px 30px, 49px 33px, 46px 30px, 13px 48px, 17px 53px, 20px 48px, 48px 48px, 52px 53px, 55px 48px, 23px 55px, 32px 55px, 50% 62px;
+  border-top-left-radius: 110px 80px;
+  border-top-right-radius: 110px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  box-shadow: inset 5px 0 0 rgba(0,0,0,0.15), inset -5px 0 0 rgba(0,0,0,0.15), -5px 20px 0 -10px rgba(0,0,0,0.15);
+}
+#jyn-erso div:after {
+  width: 94px;
+  height: 120px;
+  left: 50%;
+  top: 11px;
+  margin-left: -47px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse, #6f370f 50%, transparent 50%), radial-gradient(ellipse, rgba(0,0,0,0.1) 50%, transparent 50%), radial-gradient(ellipse, #6f370f 50%, transparent 50%), radial-gradient(ellipse, rgba(0,0,0,0.1) 50%, transparent 50%), radial-gradient(ellipse, #ffd8a9 50%, transparent 50%), radial-gradient(ellipse, #6f370f 50%, transparent 50%);
+  background-size: 80px 100px, 80px 100px, 80px 100px, 80px 100px, 50px 52px, 50px 50px;
+  background-position: 35px -42px, 35px -37px, -21px -42px, -21px -37px, 42px 0, 37px 0;
+  border-radius: 50%;
+  box-shadow: inset -13px 7px 0 #6f370f, inset 11px 5px 0 #6f370f;
+}
+#rose-tico {
+  background-color: #b9b900;
+}
+#rose-tico div {
+  width: 110px;
+  height: 145px;
+  margin-left: -55px;
+  margin-top: -72.5px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse, #222 55%, transparent 55%), radial-gradient(ellipse, rgba(0,0,0,0.3) 50%, transparent 50%), radial-gradient(ellipse, #800000 50%, transparent 50%), radial-gradient(ellipse, #800000 50%, transparent 50%);
+  background-size: 98% 80%, 50% 20%, 95% 40%, 50% 80%;
+  background-position: 50% -35%, 50% 87%, 50% 100%, 50% 50px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+#rose-tico div:before {
+  width: 70px;
+  height: 80px;
+  left: 50%;
+  top: 32px;
+  margin-left: -35px;
+  background-color: #cd853f;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #222 50%, transparent 50%), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #222 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #a0522d 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #a0522d 50%, transparent 50%), radial-gradient(ellipse at 50% -20%, #a0522d 50%, transparent 50%), linear-gradient(80deg, #cd853f 30%, #222 30%), linear-gradient(-80deg, #cd853f 30%, #222 30%), linear-gradient(-60deg, #cd853f 30%, #222 30%), linear-gradient(-80deg, #cd853f 30%, #222 30%), linear-gradient(to bottom, #222 30%, transparent 30%);
+  background-size: 4px 4px, 14px 14px, 4px 4px, 14px 14px, 15px 7px, 15px 7px, 18px 7px, 10px 10px, 8px 6px, 14px 11px, 8px 7px, 100% 100%;
+  background-position: 13px 33px, 10px 30px, 49px 33px, 46px 30px, 23px 55px, 32px 55px, 50% 62px, 10px 14px, 22px 18px, 35px 13px, 49px 18px, 0 0;
+  border-top-left-radius: 110px 80px;
+  border-top-right-radius: 110px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  box-shadow: inset 5px 0 0 rgba(0,0,0,0.15), inset -5px 0 0 rgba(0,0,0,0.15), 0 -13px 0 #222, 0 -17px 0 rgba(255,255,255,0.1), 0 32px 0 -26px rgba(0,0,0,0.2), 0 32px 0 -26px #cd853f;
+}
+#rose-tico div:after {
+  width: 120px;
+  height: 80px;
+  left: 50%;
+  top: 50px;
+  margin-left: -60px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse at 90% 20%, transparent 30%, #222 30%, #222 45%, transparent 45%), radial-gradient(ellipse at 90% 20%, transparent 30%, #222 30%, #222 40%, transparent 40%), radial-gradient(ellipse at 90% 20%, transparent 30%, #222 30%, #222 40%, transparent 40%), radial-gradient(ellipse at 0 20%, transparent 30%, #222 30%, #222 45%, transparent 45%), radial-gradient(ellipse at 0 20%, transparent 30%, #222 30%, #222 40%, transparent 40%), radial-gradient(ellipse at 0 20%, transparent 30%, #222 30%, #222 40%, transparent 40%);
+  background-size: 20px 50px, 34px 68px, 40px 85px, 20px 48px, 34px 69px, 40px 89px;
+  background-position: 90% 0, 93% 0, 94% 0, 11% 0, 8% 0, 7% 0;
+}
+#amilyn-holdo {
+  background-color: #8b008b;
+}
+#amilyn-holdo div {
+  width: 100px;
+  height: 145px;
+  margin-left: -50px;
+  margin-top: -72.5px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse, #ba55d3 55%, transparent 55%), radial-gradient(ellipse, transparent 41%, #c0c0c0 41%, #c0c0c0 43%, transparent 43%), radial-gradient(ellipse, transparent 41%, #c0c0c0 41%, #c0c0c0 43%, transparent 43%), linear-gradient(to top, transparent 40px, #ba55d3 40px, #ba55d3 70%, transparent 70%), radial-gradient(ellipse, rgba(0,0,0,0.15) 60%, transparent 60%), radial-gradient(ellipse, #bc8f8f 60%, transparent 60%), radial-gradient(ellipse, rgba(0,0,0,0.2) 60%, transparent 60%), radial-gradient(ellipse, #bc8f8f 60%, transparent 60%);
+  background-size: 140% 80%, 100% 80%, 90% 70%, 100% 100%, 50% 80%, 55% 90%, 60% 100%, 70% 100%;
+  background-position: 50% -3px, 50% -22px, 50% -14px, 50% 0, 50% 17px, 50% 12px, 50% 5px, 50% 10px;
+}
+#amilyn-holdo div:before {
+  width: 70px;
+  height: 84px;
+  left: 50%;
+  top: 28px;
+  margin-left: -35px;
+  background-color: #ffd8a9;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #5f9ea0 50%, transparent 50%), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #5f9ea0 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #e9967a 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #e9967a 50%, transparent 50%), radial-gradient(ellipse at 50% -20%, #e9967a 50%, transparent 50%);
+  background-size: 4px 4px, 14px 14px, 4px 4px, 14px 14px, 15px 7px, 15px 7px, 18px 7px;
+  background-position: 13px 37px, 10px 34px, 49px 37px, 46px 34px, 23px 59px, 32px 59px, 50% 66px;
+  border-top-left-radius: 110px 80px;
+  border-top-right-radius: 110px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  box-shadow: inset 5px 0 0 rgba(0,0,0,0.15), inset -5px 0 0 rgba(0,0,0,0.15), 0 5px 0 rgba(0,0,0,0.1);
+}
+#amilyn-holdo div:after {
+  width: 140px;
+  height: 100px;
+  left: 50%;
+  top: 25px;
+  margin-left: -70px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse at 100% 100%, transparent 60%, #ba55d3 60%), radial-gradient(ellipse at 100% 0, #ba55d3 50%, transparent 50%), radial-gradient(circle, #ba55d3 50%, transparent 50%), radial-gradient(circle, #ba55d3 50%, transparent 50%), radial-gradient(circle at 0 50%, transparent 40%, #ba55d3 40%), radial-gradient(circle at 100% 50%, #ba55d3 40%, transparent 40%), radial-gradient(circle at 0 50%, transparent 40%, #ba55d3 40%), radial-gradient(circle, #ba55d3 50%, transparent 50%), radial-gradient(circle at 100% 50%, transparent 40%, #ba55d3 40%), radial-gradient(circle at 0 50%, #ba55d3 40%, transparent 40%), radial-gradient(circle at 100% 50%, transparent 40%, #ba55d3 40%);
+  background-size: 40px 55px, 55px 45px, 40px 40px, 30px 30px, 26px 20px, 30px 20px, 30px 20px, 30px 30px, 26px 20px, 30px 20px, 30px 20px;
+  background-position: 30px 3px, 50px 0, 10px 40px, 7px -2px, 9px 20px, -8px 40px, 6px 60px, 103px -2px, 105px 20px, 118px 40px, 104px 60px;
+}
+#mon-mothma {
+  background-color: #f6f6e0;
+}
+#mon-mothma div {
+  width: 140px;
+  height: 110px;
+  margin-left: -70px;
+  margin-top: -75px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse, #a52a2a 50%, transparent 50%);
+  background-size: 85% 120%;
+  background-position: 50% -10px;
+}
+#mon-mothma div:before {
+  width: 70px;
+  height: 80px;
+  left: 50%;
+  top: 34px;
+  margin-left: -35px;
+  background-color: #ffe4c4;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #69843a 50%, transparent 50%), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #69843a 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #e9967a 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #e9967a 50%, transparent 50%), radial-gradient(ellipse at 50% -20%, #e9967a 50%, transparent 50%);
+  background-size: 4px 4px, 14px 14px, 4px 4px, 14px 14px, 15px 7px, 15px 7px, 18px 7px;
+  background-position: 13px 33px, 10px 30px, 49px 33px, 46px 30px, 23px 55px, 32px 55px, 50% 62px;
+  border-top-left-radius: 110px 80px;
+  border-top-right-radius: 110px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  box-shadow: inset 7px 0 0 rgba(0,0,0,0.08), inset -7px 0 0 rgba(0,0,0,0.08), 0 34px 0 -22px rgba(0,0,0,0.1), 0 34px 0 -22px #ffe4c4;
+}
+#mon-mothma div:after {
+  width: 140px;
+  height: 180px;
+  left: 50%;
+  top: 20px;
+  margin-left: -70px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse at 0 -5px, #a52a2a 50%, transparent 50%), radial-gradient(ellipse at 100% -5px, #a52a2a 50%, transparent 50%), radial-gradient(ellipse, #c0c0c0 50%, transparent 50%), radial-gradient(ellipse, #c0c0c0 50%, transparent 50%), radial-gradient(ellipse, #c0c0c0 50%, transparent 50%), linear-gradient(45deg, transparent 49%, #c0c0c0 49%, #c0c0c0 52%, transparent 52%), linear-gradient(-45deg, transparent 49%, #c0c0c0 49%, #c0c0c0 52%, transparent 52%), radial-gradient(ellipse at 50% 0, transparent 40%, #c0c0c0 40%, #c0c0c0 42%, transparent 42%), radial-gradient(ellipse at 50% 0, transparent 40%, #c0c0c0 40%, #c0c0c0 42%, transparent 42%);
+  background-size: 65px 40px, 43px 30px, 22px 12px, 22px 12px, 20px 20px, 38% 30%, 38% 30%, 120% 70%, 130% 80%;
+  background-position: 35px 12px, 60px 10px, 9px 80px, 109px 80px, 50% 125px, 19px 85px, 70px 85px, 50% 85px, 50% 85px;
+}
+#maz-kanata {
+  background-color: #789;
+}
+#maz-kanata div {
+  width: 150px;
+  height: 130px;
+  margin-left: -75px;
+  margin-top: -65px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse, #2f4f4f 50%, transparent 50%), radial-gradient(ellipse, #a9a9a9 50%, transparent 50%), radial-gradient(ellipse, #a9a9a9 50%, transparent 50%), radial-gradient(ellipse, #2f4f4f 50%, transparent 50%), radial-gradient(ellipse, #2f4f4f 50%, transparent 50%), radial-gradient(ellipse, #006f6f 50%, transparent 50%);
+  background-size: 90% 107%, 7px 22px, 7px 22px, 30px 43px, 30px 43px, 60px 30px;
+  background-position: 50% -14px, 16px 53px, 128px 53px, 12px 42px, 108px 42px, 50% 100%;
+}
+#maz-kanata div:before {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  top: 26px;
+  margin-left: -40px;
+  background-color: #cd853f;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #8b4513 50%, transparent 50%), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #8b4513 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #9f642a 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #9f642a 50%, transparent 50%), radial-gradient(ellipse at 50% -20%, #9f642a 50%, transparent 50%), linear-gradient(to bottom, #bb7531, #bb7531), linear-gradient(to bottom, #bb7531, #bb7531);
+  background-size: 4px 4px, 14px 14px, 4px 4px, 14px 14px, 15px 4px, 15px 4px, 18px 4px, 30px 2px, 23px 2px;
+  background-position: 13px 33px, 10px 30px, 58px 33px, 55px 30px, 29px 61px, 36px 61px, 50% 64px, 50% 13px, 50% 17px;
+  border-top-left-radius: 110px 80px;
+  border-top-right-radius: 110px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  box-shadow: inset 7px 0 0 rgba(0,0,0,0.1), inset -7px 0 0 rgba(0,0,0,0.1), 0 36px 0 -26px rgba(0,0,0,0.25), 0 36px 0 -26px #cd853f;
+}
+#maz-kanata div:after {
+  width: 110px;
+  height: 60px;
+  left: 50%;
+  top: 30px;
+  margin-left: -55px;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 50% 100%, rgba(255,255,255,0.25) 50%, transparent 50%), radial-gradient(circle at 50% 100%, rgba(255,255,255,0.25) 50%, transparent 50%), radial-gradient(circle, transparent 33%, #a9a9a9 33%, #a9a9a9 50%, transparent 50%), radial-gradient(circle, transparent 33%, #a9a9a9 33%, #a9a9a9 50%, transparent 50%), radial-gradient(circle, rgba(0,0,0,0.15) 50%, transparent 50%), radial-gradient(circle, rgba(0,0,0,0.15) 50%, transparent 50%), linear-gradient(to bottom, #a9a9a9 20%, transparent 20%, transparent 80%, #a9a9a9 80%), linear-gradient(to bottom, #a9a9a9 20%, transparent 20%, transparent 80%, #a9a9a9 80%), linear-gradient(to right, #a9a9a9, #a9a9a9), linear-gradient(to right, #a9a9a9, #a9a9a9);
+  background-size: 46px 15px, 46px 15px, 46px 46px, 46px 46px, 48px 48px, 48px 48px, 20px 10px, 20px 10px, 2px 10px, 2px 10px;
+  background-position: 9px 18px, 54px 18px, 9px 10px, 54px 10px, 8px 13px, 52px 13px, 0 28px, 100% 28px, 8px 28px, 93% 28px;
+}
+#ahsoka-tano {
+  background-color: #ee8761;
+}
+#ahsoka-tano div {
+  width: 110px;
+  height: 170px;
+  margin-left: -55px;
+  margin-top: -75px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(70deg, transparent 39%, rgba(0,0,0,0.1) 39%), linear-gradient(70deg, transparent 30%, #708090 30%), linear-gradient(-82deg, transparent 15%, #708090 15%), linear-gradient(70deg, transparent 40%, #fdf5e6 40%), linear-gradient(-80deg, transparent 40%, #fdf5e6 40%), linear-gradient(74deg, transparent 30%, #708090 30%), linear-gradient(-80deg, transparent 40%, #708090 40%), radial-gradient(ellipse at 50% 0, #708090 30%, transparent 30%), linear-gradient(-70deg, transparent 73%, rgba(0,0,0,0.1) 73%), linear-gradient(82deg, transparent 15%, #708090 15%), linear-gradient(-70deg, transparent 30%, #708090 30%), linear-gradient(80deg, transparent 40%, #fdf5e6 40%), linear-gradient(-70deg, transparent 40%, #fdf5e6 40%), linear-gradient(80deg, transparent 40%, #708090 40%), linear-gradient(-74deg, transparent 30%, #708090 30%), radial-gradient(ellipse at 50% 0, #708090 30%, transparent 30%);
+  background-size: 10px 60px, 20px 30px, 20px 30px, 18px 20px, 18px 20px, 12px 20px, 12px 20px, 17px 18px, 10px 90px, 20px 30px, 20px 30px, 18px 20px, 18px 20px, 12px 20px, 12px 20px, 17px 18px;
+  background-position: 0 70px, 0 90px, 20px 90px, 7px 120px, 23px 120px, 17px 140px, 23px 140px, 17px 157px, 100% 90px, 70px 90px, 90px 90px, 69px 120px, 85px 120px, 75px 140px, 81px 140px, 76px 157px;
+}
+#ahsoka-tano div:before {
+  width: 70px;
+  height: 80px;
+  left: 50%;
+  top: 30px;
+  margin-left: -35px;
+  z-index: 2;
+  background-color: #d2691e;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #4682b4 50%, transparent 50%), radial-gradient(circle, rgba(255,255,255,0.6) 50%, transparent 50%), radial-gradient(circle, #4682b4 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #724444 50%, transparent 50%), radial-gradient(ellipse at 50% 120%, #724444 50%, transparent 50%), radial-gradient(ellipse at 50% -20%, #724444 50%, transparent 50%), linear-gradient(80deg, transparent 40%, #fdf5e6 40%, #fdf5e6 60%, transparent 60%), linear-gradient(-80deg, transparent 40%, #fdf5e6 40%, #fdf5e6 60%, transparent 60%), linear-gradient(-50deg, transparent 40%, #fdf5e6 40%, #fdf5e6 60%, transparent 60%), linear-gradient(50deg, transparent 40%, #fdf5e6 40%, #fdf5e6 60%, transparent 60%), linear-gradient(50deg, transparent 40%, #fdf5e6 40%, #fdf5e6 60%, transparent 60%), linear-gradient(-50deg, transparent 40%, #fdf5e6 40%, #fdf5e6 60%, transparent 60%), linear-gradient(-80deg, transparent 40%, #fdf5e6 40%, #fdf5e6 60%, transparent 60%), linear-gradient(80deg, transparent 40%, #fdf5e6 40%, #fdf5e6 60%, transparent 60%), radial-gradient(ellipse at 50% 100%, transparent 40%, #fdf5e6 40%, #fdf5e6 55%, transparent 55%), radial-gradient(ellipse at 50% 100%, transparent 40%, #fdf5e6 40%, #fdf5e6 55%, transparent 55%), linear-gradient(-45deg, transparent 30%, #fdf5e6 30%, #fdf5e6 70%, transparent 70%), linear-gradient(45deg, transparent 30%, #fdf5e6 30%, #fdf5e6 70%, transparent 70%), radial-gradient(circle, #d2691e 50%, transparent 50%), linear-gradient(50deg, #d2691e 40%, transparent 40%), radial-gradient(ellipse at 100% 0, transparent 30%, #fdf5e6 30%, #fdf5e6 50%, transparent 50%), radial-gradient(circle, #d2691e 50%, transparent 50%), linear-gradient(-50deg, #d2691e 40%, transparent 40%), radial-gradient(ellipse at 0 0, transparent 30%, #fdf5e6 30%, #fdf5e6 50%, transparent 50%);
+  background-size: 4px 4px, 14px 14px, 4px 4px, 14px 14px, 15px 7px, 15px 7px, 18px 7px, 10px 10px, 10px 10px, 10px 6px, 10px 6px, 10px 6px, 10px 6px, 10px 10px, 10px 10px, 35px 10px, 35px 10px, 5px 10px, 5px 10px, 10px 10px, 8px 8px, 13px 30px, 10px 10px, 8px 8px, 13px 30px;
+  background-position: 13px 33px, 10px 30px, 49px 33px, 46px 30px, 23px 55px, 32px 55px, 50% 62px, 42% 0, 58% 0, 40% 10px, 60% 10px, 40% 16px, 60% 16px, 42% 22px, 58% 22px, 0 22px, 100% 22px, 22% 8px, 78% 8px, 12% 40px, 11% 50px, 7% 45px, 88% 40px, 89% 50px, 93% 45px;
+  border-top-left-radius: 110px 80px;
+  border-top-right-radius: 110px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  box-shadow: inset 3px 0 0 rgba(0,0,0,0.2), inset -3px 0 0 rgba(0,0,0,0.2), inset 7px 0 0 rgba(0,0,0,0.1), inset -7px 0 0 rgba(0,0,0,0.1), 0 5px 0 rgba(0,0,0,0.1), 0 -2px 0 rgba(0,0,0,0.2), 0 -28px 0 -22px #808000, -13px -20px 0 -20px #808000, 13px -20px 0 -20px #808000, -20px -12px 0 -20px #808000, 20px -12px 0 -20px #808000;
+}
+#ahsoka-tano div:after {
+  width: 110px;
+  height: 105px;
+  left: 50%;
+  margin-left: -55px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(56deg, #708090 70%, transparent 70%), linear-gradient(-56deg, #708090 70%, transparent 70%);
+  background-size: 40% 35px;
+  background-position: 0 0, 100% 0;
+  border-top-left-radius: 80px 150px;
+  border-top-right-radius: 80px 150px;
+  border-bottom-left-radius: 100px 30px;
+  border-bottom-right-radius: 100px 30px;
+  box-shadow: inset 38px 0 0 -30px rgba(0,0,0,0.1), inset -38px 0 0 -30px rgba(0,0,0,0.1), inset 0 -72px 0 -50px #fdf5e6, inset 0 -50px 0 #708090, inset 0 -82px 0 #fdf5e6;
 }

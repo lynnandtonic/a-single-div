@@ -1,0 +1,107 @@
+/*-----------------------------
+
+Star Wars Ladies - Mon Mothma
+
+-----------------------------*/
+
+#mon-mothma
+  background-color: lighten(beige,10%)
+
+  // hair
+  div
+    width: 140px
+    height: 110px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 20)
+
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse, brown 50%, transparent 50%)
+    background-size: 85% 120%
+    background-position: 50% -10px
+
+    // face
+    &:before
+      width: 70px
+      height: 80px
+      left: 50%
+      top: 34px
+      margin-left: -(@width/2)
+      background-color: bisque
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, lighten(darkolivegreen,10%) 50%, transparent 50%),
+                        radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, lighten(darkolivegreen,10%) 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, darksalmon 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% 120%, darksalmon 50%, transparent 50%),
+                        radial-gradient(ellipse at 50% -20%, darksalmon 50%, transparent 50%)
+      background-size: 4px 4px,
+                       14px 14px,
+                       4px 4px,
+                       14px 14px,
+                       15px 7px,
+                       15px 7px,
+                       18px 7px
+      background-position: 13px 33px,
+                           10px 30px,
+                           49px 33px,
+                           46px 30px,
+                           23px 55px,
+                           32px 55px,
+                           50% 62px
+      border-top-left-radius: 110px 80px
+      border-top-right-radius: 110px 80px
+      border-bottom-left-radius: 110px
+      border-bottom-right-radius: 110px
+      box-shadow: inset 7px 0 0 black(.08),
+                  inset -7px 0 0 black(.08),
+                  0 34px 0 -22px black(.1),
+                  0 34px 0 -22px bisque
+
+    // hair and adornments
+    &:after
+      width: 140px
+      height: 180px
+      left: 50%
+      top: 20px
+      margin-left: -(@width/2)
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse at 0 -5px, brown 50%, transparent 50%),
+                        radial-gradient(ellipse at 100% -5px, brown 50%, transparent 50%),
+                        radial-gradient(ellipse, silver 50%, transparent 50%),
+                        radial-gradient(ellipse, silver 50%, transparent 50%),
+                        radial-gradient(ellipse, silver 50%, transparent 50%),
+                        linear-gradient(45deg, transparent 49%,
+                                               silver 49%,
+                                               silver 52%,
+                                               transparent 52%),
+                        linear-gradient(-45deg, transparent 49%,
+                                               silver 49%,
+                                               silver 52%,
+                                               transparent 52%),
+                        radial-gradient(ellipse at 50% 0, transparent 40%,
+                                                             silver 40%,
+                                                             silver 42%,
+                                                             transparent 42%),
+                        radial-gradient(ellipse at 50% 0, transparent 40%,
+                                                             silver 40%,
+                                                             silver 42%,
+                                                             transparent 42%)
+      background-size: 65px 40px,
+                       43px 30px,
+                       22px 12px,
+                       22px 12px,
+                       20px 20px,
+                       38% 30%,
+                       38% 30%,
+                       120% 70%,
+                       130% 80%
+      background-position: 35px 12px,
+                           60px 10px,
+                           9px 80px,
+                           109px 80px,
+                           50% 125px,
+                           19px 85px,
+                           70px 85px,
+                           50% 85px,
+                           50% 85px
