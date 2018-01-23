@@ -18,18 +18,18 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
 
     title #{title}
-    meta(name='description', content='#{description}')
-    link(rel="stylesheet", href="css/reset.css")
+    meta(name="description", content="#{description}")
     link(rel="stylesheet", href="css/main.css")
+    link(rel="icon", href="images/favicon.ico")
 
   body.cf
 
     header
-      h1 A Single Div:
-      p a CSS drawing project by 
+      h1 A Single Div: 
+      p &nbsp;a CSS drawing project by 
         a(href="https://twitter.com/lynnandtonic") Lynn Fisher
       a.share-link(href="http://ctt.ec/5Dgbr") Tweet
 
     block content
 
-    include includes/ga.html
+    include include/ga.html
