@@ -17,7 +17,7 @@ Yes, it is super fun to do this anyway. ;)
 
 ### Project Details
 
-This project uses a combination of Jade for templating and Stylus for CSS preprocessing.
+This project uses a combination of Pug for templating and Stylus for CSS preprocessing.
 
 ### Sharing
 
