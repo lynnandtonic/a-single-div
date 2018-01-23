@@ -72,6 +72,10 @@ module.exports = function(grunt) {
                         expand: true,
                         src: ['**'],
                         dest: 'public/images'
+                    },
+                    {
+                        src: ['_redirects'],
+                        dest: 'public/'
                     }
                 ]
             },
