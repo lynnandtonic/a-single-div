@@ -1,0 +1,119 @@
+/*-----------------------------
+
+Space patterns
+
+-----------------------------*/
+
+$pattern-size = 100px 100px
+
+#space-pizza
+  box-sizing: border-box
+  background-color: #ffe631
+  background-image: radial-gradient(circle at 5% 5%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 20% 15%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 21% 40%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 40% 68%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 8% 85%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 80% 10%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 70% 25%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 85% 45%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 64% 55%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 67% 80%, white(.3) 1%, transparent 1%),
+                    linear-gradient(64deg, transparent 22%,
+                                           black 22%, black 52%,
+                                           transparent 52%),
+                    linear-gradient(-64deg, transparent 22%,
+                                           black 22%, black 52%,
+                                           transparent 52%),
+                    radial-gradient(circle at 44% 13%, crimson 3%, transparent 3%),
+                    radial-gradient(circle at 55% 15%, crimson 3%, transparent 3%),
+                    radial-gradient(circle at 49% 25%, crimson 4%, transparent 4%),
+                    radial-gradient(circle at 0 51%, sienna 3%, transparent 3%),
+                    radial-gradient(circle at 100% 51%, sienna 3%, transparent 3%),
+                    radial-gradient(circle at 7% 61%, sienna 3%, transparent 3%),
+                    radial-gradient(circle at 95% 63%, sienna 3%, transparent 3%),
+                    linear-gradient(to bottom, peru 5%,
+                                               transparent 5%, transparent 70%,
+                                               peru 70%, peru 75%,
+                                               black 75%)
+  background-size: $pattern-size
+  background-position: center 10px
+  border-right: 1px solid #666
+
+$donut = #96540c
+$maple = #c69c6a
+$chocolate = #5e2d1c
+$bsprinkle = #29caef
+$psprinkle = #ef54b4
+
+#space-donuts
+  background-color: black
+  background-image: radial-gradient(circle at 5% 8%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 16% 18%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 10% 38%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 26% 48%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 40% 70%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 30% 94%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 60% 60%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 55% 86%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 80% 5%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 88% 26%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 78% 40%, white(.3) 1%, transparent 1%),
+                    radial-gradient(circle at 50% 10%, $maple 6%, transparent 6%),
+                    radial-gradient(circle at 58% 12%, $maple 5%, transparent 5%),
+                    radial-gradient(circle at 63% 18%, $maple 5%, transparent 5%),
+                    radial-gradient(circle at 64% 25%, $maple 7%, transparent 7%),
+                    radial-gradient(circle at 61% 34%, $maple 6%, transparent 6%),
+                    radial-gradient(circle at 55% 39%, $maple 5%, transparent 5%),
+                    radial-gradient(circle at 46% 39%, $maple 6%, transparent 6%),
+                    radial-gradient(circle at 40% 34%, $maple 7%, transparent 7%),
+                    radial-gradient(circle at 36% 27%, $maple 5%, transparent 5%),
+                    radial-gradient(circle at 39% 16%, $maple 7%, transparent 7%),
+                    radial-gradient(circle at 50% 25%, transparent 8%,
+                                                       $maple 8%, $maple 18%,
+                                                       $donut 18%, $donut 25%,
+                                                       transparent 25%),
+                    radial-gradient(circle at 8% 62%, $psprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 12% 70%, $psprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 4% 65%, $bsprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 15% 77%, white 1%, transparent 1%),
+                    radial-gradient(circle at 10% 78%, $bsprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 8% 85%, $psprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 1% 89%, white 1%, transparent 1%),
+                    radial-gradient(circle at 0 61%, $chocolate 5%, transparent 5%),
+                    radial-gradient(circle at 8% 64%, $chocolate 6%, transparent 6%),
+                    radial-gradient(circle at 13% 70%, $chocolate 5%, transparent 5%),
+                    radial-gradient(circle at 13% 78%, $chocolate 5%, transparent 5%),
+                    radial-gradient(circle at 10% 84%, $chocolate 5%, transparent 5%),
+                    radial-gradient(circle at 0 89%, $chocolate 5%, transparent 5%),
+                    radial-gradient(circle at 0 75%, transparent 6%,
+                                                       $chocolate 6%, $chocolate 13%,
+                                                       $donut 13%, $donut 18%,
+                                                       transparent 18%),
+                    radial-gradient(circle at 96% 63%, $psprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 89% 63%, $bsprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 92% 68%, white 1%, transparent 1%),
+                    radial-gradient(circle at 84% 73%, $psprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 90% 78%, $bsprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 87% 85%, white 1%, transparent 1%),
+                    radial-gradient(circle at 95% 84%, $psprinkle 1%, transparent 1%),
+                    radial-gradient(circle at 100% 61%, $chocolate 5%, transparent 5%),
+                    radial-gradient(circle at 90% 64%, $chocolate 5%, transparent 5%),
+                    radial-gradient(circle at 86% 74%, $chocolate 6%, transparent 6%),
+                    radial-gradient(circle at 89% 83%, $chocolate 5.5%, transparent 5.5%),
+                    radial-gradient(circle at 100% 89%, $chocolate 5%, transparent 5%),
+                    radial-gradient(circle at 100% 75%, transparent 6%,
+                                                       $chocolate 6%, $chocolate 13%,
+                                                       $donut 13%, $donut 18%,
+                                                       transparent 18%)
+  background-size: $pattern-size
+  background-position: center 20px
+
+
+@media all and (max-width: 959px)
+  #space-pizza,
+  #space-donuts
+    min-height: 280px
+  #space-pizza
+    border-right: none
+    border-bottom: 1px solid #666
