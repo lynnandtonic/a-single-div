@@ -1,0 +1,74 @@
+/*-----------------------------
+
+Honey Badger
+
+-----------------------------*/
+
+#honey-badger
+  background: #555
+
+  div
+    width: 290px
+    height: 100px
+    margin-left: -(@width/2 + 10)
+    margin-top: -(@height/2 - 20)
+    background-repeat: no-repeat
+    background-image: linear-gradient(115deg, black 60%, transparent 60%), //legs
+                      linear-gradient(115deg, black 60%, transparent 60%),
+                      linear-gradient(115deg, black 60%, transparent 60%),
+                      linear-gradient(-115deg, black 60%, transparent 60%),
+                      radial-gradient(ellipse at 100% 100%, transparent 55%, black 55%), //neck
+                      radial-gradient(circle, black(.3) 45%, transparent 45%), //forehead
+                      radial-gradient(circle at 0 0, white 58%, black 58%),
+                      radial-gradient(circle at 100% 100%, black 60%, white 60%),
+                      linear-gradient(to bottom, white 34%, black 34%),
+                      linear-gradient(25deg, black 50%, transparent 50%), //ears
+                      linear-gradient(25deg, black 50%, transparent 50%),
+                      radial-gradient(circle at 50% 0, gold 50%, transparent 50%), //eye
+                      radial-gradient(ellipse at 0 0, black 70%, transparent 70%), //snout
+                      radial-gradient(circle at 100% 0, black 70%, transparent 70%), //tail
+                      linear-gradient(to bottom, black, black)
+    background-size: 9% 38%, //legs
+                     9% 38%,
+                     9% 38%,
+                     9% 38%,
+                     15% 30%, //neck
+                     20% 30%, //forehead
+                     5% 11%,
+                     5% 11%,
+                     15% 30%,
+                     5% 9%, //ears
+                     5% 9%,
+                     4% 4%, //eye
+                     15% 32%, //snout
+                     5% 14%, //tail
+                     25% 14%
+    background-position: 20% 100%, //legs
+                         30% 100%,
+                         71.4% 100%,
+                         81% 100%,
+                         83% 46%, //neck
+                         85.5% 19%, //forehead
+                         85% 8%,
+                         77% 19%,
+                         83% 10%,
+                         82% 0, //ears
+                         87% 0,
+                         90% 15%, //eye
+                         100% 10%, //snout
+                         0 8%, //tail
+                         5% 8%
+
+    &:before
+      width: 57%
+      height: 57%
+      left: 17%
+      top: 7%
+      background-color: black
+      background-repeat: no-repeat
+      background-image: linear-gradient(to bottom, white, white)
+      background-size: 95% 50%
+      background-position: 100% 0
+      border-bottom-left-radius: 40px
+      box-shadow: inset 5px -36px 0 black,
+                  inset 13px -43px 0 black(.3)
