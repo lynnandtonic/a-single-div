@@ -1,0 +1,169 @@
+/*-----------------------------
+
+Xray
+
+-----------------------------*/
+
+@keyframes moveDiv
+  to
+    background-position-x: calc(50% + 200px),
+                           50%,
+                           200px,
+                           50%,
+                          -200px,
+                           0;
+
+@keyframes moveAfter
+  to
+    background-position-x: 15px, 16px,
+                           calc(50% + 200px),
+                           calc(50% + 200px),
+                           calc(50% + 200px),
+                           calc(50% + 200px),
+                           calc(50% + 200px)
+
+#xray
+  background-color: lightcyan
+  background-image: linear-gradient(to right, transparent 30%,
+                                              tan 30%, tan 47%,
+                                              lighten(tan,8) 47%, lighten(tan,8) 53%,
+                                              tan 53%, tan 70%,
+                                              transparent 70%),
+                    linear-gradient(to right, transparent,
+                                              black(.3) 20%, black(.3) 80%,
+                                              transparent),
+                    linear-gradient(45deg, #bbb 22%,
+                                           #888 22%, #888 25%,
+                                           #bbb 25%, #bbb 75%,
+                                           #888 75%, #888 78%,
+                                           #bbb 78%),
+                    radial-gradient(circle, #888 8px,
+                                            white(.9) 8px, white(.9) 11px,
+                                            transparent 11px),
+                    linear-gradient(-45deg, #bbb 22%,
+                                           #888 22%, #888 25%,
+                                           #bbb 25%, #bbb 75%,
+                                           #888 75%, #888 78%,
+                                           #bbb 78%),
+                    linear-gradient(to bottom, #666 50%, #555 50%)
+  background-size: 200px 70px,
+                   290px 11.5%,
+                   200px 7px,
+                   100px 30px,
+                   200px 7px,
+                   200px 10%
+  background-position: 50% 56%,
+                       50% 72.2%,
+                       0 65%,
+                       50% 71%,
+                       0 75%,
+                       0 72%
+  background-repeat: repeat-x,
+                     no-repeat,
+                     repeat-x,
+                     repeat-x,
+                     repeat-x,
+                     repeat-x
+  animation: moveDiv 2000ms linear infinite
+
+  &:before
+    content: ''
+    width: 200px
+    height: 202px
+    position: absolute
+    left: 50%
+    margin-left: -(@width/2)
+    top: 27%
+    background-image: linear-gradient(165deg, white(.15) 25%, transparent 25%),
+                      linear-gradient(to right, darken(darkcyan,20), darken(darkcyan,20)),
+                      linear-gradient(to right, transparent 20%,
+                                                darken(turquoise,20) 20%, darken(turquoise,20) 40%,
+                                                transparent 40%, transparent 60%,
+                                                darken(turquoise,20) 60%, darken(turquoise,20) 80%,
+                                                transparent 80%),
+                      radial-gradient(circle, darken(turquoise,18) 50%, transparent 50%),
+                      radial-gradient(circle, darken(turquoise,18) 50%, transparent 50%),
+                      radial-gradient(circle, darken(turquoise,18) 50%, transparent 50%),
+                      linear-gradient(to bottom, turquoise 90%, darken(turquoise,10) 90%)
+    background-size: 164px 130px,
+                     170px 130px,
+                     100% 10px,
+                     16px 16px,
+                     16px 16px,
+                     16px 16px,
+                     100% 100%
+    background-position: 50% 27%,
+                         50% 22%,
+                         50% 100%,
+                         70% 85%,
+                         80% 85%,
+                         90% 85%,
+                         0 0
+    background-repeat: no-repeat
+    border-radius: 10px 10px 3px 3px
+    border-top: 3px solid darken(turquoise,10)
+
+  &:after
+    content: ''
+    width: 170px
+    height: 130px
+    position: absolute
+    left: 50%
+    margin-left: -(@width/2)
+    top: 38%
+    background-image: linear-gradient(to right, white, white),
+                      repeating-linear-gradient(to bottom, white, white 2px,
+                                                                  transparent 2px,
+                                                                  transparent 12px),
+                      linear-gradient(to right, transparent 30%,
+                                                darken(turquoise,34) 30%,
+                                                transparent 40%,
+                                                transparent 60%,
+                                                darken(turquoise,34) 70%,
+                                                transparent 70%),
+                      linear-gradient(to right, transparent 35%,
+                                                darken(turquoise,20) 34%, darken(turquoise,20) 44%,
+                                                transparent 44%, transparent 45%,
+                                                darken(turquoise,10) 45%, darken(turquoise,10) 55%,
+                                                transparent 55%, transparent 56%,
+                                                darken(turquoise,25) 56%, darken(turquoise,25) 65%,
+                                                transparent 65%),
+                      linear-gradient(to right, transparent 35%,
+                                                darken(turquoise,15) 34%, darken(turquoise,15) 44%,
+                                                transparent 44%, transparent 45%,
+                                                darken(turquoise,20) 45%, darken(turquoise,20) 55%,
+                                                transparent 55%, transparent 56%,
+                                                darken(turquoise,10) 56%, darken(turquoise,10) 65%,
+                                                transparent 65%),
+                      linear-gradient(to right, transparent 35%,
+                                                darken(turquoise,25) 34%, darken(turquoise,25) 44%,
+                                                transparent 44%, transparent 45%,
+                                                darken(turquoise,20) 45%, darken(turquoise,20) 55%,
+                                                transparent 55%, transparent 56%,
+                                                darken(turquoise,15) 56%, darken(turquoise,15) 65%,
+                                                transparent 65%),
+                      linear-gradient(to right, transparent 30%,
+                                                darken(darkcyan,15) 30%, darken(darkcyan,15) 70%,
+                                                transparent 70%)
+    background-size: 2px 50px,
+                     8px 50px,
+                     200px 70px,
+                     200px 18px,
+                     200px 18px,
+                     200px 18px,
+                     200px 70px
+    background-position: 15px 40px,
+                         16px 40px,
+                         50% 56%,
+                         50% 40%,
+                         50% 58%,
+                         50% 76%,
+                         50% 56%
+    background-repeat: no-repeat,
+                       no-repeat,
+                       repeat-x,
+                       repeat-x,
+                       repeat-x,
+                       repeat-x,
+                       repeat-x
+    animation: moveAfter 2000ms linear infinite
