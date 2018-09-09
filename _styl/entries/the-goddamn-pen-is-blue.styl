@@ -1,0 +1,111 @@
+/*-----------------------------
+
+The Goddamn Pen Is Blue
+
+-----------------------------*/
+
+#the-goddman-pen-is-blue
+  background: #ddd
+
+  div
+    width: 350px
+    height: 10px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    border-top-right-radius: 80px 7px
+    border-bottom-right-radius: 80px 7px
+    box-shadow: 10px 26px 20px 8px black(.3)
+    transform: rotate(4deg)
+
+    @media (max-width: 400px)
+      transform: scale(.8) rotate(4deg)
+
+
+    &:before
+      width: 75%
+      height: 8px
+      top: 0
+      border-top-right-radius: 80px 7px
+      border-bottom-right-radius: 80px 7px
+      border-top-left-radius: 10px
+      border-bottom-left-radius: 10px
+      box-shadow: 28px 22px 10px black(.7),
+                  8px 24px 10px black(.4)
+      transform: rotate(-4deg)
+
+    &:after
+      width: 350px
+      height: 24px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, silver, grey),
+                        linear-gradient(to right, silver, silver),
+                        linear-gradient(to right, white(.7), white(.7)),
+                        linear-gradient(to right, white(.7), white(.7)),
+                        radial-gradient(ellipse at 30px 28px, white(0) 65%,
+                                                           white(.6) 70%,
+                                                           white(0) 75%),
+                        radial-gradient(ellipse at right center, white(.3) 40%, white(0) 40%),
+                        linear-gradient(to bottom, royalblue, midnightblue),
+                        linear-gradient(to bottom, white(0) 0,
+                                                   white(.4) 50%,
+                                                   white(0) 100%),
+                        linear-gradient(to top, white(.1) 20%,
+                                                white(0) 100%),
+                        linear-gradient(to bottom, mediumblue, midnightblue),
+                        linear-gradient(to bottom, white(0) 0,
+                                                   white(.6) 50%,
+                                                   white(0) 100%),
+                        linear-gradient(to bottom, royalblue, midnightblue)
+      background-size: 24% 21%,
+                       26% 30%,
+                       .8% 25%,
+                       1% 24%,
+                       34% 50%,
+                       1.5% 50%,
+                       35% 100%,
+                       58% 20%,
+                       56% 30%,
+                       60% 95%,
+                       8% 16%,
+                       10% 78%
+      background-position: 94% 46%,
+                           95% 45%,
+                           8% 5%,
+                           65.7% 2%,
+                           100% 20%,
+                           100% center,
+                           100% center,
+                           21% 40%,
+                           20% 98%,
+                           20% center,
+                           0 32%,
+                           0 center
+      border-top-right-radius: 80px 7px
+      border-bottom-right-radius: 80px 7px
+      border-top-left-radius: 10px
+      border-bottom-left-radius: 10px
+      z-index: 1
+      transform: rotate(-4deg)
+
+
+    &:hover
+      &:after
+        background-image: linear-gradient(to right, silver, grey),
+                    linear-gradient(to right, silver, silver),
+                    linear-gradient(to right, white(.7), white(.7)),
+                    linear-gradient(to right, white(.7), white(.7)),
+                    radial-gradient(ellipse at 30px 28px, white(0) 65%,
+                                                       white(.6) 70%,
+                                                       white(0) 75%),
+                    radial-gradient(ellipse at right center, white(.3) 40%, white(0) 40%),
+                    linear-gradient(to bottom, lighten(crimson,20), firebrick),
+                    linear-gradient(to bottom, white(0) 0,
+                                               white(.4) 50%,
+                                               white(0) 100%),
+                    linear-gradient(to top, white(.1) 20%,
+                                            white(0) 100%),
+                    linear-gradient(to bottom, crimson, firebrick),
+                    linear-gradient(to bottom, white(0) 0,
+                                               white(.6) 50%,
+                                               white(0) 100%),
+                    linear-gradient(to bottom, lighten(crimson,20), firebrick)
