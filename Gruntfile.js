@@ -2,13 +2,13 @@ var path = require('path');
 var NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = function(grunt) {
-    grunt.loadNpmTasks('grunt-contrib-stylus');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-pug');
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-pug');
+    grunt.loadNpmTasks('grunt-contrib-stylus');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.initConfig({
         stylus: {
@@ -22,17 +22,6 @@ module.exports = function(grunt) {
                 files: {
                     'public/css/main.css': ['_styl/main.styl']
                 }
-            }
-        },
-        cssmin: {
-            target: {
-                files: [{
-                    expand: true,
-                    cwd: 'public/css',
-                    src: ['*.css', '!*.min.css'],
-                    dest: 'public/css',
-                    ext: '.min.css',
-                }]
             }
         },
         pug: {
@@ -81,11 +70,26 @@ module.exports = function(grunt) {
             },
         },
         watch: {
-            build: {
-                files: ['_styl/**/*.styl', '_pug/**/*.pug', '_images/**'],
-                tasks: ['build'],
+            pug: {
+                files: ['_pug/**'],
+                tasks: ['pug:basic'],
                 options: {
-                    livereload: true
+                  spawn: false,
+                  livereload: true
+              }
+            },
+            css: {
+                files: ['_styl/**'],
+                tasks: ['css'],
+                options: {
+                  livereload: true
+                }
+            },
+            images: {
+                files: ['_images/**'],
+                tasks: ['copy'],
+                options: {
+                  livereload: true
                 }
             }
         },
@@ -98,10 +102,22 @@ module.exports = function(grunt) {
                     open: true
                 }
             }
+        },
+
+        clean: ['public']
+    });
+
+    grunt.event.on('watch', (action, filepath, target) => {
+        if (target === 'pug') {
+        const files = grunt.config('pug.basic.files');
+        files[0].cwd = '_pug';
+        files[0].src = ['**/*.pug'];
+        grunt.config.set('pug.basic.files', files);
         }
     });
 
-    grunt.registerTask('build', ['stylus', 'pug', 'copy'])
+    grunt.registerTask('css', ['stylus']);
+    grunt.registerTask('build', ['clean', 'css', 'pug', 'copy']);
     grunt.registerTask('serve', ['build', 'connect:server', 'watch'])
     grunt.registerTask('default', ['build'])
 };
