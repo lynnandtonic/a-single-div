@@ -1,0 +1,165 @@
+/*-----------------------------
+
+Penrose Triangle
+
+-----------------------------*/
+
+$aqua1 = lighten(mediumaquamarine, 40%)
+$aqua2 = lighten(mediumaquamarine, 70%)
+$aqua3 = lighten(mediumaquamarine, 90%)
+
+#penrose-triangle
+  background: mediumaquamarine
+
+  // bottom right
+  div
+    width: 180px
+    height: 150px
+    margin-left: -60px
+    margin-top: -30px
+    background-repeat: no-repeat
+    background-image: linear-gradient(-30deg, transparent 42.5%,
+                                              $aqua1 42.5%,
+                                              $aqua1 58.2%,
+                                              transparent 58.2%),
+                      linear-gradient(-30deg, transparent 55%,
+                                              $aqua3 55%,
+                                              $aqua3 70%,
+                                              transparent 70%),
+                      linear-gradient(30deg,  transparent 70%,
+                                              $aqua3 70%,
+                                              $aqua3 94.8%,
+                                              transparent 94.8%),
+                      linear-gradient(30deg,  transparent 45%,
+                                              $aqua2 45%,
+                                              $aqua2 75%,
+                                              transparent 75%)
+    background-size: 100% 95%,
+                     100% 95%,
+                     100% 20%,
+                     100% 20%
+    background-position: 0 100%,
+                         0 100%,
+                         0 0,
+                         0 0
+
+    // left vertical
+    &:before
+      width: 60px
+      height: 250px
+      left: -30px
+      bottom: 0
+      background-repeat: no-repeat
+      background-image: linear-gradient(30deg,  transparent 7%,
+                                                $aqua2 7%,
+                                                $aqua2 86.5%,
+                                                transparent 86.5% ),
+                        linear-gradient(-30deg, transparent 7%,
+                                                $aqua1 7%,
+                                                $aqua1 86.5%,
+                                                transparent 86.5% ),
+                        linear-gradient(-30deg, transparent 50%,
+                                                $aqua3 50%,
+                                                $aqua3 93%,
+                                                transparent 93%),
+                        linear-gradient(30deg,  transparent 50%,
+                                                $aqua3 50%,
+                                                $aqua3 93%,
+                                                transparent 93%)
+      background-size: 50.1% 100%
+      background-position: 0 100%,
+                           100% 100%,
+                           0 0,
+                           100% 0
+
+    // top right
+    &:after
+      width: 180px
+      height: 108px
+      bottom: 142px
+      background-repeat: no-repeat
+      background-image: linear-gradient(30deg, transparent 33.8%,
+                                               $aqua3 33.8%,
+                                               $aqua3 50.5%,
+                                               transparent 50.5%),
+                        linear-gradient(30deg, transparent 18.3%,
+                                               $aqua2 18.3%,
+                                               $aqua2 34%,
+                                               transparent 34%)
+      background-size: 100% 100%
+      background-position: 0 0
+
+/*-----------------------------
+
+Penrose Triangle with Cubes
+
+-----------------------------*/
+
+$turq1 = lighten(turquoise, 40%)
+$turq2 = lighten(turquoise, 65%)
+$turq3 = lighten(turquoise, 90%)
+
+#penrose-triangle-cube
+  background: turquoise
+
+  div
+    width: 224px
+    height: 260px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(150deg, transparent 25%, $turq1 25%, $turq1 75%, transparent 75%), // final cube, above
+                      linear-gradient( 30deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq3 25%, $turq3 75%, transparent 75%), // cube
+                      linear-gradient(150deg, transparent 25%, $turq1 25%, $turq1 75%, transparent 75%),
+                      linear-gradient(150deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq3 25%, $turq3 75%, transparent 75%), // cube
+                      linear-gradient(150deg, transparent 25%, $turq1 25%, $turq1 75%, transparent 75%),
+                      linear-gradient(150deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq3 25%, $turq3 75%, transparent 75%), // cube
+                      linear-gradient(150deg, transparent 25%, $turq1 25%, $turq1 75%, transparent 75%),
+                      linear-gradient(150deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq3 25%, $turq3 75%, transparent 75%), // cube
+                      linear-gradient(150deg, transparent 25%, $turq1 25%, $turq1 75%, transparent 75%),
+                      linear-gradient(150deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq3 25%, $turq3 75%, transparent 75%), // cube
+                      linear-gradient(150deg, transparent 25%, $turq1 25%, $turq1 75%, transparent 75%),
+                      linear-gradient(150deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq3 25%, $turq3 75%, transparent 75%), // cube
+                      linear-gradient(150deg, transparent 25%, $turq1 25%, $turq1 75%, transparent 75%),
+                      linear-gradient(150deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq3 25%, $turq3 75%, transparent 75%), // cube
+                      linear-gradient(150deg, transparent 25%, $turq1 25%, $turq1 75%, transparent 75%),
+                      linear-gradient(150deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq3 25%, $turq3 75%, transparent 75%), // cube
+                      linear-gradient(150deg, transparent 25%, $turq1 25%, $turq1 75%, transparent 75%),
+                      linear-gradient(150deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%),
+                      linear-gradient( 30deg, transparent 25%, $turq3 25%, $turq3 75%, transparent 75%), // final cube, behind
+                      linear-gradient(150deg, transparent 25%, $turq2 25%, $turq2 75%, transparent 75%)
+    background-size: 15% 23%
+    background-position: 44.4% 85%, 44.4% 75%,
+
+                         54% 68%, 71.4% 68%,
+                         54% 58%, 71.4% 58%,
+
+                         81%    52%, 98.4%  52%,
+                         81%    42%, 98.4%  42%,
+                         54%    38%, 71.4%  38%,
+                         54%    28%, 71.4%  28%,
+                         27.1%  25%, 44.4%  25%,
+                         27.1%  15%, 44.4%  15%,
+
+                          0   10%, 17.4%  10%,  0   0,  17.4%  0,
+                          0   40%, 17.4%  40%,  0  30%, 17.4% 30%,
+                          0   70%, 17.4%  70%,  0  60%, 17.4% 60%,
+                          0  100%, 17.4% 100%,  0  90%, 17.4% 90%,
+
+                         27.1% 85%, 27.1% 75%

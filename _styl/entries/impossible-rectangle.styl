@@ -1,0 +1,75 @@
+/*-----------------------------
+
+Impossible rectangle
+
+-----------------------------*/
+
+$coral1 = lighten(lightcoral, 40%)
+$coral2 = lighten(lightcoral, 65%)
+$coral3 = lighten(lightcoral, 90%)
+
+#impossible-rectangle
+  background-color: lightcoral
+
+  div
+    width: 280px
+    height: 200px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(120deg, transparent 35%, $coral3 35%),
+                      linear-gradient(120deg, $coral2 65%, transparent 65%),
+                      linear-gradient(120deg, transparent 48%,
+                                              $coral2 48%,
+                                              $coral2 64%,
+                                              transparent 64%),
+                      linear-gradient(120deg, transparent 36%,
+                                              $coral3 36%,
+                                              $coral3 52%,
+                                              transparent 52%),
+
+                      linear-gradient(120deg, transparent 15%,
+                                              $coral3 15%,
+                                              $coral3 65%,
+                                              transparent 65%),
+                      linear-gradient(120deg, transparent 36%,
+                                              $coral1 36%,
+                                              $coral1 60%,
+                                              transparent 60%),
+                      linear-gradient(120deg, transparent 35%,
+                                              $coral2 35%,
+                                              $coral2 85%,
+                                              transparent 85%),
+
+                      linear-gradient(120deg, transparent 35%,
+                                              $coral2 35%,
+                                              $coral2 85%,
+                                              transparent 85%),
+                      linear-gradient(120deg, transparent 40.8%,
+                                              $coral1 40.8%,
+                                              $coral1 60%,
+                                              transparent 60%),
+                      linear-gradient(120deg, transparent 15%,
+                                              $coral3 15%,
+                                              $coral3 65%,
+                                              transparent 65%)
+    background-size: 100% 20%,
+                     100% 20%,
+                     50% 100%,
+                     50% 100%,
+                     50% 40%,
+                     20% 100%,
+                     50% 40%,
+                     50% 40%,
+                     20% 100%,
+                     50% 40%
+    background-position: 0 0,
+                         0 100%,
+                         100% 0,
+                         0 0,
+                         10% 100%,
+                         24% 0,
+                         30% 0,
+                         80% 0,
+                         75.5% 100%,
+                         70% 100%

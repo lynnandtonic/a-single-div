@@ -1,0 +1,174 @@
+/*-----------------------------
+
+Impossible cube
+
+-----------------------------*/
+
+$purp1 = lighten(mediumpurple, 40%)
+$purp2 = lighten(mediumpurple, 65%)
+$purp3 = lighten(mediumpurple, 90%)
+
+#impossible-cube
+  background: mediumpurple
+
+  div
+    width: 220px
+    height: 200px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 28px)
+    background-repeat: no-repeat
+    background-image: linear-gradient(30deg, transparent 62%, // top cross left
+                                             $purp2 62%,
+                                             $purp2 71.2%,
+                                             transparent 71.2%),
+
+                      linear-gradient(30deg, transparent 35%, // front left
+                                             $purp2 35%,
+                                             $purp2 89%,
+                                             transparent 89%),
+                      linear-gradient(30deg, transparent 24.5%,
+                                             $purp2 24.5%,
+                                             $purp2 32%,
+                                             transparent 32%),
+                      linear-gradient(-30deg, transparent 39%,
+                                             $purp1 39%,
+                                             $purp1 78%,
+                                             transparent 78%),
+                      linear-gradient(30deg, transparent 28%,
+                                             $purp3 28%,
+                                             $purp3 39.5%,
+                                             transparent 39.5%),
+
+                      linear-gradient(-30deg, transparent 62%, // top cross right
+                                             $purp1 62%,
+                                             $purp1 71.2%,
+                                             transparent 71.2%),
+
+                      linear-gradient(-30deg, transparent 35%, // front right
+                                             $purp1 35%,
+                                             $purp1 89%,
+                                             transparent 89%),
+                      linear-gradient(-30deg, transparent 24.5%,
+                                             $purp1 24.5%,
+                                             $purp1 32%,
+                                             transparent 32%),
+                      linear-gradient(30deg, transparent 39%,
+                                             $purp2 39%,
+                                             $purp2 78%,
+                                             transparent 78%),
+                      linear-gradient(-30deg, transparent 28%,
+                                             $purp3 28%,
+                                             $purp3 39.5%,
+                                             transparent 39.5%),
+
+                      linear-gradient(30deg, transparent 41%, // behind right
+                                             $purp2 41%,
+                                             $purp2 50.5%,
+                                             transparent 50.5%),
+                      linear-gradient(30deg, transparent 56%,
+                                             $purp3 56%,
+                                             $purp3 68%,
+                                             transparent 68%),
+
+                      linear-gradient(-30deg, transparent 41%, // behind left
+                                             $purp1 41%,
+                                             $purp1 50.5%,
+                                             transparent 50.5%),
+                      linear-gradient(-30deg, transparent 56%,
+                                             $purp3 56%,
+                                             $purp3 68%,
+                                             transparent 68%),
+
+                      linear-gradient(150deg, transparent 10.2%,  // top part left
+                                              $purp3 10.2%,
+                                              $purp3 26%,
+                                              transparent 26%),
+                      linear-gradient(150deg, transparent 24%,
+                                              $purp1 24%,
+                                              $purp1 43%,
+                                              transparent 43%),
+
+                      linear-gradient(-150deg, transparent 10.2%,  // top part right
+                                              $purp3 10.2%,
+                                              $purp3 26%,
+                                              transparent 26%),
+                      linear-gradient(-150deg, transparent 24%,
+                                              $purp2 24%,
+                                              $purp2 43%,
+                                              transparent 43%)
+
+    background-size: 50% 100%, // top cross left
+                      9% 100%, // front left
+                     50% 100%,
+                     10% 100%,
+                     50% 100%,
+                     50% 100%, // top cross right
+                     9% 100%, // front right
+                     50% 100%,
+                     10% 100%,
+                     50% 100%,
+                     40% 100%,
+                     90% 93.8%,
+                     40% 100%,
+                     90% 93.8%,
+                     50% 30%, // top part left
+                     50% 30%,
+                     50% 30%, // top part right
+                     50% 30%
+    background-position: 0 100%, // top cross left
+                         0 100%, // front left
+                         0 100%,
+                         8% 100%,
+                         0 100%,
+                         100% 100%, // top cross right
+                         100.2% 100%, // front right
+                         100% 100%,
+                         92% 100%,
+                         100% 100%,
+                         80% 100%,
+                         0 100%,
+                         20% 100%,
+                         100% 100%,
+                         0 0, // top part left
+                         0 0,
+                         100% 0, // top part right
+                         100% 0
+
+    &:before
+      width: 18%
+      height: 230px
+      left: 50%
+      margin-left: -9%
+      bottom: 0
+      background-repeat: no-repeat
+      background-image: linear-gradient( 30deg, transparent 6%, $purp2 6%),
+                        linear-gradient(-30deg, transparent 6%, $purp1 6%)
+      background-size: 50.5% 100%
+      background-position: 0 0, 100% 0
+
+    &:after
+      width: 220px
+      height: 70px
+      top: -60px
+      background-repeat: no-repeat
+      background-image: linear-gradient(150deg,  transparent 54.6%,
+                                                 $purp3 54.6%,
+                                                 $purp3 69.1%,
+                                                 transparent 69.1%),
+                        linear-gradient(-150deg, transparent 54.6%,
+                                                 $purp3 54.6%,
+                                                 $purp3 69.1%,
+                                                 transparent 69.1%),
+                        linear-gradient(150deg,  transparent 60%,
+                                                 $purp1 60%,
+                                                 $purp1 83.6%,
+                                                 transparent 83.6%),
+                        linear-gradient(-150deg, transparent 60%,
+                                                 $purp2 60%,
+                                                 $purp2 84%,
+                                                 transparent 84%)
+      background-size: 50.1% 100%
+      background-position: 0 0,
+                           100% 0,
+                           0 0,
+                           100% 0
