@@ -1,0 +1,285 @@
+/*-----------------------------
+
+CSS
+
+-----------------------------*/
+
+$css-navy = #242b33
+$css-blue = #42c3d0
+$css-beige = #f9dbae
+$css-orange = #f2612f
+
+
+#css-one
+  background: $css-navy
+
+  div
+    width: 70px
+    height: @width*2
+    margin-left: -150px
+    margin-top: -(@height/2)
+    background: $css-orange
+    border-radius: 100px 0 0 100px
+    
+    @media (max-width: 400px)
+      margin-left: -125px
+
+    &:before,
+    &:after
+      width: 110px
+      height: 55px
+
+    &:before
+      left: 75px
+      top: 0
+      background: $css-beige
+      border-radius: 100px 100px 0 0
+      box-shadow: 75px 75px 0 $css-blue
+      transform: rotate(-45deg)
+    
+    &:after
+      left: 97px
+      bottom: 10px
+      background: $css-beige
+      border-radius: 100px 100px 0 0
+      box-shadow: -74px -74px 0 $css-blue
+      transform: rotate(135deg)
+
+$step = 25px
+
+#css-two
+  background: $css-orange
+
+  div
+    width: 300px
+    height: 225px
+    margin-left: -(@width/2)
+    margin-top: (-@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(to bottom, $css-beige  $step,
+                                                 transparent $step,
+                                                 transparent $step*8,
+                                                 $css-beige  $step*8),
+                      linear-gradient(to bottom, $css-beige  $step,
+                                                 transparent $step,
+                                                 transparent $step*2,
+                                                 $css-beige  $step*2,
+                                                 $css-beige  $step*3,
+                                                 transparent $step*3,
+                                                 transparent $step*8,
+                                                 $css-beige  $step*8),
+                      linear-gradient(to bottom, $css-beige, $css-beige),
+                      linear-gradient(to bottom, transparent $step*4,
+                                                 $css-beige  $step*4,
+                                                 $css-beige  $step*5,
+                                                 transparent $step*5,
+                                                 transparent $step*5,
+                                                 transparent $step*6,
+                                                 $css-beige  $step*6,
+                                                 $css-beige  $step*7,
+                                                 transparent $step*7),
+                      linear-gradient(to right, $css-beige, $css-beige),
+                      linear-gradient(to right, $css-beige, $css-beige),
+                      linear-gradient(to right, $css-beige, $css-beige),
+                      linear-gradient(to right, $css-beige, $css-beige),
+                      linear-gradient(to right, $css-beige, $css-beige)
+    background-size: $step*5 100%,
+                     $step*6 100%,
+                     $step*3 $step,
+                     $step*8 100%,
+                     $step 100%,
+                     $step $step*2,
+                     $step $step*2,
+                     $step $step*2,
+                     $step $step*7
+    background-position: 0 0,
+                         100% 0,
+                         $step*2 $step*2,
+                         $step*2 0,
+                         0 0,
+                         $step*6 0,
+                         $step*2 $step*2,
+                         $step*9 $step*4,
+                         100% $step*2
+
+#css-three
+  background: $css-beige
+
+  div
+    width: 300px
+    height: 100px
+    margin-left: -(@width/2)
+    margin-top: (-@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(to right, $css-orange 5.3%,
+                                                transparent 5.3%,
+                                                transparent 10%,
+                                                $css-orange 10%,
+                                                $css-orange 13%,
+                                                transparent 13%),
+                      linear-gradient(65deg, transparent 44%,
+                                             $css-orange 44%,
+                                             $css-orange 49%,
+                                             transparent 49%,
+                                             transparent 53%,
+                                             $css-orange 53%,
+                                             $css-orange 56%,
+                                             transparent 56%),
+                      linear-gradient(65deg, transparent 74%,
+                                             $css-orange 74%,
+                                             $css-orange 79%,
+                                             transparent 79%,
+                                             transparent 83%,
+                                             $css-orange 83%,
+                                             $css-orange 86%,
+                                             transparent 86%)
+    background-size: 100% 100%
+    background-position: 0 0
+
+    &:before
+      width: 310px
+      height: 216px
+      left: 50%
+      top: -58px
+      margin-left: -(@width/2)
+      background-repeat: repeat-x
+      background-image: radial-gradient(circle at bottom, $css-blue 22%,
+                                                transparent 22%,
+                                                transparent 45%,
+                                                $css-navy 45%,
+                                                $css-navy 66%,
+                                                transparent 66%),
+                        radial-gradient(circle at top, $css-blue 22%,
+                                                transparent 22%,
+                                                transparent 45%,
+                                                $css-navy 45%,
+                                                $css-navy 66%,
+                                                transparent 66%)
+      background-size: 33.333% 45px
+      background-position: 0 0,
+                           0 100%
+
+    &:after
+      width: 300px
+      height: 100px
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle at top, $css-orange 14%, transparent 14%),
+                        radial-gradient(circle at top, $css-orange 14%, transparent 14%),
+                        radial-gradient(circle at top, $css-orange 14%, transparent 14%),
+                        radial-gradient(circle at bottom, $css-orange 14%, transparent 14%),
+                        radial-gradient(circle at bottom, $css-orange 14%, transparent 14%),
+                        radial-gradient(circle at bottom, $css-orange 14%, transparent 14%)
+      background-size: 30% 100%
+      background-position: 15% 0,
+                           64% 0,
+                           114% 0,
+                           15% 100%,
+                           35% 100%,
+                           85% 100%
+
+#css-four
+  background: $css-blue
+  
+  div
+    width: 300px
+    height: 150px
+    margin-left: -(@width/2)
+    margin-top: (-@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(to right, $css-navy 13.33%, transparent 13.33%),
+                      linear-gradient(to right, transparent 36.66%,
+                                                $css-navy 36.66%,
+                                                $css-navy 50%,
+                                                transparent 50%,
+                                                transparent 73.33%,
+                                                $css-navy 73.33%,
+                                                $css-navy 86.66%,
+                                                transparent 86.66%),
+                      linear-gradient(to left, $css-navy 13.33%,
+                                               transparent 13.33%,
+                                               transparent 36.66%,
+                                               $css-navy 36.66%,
+                                               $css-navy 49.99%,
+                                               transparent 49.99%)
+    background-size: 100% 100%,
+                     100% 50%,
+                     100% 50%
+    background-position: 0 0,
+                         0 0,
+                         0 100%
+
+    &:before
+      width: 30px
+      height: @width
+      background: $css-navy
+      left: 15%
+      top: -3%
+      transform: rotate(45deg)
+      box-shadow: 78px -78px 0 $css-navy,
+                  156px -156px 0 $css-navy,
+                  90px 90px 0 $css-navy,
+                  139px 41px 0 $css-navy,
+                  217px -37px 0 $css-navy
+
+    &:after
+      width: 300px
+      height: 150px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to bottom, $css-orange, $css-orange),
+                        linear-gradient(to bottom, $css-orange 34%,
+                                                   transparent 34%, transparent 37%,
+                                                   $css-beige  37%, $css-beige  43%,
+                                                   transparent 43%, transparent 47%,
+                                                   $css-beige  47%, $css-beige  53%,
+                                                   transparent 53%, transparent 57%,
+                                                   $css-beige  57%, $css-beige  63%,
+                                                   transparent 63%, transparent 67%,
+                                                   $css-orange 67%),
+                        linear-gradient(to bottom, $css-orange 34%,
+                                                   transparent 34%, transparent 37%,
+                                                   $css-beige  37%, $css-beige  43%,
+                                                   transparent 43%, transparent 47%,
+                                                   $css-beige  47%, $css-beige  53%,
+                                                   transparent 53%, transparent 57%,
+                                                   $css-beige  57%, $css-beige  63%,
+                                                   transparent 63%, transparent 67%,
+                                                   $css-orange 67%),
+                        linear-gradient(to bottom, $css-orange 34%,
+                                                   transparent 34%, transparent 37%,
+                                                   $css-beige  37%, $css-beige  43%,
+                                                   transparent 43%, transparent 47%,
+                                                   $css-beige  47%, $css-beige  53%,
+                                                   transparent 53%, transparent 57%,
+                                                   $css-beige  57%, $css-beige  63%,
+                                                   transparent 63%, transparent 67%,
+                                                   $css-orange 67%),
+                        linear-gradient(to bottom, $css-orange 34%,
+                                                   transparent 34%, transparent 37%,
+                                                   $css-beige  37%, $css-beige  43%,
+                                                   transparent 43%, transparent 47%,
+                                                   $css-beige  47%, $css-beige  53%,
+                                                   transparent 53%, transparent 57%,
+                                                   $css-beige  57%, $css-beige  63%,
+                                                   transparent 63%, transparent 67%,
+                                                   $css-orange 67%),
+                        linear-gradient(to bottom, $css-orange 34%,
+                                                   transparent 34%, transparent 37%,
+                                                   $css-beige  37%, $css-beige  43%,
+                                                   transparent 43%, transparent 47%,
+                                                   $css-beige  47%, $css-beige  53%,
+                                                   transparent 53%, transparent 57%,
+                                                   $css-beige  57%, $css-beige  63%,
+                                                   transparent 63%, transparent 67%,
+                                                   $css-orange 67%)
+      background-size: 1.5% 55%,
+                       1.5% 45%,
+                       1.5% 45%,
+                       1.5% 45%,
+                       1.5% 45%,
+                       1.5% 45%
+      background-position: 1.5% 6%,
+                           1.5% 97%,
+                           39% 6%,
+                           76.2% 6%,
+                           52.6% 97%,
+                           89.8% 97%
