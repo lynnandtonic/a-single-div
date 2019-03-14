@@ -1,0 +1,68 @@
+/*-----------------------------
+
+Toy Story background
+
+-----------------------------*/
+
+$cloud = #dddcd0
+$sky = #60b0ff
+
+#toystory
+  background-color: $sky
+  overflow: hidden
+  height: 50vh
+
+  &:before,
+  &:after
+    content: ''
+    width: 400%
+    height: 400%
+    position: absolute
+    top: 0
+    left: 0
+    transform: rotate(25.5deg) translateX(-50%)
+    background-size: 170px 170px
+
+    @media screen and (max-width: 600px)
+      background-size: 120px 120px
+
+  &:before
+    background-image: radial-gradient(circle at 50% 52%, $cloud 2%, transparent 2%),
+                      radial-gradient(circle at 40.3% 58%, $cloud 1.1%, transparent 1.1%),
+                      radial-gradient(circle at 39.6% 58%, white 1.5%, transparent 1.5%),
+                      radial-gradient(circle at 61% 47.6%, $cloud 1.6%, transparent 1.6%),
+                      radial-gradient(circle at 45.5% 51.5%, $cloud 5.2%, transparent 5.2%),
+                      radial-gradient(circle at 51.9% 45.4%, $cloud 9.2%, transparent 9.2%),
+                      linear-gradient( 64deg, transparent 58%, $sky 58%),
+                      linear-gradient( 64deg, $sky 40.5%, transparent 40.5%),
+                      linear-gradient(154deg, transparent 51%, white 51%,
+                                              white 51.5%, $cloud 51.5%,
+                                              $cloud 53%, transparent 53%),
+                      radial-gradient(circle at 45% 51.5%, white 6%, transparent 6%),
+                      radial-gradient(circle at 51.2% 45.2%, white 10%, transparent 10%)
+    background-position: 92px 106px
+
+    @media screen and (max-width: 600px)
+      background-position: 64px 75px
+
+  &:after
+    left: 0
+    background-image: radial-gradient(circle at 29.8% 77.6%, $cloud 1.4%, transparent 1.4%),
+                      radial-gradient(circle at 28.5% 77.6%, white 1.8%, transparent 1.8%),
+                      radial-gradient(circle at 69% 57.9%, $cloud 2.1%, transparent 2.1%),
+                      radial-gradient(circle at 55% 54%, $cloud 5%, transparent 5%),
+                      radial-gradient(circle at 54.2% 53.2%, white 5%, transparent 5%),
+                      radial-gradient(circle at 52% 61%, $cloud 8%, transparent 8%),
+                      radial-gradient(circle at 42.7% 65.2%, $cloud 7.2%, transparent 7.2%),
+                      radial-gradient(circle at 49.5% 53.7%, $cloud 10.4%, transparent 10.4%),
+                      radial-gradient(circle at 48.5% 53.5%, white 11%, transparent 11%),
+                      radial-gradient(circle at 57% 52.5%, $cloud 12.5%, transparent 12.5%),
+                      radial-gradient(circle at 45.8% 47.8%, $cloud 15%, transparent 15%),
+                      linear-gradient( 64deg, $sky 26.5%, transparent 26.5%),
+                      linear-gradient( 64deg, transparent 60%, $sky 60%,
+                                              $sky 88%, transparent 88%),
+                      linear-gradient(154deg, transparent 60%, white 60%,
+                                              white 60.8%, $cloud 60.8%,
+                                              $cloud 63%, transparent 63%),
+                      radial-gradient(circle at 42% 65%, white 8%, transparent 8%),
+                      radial-gradient(circle at 45% 48%, white 16%, transparent 16%)
