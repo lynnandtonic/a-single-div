@@ -1,0 +1,110 @@
+/*-----------------------------
+
+Sandwich
+
+-----------------------------*/
+
+$sandwich-h = 75px
+
+#sandwich
+  background: #fbf7f3
+
+  div
+    width: 80%
+    height: $sandwich-h
+    margin-left: -(@width/2)
+    margin-top: -15px
+    background-image: linear-gradient(to right, burlywood, burlywood),
+                      linear-gradient(to left, burlywood, burlywood),
+                      radial-gradient(at center, lighten(peru,10) 24%, transparent 24%),
+                      linear-gradient(to bottom, burlywood 25px,
+                                                 lighten(burlywood,15) 25px,
+                                                 lighten(burlywood,15) 30px,
+                                                 transparent 30px),
+                      linear-gradient(to top, burlywood 10px,
+                                              lighten(burlywood,15) 12px,
+                                              lighten(burlywood,15) 15px,
+                                              transparent 15px)
+    background-repeat: no-repeat,
+                       no-repeat,
+                       space no-repeat,
+                       repeat,
+                       repeat
+    background-size: 30px 25px,
+                     30px 25px,
+                     24px 70px,
+                     auto auto,
+                     auto auto
+    background-position: 0 0,
+                         100% 0,
+                         center -35px,
+                         0 0,
+                         0 0
+    border-radius: 20px 20px 8px 8px
+
+    &:before
+      width: 30px
+      height: 30px
+      left: 50%
+      margin-left: -10px
+      top: -29px
+      background-image: radial-gradient(circle at center, firebrick 50%, transparent 50%),
+                        radial-gradient(ellipse at center, olive 50%, transparent 50%),
+                        radial-gradient(ellipse at center, brown 20%, transparent 20%)
+      background-size: 8px 8px,
+                       18px 22px,
+                       6px 200px
+      background-repeat: no-repeat
+      background-position: center 4px,
+                           center -1px,
+                           center center
+      transform: rotate(12deg)
+
+    &:after
+      width: 99%
+      height: $sandwich-h - 45px
+      top: 30px
+      left: .5%
+      background-image: radial-gradient(circle at top center, yellowgreen 70%, transparent 70%),
+                        linear-gradient(to right, transparent 10%,
+                                                  crimson 10%, crimson 40%,
+                                                  darken(crimson,7) 60%,
+                                                  darken(crimson,7) 90%,
+                                                  transparent 90%),
+                        repeating-linear-gradient(to right, indigo, orchid 5px,
+                                                                    orchid 5px,
+                                                                    indigo 7px,
+                                                                    orchid 7px),
+                        linear-gradient(140deg, yellow 20%, transparent 20%),
+                        linear-gradient(-140deg, yellow 20%, transparent 20%),
+                        linear-gradient(-140deg, black(.1) 24%, transparent 24%),
+                        linear-gradient(to right, firebrick 30%, lighten(firebrick,20) 60%),
+                        linear-gradient(to right, bisque 30%, darken(bisque,10) 60%),
+                        linear-gradient(to right, lightpink 30%, darken(lightpink,10) 90%)
+      background-repeat: space no-repeat,
+                         space no-repeat,
+                         space no-repeat,
+                         repeat-x,
+                         repeat-x,
+                         repeat-x,
+                         repeat-x,
+                         repeat-x,
+                         repeat-x
+      background-size: 18px 10px,
+                       44px 7px,
+                       30px 4px,
+                       60px 20px,
+                       60px 20px,
+                       60px 20px,
+                       22px 4px,
+                       100px 5px,
+                       50px 5px
+      background-position: center bottom 20px,
+                           center bottom 17px,
+                           center bottom 14px,
+                           center bottom -6px,
+                           center bottom -6px,
+                           center bottom -6px,
+                           center bottom 10px,
+                           center bottom 5px,
+                           center bottom
