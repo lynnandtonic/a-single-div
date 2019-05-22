@@ -1,0 +1,216 @@
+/*-----------------------------
+
+FIVE
+
+-----------------------------*/
+
+log-w = 30px
+log-h = 200px
+
+#five
+  background: olive
+
+  div
+    width: 520px
+    height: 200px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+
+    background-repeat: no-repeat
+    background-image: linear-gradient(to bottom, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to bottom, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to bottom, saddlebrown, saddlebrown),
+                      linear-gradient(to bottom, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to bottom, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to bottom, saddlebrown, saddlebrown),
+                      linear-gradient(to bottom, black(.2), black(.2)),
+                      linear-gradient(to bottom, black(.2), black(.2)),
+                      linear-gradient(to right, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to right, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to right, saddlebrown, saddlebrown), // F
+                      linear-gradient(to right, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to right, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to right, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to right, saddlebrown, saddlebrown), // I
+                      linear-gradient(74deg, transparent 40px, darken(saddlebrown,5) 40px,
+                                             darken(saddlebrown,5) 43px, transparent 43px),
+                      linear-gradient(74deg, transparent 40px, darken(saddlebrown,5) 40px,
+                                             darken(saddlebrown,5) 43px, transparent 43px),
+                      linear-gradient(74deg, transparent 55px, saddlebrown 55px,
+                                             saddlebrown 84px, transparent 84px),
+                      linear-gradient(-75deg, transparent 45px, darken(saddlebrown,5) 45px,
+                                             darken(saddlebrown,5) 48px, transparent 48px),
+                      linear-gradient(-75deg, transparent 45px, darken(saddlebrown,5) 45px,
+                                             darken(saddlebrown,5) 48px, transparent 48px),
+                      linear-gradient(-75deg, transparent 45px, darken(saddlebrown,5) 45px,
+                                             darken(saddlebrown,5) 48px, transparent 48px),
+                      linear-gradient(-75deg, transparent 55px, saddlebrown 55px,
+                                              saddlebrown 85px, transparent 85px), // V
+                      linear-gradient(to bottom, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to bottom, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to bottom, saddlebrown, saddlebrown),
+                      linear-gradient(to bottom, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to bottom, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to bottom, saddlebrown, saddlebrown),
+                      linear-gradient(to bottom, black(.2), black(.2)),
+                      linear-gradient(to bottom, black(.2), black(.2)),
+                      linear-gradient(to right, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to right, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to right, saddlebrown, saddlebrown),
+                      linear-gradient(to right, black(.2), black(.2)),
+                      linear-gradient(to right, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to right, darken(saddlebrown,5), darken(saddlebrown,5)),
+                      linear-gradient(to bottom, saddlebrown, saddlebrown) // E
+    background-size: 45px 3px,
+                     65px 3px,
+                     120px log-w,
+                     42px 3px,
+                     55px 3px,
+                     120px log-w,
+                     log-w 5px,
+                     log-w 5px,
+                     3px 80px,
+                     3px 110px,
+                     log-w log-h, // F
+                     3px 80px,
+                     3px 50px,
+                     3px 110px,
+                     log-w log-h, // I
+                     50px 100px,
+                     50px 70px,
+                     100px log-h,
+                     50px 120px,
+                     50px 50px,
+                     50px 80px,
+                     100px log-h, // V
+                     45px 3px,
+                     50px 3px,
+                     120px log-w,
+                     65px 3px,
+                     35px 3px,
+                     120px log-w,
+                     log-w 5px,
+                     log-w 5px,
+                     3px 120px,
+                     3px 110px,
+                     log-w log-h,
+                     5px log-w,
+                     45px 3px,
+                     65px 3px,
+                     120px log-w // E
+    background-position: 50px 11px,
+                         18px 20px,
+                         0 0,
+                         16px 81px,
+                         40px 90px,
+                         0 70px,
+                         10px log-w,
+                         10px 100px,
+                         17px 45px,
+                         28px 60px,
+                         10px 0, // F
+                         168px 15px,
+                         168px 115px,
+                         179px 40px,
+                         160px 0, // I
+                         211px 20px,
+                         236px 100px,
+                         210px 0,
+                         310px 40px,
+                         342px 30px,
+                         311px 120px,
+                         280px 0,  // V
+                         450px 10px,
+                         420px 20px,
+                         400px 0,
+                         400px 77px,
+                         450px 87px,
+                         400px 70px,
+                         410px log-w,
+                         410px 100px,
+                         416px 10px,
+                         429px 55px,
+                         410px 0,
+                         440px 170px,
+                         452px 178px,
+                         420px 190px,
+                         400px 170px  // E
+
+    &:before
+      width: log-w
+      height: log-w
+      left: 10px
+      top: -15px
+      border-radius: 50%
+      background-color: saddlebrown
+      box-shadow: 0 log-h 0 -15px peru,
+                  0 log-h 0 -12px darken(peru,10),
+                  0 log-h 0  -8px peru,
+                  0 log-h 0  -5px darken(peru,10),
+                  0 log-h 0 peru,
+                 -25px 15px 0 saddlebrown,
+                  95px 15px 0 -15px peru,
+                  95px 15px 0 -12px darken(peru,10),
+                  95px 15px 0  -8px peru,
+                  95px 15px 0  -5px darken(peru,10),
+                  95px 15px 0 peru,
+                 -25px 85px 0 saddlebrown,
+                  95px 85px 0 -15px peru,
+                  95px 85px 0 -12px darken(peru,10),
+                  95px 85px 0  -8px peru,
+                  95px 85px 0  -5px darken(peru,10),
+                  95px 85px 0 peru,
+                 150px 0 0 saddlebrown,
+                 150px log-h 0 -15px peru,
+                 150px log-h 0 -12px darken(peru,10),
+                 150px log-h 0  -8px peru,
+                 150px log-h 0  -5px darken(peru,10),
+                 150px log-h 0 peru,
+                 200px 0 0 saddlebrown,
+                 257px log-h 0 -15px peru,
+                 257px log-h 0 -12px darken(peru,10),
+                 257px log-h 0  -8px peru,
+                 257px log-h 0  -5px darken(peru,10),
+                 257px log-h 0 peru,
+                 283px log-h 0 saddlebrown,
+                 336px 0 0 -15px peru,
+                 336px 0 0 -12px darken(peru,10),
+                 336px 0 0  -8px peru,
+                 336px 0 0  -5px darken(peru,10),
+                 336px 0 0 peru,
+                 400px 0 0 saddlebrown,
+                 400px log-h 0 -15px peru,
+                 400px log-h 0 -12px darken(peru,10),
+                 400px log-h 0  -8px peru,
+                 400px log-h 0  -5px darken(peru,10),
+                 400px log-h 0 peru,
+                 375px 15px 0 saddlebrown,
+                 495px 15px 0 -15px peru,
+                 495px 15px 0 -12px darken(peru,10),
+                 495px 15px 0  -8px peru,
+                 495px 15px 0  -5px darken(peru,10),
+                 495px 15px 0 peru,
+                 375px 85px 0 saddlebrown,
+                 495px 85px 0 -15px peru,
+                 495px 85px 0 -12px darken(peru,10),
+                 495px 85px 0  -8px peru,
+                 495px 85px 0  -5px darken(peru,10),
+                 495px 85px 0 peru,
+                 375px 185px 0 saddlebrown,
+                 495px 185px 0 -15px peru,
+                 495px 185px 0 -12px darken(peru,10),
+                 495px 185px 0  -8px peru,
+                 495px 185px 0  -5px darken(peru,10),
+                 495px 185px 0 peru
+
+    @media (max-width: 650px)
+      -webkit-transform: scale(.75)
+      transform: scale(.75)
+
+    @media (max-width: 500px)
+      -webkit-transform: scale(.58)
+      transform: scale(.58)
+
+    @media (max-width: 400px)
+      -webkit-transform: scale(.45)
+      transform: scale(.45)
