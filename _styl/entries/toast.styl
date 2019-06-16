@@ -1,0 +1,110 @@
+/*-----------------------------
+
+Toast
+
+-----------------------------*/
+
+@keyframes handle
+  0
+    transform: translateY(0)
+    animation-timing-function: ease-in
+  15%
+    transform: translateY(60px)
+  55%
+    transform: translateY(60px)
+    animation-timing-function: ease-out
+  58%
+    transform: translateY(0)
+  100%
+    transform: translateY(0)
+
+@keyframes toast
+  0
+    transform: translateY(0)
+    animation-timing-function: ease-in
+  15%
+    transform: translateY(40px)
+  55%
+    transform: translateY(40px) scale(1,1)
+    animation-timing-function: ease-out
+  58%
+    transform: translateY(-135px) scale(.6,1.4)
+  63%
+    transform: translateY(-135px) scale(1,1)
+    animation-timing-function: ease-in
+  78%
+    transform: translateY(0) scale(1,1)
+  83%
+    transform: translateY(0) scale(1.1,.8)
+  85% 
+    transform: translateY(0) scale(1,1)
+
+#toast
+  background: #eee
+  z-index: -2
+
+  div
+    width: 200px
+    height: 135px
+    margin-left: -(@width/2)
+    margin-top: 20px
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle at top left, white(0) 50px, white(.3) 50px),
+                      radial-gradient(circle at bottom right, #ccc 20px, #bbb 20px),
+                      linear-gradient(to bottom, #777, #777),
+                      linear-gradient(to right, #bbb 50px, #ccc 50px),
+                      linear-gradient(to right, #444 50px, #777 50px),
+                      linear-gradient(to right, #444, #444),
+                      linear-gradient(to right, #444, #444),
+                      linear-gradient(to right, #777, #777),
+                      linear-gradient(to right, #777, #777)
+    background-size: 50px 50px,
+                     25px 25px,
+                     5px 80px,
+                     100% 87%,
+                     100% 10px,
+                     10px 10px,
+                     10px 10px,
+                     10px 10px,
+                     10px 10px
+    background-position: 94% 67%,
+                         45px -5px,
+                         22px 20px,
+                         0 0,
+                         0 93%,
+                         0 100%,
+                         40px 100%,
+                         50px 100%,
+                         100% 100%
+    border-radius: 18px 18px 0 0
+
+    &:before
+      width: 30px
+      height: 10px
+      left: 10px
+      top: 25px
+      background-color: #333
+      border-radius: 4px
+      animation: handle 4000ms infinite
+
+    &:after
+      width: 100px
+      height: 90px
+      margin-left: -(@width/2)
+      left: 50%
+      top: -40px
+      z-index: -1
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, tan, tan),
+                        radial-gradient(ellipse, tan 45px, transparent 45px),
+                        linear-gradient(to right, darken(tan, 15), darken(tan, 15)),
+                        radial-gradient(ellipse, darken(tan, 15) 50px, transparent 50px)
+      background-size: 78px 80%,
+                       90px 46px,
+                       12px 80%,
+                       100px 47px
+      background-position: 17px 100%,
+                           10px 0,
+                           5px 100%,
+                           0 0
+      animation: toast 4000ms infinite

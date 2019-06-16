@@ -1,0 +1,160 @@
+/*-----------------------------
+
+Poptart
+
+-----------------------------*/
+
+@keyframes handle2
+  0
+    transform: translateY(0)
+    animation-timing-function: ease-in
+  15%
+    transform: translateY(60px)
+  55%
+    transform: translateY(60px)
+    animation-timing-function: ease-out
+  58%
+    transform: translateY(0)
+  100%
+    transform: translateY(0)
+
+@keyframes poptart
+  0
+    transform: translateY(0)
+    animation-timing-function: ease-in
+  15%
+    transform: translateY(40px)
+  55%
+    transform: translateY(40px) scale(1,1)
+    animation-timing-function: ease-out
+  58%
+    transform: translateY(-135px) scale(.6,1.4)
+  63%
+    transform: translateY(-135px) scale(1,1)
+    animation-timing-function: ease-in
+  78%
+    transform: translateY(0) scale(1,1)
+  83%
+    transform: translateY(0) scale(1.1,.8)
+  85% 
+    transform: translateY(0) scale(1,1)
+
+#poptart
+  background: lighten(mediumaquamarine,25)
+  z-index: -2
+
+  div
+    width: 200px
+    height: 135px
+    margin-left: -(@width/2)
+    margin-top: 20px
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle at top left, white(0) 50px, white(.3) 50px),
+                      radial-gradient(circle at bottom right, lighten(mediumaquamarine,10) 40px,mediumaquamarine 40px),
+                      linear-gradient(to bottom, black(.3), black(.3)),
+                      linear-gradient(to right, mediumaquamarine 50px,lighten(mediumaquamarine,10) 50px),
+                      linear-gradient(to right, #ccc 50px, white 50px),
+                      linear-gradient(to right, #ccc, #ccc),
+                      linear-gradient(to right, #ccc, #ccc),
+                      linear-gradient(to right, white, white),
+                      linear-gradient(to right, white, white)
+    background-size: 50px 50px,
+                     55px 55px,
+                     5px 70px,
+                     100% 87%,
+                     100% 15px,
+                     15px 10px,
+                     15px 10px,
+                     15px 10px,
+                     15px 10px
+    background-position: 94% 67%,
+                         35px -15px,
+                         22px 30px,
+                         0 0,
+                         0 93%,
+                         0 100%,
+                         35px 100%,
+                         45px 100%,
+                         100% 100%
+    border-radius: 40px 40px 0 0
+
+    &:before
+      width: 30px
+      height: 10px
+      left: 10px
+      top: 25px
+      background-color: white
+      border-radius: 2px 2px 10px 10px
+      animation: handle2 4000ms infinite
+
+    &:after
+      width: 75px
+      height: 100px
+      margin-left: -(@width/2)
+      left: 50%
+      top: -30px
+      z-index: -1
+      background-color: white
+      background-repeat: no-repeat, no-repeat,
+                         no-repeat, no-repeat,
+                         no-repeat, no-repeat, no-repeat, no-repeat,
+                         repeat,
+                         repeat,
+                         repeat,
+                         repeat,
+                         repeat,
+                         repeat,
+                         repeat,
+                         repeat,
+                         repeat
+      background-image: repeating-linear-gradient(to right, black(0), transparent 5px,
+                                                                      tan 5px,
+                                                                      tan 7px,
+                                                                      transparent 7px),
+                        repeating-linear-gradient(to right, black(0), transparent 5px,
+                                                                      tan 5px,
+                                                                      tan 7px,
+                                                                      transparent 7px),
+                        linear-gradient(to bottom, lighten(tan,10) 10px, transparent 10px,
+                                                   transparent 90px, lighten(tan,10) 90px),
+                        linear-gradient(to right, lighten(tan,10) 5px, transparent 5px,
+                                                  transparent 70px, lighten(tan,10) 70px),
+                        radial-gradient(circle at bottom right, transparent 5px, lighten(tan,10) 5px),
+                        radial-gradient(circle at bottom left, transparent 5px, lighten(tan,10) 5px),
+                        radial-gradient(circle at top right, transparent 5px, lighten(tan,10) 5px),
+                        radial-gradient(circle at top left, transparent 5px, lighten(tan,10) 5px),
+                        radial-gradient(circle at 3px 3px, red 1px, transparent 1px),
+                        radial-gradient(circle at 16px 3px, green 1px, transparent 1px),
+                        radial-gradient(circle at 10px 8px, gold 1px, transparent 1px),
+                        radial-gradient(circle at 4px 16px, green 1px, transparent 1px),
+                        radial-gradient(circle at 17px 16px, red 1px, transparent 1px),
+                        radial-gradient(circle at 11px 19px, gold 1px, transparent 1px),
+                        radial-gradient(circle at 3px 27px, green 1px, transparent 1px),
+                        radial-gradient(circle at 17px 25px, gold 1px, transparent 1px),
+                        radial-gradient(circle at 10px 30px, red 1px, transparent 1px)
+      background-size: 100% 6px, 100% 6px,
+                       100% 100%, 100% 100%,
+                       5px 5px, 5px 5px, 5px 5px, 5px 5px,
+                       21px 33px,
+                       21px 33px,
+                       21px 33px,
+                       21px 33px,
+                       21px 33px,
+                       21px 33px,
+                       21px 33px,
+                       21px 33px,
+                       21px 33px
+      background-position: 0 0, 0 100%,
+                           0 0, 0 0,
+                           5px 10px, 65px 10px, 5px 85px, 65px 85px,
+                           6px 12px,
+                           6px 12px,
+                           6px 10px,
+                           6px 10px,
+                           6px 10px,
+                           6px 10px,
+                           6px 10px,
+                           6px 10px,
+                           6px 10px
+      border-radius: 3px
+      animation: poptart 4000ms infinite
