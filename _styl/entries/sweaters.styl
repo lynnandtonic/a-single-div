@@ -1,0 +1,205 @@
+/*-----------------------------
+
+Sweaters
+
+-----------------------------*/
+
+.sweater
+  div
+    box-sizing: border-box
+    width: 200px
+    height: 200px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    border-top-left-radius: 80px 50px
+    border-top-right-radius: 80px 50px
+    border-bottom-left-radius: 4px
+    border-bottom-right-radius: 4px
+    border: 7px solid black
+
+    &:before,
+    &:after
+      box-sizing: border-box
+
+#fred-rogers
+  background-color: mediumturquoise
+
+  div
+    background-color: crimson
+    background-repeat: no-repeat
+    background-image: linear-gradient(-45deg, crimson 67%,
+                                             transparent 67%,
+                                             transparent 77%,
+                                             crimson 77%,
+                                             crimson 80%,
+                                             lightblue 80%),
+                      linear-gradient(45deg, crimson 67%,
+                                             transparent 67%,
+                                             transparent 77%,
+                                             crimson 77%,
+                                             crimson 80%,
+                                             lightblue 80%),
+                      repeating-linear-gradient(to bottom, black(0), black(0) 3px,
+                                                          black(.2) 3px, black(.2) 5px),
+                      repeating-linear-gradient(to right, black(0), black(0) 3px,
+                                                          black(.2) 3px, black(.2) 6px)
+    background-size: 50% 50%,
+                     50% 50%,
+                     100% 50%,
+                     100% 15px
+    background-position: right top,
+                         left top,
+                         left top,
+                         center bottom
+
+    &:before
+      width: 130px
+      height: 220px
+      margin-left: -(@width/2)
+      left: 50%
+      bottom: -13px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, black(.2), black(.2)),
+                        radial-gradient(ellipse at center, black(.7) 30%, transparent 30%),
+                        linear-gradient(to right, black 7px, transparent 7px),
+                        linear-gradient(to left, black 7px, transparent 7px),
+                        repeating-linear-gradient(to right, black(0), black(0) 3px,
+                                                          black(.2) 3px, black(.2) 6px),
+                        linear-gradient(to top, black 7px, crimson 7px)
+      background-size: 2px 72%,
+                       60% 10%,
+                       100% 65%,
+                       100% 65%,
+                       100% 22px,
+                       100% 50%
+      background-position: center bottom,
+                           center 4px,
+                           center bottom,
+                           center bottom,
+                           center bottom,
+                           center bottom
+      border-radius: 0 0 4px 4px
+      z-index: 2
+
+    &:after
+      width: 56px
+      height: 56px
+      margin-left: -(@width/2)
+      left: 50%
+      top: -30px
+      background-color: darken(lightblue,10)
+      background-repeat: no-repeat
+      background-image: linear-gradient(80deg, lightblue 45%, transparent 45%),
+                        linear-gradient(-175deg, lightblue 45%, transparent 45%),
+                        linear-gradient(80deg, black(.2) 51%, black(0) 51%),
+                        linear-gradient(-175deg, black(.2) 51%, black(0) 51%),
+                        radial-gradient(circle at center, darken(royalblue,20) 50%, transparent 50%),
+                        linear-gradient(to right, darken(lightblue,10) 56%, transparent 56%),
+                        linear-gradient(to bottom, darken(lightblue,10) 56%, transparent 56%),
+                        linear-gradient(45deg, transparent 39%,
+                                               darken(royalblue,20) 39%,
+                                               darken(royalblue,20) 61%,
+                                               transparent 61%)
+      background-size: 100% 100%,
+                       100% 100%,
+                       100% 100%,
+                       100% 100%,
+                       24px 24px,
+                       100% 100%,
+                       100% 100%,
+                       100% 100%
+      background-position: center center
+      border-top-left-radius: 120px
+      border-top-right-radius: 10px
+      border-bottom-left-radius: 10px
+      border-top: 7px solid black
+      border-left: 7px solid black
+      transform: rotate(45deg)
+      z-index: 1
+
+#ned-flanders
+  background-color: khaki
+
+  div
+    background-color: forestgreen
+    background-repeat: no-repeat
+    background-image: linear-gradient(to top, transparent 10px,
+                                               black(.3) 10px,
+                                               black(.3) 13px,
+                                               transparent 13px)
+    background-size: 100% 100%
+    background-position: center bottom
+
+    &:before
+      width: 130px
+      height: 220px
+      margin-left: -(@width/2)
+      left: 50%
+      bottom: -13px
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse at center, black(.7) 30%, transparent 30%),
+                        linear-gradient(to top, transparent 17px,
+                                               black(.3) 17px,
+                                               black(.3) 20px,
+                                               transparent 20px),
+                        linear-gradient(to right, black 7px, transparent 7px),
+                        linear-gradient(to left, black 7px, transparent 7px),
+                        linear-gradient(to top, black 7px, forestgreen 7px)
+      background-size: 60% 10%,
+                       100% 100%,
+                       100% 65%,
+                       100% 65%,
+                       100% 50%
+      background-position: center 3px,
+                           center bottom,
+                           center bottom,
+                           center bottom,
+                           center bottom
+      border-radius: 0 0 4px 4px
+      z-index: 2
+
+    &:after
+      width: 56px
+      height: 56px
+      margin-left: -(@width/2)
+      left: 50%
+      top: -31px
+      // background-color: darken(lightblue,10)
+      background-repeat: no-repeat
+      background-image: linear-gradient(80deg, pink 45%, transparent 45%),
+                        linear-gradient(-175deg, pink 45%, transparent 45%),
+                        linear-gradient(80deg, black(.2) 51%, black(0) 51%),
+                        linear-gradient(-175deg, black(.2) 51%, black(0) 51%),
+                        radial-gradient(circle at center, darken(pink,5) 45%,
+                                                          black(.2) 45%,
+                                                          black(.2) 52%,
+                                                          black(0) 52%),
+                        linear-gradient(45deg, black(0) 48%,
+                                                  black(.2) 48%,
+                                                  black(.2) 52%,
+                                                  black(0) 52%),
+                        linear-gradient(65deg, black(0) 48%,
+                                                  black(.2) 48%,
+                                                  black(.2) 52%,
+                                                  black(0) 52%),
+                        linear-gradient(22deg, black(0) 48%,
+                                                  black(.2) 48%,
+                                                  black(.2) 54%,
+                                                  black(0) 54%)
+      background-size: 100% 100%,
+                       100% 100%,
+                       100% 100%,
+                       100% 100%,
+                       100% 100%,
+                       100% 75%,
+                       100% 95%,
+                       100% 60%
+      background-position: center center
+      border-top-left-radius: 120px
+      border-top-right-radius: 10px
+      border-bottom-left-radius: 10px
+      border-bottom-right-radius: 70px
+      border-top: 7px solid black
+      border-left: 7px solid black
+      transform: rotate(45deg)
+      z-index: 1
