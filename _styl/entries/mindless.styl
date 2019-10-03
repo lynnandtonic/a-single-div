@@ -1,0 +1,168 @@
+/*-----------------------------
+
+Mindless skull
+
+-----------------------------*/
+
+@keyframes skullcap
+  0
+    transform: translateY(0)
+    animation-timing-function: ease-in
+  1%
+    border-bottom-color: transparent
+  2%
+    border-bottom-color: black
+    animation-timing-function: ease-in
+  40%
+    transform: translateY(-10px)
+  70%
+    transform: translateY(-10px)
+    animation-timing-function: ease-out
+  76%
+    border-bottom-color: black
+  76.5%
+    transform: translateY(0)
+    border-bottom-color: transparent
+    animation-timing-function: ease-in
+
+@keyframes peek
+  0
+    transform: translateY(0)
+    height: 0
+    animation-timing-function: ease-in
+  10%
+    transform: translateY(-2px)
+    height: 10px
+  40%
+    transform: translateY(-1px)
+    height: 23px
+  70%
+    transform: translateY(-1px)
+    height: 23px
+  75%
+    transform: translateY(-2px)
+    height: 10px
+    animation-timing-function: ease-out
+  80%
+    transform: translateY(0)
+    height: 0
+
+
+#mindless
+  background: #ccc
+
+  div
+    width: 200px
+    height: 140px
+    margin-left: -(@width/2)
+    margin-top: -30px
+    background-image: linear-gradient(10deg, black 10px, transparent 10px),
+                      linear-gradient(-10deg, black 10px, transparent 10px),
+                      linear-gradient(to bottom, black 5px, transparent 5px),
+                      linear-gradient(to top, black 5px, transparent 5px),
+                      radial-gradient(circle, black 50%, transparent 50%),
+                      radial-gradient(circle, black 50%, transparent 50%),
+                      linear-gradient(65deg, black 40%, transparent 40%),
+                      linear-gradient(-65deg, black 40%, transparent 40%),
+                      radial-gradient(circle at 50% 100%, #eee 10px, black 10px,
+                                                          black 15px, transparent 15px),
+                      radial-gradient(circle at 50% 100%, #eee 10px, black 10px,
+                                                          black 15px, transparent 15px),
+                      radial-gradient(circle at 50% 100%, white 10px, black 10px,
+                                                          black 15px, transparent 15px),
+                      radial-gradient(circle at 50% 100%, white 10px, black 10px,
+                                                          black 15px, transparent 15px),
+                      linear-gradient(to right, black 5px, #ddd 5px,
+                                                #ddd 50%, white 50%,
+                                                white 60%, transparent 60%),
+                      linear-gradient(to left, black 5px, white 5px,
+                                                white 60%, transparent 60%),
+                      linear-gradient(to right, black 5px, #ddd 5px,
+                                                #ddd 50%, white 50%,
+                                                white 60%, transparent 60%),
+                      linear-gradient(to left, black 5px, white 5px,
+                                                white 60%, transparent 60%),
+                      radial-gradient(circle, white 50%, transparent 50%),
+                      radial-gradient(circle, white 50%, transparent 50%),
+                      radial-gradient(circle, black 25%, yellow 20%,
+                                              yellow 50%, transparent 50%),
+                      radial-gradient(circle, black 25%, yellow 20%,
+                                              yellow 50%, transparent 50%),
+                      linear-gradient(darkgreen, darkgreen),
+                      linear-gradient(black, black)
+    background-repeat: no-repeat
+    background-size: 100% 50%,
+                     100% 50%,
+                     100% 100%,
+                     75% 100%,
+                     70px 70px,
+                     70px 70px,
+                     15px 20px,
+                     15px 20px,
+                     30px 30px,
+                     30px 30px,
+                     30px 30px,
+                     30px 30px,
+                     100% 55%,
+                     100% 55%,
+                     75% 50%,
+                     75% 50%,
+                     7px 7px,
+                     7px 7px,
+                     30px 30px,
+                     30px 30px,
+                     80% 20%,
+                     100% 20px
+    background-position: 0 40%,
+                         0 40%,
+                         center top 20px,
+                         center bottom,
+                         23% 40%,
+                         78% 40%,
+                         54% 70%,
+                         46% 70%,
+                         left 40px bottom 5px,
+                         left 70px bottom 5px,
+                         left 100px bottom 5px,
+                         left 130px bottom 5px,
+                         0 20px,
+                         0 20px,
+                         center bottom,
+                         center bottom,
+                         75px 12px,
+                         113px 12px,
+                         66px 4px,
+                         104px 4px,
+                         center top,
+                         left top 15px
+
+    &:before
+      box-sizing: border-box
+      width: 200px
+      height: 100px
+      margin-top: -75px
+      background-color: white
+      background-image: linear-gradient(to right, #ddd 50%, white 50%)
+      border-radius: 100px 100px 0 0
+      border: 5px solid black
+      border-bottom-color: transparent
+      animation: skullcap 5000ms infinite
+      z-index: 2
+
+    &:after
+      width: 10px
+      height: 0
+      left: 20px
+      top: 15px
+      border-radius: 50%
+      background-color: forestgreen
+      box-shadow:  10px 0 0 forestgreen,
+                   20px 0 0 forestgreen,
+                   30px 0 0 forestgreen,
+                   75px -10px 0 5px forestgreen,
+                  120px 0 0 forestgreen,
+                  130px 0 0 forestgreen,
+                  140px 0 0 forestgreen,
+                  150px 0 0 forestgreen
+      animation: peek 5000ms infinite
+      z-index: 1
