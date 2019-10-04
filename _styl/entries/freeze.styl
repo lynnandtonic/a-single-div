@@ -1,0 +1,96 @@
+/*-----------------------------
+
+Freeze
+
+-----------------------------*/
+
+#freeze
+  background: #12578E
+
+  div
+    width: 90px
+    height: 110px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-color: #AFCFE2
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle, firebrick 40%, rgba(178,34,34,0) 50%),
+                      radial-gradient(circle, white(.7) 40%, white(0) 50%),
+                      radial-gradient(circle, firebrick 45%,
+                                              black 45%, black 65%,
+                                              transparent 65%),
+                      radial-gradient(circle, firebrick 40%, rgba(178,34,34,0) 50%),
+                      radial-gradient(circle, white(.7) 40%, white(0) 50%),
+                      radial-gradient(circle, firebrick 45%,
+                                              black 45%, black 65%,
+                                              transparent 65%),
+                      linear-gradient(black, black),
+                      radial-gradient(ellipse at 50% 120%, #79A4B7 50%, transparent 50%),
+                      radial-gradient(ellipse at 50% 120%, #79A4B7 50%, transparent 50%),
+                      radial-gradient(ellipse at 50% -20%, #79A4B7 50%, transparent 50%)
+    background-size: 26px 26px,
+                     26px 26px,
+                     38px 38px,
+                     26px 26px,
+                     26px 26px,
+                     38px 38px,
+                     100% 12px,
+                     25px 7px,
+                     25px 7px,
+                     30px 7px
+    background-position: 24% 50%,
+                         18% 50%,
+                         12% 50%,
+                         85% 50%,
+                         79% 50%,
+                         86% 50%,
+                         50% 50%,
+                         60% 79%,
+                         42% 79%,
+                         50% 85%
+    border-top-left-radius: 110px 80px
+    border-top-right-radius: 110px 80px
+    border-bottom-left-radius: 110px
+    border-bottom-right-radius: 110px
+    box-shadow: inset 7px 0 0 black(.15),
+                inset -7px 0 0 black(.15),
+                0 30px 0 -5px black(.9)
+
+    &:before
+      width: 140px
+      height: 80px
+      left: 50%
+      margin-left: -(@width/2)
+      bottom: -55px
+      background-image: linear-gradient(to right, #2E5E88,
+                                                  black 30%,
+                                                  #47626F 60%,
+                                                  #4DAAE9 70%,
+                                                  #47626F 90%),
+                        linear-gradient(black, black),
+                        linear-gradient(to right, #2E5E88,
+                                                  black 30%,
+                                                  #47626F 60%,
+                                                  #4DAAE9 70%,
+                                                  #47626F 90%)
+      background-repeat: no-repeat
+      background-size: 95% 10px,
+                       95% 2px,
+                       100% 10px
+      background-position: 50% 50%,
+                           50% 56%,
+                           50% 65%
+
+    &:after
+      width: 124px
+      height: 138px
+      left: 50%
+      margin-left: -(@width/2)
+      bottom: -10px
+      border-radius: 80px 80px 0 0
+      box-shadow: inset 0 10px 3px #2F689A,
+                  inset 3px 0 3px white(.5),
+                  inset 10px 2px 3px #2F689A,
+                  inset 18px 6px 3px white(.8),
+                  inset -8px 0 3px white(.5)
+      
