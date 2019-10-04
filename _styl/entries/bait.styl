@@ -1,0 +1,162 @@
+/*-----------------------------
+
+Bait
+
+-----------------------------*/
+
+#bait
+  background: skyblue
+
+  div
+    width: 50px
+    height: 350px
+    margin-left: -(@width/2)
+    top: 0
+    background-image: linear-gradient(white(.6), white(.6)),
+                      linear-gradient(white(.8), white(.8)),
+                      radial-gradient(circle, transparent 4px,
+                                              #666 4px,
+                                              #666 8px,
+                                              transparent 8px),
+                      radial-gradient(circle, transparent 2px,
+                                                #555 2px, #555 5px,
+                                                transparent 5px),
+                      linear-gradient(to right, #555, #555),
+                      radial-gradient(circle at center top, transparent 10px,
+                                                               #555 10px,
+                                                               #555 12px,
+                                                               transparent 12px),
+                      radial-gradient(circle at center top, transparent 10px,
+                                                               #555 10px,
+                                                               #555 12px,
+                                                               transparent 12px),
+                      linear-gradient(45deg, #555 50%, transparent 50%),
+                      linear-gradient(-45deg, #555 50%, transparent 50%),
+                      radial-gradient(circle, transparent 2px,
+                                                  #555 2px, #555 5px,
+                                                  transparent 5px)
+    background-repeat: no-repeat
+    background-size: 2px 75px,
+                     6px 7px,
+                     30px 30px,
+                     30px 30px,
+                     4px 30px,
+                     30px 15px,
+                     30px 15px,
+                     6px 6px,
+                     6px 6px,
+                     30px 30px
+    background-position: center top,
+                         center 70px,
+                         50% 64px,
+                         center bottom 41px,
+                         center bottom 23px,
+                         left -2px bottom 10px,
+                         right -2px bottom 10px,
+                         left 2px bottom 20px,
+                         right 2px bottom 20px,
+                         29px 61%
+
+    &:before
+      width: 40px
+      height: 210px
+      left: 50%
+      top: 82px
+      margin-left: -(@width/2)
+      border-top-left-radius: 20px 50px
+      border-top-right-radius: 20px 60px
+      border-bottom-left-radius: 20px 100px
+      border-bottom-right-radius: 20px 150px
+      background-image: radial-gradient(circle, black 20%,
+                                                white 20%, white 50%,
+                                                transparent 50%),
+                        linear-gradient(to right, black 0, black(0) 50%),
+                        linear-gradient(to left, gold 0, black(0) 35%),
+                        repeating-linear-gradient(45deg, black(0), black(0) 5px,
+                                                         black(.1) 5px, black(.1) 6px,
+                                                         black(0) 8px),
+                        repeating-linear-gradient(-45deg, black(0), black(0) 5px,
+                                                         black(.1) 5px, black(.1) 6px,
+                                                         black(0) 8px),
+                        linear-gradient(to bottom, green 25%,
+                                                   black 40%,
+                                                   green 55%,
+                                                   green 65%,
+                                                   black 80%,
+                                                   green 95%),
+                        linear-gradient(to right, black 0, black(0) 50%),
+                        linear-gradient(to left, gold 0, black(0) 40%),
+                        repeating-linear-gradient(45deg, black(0), black(0) 5px,
+                                                         black(.1) 5px, black(.1) 6px,
+                                                         black(0) 8px),
+                        repeating-linear-gradient(-45deg, black(0), black(0) 5px,
+                                                         black(.1) 5px, black(.1) 6px,
+                                                         black(0) 8px),
+                        linear-gradient(to top,    green 25%,
+                                                   black 40%,
+                                                   green 55%,
+                                                   green 65%,
+                                                   black 80%,
+                                                   green 95%),
+                        radial-gradient(circle, transparent 4px,
+                                                #555 4px, #555 7px,
+                                                transparent 7px),
+                        radial-gradient(circle, transparent 4px,
+                                                #555 4px, #555 7px,
+                                                transparent 7px)
+      background-repeat: no-repeat
+      background-size: 15px 15px,
+                       100% 42%,
+                       100% 42%,
+                       100% 42%,
+                       100% 42%,
+                       100% 42%,
+                       100% 52%,
+                       100% 52%,
+                       100% 52%,
+                       100% 52%,
+                       100% 52%,
+                       30px 30px,
+                       30px 30px
+      background-position: 8px 15px,
+                           left top,
+                           right top,
+                           center top,
+                           center top,
+                           center top,
+                           left bottom,
+                           right bottom,
+                           center bottom,
+                           center bottom,
+                           center bottom,
+                           50% 42%,
+                           50% 46%
+
+    &:after
+      width: 50px
+      height: 70px
+      left: 29px
+      top: 55%
+      background-image: linear-gradient(to right, #555, #555),
+                        radial-gradient(circle at center top, transparent 10px,
+                                                                 #555 10px,
+                                                                 #555 12px,
+                                                                 transparent 12px),
+                        radial-gradient(circle at center top, transparent 10px,
+                                                                 #555 10px,
+                                                                 #555 12px,
+                                                                 transparent 12px),
+                        linear-gradient(45deg, #555 50%, transparent 50%),
+                        linear-gradient(-45deg, #555 50%, transparent 50%)
+      background-repeat: no-repeat
+      background-size: 4px 30px,
+                       30px 15px,
+                       30px 15px,
+                       6px 6px,
+                       6px 6px
+      background-position: center bottom 23px,
+                           left -2px bottom 10px,
+                           right -2px bottom 10px,
+                           left 2px bottom 20px,
+                           right 2px bottom 20px
+      transform: rotate(-30deg)
