@@ -4,7 +4,7 @@ Build
 
 -----------------------------*/
 
-#build
+#build-1
   background: #fff
 
   div
@@ -65,3 +65,57 @@ Build
                          50% 50%, 50% 50%,
                          50% 50%, 50% 78%, 50% 50%,
                          24% 90%, 76% 90%
+
+#build-2
+  background: lightcoral
+
+  div
+    box-sizing: border-box
+    width: 200px
+    height: 200px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-color: white
+    background-image: radial-gradient(circle, white 18%, black 18%,
+                                              black 36%, transparent 36%),
+                      linear-gradient(45deg, transparent 44%, black 44%,
+                                             black 56%, transparent 56%),
+                      radial-gradient(circle, white 18%, black 18%,
+                                              black 36%, transparent 36%),
+                      linear-gradient(-45deg, transparent 44%, black 44%,
+                                              black 56%, transparent 56%)
+    background-size: 30% 30%,
+                     45% 45%,
+                     30% 30%,
+                     45% 45%
+    background-position: right 18% bottom 18%,
+                         right 40% bottom 40%,
+                         left 18% bottom 18%,
+                         left 40% bottom 40%
+    border-radius: 50%
+    border: 5px solid black
+    box-shadow: 0 0 0 8px white,
+                0 12px 0 7px black(.1)
+
+    &:before
+      width: 20%
+      height: 20%
+      left: 20%
+      top: 20%
+      background-image: linear-gradient(45deg, black 35%, transparent 35%),
+                        linear-gradient(-135deg, black 35%, transparent 35%),
+                        linear-gradient(-10deg, black 50%, transparent 50%),
+                        linear-gradient(-80deg, black 50%, transparent 50%)
+      border-radius: 50%
+
+    &:after
+      width: 20%
+      height: 20%
+      right: 20%
+      top: 20%
+      background-image: linear-gradient(-45deg, black 35%, transparent 35%),
+                        linear-gradient(135deg, black 35%, transparent 35%),
+                        linear-gradient(10deg, black 50%, transparent 50%),
+                        linear-gradient(80deg, black 50%, transparent 50%)
+      border-radius: 50%
