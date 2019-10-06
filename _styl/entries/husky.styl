@@ -1,0 +1,132 @@
+/*-----------------------------
+
+Husky
+
+-----------------------------*/
+
+$kernal = 7px
+$next = $kernal + 2
+
+#husky
+  background: seagreen
+
+  div
+    width: 10px 
+    height: $kernal
+    margin-left: -(@width/2)
+    top: auto
+    bottom: 200px
+    @media (max-width: 400px)
+      bottom: 160px
+    background-color: gold
+    border-radius: 3px
+    box-shadow:    0   $next*-1 0 gold,
+                   0   $next    0 gold,
+                   0   $next*2  0 gold,
+                   0   $next*3  0 gold,
+                   0   $next*4  0 gold,
+                   0   $next*5  0 gold,
+                   0   $next*6  0 gold,
+                   0   $next*7  0 gold,
+                   0   $next*8  0 gold,
+                 -12px 0        0 gold,
+                 -12px $next    0 gold,
+                 -12px $next*2  0 gold,
+                 -12px $next*3  0 gold,
+                 -12px $next*4  0 gold,
+                 -12px $next*5  0 gold,
+                 -12px $next*6  0 gold,
+                  12px 0        0 gold,
+                  12px $next    0 gold,
+                  12px $next*2  0 gold,
+                  12px $next*3  0 gold,
+                  12px $next*4  0 gold,
+                  12px $next*5  0 gold,
+                  12px $next*6  0 gold,
+                -130px 0        0 white,
+                -130px $next*-1 0 gold,
+                -130px $next    0 gold,
+                -130px $next*2  0 white,
+                -130px $next*3  0 gold,
+                -130px $next*4  0 gold,
+                -130px $next*5  0 white,
+                -130px $next*6  0 white,
+                -130px $next*7  0 gold,
+                -130px $next*8  0 gold,
+                -142px 0        0 gold,
+                -142px $next    0 white,
+                -142px $next*2  0 gold,
+                -142px $next*3  0 gold,
+                -142px $next*4  0 white,
+                -142px $next*5  0 gold,
+                -142px $next*6  0 white,
+                -118px 0        0 white,
+                -118px $next    0 gold,
+                -118px $next*2  0 gold,
+                -118px $next*3  0 white,
+                -118px $next*4  0 white,
+                -118px $next*5  0 gold,
+                -118px $next*6  0 gold,
+                 130px 0        0 coral,
+                 130px $next*-1 0 gold,
+                 130px $next    0 tomato,
+                 130px $next*2  0 skyblue,
+                 130px $next*3  0 darkseagreen,
+                 130px $next*4  0 plum,
+                 130px $next*5  0 pink,
+                 130px $next*6  0 darksalmon,
+                 130px $next*7  0 mediumturquoise,
+                 130px $next*8  0 plum,
+                 142px 0        0 mediumturquoise,
+                 142px $next    0 darksalmon,
+                 142px $next*2  0 darkseagreen,
+                 142px $next*3  0 plum,
+                 142px $next*4  0 coral,
+                 142px $next*5  0 gold,
+                 142px $next*6  0 darksalmon,
+                 118px 0        0 darkseagreen,
+                 118px $next    0 coral,
+                 118px $next*2  0 pink,
+                 118px $next*3  0 mediumturquoise,
+                 118px $next*4  0 plum,
+                 118px $next*5  0 darksalmon,
+                 118px $next*6  0 gold
+
+    &:before
+      width: 50px
+      height: 50px
+      left: -45px
+      top: 35px
+      background-color: mediumseagreen
+      border-radius: 0 100% 0 100%
+      box-shadow:    3px  42px 0 -3px mediumseagreen,
+                     3px  84px 0 -3px mediumseagreen,
+                     3px 126px 0 -3px mediumseagreen,
+                  -130px 0 0 mediumseagreen,
+                  -127px  42px 0 -3px mediumseagreen,
+                  -127px  84px 0 -3px mediumseagreen,
+                  -127px 126px 0 -3px mediumseagreen,
+                   130px 0 0 mediumseagreen,
+                   133px  42px 0 -3px mediumseagreen,
+                   133px  84px 0 -3px mediumseagreen,
+                   133px 126px 0 -3px mediumseagreen
+                   
+
+    &:after
+      width: 50px
+      height: 50px
+      left: 5px
+      top: 35px
+      background-color: mediumseagreen
+      border-radius: 100% 0 100% 0
+      box-shadow: -3px  42px 0 -3px mediumseagreen,
+                  -3px  84px 0 -3px mediumseagreen,
+                  -3px 126px 0 -3px mediumseagreen,
+                  -130px 0 0 mediumseagreen,
+                  -133px  42px 0 -3px mediumseagreen,
+                  -133px  84px 0 -3px mediumseagreen,
+                  -133px 126px 0 -3px mediumseagreen,
+                   130px 0 0 mediumseagreen,
+                   127px  42px 0 -3px mediumseagreen,
+                   127px  84px 0 -3px mediumseagreen,
+                   127px 126px 0 -3px mediumseagreen
