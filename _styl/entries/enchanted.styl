@@ -1,0 +1,105 @@
+/*-----------------------------
+
+Enchanted
+
+-----------------------------*/
+
+$dole-l = #FFF8CC
+$dole-m = #FFEF7D
+$dole-d = #F8DA00
+
+#enchanted
+  background: #25283d
+
+  div
+    width: 200px
+    height: 210px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle at right bottom, transparent 70%, $dole-l 70%),
+                      radial-gradient(circle at left top, transparent 70%, $dole-d 70%),
+                      linear-gradient(to right, $dole-m, $dole-m),
+                      radial-gradient(circle, $dole-l 50%, transparent 50%),
+                      radial-gradient(circle, $dole-d 50%, transparent 50%),
+                      radial-gradient(circle at right bottom, transparent 70%, $dole-l 70%),
+                      radial-gradient(circle at left top, transparent 70%, $dole-d 70%),
+                      linear-gradient(to right, $dole-m, $dole-m),
+                      radial-gradient(circle, $dole-l 50%, transparent 50%),
+                      radial-gradient(circle, $dole-d 50%, transparent 50%),
+                      radial-gradient(circle at right bottom, transparent 70%, $dole-l 70%),
+                      radial-gradient(circle at left top, transparent 70%, $dole-d 70%),
+                      linear-gradient(to right, $dole-m, $dole-m),
+                      radial-gradient(circle, $dole-l 50%, transparent 50%),
+                      radial-gradient(circle, $dole-d 50%, transparent 50%),
+                      radial-gradient(circle at left top, transparent 53%, $dole-m 53%),
+                      radial-gradient(circle at left center, $dole-m 25%, transparent 25%)
+    background-size: 48px 49px,
+                     48px 49px,
+                     93px 49px,
+                     70px 70px,
+                     70px 70px,
+                     58px 58px,
+                     58px 58px,
+                     120px 58px,
+                     80px 80px,
+                     80px 80px,
+                     58px 58px,
+                     58px 58px,
+                     120px 58px,
+                     80px 80px,
+                     80px 80px,
+                     50px 100px,
+                     60px 60px
+    background-position: left 53px bottom 125px,
+                         right 52px bottom 125px,
+                         center bottom 125px,
+                         left 20px bottom 114px,
+                         right 20px bottom 114px,
+                         left 40px bottom 67px,
+                         right 40px bottom 67px,
+                         center bottom 67px,
+                         left bottom 56px,
+                         right bottom 56px,
+                         left 40px bottom 11px,
+                         right 40px bottom 11px,
+                         center bottom 11px,
+                         left bottom,
+                         right bottom,
+                         right 73px top -20px,
+                         right 15px top -2px
+
+    &:before
+      width: 230px
+      height: 90px
+      bottom: 0
+      left: 50%
+      margin-left: -(@width/2)
+      background-color: white(.3)
+      border-bottom-left-radius: 60px 100px
+      border-bottom-right-radius: 60px 100px
+      border-top: 5px solid white(.2)
+      z-index: 2
+
+    &:after
+      width: 130px
+      height: 120px
+      left:  -50px
+      top: -10px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, tan, tan),
+                        radial-gradient(ellipse at center, mediumvioletred 68%, transparent 68%),
+                        linear-gradient(-30deg, deeppink 47%, transparent 47%),
+                        linear-gradient(30deg, deeppink 47%, transparent 47%),
+                        linear-gradient(to right, deeppink, deeppink)
+      background-size:  4px 74%,
+                        100% 16px,
+                        50% 33%,
+                        50% 33%,
+                        4px 33%
+      background-position: 50% 100%,
+                           50% 30%,
+                           left top,
+                           right top,
+                           50% 0px
+      transform: rotate(-20deg)
