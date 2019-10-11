@@ -1,0 +1,107 @@
+/*-----------------------------
+
+Swing
+
+-----------------------------*/
+
+@keyframes swing
+  from
+    transform: rotate(-3deg)
+  to
+    transform: rotate(3deg)
+
+#swing
+  background: powderblue
+
+  div
+    width: 250px
+    height: 300px
+    margin-left: -(@width/2)
+    top: -10px
+    background-repeat: no-repeat
+    background-image: linear-gradient(to top, black(.15) 50%, black(0) 50%),
+                      repeating-linear-gradient(50deg, tan, tan 10px,
+                                                        peru 10px, peru 12px),
+                      linear-gradient(to top, black(.15) 50%, black(0) 50%),
+                      repeating-linear-gradient(20deg, tan, tan 10px,
+                                                        peru 10px, peru 12px),
+                      linear-gradient(to right, black(.15) 50%, black(0) 50%),
+                      repeating-linear-gradient(-30deg, tan, tan 10px,
+                                                        peru 10px, peru 12px)
+    background-size: 22px 10px,
+                     22px 10px,
+                     22px 10px,
+                     22px 10px,
+                     10px 60%,
+                     10px 60%
+    background-position: 50% 47%,
+                         50% 47%,
+                         50% 43.5%,
+                         50% 43.5%,
+                         50% 0,
+                         50% 0
+    animation: swing 4000ms infinite alternate ease-in-out
+    transform-origin: 50% 0
+
+    &:before
+      width: 220px
+      height: 200px
+      left: 50%
+      margin-left: -(@width/2 + 2)
+      top: 50%
+      background-repeat: no-repeat
+      background-color: black(.1)
+      background-image: radial-gradient(circle, transparent 28%, white(.1) 28%,
+                                                white(.1) 31%,transparent 31%),
+                        radial-gradient(circle, transparent 28%, #444 28%,
+                                                #444 60%, #333 60%,
+                                                #333 62%, #444 62%,
+                                                #444 69%,transparent 69%),
+                        radial-gradient(circle at center left, transparent 28%, #222 28%,
+                                                               #222 69%, transparent 69%),
+                        radial-gradient(circle at center left, transparent 28%, #555 28%,
+                                                               #555 69%, transparent 69%),
+                        repeating-linear-gradient(30deg, transparent,
+                                                             transparent 5px,
+                                                             black(.2) 5px, black(.2) 7px,
+                                                             transparent 7px),
+                        repeating-linear-gradient(-30deg, transparent,
+                                                             transparent 5px,
+                                                             black(.2) 5px, black(.2) 7px,
+                                                             transparent 7px),
+                        radial-gradient(circle, transparent 35%, #333 35%)
+      background-size: 200px 200px,
+                       200px 200px,
+                       100px 200px,
+                       100px 180px,
+                       36% 100%,
+                       36% 100%,
+                       250px 250px
+      background-position: center right,
+                           center right,
+                           center right 16px,
+                           center right 20px,
+                           left top,
+                           left top,
+                           center right
+      border-radius: 100px
+      // box-shadow: inset -10px 0 0 white(.2)
+
+    &:after
+      width: 250px
+      height: 300px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, black(.15) 50%, black(0) 50%),
+                        repeating-linear-gradient(-30deg, tan, tan 10px,
+                                                          peru 10px, peru 12px),
+                        linear-gradient(to right, black(.15) 50%, black(0) 50%),
+                        repeating-linear-gradient(-30deg, tan, tan 10px,
+                                                          peru 10px, peru 12px)
+      background-size: 10px 23%,
+                       10px 23%,
+                       10px 23%,
+                       10px 23%
+      background-position: 48% 64%,
+                           48% 64%,
+                           53% 64%,
+                           53% 64%
