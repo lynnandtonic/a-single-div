@@ -1,0 +1,88 @@
+/*-----------------------------
+
+Ash
+
+-----------------------------*/
+
+#ash
+  background: #bbb
+
+  div
+    width: 200px
+    height: 24px
+    margin-left: -(@width/2 - 30)
+    margin-top: -(@height/2 + 20)
+    background-color: #666
+    box-shadow: inset -70px 0 0 #999,
+                inset -175px 0 0 white
+    border-radius: 20px
+    border: 3px solid #444
+
+    &:before
+      width: 210px
+      height: 60px
+      left: 50%
+      bottom: -130px
+      margin-left: -(@width/2 + 50)
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, #444 56%,
+                                                  transparent 56%,
+                                                  transparent 73%,
+                                                  #444 73%),
+                        radial-gradient(circle at top center, transparent 25%,
+                                                              #444 25%, #444 30%,
+                                                              #888 30%),
+                        linear-gradient(to right, #888 55%,
+                                                  transparent 55%,
+                                                  transparent 74%,
+                                                  #888 74%)
+      background-size: 100% 3px,
+                       25% 100%,
+                       100% 100%
+      background-position: 0 0,
+                           70% 0,
+                           0 0
+      border-radius: 14px 14px 0 0
+      border-bottom: 6px solid #444
+      box-shadow: inset -3px 0 0 #444,
+                  inset  3px 0 0 #444,
+                  inset  15px 0 0 black(.15),
+                  inset -15px 0 0 black(.15),
+                  inset -30px 0 0 black(.15)
+
+    &:after
+      width: 10px
+      height: 10px
+      top: -22px
+      left: 5px
+      border-radius: 50%
+      background-color: white
+      box-shadow:  -5px   -8px 0  1px white,
+                    0px  -13px 0  1px white,
+                   -3px  -24px 0  3px white,
+                  -10px  -38px 0  6px white,
+                    8px  -43px 0  7px white,
+                  -12px  -58px 0 10px white,
+                   12px  -68px 0 15px white,
+                  -20px  -95px 0 25px white,
+                   30px -110px 0 30px white,
+                    0px -150px 0 45px white,
+                   90px -160px 0 50px white,
+                    0px    0px 0  4px #ddd,
+                   -5px   -8px 0  4px #ddd,
+                    0px  -13px 0  4px #ddd,
+                   -3px  -24px 0  6px #ddd,
+                  -10px  -38px 0  9px #ddd,
+                    8px  -43px 0 10px #ddd,
+                  -12px  -58px 0 13px #ddd,
+                   12px  -68px 0 18px #ddd,
+                  -20px  -95px 0 28px #ddd,
+                   30px -110px 0 33px #ddd,
+                    0px -150px 0 48px #ddd,
+                   90px -160px 0 53px #ddd,
+                    0px 50px 0 -3px #444,
+                   -8px 62px 0 -3px #444,
+                    7px 68px 0 -3px #444,
+                   -3px 75px 0 -3px #444,
+                  -10px 87px 0 -3px #444,
+                    6px 98px 0 -3px #444
