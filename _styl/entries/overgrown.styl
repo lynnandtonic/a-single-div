@@ -1,0 +1,188 @@
+/*-----------------------------
+
+Overgrown
+
+-----------------------------*/
+
+#overgrown
+  background-image: radial-gradient(circle, black(.05) 30%, transparent 30%),
+                    linear-gradient(to bottom, rgba(70,130,180,0), darken(steelblue,10)),
+                    radial-gradient(circle at top center, transparent 50%, lighten(steelblue,10) 50%),
+                    radial-gradient(circle at top center, transparent 50%, lighten(steelblue,20) 50%),
+                    radial-gradient(circle at top center, transparent 50%, lighten(steelblue,30) 50%),
+                    linear-gradient(to bottom, lightblue, lighten(lightblue,10))
+  background-repeat: repeat,
+                     no-repeat,
+                     repeat-x,
+                     repeat-x,
+                     repeat-x,
+                     repeat
+  background-size: 6px 6px,
+                   100% 43px,
+                   90px 90px,
+                   90px 90px,
+                   90px 90px,
+                   100% 100%
+  background-position: 0 0,
+                       left bottom,
+                       left bottom,
+                       left 45px bottom 10px,
+                       left 15px bottom 16px,
+                       0 0
+  z-index: 5
+
+  &:before,
+  &:after
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 50%
+
+  &:before
+    width: 120px
+    height: 120px
+    top: 50%
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 10px)
+    background-color: coral
+    background-repeat: repeat,
+                       no-repeat,
+                       no-repeat,
+                       no-repeat,
+                       no-repeat,
+                       no-repeat
+    background-image: radial-gradient(circle, black(.05) 30%, transparent 30%),
+                      linear-gradient(to right, rgba(139,0,0,0), rgba(139,0,0,.1) 50%, rgba(139,0,0,0) 100%),
+                      radial-gradient(ellipse, rgba(139,0,0,.4) 20%, rgba(139,0,0,.15) 40%, rgba(139,0,0,0) 80%),
+                      radial-gradient(circle, rgba(255,215,0,.4) 20%, rgba(255,215,0,0) 70%),
+                      radial-gradient(circle, rgba(220,20,60,.4) 20%, rgba(255,215,0,0) 70%),
+                      radial-gradient(circle, rgba(220,20,60,.5) 20%, rgba(255,215,0,0) 70%),
+                      radial-gradient(circle, rgba(255,215,0,.6) 20%, rgba(255,215,0,0) 70%)
+    background-size: 6px 6px,
+                     30px 100%,
+                     40px 20px,
+                     80% 80%,
+                     100% 100%,
+                     100% 100%,
+                     70% 70%
+    background-position: 0 0,
+                         50% 100%,
+                         center top -1px,
+                         left -10px bottom -50px,
+                         right -40px top 22px,
+                         left -40px center,
+                         right -20px top -30px
+    border-top-right-radius: 60px
+    border-top-left-radius: 60px
+    border-bottom-left-radius: 80px 90px
+    border-bottom-right-radius: 80px 100px
+    box-shadow: inset 10px 0px 10px rgba(139,0,0,.4),
+                inset -10px 0px 10px rgba(139,0,0,.2)
+
+  &:after
+    width: 170px
+    height: 300px
+    top: 10px
+    margin-left: -(@width/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse at top left, transparent 40%, rgba(139,69,19,.8) 40%,
+                                                          rgba(139,69,19,.8) 44%, transparent 44%),
+                      radial-gradient(ellipse at top left, transparent 40%, rgba(139,69,19,.8) 40%,
+                                                          rgba(139,69,19,.8) 44%, transparent 44%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      radial-gradient(ellipse at bottom center, transparent 30%, white(.6) 30%,
+                                                               white(.6) 38%, transparent 38%),
+                      repeating-linear-gradient(to bottom, white(0), white(0) 1px,
+                                                                     white(.5) 1px,
+                                                                     white(.5) 2px),
+                      linear-gradient(to right, sienna, darken(saddlebrown,10)),
+                      linear-gradient(60deg, transparent 40%, white(.5) 40%,
+                                             white(.5) 41%, transparent 41%),
+                      linear-gradient(76deg, transparent 40%, white(.5) 40%,
+                                             white(.5) 41%, transparent 41%),
+                      linear-gradient(86deg, transparent 40%, white(.5) 40%,
+                                             white(.5) 41.5%, transparent 41.5%),
+                      linear-gradient(92deg, transparent 40%, white(.5) 40%,
+                                             white(.5) 41.5%, transparent 41.5%),
+                      linear-gradient(102deg, transparent 40%, white(.5) 40%,
+                                             white(.5) 41.5%, transparent 41.5%),
+                      linear-gradient(130deg, transparent 40%, white(.5) 40%,
+                                             white(.5) 41.5%, transparent 41.5%),
+                      linear-gradient(30deg, transparent 40%, white(.5) 40%,
+                                             white(.5) 41%, transparent 41%)
+    background-size: 200px 80px,
+                     170px 60px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     50px 20px,
+                     6px 10px,
+                     5px 20px,
+                     60px 120px,
+                     60px 120px,
+                     60px 60px,
+                     60px 80px,
+                     60px 120px,
+                     60px 100px,
+                     60px 100px
+    background-position:  25px 160px,
+                          44px 210px,
+                          20px 10px,
+                          41px 10px,
+                          75px 15px,
+                          96px 15px,
+                          -5px 35px,
+                          16px 35px,
+                          55px 40px,
+                          76px 40px,
+                          44px 60px,
+                          65px 60px,
+                         110px 55px,
+                         131px 55px,
+                         -10px 90px,
+                          11px 90px,
+                         center 135px,
+                         center 130px,
+                          31px 25px,
+                          48px 27px,
+                          58px 80px,
+                          65px 57px,
+                          77px 30px,
+                          85px 75px,
+                          25px 63px
