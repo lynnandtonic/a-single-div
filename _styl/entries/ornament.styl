@@ -1,0 +1,152 @@
+/*-----------------------------
+
+Ornament
+
+-----------------------------*/
+
+#ornament
+  background-color: darken(crimson,13)
+  overflow: hidden
+
+  div
+    width: 150px
+    height: 150px
+    margin-left: -140px
+    margin-top: -30px
+    background-color: crimson
+    background-repeat: no-repeat,
+                       no-repeat,
+                       no-repeat,
+                       no-repeat,
+                       repeat-x,
+                       no-repeat,
+                       no-repeat,
+                       no-repeat
+    background-image: repeating-linear-gradient(45deg, transparent,
+                                                        transparent 2px, white(.5) 2px,
+                                                        white(.5) 4px, transparent 4px,
+                                                        transparent 6px),
+                      repeating-linear-gradient(to bottom, transparent,
+                                                           transparent 15px, white 15px,
+                                                           white 20px, transparent 20px,
+                                                           transparent 22px, white 22px,
+                                                           white 24px, transparent 25px,
+                                                           transparent 55px),
+                      repeating-linear-gradient(-45deg, transparent,
+                                                        transparent 3px, white 3px,
+                                                        white 6px, transparent 6px,
+                                                        transparent 10px),
+                      repeating-linear-gradient(45deg, transparent,
+                                                        transparent 2px, white 2px,
+                                                        white 4px, transparent 4px,
+                                                        transparent 6px),
+                      radial-gradient(circle, transparent 50%, white 50%),
+                      repeating-linear-gradient(-45deg, transparent,
+                                                        transparent 3px, white 3px,
+                                                        white 4px, transparent 4px,
+                                                        transparent 6px),
+                      repeating-linear-gradient(45deg, transparent,
+                                                        transparent 3px, white 3px,
+                                                        white 4px, transparent 4px,
+                                                        transparent 6px),
+                      repeating-linear-gradient(45deg, transparent,
+                                                        transparent 2px, white 2px,
+                                                        white 4px, transparent 4px,
+                                                        transparent 6px)
+    background-size: 100% 8%,
+                     100% 100%,
+                     100% 10%,
+                     100% 10%,
+                      10% 10%,
+                     100% 10%,
+                     100% 10%,
+                     100% 8%
+    background-position: center top,
+                         center top,
+                         center top 30px,
+                         center top 50px,
+                         center top 86px,
+                         center top 106px,
+                         center top 106px,
+                         center bottom
+    border-radius: 50%
+    border: 4px solid white
+    box-shadow: inset 13px -13px 0 black(.3),
+                inset -10px 10px 0 black(.1)
+
+    &:before
+      width: 150px
+      height: 150px
+      left: 140px
+      top: -60px
+      background-color: crimson
+      border-radius: 0 90% 0 90%
+      transform: rotate(45deg)
+      border: 4px solid white
+      box-shadow: inset 3px -13px 0 black(.3),
+                  inset -3px 8px 0 black(.2),
+                  inset 15px 15px 0 crimson,
+                  inset 20px 20px 0 white,
+                  inset 30px 30px 0 crimson,
+                  inset 35px 35px 0 white,
+                  inset 45px 45px 0 crimson,
+                  inset 50px 50px 0 white,
+                  inset 60px 60px 0 crimson,
+                  inset 65px 65px 0 white,
+                  inset 75px 75px 0 crimson,
+                  inset 80px 80px 0 white,
+                  inset 90px 90px 0 crimson,
+                  inset 95px 95px 0 white,
+                  inset 105px 105px 0 crimson,
+                  inset 110px 110px 0 white,
+                  inset 120px 120px 0 crimson,
+                  inset 125px 125px 0 white,
+                  inset 135px 135px 0 crimson,
+                  inset 140px 140px 0 white
+
+    &:after
+      width: 270px
+      height: 250px
+      margin-top: -175px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to bottom, white, white),
+                        radial-gradient(circle at left center, white 45%, transparent 45%),
+                        radial-gradient(circle, white 62%, transparent 62%),
+                        radial-gradient(circle, white 62%, transparent 62%),
+                        radial-gradient(circle at right center, white 45%, transparent 45%),
+                        radial-gradient(circle, transparent 40%, white 40%,
+                                                white 45%, transparent 45%),
+                        linear-gradient(to right, white(.5), white(.5)),
+                        linear-gradient(to bottom, white, white),
+                        radial-gradient(circle at left center, white 45%, transparent 45%),
+                        radial-gradient(circle, white 62%, transparent 62%),
+                        radial-gradient(circle at right center, white 45%, transparent 45%),
+                        radial-gradient(circle, transparent 40%, white 40%,
+                                                white 45%, transparent 45%),
+                        linear-gradient(to right, white(.5), white(.5))
+      background-size: 53px 15px,
+                       20px 20px,
+                       20px 20px,
+                       20px 20px,
+                       20px 20px,
+                       50px 50px,
+                       1px 135px,
+                       36px 15px,
+                       20px 20px,
+                       20px 20px,
+                       20px 20px,
+                       50px 50px,
+                       1px 58px
+      background-position: left 49px bottom 78px,
+                           left 49px bottom 68px,
+                           left 57px bottom 66px,
+                           left 74px bottom 66px,
+                           left 82px bottom 68px,
+                           left 50px bottom 78px,
+                           left 75px top,
+                           left 200px bottom 155px,
+                           left 200px bottom 143px,
+                           left 208px bottom 143px,
+                           left 216px bottom 145px,
+                           left 193px bottom 155px,
+                           left 218px top
