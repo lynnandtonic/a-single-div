@@ -1,0 +1,146 @@
+/*-----------------------------
+
+Treasure
+
+-----------------------------*/
+
+rupee1(bright)
+  lighten(seagreen,bright)
+rupee2(bright)
+  lighten(firebrick,bright)
+rupee3(bright)
+  lighten(blue,bright)
+
+#treasure
+  background-color: seagreen
+
+  div
+    width: 100px
+    height: 220px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(  25deg, rupee1(6)   37%, transparent 37%),
+                      linear-gradient( -25deg, transparent 37%, rupee1(6)   37%),
+                      linear-gradient( -25deg, rupee1(15)  37%, transparent 37%),
+                      linear-gradient(  25deg, transparent 37%, rupee1(15)  37%),
+                      linear-gradient( 135deg, transparent 42%, rupee1(12)  42%,
+                                               rupee1(12)  70%, transparent 70%),
+                      linear-gradient(-135deg, transparent 42%, rupee1(39)  42%,
+                                               rupee1(39)  70%, transparent 70%),
+                      linear-gradient(  45deg, transparent 42%, rupee1(12)  42%,
+                                               rupee1(12)  70%, transparent 70%),
+                      linear-gradient( -45deg, transparent 42%, rupee1(23)  42%,
+                                               rupee1(23)  70%, transparent 70%),
+                      linear-gradient( -45deg, transparent 35%, white(.5)   35%,
+                                               white(.5)   40%, transparent 40%,
+                                               transparent 44%, white(.5)   44%,
+                                               white(.5)   55%, transparent 55%),
+                      linear-gradient(  90deg, rupee1(34), rupee1(34))
+    background-size: 30% 50%,
+                     30% 40%,
+                     30% 50%,
+                     30% 40%,
+                     50% 50%,
+                     50% 50%,
+                     50% 50%,
+                     50% 50%,
+                     40% 50%,
+                     40% 50%
+    background-position:   0    3%,
+                           0   67.5%,
+                         100%   3%,
+                         100%  67.5%,
+                           0    0,
+                         100%   0,
+                           0  100%,
+                         100% 100%,
+                          50%  50%,
+                          50%  50%
+
+    &:before
+      width: 100px
+      height: 220px
+      margin-left: -120px
+      background-repeat: no-repeat
+      background-image: linear-gradient(  25deg, rupee2(6)   37%, transparent 37%),
+                        linear-gradient( -25deg, transparent 37%, rupee2(6)   37%),
+                        linear-gradient( -25deg, rupee2(15)  37%, transparent 37%),
+                        linear-gradient(  25deg, transparent 37%, rupee2(15)  37%),
+                        linear-gradient( 135deg, transparent 42%, rupee2(12)  42%,
+                                                 rupee2(12)  70%, transparent 70%),
+                        linear-gradient(-135deg, transparent 42%, rupee2(39)  42%,
+                                                 rupee2(39)  70%, transparent 70%),
+                        linear-gradient(  45deg, transparent 42%, rupee2(12)  42%,
+                                                 rupee2(12)  70%, transparent 70%),
+                        linear-gradient( -45deg, transparent 42%, rupee2(23)  42%,
+                                                 rupee2(23)  70%, transparent 70%),
+                        linear-gradient( -45deg, transparent 35%, white(.5)   35%,
+                                                 white(.5)   40%, transparent 40%,
+                                                 transparent 44%, white(.5)   44%,
+                                                 white(.5)   55%, transparent 55%),
+                        linear-gradient(  90deg, rupee2(34), rupee2(34))
+      background-size: 30% 50%,
+                       30% 40%,
+                       30% 50%,
+                       30% 40%,
+                       50% 50%,
+                       50% 50%,
+                       50% 50%,
+                       50% 50%,
+                       40% 50%,
+                       40% 50%
+      background-position:   0    3%,
+                             0   67.5%,
+                           100%   3%,
+                           100%  67.5%,
+                             0    0,
+                           100%   0,
+                             0  100%,
+                           100% 100%,
+                            50%  50%,
+                            50%  50%
+
+    &:after
+      width: 100px
+      height: 220px
+      margin-left: 120px
+      background-repeat: no-repeat
+      background-image: linear-gradient(  25deg, rupee3(6)   37%, transparent 37%),
+                        linear-gradient( -25deg, transparent 37%, rupee3(6)   37%),
+                        linear-gradient( -25deg, rupee3(15)  37%, transparent 37%),
+                        linear-gradient(  25deg, transparent 37%, rupee3(15)  37%),
+                        linear-gradient( 135deg, transparent 42%, rupee3(12)  42%,
+                                                 rupee3(12)  70%, transparent 70%),
+                        linear-gradient(-135deg, transparent 42%, rupee3(39)  42%,
+                                                 rupee3(39)  70%, transparent 70%),
+                        linear-gradient(  45deg, transparent 42%, rupee3(12)  42%,
+                                                 rupee3(12)  70%, transparent 70%),
+                        linear-gradient( -45deg, transparent 42%, rupee3(23)  42%,
+                                                 rupee3(23)  70%, transparent 70%),
+                        linear-gradient( -45deg, transparent 35%, white(.5)   35%,
+                                                 white(.5)   40%, transparent 40%,
+                                                 transparent 44%, white(.5)   44%,
+                                                 white(.5)   55%, transparent 55%),
+                        linear-gradient(  90deg, rupee3(34), rupee3(34))
+      background-size: 30% 50%,
+                       30% 40%,
+                       30% 50%,
+                       30% 40%,
+                       50% 50%,
+                       50% 50%,
+                       50% 50%,
+                       50% 50%,
+                       40% 50%,
+                       40% 50%
+      background-position:   0    3%,
+                             0   67.5%,
+                           100%   3%,
+                           100%  67.5%,
+                             0    0,
+                           100%   0,
+                             0  100%,
+                           100% 100%,
+                            50%  50%,
+                            50%  50%
+      
