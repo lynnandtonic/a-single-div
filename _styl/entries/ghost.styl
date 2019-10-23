@@ -1,0 +1,136 @@
+/*-----------------------------
+
+Ghost
+
+-----------------------------*/
+
+#ghost
+  background-color: darkorange
+
+  div
+    width: 150px
+    height: 220px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 20)
+    background-repeat: no-repeat
+    background-color: white
+    background-image: radial-gradient(ellipse, black 50%, transparent 50%),
+                      radial-gradient(ellipse, black 50%, transparent 50%),
+                      linear-gradient(-83deg, black(.12) 80%, transparent 80%),
+                      linear-gradient( 83deg, black(.12) 80%, transparent 80%),
+                      linear-gradient(-83deg, black(.12) 80%, transparent 80%),
+                      linear-gradient( 83deg, black(.12) 80%, transparent 80%)
+    background-size: 20px 40px,
+                     20px 40px,
+                     4px 55px,
+                     4px 40px,
+                     3px 20px,
+                     3px 30px
+    background-position: 40% 20%,
+                         60% 20%,
+                         27px 100%,
+                         74px 100%,
+                         90px 100%,
+                         121px 100%
+    border-top-right-radius: 80px 200px
+    border-top-left-radius: 80px 200px
+    border-bottom-right-radius: 60px 15px
+    border-bottom-left-radius: 60px 15px
+    box-shadow: inset  8px 0 0 black(.12),
+                inset -8px 0 0 black(.12)
+
+    &:before
+      width: 100%
+      height: 100%
+      bottom: -80px
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(ellipse, white 50%, transparent 50%),
+                        radial-gradient(circle at center top, black(.3) 80%, transparent 80%),
+                        linear-gradient(to right, black, black),
+                        repeating-linear-gradient(to bottom, black,
+                                                             black 5px,
+                                                             orangered 5px,
+                                                             orangered 10px),
+                        radial-gradient(ellipse, transparent 20%, black 20%,
+                                                 black 34%, transparent 34%),
+                        radial-gradient(ellipse, transparent 20%, black 20%,
+                                                 black 34%, transparent 34%),
+                        radial-gradient(ellipse, transparent 20%, black 20%,
+                                                 black 34%, transparent 34%),
+                        radial-gradient(ellipse, transparent 20%, black 20%,
+                                                 black 34%, transparent 34%),
+                        radial-gradient(ellipse, black(.2) 50%, transparent 50%),
+                        radial-gradient(ellipse, black(.15) 70%, transparent 70%)
+      background-size: 60px 30px,
+                       40px 20px,
+                       40px 20px,
+                       2px 60px,
+                       40px 60px,
+                       16px 32px,
+                       16px 32px,
+                       16px 32px,
+                       32px 16px,
+                       90% 24px,
+                       100% 24px
+      background-position: left  23px bottom 67px,
+                           right 23px bottom 72px,
+                           center bottom 60px,
+                           center bottom 20px,
+                           center bottom 20px,
+                           left 27% bottom 24px,
+                           left 24% bottom 22px,
+                           right 28% bottom 24px,
+                           right 23% bottom 30px,
+                           center bottom 3px,
+                           center bottom
+
+    &:after
+      width: 80%
+      height: 25px
+      left: 50%
+      bottom: -65px
+      margin-left: -(@width/2)
+      background-color: black
+      background-repeat: no-repeat
+      background-image: linear-gradient(to top, black, black),
+                        linear-gradient(to top, white, white),
+                        linear-gradient(to top, white, white),
+                        radial-gradient(circle, white 50%, transparent 50%),
+                        radial-gradient(circle, white 50%, transparent 50%),
+                        radial-gradient(circle, transparent 15%, gray 15%,
+                                                gray 30%, transparent 30%),
+                        radial-gradient(circle, transparent 15%, gray 15%,
+                                                gray 30%, transparent 30%),
+                        radial-gradient(circle, transparent 15%, gray 15%,
+                                                gray 30%, transparent 30%),
+                        radial-gradient(circle, transparent 15%, gray 15%,
+                                                gray 30%, transparent 30%),
+                        radial-gradient(circle at left bottom, white 50%, transparent 50%),
+                        radial-gradient(circle at right bottom, white 50%, transparent 50%)
+      background-size: 70% 2px,
+                       49% 5px,
+                       49% 5px,
+                       12px 12px,
+                       12px 12px,
+                       10px 10px,
+                       10px 10px,
+                       10px 10px,
+                       10px 10px,
+                       20px 20px,
+                       20px 20px
+      background-position: center bottom 2px,
+                           left bottom,
+                           right bottom,
+                           left 40% bottom 10px,
+                           right 40% bottom 10px,
+                           left 23% bottom 5px,
+                           left 29% bottom 5px,
+                           right 23% bottom 5px,
+                           right 29% bottom 5px,
+                           left bottom 7px,
+                           right bottom 7px
+      border-top-left-radius: 50px 20px
+      border-top-right-radius: 50px 20px
+      border-bottom-right-radius: 5px
+      border-bottom-left-radius: 5px
