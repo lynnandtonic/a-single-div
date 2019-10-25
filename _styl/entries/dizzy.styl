@@ -1,0 +1,104 @@
+/*-----------------------------
+
+Dizzy
+
+-----------------------------*/
+
+$tc-pink = darken(lightpink,5)
+$tc-pink-md = #f5798a
+$tc-pink-drk = darken(pink,20)
+
+$tc-red = #c96269
+tc-red(alpha)
+  rgba(119,0,0,alpha)
+
+#dizzy
+  background-color: honeydew
+
+  div
+    box-sizing: border-box
+    width: 270px
+    height: 120px
+    margin-left: -(@width/2)
+    margin-top: -15px
+    background-color: white
+    background-repeat: no-repeat
+    background-image: linear-gradient(-20deg, tc-red(0) 30%, tc-red(.3) 50%, tc-red(0) 70%),
+                      radial-gradient(ellipse, tc-red(.9) 20%, tc-red(0) 70%)
+    background-size: 40% 50%,
+                     80% 60%
+    background-position: right 10px top 30%,
+                         center top 60%
+    border-radius: 50%
+    box-shadow: inset 0 -1px 0 7px $tc-pink,
+                0 6px 0 #c04359,
+                0 6px 0 $tc-pink-drk,
+                0 39px 8px -25px black(.6)
+    border: 8px solid $tc-pink-drk
+    border-top-width: 6px
+    
+    &:before
+      width: 180px
+      height: 160px
+      left: 50%
+      margin-left: -(@width/2)
+      margin-top: -90px
+      background-color: $tc-pink
+      background-repeat: no-repeat
+      background-image: linear-gradient(to bottom, lighten(pink,4) 6px, white 6px,
+                                                   white 14px, $tc-pink 14px),
+                        linear-gradient(to bottom, $tc-red, darken($tc-red,20)),
+                        radial-gradient(ellipse, transparent 48%, darken(pink,15) 48%,
+                                                 darken(pink,15) 60%, transparent 60%),
+                        radial-gradient(circle at top center, darken($tc-red,20) 60%, tc-red(0) 60%),
+                        radial-gradient(ellipse at top center, transparent 64%, white 64%,
+                                                               white 72%, transparent 72%),
+                        radial-gradient(ellipse at top center, transparent 60%, $tc-pink-drk 60%,
+                                                               $tc-pink-drk 72%, $tc-pink 72%),
+                        linear-gradient(120deg, tc-red(.7), tc-red(0) 40%),
+                        linear-gradient(-120deg, tc-red(.7), tc-red(0) 40%),
+                        radial-gradient(ellipse at bottom center, transparent 52%, $tc-pink-drk 52%),
+                        radial-gradient(ellipse at bottom center, tc-red(.4) 15%, tc-red(0) 50%),
+                        radial-gradient(ellipse at bottom center, white(.4) 40%, white(0) 60%)
+      background-size: 42px 37px,
+                       46px 58px,
+                       125% 35%,
+                       46px 40px,
+                       165% 45%,
+                       155% 40%,
+                       100% 35%,
+                       100% 35%,
+                       125% 25%,
+                       150% 32%,
+                       100% 30%
+      background-position: center top 62px,
+                           center top 42px,
+                           center top -4%,
+                           center top 100px,
+                           center top 3%,
+                           center top -7%,
+                           center top,
+                           center top,
+                           center top,
+                           center top,
+                           center bottom
+      border-top-left-radius:  90px 30px
+      border-top-right-radius: 90px 30px
+      border-bottom-left-radius:  90px 120px
+      border-bottom-right-radius: 90px 120px
+      box-shadow: inset 0 -10px 5px tc-red(.2)
+      z-index: 2
+
+    &:after
+      box-sizing: border-box
+      width: 60px
+      height: 90px
+      right: 3%
+      top: -49%
+      border-radius: 50px 50px 0 0
+      border: 11px solid $tc-pink-drk
+      border-bottom: none
+      box-shadow: inset -5px -2px 0 darken(pink,11),
+                  -3px 2px 0 3px darken(pink,11)
+      transform: rotate(65deg)
+      z-index: 1
