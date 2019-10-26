@@ -1,0 +1,146 @@
+/*-----------------------------
+
+Tasty
+
+-----------------------------*/
+
+$tasty-brown = #5b433c
+
+#tasty
+  background-color: #eee
+
+  div
+    box-sizing: border-box
+    width: 350px
+    height: 10px
+    padding-left: 25px
+    padding-right: 250px
+    margin-left: -(@width/2)
+    background-color: $tasty-brown
+    // Checkerboard pattern from Lea Verou https://leaverou.github.io/css3patterns/#checkerboard
+    background-image: linear-gradient(45deg, steelblue 25%, transparent 25%,
+                                             transparent 75%, steelblue 75%, lighten(steelblue,40)),
+                      linear-gradient(45deg, steelblue 25%, transparent 25%,
+                                             transparent 75%, steelblue 75%, lighten(steelblue,40)),
+                      linear-gradient(to right, white, white),
+                      linear-gradient(to right, $tasty-brown, $tasty-brown)
+    background-size: 10px 10px
+    background-position: 3px 3px,
+                         8px 8px
+    background-clip: content-box,
+                     content-box,
+                     content-box,
+                     border-box
+    border-top-right-radius: 250px 4px
+    border-bottom-right-radius: 250px 4px
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+    box-shadow: inset 1px  2px 1px white(.5),
+                inset 0 -3px 1px black(.4)
+    transform: rotate(20deg)
+
+    @media (min-width: 600px)
+      transform: scale(1.3) rotate(20deg)
+
+    @media (max-width: 400px)
+      transform: scale(.8) rotate(20deg)
+
+    &:before
+      width: 60px
+      height: 70px
+      left: auto
+      right: 20px
+      top: -45px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, #35562d 30%, darken(#35562d,15) 100%),
+                        linear-gradient(to right, darken(#35562d,5),
+                                                  #35562d 20%,
+                                                  darken(#35562d,30) 70%),
+                        radial-gradient(circle, white(.6) 50%, transparent 50%),
+                        radial-gradient(circle, white(.5) 50%, transparent 50%),
+                        radial-gradient(circle, white(.5) 50%, transparent 50%),
+                        radial-gradient(circle, white(.5) 50%, transparent 50%),
+                        radial-gradient(circle, white(.5) 50%, transparent 50%),
+                        radial-gradient(circle, tomato 50%, transparent 50%),
+                        radial-gradient(circle, coral  50%, transparent 50%),
+                        radial-gradient(circle, coral  50%, transparent 50%),
+                        radial-gradient(circle, tomato 50%, transparent 50%),
+                        radial-gradient(circle, coral  50%, transparent 50%),
+                        radial-gradient(circle, tomato 50%, transparent 50%),
+                        radial-gradient(circle, coral  50%, transparent 50%),
+                        radial-gradient(circle, coral  50%, transparent 50%),
+                        radial-gradient(circle, tomato 50%, transparent 50%),
+                        radial-gradient(circle, coral  50%, transparent 50%),
+                        radial-gradient(circle, tomato 50%, transparent 50%),
+                        radial-gradient(circle, tomato 50%, transparent 50%)
+      background-size: 60% 63%,
+                       100% 60%,
+                       5% 5%,
+                       5% 5%,
+                       5% 5%,
+                       5% 5%,
+                       5% 5%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%,
+                       20% 20%
+      background-position: right bottom,
+                           left bottom,
+                           left 9% bottom 67%,
+                           left 30% bottom 65%,
+                           left 35.5% bottom 76%,
+                           left 67% bottom 67%,
+                           left 85% bottom 75%,
+                           left 15% bottom 64%,
+                           left  0  bottom 66%,
+                           left 33% bottom 66%,
+                           left 50% bottom 67%,
+                           left 68% bottom 66%,
+                           left 85% bottom 67%,
+                           left 99% bottom 66%,
+                           left 18% bottom 74%,
+                           left 35% bottom 76%,
+                           left 55% bottom 75%,
+                           left 72% bottom 74%,
+                           left 90% bottom 75%
+      border-bottom-left-radius: 40px 6px
+      border-bottom-right-radius: 40px 6px
+      transform: rotate(-18deg)
+
+    &:after
+      box-sizing: border-box
+      width: 350px
+      height: 10px
+      left: 1px
+      top: 20px
+      padding-left: 25px
+      padding-right: 250px
+      background-color: $tasty-brown
+      background-image: linear-gradient(45deg, steelblue 25%, transparent 25%,
+                                               transparent 75%, steelblue 75%, lighten(steelblue,40)),
+                        linear-gradient(45deg, steelblue 25%, transparent 25%,
+                                               transparent 75%, steelblue 75%, lighten(steelblue,40)),
+                        linear-gradient(to right, white, white),
+                        linear-gradient(to right, $tasty-brown, $tasty-brown)
+      background-size: 10px 10px
+      background-position: 1px 1px,
+                           6px 6px
+      background-clip: content-box,
+                       content-box,
+                       content-box,
+                       border-box
+      border-top-right-radius: 250px 4px
+      border-bottom-right-radius: 250px 4px
+      border-top-left-radius: 3px
+      border-bottom-left-radius: 3px
+      box-shadow: inset 1px  2px 1px white(.5),
+                  inset 0 -3px 1px black(.4)
+      transform: rotate(-5deg)
