@@ -4,8 +4,6 @@ Dark
 
 -----------------------------*/
 
-dark-space(start,end)
-  linear-gradient(to right, transparent start, #111 start, #111 end, transparent end)
 dark-height(height)
   linear-gradient(to bottom, #111 height, transparent height)
 
@@ -22,41 +20,27 @@ dark-book-color(color,shade,start,end)
                     dark-height(30%),
 
                     linear-gradient(to right, #222, #2e2e2e 5%, transparent 5%), // book 1
-                    dark-space( 5%, 6%), 
                     dark-book-grey(  6%, 9%), // book 2
-                    dark-space( 9%,10%),
                     dark-book-grey( 27%,34%), // book 6
-                    dark-space(34%,35%),
                     dark-book-grey( 51%,57%), // book 11
-                    dark-space(57%,58%),
 
                     dark-height(35%),
                     dark-book-grey( 42%,44%), // book 8
-                    dark-space(44%,45%),
                     dark-book-grey( 45%,47%), // book 9
-                    dark-space(47%,48%),
                     dark-book-grey( 48%,50%), // book 10
-                    dark-space(50%,51%),
                     dark-book-grey( 87%,91%), // book 13
-                    dark-space(91%,92%),
 
                     dark-height(37.5%),
                     dark-book-grey( 14%,20%), // book 4
-                    dark-space(20%,21%),
 
                     dark-height(40%),
                     dark-book-grey( 10%,13%), // book 3
-                    dark-space(13%,14%),
                     dark-book-color(#222,3,21%,25%), // book 5
-                    dark-space(25%,27%),
                     dark-book-grey( 58%,64%), // book 12
-                    dark-space(64%,66%),
                     dark-book-grey( 92%,95%), // book 14
-                    dark-space(95%,96%),
 
                     dark-height(48%),
                     dark-book-color(#222,3,96%,99%), // book 15
-                    dark-space(99%,100%),
                     linear-gradient(to bottom, transparent 68.5%,
                                                transparent 76%,
                                                #111 76%,
@@ -67,7 +51,6 @@ dark-book-color(color,shade,start,end)
                                                #111 87.5%,
                                                transparent 87.5%),
                     dark-book-grey( 35%,41%), // book 7
-                    dark-space(41%,42%),
 
                     dark-height(68%),
                     linear-gradient(to right, transparent 78%,
@@ -78,8 +61,7 @@ dark-book-color(color,shade,start,end)
                                               #333 82%,
                                               #333 83%,
                                               transparent 83%),
-                    dark-book-grey( 66%,85%), // box
-                    dark-space(85%,87%)
+                    dark-book-grey( 66%,85%) // box
   background-size: 300px 150px
   background-position: center bottom
 
@@ -91,46 +73,33 @@ dark-book-color(color,shade,start,end)
     position: absolute
     left: 0
     top: 0
+    background-color: #111
     background-image: linear-gradient(to top, tan 5%, #111 6%,
                                               #111 7%, transparent 7%),
                       dark-height(30%),
 
                       linear-gradient(to right, firebrick, darken(firebrick,10) 5%, transparent 5%), // book 1
-                      dark-space( 5%, 6%), 
                       dark-book-color(tomato,10,6%, 9%), // book 2
-                      dark-space( 9%,10%),
                       dark-book-color(darkolivegreen,10,27%,34%), // book 6
-                      dark-space(34%,35%),
                       dark-book-color(salmon,10,51%,57%), // book 11
-                      dark-space(57%,58%),
 
                       dark-height(35%),
                       dark-book-color(teal,10,42%,44%), // book 8
-                      dark-space(44%,45%),
                       dark-book-color(teal,10,45%,47%), // book 9
-                      dark-space(47%,48%),
                       dark-book-color(teal,10,48%,50%), // book 10
-                      dark-space(50%,51%),
                       dark-book-color(lightslategrey,17,87%,91%), // book 13
-                      dark-space(91%,92%),
 
                       dark-height(37.5%),
                       dark-book-color(darkkhaki,15,14%,20%), // book 4
-                      dark-space(20%,21%),
 
                       dark-height(40%),
                       dark-book-color(olive,10,10%,13%), // book 3
-                      dark-space(13%,14%),
                       dark-book-color(saddlebrown,10,21%,25%), // book 5
-                      dark-space(25%,27%),
                       dark-book-color(saddlebrown,10,58%,64%), // book 12
-                      dark-space(64%,66%),
                       dark-book-color(darkslategrey,10,92%,95%), // book 14
-                      dark-space(95%,96%),
 
                       dark-height(48%),
                       dark-book-color(darkslategrey,10,96%,99%), // book 15
-                      dark-space(99%,100%),
                       linear-gradient(to bottom, transparent 68.5%,
                                                  transparent 76%,
                                                  #111 76%,
@@ -141,7 +110,6 @@ dark-book-color(color,shade,start,end)
                                                  #111 87.5%,
                                                  transparent 87.5%),
                       dark-book-color(indianred,10,35%,41%), // book 7
-                      dark-space(41%,42%),
 
                       dark-height(68%),
                       linear-gradient(to right, transparent 78%,
@@ -152,8 +120,7 @@ dark-book-color(color,shade,start,end)
                                                 rosybrown 82%,
                                                 rosybrown 83%,
                                                 transparent 83%),
-                      dark-book-color(brown,10,66%,85%), // box
-                      dark-space(85%,87%)
+                      dark-book-color(brown,10,66%,85%) // box
     background-size: 300px 150px
     background-position: center bottom
     clip-path: circle(150px at center center)
