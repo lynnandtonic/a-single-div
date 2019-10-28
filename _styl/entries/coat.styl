@@ -1,0 +1,127 @@
+/*-----------------------------
+
+Coat
+
+-----------------------------*/
+
+#coat
+  background: lightsteelblue
+
+  // left side of puffy coat
+  div
+    width: 75px
+    height: 30px
+    margin-left: -@width
+    margin-top: -50px
+    background-color: firebrick
+    border-radius: 30px 0 0 30px
+    box-shadow:  -2px  30px 0 2px firebrick,
+                 -4px  64px 0 4px firebrick,
+                 -4px 100px 0 4px firebrick,
+                 -4px 135px 0 4px firebrick,
+                 -4px 157px 0 -10px #8f1b1d,
+                  7px 157px 0 -10px #8f1b1d,
+                -20px  20px 0 2px lighten(firebrick,10),
+                -28px  50px 0 2px lighten(firebrick,10),
+                -28px  80px 0 2px lighten(firebrick,10),
+                -28px 110px 0 2px lighten(firebrick,10),
+                -30px 130px 0 -10px #8f1b1d,
+                -15px 140px 0 forestgreen
+
+    @media (max-width: 400px)
+      margin-top: -2px
+
+    // right side of puffy coat
+    &:before
+      width: 72px
+      height: 30px
+      left: 72px
+      background-color: #8f1b1d
+      border-radius: 0 30px 30px 0
+      box-shadow: 2px  30px 0 2px #8f1b1d,
+                  4px  64px 0 4px #8f1b1d,
+                  4px 100px 0 4px #8f1b1d,
+                  4px 135px 0 4px #8f1b1d,
+                  4px 157px 0 -10px darken(#8f1b1d,15),
+                 -10px 157px 0 -10px darken(#8f1b1d,15),
+                 20px  20px 0 2px darken(#8f1b1d,8),
+                 28px  50px 0 2px darken(#8f1b1d,8),
+                 28px  80px 0 2px darken(#8f1b1d,8),
+                 28px 110px 0 2px darken(#8f1b1d,8),
+                 30px 130px 0 -10px darken(#8f1b1d,15),
+                 15px 140px 0 darken(forestgreen,8)
+
+    // head, scarf, boots
+    &:after
+      width: 300px
+      height: 353px
+      left: -78px
+      top: -103px
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, darken(firebrick,7) 50%, transparent 50%), // hat
+                        repeating-linear-gradient(to right, white(.2),
+                                                            white(.2) 2px,
+                                                            transparent 2px,
+                                                            transparent 4px),
+                        linear-gradient(to right, crimson 50%, darken(crimson,10) 50%),
+                        radial-gradient(circle at bottom left, black(.2) 50px, transparent 50px),
+                        radial-gradient(circle at bottom center, firebrick 50px, transparent 50px),
+                        linear-gradient(to left, black(.2) 50%, transparent 50%), // scarf
+                        repeating-linear-gradient( 35deg, maroon, maroon 5px,
+                                                          forestgreen 5px, forestgreen 10px),
+                        repeating-linear-gradient(-35deg, maroon, maroon 5px,
+                                                          forestgreen 5px, forestgreen 10px),
+                        repeating-linear-gradient(to right, white(.5),
+                                                            white(.5) 2px,
+                                                            transparent 2px,
+                                                            transparent 4px),
+
+                        linear-gradient(to right, black(.2), black(.2)), // zipper
+                        radial-gradient(circle, #111 50%, transparent 50%), // head
+                        radial-gradient(circle, #111 50%, transparent 50%),
+                        radial-gradient(circle at center left, black(.2) 47px, transparent 47px),
+                        radial-gradient(circle, peru 47px, transparent 47px),
+                        linear-gradient(to right, #333 50%, #222 50%), // boots
+                        radial-gradient(circle at bottom right, #444 40%, transparent 40%),
+                        radial-gradient(circle at bottom left,  #333 40%, transparent 40%),
+                        linear-gradient(to right, #444 50%, #333 50%),
+                        radial-gradient(ellipse, white 70%, transparent 70%) // snow
+      background-size: 15px 15px, // hat
+                       104px 14px,
+                       104px 14px,
+                       100px 100px,
+                       100px 100px,
+                       94px 30px, // scarf
+                       94px 30px,
+                       30px 60px,
+                       30px 10px,
+                       6px 180px, // zipper
+                       10px 10px, // head
+                       10px 10px,
+                       100px 130px,
+                       130px 130px,
+                       130px 5px, // boots
+                       50px 50px,
+                       50px 50px,
+                       80px 32px,
+                       310px 150px // snow
+      background-position: 50% 0, // hat
+                           50% 50px,
+                           50% 50px,
+                           calc(50% + 50px) -42px,
+                           50% -42px,
+                           50% 83px, // zipper
+                           50% 83px,
+                           41% 100px,
+                           41% 160px,
+                           50% 100px, // head
+                           calc(50% - 15px) 69px,
+                           calc(50% + 15px) 69px,
+                           calc(50% + 50px) 0,
+                           50% 0,
+                           center bottom 36px, // boots
+                           left  26% bottom 36px,
+                           right 26% bottom 36px,
+                           center bottom 41px,
+                           center bottom -96px // snow
+
