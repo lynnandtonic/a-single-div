@@ -1,0 +1,77 @@
+/*-----------------------------
+
+Injured
+
+-----------------------------*/
+
+#injured
+  background-color: #CD5C5C
+
+  div
+    width: 200px
+    height: 140px
+    margin-left: -(@width/2)
+    margin-top: -65px
+    background-color: white
+    background-repeat: no-repeat
+    background-image: linear-gradient(to bottom, crimson, crimson),
+                      linear-gradient(to right,  crimson, crimson),
+                      linear-gradient(to bottom, crimson 20px,
+                                                 transparent 20px, transparent 24px,
+                                                 crimson     24px, crimson     32px,
+                                                 transparent 32px, transparent 36px,
+                                                 crimson 36px),
+                      linear-gradient(to right, silver, silver),
+                      linear-gradient(to bottom, crimson 20px,
+                                                 transparent 20px, transparent 24px,
+                                                 crimson     24px, crimson     32px,
+                                                 transparent 32px, transparent 36px,
+                                                 crimson 36px),
+                      linear-gradient(to right, silver, silver)
+    background-size: 50px 14px,
+                     14px 50px,
+                     16px 100%,
+                     24px 16px,
+                     16px 100%,
+                     24px 16px
+    background-position: center center,
+                         center center,
+                         left  24px top 0,
+                         left  20px top 20px,
+                         right 24px top 0,
+                         right 20px top 20px
+    border-radius: 10px
+    box-shadow: 0 7px 0 black(.1)
+
+    &:before
+      box-sizing: border-box
+      width: 80px
+      height: 30px
+      left: 50%
+      top: -20px
+      margin-left: -(@width/2)
+      border-radius: 12px 12px 0 0
+      box-shadow: inset 0 0 0 6px white
+
+    &:after
+      width: 24px
+      height: 70px
+      right: 30px
+      top: 40%
+      background-color: peru
+      background-image: radial-gradient(black(.15) 25%, transparent 25%),
+                        radial-gradient(black(.15) 25%, transparent 25%),
+                        linear-gradient(to bottom, transparent 35%,
+                                                   white(.3) 35%, white(.3) 40%,
+                                                   white(.1) 40%, white(.1) 60%,
+                                                   black(.2) 60%, black(.2) 65%,
+                                                   transparent 65%)
+      background-size: 6px 6px,
+                       6px 6px,
+                       100% 100%
+      background-position: 0 0,
+                           3px 3px,
+                           0 0
+      border-radius: 20px
+      box-shadow: 3px 2px 0 black(.3)
+      transform: rotate(35deg)
