@@ -1,0 +1,96 @@
+/*-----------------------------
+
+Ripe
+
+-----------------------------*/
+
+#ripe
+  background-color: #222
+  overflow: hidden
+
+  div
+    width: 200px
+    height: 220px
+    margin-left: (@width/2)
+    margin-top: -(@height/2)
+    border-radius: 50%
+    box-shadow:  -35px 3px 0 -8px black(.1),
+                 -60px 0 0 lightgreen,
+                 -85px 3px 0 -5px black(.1),
+                -110px 0 0 greenyellow,
+                -135px 3px 0 -5px black(.1),
+                -160px 0 0 yellow,
+                -185px 3px 0 -5px black(.1),
+                -210px 0 0  gold,
+                -235px 3px 0 -5px black(.1),
+                -258px 0 0 goldenrod
+    @media (max-width: 400px)
+      margin-left: 30px
+      transform: scale(.66)
+
+    &:before
+      width: 15px
+      height: 35px
+      left: -158px
+      top: -15px
+      background-color: goldenrod
+      border-radius: 5px 5px 20px 10px
+      box-shadow: 20px -48px 0 gold,
+                  40px -90px 0 yellow,
+                  60px -136px 0 greenyellow,
+                  85px -186px 0 lightgreen
+      transform: rotate(66deg)
+
+    &:after
+      width: 340px
+      height: 105%
+      left: -260px
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse, sienna 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%),
+                        radial-gradient(circle, black(.2) 40%, transparent 40%)
+      background-size: 30px 16px,
+                       10px 10px,
+                       8px 8px,
+                       8px 8px,
+                       8px 8px,
+                       9px 9px,
+                       12px 12px,
+                       8px 8px,
+                       8px 8px,
+                       8px 8px,
+                       10px 10px,
+                       8px 8px,
+                       9px 9px,
+                       8px 8px,
+                       10px 10px,
+                       8px 8px
+      background-position: right 4px bottom 9px,
+                           60px 10px,
+                           50px 20px,
+                           44px 40px,
+                           51px 52px,
+                           30px 60px,
+                           13px 70px,
+                           10px 80px,
+                           20px 100px,
+                           40px 130px,
+                           20px 135px,
+                           15px 150px,
+                           30px 165px,
+                           50px 170px,
+                           55px 195px,
+                           83px 210px
