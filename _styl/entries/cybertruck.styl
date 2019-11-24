@@ -1,0 +1,351 @@
+/*-----------------------------
+
+Cybertruck
+
+-----------------------------*/
+
+$elon = #1d232a
+$ct-frame = #ddd
+
+#cybertruck
+  background-color: black
+  background-image: linear-gradient(to top, darken($elon,60%) 32%, black 32%)
+
+  div
+    width: 650px
+    height: 210px
+    margin-left: -(@width/2 - 60px)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient( 161deg, transparent 11%, $elon 11.5%), // front
+                      linear-gradient( 161deg, transparent 50%, #555 50%),
+                      linear-gradient(to right, $elon, $elon),
+  
+                      radial-gradient(circle at center, yellow 8%,
+                                                        red 30%,
+                                                        transparent 80%), // light
+                      linear-gradient(to right, transparent,
+                                                rgba(255,0,0,.6) 30%, rgba(255,0,0,.6) 70%,
+                                                transparent),
+                      linear-gradient(to bottom, transparent,
+                                                rgba(255,0,0,.6) 30%, rgba(255,0,0,.6) 70%,
+                                                transparent),
+  
+                      radial-gradient(circle at center bottom, transparent 45%, // front wheel
+                                                               white(.1) 45%,
+                                                               white(.1) 50%,
+                                                               transparent 50%),
+                      linear-gradient(to right, white(.1), white(.1)),
+                      linear-gradient(  40deg, transparent 40%,
+                                               white(.1) 41%, white(.1) 44%,
+                                               transparent 45%),
+                      linear-gradient( -40deg, transparent 40%,
+                                               white(.1) 41%, white(.1) 44%,
+                                               transparent 45%),
+                      linear-gradient( 320deg, transparent 40%,
+                                               black(.7) 41%, black(.7) 44%,
+                                               transparent 45%),
+                      linear-gradient(-320deg, transparent 40%,
+                                               black(.7) 41%, black(.7) 44%,
+                                               transparent 45%),
+                      radial-gradient(circle, darken($elon,50%) 50%, transparent 50%),
+                      radial-gradient(circle at center top, white(.1) 50%, transparent 50%),
+                      radial-gradient(circle at center top, black(.4) 50%, transparent 50%),
+                      radial-gradient(circle at center bottom, white(.1) 50%, transparent 50%),
+                      radial-gradient(circle, black(.3) 50%, transparent 50%),
+                      radial-gradient(circle, $elon 50%, transparent 50%),
+  
+                      linear-gradient(  70deg, transparent 10%,              // front wheel well
+                                               lighten($elon, 25%) 11%),
+                      linear-gradient( -60deg, transparent 10%,
+                                               lighten($elon, 25%) 11%),
+                      linear-gradient( 127deg, transparent 40%,
+                                               black(.2) 50%,
+                                               lighten($elon, 12%) 51%,
+                                               lighten($elon, 12%) 62%,
+                                               black 63%),
+                      linear-gradient(-125deg, transparent 35%,
+                                               black(.2) 45%,
+                                               lighten($elon, 12%) 46%,
+                                               lighten($elon, 12%) 57%,
+                                               black 58%),
+                      linear-gradient(to right, black, black),
+  
+                      radial-gradient(circle at center bottom, transparent 45%, // back wheel
+                                                               white(.1) 45%,
+                                                               white(.1) 50%,
+                                                               transparent 50%),
+                      linear-gradient(to right, white(.1), white(.1)),
+                      linear-gradient(  40deg, transparent 40%,
+                                               white(.1) 41%, white(.1) 44%,
+                                               transparent 45%),
+                      linear-gradient( -40deg, transparent 40%,
+                                               white(.1) 41%, white(.1) 44%,
+                                               transparent 45%),
+                      linear-gradient( 320deg, transparent 40%,
+                                               black(.7) 41%, black(.7) 44%,
+                                               transparent 45%),
+                      linear-gradient(-320deg, transparent 40%,
+                                               black(.7) 41%, black(.7) 44%,
+                                               transparent 45%),
+                      radial-gradient(circle, darken($elon,50%) 50%, transparent 50%),
+                      radial-gradient(circle at center top, white(.1) 50%, transparent 50%),
+                      radial-gradient(circle at center top, black(.4) 50%, transparent 50%),
+                      radial-gradient(circle at center bottom, white(.1) 50%, transparent 50%),
+                      radial-gradient(circle, black(.3) 50%, transparent 50%),
+                      radial-gradient(circle, $elon 50%, transparent 50%),
+  
+                      linear-gradient(  60deg, transparent 10%, // back wheel well
+                                               lighten($elon, 25%) 11%),
+                      linear-gradient( -60deg, transparent 10%,
+                                               lighten($elon, 25%) 11%),
+                      linear-gradient( 127deg, transparent 32%,
+                                               black(.2) 42%,
+                                               lighten($elon, 12%) 43%,
+                                               lighten($elon, 12%) 53%,
+                                               black 54%),
+                      linear-gradient(-125deg, transparent 22%,
+                                               black(.2) 32%,
+                                               $elon 33%,
+                                               $elon 43%,
+                                               black 44%),
+                      linear-gradient(to right, black, black),
+  
+                      linear-gradient(  89deg, transparent 50%, black 51%, // body
+                                               black 53%, transparent 54%),
+                      linear-gradient( 170deg, transparent 50%, black 50%),
+                      linear-gradient( 100deg, transparent 50%, black 51%,
+                                               black 52%, transparent 53%),
+                      linear-gradient(  90deg, transparent 50%, black 51%,
+                                               black 52%, transparent 53%),
+                      linear-gradient(to right, white(.05), white(0)),
+                      linear-gradient(  98deg, transparent 55%, black 56%),
+                      linear-gradient( 176deg, transparent 32%, $elon 33%),
+                      linear-gradient( 179deg, $elon 85%, black 86%),
+                      linear-gradient( 179deg, transparent 40%,
+                                               $elon 45%,
+                                               $elon 50%,
+                                               transparent 55%),
+  
+                      linear-gradient( 105deg, transparent 50%, $elon 51%,  // lower window
+                                               $elon 53%, transparent 54%),
+                      linear-gradient( 100deg, transparent 50%, $elon 51%,
+                                               $elon 53%, transparent 54%),
+                      linear-gradient(  81deg, transparent 50%, $elon 51%,
+                                               $elon 53%, transparent 54%),
+  
+                      linear-gradient(  81deg, transparent 38%, black 40%, // window frame
+                                               black 49%, $ct-frame 51%),
+                      linear-gradient(to right, black(.3), transparent),
+                      linear-gradient(to left,  black(.3), transparent),
+                      linear-gradient( 161deg,  black 50%, $ct-frame 51%,
+                                                $ct-frame 55%, transparent 56%),
+                      linear-gradient(-174deg,  black 33%, $ct-frame 34%,
+                                                $ct-frame 40%, transparent 41%),
+  
+                      linear-gradient(to right, $ct-frame, $ct-frame), // window frame
+                      linear-gradient( 176deg, transparent 34%,
+                                               black 35%, black 45%,
+                                               $ct-frame 46%, $ct-frame 60%,
+                                               transparent 60%),
+                      linear-gradient( 161deg, black 56%, transparent 57%),
+                      linear-gradient(-174deg, black 41%, transparent 42%),
+  
+                      linear-gradient( 105deg, transparent 30%,  // window
+                                               white(.05) 31%, white(.05) 40%,
+                                               black(.6) 41%, black(.6) 45%,
+                                               white(.1) 46%, white(.1) 55%,
+                                               transparent 56%),
+                      linear-gradient( 103deg, transparent 30%,
+                                               white(.1) 31%, white(.1) 34%,
+                                               black(.3) 35%, black(.3) 38%,
+                                               transparent 39%),
+                      linear-gradient(  93deg, transparent 29%,
+                                               black(.2) 30%, black(.2) 33%,
+                                               white(.1) 34%, white(.1) 50%,
+                                               transparent 51%),
+                      linear-gradient(to right, black(.3) 20%, white(.3) 21%),
+                      linear-gradient(to top, white(.9) 50%, white(0) 65%),
+                      linear-gradient(to right, white(0), white(.3) 60%, white(.7))
+    background-size: 20px 45px, // front
+                     5px 5px,
+                     26px 10px,
+
+                     12px 12px,
+                     55px 1px,
+                     1px 55px,
+
+                     130px 65px, // front wheel
+                     10px 7px,
+                     16px 16px,
+                     16px 16px,
+                     16px 16px,
+                     16px 16px,
+                     20px 20px,
+                     24px 12px,
+                     34px 16px,
+                     34px 16px,
+                     90px 90px,
+                     130px 130px,
+
+                     40px 6px, // front wheel well
+                     40px 6px,
+                     35px 38px,
+                     40px 51px,
+                     78px 60px,
+
+                     130px 65px, // back wheel
+                     10px 7px,
+                     16px 16px,
+                     16px 16px,
+                     16px 16px,
+                     16px 16px,
+                     20px 20px,
+                     24px 12px,
+                     34px 16px,
+                     34px 16px,
+                     90px 90px,
+                     130px 130px,
+
+                     40px 9px, // back wheel well
+                     40px 9px,
+                     60px 58px,
+                     60px 55px,
+                     75px 60px,
+
+                     30px 80px, // body
+                     150px 30px,
+                     30px 80px,
+                     30px 95px,
+                     45px 45px,
+                     20px 120px,
+                     600px 87px,
+                     500px 50px,
+                     254px 20px,
+
+                     30px 30px, // lower window
+                     30px 30px,
+                     30px 30px,
+
+                     25px 22px, // window frame
+                     200px 100px,
+                     200px 100px,
+                     230px 80px,
+                     370px 80px,
+
+                     220px 60px, // window frame
+                     550px 50px,
+                     230px 80px,
+                     370px 80px,
+
+                     30px 80px, // window
+                     30px 80px,
+                     30px 80px,
+                     10px 80px,
+                     7px 80px,
+                     350px 60px
+    background-position: 5px 80px, // front
+                         0 125px,
+                         0 128px,
+
+                         right 25px top 35px,
+                         right top 40px,
+                         right 30px top 15px,
+
+                         25px 90px, // front wheel
+                         85px 123px,
+                         68px 130px,
+                         96px 130px,
+                         68px 160px,
+                         96px 160px,
+                         80px 145px,
+                         78px 156px,
+                         73px 156px,
+                         73px 140px,
+                         45px 110px,
+                         25px 90px,
+
+                         50px 89px, // front wheel well
+                         90px 89px,
+                         20px 89px,
+                         124px 89px,
+                         52px 89px,
+
+                         435px 90px, // back wheel
+                         495px 123px,
+                         478px 130px,
+                         506px 130px,
+                         478px 160px,
+                         506px 160px,
+                         490px 145px,
+                         488px 156px,
+                         483px 156px,
+                         483px 140px,
+                         455px 110px,
+                         435px 90px,
+
+                         460px 78px, // back wheel well
+                         500px 78px,
+                         416px 78px,
+                         512px 78px,
+                         465px 78px,
+
+                         150px 70px, // body
+                         500px 115px,
+                         250px 65px,
+                         380px 55px,
+                         25px 80px,
+                         right 25px top 15px,
+                         25px 39px,
+                         115px 90px,
+                         165px 145px,
+
+                         148px 60px, // lower window
+                         257px 52px,
+                         380px 42px,
+
+                         380px 23px, // window frame
+                         25px 0,
+                         right 25px top 0,
+                         25px 0,
+                         right 25px top 0,
+
+                         right 25px top 20px, // window frame
+                         50px 29px,
+                         25px 0,
+                         right 25px top 0,
+
+                         170px 30px, // window
+                         260px 10px,
+                         277px 10px,
+                         382px 10px,
+                         375px 0,
+                         50px 0
+
+    @media screen and (max-width: 1000px)
+      transform: scale(.6) translate(-30px,40px)
+    @media screen and (max-width: 560px)
+      transform: scale(.4) translate(-70px,105px)
+      
+
+    &:before
+      width: 200px
+      height: 2px
+      left: -(@width - 25px)
+      top: 83px
+      background-image: linear-gradient(to right, rgba(0,255,255,.2),
+                                                  rgba(0,255,255,.8) 60%)
+      border-top-left-radius: 300px 10px
+      border-bottom-left-radius: 300px 10px
+      box-shadow: -20px 0 10px 2px rgba(0,255,255,.4),
+                  30px 0 20px 10px rgba(0,255,255,.2)
+    &:after
+      width: 20px
+      height: 7px
+      left: 5px
+      top: 80px
+      background-color: white
+      border-top-left-radius: 50px 30px
+      box-shadow: 0 0 15px 7px rgba(0,255,255,.8),
+                  0 0 40px 25px rgba(0,255,255,.5),
+                  -75px 0 30px 15px rgba(0,255,255,.2)
