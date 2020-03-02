@@ -1,0 +1,173 @@
+/*-----------------------------
+
+Rosettes
+
+-----------------------------*/
+
+$rose-1 = lightslategray
+
+#rosette-1
+  background: $rose-1
+
+  div
+    width: 46px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient( 35deg, transparent 55%, white 55.1%,
+                                              white 58.1%, transparent 58.2%),
+                      linear-gradient(-35deg, transparent 55%, white 55.1%,
+                                              white 58.1%, transparent 58.2%),
+                      linear-gradient( 35deg, transparent 43%, white 43.1%,
+                                              white 46.1%, transparent 46.2%),
+                      linear-gradient(-35deg, transparent 43%, white 43.1%,
+                                              white 46.1%, transparent 46.2%),
+                      linear-gradient(to right, white, white),
+                      linear-gradient(to right, white, white),
+                      linear-gradient( 55deg, transparent 40%, white 40.1%,
+                                              white 43.1%, transparent 43.2%),
+                      linear-gradient(-55deg, transparent 38%, white 38.1%,
+                                              white 41.1%, transparent 41.2%),
+                      linear-gradient( 55deg, transparent 59%, white 59.1%,
+                                              white 62.1%, transparent 62.2%),
+                      linear-gradient(-55deg, transparent 57%, white 57.1%,
+                                              white 60.1%, transparent 60.2%)
+    background-position: left top,
+                         right top,
+                         right bottom,
+                         left bottom,
+                         center center,
+                         center center,
+                         left top,
+                         right top,
+                         right bottom,
+                         left bottom
+    background-size: 50% 50%,
+                     50% 50%,
+                     50% 50%,
+                     50% 50%,
+                     1px 12px,
+                     14px 1px,
+                     50% 50%,
+                     50% 50%,
+                     50% 50%,
+                     50% 50%
+
+    &:before,
+    &:after
+      width: 30px
+      height: @width
+      left: -@width
+      top: -@width
+      background-color: $rose-1
+      box-shadow: 0 0 0 1px white,
+                  76px 0 0 0 $rose-1,
+                  76px 0 0 1px white,
+                  0 76px 0 0 $rose-1,
+                  0 76px 0 1px white,
+                  76px 76px 0 0 $rose-1,
+                  76px 76px 0 1px white
+
+    &:after
+      transform: rotate(45deg)
+      left: 8px
+      top: -46px
+
+$rose-2 = darken(lightslategray,5)
+
+#rosette-2
+  background: $rose-2
+
+  div
+    width: 130px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-image: radial-gradient(circle at center center, transparent 69.6%, white 69.9%,
+                                                               white 70.6%, transparent 70.9%),
+                      radial-gradient(circle at center center, transparent 69.6%, white 69.9%,
+                                                               white 70.6%, transparent 70.9%),
+                      radial-gradient(circle at center center, transparent 69.6%, white 69.9%,
+                                                               white 70.6%, transparent 70.9%)
+    background-position:  50%  -65px,
+                         -65px  50%,
+                         -65px -65px
+    background-size: 100% 100%
+
+$rose-3 = darken(lightslategray,10)
+
+#rosette-3
+  background: $rose-3
+
+  div
+    width: 140px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(to bottom, $rose-3, $rose-3),
+                      linear-gradient(to bottom, $rose-3, $rose-3),
+                      linear-gradient(to bottom, $rose-3, $rose-3),
+                      linear-gradient(to bottom, $rose-3, $rose-3),
+                      linear-gradient(to bottom, white, white),
+                      linear-gradient(to bottom, white, white),
+                      linear-gradient(to right, white, white),
+                      linear-gradient(to right, white, white),
+                      linear-gradient(to bottom, $rose-3, $rose-3),
+                      linear-gradient(to right, white, white),
+                      linear-gradient(to bottom, $rose-3, $rose-3),
+                      linear-gradient(to right, white, white),
+                      linear-gradient(to bottom, $rose-3, $rose-3),
+                      linear-gradient(to right, white, white),
+                      linear-gradient(to bottom, $rose-3, $rose-3),
+                      linear-gradient(to right, white, white),
+                      radial-gradient(circle at center left, transparent 67%, white 67.2%,
+                                                             white 70%, transparent 70.2%),
+                      radial-gradient(circle at center right, transparent 67%, white 67.2%,
+                                                              white 70%, transparent 70.2%),
+                      radial-gradient(circle at top center, transparent 67%, white 67.2%,
+                                                            white 70%, transparent 70.2%),
+                      radial-gradient(circle at bottom center, transparent 67%, white 67.2%,
+                                                               white 70%, transparent 70.2%)
+    background-position: center 25.5%,
+                         center 74.5%,
+                         25.5% center,
+                         74.5% center,
+                         center 25%,
+                         center 75%,
+                         25% center,
+                         75% center,
+                         13% 13%,
+                         12.5% 12.5%,
+                         86.5% 86.5%,
+                         87.5% 87.5%,
+                         86.5% 13%,
+                         87.5% 12.5%,
+                         13% 86.5%,
+                         12.5% 87%,
+                         7% center,
+                         93% center,
+                         center 7%,
+                         center 93%
+    background-size: 99% 10.8%,
+                     99% 10.8%,
+                     10.8% 99%,
+                     10.8% 99%,
+                     100% 12.5%,
+                     100% 12.5%,
+                     12.5% 100%,
+                     12.5% 100%,
+                     10.8% 10.8%,
+                     12.5% 12.5%,
+                     10.8% 10.8%,
+                     12.5% 12.5%,
+                     10.8% 10.8%,
+                     12.5% 12.5%,
+                     10.8% 10.8%,
+                     12.5% 12.5%,
+                     17% 34%,
+                     17% 34%,
+                     34% 17%,
+                     34% 17%
+    transform: rotate(45deg)
