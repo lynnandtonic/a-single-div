@@ -5,45 +5,38 @@ Header and global styles
 -----------------------------*/
 
 header
-  padding: 10px 80px 7px 15px
+  padding: 10px 15px 7px
   position: relative
-  background: #333;
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  background: #333
   color: white
-  font-family: Georgia, Times, serif
-  font-size: 15px
-  font-style: italic
+  font-family: 'Courier New', Courier, serif
+  font-size: 14px
+  line-height: 1.2
   z-index: 10
 
   h1, p
     display: inline-block
 
   h1
+    max-width: 60%
     margin-bottom: 5px
+    margin-right: auto
 
-  p
-    line-height: 1.4
-    color: #bed4dc
+    span
+      color: #bed4dc
 
     a
       color: #67b1cd
-      text-decoration: none
-      border-bottom: 1px dotted
 
-  .share-link
-    padding: 15px 10px 7px
-    position: absolute
-    right: 15px
-    top: -8px
-    background: #55acee
-    border-radius: 5px
-    color: white
+  a
     text-decoration: none
-    font-style: normal
-    font-size: 12px
-    font-family: Helvetica, Arial, sans-serif
+    
     &:hover
-      background: #469cd1
+      text-decoration: underline
 
-  @media (max-width: 500px)
-
-    padding: 15px 80px 15px 15px
+  & > a
+    margin-left: 20px
+    color: white
