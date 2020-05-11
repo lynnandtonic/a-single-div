@@ -1,0 +1,70 @@
+/*-----------------------------
+
+Hell
+
+-----------------------------*/
+
+$hello-white = linear-gradient(white, white)
+$hello-shad  = linear-gradient(black(.2), black(.2))
+$hello-serif = 60px 3px
+$hello-leg   = 90px 3px
+$hello-boop  = 3px 6px
+$hello-grad  = linear-gradient(to right, white 3px, transparent 3px, transparent 47px, white 47px)
+$hello-stem  = 50px 120px
+
+#hello
+  background: goldenrod
+
+  div
+    @media (max-width: 600px)
+      transform: scale(.5)
+
+    width: 565px
+    height: 140px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: $hello-white, $hello-white, $hello-grad, $hello-white, $hello-grad, $hello-white, $hello-white,
+                      $hello-shad, $hello-shad,
+                      $hello-white, $hello-white, $hello-white, $hello-grad, $hello-white, $hello-white,
+                      $hello-shad,
+                      $hello-white, $hello-grad, $hello-white, $hello-white,
+                      $hello-shad,
+                      $hello-white, $hello-grad, $hello-white, $hello-white,
+                      $hello-shad
+
+    background-size: $hello-serif, $hello-serif, $hello-stem, 28px 3px, $hello-stem, $hello-serif, $hello-serif,
+                     $hello-stem, $hello-stem,
+                     $hello-leg, $hello-boop, 24px 3px, $hello-stem, $hello-leg, $hello-boop,
+                     $hello-stem,
+                     $hello-serif, $hello-stem, $hello-leg, $hello-boop,
+                     $hello-stem,
+                     $hello-serif, $hello-stem, $hello-leg, $hello-boop,
+                     $hello-stem
+
+    background-position:   3px 0, 77px 0, 7px 0, 55px 40px, 82px  0, 3px 120px, 77px 120px,
+                                          0 10px,           75px 10px,
+                         150px 0, 240px 0, 205px  40px, 155px  0,  150px 120px, 240px 117px,
+                                                        148px 10px,
+                         257px 0, 262px 0, 257px 120px, 345px  117px,
+                                  255px 10px,
+                         359px 0, 364px 0, 359px 120px, 447px  117px,
+                                  357px 10px
+
+    &:before
+      width: 114px
+      height: 117px
+      right: 0
+      background-color: black(.2)
+      border-radius: 50px
+      border: 3px solid white
+      box-shadow: -6px 9px 0 black(.2),
+                  inset -6px 9px 0 goldenrod
+
+    &:after
+      width: 28px
+      height: 117px
+      right: 44px
+      top: 0
+      border-radius: 10px
+      border: 3px solid white
