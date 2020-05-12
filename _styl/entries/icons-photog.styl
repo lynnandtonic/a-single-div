@@ -1,0 +1,179 @@
+/*-----------------------------
+
+Icons Photography
+
+-----------------------------*/
+
+#icon-film,
+#icon-camera,
+#icon-polaroid
+  background-color: #ddd
+
+#icon-film,
+#icon-camera
+  @media all and (max-width: 959px)
+    background-image: linear-gradient(to top, #ccc 1px, transparent 1px)
+  @media all and (min-width: 960px)
+    background-image: linear-gradient(to left, #ccc 1px, transparent 1px)
+
+#icon-film
+  div
+    width: 110px
+    height: 110px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(black, black),
+                      linear-gradient(black, black),
+                      linear-gradient(to right, black 3px, white 3px,
+                                                white 40px, #ddd 40px,
+                                                #ddd 60px, black 60px,
+                                                black 63px, transparent 63px),
+                      linear-gradient(black, black),
+                      radial-gradient(circle at bottom right, transparent 65%, black 66%)
+    background-size: 65px 6px,
+                     65px 6px,
+                     63px 100px,
+                     30px 15px,
+                     20px 20px
+    background-position: left 10px,
+                         left bottom,
+                         1px bottom,
+                         16px top,
+                         62px 59px
+
+    &:before
+      width: 40px
+      height: 45px
+      left: 63px
+      top: 15px
+      background-image: linear-gradient(to bottom, black 6px, transparent 6px,
+                                                   transparent 15px, black 15px),
+                        repeating-linear-gradient(to right, transparent, transparent 5px,
+                                                            black 5px, black 10px,
+                                                            transparent 10px)
+      border-radius: 0 6px 6px 0
+
+    &:after
+      content: '400'
+      left: -24px
+      top: 40px
+      font-family: Helvetica, Arial, sans-serif
+      font-size: 40px
+      font-weight: bold
+      transform: rotate(90deg)
+      clip: rect(-20px,150px,27px,0px)
+
+#icon-camera
+  div
+    width: 140px
+    height: 80px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 5)
+    background-repeat: no-repeat
+    background-image: linear-gradient(black, black),
+                      linear-gradient(to right, #ddd 15px, white 15px),
+                      linear-gradient(to left, #ddd 15px, white 15px)
+    background-size: 100% 60px,
+                     55% 100%,
+                     55% 100%
+    background-position: 0 15px,
+                         left top,
+                         right top
+    border: 3px solid black
+
+    &:before
+      width: 140px
+      height: 25px
+      top: -11px
+      right: -3px
+      background-repeat: no-repeat
+      background-image: linear-gradient(black, black),
+                        linear-gradient(black, black),
+                        linear-gradient(black, black),
+                        linear-gradient(to left, #ddd 15px, white 15px,
+                                                 white 77px, black 77px),
+                        linear-gradient(black, black),
+                        linear-gradient(black, black),
+                        linear-gradient(to right, black 3px, white 3px,
+                                                  white 23px, black 23px)
+      background-size: 80px 3px,
+                       15px 4px,
+                       20px 15px,
+                       80px 11px,
+                       20px 6px,
+                       26px 3px,
+                       26px 3px
+      background-position: right top,
+                           right 53px top 9px,
+                           right 20px top 7px,
+                           right top,
+                           7px 4px,
+                           31px 2px,
+                           31px 5px
+      border-right: 3px solid black
+      border-bottom: none
+
+    &:after
+      width: 50px
+      height: @width
+      left: 50px
+      top: 18px
+      background-color: black
+      border-radius: 50%
+      box-shadow: 0 0 0 8px #ddd,
+                  0 0 0 11px black,
+                  -40px -25px 0 -20px white,
+                  -40px -25px 0 -17px black,
+                  35px -40px 0 -22px #ddd
+
+#icon-polaroid
+  div
+    width: 110px
+    height: 100px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 8)
+    background-color: black(.2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(black, black),
+                      linear-gradient(black, black),
+                      repeating-linear-gradient(to right, black, black 3px,
+                                                         white 3px, white 6px),
+                      linear-gradient(to bottom, #ddd 50px, white 50px,
+                                                 white 65px, black 65px)
+    background-size: 20px 20px,
+                     20px 10px,
+                     21px 25px,
+                     100% 100%
+    background-position: right 5px top 5px,
+                         8px 20px,
+                         center 40px,
+                         left top
+    border-radius: 10px 10px 5px 5px
+    border: 3px solid black
+
+    &:before
+      width: 30px
+      height: @width
+      left: 50%
+      margin-left: -(@width/2)
+      top: 10px
+      background-color: black
+      border-radius: 50%
+      box-shadow: 0 0 0 3px white,
+                  0 0 0 6px black,
+                  40px -10px 0 -12px #ddd,
+                  33px 12px 0 -10px black,
+                  -37px 15px 0 -10px black
+
+    &:after
+      width: 90px
+      height: 30px
+      left: 7px
+      bottom: -22px
+      background-color: white
+      background-repeat: no-repeat
+      background-image: linear-gradient(#ddd, #ddd)
+      background-size: 80% 40%
+      background-position: center top
+      border: 3px solid black
