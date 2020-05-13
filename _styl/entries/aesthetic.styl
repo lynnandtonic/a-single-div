@@ -1,0 +1,154 @@
+/*-----------------------------
+
+Aesthetic
+
+-----------------------------*/
+
+$a-width = 15px
+$a-place = $a-width
+
+a-horiz(color)
+  linear-gradient(45deg, transparent 10px, color 10px)
+a-vert(color)
+  linear-gradient(-135deg, transparent 10px, color 10px)
+
+#aesthetic
+  background: white
+
+  div
+    @media (max-width: 600px)
+      transform: scale(.5)
+
+    width: $a-width*34
+    height: $a-width*6
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(hotpink,hotpink),
+                      linear-gradient(hotpink,hotpink),
+                      a-vert(hotpink),
+                      a-horiz(hotpink),
+                      a-horiz(hotpink), // A
+                      linear-gradient(deeppink,deeppink),
+                      a-vert(deeppink),
+                      linear-gradient(deeppink,deeppink),
+                      a-vert(deeppink),
+                      a-horiz(deeppink),
+                      a-vert(deeppink), // E
+                      linear-gradient(mediumvioletred,mediumvioletred),
+                      a-vert(mediumvioletred),
+                      a-horiz(mediumvioletred),
+                      a-vert(mediumvioletred),
+                      a-horiz(mediumvioletred), // S
+                      a-horiz(darkorchid),
+                      linear-gradient(darkorchid,darkorchid),
+                      a-vert(darkorchid),
+                      a-horiz(darkorchid), // T
+                      a-vert(rebeccapurple),
+                      linear-gradient(rebeccapurple,rebeccapurple),
+                      a-horiz(rebeccapurple),
+                      a-vert(rebeccapurple),
+                      a-horiz(rebeccapurple), // H
+                      linear-gradient(slateblue,slateblue),
+                      a-vert(slateblue),
+                      linear-gradient(slateblue,slateblue),
+                      a-vert(slateblue),
+                      a-horiz(slateblue),
+                      a-vert(slateblue), // E
+                      a-horiz(royalblue),
+                      linear-gradient(royalblue,royalblue),
+                      a-vert(royalblue),
+                      a-horiz(royalblue), // T
+                      a-vert(darkturquoise),
+                      a-horiz(darkturquoise), // I
+                      linear-gradient(mediumturquoise,mediumturquoise),
+                      a-vert(mediumturquoise),
+                      linear-gradient(mediumturquoise,mediumturquoise),
+                      a-horiz(mediumturquoise),
+                      a-vert(mediumturquoise) // C
+
+    background-size: $a-width   $a-width,
+                     $a-width   $a-width*3,
+                     $a-width   $a-width*6,
+                     $a-width*2 $a-width,
+                     $a-width*2 $a-width, // A
+                     $a-width*3 $a-width,
+                     $a-width   $a-width,
+                     $a-width*3 $a-width,
+                     $a-width   $a-width,
+                     $a-width*4 $a-width,
+                     $a-width   $a-width, // E
+                     $a-width*3 $a-width,
+                     $a-width   $a-width,
+                     $a-width*2 $a-width,
+                     $a-width   $a-width*5,
+                     $a-width*3 $a-width, // S
+                     $a-width   $a-width,
+                     $a-width   $a-width*5,
+                     $a-width   $a-width*2,
+                     $a-width   $a-width, // T
+                     $a-width   $a-width*2,
+                     $a-width   $a-width*3,
+                     $a-width   $a-width,
+                     $a-width   $a-width*6,
+                     $a-width   $a-width, // H
+                     $a-width*3 $a-width,
+                     $a-width   $a-width,
+                     $a-width*3 $a-width,
+                     $a-width   $a-width,
+                     $a-width*4 $a-width,
+                     $a-width   $a-width, // E
+                     $a-width   $a-width,
+                     $a-width   $a-width*5,
+                     $a-width   $a-width*2,
+                     $a-width   $a-width, // T
+                     $a-width   $a-width*6,
+                     $a-width   $a-width, // I
+                     $a-width*3 $a-width,
+                     $a-width   $a-width,
+                     $a-width   $a-width*3,
+                     $a-width*4 $a-width,
+                     $a-width   $a-width // C
+
+    background-position: $a-place    $a-place,
+                         $a-place    $a-place*3,
+                         $a-place*3  0,
+                         0           $a-place*5,
+                         $a-place*2  $a-place*5, // A
+                         $a-place*5  $a-place,
+                         $a-place*7  0,
+                         $a-place*5  $a-place*3,
+                         $a-place*7  $a-place*2,
+                         $a-place*4  $a-place*5,
+                         $a-place*7  $a-place*4, // E
+                         $a-place*9  $a-place,
+                         $a-place*11 0,
+                         $a-place*8  $a-place*3,
+                         $a-place*11 $a-place*2,
+                         $a-place*8  $a-place*5, // S
+                         $a-place*12 $a-place,
+                         $a-place*14 $a-place,
+                         $a-place*15 0,
+                         $a-place*13 $a-place*5, // T
+                         $a-place*17 0,
+                         $a-place*17 $a-place*3,
+                         $a-place*16 $a-place*5,
+                         $a-place*19 0,
+                         $a-place*18 $a-place*5, // H
+                         $a-place*21  $a-place,
+                         $a-place*23  0,
+                         $a-place*21  $a-place*3,
+                         $a-place*23  $a-place*2,
+                         $a-place*20  $a-place*5,
+                         $a-place*23  $a-place*4, // E
+                         $a-place*24 $a-place,
+                         $a-place*26 $a-place,
+                         $a-place*27 0,
+                         $a-place*25 $a-place*5, // T
+                         $a-place*29 0,
+                         $a-place*28 $a-place*5, // I
+                         $a-place*31 $a-place,
+                         $a-place*33 0,
+                         $a-place*31 $a-place,
+                         $a-place*30 $a-place*5,
+                         $a-place*33 $a-place*4 // C
