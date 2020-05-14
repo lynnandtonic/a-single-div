@@ -1,0 +1,231 @@
+/*-----------------------------
+
+Grid
+
+-----------------------------*/
+
+$g-width = 15px
+$g-blue = linear-gradient(steelblue,steelblue)
+$g-red = linear-gradient(salmon,salmon)
+$g-gold = linear-gradient(gold,gold)
+
+#grid
+  background: wheat
+
+  div
+    @media (max-width: 600px)
+      transform: scale(.5)
+
+    width: $a-width*36
+    height: $a-width*12
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-image: linear-gradient(to right, transparent 14px, steelblue 14px),
+                      linear-gradient(to bottom, transparent 14px, steelblue 14px)
+    background-size: 15px 100%,
+                     100% 15px
+    border: 1px solid steelblue
+    border-right: none
+    border-bottom: none
+
+    &:before
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-image: $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue, // G
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue, // R
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue, // I
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue,
+                        $g-blue
+      background-size: $g-width*6 $g-width,
+                       $g-width   $g-width,
+                       $g-width   $g-width,
+                       $g-width*6 $g-width,
+                       $g-width   $g-width*5,
+                       $g-width   $g-width,
+                       $g-width*6 $g-width,
+                       $g-width*4 $g-width,
+                       $g-width   $g-width*2,
+                       $g-width*2 $g-width,
+                       $g-width   $g-width,
+                       $g-width   $g-width*6, // G
+                       $g-width   $g-width*8,
+                       $g-width*6 $g-width,
+                       $g-width   $g-width,
+                       $g-width*5 $g-width,
+                       $g-width*3 $g-width,
+                       $g-width   $g-width,
+                       $g-width*3 $g-width,
+                       $g-width   $g-width,
+                       $g-width*3 $g-width,
+                       $g-width   $g-width,
+                       $g-width*2 $g-width,
+                       $g-width   $g-width*7, // R
+                       $g-width*8 $g-width,
+                       $g-width   $g-width,
+                       $g-width   $g-width,
+                       $g-width*8 $g-width,
+                       $g-width   $g-width*2,
+                       $g-width   $g-width*2,
+                       $g-width*3 $g-width,
+                       $g-width*3 $g-width,
+                       $g-width   $g-width,
+                       $g-width   $g-width,
+                       $g-width*8 $g-width, // I
+                       $g-width*7 $g-width,
+                       $g-width   $g-width*7,
+                       $g-width   $g-width,
+                       $g-width*5 $g-width,
+                       $g-width   $g-width*3,
+                       $g-width   $g-width*3,
+                       $g-width   $g-width,
+                       $g-width   $g-width,
+                       $g-width*5 $g-width,
+                       $g-width   $g-width*6
+      background-position: $g-width*3  $g-width*2,
+                           $g-width*3  $g-width*3,
+                           $g-width*8  $g-width*3,
+                           $g-width*2  $g-width*4,
+                           $g-width*2  $g-width*4,
+                           $g-width*3  $g-width*8,
+                           $g-width*3  $g-width*9,
+                           $g-width*5  $g-width*5,
+                           $g-width*5  $g-width*6,
+                           $g-width*6  $g-width*7,
+                           $g-width*8  $g-width*8,
+                           $g-width*9  $g-width*3, // G
+                           $g-width*10 $g-width*2,
+                           $g-width*11 $g-width*2,
+                           $g-width*16 $g-width*3,
+                           $g-width*11 $g-width*4,
+                           $g-width*13 $g-width*5,
+                           $g-width*16 $g-width*6,
+                           $g-width*13 $g-width*7,
+                           $g-width*13 $g-width*8,
+                           $g-width*11 $g-width*9,
+                           $g-width*15 $g-width*8,
+                           $g-width*15 $g-width*9,
+                           $g-width*17 $g-width*3, // R
+                           $g-width*18 $g-width*2,
+                           $g-width*18 $g-width*3,
+                           $g-width*25 $g-width*3,
+                           $g-width*18 $g-width*4,
+                           $g-width*20 $g-width*5,
+                           $g-width*23 $g-width*5,
+                           $g-width*18 $g-width*7,
+                           $g-width*23 $g-width*7,
+                           $g-width*18 $g-width*8,
+                           $g-width*25 $g-width*8,
+                           $g-width*18 $g-width*9, // I
+                           $g-width*26 $g-width*2,
+                           $g-width*26 $g-width*3,
+                           $g-width*32 $g-width*3,
+                           $g-width*27 $g-width*4,
+                           $g-width*29 $g-width*5,
+                           $g-width*31 $g-width*5,
+                           $g-width*30 $g-width*7,
+                           $g-width*32 $g-width*8,
+                           $g-width*27 $g-width*9,
+                           $g-width*33 $g-width*3
+      mix-blend-mode: multiply
+
+    &:after
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-image: $g-gold,
+                        $g-red,
+                        $g-red,
+                        $g-red,
+                        $g-red, // G
+                        $g-gold,
+                        $g-red,
+                        $g-gold,
+                        $g-red,
+                        $g-red, // R
+                        $g-gold,
+                        $g-red,
+                        $g-red, // I
+                        $g-gold,
+                        $g-gold,
+                        $g-red,
+                        $g-red,
+                        $g-red
+      background-size: $g-width*2 $g-width,
+                       $g-width*2 $g-width*2,
+                       $g-width*3 $g-width,
+                       $g-width   $g-width,
+                       $g-width*4 $g-width, // G
+                       $g-width*2 $g-width,
+                       $g-width*2 $g-width*3,
+                       $g-width   $g-width,
+                       $g-width*3 $g-width,
+                       $g-width   $g-width*2, // R
+                       $g-width*2 $g-width,
+                       $g-width*2 $g-width*2,
+                       $g-width*6 $g-width, // I
+                       $g-width*2 $g-width,
+                       $g-width   $g-width,
+                       $g-width*2 $g-width*2,
+                       $g-width   $g-width*2,
+                       $g-width*5 $g-width
+      background-position: $g-width*3  $g-width*5,
+                           $g-width*3  $g-width*6,
+                           $g-width*6  $g-width*6,
+                           $g-width*8  $g-width*7,
+                           $g-width*4  $g-width*8, // G
+                           $g-width*11 $g-width*5,
+                           $g-width*11 $g-width*6,
+                           $g-width*16 $g-width*5,
+                           $g-width*13 $g-width*6,
+                           $g-width*16 $g-width*7,
+                           $g-width*21 $g-width*5,
+                           $g-width*21 $g-width*6,
+                           $g-width*19 $g-width*8,
+                           $g-width*27 $g-width*5,
+                           $g-width*32 $g-width*5,
+                           $g-width*27 $g-width*6,
+                           $g-width*32 $g-width*6,
+                           $g-width*27 $g-width*8
+                           
+      mix-blend-mode: multiply
