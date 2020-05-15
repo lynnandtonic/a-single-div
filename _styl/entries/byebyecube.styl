@@ -1,0 +1,74 @@
+/*-----------------------------
+
+Bye Bye Cube
+
+-----------------------------*/
+
+@keyframes cube-drop
+  20%
+    transform: translateY(0)
+  80%,
+  100%
+    transform: translateY(153px)
+
+@keyframes cube-shadow
+  0%,
+  20%
+    transform: translateY(0) rotate(-30deg) skew(30deg)
+    box-shadow: -50px 45px 10px -10px black(.3)
+  37%
+    box-shadow: -2px 2px 2px black(.5)
+  37%,
+  100%
+    transform: translateY(42px) rotate(-30deg) skew(30deg)
+  39%,
+  100%
+    box-shadow: -2px 2px 1px black(0)
+
+#byebyecube
+  background: #aaa
+  z-index: 1
+  overflow: hidden
+
+  div
+    width: 300px
+    height: 400px
+    margin-left: -(@width/2)
+    top: 0
+    // background-color: black(.1)
+    background-image: linear-gradient( 30deg, #aaa 30%, transparent 30.1%),
+                      linear-gradient(-30deg, #aaa 30%, transparent 30.1%)
+    
+    &:before
+      width: 200px
+      height: 280px
+      left: 50px
+      top: -8px
+      background-repeat: no-repeat
+      background-image: linear-gradient( 30deg, transparent 26%, #ccc 26.3%, #ccc 74%, transparent 74.3%),
+                        linear-gradient(150deg, transparent 26%, #999 26.3%, #999 74%, transparent 74.3%),
+                        linear-gradient(150deg, transparent 26%, #eee 26.3%, #eee 73%, transparent 73%),
+                        linear-gradient( 30deg, transparent 27%, #eee 27%, #eee 74%, transparent 74.3%),
+                        radial-gradient(circle at center, #eee 20%, transparent 20%)
+      background-size: 50% 60%
+      background-position: 0  100%,
+                           100% 100%,
+                           0  48.5%,
+                           100% 48.5%,
+                           50% 60%
+      animation: cube-drop 6000ms infinite alternate linear
+      z-index: -1
+
+    &:after
+      width: 113px
+      height: 100px
+      left: 92px
+      top: 164px
+      background-color: transparent
+      // box-shadow: -50px 45px 10px -10px black(.3)
+      // box-shadow: -2px 2px 2px black(.5)
+      // box-shadow: -2px 2px 1px black(0)
+      transform: rotate(-30deg) skew(30deg)
+      z-index: 0
+      animation: cube-shadow 6000ms infinite alternate linear
+
