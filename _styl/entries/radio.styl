@@ -1,0 +1,158 @@
+/*-----------------------------
+
+Radio
+
+-----------------------------*/
+
+#radio
+  background-color: white
+
+  div
+    width: 280px
+    height: 160px
+    margin-left: -(@width/2 - 10)
+    margin-top: -(@height/2)
+    background-color: coral
+    background-image: linear-gradient(to bottom, coral 14px, transparent 14px),
+                      linear-gradient(to right, coral 96px, transparent 96px),
+                      linear-gradient(to left, coral 16px, transparent 16px),
+                      linear-gradient(to top, coral 14px, transparent 14px),
+                      radial-gradient(circle, black(.4) 30%, transparent 30.5%)
+    background-size: 100% 100%,
+                     100% 100%,
+                     100% 100%,
+                     100% 100%,
+                     7px 7px
+    border-radius: 2px 10px 10px 0
+    box-shadow: 0 -3px 0 darken(coral,12),
+                inset -4px 4px 2px white(.3),
+                -5px 11px 4px -5px rgba(98,46,38,.9),
+                -5px 17px 6px -5px rgba(98,46,38,.4)
+
+    &:before
+      width: 300px
+      height: 175px
+      margin-top: -3px
+      background-repeat: no-repeat
+      background-image: linear-gradient(to bottom, black(.2) 0, white(.2) 20%,
+                                                   white(.3) 25%,
+                                                   black(0) 50%),
+                        repeating-linear-gradient(to bottom, white(.15), white(.15) 1px,
+                                                             white(0) 1px, white(0) 7px),
+                        repeating-linear-gradient(to bottom, black(.35), black(.35) 3px,
+                                                             black(0) 3px, black(0) 7px),
+                        linear-gradient(to bottom, black(.4), black(0) 20%,
+                                                   black(0) 70%, black(.7) 100%),
+                        repeating-linear-gradient(to bottom, #eee, #eee 1px,
+                                                             white(0) 1px, white(0) 2px),
+                        repeating-linear-gradient(to bottom, #bbb, #bbb 1px, #777 1px, #777 2px),
+                        linear-gradient(black(.6), black(.6)),
+                        linear-gradient(to bottom, black(.4), black(0) 20%,
+                                                   black(0) 70%, black(.7) 100%),
+                        repeating-linear-gradient(to bottom, #eee, #eee 1px,
+                                                             white(0) 1px, white(0) 2px),
+                        repeating-linear-gradient(to bottom, #bbb, #bbb 1px, #777 1px, #777 2px),
+                        linear-gradient(black(.6), black(.6)),
+                        linear-gradient(#444, #444),
+                        linear-gradient(to right, black(.3), black(0)),
+                        linear-gradient(darken(coral,20), darken(coral,20)),
+                        linear-gradient(black(.5), black(.5)),
+                        linear-gradient(to bottom, #666 5%,
+                                                   #eee 20%, #eee 30%,
+                                                   #aaa 40%, #aaa 50%,
+                                                   #ccc 60%, #555 90%),
+                        radial-gradient(ellipse at left center, transparent 13%,
+                                                                #444 14%, #444 35%,
+                                                                transparent 36%),
+                        radial-gradient(ellipse, white(.5) 0, white(0) 60%),
+                        linear-gradient(to bottom, black(.5), black(0) 40%)
+      background-size: 80px 20px,
+                       50px 27px,
+                       50px 95px,
+                       25px 21px,
+                       20px 7px,
+                       25px 21px,
+                       29px 25px,
+                       11px 21px,
+                       11px 7px,
+                       11px 21px,
+                       15px 25px,
+                       80px 165px,
+                       7px 163px,
+                       8px 4px,
+                       1px 15px,
+                       4px 15px,
+                       20px 20px,
+                       10px 7px,
+                       80px 10px
+      background-position: 0 0,
+                           20px 59px,
+                           20px 60px,
+                           22px 22px,
+                           22px 26px,
+                           22px 22px,
+                           20px 20px,
+                           57px 22px,
+                           57px 26px,
+                           57px 22px,
+                           55px 20px,
+                           0 0,
+                           80px 0,
+                           right 50px bottom 8px,
+                           right 17px top 30px,
+                           95% 30px,
+                           100% 20px,
+                           right 23px top 4px,
+                           0 100%
+      border-radius: 2px 0 0 1px
+      z-index: 2
+      
+
+    &:after
+      width: 20px
+      height: 160px
+      margin-left: -@width
+      z-index: 1
+      background-color: #ccc
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse, white(.8) 40%, white(0) 50%),
+                        radial-gradient(ellipse, white(.5) 40%, white(0) 50%),
+                        linear-gradient(to right, black(.7) 4px, black(0) 4px),
+                        linear-gradient(to bottom, black(.15) 1%,
+                                                   black(.05) 2%,
+                                                   black(.25) 5%,
+                                                   black(0) 8%),
+                        linear-gradient(to left, black(.3) 4%, black(0) 20%),
+                        linear-gradient(to bottom, rgba(204,204,204,0) 45%, #ccc 55%, rgba(204,204,204,0) 65%),
+                        linear-gradient(to right, black(0) 5px,
+                                                  black(.2) 8px,
+                                                  black(0) 11px),
+                        linear-gradient(to right, white(.5) 5px,
+                                                  black(.2) 9px,
+                                                  black(0) 13px),
+                        linear-gradient(130deg, black(0) 86%, black(.3) 87%, black(0) 88%),
+                        linear-gradient(-30deg, black(.4) 15%, black(0) 60%)
+      background-size: 3px 6px,
+                       3px 5px,
+                       100% 100%,
+                       100% 100%,
+                       100% 10%,
+                       100% 100%,
+                       100% 60%,
+                       100% 40%,
+                       60% 100%,
+                       100% 5%
+      background-position: 1px 4px,
+                           6px 7px,
+                           0 0,
+                           0 0,
+                           100% 60%,
+                           0 0,
+                           0 0,
+                           0 100%,
+                           55% 0,
+                           0 100%
+      border-radius: 10px 0 0 10px
+      box-shadow: 5px 7px  2px -5px black(.3),
+                  5px 8px  1px -5px white(.5),
+                  3px 11px 3px -4px black(.3)
