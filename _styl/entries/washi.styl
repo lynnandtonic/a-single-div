@@ -1,0 +1,108 @@
+/*-----------------------------
+
+Washi
+
+-----------------------------*/
+
+$washi-roll = linear-gradient(to right, rgba(25,25,112,.2) 0%,
+                                        rgba(25,25,112,.4) 3%,
+                                        rgba(25,25,112,.1) 23%,
+                                        white(0)  35%,
+                                        white(0)  45%,
+                                        white(.3) 60%,
+                                        white(.2) 75%,
+                                        white(.1) 85%,
+                                        white(0)  90%,
+                                        rgba(25,25,112,.1) 100%),
+              radial-gradient(circle at right center, rgba(25,25,112,.6), rgba(25,25,112,0) 55%),
+              linear-gradient(to left, rgba(25,25,112,.4), rgba(25,25,112,0) 90%)
+
+$washi-width = 100px
+$washi-roll-size = $washi-width 40px,
+                   30px 40px,
+                   30px 40px,
+                   calc(100% - 100px) 40px,
+                   $washi-width 70px
+
+$washi-shadow = radial-gradient(ellipse, rgba(25,25,112,.3) 15%, rgba(25,25,112,0) 60%)
+
+#washi
+  background-color: white
+  background-repeat: no-repeat
+  background-image: $washi-roll,
+                    linear-gradient(turquoise, turquoise),
+                    $washi-shadow,
+                    $washi-roll,
+                    repeating-linear-gradient(45deg, cornflowerblue,
+                                                     cornflowerblue 5px,
+                                                     lighten(cornflowerblue,10) 5px,
+                                                     lighten(cornflowerblue,10) 10px),
+                    $washi-shadow,
+                    $washi-roll,
+                    repeating-linear-gradient(to bottom, mediumseagreen, mediumseagreen 2px,
+                                                         seagreen 2px, seagreen 4px),
+                    $washi-shadow,
+                    $washi-roll,
+                    linear-gradient(goldenrod, goldenrod),
+                    $washi-shadow,
+                    $washi-roll,
+                    repeating-linear-gradient(to bottom, white(.4), white(.4) 5px,
+                                                         white(0) 5px, white(0) 10px),
+                    repeating-linear-gradient(to right, white(.2), white(.2) 5px,
+                                                         white(0) 5px, white(0) 10px),
+                    linear-gradient(coral, coral),
+                    $washi-shadow,
+                    $washi-roll,
+                    linear-gradient(tomato, tomato),
+                    $washi-shadow,
+                    repeating-linear-gradient( 45deg, white, white 2px,
+                                                      #eee 2px,
+                                                      #eee 3px),
+                    repeating-linear-gradient(-45deg, white, white 2px,
+                                                      #eee 2px,
+                                                      #eee 3px)
+  background-size: $washi-roll-size,
+                   $washi-roll-size,
+                   $washi-roll-size,
+                   $washi-roll-size,
+                   $washi-width 40px,
+                   30px 40px,
+                   30px 40px,
+                   calc(100% - 100px) 40px,
+                   calc(100% - 100px) 40px,
+                   calc(100% - 100px) 40px,
+                   $washi-width 70px,
+                   $washi-roll-size,
+                   100% 100%,
+                   100% 100%
+  background-position: right $washi-width   top 30px,
+                       right $washi-width*2 top 30px,
+                       right $washi-width*2 top 30px, 0 30px,
+                       right $washi-width   top 20px,
+                       right $washi-width   top 90px,
+                       right $washi-width*2 top 90px,
+                       right $washi-width*2 top 90px, 0 90px,
+                       right $washi-width   top 80px,
+                       right $washi-width   top 150px,
+                       right $washi-width*2 top 150px,
+                       right $washi-width*2 top 150px, 0 150px,
+                       right $washi-width   top 140px,
+                       right $washi-width   top 210px,
+                       right $washi-width*2 top 210px,
+                       right $washi-width*2 top 210px, 0 210px,
+                       right $washi-width   top 200px,
+                       right $washi-width   top 270px,
+                       right $washi-width*2 top 270px,
+                       right $washi-width*2 top 270px, 0 270px, 0 270px, 0 270px,
+                       right $washi-width   top 260px,
+                       right $washi-width   top 330px,
+                       right $washi-width*2 top 330px,
+                       right $washi-width*2 top 330px, 0 330px,
+                       right $washi-width   top 320px,
+                       0 0,
+                       0 0
+
+  @media all and (max-width: 959px)
+    box-shadow: inset 0 -2px 4px rgba(25,25,112,.1)
+  @media all and (min-width: 960px)
+    box-shadow: inset 0 -2px 4px rgba(25,25,112,.2)
