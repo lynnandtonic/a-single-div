@@ -1,0 +1,132 @@
+/*-----------------------------
+
+Planet
+
+-----------------------------*/
+
+#planet
+  background-color: lightsteelblue
+
+  div
+    width: 200px
+    height: 200px
+    margin-left: -(@width/2 + 20px)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-color: dodgerblue
+    background-image: radial-gradient(circle, black(.4) 30%, black(0) 60%),
+                      radial-gradient(circle at left center, gold 28%,
+                                                             crimson 28.5%,
+                                                             crimson 52%,
+                                                             tan 52.5%,
+                                                             tan 67%,
+                                                             darken(dodgerblue,10) 67.5%),
+                      radial-gradient(ellipse at right center, darken(gold,20) 28%,
+                                                             darken(crimson,20) 28.5%,
+                                                             darken(crimson,20) 52%,
+                                                             darken(tan,20) 52.5%,
+                                                             darken(tan,20) 67%,
+                                                             darken(dodgerblue,25) 67.5%,
+                                                             darken(dodgerblue,25) 71%,
+                                                             transparent 71.5%),
+                      radial-gradient(circle, white(.2) 20%, white(0) 80%),
+                      radial-gradient(circle at 80% 10%, transparent 70%, black(.2) 80%),
+                      radial-gradient(circle at 80% 10%, transparent 50%, midnightblue 90%),
+                      radial-gradient(ellipse at 10% 10%, forestgreen 30%, rgba(34,139,34,0) 60%),
+                      radial-gradient(ellipse at 50% 90%, darken(lime,10) 30%, rgba(0,255,0,0) 60%)
+    background-size: 40% 40%,
+                     50% 100%,
+                     25% 100%,
+                     40% 40%,
+                     100% 100%,
+                     100% 100%,
+                     50% 50%,
+                     80% 50%
+    background-position: right -30% top 3%,
+                         right center,
+                         33.5% center,
+                         10% 5%,
+                         center center,
+                         center center,
+                         left top,
+                         10% 100%
+    border-radius: 50%
+    box-shadow: -40px 50px 20px 5px rgba(70,130,180,.5),
+                115px -91px 2px -94px white(.4),
+                115px -89px 2px -92px black(.25),
+                127px -79px 2px -96px white(.4),
+                127px -77px 2px -95px black(.25),
+                115px -71px 2px -96px black(.15),
+                147px -97px 2px -96px white(.4),
+                147px -95px 2px -95px black(.25),
+                141px -61px 2px -97px black(.15),
+                152px -67px 2px -96px black(.1),
+                135px -90px 17px -80px white(.5),
+                134px -90px 17px -75px white(.3),
+                130px -80px 0 -65px #888,
+                100px -40px 20px -60px rgba(70,130,180,.4)
+
+    &:before
+      width: 300px
+      height: 250px
+      top: -150px
+      left: 50%
+      margin-left: -(@width/2)
+      background-repeat: no-repeat
+      background-image: linear-gradient(to bottom, #999, #555),
+                        repeating-linear-gradient(to bottom, #aaa, #999 1px, #666 1px, #666 2px),
+                        linear-gradient(to bottom, #666, #666),
+                        radial-gradient(circle at 50% 85%, transparent 15%,
+                                                #666 15.5%,
+                                                #666 20%,
+                                                #999 20.5%,
+                                                #999 25%,
+                                                transparent 25.5%),
+                        linear-gradient(to bottom, #999, #555),
+                        repeating-linear-gradient(to bottom, #aaa, #999 1px, #666 1px, #666 2px),
+                        linear-gradient(to bottom, #666, #666),
+                        radial-gradient(circle at 50% 85%, transparent 15%,
+                                                #666 15.5%,
+                                                #666 20%,
+                                                #999 20.5%,
+                                                #999 25%,
+                                                transparent 25.5%),
+                        linear-gradient(to right, rgba(70,130,180,0) 20%,
+                                                  rgba(70,130,180,.15) 50%,
+                                                  rgba(70,130,180,0) 80%),
+                        linear-gradient(to right, rgba(70,130,180,0) 20%,
+                                                  rgba(70,130,180,.15) 50%,
+                                                  rgba(70,130,180,0) 80%)
+      background-size: 1px 143px,
+                       6px 6px,
+                       1px 10px,
+                       30px 30px,
+                       1px 130px,
+                       6px 6px,
+                       1px 10px,
+                       24px 24px,
+                       8px 161px,
+                       6px 159px
+      background-position: center top,
+                           center 132px,
+                           51.2% 128px,
+                           center 120px,
+                           right 20px top 0,
+                           right 17px top 119px,
+                           right 17px top 115px,
+                           right 8px top 111px,
+                           100px top,
+                           right 50px top 0
+
+    &:after
+      width: 40px
+      height: 50px
+      left: 87px
+      top: 75px
+      background-color: lighten(yellow,20)
+      border-top-left-radius: 25px 40px
+      border-bottom-left-radius: 25px 40px
+      border-top-right-radius: 40px
+      border-bottom-right-radius: 40px
+      box-shadow: inset -10px 5px 15px rgba(205,133,63,.7),
+                  inset 0 -10px 11px rgba(178,34,34,.8)
