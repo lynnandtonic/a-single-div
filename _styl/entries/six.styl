@@ -1,0 +1,139 @@
+/*-----------------------------
+
+SIX
+
+-----------------------------*/
+
+#six
+  background-color: white
+
+  div
+    width: 130px
+    height: 70px
+    margin-left: -190px
+    margin-top: -55px
+    background-repeat: no-repeat
+    background-image: linear-gradient(160deg, alpha(midnightblue,.5), alpha(midnightblue,0) 55%),
+                      repeating-linear-gradient(to right, black, black 5px, white 5px, white 10px),
+                      linear-gradient(to right, alpha(midnightblue,.5) 50%, alpha(midnightblue,0) 60%),
+                      linear-gradient(to left, alpha(midnightblue,0) 40%,
+                                               alpha(midnightblue,.5) 50%,
+                                               alpha(midnightblue,0) 60%),
+                      repeating-linear-gradient(to bottom, black, black 5px, white 5px, white 10px)
+    background-size: 45px 100%,
+                     45px 100%,
+                     70% 45px,
+                     70% 45px,
+                     70% 45px
+    background-position: 0 0,
+                         0 0,
+                         0 100%,
+                         100% 100%,
+                         0 100%
+    border-radius: 20px 0 0 20px
+    box-shadow: 0 -5px 0 black,
+                0 -10px 0 white,
+                0 -15px 0 black,
+                0 -20px 0 white,
+                0 -25px 0 black,
+                0 -30px 0 white,
+                0 -35px 0 black,
+                0 -40px 0 white,
+                0 -45px 0 black
+
+    @media (max-width: 550px)
+      -webkit-transform: scale(.7)
+      transform: scale(.7)
+      margin-left: -152px
+
+    &:before
+      width: 100%
+      height: 100%
+      top: 25px
+      background-repeat: no-repeat
+      background-image: linear-gradient(-160deg, alpha(midnightblue,0) 55%, alpha(midnightblue,.5)),
+                        repeating-linear-gradient(to right, black, black 5px, white 5px, white 10px)
+      background-size: 45px 100%
+      background-position: 100% 0,
+                           100% 0
+      border-radius: 0 20px 20px 0
+      box-shadow: 0 5px 0 black,
+                  0 10px 0 white,
+                  0 15px 0 black,
+                  0 20px 0 white,
+                  0 25px 0 black,
+                  0 30px 0 white,
+                  0 35px 0 black,
+                  0 40px 0 white,
+                  0 45px 0 black
+      z-index: 2
+
+    &:after
+      width: 280px
+      height: 185px
+      left: 100px
+      top: -45px
+      background-repeat: no-repeat
+      background-image: linear-gradient( 60deg, black(0) 35%,
+                                                black 35.2%, black 37%,
+                                                white 37.2%, white 39%,
+                                                black 39.2%, black 41%,
+                                                white 41.2%, white 43%,
+                                                black 43.2%, black 45%,
+                                                white 45.2%, white 47%,
+                                                black 47.2%, black 49%,
+                                                white 49.2%, white 51%,
+                                                black 51.2%, black 53%,
+                                                black(0) 53.2%),
+                        linear-gradient(60deg, alpha(midnightblue,0) 110px, alpha(midnightblue,.5) 130px),
+                        repeating-linear-gradient(to bottom, black, black 5px, white 5px, white 10px),
+                        linear-gradient(to right, alpha(midnightblue,.5) 30px, alpha(midnightblue,0) 50px),
+                        linear-gradient(-60deg, white 35%, white(0) 35.2%),
+                        repeating-linear-gradient(to top, black, black 5px, white 5px, white 10px),
+                        linear-gradient(to bottom, alpha(midnightblue,.5) 45px, alpha(midnightblue,0) 60px),
+                        linear-gradient(to top, alpha(midnightblue,.5) 45px, alpha(midnightblue,0) 55px),
+                        repeating-linear-gradient(to right, black, black 5px, white 5px, white 10px),
+                        linear-gradient(-60deg, white(0) 53%, white 53.2%),
+                        linear-gradient(60deg, alpha(midnightblue,0)  25%,
+                                               alpha(midnightblue,.5) 35%,
+                                               alpha(midnightblue,.5) 55%,
+                                               alpha(midnightblue,0)  65%),
+                        linear-gradient(to top, alpha(midnightblue,.5) 45px, alpha(midnightblue,0) 55px),
+                        linear-gradient(-60deg, black(0) 35%,
+                                                black 35.2%, black 37%,
+                                                white 37.2%, white 39%,
+                                                black 39.2%, black 41%,
+                                                white 41.2%, white 43%,
+                                                black 43.2%, black 45%,
+                                                white 45.2%, white 47%,
+                                                black 47.2%, black 49%,
+                                                white 49.2%, white 51%,
+                                                black 51.2%, black 53%,
+                                                black(0) 53.2%)
+      background-size: 200px 100%,
+                       170px 45px,
+                       170px 45px,
+                       130px 45px,
+                       200px 100%,
+                       205px 45px,
+                       45px 100%,
+                       45px 100%,
+                       45px 100%,
+                       200px 100%,
+                       100px 100%,
+                       130px 70px,
+                       200px 100%
+      background-position: 115px 0,
+                           0 0,
+                           0 0,
+                           0 100%,
+                           80px 0,
+                           0 100%,
+                           63px 0,
+                           63px 0,
+                           63px 0,
+                           80px 0,
+                           155px 50%,
+                           80px 100%,
+                           80px 0
+      z-index: 1
