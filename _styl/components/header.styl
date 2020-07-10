@@ -11,6 +11,7 @@ header
   justify-content: flex-end
   align-items: center
   background: #333
+  // background: tomato
   color: white
   font-family: 'Courier New', Courier, serif
   font-size: 14px
@@ -22,7 +23,7 @@ header
 
   h1
     max-width: 55%
-    margin-bottom: 5px
+    // margin-bottom: 5px
     margin-right: auto
 
     span
@@ -40,3 +41,70 @@ header
   & > a
     margin-left: 20px
     color: white
+
+  .coffee
+    text-indent: -9999em
+    width: 20px
+    height: 26px
+    position: relative
+    background-repeat: no-repeat
+    background-image: linear-gradient(black,black),
+                      linear-gradient( 82deg, transparent 30%, black, 32%,
+                                              black 40%, white 42%,
+                                              white 55%, #ffdd00 56%),
+                      linear-gradient(-82deg, transparent 30%, black, 32%,
+                                              black 40%, #ff9100 42%,
+                                              #ff9100 60%, #ffdd00 61%),
+                      linear-gradient(black,black),
+                      linear-gradient( 120deg, transparent 30%, black 32%,
+                                               black 40%, white 42%),
+                      linear-gradient(-120deg, transparent 30%, black 32%,
+                                               black 40%, white 42%)
+    background-size: 50% 3%, 55% 70%, 55% 70%,
+                     54% 3%, 50% 20%, 50% 20%
+    background-position: 50% 100%, 0 100%, 100% 100%,
+                         50% 0, 0 0, 100% 0
+    transition: transform 300ms ease-in-out
+    &:before,
+    &:after
+      content: ''
+      width: 100%
+      position: absolute
+      left: 0
+    &:before
+      height: 20%
+      top: 10%
+      box-sizing: border-box
+      background-color: white
+      border: 1px solid black
+    &:after
+      height: 35%
+      top: 45%
+      background-repeat: no-repeat
+      background-image: linear-gradient(black,black),
+                        linear-gradient(black,black),
+                        linear-gradient( 82deg, transparent 9%, black, 12%,
+                                                black 19%, white 21%),
+                        linear-gradient(-82deg, transparent 9%, black, 12%,
+                                                black 19%, white 21%)
+      background-size: 100% 15%, 80% 15%, 55% 100%, 55% 100%
+      background-position: 0 0, 50% 100%, 0 0, 100% 0
+    &:hover
+      transform: scale(1.2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
