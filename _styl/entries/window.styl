@@ -1,0 +1,213 @@
+/*-----------------------------
+
+Window
+
+-----------------------------*/
+
+$window = #454545
+
+window-x(color)
+  linear-gradient(90deg, $window 1px, color 1px,
+                         color calc(100% - 1px), $window calc(100% - 1px))
+
+window-y(color)
+  linear-gradient(180deg, $window 1px, color 1px, 
+                          color calc(100% - 1px), $window calc(100% - 1px))
+
+$window-line = linear-gradient($window, $window)
+
+$window-shadow = linear-gradient(180deg, black(.25), black(0))
+
+#window
+  background-color: tan
+  background-image: linear-gradient(to right, transparent 50%, black(.1) 50%),
+                    linear-gradient(to bottom, black(0)  79%,
+                                               $window   79%,
+                                               $window   80%,
+                                               black(.2) 80%,
+                                               black(0)  100%)
+  background-size: 2px 100%, 100% 40px
+
+  @media (max-width: 500px)
+    background-size: 2px 100%, 100% 30px
+
+    &:before,
+    &:after
+      transform: scale(.7)
+
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+
+  &:before
+    width: 400px
+    height: 250px
+    margin-left: -(@width/2)
+    top: 20%
+    background-repeat: no-repeat
+    background-image: window-y(transparent), window-x(transparent),
+                      linear-gradient(to bottom, #91b4d3 5px, steelblue 5px),
+                      $window-shadow,
+                      window-y(transparent), window-x(transparent),
+                      linear-gradient(to bottom, #91b4d3 5px, steelblue 5px),
+                      $window-shadow,
+                      window-y(transparent), window-x(transparent),
+                      linear-gradient(to bottom, #91b4d3 5px, steelblue 5px),
+                      $window-shadow,
+                      window-y(transparent), window-x(transparent),
+                      linear-gradient(to bottom, #91b4d3 5px, steelblue 5px),
+                      $window-shadow,
+                      $window-line, $window-line,
+                      $window-line, $window-line,
+                      window-y(darken(steelblue,15)),
+                      window-y(transparent),
+                      linear-gradient(white(.4), white(.4)),
+                      window-x(steelblue),
+                      $window-shadow
+    background-size: 20% 10%, 20% 10%, 20% 10%,
+                     20% 6px,
+                     20% 10%, 20% 10%, 20% 10%,
+                     20% 6px,
+                     20% 10%, 20% 10%, 20% 10%,
+                     20% 6px,
+                     20% 10%, 20% 10%, 20% 10%,
+                     20% 6px,
+                     1px calc(100% - 15px), 1px calc(100% - 15px),
+                     1px calc(100% - 15px), 1px calc(100% - 15px),
+                     calc(100% - 2px) 6px,
+                     100% calc(100% - 15px),
+                     calc(100% - 2px) 5px,
+                     100% calc(100% - 15px),
+                     96% 10px
+    background-position: 3.5% 20%, 3.5% 20%, 3.5% 20%,
+                         3.5% 28.5%,
+                         3.5% 75%, 3.5% 75%, 3.5% 75%,
+                         3.5% 79.5%,
+                         96.5% 20%, 96.5% 20%, 96.5% 20%,
+                         96.5% 28.5%,
+                         96.5% 75%, 96.5% 75%, 96.5% 75%,
+                         96.5% 79.5%,
+                         left  8.5% bottom 10px, left  17% bottom 10px,
+                         right 8.5% bottom 10px, right 17% bottom 10px,
+                         left 50% bottom 10px,
+                         left 0 bottom 10px,
+                         50% 5px,
+                         left 0 bottom 10px,
+                         50% 100%
+
+  &:after
+    width: 230px
+    height: 320px
+    top: 12%
+    margin-left: -(@width/2)
+    background-repeat: no-repeat
+    background-image: $window-line, $window-line,
+                      linear-gradient( 70deg, transparent 7.5%,
+                                              $window 8%, $window 8.3%,
+                                              tan 8.8%),
+                      linear-gradient(-70deg, transparent 7.5%,
+                                              $window 8%, $window 8.3%,
+                                              tan 8.8%),
+                      $window-shadow,
+                      $window-line,
+                      window-x(transparent), window-y(darken(peru,15)), window-y(peru),
+                      radial-gradient(ellipse, mediumseagreen 41.5%, alpha(mediumseagreen,0) 43%),
+                      radial-gradient(ellipse, $window 47.5%, transparent 49%),
+                      radial-gradient(ellipse, mediumseagreen 41.5%, alpha(mediumseagreen,0) 43%),
+                      radial-gradient(ellipse, $window 47.5%, transparent 49%),
+                      radial-gradient(circle,  mediumseagreen 41.5%, alpha(mediumseagreen,0) 43%),
+                      radial-gradient(circle, $window 43.5%, transparent 45.5%),
+                      radial-gradient(circle, darkseagreen 41.5%, alpha(darkseagreen,0) 43%),
+                      radial-gradient(circle, darkseagreen 41.5%, alpha(darkseagreen,0) 43%),
+                      radial-gradient(circle, darkseagreen 41.5%, alpha(darkseagreen,0) 43%),
+                      radial-gradient(circle, darkseagreen 41.5%, alpha(darkseagreen,0) 43%),
+                      radial-gradient(circle, $window 45%, transparent 47%),
+                      radial-gradient(circle, $window 45%, transparent 47%),
+                      radial-gradient(circle, $window 45%, transparent 47%),
+                      radial-gradient(circle, $window 45%, transparent 47%),
+                      radial-gradient(circle, darkseagreen 41.5%, alpha(darkseagreen,0) 43%),
+                      radial-gradient(circle, darkseagreen 41.5%, alpha(darkseagreen,0) 43%),
+                      radial-gradient(circle, darkseagreen 41.5%, alpha(darkseagreen,0) 43%),
+                      radial-gradient(circle, darkseagreen 41.5%, alpha(darkseagreen,0) 43%),
+                      radial-gradient(circle, $window 45%, transparent 47%),
+                      radial-gradient(circle, $window 45%, transparent 47%),
+                      radial-gradient(circle, $window 45%, transparent 47%),
+                      radial-gradient(circle, $window 45%, transparent 47%),
+                      $window-shadow,
+                      $window-line,
+                      window-x(transparent), window-y(transparent),
+                      $window-shadow,
+                      linear-gradient(30deg, alpha(mediumpurple,.25) 40%,
+                                             alpha(mediumpurple,.1) 50%,
+                                             alpha(mediumpurple,.1) 60%,
+                                             alpha(mediumpurple,.3) 80%),
+                      window-y(#ddd),
+                      window-y(transparent), window-x(transparent),
+                      linear-gradient(180deg, alpha(mediumpurple,.6), alpha(mediumpurple,.2)),
+                      window-x(transparent), window-y(white),
+                      $window-shadow, $window-shadow
+    background-size: 100% 1px, 90.5% 1px,
+                     55% 30px, 55% 30px,
+                     87% 7px,
+                     100% 1px,
+                     100% 50px, 100% 8px,
+                     100% 50px,
+                     30px 80px, 30px 77px,
+                     30px 80px, 30px 77px,
+                     50px 50px, 50px 50px,
+                     35px 35px, 35px 35px, 35px 35px, 35px 35px,
+                     35px 35px, 35px 35px, 35px 35px, 35px 35px,
+                     35px 35px, 35px 35px, 35px 35px, 35px 35px,
+                     35px 35px, 35px 35px, 35px 35px, 35px 35px,
+                     75% 10px,
+                     65% 1px,
+                     65% 21%,
+                     65% 21%,
+                     65% 10px,
+                     65% 21%,
+                     calc(75% - 2px) 7px,
+                     75% 30%, 75% 70%,
+                     75% 30%,
+                     87% 90%, 87% 90%,
+                     87% 30px, 94% 10px
+    background-position: 50% 0, 50% 29px,
+                         0 0, 100% 0,
+                         50% 30px,
+                         left 0 bottom 70px,
+                         left 0 bottom 30px, left 0 bottom 30px,
+                         left 0 bottom 30px,
+                         left  64px bottom 30px,
+                         left  64px bottom 30px,
+                         left  79px bottom 40px,
+                         left  79px bottom 40px,
+                         right 70px bottom 50px,
+                         right 70px bottom 50px,
+                         left   0px bottom 64px,
+                         left  15px bottom 70px,
+                         left  30px bottom 66px,
+                         left  45px bottom 60px,
+                         left   0px bottom 64px,
+                         left  15px bottom 70px,
+                         left  30px bottom 66px,
+                         left  45px bottom 60px,
+                         right  0px bottom 64px,
+                         right 15px bottom 60px,
+                         right 30px bottom 66px,
+                         right 45px bottom 60px,
+                         right  0px bottom 64px,
+                         right 15px bottom 60px,
+                         right 30px bottom 66px,
+                         right 45px bottom 60px,
+                         50% 46px,
+                         50% 64px,
+                         50% 60px,
+                         50% 60px,
+                         50% 60px,
+                         50% 60px,
+                         50% 139px,
+                         50% 45px, 50% 45px,
+                         50% 145px,
+                         50% 0, 50% 0,
+                         50% 100%, left 50% bottom 20px
