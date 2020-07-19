@@ -1,0 +1,246 @@
+/*-----------------------------
+
+Noodles
+
+-----------------------------*/
+
+noodles-border(direction, color)
+  linear-gradient(direction, deepskyblue 2px,
+                             color 2px,
+                             color calc(100% - 2px),
+                             deepskyblue calc(100% - 2px))
+$noodles-solid = linear-gradient(deepskyblue, deepskyblue)
+$noodles-ball = radial-gradient(circle at 50% 100%, white 8%,
+                                                    deepskyblue 8.5%, deepskyblue 16.5%,
+                                                    white 17%, white 25%,
+                                                    deepskyblue 25.5%, deepskyblue 33.5%,
+                                                    white 36%, white 44%,
+                                                    deepskyblue 44.5%, deepskyblue 52.5%,
+                                                    white 53%, white 61%,
+                                                    deepskyblue 61.5%, deepskyblue 69.5%,
+                                                    transparent 70%)
+
+#noodles1,
+#noodles2
+  @media all and (max-width: 959px)
+    background-image: linear-gradient(to top, alpha(deepskyblue,.4) 1px, transparent 1px)
+  @media all and (min-width: 960px)
+    background-image: linear-gradient(to left, alpha(deepskyblue,.4) 1px, transparent 1px)
+
+#noodles1
+  background-color: white
+  z-index: 1
+
+  div
+    width: 144px
+    height: 180px
+    margin-left: -(@width/2)
+    top: 25%
+    background-repeat: no-repeat
+    background-image: noodles-border(90deg, alpha(deepskyblue,.4)),
+                      noodles-border(90deg, transparent),
+                      noodles-border(90deg, transparent),
+                      noodles-border(180deg, white),
+                      repeating-linear-gradient(to right, deepskyblue, deepskyblue 2px,
+                                                                     transparent 2px,
+                                                                     transparent 4px),
+                      noodles-border(90deg, transparent),
+                      noodles-border(90deg, transparent),
+                      noodles-border(180deg, white),
+                      $noodles-solid
+    background-size: 30% 20%,
+                     5% 6px, 70% 6px, 70% 6px,
+                     32% 80%,
+                     5% 6px, 70% 6px, 70% 6px,
+                     100% 2px
+    background-position: 50% 100%,
+                         6% 6%, 0 6%, 0 6%,
+                         50% 0,
+                         6% 0, 0 0, 0 0,
+                         50% 100%
+    &:before
+      width: 100px
+      height: 50px
+      left: 50%
+      margin-left: -52px
+      bottom: 5px
+      background-color: white
+      border: 2px solid deepskyblue
+      background-repeat: no-repeat, repeat-x, repeat-x
+      background-image: noodles-border(180deg, transparent),
+                        radial-gradient(circle, transparent 1px,
+                                                deepskyblue 1px,
+                                                deepskyblue 3px,
+                                                transparent 3px),
+                        radial-gradient(circle, deepskyblue 1px, transparent 1px)
+      background-size: 100% 10px,
+                       10px 10px,
+                       10px 10px
+      background-position: 50% 20%,
+                           50% 20%,
+                           calc(50% - 5px) 20%
+      border-radius: 2px 2px 50px 50px
+      box-shadow: inset 15px -5px 0 alpha(deepskyblue,.3)
+    &:after
+      width: 30px
+      height: 10px
+      right: 0
+      bottom: 0
+      border: 2px solid deepskyblue
+      border-radius: 3px 3px 15px 15px
+
+#noodles2
+  background-color: white
+  z-index: 1
+
+  div
+    width: 144px
+    height: 180px
+    margin-left: -(@width/2)
+    top: 25%
+    background-repeat: no-repeat
+    background-image: $noodles-ball,
+                      $noodles-ball,
+                      $noodles-ball,
+                      noodles-border(180deg, transparent),
+                      noodles-border(90deg, transparent),
+                      noodles-border(180deg, white),
+                      noodles-border(180deg, transparent),
+                      noodles-border(90deg, transparent),
+                      noodles-border(180deg, white),
+                      $noodles-solid
+    background-size: 38px 19px, 38px 19px, 38px 19px,
+                     6px 4%, 6px 40%, 6px 40%,
+                     6px 4%, 6px 40%, 6px 40%,
+                     100% 2px
+    background-position: 50% 76%, 25% 76%, 75% 76%,
+                         26% 50%, 26% 70%, 26% 70%,
+                         33% 50%, 33% 70%, 33% 70%,
+                         50% 100%
+    &:before
+      width: 100px
+      height: 35px
+      left: 50%
+      margin-left: -52px
+      bottom: 0
+      background-color: white
+      border: 2px solid deepskyblue
+      background-repeat: no-repeat, repeat-x, repeat-x, repeat-x
+      background-image: noodles-border(180deg, transparent),
+                        linear-gradient(to right, alpha(deepskyblue,.5) 50%, transparent 50%),
+                        linear-gradient(to left,  alpha(deepskyblue,.5) 50%, transparent 50%),
+                        linear-gradient(to right, alpha(deepskyblue,.5) 50%, transparent 50%)
+      background-size: 100% 19px,
+                       10px 5px,
+                       10px 5px,
+                       10px 5px
+      background-position: 50% 25%,
+                           50% 21%,
+                           50% 35%,
+                           50% 52%
+      border-radius: 2px 2px 35px 35px
+      box-shadow: inset 15px -5px 0 alpha(deepskyblue,.3)
+    &:after
+      width: 4px
+      height: 40px
+      right: 15%
+      bottom: 10%
+      border: 2px solid deepskyblue
+      border-top-left-radius: 2px
+      border-top-right-radius: 10px
+      transform: rotate(60deg)
+      z-index: -1
+
+#noodles3
+  background-color: white
+  
+  div
+    width: 144px
+    height: 180px
+    margin-left: -(@width/2)
+    top: 25%
+    background-repeat: no-repeat
+    background-image: noodles-border(90deg, alpha(deepskyblue,.4)),
+                      noodles-border(90deg, alpha(deepskyblue,.4)),
+                      noodles-border(90deg, transparent),
+                      noodles-border(180deg, white),
+                      noodles-border(90deg, alpha(deepskyblue,.4)),
+                      noodles-border(90deg, transparent),
+                      noodles-border(180deg, white),
+                      $noodles-solid
+    background-size: 50% 20%,
+                     10% 6px, 70% 6px, 70% 6px,
+                     10% 6px, 70% 6px, 70% 6px,
+                     100% 2px
+    background-position: 50% 100%,
+                         100% 0, 100% 0, 100% 0,
+                         100% 6%, 100% 6%, 100% 6%,
+                         50% 100%
+    &:before
+      content: 'nooooooooooooooooooooooooooooooooooooooooooooodles'
+      width: 170px
+      bottom: 43.5%
+      left: -11%
+      color: transparent
+      font-size: 20px
+      line-height: .4
+      font-weight: bold
+      text-decoration-line: overline underline
+      text-decoration-style: wavy
+      text-decoration-color: deepskyblue
+      text-decoration-thickness: 2px
+      transform: rotate(90deg)
+      word-wrap: break-word
+      text-align: left
+    &:after
+      width: 100px
+      height: 50px
+      left: 50%
+      margin-left: -52px
+      bottom: 5px
+      background-color: white
+      border: 2px solid deepskyblue
+      // Seigaiha pattern by Lea Verou - https://leaverou.github.io/css3patterns/#seigaiha
+      background-image: linear-gradient(to bottom, white 14.7%, transparent 15%),
+                        radial-gradient(circle at 100% 150%, deepskyblue 24%, 
+                                                             white 24.5%, white 28%,
+                                                             deepskyblue 28.5%, deepskyblue 36%,
+                                                             white 36.5%, white 40%,
+                                                             transparent 40.5%, transparent),
+                        radial-gradient(circle at 0    150%, deepskyblue 24%, 
+                                                             white 24.5%, white 28%,
+                                                             deepskyblue 28.5%, deepskyblue 36%,
+                                                             white 36.5%, white 40%,
+                                                             transparent 40.5%, transparent),
+                        radial-gradient(circle at 50%  100%, white 10%,
+                                                             deepskyblue 10.5%, deepskyblue 23%,
+                                                             white 23.5%, white 30%,
+                                                             deepskyblue 30.5%, deepskyblue 43%,
+                                                             white 43.5%, white 50%,
+                                                             deepskyblue 50.5%, deepskyblue 63%,
+                                                             white 63.5%, white 71%,
+                                                             transparent 71.5%, transparent),
+                        radial-gradient(circle at 100% 50%,  white 5%,
+                                                             deepskyblue 5.5%, deepskyblue 15%,
+                                                             white 15.5%, white 20%,
+                                                             deepskyblue 20.5%, deepskyblue 29%,
+                                                             white 29.5%, white 34%,
+                                                             deepskyblue 34.5%, deepskyblue 44%,
+                                                             white 44.5%, white 49%,
+                                                             transparent 49.5%, transparent),
+                        radial-gradient(circle at 0    50%,  white 5%,
+                                                             deepskyblue 5.5%, deepskyblue 15%,
+                                                             white 15.5%, white 20%,
+                                                             deepskyblue 20.5%, deepskyblue 29%,
+                                                             white 29.5%, white 34%,
+                                                             deepskyblue 34.5%, deepskyblue 44%,
+                                                             white 44.5%, white 49%,
+                                                             transparent 49.5%, transparent)
+      background-size: 100% 100%,
+                       20px 10px,
+                       20px 10px,
+                       20px 10px,
+                       20px 10px,
+                       20px 10px
+      border-radius: 2px 2px 20px 20px
+      box-shadow: inset 15px -5px 0 alpha(deepskyblue,.3)
