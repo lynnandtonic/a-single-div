@@ -1,0 +1,75 @@
+/*-----------------------------
+
+Dot Matrix
+
+-----------------------------*/
+
+#dotmatrix
+  background-color: #ccc
+  background-repeat: repeat-x
+  background-image: linear-gradient(to right, #eee, #eee),
+                    linear-gradient(to right, #eee, #eee),
+                    linear-gradient(86deg, black(0), 97%, black(.04) 99%),
+                    linear-gradient(94deg, black(0), 96%, black(.06) 99%),
+                    linear-gradient(to left, #eee 1px, transparent 1px),
+                    radial-gradient(circle, white(0) 27%, white 29%),
+                    radial-gradient(circle, white(0) 27%, white 29%),
+                    radial-gradient(circle, black(0) 27%, black(.1) 29%,
+                                            black(.1) 55%, black(0) 55%),
+                    radial-gradient(circle, black(0) 27%, black(.1) 29%,
+                                            black(.1) 55%, black(0) 55%),
+                    linear-gradient(to right, white, white),
+                    linear-gradient(to bottom, black(.1), black(0))
+  background-size: 100% 1px,
+                   100% 1px,
+                   30em 12em,
+                   30em 12em,
+                   15em 12em,
+                   1em 1em,
+                   1em 1em,
+                   1em 1em,
+                   1em 1em,
+                   15em 10em,
+                   100% .3em
+  background-position: 50% calc(50% - 5em),
+                       50% calc(50% + 5em),
+                       calc(50% - 7.5em) 50%,
+                       calc(50% + 7.5em) 50%,
+                       50% 50%,
+                       50% calc(50% - 5.5em),
+                       50% calc(50% + 5.5em),
+                       calc(50% + .1em) calc(50% - 5.4em),
+                       calc(50% + .1em) calc(50% + 5.6em),
+                       50% 50%,
+                       50% calc(50% + 6.2em)
+
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+
+  &:before
+    width: 100%
+    height: 9.5em
+    left: 0
+    top: calc(50% - 4.75em)
+    font-size: 10px
+    background-repeat: space
+    background-image: radial-gradient(circle at 0.4em 0.7em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 0.4em 1.1em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 0.4em 1.5em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 0.4em 1.9em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 0.4em 2.3em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 0.4em 2.7em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 1.6em 0.7em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 1.6em 1.1em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 1.6em 1.5em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 1.6em 1.9em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 1.6em 2.3em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 1.6em 2.7em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 0.8em 0.3em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 1.2em 0.3em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 0.8em 1.5em, #999 .15em, black(0) .15em),
+                      radial-gradient(circle at 1.2em 1.5em, #999 .15em, black(0) .15em)
+    background-size: 2em 3em
+    background-position: 0 0
