@@ -1,0 +1,50 @@
+/*-----------------------------
+
+Divtober
+
+-----------------------------*/
+
+.divtober
+  font-family: 'Courier New', Courier, serif
+  line-height: 1.4
+  font-size: 110%
+
+  .content
+    margin: 2em 25px
+    
+    & > *
+      margin-bottom: 20px
+
+    a
+      color: blue
+
+  h2
+    margin-bottom: 10px
+    font-size: 1.1em
+    font-weight: bold
+
+  h3
+    font-weight: bold
+
+  ul
+    padding-left: 20px
+    list-style-type: disc
+
+  code
+    padding: 0 3px
+    display: inline-block
+    background-color: #ddd
+
+  .prompts
+    max-width: 900px
+    list-style-type: decimal
+    list-style-position: inside
+
+    @media screen and (min-width: 420px)
+      columns: 2
+
+    @media screen and (min-width: 700px)
+      columns: 3
+
+    li
+      margin: 5px

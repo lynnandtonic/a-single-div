@@ -1,6 +1,6 @@
 doctype html
 html(lang="en")
-  //
+  //-
     -----------------------------------------------
     This is a CSS drawing experiment to see what's possible with a single div. 
     To learn more about this project: 
@@ -11,22 +11,31 @@ html(lang="en")
     Tweet at me: @lynnandtonic
     -----------------------------------------------
 
+  //- Variable block for page-specific info
+  block vars
+
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
 
-    title A Single Div
-    meta(name="description", content="A CSS drawing experiment to see what’s possible with a single div.")
-    link(rel="stylesheet", href="css/main.css")
-    link(rel="icon", href="images/favicon.ico")
+    title #{pageTitle}
+    meta(name='description', content=pageDescription)
+    link(rel="icon", href="/images/favicon.ico")
 
-  body.cf
+    if bodyClass == 'main'
+      link(rel='stylesheet', href='/css/main.css')
+    else
+      link(rel='stylesheet', href='/css/pages.css')
+
+  body(class=bodyClass)
 
     header
-      h1 A Single Div: 
+      h1
+        a(href='/') A Single Div
+        = ': '
         span a CSS drawing project by 
-          a(href="https://twitter.com/lynnandtonic") Lynn Fisher
+        a(href="https://twitter.com/lynnandtonic") Lynn Fisher
       a.share-link(href="https://ctt.ec/DidfP") Tweet
       a.github-link(href="https://github.com/lynnandtonic/a-single-div") GitHub
       a.coffee(href="https://www.buymeacoffee.com/lynnandtonic") Buy me a coffee

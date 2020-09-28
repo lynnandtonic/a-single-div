@@ -20,7 +20,8 @@ module.exports = function(grunt) {
                 },
 
                 files: {
-                    'public/css/main.css': ['_styl/main.styl']
+                    'public/css/main.css':  ['_styl/main.styl'],
+                    'public/css/pages.css': ['_styl/pages.styl']
                 }
             }
         },
