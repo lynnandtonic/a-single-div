@@ -1,0 +1,118 @@
+/*-----------------------------
+
+Hot
+
+-----------------------------*/
+
+#hot
+  background-color: lightsalmon
+
+  div
+    width: 100px
+    height: 200px
+    margin-left: -(@width/2)
+    margin-top: -65px
+    background-color: darken(lemonchiffon,5)
+    background-repeat: no-repeat, no-repeat, repeat-x, repeat-x
+    background-image: linear-gradient(to bottom, yellowgreen 3em, transparent 3em),
+                      linear-gradient(black(.1), black(.1)),
+                      radial-gradient(ellipse, darken(yellowgreen,5) 40%, white(0) 45%),
+                      linear-gradient(to right, transparent 40%,
+                                                yellowgreen 40%,
+                                                yellowgreen 60%,
+                                                transparent 60%)
+    background-size: 100% 100%,
+                     25% 38%,
+                     10% 15%,
+                     10% 8%
+    background-position: 0 0,
+                         100% 70%,
+                         50% 32%,
+                         50% 30%
+    border: 2px solid darkolivegreen
+    border-radius: 40px
+    border-bottom-left-radius: 50px 15px
+    border-bottom-right-radius: 50px 15px
+    box-shadow: inset  1em -.6em 0 -1em white,
+                inset -1em -.6em 0 -1em white,
+                inset  0   -.3em 0 0 alpha(darkolivegreen,.3),
+                inset  0 -.5em 0 darken(palegoldenrod,10),
+                inset  .6em 0 0 -.1em black(.2),
+                inset  2.1em 0 0 black(.1),
+                inset -.7em 0 0 black(.12),
+                inset 0 -2.2em 0 -1.5em alpha(darkolivegreen,.5),
+                inset 0 -7.2em 0 -5em yellowgreen,
+                inset 0 -7.7em 0 -5.2em darken(lemonchiffon,5),
+                inset 0 -9.2em 0 -6.5em yellowgreen,
+                inset 0 -10em 0 -7em darken(lemonchiffon,5)
+
+    &:before
+      width: 46%
+      height: 20px
+      top: -72px
+      left: 50%
+      margin-left: calc(-23% - 2px)
+      background-color: darkolivegreen
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse, white(.6) 40%, white(0) 45%)
+      background-size: 40% 40%
+      background-position: 50% 128%
+      border-radius: .3em
+      border: 2px solid darkolivegreen
+      box-shadow: inset -.3em 0 0 darkolivegreen,
+                  inset -.6em 0 0 white(.6),
+                  inset  .8em 0 0 black(.3)
+      z-index: 2
+
+    &:after
+      content: 'chile jalapeño'
+      font-family: Helvetica, Arial, sans-serif
+      font-weight: bold
+      text-align: left
+      color: alpha(darkolivegreen,.4)
+
+      width: calc(100% - 4px)
+      padding-left: 4px
+      height: 118px
+      padding-top: 162px
+      bottom: 0
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse at top center, white(.4) 40%, white(0) 45%),
+                        radial-gradient(ellipse at bottom center, white(.7) 30%, white(0) 32%),
+                        radial-gradient(ellipse at top center, white(.6) 30%, white(0) 32%),
+                        linear-gradient(black(.3), black(.3)),
+                        linear-gradient(white(.6), white(.6)),
+                        linear-gradient(darkolivegreen, darkolivegreen),
+                        linear-gradient(white(.6), white(.6)),
+                        linear-gradient(to right, black(.1) 40%, black(0) 40%),
+                        linear-gradient(yellowgreen, yellowgreen),
+                        linear-gradient(darkolivegreen, darkolivegreen),
+                        radial-gradient(ellipse, white(.8) 40%, white(0) 45%),
+                        radial-gradient(ellipse, white(.8) 40%, white(0) 45%),
+                        radial-gradient(ellipse, alpha(darkolivegreen,.6) 55%, transparent 60%)
+      background-size:  1em .9em,
+                        2em 4em,
+                        2em 6em,
+                       .65em 34px,
+                       .3em 34px,
+                       calc(36% + 4px) 36px,
+                       .3em 52px,
+                       36% 49px,
+                       36% 49px,
+                       calc(36% + 4px) 40px,
+                       8px 5px,
+                       8px 5px,
+                       80% 10px
+      background-position: 50% 35px,
+                           70% 65px,
+                           70% 129px,
+                           36% 30px,
+                           63% 30px,
+                           50% 30px,
+                           63% 30px,
+                           50% 40px,
+                           50% 40px,
+                           50% 40px,
+                           27% 99.4%,
+                           36% 99.4%,
+                           50% 101%
