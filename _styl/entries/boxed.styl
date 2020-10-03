@@ -1,0 +1,170 @@
+/*-----------------------------
+
+Boxed
+
+-----------------------------*/
+
+#boxed
+  background-color: #fcf7f5
+  
+  div
+    width: 350px
+    height: 300px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    // background-color: black(.2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle, hotpink 60%, transparent 60.1%), // peanuts
+                      radial-gradient(circle, pink 60%, transparent 60.1%),
+                      radial-gradient(circle, hotpink 60%, transparent 60.1%),
+                      radial-gradient(circle, hotpink 60%, transparent 60.1%),
+                      radial-gradient(circle, hotpink 60%, transparent 60.1%),
+                      radial-gradient(circle, hotpink 60%, transparent 60.1%),
+                      radial-gradient(circle, pink 60%, transparent 60.1%),
+                      radial-gradient(circle, hotpink 60%, transparent 60.1%),
+                      radial-gradient(circle, white 60%, transparent 60.1%), // cloud
+                      radial-gradient(circle, white 60%, transparent 60.1%),
+                      radial-gradient(circle, white 60%, transparent 60.1%),
+                      radial-gradient(circle, white 60%, transparent 60.1%),
+                      radial-gradient(circle, white 60%, transparent 60.1%),
+                      radial-gradient(circle, white 60%, transparent 60.1%), // cloud
+                      radial-gradient(circle, white 60%, transparent 60.1%),
+                      radial-gradient(circle, white 60%, transparent 60.1%),
+                      radial-gradient(circle, white 60%, transparent 60.1%),
+                      radial-gradient(circle, white 60%, transparent 60.1%),
+                      radial-gradient(ellipse at 50% 80%, transparent 35%,
+                                                          mediumpurple 35.2%,
+                                                          mediumpurple 40%,
+                                                          darkturquoise 40.2%,
+                                                          darkturquoise 45%,
+                                                          mediumseagreen 45.2%,
+                                                          mediumseagreen 50%,
+                                                          orange 50.2%,
+                                                          orange 55%,
+                                                          lighten(crimson,10) 55.2%,
+                                                          lighten(crimson,10) 60%,
+                                                          transparent 60.2%),
+                      radial-gradient(circle, gold 60%, transparent 60.1%),
+                      linear-gradient(orange, orange),
+                      linear-gradient(orange, orange),
+                      linear-gradient(mediumpurple, mediumpurple),
+                      linear-gradient(mediumpurple, mediumpurple),
+                      linear-gradient(mediumseagreen, mediumseagreen),
+                      linear-gradient(mediumseagreen, mediumseagreen),
+                      linear-gradient(orange, orange),
+                      linear-gradient(orange, orange)
+    background-size: 30px 30px, // peanuts
+                     50px 50px,
+                     40px 40px,
+                     30px 30px,
+                     30px 30px,
+                     50px 50px,
+                     40px 40px,
+                     30px 30px,
+                     20px 20px, // cloud
+                     40px 40px,
+                     30px 30px,
+                     30px 30px,
+                     20px 20px,
+                     20px 20px, // cloud
+                     35px 35px,
+                     20px 20px,
+                     25px 25px,
+                     20px 20px,
+                     95% 100%, // rainbow
+                     60px 60px, // sun
+                     21px 5px, 5px 21px,
+                     21px 5px, 5px 21px,
+                     21px 5px, 5px 21px,
+                     21px 5px, 5px 21px
+    background-position:  left 15px bottom 60px, // peanuts
+                          left 32px bottom 53px,
+                          left 65px bottom 54px,
+                          left 95px bottom 60px,
+                         right 15px bottom 60px,
+                         right 32px bottom 53px,
+                         right 65px bottom 54px,
+                         right 95px bottom 60px,
+                          72px 100px, // cloud
+                          82px  80px,
+                         110px  90px,
+                          82px 100px,
+                         105px 105px,
+                         right  50px top 150px, // cloud
+                         right  60px top 140px,
+                         right  85px top 155px,
+                         right  70px top 160px,
+                         right  55px top 160px,
+                         50% 0, // rainbow
+                         right 20px top, // sun
+                         0 148px, 8px 140px,
+                         70px 35px, 78px 27px,
+                         140px 180px, 148px 172px,
+                         right 10px top 115px, right 18px top 107px
+    
+    &:before,
+    &:after
+      font-family: Helvetica, Arial, sans-erif
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 11px
+      color: #222
+      height: 30px
+      padding-top: 50px
+      bottom: 0
+      background-repeat: no-repeat
+      background-size: 33% 30%,
+                       33% 40%,
+                       70% 30%,
+                       60% 40%,
+                       112px 100%
+      box-shadow: 0 15px 0 -13px sienna
+    
+    &:before
+      content: 'design'
+      text-align: right
+      width: 110px
+      padding-right: 35px
+      background-image: linear-gradient(120deg, transparent     21%,
+                                                darken(peru,10) 21.5%,
+                                                darken(peru,10) 78%,
+                                                transparent     78.5%),
+                        linear-gradient(110deg, darken(peru,23) 55%,
+                                                transparent     55.5%),
+                        linear-gradient( 55deg, transparent     18%,
+                                                peru  18.5%,
+                                                peru  85%,
+                                                transparent     85.5%),
+                        linear-gradient( 70deg, transparent     19%,
+                                                darken(peru,15) 19.5%),
+                        linear-gradient(to right, darken(peru,15) 29%, lighten(peru,5) 29%)
+      background-position: 0 0,
+                           15px 0,
+                           100% 0,
+                           right 18px top 0,
+                           15px 0
+
+    &:after
+      content: 'code'
+      text-align: left
+      width: 105px
+      padding-left: 40px
+      right: 0
+      background-image: linear-gradient(-120deg, transparent     21%,
+                                                 darken(peru,10) 21.5%,
+                                                 darken(peru,10) 78%,
+                                                 transparent     78.5%),
+                        linear-gradient(-110deg, darken(peru,23) 55%,
+                                                 transparent     55.5%),
+                        linear-gradient( -55deg, transparent     18%,
+                                                 peru  18.5%,
+                                                 peru  85%,
+                                                 transparent     85.5%),
+                        linear-gradient( -70deg, transparent     19%,
+                                                darken(peru,15) 19.5%),
+                        linear-gradient(to left, darken(peru,15) 29%, lighten(peru,5) 29%)
+      background-position: 100% 0,
+                           right 15px top 0,
+                           0 0,
+                           left 18px top 0,
+                           right 15px top 0
