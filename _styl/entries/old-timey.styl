@@ -1,0 +1,116 @@
+/*-----------------------------
+
+Old-timey
+
+-----------------------------*/
+
+#old-timey
+  background-color: darken(lightcoral,3)
+  
+  div
+    width: 250px
+    height: 330px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse at 50% 0, pink 50%, white(0) 50.5%), // shirt
+                      repeating-linear-gradient(to top, crimson, crimson 5px,
+                                                        black 5px, black 10px),
+                      radial-gradient(circle, pink 50%, white(0) 50.5%), // arms
+                      linear-gradient(-105deg, white(0) 45%, pink 45.5%),
+                      radial-gradient(ellipse at 0 50%, pink 60%, white(0) 60.5%),
+                      radial-gradient(circle, pink 50%, white(0) 50.5%),
+                      radial-gradient(ellipse, pink 50%, white(0) 50.5%),
+                      radial-gradient(circle, pink 50%, white(0) 50.5%), // arms
+                      linear-gradient( 105deg, white(0) 45%, pink 45.5%),
+                      radial-gradient(ellipse at 100% 50%, pink 60%, white(0) 60.5%),
+                      radial-gradient(circle, pink 50%, white(0) 50.5%),
+                      radial-gradient(ellipse, pink 50%, white(0) 50.5%),
+                      linear-gradient( 78deg, black(0) 40%, black 40.5%), // shorts
+                      linear-gradient(-78deg, black(0) 40%, black 40.5%),
+                      linear-gradient(black, black),
+                      linear-gradient( 78deg, white(0) 40%, pink 40.5%), // legs
+                      linear-gradient(-78deg, white(0) 40%, pink 40.5%),
+                      radial-gradient(ellipse at 50% 100%, black 50%, black(0) 50.5%), // shoes
+                      radial-gradient(ellipse at 50% 100%, black 50%, black(0) 50.5%),
+                      radial-gradient(circle, black 50%, black(0) 50.5%), // weights
+                      radial-gradient(circle, black 50%, black(0) 50.5%),
+                      linear-gradient(black, black),
+                      radial-gradient(ellipse at 50% 0, black 60%, black(0) 60.5%), // face
+                      radial-gradient(ellipse at 50% 0, black 60%, black(0) 60.5%),
+                      radial-gradient(circle, black 50%, black(0) 50.5%),
+                      radial-gradient(circle, black 50%, black(0) 50.5%),
+                      radial-gradient(circle, pink 50%, white(0) 50.5%)
+    background-size:  90px 80px, // shirt
+                      90px 80px,
+                      50px 50px, // arms
+                      20px 50px,
+                      20px 80px,
+                      30px 30px,
+                      12px 30px,
+                      50px 50px, // arms
+                      20px 50px,
+                      20px 80px,
+                      30px 30px,
+                      12px 30px,
+                      50px 20px, // shorts
+                      50px 20px,
+                      80px 10px,
+                      20px 50px, // legs
+                      20px 50px,
+                      80px 25px, // shoes
+                      80px 25px,
+                      70px 70px, // weights
+                      70px 70px,
+                     200px  5px,
+                      50px 15px, // face
+                      50px 15px,
+                      10px 10px,
+                      10px 10px,
+                      80px 80px
+    background-position: center       bottom 120px, // shirt
+                         center       bottom 120px,
+                           left  50px bottom 157px, // arms
+                           left  62px bottom 187px,
+                           left  62px bottom 225px,
+                           left  54px bottom 284px,
+                           left  69px bottom 286px,
+                          right  50px bottom 157px, // arms
+                          right  62px bottom 187px,
+                          right  62px bottom 225px,
+                          right  54px bottom 284px,
+                          right  69px bottom 286px,
+                           left  64px bottom 100px, // shorts
+                          right  64px bottom 100px,
+                         center       bottom 110px,
+                           left  89px bottom  64px, // legs
+                          right  89px bottom  64px,
+                           left  46px bottom   0, // shoes
+                          right  46px bottom   0,
+                           left -10px bottom 267px, // weights
+                          right -10px bottom 267px,
+                           left  30px bottom 297px,
+                           left  80px bottom 208px, // face
+                          right  80px bottom 208px,
+                           left 112px bottom 225px,
+                          right 112px bottom 225px,
+                         center       bottom 192px
+
+    &:before,
+    &:after
+      width: 20px
+      height: 80px
+      bottom: 0
+      background-image: linear-gradient(to top, crimson 65%, pink 65.5%)
+
+    &:before
+      left: 65px
+      border-top-left-radius: 20px 40px
+      border-bottom-left-radius: 20px 40px
+      transform: rotate(40deg)
+    
+    &:after
+      right: 65px
+      border-top-right-radius: 20px 40px
+      border-bottom-right-radius: 20px 40px
+      transform: rotate(-40deg)
