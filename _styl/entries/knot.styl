@@ -1,0 +1,101 @@
+/*-----------------------------
+
+Knot
+
+-----------------------------*/
+
+#knot
+  background-color: tomato
+
+  div
+    box-sizing: border-box
+    width: 200px
+    height: 280px
+    margin-left: -(@width/2 + 30px)
+    margin-top:  -(@height/2 + 16px)
+    @media (max-width: 400px)
+      margin-left: -(@width/2 + 20px)
+      margin-top:  -(@height/2 + 10px)
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle at 50% 100%, white(0) 60px,
+                                                          white 61px),
+                      linear-gradient(white, white),
+                      linear-gradient(lightpink, lightpink),
+                      linear-gradient(lightpink, lightpink),
+                      linear-gradient(to right, white 39px, white(0) 40px),
+                      radial-gradient(circle at 50% 100%, white(0) 60px,
+                                                        lightpink 61px,
+                                                        lightpink 70px,
+                                                        white(0) 71px),
+                      radial-gradient(circle at 0 0, white(0) 60px,
+                                                     lightpink 61px,
+                                                     lightpink 70px,
+                                                     white(0) 71px),
+                      radial-gradient(circle at 100% 100%, white(0) 60px,
+                                                           white 61px,
+                                                           white 100px,
+                                                           white(0) 101px),
+                      linear-gradient(white, white),
+                      linear-gradient(to top, white 39px, white(0) 40px)
+    background-size: @width 100px,
+                     39px 120px,
+                     5px 39px,
+                     40px 5px,
+                     100% 100%,
+                     @width 100px,
+                     100px 100px,
+                     100px 100px,
+                     100px 39px,
+                     90% 100%
+    background-position: 50% 0,
+                         81px 100%,
+                         76px 161px,
+                         0 200px,
+                         0 0,
+                         right 5px top 3px,
+                         right 5px top 103px,
+                         80px 80px,
+                         0 161px,
+                         0 0
+    border-radius: 100px 100px 0 15px
+    transform: rotate(-45deg)
+    
+    @media (max-width: 400px)
+      transform: rotate(-45deg) scale(.8)
+    
+    &:before
+      width: 280px
+      height: 200px
+      bottom: 0
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle at 0 50%, white(0) 60px, white 61px),
+                        radial-gradient(circle at 0 0, white(0) 60px,
+                                                       white 61px,
+                                                       white 100px,
+                                                       white(0) 101px),
+                        linear-gradient(white, white),
+                        radial-gradient(circle at 0 50%, white(0) 60px,
+                                                         lightpink 61px,
+                                                         lightpink 70px,
+                                                         white(0) 71px)
+      background-size: 100px @width,
+                       100px 100px,
+                       30px 30px,
+                       100px @width
+      background-position: 100% 50%,
+                           right 80px top 20px,
+                           right 80px bottom 9px,
+                           right 5px top calc(50% + 3px)
+      border-radius: 0 100px 100px 0
+
+    &:after
+      width: 39px
+      height: @width
+      bottom: -29px
+      left: 81px
+      background-image: linear-gradient(to bottom, white 10px,
+                                                   lightpink 10px,
+                                                   lightpink 15px,
+                                                   white 15px)
+      border-radius: 10px
+      box-shadow: -110px -109px 0 white
