@@ -1,0 +1,137 @@
+/*-----------------------------
+
+Egg
+
+-----------------------------*/
+
+#egg
+  background-color: tan
+
+  div
+    width: 300px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 15px)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse, peru 40%, alpha(peru,0) 40.5%)
+    background-size: 100% 18%
+    background-position: 50% 102%
+    // background-color: black(.1)
+    
+    &:before
+      width: 210px
+      height: 290px
+      left: 50%
+      margin-left: -(@width/2)
+      bottom: 15px
+      // background-color: black(.1)
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, powderblue 50%, transparent 50.5%), // spots
+                        radial-gradient(circle, powderblue 50%, transparent 50.5%),
+                        radial-gradient(circle, powderblue 50%, transparent 50.5%),
+                        radial-gradient(circle, powderblue 50%, transparent 50.5%),
+                        linear-gradient( 55deg, lightcyan 68%, white(0) 68.5%), // edges
+                        linear-gradient(-30deg, lightcyan 82%, white(0) 82.5%),
+                        linear-gradient( 60deg, lightcyan 78%, white(0) 78.5%),
+                        linear-gradient(-60deg, lightcyan 82%, white(0) 82.5%),
+                        linear-gradient( 60deg, lightcyan 82%, white(0) 82.5%),
+                        linear-gradient(-70deg, lightcyan 65%, white(0) 65.5%),
+                        linear-gradient( 40deg, lightcyan 65%, white(0) 65.5%),
+                        linear-gradient(-70deg, lightcyan 75%, white(0) 75.5%),
+                        linear-gradient(-60deg, lightcyan 83%, white(0) 83.5%),
+                        linear-gradient( 45deg, darkolivegreen 75%, black(0) 75.5%), // shadows
+                        linear-gradient( 50deg, darkolivegreen 78%, black(0) 78.5%),
+                        linear-gradient(-55deg, darkolivegreen 65%, black(0) 65.5%),
+                        linear-gradient(-55deg, darkolivegreen 75%, black(0) 75.5%),
+                        linear-gradient(-50deg, darkolivegreen 83%, black(0) 83.5%),
+                        radial-gradient(circle, darkseagreen 50%, transparent 50.5%), // spots
+                        radial-gradient(circle, darkseagreen 50%, transparent 50.5%),
+                        radial-gradient(circle, darkseagreen 50%, transparent 50.5%),
+                        radial-gradient(ellipse at 100% 50%, transparent 40%, // neck
+                                                             olive 40.5%,
+                                                             olive 63%,
+                                                             darkolivegreen 63.1%,
+                                                             darkolivegreen 67%,
+                                                             transparent 67%),
+                        radial-gradient(ellipse at  50% 80%, olive 65%,
+                                                             darkolivegreen 65.5%,
+                                                             darkolivegreen 68%,
+                                                             transparent 68.5%)
+      background-size: 30px 30px, // spots
+                       70px 70px,
+                       40px 40px,
+                       90px 90px,
+                       20% 42%, // edges
+                       20% 38%,
+                       15% 38%,
+                       10% 30%,
+                       10% 30%,
+                       10% 40%,
+                       20% 40%,
+                       24% 40%,
+                       10% 50%,
+                       15% 38%, // shadows
+                       15% 36%,
+                       10% 42%,
+                       24% 37%,
+                       10% 48%,
+                       40px 40px, // spots
+                       30px 30px,
+                       20px 20px,
+                       40% 100%, // neck
+                       105% 75%
+      background-position: 20% 73%, // spots
+                           5% 107%,
+                           50% 90%,
+                           110% 101%,
+                           0 100%, // edges
+                           14% 100%,
+                           32% 100%,
+                           45% 100%,
+                           56% 100%,
+                           64% 100%,
+                           84% 100%,
+                           94% 100%,
+                           100% 100%,
+                           9% 100%, // shadows
+                           38% 100%,
+                           61% 100%,
+                           86% 100%,
+                           94% 100%,
+                           40% 40%, // spots
+                           60% 35%,
+                           73% 42%,
+                           3% 100%, // neck
+                           -10% 100%
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%
+      box-shadow: inset 0 -15px 0 black(.1)
+
+    &:after
+      width: 28%
+      height: 21%
+      left: 40%
+      top: -5px
+      background-color: olive
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, black 50%, black(0) 50.5%),
+                        radial-gradient(circle, black 50%, black(0) 50.5%),
+                        radial-gradient(ellipse at 50% 0, olive 70%, transparent 70.5%),
+                        radial-gradient(ellipse, white 50%, white(0) 50.5%),
+                        radial-gradient(ellipse, white 50%, white(0) 50.5%),
+                        radial-gradient(ellipse, white 50%, white(0) 50.5%)
+      background-size: 10px 10px,
+                       10px 10px,
+                       100% 30%,
+                       20px 30px,
+                       20px 30px,
+                       20px 30px
+      background-position: 65% 28%,
+                           25% 35%,
+                           50% 60%,
+                           30% 80%,
+                           50% 80%,
+                           70% 80%
+      border-top-left-radius: 40px 30px
+      border-top-right-radius: 70px 50px
+      border-bottom-right-radius: 40px
+      box-shadow: inset 4px 12px 0 -5px darkolivegreen
