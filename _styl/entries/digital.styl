@@ -1,0 +1,166 @@
+/*-----------------------------
+
+Digital
+
+-----------------------------*/
+
+#digital
+  background-color: whitesmoke
+  font-size: 10px
+  z-index: -1
+  @media (max-width: 400px)
+    font-size: 8px
+
+  div
+    box-sizing: border-box
+    width: 15em
+    height: 27em
+    margin-left: -(@width/2 - 4.5em)
+    margin-top: -(@height/2)
+    background-color: whitesmoke
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle, thistle 1em,
+                                              alpha(darkorchid,0) 1.1em),
+                      linear-gradient( 110deg, white(0) 61%, whitesmoke 61.5%),
+                      linear-gradient(-110deg, white(0) 61%, whitesmoke 61.5%),
+                      linear-gradient( 110deg, white(0) 66%, whitesmoke 66.5%),
+                      linear-gradient(-110deg, white(0) 66%, whitesmoke 66.5%),
+                      radial-gradient(circle, darkorchid 50%, alpha(darkorchid,0) 50.5%),
+                      linear-gradient(plum, plum),
+                      radial-gradient(circle, darkorchid .5em, alpha(darkorchid,0) .6em),
+                      radial-gradient(circle, darkorchid .5em, alpha(darkorchid,0) .6em),
+                      radial-gradient(circle, darkorchid .5em, alpha(darkorchid,0) .6em),
+                      linear-gradient(thistle, thistle),
+                      linear-gradient(thistle, thistle),
+                      linear-gradient(thistle, thistle)
+    background-size:  3em  3em,
+                      6em 10em,
+                      6em 10em,
+                      6em  8em,
+                      6em  8em,
+                      8em  8em,
+                     15em 16em,
+                      2em  2em,
+                      2em  2em,
+                      2em  2em,
+                      7em .2em,
+                     12em .2em,
+                     12em .2em
+    background-position: -15.3em  0.9em,
+                         -11.4em  9.3em,
+                          -5.4em  9.3em,
+                         -15.6em 11.3em,
+                         -10.4em 11.3em,
+                         -14.0em  7.5em,
+                         -15.0em  4.0em,
+                         -15.0em  4.0em,
+                         -15.3em 20.2em,
+                         -16.7em 20.2em,
+                         -18.1em 20.2em,
+                         -15.7em 22.5em,
+                         -15.7em 23.5em,
+                         -15.7em 24.5em
+    border: .1em solid darkorchid
+    border-radius: 1.6em
+    box-shadow: 0 0 0 .8em thistle,
+                0 -1em 0 .8em thistle,
+                0 -1em 0 1em darkorchid,
+                0 0 0 1em darkorchid
+    animation: instagram 4500ms infinite ease-out
+
+    &:before
+      width: 8em
+      height: @width
+      left: -14em
+      top: -4em
+      background-color: plum
+      background-repeat: no-repeat
+      background-image: linear-gradient( 110deg, white(0) 60%, whitesmoke 60.5%),
+                        linear-gradient(-110deg, white(0) 60%, whitesmoke 60.5%),
+                        linear-gradient( 110deg, white(0) 66%, whitesmoke 66.5%),
+                        linear-gradient(-110deg, white(0) 66%, whitesmoke 66.5%),
+                        radial-gradient(circle, darkorchid 50%, alpha(darkorchid,0) 50.5%)
+      background-size: 3em 5em,
+                       3em 5em,
+                       3em 4em,
+                       3em 4em,
+                       4em 4em
+      background-position:  2.6em 2.5em,
+                            5.5em 2.5em,
+                           -0.2em 3.5em,
+                            2.8em 3.5em,
+                            .5em 1.5em
+      border: .1em solid darkorchid
+      box-shadow: 0 0 0 .8em whitesmoke,
+                  0 1.8em 0 .8em whitesmoke,
+                  0 0 0 1em darkorchid,
+                  0 1.8em 0 1em darkorchid
+      z-index: -1
+      animation: polaroid 4500ms infinite ease
+    
+    &:after
+      width: 2.5em
+      height: .5em
+      left: 50%
+      top: -1.2em
+      margin-left: -(@width/2)
+      background-color: darkorchid
+      box-shadow: -17.2em 0.3em 0 6em whitesmoke,
+                  -17.2em 1.5em 0 5em darkorchid,
+                  -17.2em 3em 0 4.8em thistle,
+                  -17.2em 3em 0 5em darkorchid
+
+@keyframes polaroid
+  10%
+    transform: translate(0,0)
+  29%
+    opacity: 1
+  30%, 45%
+    transform: translate(0,12em)
+  55%, 100%
+    transform: translate(20em,12em)
+
+@keyframes instagram
+  47%
+    background-position: -15.3em  0.9em,
+                         -11.4em  9.3em,
+                          -5.4em  9.3em,
+                         -15.6em 11.3em,
+                         -10.4em 11.3em,
+                         -14.0em  7.5em,
+                         -15.0em  4.0em,
+                         -15.3em 20.2em,
+                         -16.7em 20.2em,
+                         -18.1em 20.2em,
+                         -15.7em 22.5em,
+                         -15.7em 23.5em,
+                         -15.7em 24.5em
+  55%, 80%
+    background-position:  0.3em  0.9em,
+                          4.4em  9.3em,
+                         10.4em  9.3em,
+                          -.6em 11.3em,
+                          5.4em 11.3em,
+                          1.0em  7.5em,
+                          0.0em  4.0em,
+                          0.3em 20.2em,
+                          1.7em 20.2em,
+                          3.1em 20.2em,
+                          0.7em 22.5em,
+                          0.7em 23.5em,
+                          0.7em 24.5em
+  85%, 100%
+    background-position: 0.3em -27.9em,
+                         4.4em -18.3em,
+                        10.4em -18.3em,
+                        -.6em  -16.3em,
+                         5.4em -16.3em,
+                         1.0em -20.5em,
+                         0.0em -23.0em,
+                         0.3em  -7.2em,
+                         1.7em  -7.2em,
+                         3.1em  -7.2em,
+                         0.7em  -5.5em,
+                         0.7em  -4.5em,
+                         0.7em  -3.5em
+    animation-timing-function: ease-in-out
