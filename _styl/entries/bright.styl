@@ -1,0 +1,87 @@
+/*-----------------------------
+
+Bright
+
+-----------------------------*/
+
+#bright
+  background-color: midnightblue
+  
+  div
+    font-size: 10px
+    box-sizing: border-box
+    width: 12em
+    height: 10em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-color: palegoldenrod
+    border-radius: 3em
+    border: .6em solid darken(palegoldenrod,20)
+    box-shadow 0 0 0 1em tomato,
+               0 0 0 2em lightsalmon,
+               0 0 0 3em lightseagreen,
+               0 0 0 4em steelblue,
+               0 0 0 5em white(.1),
+               inset 0 0 0 .8em palegoldenrod,
+               inset 1.6em 0 0 white
+
+    &:before
+      width: 14em
+      height: 20em
+      left: -1.6em
+      top: -5em
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white(0) 25%,
+                                                white 26%,
+                                                white 45%,
+                                                white(0) 46%),
+                        radial-gradient(ellipse at 100% 100%, #ccc 60%, white(0) 60.5%),
+                        radial-gradient(ellipse at 100% 100%, white 60%, white(0) 60.5%),
+                        radial-gradient(ellipse at 0 100%, #ccc 60%, white(0) 60.5%),
+                        linear-gradient(to right, cadetblue 35%, steelblue 35%),
+                        radial-gradient(circle at 100% 100%, #ccc 60%, white(0) 60.5%),
+                        radial-gradient(circle at 100% 100%, white 60%, white(0) 60.5%),
+                        radial-gradient(circle at 0 100%, #ccc 60%, white(0) 60.5%),
+                        linear-gradient(to right, lightyellow 35%, darkkhaki 35%),
+                        linear-gradient(to right, cadetblue 35%, steelblue 35%),
+                        linear-gradient(to right, white 30%, #ccc 30%),
+                        linear-gradient(to right, white 35%, #ccc 35%),
+                        linear-gradient(to right, cadetblue 36%, steelblue 36%)
+      background-size: 3em 3em,
+                       2em 2em,
+                       3em 2em,
+                       3em 2em,
+                       6em .5em,
+                       3.5em 3.5em,
+                       3.5em 3.5em,
+                       3.5em 3.5em,
+                       4em 1em,
+                       6em .5em,
+                       5em 4em,
+                       9em 1em,
+                       9.6em .5em
+      background-position: center -.1em,
+                           left calc(50% - 0.5em) top 1.9em,
+                           left calc(50% - 1.5em) top 1.9em,
+                           left calc(50% + 1.5em) top 1.9em,
+                           center top 3.9em,
+                           left 4em bottom 1.5em,
+                           left 2.5em bottom 1.5em,
+                           right 2.5em bottom 1.5em,
+                           center bottom 6.2em,
+                           center bottom 5.1em,
+                           center bottom 1.5em,
+                           center bottom .5em,
+                           center bottom
+
+    &:after
+      width: 3.5em
+      height: @width
+      left: 50%
+      margin-left: -(@width/2)
+      top: 4em
+      background-color: orange
+      background-image: radial-gradient(circle at 40% 60%, tomato 30%, transparent 30.5%)
+      border-radius: 2em
+      border-top-right-radius:.4em
+      transform: rotate(-45deg)
