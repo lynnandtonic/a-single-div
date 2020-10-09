@@ -1,0 +1,104 @@
+/*-----------------------------
+
+Fly
+
+-----------------------------*/
+
+$fly-bg = #6c6e7c
+
+#fly
+  background-color: $fly-bg
+  z-index: 1
+
+  div
+    font-size: 10px
+    width: 25em
+    height: 12em
+    margin-left: -(@width/2 - 1.5em)
+    margin-top: -(@height/2 - 2.5em)
+    background-repeat: no-repeat
+    background-image: linear-gradient(to bottom, crimson 50%, firebrick 50%),
+                      repeating-linear-gradient(to right, goldenrod, goldenrod 2em,
+                                                          transparent 2em,
+                                                          transparent 2.3em),
+                      repeating-linear-gradient(to right, gold, gold 2em,
+                                                          transparent 2em,
+                                                          transparent 2.3em),
+                      linear-gradient(sienna, sienna),
+                      linear-gradient(lightseagreen, lightseagreen),
+                      linear-gradient(lightseagreen, lightseagreen),
+                      linear-gradient(lightseagreen, lightseagreen),
+                      radial-gradient(circle at 100% 50%, transparent 3.09em, // hook
+                                                          #222 3.1em,
+                                                          #222 4em,
+                                                          transparent 4.02em),
+                      radial-gradient(circle, transparent 20%,
+                                              #222 20.5%,
+                                              #222 50%,
+                                              transparent 50.5%),
+                      linear-gradient(#222, #222),
+                      linear-gradient(#222, #222),
+                      linear-gradient(45deg, #222 50%, transparent 50.5%)
+    background-size: 2em 1.2em,
+                     11.5em 0.7em,
+                     11.5em 1.4em,
+                     11.5em 1.2em,
+                     8em .2em,
+                     8em .2em,
+                     7em .2em,
+                     4em 8em, // hook
+                     3em 3em,
+                     3em .9em,
+                     3em .9em,
+                     2.5em 2.5em
+    background-position:  left  8em bottom 6.9em,
+                          left 10em bottom 6.8em,
+                          left 10em bottom 6.8em,
+                          left 10em bottom 6.9em,
+                          left      bottom 7.8em,
+                          left .5em bottom 7.4em,
+                          left 1.5em bottom 7em,
+                          left  4em bottom, // hook
+                         right      bottom 6em,
+                         right  2em bottom 7.1em,
+                          left  8em bottom,
+                          left 10em bottom
+
+    &:before
+      width: 23em
+      height: 7em
+      right: 3.5em
+      bottom: 9em
+      background-color: black(.2)
+      background-repeat: no-repeat
+      background-image: linear-gradient(15deg, #cd5c5c 50%, transparent 50.5%),
+                        repeating-linear-gradient(60deg, #222,
+                                                         #222 .6em,
+                                                         aliceblue .65em,
+                                                         aliceblue 1.2em)
+      background-size: 100% 100%
+      background-position: 0 0
+      border-radius: 0 99% 0 99%
+      box-shadow: -2em .7em 0 -1em lightseagreen,
+                  -3em 1.2em 0 -1.5em firebrick,
+                  -1.1em -.4em 0 .5em$fly-bg,
+                  -.6em -.6em 0 .5em gold,
+                  -1.4em -.8em 0 1em $fly-bg,
+                  -1.1em -1em 0 1em gold
+
+    &:after
+      width: 7.5em
+      height: 2.2em
+      right: 3.5em
+      bottom: 3.7em
+      background-color: #222
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, aliceblue 50%, white(0) 50.5%)
+      background-size: .8em .8em
+      background-position: 30% 39%
+      border-radius: 0 100% 0 90%
+      box-shadow: inset 2em 0 0 -1em #cd5c5c,
+                  -1em -1.3em 0 1.3em $fly-bg,
+                  -1em -.7em 0 1em gold
+      transform: rotate(-30deg)
+      z-index: -1
