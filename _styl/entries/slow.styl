@@ -1,0 +1,139 @@
+/*-----------------------------
+
+Slow
+
+-----------------------------*/
+
+#slow
+  background-color: skyblue
+
+  div
+    font-size: 16px
+    width: 16em
+    height: .6em
+    margin-left: -(@width/2)
+    margin-top: 4em
+    background-color: peru
+    border-radius: .4em
+
+    &:before
+      width: 100%
+      height: 9em
+      bottom: -2.2em
+      background-repeat: no-repeat
+      background-image: linear-gradient(45deg, transparent 50%, saddlebrown 50.5%),
+                        linear-gradient(45deg, transparent 50%, saddlebrown 50.5%),
+                        linear-gradient(45deg, transparent 60%, saddlebrown 60.5%),
+                        linear-gradient(155deg, transparent 60%, saddlebrown 60.5%),
+                        linear-gradient(155deg, transparent 60%, saddlebrown 60.5%),
+                        radial-gradient(ellipse at 50% 100%, saddlebrown 60%, transparent 60.5%),
+                        linear-gradient(-120deg, saddlebrown 60%, transparent 60.5%), // arm
+                        radial-gradient(ellipse at 10% 100%, saddlebrown 50%, transparent 50.5%),
+                        radial-gradient(ellipse at 10% 100%, beige 50%, white(0) 50.5%),
+                        linear-gradient(-120deg, darken(saddlebrown,15) 60%, transparent 60.5%),
+                        linear-gradient(130deg, saddlebrown 60%, transparent 60.5%), // leg
+                        radial-gradient(ellipse at 10% 100%, saddlebrown 50%, transparent 50.5%),
+                        radial-gradient(ellipse at 10% 100%, beige 50%, white(0) 50.5%),
+                        linear-gradient(120deg, darken(saddlebrown,15) 60%, transparent 60.5%),
+                        radial-gradient(circle, #222 14%, // wheels
+                                                crimson 15%,
+                                                crimson 30%,
+                                                ivory 31%,
+                                                ivory 62%,
+                                                white(0) 63%),
+                        linear-gradient( 60deg, transparent 55%, #555 55.5%),
+                        linear-gradient(-60deg, transparent 55%, #555 55.5%),
+                        linear-gradient(#555, #555),
+                        radial-gradient(circle, #222 14%,
+                                                crimson 15%,
+                                                crimson 30%,
+                                                ivory 31%,
+                                                ivory 62%,
+                                                white(0) 63%),
+                        linear-gradient( 60deg, transparent 51%, #555 51.5%),
+                        linear-gradient(-60deg, transparent 55%, #555 55.5%),
+                        linear-gradient(#555, #555)
+      background-size: 2em 1em,
+                       1.5em 1em,
+                       1.5em 1em,
+                       1.5em 1em,
+                       1.5em 1em,
+                       90% 5em,
+                       2.2em 3em, // arm
+                       5em 1.3em,
+                       3em .5em,
+                       2.2em 2.2em,
+                       2.6em 3em, // leg
+                       5em 1.3em,
+                       3em .5em,
+                       2.6em 2.2em,
+                       2.2em 2.2em, // wheels
+                       2em 1em,
+                       2em 1em,
+                       2em .2em,
+                       2.2em 2.2em,
+                       2em 1em,
+                       2em 1em,
+                       2em .2em
+      background-position: left 4.1em bottom 6em,
+                           left 3.3em bottom 5.7em,
+                           left 2.3em bottom 5.3em,
+                           right 2.5em bottom 5.5em,
+                           right 2em bottom 5.4em,
+                           left bottom 2.8em,
+                           right 34% bottom 0, // arm
+                           right 0 bottom 0,
+                           right -.6em bottom 0,
+                           right 29% bottom 0,
+                           left 20% bottom 0, // leg
+                           left 3.2em bottom 0,
+                           left 5.7em bottom 0,
+                           left 26% bottom 0,
+                           left 10% bottom -.1em, // wheels
+                           left  5% bottom 1.2em,
+                           left 15% bottom 1.2em,
+                           left 10% bottom 2em,
+                           right 10% bottom -.1em,
+                           right 15% bottom 1.2em,
+                           right  5% bottom 1.2em,
+                           right 10% bottom 2em
+
+    &:after
+      width: 3.8em
+      height: 2.2em
+      right: .8em
+      bottom: .65em
+      background-color: tan
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse at 50% 130%, white(0) 35%,
+                                                             tan 36%,
+                                                             tan 50%,
+                                                             white(0) 51%),
+                        radial-gradient(ellipse at 50% 130%, white(0) 35%,
+                                                             tan 36%,
+                                                             tan 50%,
+                                                             white(0) 51%),
+                        radial-gradient(ellipse, darken(saddlebrown,15) 50%, transparent 51%),
+                        radial-gradient(ellipse, darken(saddlebrown,15) 50%, transparent 51%),
+                        radial-gradient(ellipse, darken(saddlebrown,15) 50%, transparent 51%),
+                        radial-gradient(ellipse at 50% -.1em, white(0) 35%,
+                                                              saddlebrown 36%,
+                                                              saddlebrown 45%,
+                                                              white(0) 46%)
+      background-size: .8em .3em,
+                       .8em .3em,
+                       3em 1em,
+                       3em 1em,
+                       1em .5em,
+                       3em .5em
+      background-position: left  .5em top 42%,
+                           right .5em top 42%,
+                           left  -1em top 40%,
+                           right -1em top 40%,
+                           50% 70%,
+                           50% 100%
+      border-radius: 2.5em
+      border-bottom-left-radius: 2.5em .6em
+      border-bottom-right-radius: 2.5em .6em
+      box-shadow: 0 -.2em 0 .6em saddlebrown,
+                  -.6em -.1em 0 .4em darken(saddlebrown,10)
