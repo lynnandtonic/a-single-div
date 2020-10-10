@@ -1,0 +1,84 @@
+/*-----------------------------
+
+Hairy
+
+-----------------------------*/
+
+#hairy
+  background-color: #ccc
+  z-index: 1
+
+  div
+    font-size: 10px
+    width: 25em
+    height: 100%
+    top: auto
+    bottom: 0
+    margin-left: -(@width/2 + 1em)
+    background-repeat: no-repeat
+    background-image: repeating-linear-gradient(to right, #999, #999  .4em,
+                                                          transparent .4em,
+                                                          transparent .7em),
+                      repeating-linear-gradient(to right, #999, #999  .4em,
+                                                          transparent .4em,
+                                                          transparent .7em)
+    background-size: 14em 100%,
+                     25em calc(100% - 17em)
+    background-position: 2em 0
+    @media screen and (max-width: 450px)
+      font-size: 8px
+
+    &:before,
+    &:after
+      width: 30em
+      height: 10em
+      background-repeat: no-repeat
+
+    &:before
+      bottom: 11em
+      background-image: linear-gradient(#333, #333),
+                        linear-gradient(172deg, transparent 51%, #333 52%),
+                        radial-gradient(ellipse at 100% 0, transparent 67%, #333 68%),
+                        radial-gradient(circle, transparent 50%,
+                                                #333 50.5%,
+                                                #333 63%,
+                                                transparent 63.5%),
+                        linear-gradient(white, white)
+      background-size: 24em .5em,
+                       58% 2.5em,
+                       15% 2.5em,
+                       7em 7em,
+                       24em .5em
+      background-position: 0 50%,
+                           0 calc(50% - 1.45em),
+                           68% calc(50% - 1.4em),
+                           100% 50%,
+                           0 calc(50% + .2em)
+      transform: rotate(19deg)
+      z-index: -1
+
+    &:after
+      bottom: 12em
+      background-image: radial-gradient(circle, white 50%,
+                                                white(0) 50.5%),
+                        linear-gradient(#333, #333),
+                        linear-gradient(8deg, transparent 51%, #333 52%),
+                        radial-gradient(ellipse at 100% 100%, transparent 67%, #333 68%),
+                        radial-gradient(circle, transparent 50%,
+                                                #333 50.5%,
+                                                #333 63%,
+                                                transparent 63.5%),
+                        linear-gradient(white, white)
+      background-size: 1.4em 1.4em,
+                       24em .5em,
+                       58% 2.5em,
+                       15% 2.5em,
+                       7em 7em,
+                       24em .5em
+      background-position: 54% calc(50% + 1em),
+                           0 50%,
+                           0 calc(50% + 1.45em),
+                           68% calc(50% + 1.4em),
+                           100% 50%,
+                           0 calc(50% - .2em)
+      transform: rotate(-19deg)
