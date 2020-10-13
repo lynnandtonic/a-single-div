@@ -1,0 +1,65 @@
+/*-----------------------------
+
+Reflection
+
+-----------------------------*/
+
+#reflection
+  height: 450px
+  background-image: linear-gradient(to bottom, midnightblue,
+                                               skyblue 45%,
+                                               skyblue 55%,
+                                               midnightblue 100%)
+  overflow: hidden
+
+  &:before,
+  &:after
+    width: 100%
+    height: 100%
+    left: 0
+    content: ''
+    position: absolute
+  
+  &:before
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse at 0 0, darken(midnightblue,15)    50%,
+                                                      alpha(midnightblue,0)      50.5%),
+                      radial-gradient(ellipse at 100% 0, darken(midnightblue,15) 50%,
+                                                         alpha(midnightblue,0)   50.5%),
+                      radial-gradient(circle at 50% 0, alpha(lightblue,.8) 30%,
+                                                       alpha(paleturquoise,.8) 30.5%,
+                                                       alpha(paleturquoise,.8) 40%,
+                                                       alpha(mediumturquoise,.8) 40.5%,
+                                                       alpha(mediumturquoise,.8) 50%,
+                                                       alpha(steelblue,.8) 50.5%,
+                                                       alpha(steelblue,.8) 60%,
+                                                       alpha(steelblue,0) 60.5%)
+    background-size: 85% 5.4em,
+                     85% 5.4em,
+                     26em 13em
+    background-position:   0  calc(50% + 3.4em),
+                         100% calc(50% + 3.4em),
+                          50% calc(50% + 6.5em)
+    filter: blur(.8em)
+    transform: scale(1.05, 1.2)
+
+  &:after
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse at 0 100%, darken(midnightblue,20)    50%,
+                                                         alpha(midnightblue,0)      50.5%),
+                      radial-gradient(ellipse at 100% 100%, darken(midnightblue,20) 50%,
+                                                            alpha(midnightblue,0)   50.5%),
+                      radial-gradient(circle at 50% 100%, alpha(lightblue,.8) 30%,
+                                                          alpha(paleturquoise,.8) 30.5%,
+                                                          alpha(paleturquoise,.8) 40%,
+                                                          alpha(mediumturquoise,.8) 40.5%,
+                                                          alpha(mediumturquoise,.8) 50%,
+                                                          alpha(steelblue,.8) 50.5%,
+                                                          alpha(steelblue,.8) 60%,
+                                                          alpha(steelblue,0) 60.5%)
+    background-size: 75% 5.4em,
+                     75% 5.4em,
+                     26em 13em
+    background-position: 0 50%,
+                         100% 50%,
+                         50% calc(50% - 5em)
