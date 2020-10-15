@@ -1,0 +1,128 @@
+/*-----------------------------
+
+Radio
+
+-----------------------------*/
+
+#radio2
+  background-color: #222
+
+  div
+    font-size: 10px
+    width: 24em
+    height: 8em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 5em)
+    background-repeat: no-repeat
+    background-image: linear-gradient(to right, #f7f7f7 50%, #999 50%),
+                      linear-gradient(to right, #f7f7f7 50%, #999 50%),
+                      linear-gradient(to right, #ddd 50%, #888 50%),
+                      linear-gradient(tomato, tomato),
+                      linear-gradient(goldenrod, goldenrod),
+                      linear-gradient(goldenrod, goldenrod)
+    background-size: 1em .2em,
+                     1em 4.6em,
+                     .6em 5.5em,
+                     1.5em 4.4em,
+                     1.5em 4.4em,
+                     1.5em 4.4em
+    background-position: 85% 30%,
+                         85% 100%,
+                         84.5% 100%,
+                         70% 100%,
+                         60% 100%,
+                         50% 100%
+    border-radius: 2em 2em 0 0
+    box-shadow: inset 0 -1em 0 darkgoldenrod,
+                inset 0 -2em 0 moccasin,
+                inset 0 0 0 .3em sienna,
+                inset 0 0 0 .5em peru,
+                inset 0 0 0 .8em sienna,
+                -4em 2.5em 0 -3.5em darken(darkgoldenrod,5),
+                -4em 3.5em 0 -3.5em darken(darkgoldenrod,10),
+                 4em 2.5em 0 -3.5em darken(darkgoldenrod,5),
+                 4em 3.5em 0 -3.5em darken(darkgoldenrod,10),
+                0 13.6em 0 -3.3em goldenrod
+
+    &:before
+      width: 22.4em
+      height: 14em
+      left: .8em
+      top: 4em
+      background-color: darkgoldenrod
+      background-repeat: no-repeat,
+                         no-repeat,
+                         no-repeat,
+                         no-repeat,
+                         no-repeat,
+                         no-repeat,
+                         no-repeat,
+                         no-repeat,
+                         no-repeat,
+                         no-repeat,
+                         no-repeat,
+                         repeat
+      background-image: linear-gradient(tomato, tomato),
+                        linear-gradient(#888, #888),
+                        repeating-linear-gradient(to right, #888,
+                                                            #888 .2em,
+                                                            transparent .2em,
+                                                            transparent .8em),
+                        linear-gradient(#333, #333),
+                        radial-gradient(circle at 100% 100%, #ddd 60%, white(0) 61%),
+                        radial-gradient(circle at 0 0, #ddd 60%, white(0) 61%),
+                        radial-gradient(circle, #aaa 60%,
+                                                #666 61%,
+                                                #666 71%,
+                                                transparent 72%),
+                        radial-gradient(circle at 100% 100%, #ddd 55%, white(0) 56%),
+                        radial-gradient(circle at 0 0, #ddd 55%, white(0) 56%),
+                        radial-gradient(circle, #aaa 55%,
+                                                #666 56%,
+                                                #666 71%,
+                                                transparent 72%),
+                        linear-gradient(to bottom, darkgoldenrod 6.2em, transparent 6.2em),
+                        radial-gradient(circle, darken(darkgoldenrod,16) 40%, transparent 42%)
+      background-size: .4em 2.5em,
+                       10.2em .2em,
+                       9.5em 1em,
+                       12em 3em,
+                       1.5em 1.5em,
+                       1.5em 1.5em,
+                       3em 3em,
+                       1em 1em,
+                       1em 1em,
+                       2em 2em,
+                       100% 100%,
+                       .7em .7em
+      background-position: 5.3em 2.3em,
+                           2.5em 3.5em,
+                           3em 3.1em,
+                           1.5em 2em,
+                           14.6em 2em,
+                           16.1em 3.5em,
+                           14.6em 2em,
+                           18.4em 2.5em,
+                           19.4em 3.5em,
+                           18.4em 2.5em,
+                           0 0,
+                           1.45em 1.4em
+      border-radius: 2em
+      box-shadow: inset 0 .5em 0 moccasin,
+                  inset  1em 1.5em 0 .5em darkgoldenrod,
+                  inset -1em 1.5em 0 .5em darkgoldenrod,
+                  inset 0 -1.3em 0 darkgoldenrod,
+                  -3.7em -11.1em 0 -6.8em moccasin,
+                   3.7em -11.1em 0 -6.8em moccasin,
+                  -3.2em -10.6em 0 -6.3em darkgoldenrod,
+                   3.2em -10.6em 0 -6.3em darkgoldenrod
+
+    &:after
+      width: 6em
+      height: @width
+      right: 3em
+      bottom: -8.45em
+      border-radius: 50%
+      background-image: radial-gradient(circle, black 40%, transparent 42%)
+      background-size: .7em .7em
+      background-position: 1.25em 1.25em
