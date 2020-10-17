@@ -1,0 +1,133 @@
+/*-----------------------------
+
+Music
+
+-----------------------------*/
+
+#music
+  background-color: mistyrose
+
+  div
+    font-size: 10px
+    box-sizing: border-box
+    width: 25.5em
+    height: 9.5em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-color: aliceblue
+    background-repeat: no-repeat
+    background-image: linear-gradient(to top, lighten(lightsalmon,10) 50%,
+                                              lighten(lightsalmon,25) 50%),
+                      linear-gradient(to top, lighten(lightsalmon,10) 50%,
+                                              lighten(lightsalmon,25) 50%),
+                      linear-gradient(to top, lighten(lightsalmon,10) 50%,
+                                              lighten(lightsalmon,25) 50%),
+                      linear-gradient(to top, lighten(lightsalmon,10) 50%,
+                                              lighten(lightsalmon,25) 50%),
+                      radial-gradient(circle, mistyrose 50%, white(0) 51%),
+                      radial-gradient(circle, lightsalmon 50%, alpha(lightsalmon,0) 51%),
+                      radial-gradient(circle, mistyrose 50%, white(0) 51%),
+                      radial-gradient(circle, lightsalmon 50%, alpha(lightsalmon,0) 51%),
+                      radial-gradient(circle, mistyrose 50%, white(0) 51%),
+                      radial-gradient(circle, lightsalmon 50%, alpha(lightsalmon,0) 51%),
+                      radial-gradient(circle, firebrick 50%, black(0) 51%),
+                      radial-gradient(circle, firebrick 50%, black(0) 51%),
+                      repeating-linear-gradient(to right, firebrick,
+                                                          firebrick   .2em,
+                                                          transparent .2em,
+                                                          transparent 1em),
+                      repeating-linear-gradient(to top, firebrick,
+                                                        firebrick .3em,
+                                                        transparent .3em,
+                                                        transparent .5em),
+                      linear-gradient(firebrick, firebrick),
+                      linear-gradient(tomato, tomato),
+                      linear-gradient(to left,  firebrick .3em, tomato .3em),
+                      linear-gradient(to right, firebrick .3em, tomato .3em),
+                      linear-gradient(to bottom, black(.2) 4em, black(0) 4em),
+                      repeating-linear-gradient(to right, transparent,
+                                                          transparent 1.1em,
+                                                          firebrick 1.1em,
+                                                          firebrick 1.2em)
+    background-size: .4em .6em,
+                     .4em .6em,
+                     .4em .6em,
+                     .4em .6em,
+                     .4em .4em, 1.5em 1.5em,
+                     .4em .4em, 1.5em 1.5em,
+                     .4em .4em, 1.5em 1.5em,
+                     1em 1em,
+                     1em 1em,
+                     4em 1.5em,
+                     2em 5em,
+                     calc(100% - 4.3em) .3em,
+                     100% 3em,
+                     3em 100%,
+                     1.5em 100%,
+                     100% 100%,
+                     100% 100%
+    background-position: 3.9em 1.3em,
+                         4.9em 1.3em,
+                         5.9em 1.3em,
+                         6.9em 1.3em,
+                         8.3em 1.5em, 8em .9em,
+                         10.2em 1.7em, 9.6em .9em,
+                         11.6em 1.3em, 11.2em .9em,
+                         13em 1.3em,
+                         14.2em 1.3em,
+                         4em 1em,
+                         left 1em bottom .6em,
+                         3em 3em,
+                         0 0,
+                         0 0,
+                         100% 0,
+                         0 0,
+                         3em 2.3em
+    border-radius: .8em .8em .3em .3em
+    border: .3em solid firebrick
+    box-shadow: .8em .8em 0 black(.1),
+                inset 1.1em 1.1em 0 -.6em white(.3)
+    
+    &:before
+      width: .8em
+      height: 3.5em
+      left: 3.7em
+      top: 3.3em
+      background-color: #444
+      border-radius: 0 0 .2em .2em
+      box-shadow:  1.3em 0 0 #444,
+                   3.6em 0 0 #444,
+                   4.9em 0 0 #444,
+                   6.1em 0 0 #444,
+                   8.4em 0 0 #444,
+                   9.7em 0 0 #444,
+                  12.1em 0 0 #444,
+                  13.3em 0 0 #444,
+                  14.5em 0 0 #444,
+                  16.8em 0 0 #444,
+                  18.1em 0 0 #444
+
+    &:after
+      width: 7.8em
+      height: 1.6em
+      right: 1.2em
+      top: 1em
+      background-color: #444
+      background-repeat: no-repeat
+      background-image: repeating-linear-gradient(to bottom, white(.2),
+                                                             white(.2) .1em,
+                                                             transparent .1em,
+                                                             transparent .3em),
+                        repeating-linear-gradient(to bottom, white(.2),
+                                                             white(.2) .1em,
+                                                             transparent .1em,
+                                                             transparent .3em),
+                        repeating-linear-gradient(to bottom, white(.2),
+                                                             white(.2) .1em,
+                                                             transparent .1em,
+                                                             transparent .3em)
+      background-size: 2em .8em
+      background-position: 0.5em .4em,
+                           2.9em .4em,
+                           5.3em .4em
+      border-radius: .3em
