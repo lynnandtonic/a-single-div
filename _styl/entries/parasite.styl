@@ -1,0 +1,118 @@
+/*-----------------------------
+
+Parasite
+
+-----------------------------*/
+
+#parasite
+  background-color: #111
+  z-index: 1
+  overflow: hidden
+
+  div
+    width: 26em
+    height: 100%
+    left: 0
+    top: 0
+    background-repeat: no-repeat
+    background-image: linear-gradient(to top, darken(sienna,10) .5em, alpha(sienna,0) 2.5em),
+                      linear-gradient(to left, alpha(palegoldenrod,.05) .2em, transparent .2em),
+                      radial-gradient(ellipse at 100% 100%, alpha(palegoldenrod,.4) 20%, alpha(palegoldenrod,0) 60%),
+                      radial-gradient(ellipse at 60% 0, alpha(palegoldenrod,.3) 20%, alpha(palegoldenrod,0) 60%)
+    background-size: .2em 54%,
+                     100% 100%,
+                     28em 50%,
+                     23em 70%
+    background-position: 10.3em 0,
+                         100% 0,
+                         6em 80%,
+                         -6em 0
+    animation: parasite 11000ms infinite ease-in
+    animation-delay: 3000ms
+    @media (prefers-reduced-motion)
+      animation: none
+    @media screen and (max-width: 400px)
+      left: -5em
+
+    &:before
+      width: 4.8em
+      height: @width
+      left: 8em
+      top: 54%
+      background-repeat: no-repeat
+      background-color: alpha(palegoldenrod,.45)
+      background-image: radial-gradient(ellipse, white 15%,
+                                                 alpha(palegoldenrod,.8) 23%,
+                                                 alpha(palegoldenrod, 0) 45%),
+                        radial-gradient(circle, white 15%,
+                                                alpha(palegoldenrod,.8) 25%,
+                                                alpha(palegoldenrod,0) 40%),
+                        radial-gradient(ellipse, alpha(palegoldenrod,.9) 25%,
+                                                 alpha(palegoldenrod, 0) 50%),
+                        radial-gradient(ellipse, alpha(palegoldenrod,.5) 25%,
+                                                 alpha(palegoldenrod, 0) 50%),
+                        radial-gradient(ellipse, alpha(palegoldenrod,.9) 10%,
+                                                 alpha(palegoldenrod,0) 30%)
+      background-size: 40% 60%,
+                       100% 70%,
+                       80% 30%,
+                       100% 80%,
+                       60% 40%
+      background-position: 50% 80%,
+                           50% -15%,
+                           50% 0%,
+                           50% -20%,
+                           50% 135%
+      border-radius: 50%
+      box-shadow: inset 0 4.2em 0 -4em darken(sienna,10),
+                  inset 0 .4em .3em khaki,
+                  inset 0 -.3em .3em alpha(sienna,.6),
+                  0 .2em 2em .3em alpha(palegoldenrod,.4)
+
+    &:after
+      width: 100%
+      height: 100%
+      background-image: linear-gradient(160deg, #111 14em,
+                                                transparent 14em,
+                                                transparent 23em,
+                                                #111 23em)
+
+@keyframes parasite
+  0%, 8.4%
+    opacity: 0
+  9.6%, 16.8%
+    opacity: 1
+  18%, 20.4%
+    opacity: 0
+  21.6%, 23.8%
+    opacity: 1
+  25%, 27.4%
+    opacity: 0
+  29.6%, 32%
+    opacity: 1
+  33.2%, 40.4%
+    opacity: 0
+  41.6%, 44%
+    opacity: 1
+  45.2%, 47.6%
+    opacity: 0
+  48.8%, 51.2%
+    opacity: 1
+  52.4%, 59.6%
+    opacity: 0
+  60.8%, 63.2%
+    opacity: 1
+  64.4%, 66.8%
+    opacity: 0
+  68%, 70.4%
+    opacity: 1
+  71.6%, 74%
+    opacity: 0
+  76.2%, 78.6%
+    opacity: 1
+  79.8%, 82.2%
+    opacity: 0
+  83.4%, 90.6%
+    opacity: 1
+  91.8%, 100%
+    opacity: 0
