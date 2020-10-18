@@ -1,0 +1,126 @@
+/*-----------------------------
+
+Little
+
+-----------------------------*/
+
+#little
+  background-color: antiquewhite
+  background-image: linear-gradient(to top, black(.1) 1px, black(0) 1px)
+
+  div
+    font-size: 10px
+    width: 24em
+    height: 18em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(to bottom, chocolate, sienna),
+                      linear-gradient(to bottom, saddlebrown, saddlebrown),
+                      linear-gradient(to bottom, saddlebrown, saddlebrown),
+                      linear-gradient(to left, darken(#cd5c5c,12) 10%,
+                                               #cd5c5c 40%,
+                                               #cd5c5c 60%,
+                                               darken(#cd5c5c,12) 90%),
+                      linear-gradient(black(.2), black(.2)),
+                      linear-gradient(to left, darken(#cd5c5c,12) 10%,
+                                               #cd5c5c 40%,
+                                               #cd5c5c 60%,
+                                               darken(#cd5c5c,12) 90%),
+                      linear-gradient(to top, green 20%, mediumseagreen 100%),
+                      radial-gradient(circle at 50% 0, sandybrown,
+                                                       chocolate 70%,
+                                                       transparent 70.5%),
+                      linear-gradient(to top, green 20%, mediumseagreen 100%),
+                      radial-gradient(ellipse at 100% 50%, mediumseagreen 70%,
+                                                           alpha(mediumseagreen,0) 70.5%),
+                      linear-gradient(to top, green 20%, mediumseagreen 100%),
+                      radial-gradient(ellipse at 0 50%, darken(mediumseagreen,3) 70%,
+                                                        alpha(mediumseagreen,0) 70.5%),
+                      linear-gradient(to left, #aaa 10%,
+                                               #ccc 40%,
+                                               #ccc 60%,
+                                               #aaa 90%),
+                      linear-gradient(to top, green 20%, mediumseagreen 100%),
+                      radial-gradient(circle, mediumseagreen 55%, alpha(mediumseagreen,0) 56%),
+                      radial-gradient(circle, darken(mediumseagreen,3) 55%, alpha(mediumseagreen,0) 56%),
+                      radial-gradient(circle, darken(seagreen,3) 55%, alpha(seagreen,0) 56%),
+                      radial-gradient(circle, darken(green,3) 55%, alpha(green,0) 56%),
+                      radial-gradient(circle, mediumseagreen 55%, alpha(mediumseagreen,0) 56%),
+                      radial-gradient(circle, darken(mediumseagreen,3) 55%, alpha(mediumseagreen,0) 56%),
+                      radial-gradient(circle, darken(seagreen,3) 55%, alpha(seagreen,0) 56%),
+                      radial-gradient(circle, darken(green,3) 55%, alpha(green,0) 56%),
+                      linear-gradient(to left, burlywood 10%,
+                                               wheat 40%,
+                                               wheat 60%,
+                                               burlywood 90%),
+                      linear-gradient(to left, saddlebrown 10%,
+                                               sienna 40%,
+                                               sienna 60%,
+                                               saddlebrown 90%),
+                      radial-gradient(ellipse, mediumseagreen 60%, alpha(mediumseagreen,0) 61%)
+    background-size: 100% 1.5em,
+                     1em 1em,
+                     1em 1em,
+                     5em 1em,
+                     4em .5em,
+                     4em 2em,
+                     .2em 30%,
+                     5em 2.5em,
+                     .2em 30%,
+                     1em 3em,
+                     .2em 25%,
+                     1em 3em,
+                     3em 3em,
+                     .2em 23%,
+                     1em 1em, 1em 1em, 1em 1em, 1em 1em,
+                     1em 1em, 1em 1em, 1em 1em, 1em 1em,
+                     4em 2.5em,
+                     3.4em .5em,
+                     3em 5.5em
+    background-position: center bottom 1em,
+                         left  2em   bottom,
+                         right 2em   bottom,
+                         left  1.5em bottom 4.5em,
+                         left  2.0em bottom 4em,
+                         left  2.0em bottom 2.5em,
+                         left  3.9em bottom 5em,
+                         left  7.4em bottom 2em,
+                         left  9.5em bottom 4em,
+                         left  8.6em bottom 6.4em,
+                         left 10.1em bottom 4em,
+                         left 10.3em bottom 5.5em,
+                         right 7.4em bottom 2.5em,
+                         right 8.8em bottom 5.5em,
+                         right 8.8em bottom 8.9em,
+                         right 8.8em bottom 7.9em,
+                         right 8.8em bottom 6.9em,
+                         right 8.8em bottom 5.9em,
+                         right 8.0em bottom 8.9em,
+                         right 8.0em bottom 7.9em,
+                         right 8.0em bottom 6.9em,
+                         right 8.0em bottom 5.9em,
+                         right 2.1em bottom 2.8em,
+                         right 2.4em bottom 2.5em,
+                         right 2.6em bottom 2.5em
+
+    &:before,
+    &:after
+      width: 1em
+      height: @width
+
+    &:before
+      left: 2.9em
+      bottom: 9.5em
+      background-color: mediumseagreen
+      border-radius: 0 90% 0 90%
+      box-shadow: 0 1.5em 0 seagreen,
+                  0 3.0em 0 green
+
+    &:after
+      left: 4.1em
+      bottom: 9em
+      background-color: darken(mediumseagreen,3)
+      border-radius: 90% 0 90% 0
+      box-shadow: 0 1.5em 0 darken(seagreen,3),
+                  0 3.0em 0 darken(green,3)
