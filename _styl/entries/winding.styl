@@ -1,0 +1,78 @@
+/*-----------------------------
+
+Winding
+
+-----------------------------*/
+
+#winding
+  background-color: burlywood
+
+  div
+    width: 15.5em
+    height: 8em
+    margin-left: -(@width/2 - .5em)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle, alpha(lemonchiffon,0) 25%,
+                                              lemonchiffon 25.5%,
+                                              lemonchiffon 49.5%,
+                                              alpha(lemonchiffon,0) 50%),
+                      radial-gradient(circle, alpha(khaki,0) 25%,
+                                              khaki 25.5%,
+                                              khaki 50%,
+                                              alpha(khaki,0) 50.5%),
+                      radial-gradient(circle, darken(saddlebrown,12) 50%, alpha(saddlebrown,0) 51%)
+    background-size: 4em 4em,
+                     4em 4em,
+                     3.4em 3.4em
+    background-position: 30% 0,
+                         54.6% 0,
+                         left -.45em bottom .8em
+    border-radius: 0 4em 6em 0
+    border-top:    .1em solid transparent
+    border-right:  .7em solid saddlebrown
+    border-bottom: .7em solid saddlebrown
+    
+
+    &:before
+      width: 13.5em
+      height: 5em
+      bottom: -1em
+      right: 2.6em
+      background-color: chocolate
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, darken(saddlebrown,20) 50%, alpha(saddlebrown,0) 51%)
+      background-size: 4.5em 4.5em
+      background-position: right .3em bottom -1.3em
+      border-top-left-radius: 10em 5em
+      border-top-right-radius: 4em
+      border-bottom-right-radius: 1em
+      box-shadow: inset -1.8em 1.2em 0 black(.15)
+
+    &:after
+      width: 14em
+      height: 10em
+      right: 2.5em
+      bottom: -1.5em
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle at 50% 70%, darken(saddlebrown,3) 40%, alpha(saddlebrown,0) 41%),
+                        radial-gradient(circle, darken(saddlebrown,20) 50%, alpha(saddlebrown,0) 51%),
+                        radial-gradient(circle at 70% 50%, darken(saddlebrown,15) 40%, alpha(saddlebrown,0) 41%),
+                        radial-gradient(circle, black 20%,
+                                                #555 20%,
+                                                #555 50%,
+                                                black(0) 51%),
+                        linear-gradient(to right, lemonchiffon 50%, khaki 50%),
+                        radial-gradient(circle at 50% -.4em, #444 40%, black(0) 41%)
+      background-size: 3.4em 3.4em,
+                       .5em .5em,
+                       1em 1em,
+                       3.5em 3.5em,
+                       1em 2.6em,
+                       2em 1em
+      background-position: left 1.9em bottom 3.1em,
+                           left 1.7em bottom 2em,
+                           left -.3em bottom .35em,
+                           right .9em bottom -.3em,
+                           56.5% 2.6em,
+                           left 2em bottom -.5em
