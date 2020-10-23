@@ -13,20 +13,20 @@ header
   line-height: 1.2
   z-index: 10
 
-  @media screen and (min-width: 381px)
+  @media screen and (min-width: 541px)
     padding: 10px 15px
     display: flex
     justify-content: flex-end
     align-items: center
 
     h1
-      max-width: 55%
+      max-width: 50%
       margin-right: auto
 
     & > a
       margin-left: 15px
 
-  @media screen and (max-width: 380px)
+  @media screen and (max-width: 540px)
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -67,6 +67,7 @@ header
     text-indent: -9999em
     width: 20px
     height: 26px
+    flex-shrink: 0
     position: relative
     background-repeat: no-repeat
     background-image: linear-gradient(black,black),
