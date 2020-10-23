@@ -1,0 +1,201 @@
+/*-----------------------------
+
+Surreal
+
+-----------------------------*/
+
+#surreal
+  background-color: cadetblue
+
+  div
+    font-size: 18px
+    width: 20em
+    height: 10em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse, white 60%, white(0) 60.1%),
+                      radial-gradient(ellipse, #ccc 60%, white(0) 60.1%),
+                      linear-gradient(120deg, transparent 1em,
+                                              goldenrod 1em,
+                                              goldenrod 4.5em,
+                                              transparent 4.5em),
+                      linear-gradient(120deg, transparent 1em,
+                                              saddlebrown 1em,
+                                              saddlebrown 1.5em,
+                                              lightpink   1.5em,
+                                              lightpink   1.7em,
+                                              saddlebrown 1.7em,
+                                              saddlebrown 2.2em,
+                                              lightpink   2.2em,
+                                              lightpink   2.4em,
+                                              saddlebrown 2.4em,
+                                              saddlebrown 2.9em,
+                                              lightpink   2.9em,
+                                              lightpink   3.1em,
+                                              saddlebrown 3.1em,
+                                              saddlebrown 3.6em,
+                                              lightpink   3.6em,
+                                              lightpink   3.8em,
+                                              saddlebrown 3.8em,
+                                              saddlebrown 4.3em,
+                                              goldenrod 4.3em,
+                                              goldenrod 4.5em,
+                                              transparent 4.5em),
+                      radial-gradient(ellipse, goldenrod 60%, alpha(goldenrod,0) 61%),
+                      radial-gradient(ellipse, white(.5) 60%, white(0)  61%),
+                      radial-gradient(ellipse, goldenrod 60%, alpha(goldenrod,0) 61%),
+                      radial-gradient(ellipse, white(.5) 60%, white(0)  61%),
+                      radial-gradient(ellipse at 50% 100%, gold 58.8%, alpha(gold,0) 59.5%),
+                      linear-gradient(gold, gold),
+                      radial-gradient(ellipse, white 60%, white(0) 60.1%),
+                      radial-gradient(ellipse, #ccc 60%, white(0) 60.1%),
+                      radial-gradient(circle, black 60%, black(0) 61%),  // mouse
+                      radial-gradient(circle, black 60%, black(0) 61%),
+                      radial-gradient(circle, black 60%, black(0) 61%),
+                      radial-gradient(circle, white 60%, white(0) 61%),
+                      radial-gradient(circle, pink 30%,
+                                              white 30.5%, white 60%,
+                                              white(0) 61%),
+                      radial-gradient(circle, pink 30%,
+                                              white 30.5%, white 60%, 
+                                              white(0) 61%),
+                      radial-gradient(circle, white 60%, white(0) 61%),
+                      radial-gradient(circle, white 60%, white(0) 61%)
+    background-size: 12em 3.2em,
+                     12em 3.6em,
+                     6em .2em,
+                     6em 2.1em,
+                     .6em .6em,
+                     .6em .6em,
+                     .4em .4em,
+                     .4em .4em,
+                     2em 2.5em,
+                     2em 1em,
+                     9em 1.6em,
+                     9em 1.9em,
+                     .4em .4em, // mouse
+                     .2em .2em,
+                     .2em .2em,
+                     1.5em 1.5em,
+                     .9em .9em,
+                     .9em .9em,
+                     .6em .7em,
+                     .6em .7em
+    background-position: 0 93%,
+                         0 100%,
+                         right 1.55em bottom 4.5em,
+                         right 1.5em bottom 2.6em,
+                         right 1.9em bottom 3.5em,
+                         right 2.0em bottom 3.5em,
+                         right 2.5em bottom 2.8em,
+                         right 2.6em bottom 2.8em,
+                         right 1.4em bottom 2.6em,
+                         right 2.0em bottom 2.6em,
+                         right bottom 1.9em,
+                         right bottom 1.6em,
+                         left 5.45em bottom 6.9em,  // mouse
+                         left 5.3em  bottom 7.6em,
+                         left 5.8em  bottom 7.6em,
+                         left 4.9em  bottom 6.7em,
+                         left 4.7em  bottom 7.7em,
+                         left 5.7em  bottom 7.7em,
+                         left 4.4em  bottom 6.7em,
+                         left 6.4em  bottom 6.7em
+
+    &:before
+      width: 8em
+      height: 5em
+      left: 2em
+      bottom: 1.2em
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, darken(goldenrod,8) 60%,
+                                                alpha(goldenrod,0)  61%),
+                        radial-gradient(circle, white(.3) 60%, white(0)  61%),
+                        radial-gradient(circle, darken(goldenrod,8) 60%,
+                                                alpha(goldenrod,0)  61%),
+                        radial-gradient(circle, white(.3) 60%, white(0)  61%),
+                        radial-gradient(circle, darken(goldenrod,8) 60%,
+                                                alpha(goldenrod,0)  61%),
+                        radial-gradient(circle, white(.3) 60%, white(0)  61%),
+                        radial-gradient(circle, darken(goldenrod,8) 60%,
+                                                alpha(goldenrod,0)  61%),
+                        radial-gradient(circle, white(.3) 60%, white(0)  61%),
+                        linear-gradient(goldenrod, goldenrod),
+                        linear-gradient(goldenrod, goldenrod),
+                        linear-gradient(goldenrod, goldenrod),
+                        linear-gradient(goldenrod, goldenrod),
+                        repeating-linear-gradient(to bottom, saddlebrown,
+                                                             saddlebrown .6em,
+                                                             lightpink .6em,
+                                                             lightpink .8em)
+      background-size: 1em 1em,
+                       1em 1em,
+                       1em 1em,
+                       1em 1em,
+                       .6em .6em,
+                       .6em .6em,
+                       .6em .6em,
+                       .6em .6em,
+                       69.5% 83%,
+                       50% 50%,
+                       50% 5%,
+                        4% 76%,
+                       45% 76%
+      background-position: 20% 40%,
+                           18.5% 40%,
+                           50% 75%,
+                           48.5% 75%,
+                           59% 35%,
+                           57.5% 35%,
+                           10% 80%,
+                           8.5% 80%,
+                           0 100%,
+                           0 0,
+                           100% 0,
+                           100.5% 20%,
+                           100% 20%
+      border-bottom-left-radius:  5em 1em
+      border-bottom-right-radius: 5em 1em
+      animation: cheese 500ms infinite ease-in-out
+
+    &:after
+      width: 8em
+      height: 1.8em
+      left: 2em
+      bottom: 5.3em
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse, black 60%, black(0) 61%),
+                        radial-gradient(ellipse, white 60%, white(0) 61%),
+                        radial-gradient(ellipse, white 60%, white(0) 61%),
+                        radial-gradient(ellipse, goldenrod 60%, alpha(goldenrod,0) 61%),
+                        radial-gradient(ellipse, white(.5) 60%, white(0)  61%),
+                        radial-gradient(ellipse, goldenrod 60%, alpha(goldenrod,0) 61%),
+                        radial-gradient(ellipse, white(.5) 60%, white(0)  61%),
+                        radial-gradient(ellipse, goldenrod 60%, alpha(goldenrod,0) 61%),
+                        radial-gradient(ellipse, white(.5) 60%, white(0)  61%),
+                        linear-gradient(gold, gold),
+                        linear-gradient(40deg, gold 61%, alpha(gold,0) 61.5%)
+      background-size: .4em .4em,
+                       .6em .6em,
+                       .6em .6em,
+                       .8em .3em,
+                       .8em .3em,
+                       1em .4em,
+                       1em .4em,
+                       1.2em .5em,
+                       1.2em .5em,
+                       100% 50%,
+                       100% 55%
+      background-position: left 3.45em top -.2em,
+                           left 2.4em top -.3em,
+                           left 4.4em top -.3em,
+                           75% 25%,
+                           73% 25%,
+                           18% 40%,
+                           16% 40%,
+                           45% 70%,
+                           43% 70%,
+                           0 0,
+                           0 100%
+      border-radius: 50%
