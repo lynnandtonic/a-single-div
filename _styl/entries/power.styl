@@ -1,0 +1,111 @@
+/*-----------------------------
+
+Power
+
+-----------------------------*/
+
+#power
+  font-size: 10px
+  background-color: white
+  background-repeat: no-repeat
+  background-image: linear-gradient(to bottom, #ddd,
+                                               #f7f7f7 13%,
+                                               white 18%,
+                                               white 35%,
+                                               #f7f7f7 38%,
+                                               #f7f7f7 50%,
+                                               #eee 70%,
+                                               #ddd 85%,
+                                               #ccc 95%,
+                                               #bbb 100%),
+                    linear-gradient(to left, black(.1), black(0)),
+                    linear-gradient(to bottom, #ccc, #ddd 10%,
+                                               #edf0f3 30%, #edf0f3 60%,
+                                               #ccc 92%, #bbb 98%),
+                    linear-gradient(to left, black(.1), black(0)),
+                    linear-gradient(to bottom, #ccc, #ddd 10%,
+                                               #edf0f3 30%, #edf0f3 60%,
+                                               #ccc 95%, #bbb 100%)
+  background-size: 11em 6.2em,
+                   1em 3.2em,
+                   8em 3.2em,
+                   .8em 2.3em,
+                   calc(50% - 4em) 2.3em
+  background-position: calc(50% + 9.5em) 50%,
+                       calc(50% + 3.5em) 50%,
+                       50% 50%,
+                       calc(50% - 4.4em) 50%,
+                       0 50%
+  @media screen and (max-width: 400px)
+    font-size: 8px
+    margin-left: -12em
+
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+
+  &:before
+    width: 5em
+    height: 4.8em
+    left: calc(50% + 15em)
+    margin-top: -(@height/2)
+    background-color: black(.1)
+    background-repeat: no-repeat
+    background-image: linear-gradient(to bottom, white 30%,
+                                                 black(.2) 30%,
+                                                 black(0) 90%),
+                      linear-gradient(to top, white 30%,
+                                              black(.2) 30%,
+                                              black(0) 90%),
+                      linear-gradient(to bottom, black(.15), black(0)),
+                      linear-gradient(to top, black(.15), black(0)),
+                      linear-gradient(to right, black(.25), black(0)),
+                      linear-gradient(125deg, black(0) 5%,
+                                              black(.1) 25%,
+                                              white(.9) 48%,
+                                              white(.9) 52%,
+                                              white(0) 75%),
+                      linear-gradient(55deg, black(0) 5%,
+                                              black(.1) 25%,
+                                              white(.9) 48%,
+                                              white(.9) 52%,
+                                              white(0) 75%),
+                      linear-gradient(to bottom, #e5e0d5 30%, #c9c3bc 100%)
+    background-size: 30% .4em,
+                     30% .4em,
+                     100% .4em,
+                     100% .4em,
+                     .4em 100%,
+                     30% 50%,
+                     30% 50%,
+                     100% 100%
+    background-position: 55% 0,
+                         55% 100%,
+                         0 0,
+                         0 100%,
+                         0 50%,
+                         100% 0,
+                         100% 100%,
+                         0 50%
+    border-radius: 0 1em 1em 0
+    box-shadow: inset -.3em 0 .1em -.1em black(.2)
+
+  &:after
+    width: 1.8em
+    height: 3.6em
+    left: calc(50% + 17.6em)
+    margin-top: -(@height/2)
+    background-color: white
+    background-repeat: no-repeat
+    background-image: repeating-linear-gradient(to bottom, white(0),
+                                                           white(0) .18em,
+                                                           white    .18em,
+                                                           white    .36em),
+                      linear-gradient(to bottom, #ddd 20%, #bbb)
+    background-size: 50% 75%
+    background-position: 50% 50%
+    border-radius: .5em
+    box-shadow: -.1em 0 .1em black(.07),
+                 .2em 0 .1em black(.1)
