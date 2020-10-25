@@ -1,0 +1,123 @@
+/*-----------------------------
+
+Juicy
+
+-----------------------------*/
+
+#juicy
+  background-color: honeydew
+  z-index: 1
+
+  div
+    font-size: 20px
+    box-sizing: border-box
+    width: 6.2em
+    height: 7em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse at 50% 100%, white(.8) 20%, white(0) 21%),
+                      linear-gradient(white(.7), white(.7)),
+                      linear-gradient(white(.7), white(.7)),
+                      radial-gradient(ellipse, white(.8) 23%, white(0) 25%),
+                      radial-gradient(circle, wheat 50%, alpha(wheat,0) 51%),
+                      radial-gradient(circle, wheat 50%, alpha(wheat,0) 51%),
+                      radial-gradient(circle, wheat 50%, alpha(wheat,0) 51%),
+                      radial-gradient(circle, wheat 50%, alpha(wheat,0) 51%),
+                      radial-gradient(circle, black(.4) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.4) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.4) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.4) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.4) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.4) 50%, black(0) 51%),
+                      linear-gradient(to top, alpha(olive,.7) 85%, #ccc 85%)
+    background-size: 120% 8%,
+                     5% 1.5%,
+                     5% 1.5%,
+                     80% 12%,
+                     .3em .3em,
+                     .3em .3em,
+                     .3em .3em,
+                     .3em .3em,
+                     .3em .3em,
+                     .3em .3em,
+                     .3em .3em,
+                     .3em .3em,
+                     .3em .3em,
+                     .3em .3em,
+                     100% 100%
+    background-position: 50% 100%,
+                         25% 100%,
+                         74% 100%,
+                         95% 3%,
+                         20% 30%,
+                         80% 45%,
+                         72% 58%,
+                         30% 88%,
+                         14% 45%,
+                         70% 30%,
+                         30% 70%,
+                         17% 94%,
+                         50% 95%,
+                         80% 90%,
+                         0 0
+    border-radius: 1em
+    border: .1em solid olive
+    box-shadow: inset 0 -1.05em 0 -.8em black(.15),
+                inset 0 .5em 0 -.2em black(.1),
+                inset -.3em 0 0 black(.12),
+                inset -.7em 0 0 white(.75),
+                inset  .3em 0 0 black(.12),
+                inset  .7em 0 0 white(.75)
+
+    &:after
+      width: 1.3em
+      height: 4.5em
+      left: 2.2em
+      bottom: .75em
+      background-color: yellowgreen
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white(.5) 50%, white(0) 51%),
+                        radial-gradient(circle, white(.5) 50%, white(0) 51%),
+                        radial-gradient(circle, white(.5) 50%, white(0) 51%),
+                        radial-gradient(circle, white(.5) 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, black 50%, black(0) 51%),
+                        radial-gradient(circle, black 50%, black(0) 51%)
+      background-size: .3em .3em
+      background-position: 87% 15%,
+                           95% 25%,
+                           80% 60%,
+                           90% 90%,
+                           45% 50%,
+                           45% 80%,
+                            3% 20%,
+                            5% 60%
+      border-radius: 1em
+      border: .1em solid darken(yellowgreen,15)
+      box-shadow: inset .4em 0 0 alpha(olivedrab,.8),
+                  inset .8em 0 0 alpha(olivedrab,.5)
+      transform: rotate(-15deg)
+
+    &:before
+      box-sizing: border-box
+      width: 90%
+      height: .7em
+      left: 5%
+      top: -.8em
+      background-repeat: repeat-x, no-repeat
+      background-image: linear-gradient(to right, black(.5) 50%,
+                                                  black(.25) 50%),
+                        linear-gradient(to right, lighten(darkgreen,2)   15%,
+                                                  lighten(forestgreen,3) 15%,
+                                                  lighten(forestgreen,3) 70%,
+                                                  darkgreen              70%,
+                                                  darkgreen              90%,
+                                                  lighten(darkgreen,5)   90%)
+      background-size: 10% 65%, 100% 100%
+      background-position: 0 100%, 0 0
+      border-radius: .2em
+      box-shadow: 0 .42em 0 -.25em #ccc,
+                  0  .3em 0 -.15em olive
+      border: .1em solid darken(darkgreen,10)
