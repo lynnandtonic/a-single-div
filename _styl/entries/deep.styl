@@ -1,0 +1,197 @@
+/*-----------------------------
+
+Deep
+
+-----------------------------*/
+
+#deep
+  background-color: darken(cadetblue,20)
+
+  div
+    font-size: 10px
+    width: 25em
+    height: 9em
+    margin-left: -(@width/2 + 1.2em)
+    margin-top:  -(@height/2)
+    background-color: khaki
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle, #555 44%,
+                                              #999 45%,
+                                              #999 64%,
+                                              transparent 65%),
+                      radial-gradient(circle, #555 44%,
+                                              #999 45%,
+                                              #999 64%,
+                                              transparent 65%),
+                      radial-gradient(ellipse, #555 60%, transparent 61%),
+                      radial-gradient(ellipse, #999 60%, transparent 61%),
+                      radial-gradient(ellipse, #555 60%, transparent 61%),
+                      radial-gradient(ellipse, #555 60%, transparent 61%),
+                      radial-gradient(ellipse, #999 60%, transparent 61%),
+                      radial-gradient(ellipse, #999 60%, transparent 61%),
+                      radial-gradient(ellipse, #999 60%, transparent 61%),
+                      radial-gradient(ellipse, #555 60%, transparent 61%),
+                      linear-gradient(lighten(goldenrod,20), lighten(goldenrod,20)),
+                      linear-gradient(lighten(goldenrod,20), lighten(goldenrod,20)),
+                      linear-gradient(lighten(goldenrod,20), lighten(goldenrod,20)),
+                      linear-gradient(lighten(goldenrod,20), lighten(goldenrod,20)),
+                      linear-gradient(to top, goldenrod, khaki),
+                      linear-gradient(160deg, goldenrod 50%, khaki 65%)
+    background-size: 3em 3em,
+                     3em 3em,
+                     .9em .4em, .9em .4em, .9em .4em, .9em .4em,
+                     .9em .4em, .9em .4em, .9em .4em, .9em .4em,
+                     .1em 100%,
+                     .1em 100%,
+                     .1em 100%,
+                     .1em 100%,
+                     100% 20%,
+                     7em 2em
+    background-position: 22.5% 23%,
+                         48% 23%,
+                         17% 45%, 58% 45%, 75% 45%, 90% 45%,
+                         17% 80%, 58% 80%, 75% 80%, 90% 80%,
+                         13% 0,
+                         37% 0,
+                         65% 0,
+                         85% 0,
+                         50% 50%,
+                         0 78%
+    border-radius: 4em / 3em
+    border-top-right-radius: 15em 4em
+    box-shadow: inset -2em 0 1em goldenrod,
+                inset  2em 0 1em goldenrod,
+                2em .1em .6em -1.5em darken(goldenrod,5),
+                6em .5em 0 -2em goldenrod
+
+    @media (max-width: 400px)
+      transform: scale(.73)
+      margin-left: -13.2em
+
+    &:before
+      width: 20em
+      height: 2em
+      left: 2.2em
+      bottom: -2.5em
+      background-color: khaki
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, darken(goldenrod,5), alpha(goldenrod,0)),
+                        linear-gradient(to right, darken(goldenrod,5), alpha(goldenrod,0)),
+                        linear-gradient(to bottom, khaki 40%, goldenrod 80%)
+                        
+      background-size: 1em 100%,
+                       1em 100%,
+                       100% 100%
+      background-position: 13% 0,
+                           92% 0,
+                           0 0
+                           
+      border-radius: 1em
+
+    &:after
+      width: 34em
+      height: 20em
+      left: -3em
+      top: -5em
+      background-repeat: no-repeat
+      background-image: linear-gradient(#333, #333), // center front
+                        linear-gradient(9deg, khaki 40%, alpha(khaki,0) 55%),
+                        linear-gradient(12deg, lighten(khaki,20) 60%, alpha(khaki,0) 70%),
+                        linear-gradient(170deg, khaki 70%, alpha(khaki,0) 70.5%),
+                        linear-gradient(to bottom, #999 20%, // prop
+                                                   #555 40%,
+                                                   #555 50%,
+                                                   #999 50%,
+                                                   #999 70%,
+                                                   #555 70%,
+                                                   #555 80%,
+                                                   #999 100%),
+                        linear-gradient(to bottom, khaki 20%, goldenrod 80%),
+                        linear-gradient(to right, goldenrod, alpha(goldenrod,0)), // tail
+                        linear-gradient(145deg, alpha(khaki,0) 47%,
+                                                lighten(khaki,20) 47.5%,
+                                                khaki 60.5%,
+                                                khaki 70%,
+                                                goldenrod 90%),
+                        linear-gradient(to bottom, khaki, goldenrod), // bottom
+                        linear-gradient(to bottom, khaki, goldenrod),
+                        linear-gradient(to bottom, khaki 20%, goldenrod 80%),
+                        linear-gradient(to bottom, khaki 20%, goldenrod 80%),
+                        linear-gradient(to right, lighten(khaki,16) 25%, //top
+                                                  khaki 30%,
+                                                  khaki 65%,
+                                                  goldenrod 75%),
+                        linear-gradient(to bottom, goldenrod 20%, alpha(goldenrod,0)),
+                        linear-gradient(to bottom, goldenrod 20%, alpha(goldenrod,0)),
+                        linear-gradient(110deg, goldenrod 20%, alpha(goldenrod,0) 50%),
+                        linear-gradient(110deg, goldenrod 20%, alpha(goldenrod,0) 50%),
+                        linear-gradient(to right, khaki 20%, goldenrod 80%),
+                        linear-gradient(20deg, alpha(goldenrod,0) 50%,
+                                               goldenrod 50.5%,
+                                               goldenrod 60%,
+                                               alpha(goldenrod,0) 60.5%),
+                        radial-gradient(ellipse at 50% 100%, khaki 60%,
+                                                             alpha(khaki,0) 60.5%),
+                        radial-gradient(circle, #555 60%, transparent 60.5%),
+                        radial-gradient(ellipse at 50% 100%, khaki 30%,
+                                                             goldenrod 60%,
+                                                             alpha(goldenrod,0) 60.5%),
+                        radial-gradient(circle, white(.5) 60%, white(0) 61%), // bubbles
+                        radial-gradient(circle, white(.4) 60%, white(0) 61%),
+                        radial-gradient(circle, white(.3) 60%, white(0) 61%),
+                        radial-gradient(circle, white(.3) 60%, white(0) 61%),
+                        radial-gradient(circle, white(.2) 60%, white(0) 61%)
+      background-size: 28em .8em, // center front
+                       10em 1.5em,
+                       10em 1.5em,
+                       10em 1.5em,
+                       1em 3em, // prop
+                       3em .7em,
+                       2em 4.3em, // tail
+                       4.8em 11.2em,
+                       2em 2em, // bottom
+                       2em 2em,
+                       .7em 2.5em,
+                       .7em 2.5em,
+                       7.5em 1.5em, // top
+                       6em .4em,
+                       6em .4em,
+                       1em 1em,
+                       1em 1em,
+                       6em 3.5em,
+                       4em 3em,
+                       5em 1em,
+                       .4em .4em,
+                       1em 1.6em,
+                       1em 1em, // bubbles
+                       1.1em 1.1em,
+                       .8em .8em,
+                       .5em .5em,
+                       .5em .5em
+      background-position: 0 54%, // center front
+                           0 49%,
+                           0 49%,
+                           0 58%,
+                           90% 60%, //prop
+                           87% 59%,
+                           90% 52%, // tail
+                           99% 15%,
+                           30% 73%, // bottom
+                           53% 73%,
+                           22% 81.5%,
+                           67% 81.5%,
+                           29.5% 20%, // top
+                           30% 10%,
+                           30% 13%,
+                           30% 13.5%,
+                           35% 13.5%,
+                           30% 9%,
+                           33% 1%,
+                           30% 3%,
+                           49% 21.8%,
+                           49% 21%,
+                           80% 5%, // bubbles
+                           90% 0,
+                           85% 15%,
+                           88% 25%,
+                           85% 35%
