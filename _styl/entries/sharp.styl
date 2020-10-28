@@ -1,0 +1,138 @@
+/*-----------------------------
+
+Sharp
+
+-----------------------------*/
+
+#sharp
+  background-color: mintcream
+
+  div
+    width: 18em
+    height: 12em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: repeating-linear-gradient(to right, black(.12),
+                                                          black(.12) .1em,
+                                                          black(0) .1em,
+                                                          black(0) .2em),
+                      linear-gradient(to top, sandybrown 70%, peru 70%),
+                      repeating-linear-gradient(to right, mediumseagreen,
+                                                          mediumseagreen .2em,
+                                                          darkgreen .2em,
+                                                          darkgreen .35em),
+                      repeating-linear-gradient(to right, mediumseagreen,
+                                                          mediumseagreen .2em,
+                                                          darkgreen .2em,
+                                                          darkgreen .35em),
+                      repeating-linear-gradient(to right, mediumseagreen,
+                                                          mediumseagreen .2em,
+                                                          darkgreen .2em,
+                                                          darkgreen .35em),
+                      repeating-linear-gradient(to right, mediumseagreen,
+                                                          mediumseagreen .2em,
+                                                          darkgreen .2em,
+                                                          darkgreen .35em),
+                      repeating-linear-gradient(to right, mediumseagreen,
+                                                          mediumseagreen .2em,
+                                                          darkgreen .2em,
+                                                          darkgreen .35em),
+                      repeating-linear-gradient(to right, mediumseagreen,
+                                                          mediumseagreen .2em,
+                                                          darkgreen .2em,
+                                                          darkgreen .35em),
+                      linear-gradient(to right, darkorange 50%, tomato 50%),
+                      linear-gradient(to right, darkorange 50%, tomato 50%),
+                      linear-gradient(to right, darkorange 50%, tomato 50%),
+                      linear-gradient(to right, darkorange 50%, tomato 50%),
+                      linear-gradient(to right, darkorange 50%, tomato 50%),
+                      linear-gradient(to right, darkorange 50%, tomato 50%),
+                      linear-gradient(to right, darkorange 50%, tomato 50%),
+                      radial-gradient(circle at 100% 0, #bbb 60%, transparent 61%),
+                      radial-gradient(circle at  50% 0, #aaa 60%, transparent 61%),
+                      linear-gradient(to right, #aaa 50%, #999 50%),
+                      radial-gradient(circle at 50% 100%, darken(khaki,5) 60%,
+                                                          alpha(khaki,0) 61%),
+                      linear-gradient(to right, orange 50%, darkorange 50%),
+                      linear-gradient(to right, orange 50%, darkorange 50%),
+                      linear-gradient(to right, orange 50%, darkorange 50%),
+                      linear-gradient(to right, orange 50%, darkorange 50%),
+                      linear-gradient(to right, orange 50%, darkorange 50%)
+    background-size: 80% 2em,
+                     80% 2em,
+                     2.3em .5em,
+                     2.3em .5em,
+                     2.3em .5em,
+                     2.3em .5em,
+                     2.3em .5em,
+                     2.3em .5em,
+                     1.5em .3em,
+                     1.5em .3em,
+                     1.5em .3em,
+                     1.5em .3em,
+                     1.5em .3em,
+                     1.5em .3em,
+                     1.5em .3em,
+                     1.75em 1.75em,
+                     3.5em 1.75em,
+                     1.5em .5em,
+                     3em 1.5em,
+                     1em 1em,
+                     1em 1em,
+                     1em 1em,
+                     1em 1em,
+                     1em 1em
+    background-position: 100% 100%,
+                         100% 100%,
+                         right 1.0em bottom 2.0em,
+                         right 1.2em bottom 2.5em,
+                         right 1.0em bottom 3.0em,
+                         right 0.8em bottom 3.5em,
+                         right 1.0em bottom 4.0em,
+                         right 0.8em bottom 4.5em,
+                         right 4.0em bottom 2.0em,
+                         right 3.9em bottom 2.3em,
+                         right 4.1em bottom 2.6em,
+                         right 4.0em bottom 2.9em,
+                         right 3.8em bottom 3.2em,
+                         right 4.0em bottom 3.5em,
+                         right 3.7em bottom 3.8em,
+                         -.1em 101%,
+                         -.1em 101%,
+                          .9em 100%,
+                         left .15em bottom 1.5em,
+                         left 4.3em bottom 2.0em,
+                         left 5.5em bottom 2.0em,
+                         left 6.7em bottom 2.0em,
+                         left 4.9em bottom 3.0em,
+                         left 6.1em bottom 3.0em
+    
+    &:before
+      width: 7em
+      height: 2em
+      background-color: #aaa
+      left: 5.2em
+      bottom: 3.5em
+      border-bottom-right-radius: 5em 2em
+      box-shadow: inset -.1em -.4em 0 white(.4)
+      transform: rotate(50deg)
+        
+    &:after
+      width: 6em
+      height: 2em
+      left: 1.58em
+      bottom: 8.41em
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, #888 60%, black(0) 61%),
+                        linear-gradient(#aaa, #aaa),
+                        linear-gradient(175deg, black 60%, black(0) 61%)
+      background-size: .6em .6em,
+                       .4em 51%,
+                       95% 100%
+      background-position: .5em .4em,
+                           100% 0,
+                           0 0
+      border-top-left-radius: .6em
+      transform: rotate(50deg)
+      
