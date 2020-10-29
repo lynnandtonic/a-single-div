@@ -1,0 +1,108 @@
+/*-----------------------------
+
+Rhyme
+
+-----------------------------*/
+
+$tote = #304355
+
+#rhyme
+  background-color: royalblue
+
+  div
+    width: 10em
+    height: 12em
+    margin-left: -(@width/2)
+    margin-top: -3.5em
+    background-color: $tote
+    background-repeat: no-repeat
+    background-size: 100% .1em
+    background-position: 0 1em
+    border-radius: .1em .1em .5em .5em
+    font-family: Helvetica, Arial, sans-serif
+    font-weight: bold
+    text-align: left
+
+    &:before
+      content: '-Barack Obama'
+      font-size: 12px
+      width: 8.35em
+      height: 21.8em
+      left: 50%
+      margin-left: -(@width/2)
+      top: -8em
+      display: flex
+      justify-content: flex-end
+      align-items: flex-end
+      background-repeat: no-repeat
+      background-image: linear-gradient( 135deg, darken($tote,13) 40%, darken($tote,8) 60%),
+                        linear-gradient(-135deg, darken($tote,13) 40%, darken($tote,8) 60%),
+                        linear-gradient(to top, darken($tote,8), $tote 25%),
+                        linear-gradient(to top, darken($tote,8), $tote 25%)
+      background-size: 55% 1.2em,
+                       55% 1.2em,
+                       1.2em 8em,
+                       1.2em 8em
+      background-position: 0 0,
+                           100% 0,
+                           1.4em 0,
+                           right 1.4em top
+      border-radius: 1.2em 1.2em 0 0
+      box-shadow: inset 1.2em 0 0 $tote,
+                  inset -1.2em 0 0 $tote
+      font-style: italic
+      color: white
+
+    &:after
+      font-size: 30px
+      content: 'Don’t moo. Vote.'
+      box-sizing: border-box
+      width: 100%
+      height: 100%
+      padding: 1.2em 1em
+      background-repeat: no-repeat
+      background-image: linear-gradient(darken($tote,10), darken($tote,10)),
+                        linear-gradient(darken($tote,10), darken($tote,10)),
+                        linear-gradient( 45deg, transparent 45%,
+                                                darken($tote,10) 48%,
+                                                darken($tote,10) 52%,
+                                                transparent 55%),
+                        linear-gradient(-45deg, transparent 45%,
+                                                darken($tote,10) 48%,
+                                                darken($tote,10) 52%,
+                                                transparent 55%),
+                        linear-gradient(darken($tote,10), darken($tote,10)),
+                        linear-gradient(darken($tote,10), darken($tote,10)),
+                        linear-gradient( 45deg, transparent 45%,
+                                                darken($tote,10) 48%,
+                                                darken($tote,10) 52%,
+                                                transparent 55%),
+                        linear-gradient(-45deg, transparent 45%,
+                                                darken($tote,10) 48%,
+                                                darken($tote,10) 52%,
+                                                transparent 55%),
+                        linear-gradient(darken($tote,10), darken($tote,10))
+      background-size: .07em .4em,
+                       .07em .4em,
+                       .4em .4em,
+                       .4em .4em,
+                       .07em .4em,
+                       .07em .4em,
+                       .4em .4em,
+                       .4em .4em,
+                       100% .07em
+      background-position: 1em 0,
+                           1.4em 0,
+                           1em 0,
+                           1em 0,
+                           right 1em top,
+                           right 1.4em top,
+                           right 1em top,
+                           right 1em top,
+                           0 .4em
+      border-radius: .06em .06em .3em .3em
+      box-shadow: inset 0 .07em .1em darken($tote,5),
+                  inset 0 0 .3em .2em darken($tote,5)
+      color: white
+      text-shadow: .1em .1em 0 white(.2)
+      line-height: 1.1
