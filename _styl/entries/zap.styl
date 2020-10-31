@@ -1,0 +1,170 @@
+/*-----------------------------
+
+Zap
+
+-----------------------------*/
+
+zap(angle)
+  linear-gradient(angle, alpha(lime,0) 40%,
+                         alpha(lime,.5) 49.5%,
+                         lime 49%,
+                         lime 51%,
+                         alpha(lime,.5) 51.5%,
+                         alpha(lime,0) 60%)
+
+#zap
+  background-color: #444
+  overflow: hidden
+
+  div
+    font-size: 10px
+    @media screen and (max-width: 400px)
+      font-size: 8px
+    width: 40em
+    height: 35em
+    margin-left: -(@width/2)
+    top: auto
+    bottom: 0
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle, white 50%, white(0) 51%),  //left
+                      radial-gradient(circle, #ccc 50%, transparent 51%),
+                      radial-gradient(circle, #999 50%, transparent 51%),
+                      repeating-linear-gradient(to bottom, #888, #888 .5em,
+                                                           transparent .5em,
+                                                           transparent 1.5em),
+                      repeating-linear-gradient(to bottom, white, white .5em,
+                                                           transparent .5em,
+                                                           transparent 1.5em),
+                      repeating-linear-gradient(to bottom, #ccc, #ccc .5em,
+                                                           transparent .5em,
+                                                           transparent 1.5em),
+                      linear-gradient(to right, #aaa 50%, #ccc 50%),
+                      radial-gradient(circle, white 50%, white(0) 51%), // right
+                      radial-gradient(circle, #ccc 50%, transparent 51%),
+                      radial-gradient(circle, #999 50%, transparent 51%),
+                      repeating-linear-gradient(to bottom, #888, #888 .5em,
+                                                           transparent .5em,
+                                                           transparent 1.5em),
+                      repeating-linear-gradient(to bottom, white, white .5em,
+                                                           transparent .5em,
+                                                           transparent 1.5em),
+                      repeating-linear-gradient(to bottom, #ccc, #ccc .5em,
+                                                           transparent .5em,
+                                                           transparent 1.5em),
+                      linear-gradient(to left, #aaa 50%, #ccc 50%),
+                      zap(110deg),
+                      zap(80deg),
+                      zap(100deg),
+                      zap(82deg),
+                      zap(97deg),
+                      zap(70deg),
+                      zap(105deg),
+                      zap(78deg),
+                      zap(100deg),
+                      zap(75deg),
+                      zap(110deg),
+                      zap(80deg),
+                      zap(110deg),
+                      zap(75deg),
+                      zap(100deg),
+                      zap(70deg),
+                      zap(100deg),
+                      zap(60deg),
+                      linear-gradient(290deg, white(0) 50%, #ddd 51%),
+                      linear-gradient(290deg, #ddd 50%, white(0) 51%)
+    background-size: 3em 3em, // left
+                     8em 8em,
+                     9em 9em,
+                     1.0em 65%,
+                      .8em 65%,
+                     2.5em 65%,
+                     1.5em 80%,
+                     3em 3em, // right
+                     8em 8em,
+                     9em 9em,
+                     1.0em 65%,
+                      .8em 65%,
+                     2.5em 65%,
+                     1.5em 80%,
+                     4em 5em, // zap
+                     4em 10em,
+                     4em 9em,
+                     4em 4em,
+                     4em 3em,
+                     4em 5em,
+                     4em 4em,
+                     4em 3em,
+                     4em 5em,
+                     4em 3em,
+                     4em 5em,
+                     4em 7em,
+                     4em 5em,
+                     4em 3em,
+                     4em 2em,
+                     4em 4em,
+                     4em 6em,
+                     4em 5em,
+                     .8em 2em,
+                     .8em 2em
+    background-position: left 5.0em top 5.5em, // left
+                         left 2.0em top 4.0em,
+                         left 1.4em top 3.9em,
+                         left 4.6em bottom,
+                         left 6.3em bottom,
+                         left 4.6em bottom,
+                         left 5.1em bottom,
+                         right 5.0em top 5.5em, // right
+                         right 2.0em top 4.0em,
+                         right 1.4em top 3.9em,
+                         right 4.6em bottom,
+                         right 6.3em bottom,
+                         right 4.6em bottom,
+                         right 5.1em bottom,
+                          7.2em 5em, // zap
+                          9.1em 5em,
+                         10.8em 6em,
+                         11.9em 6em,
+                         12.4em 7em,
+                         13.6em 7em,
+                         15.1em 8em,
+                         16.0em 8em,
+                         16.8em 6em,
+                         17.7em 6em,
+                         19.1em 4em,
+                         20.7em 4em,
+                         22.2em 6em,
+                         23.6em 6em,
+                         24.2em 7em,
+                         25.2em 7em,
+                         26.5em 5em,
+                         28.6em 5em,
+                         5.8em 2em,
+                         5.1em 0em
+
+    &:before,
+    &:after
+      width: 36em
+      height: @width
+      left: 2em
+      background-repeat: no-repeat
+      background-image: linear-gradient(160deg, white(0) 50%, #ddd 51%),
+                        linear-gradient(160deg, #ddd 50%, white(0) 51%),
+                        linear-gradient(160deg, white(0) 50%, #ddd 51%),
+                        linear-gradient(160deg, #ddd 50%, white(0) 51%)
+      background-size: 2em .8em
+
+    &:before
+      top: -7em
+      background-position: left 0   bottom 4em,
+                           left 2em bottom 4.5em,
+                           right 6em top 1.5em,
+                           right 4em top 1em
+      transform: rotate(55deg)
+
+    &:after
+      top: -8em
+      background-position: left 2.5em top 4em,
+                           left 4.5em top 4.5em,
+                           right 2em bottom 7.5em,
+                           right 0em bottom 7em
+      transform: rotate(-55deg)
