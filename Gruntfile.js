@@ -13,11 +13,11 @@ module.exports = function(grunt) {
     grunt.initConfig({
         stylus: {
             compile: {
-                options: {
-                    use: [
-                        require('autoprefixer-stylus')
-                    ]
-                },
+                // options: {
+                //     use: [
+                //         require('autoprefixer-stylus')
+                //     ]
+                // },
 
                 files: {
                     'public/css/main.css':  ['_styl/main.styl'],
