@@ -1,0 +1,82 @@
+/*-----------------------------
+
+Seven
+
+-----------------------------*/
+
+#seven
+  background-color: salmon
+  
+  div, div:before, div:after
+    box-sizing: border-box
+
+  div
+    width: 259px
+    height: 300px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(#222, #222),
+                      linear-gradient(#222, #222),
+                      linear-gradient(#222, #222),
+                      linear-gradient(#222, #222),
+                      linear-gradient(#222, #222),
+                      linear-gradient(#222, #222),
+                      linear-gradient(50deg, transparent 30%,
+                                             #222 31%, #222 63%,
+                                             transparent 64%),
+                      linear-gradient(#222, #222),
+                      linear-gradient(#222, #222),
+                      linear-gradient(#222, #222),
+                      linear-gradient(#222, #222)
+    background-size: 20px 100%, 20px 20px, 20px 20px, 20px 20px,
+                     20px 90%, 20px 100%, 40px 50px,
+                     20px 100%, 20px 20px, 20px 20px, 20px 20px
+    background-position: 60px 0, 75px 0, 75px 50%, 75px 100%,
+                         103px 0, 134px 0, 103px 100%,
+                         165px 0, 180px 0, 180px 50%, 180px 100%
+
+    &:before,
+    &:after
+      width: 50px
+      height: 100%
+      background-repeat: no-repeat
+
+    &:before
+      width: 50px
+      height: 100%
+      background-image: linear-gradient(#222, #222),
+                        linear-gradient(#222, #222),
+                        linear-gradient(#222, #222),
+                        linear-gradient(#222, #222),
+                        linear-gradient(#222, #222),
+                        linear-gradient(#222, #222),
+                        linear-gradient(#222, #222)
+      background-size: 100% 20px,
+                       100% 20px,
+                       20px 48%,
+                       20px 48%,
+                       20px 44%,
+                       20px 44%,
+                       100% 20px
+      background-position: 0 0,
+                           0 100%,
+                           0 0,
+                           100% 100%,
+                           100% 0,
+                           0 100%,
+                           0 50%
+      border-radius: 10px 0
+
+    &:after
+      right: 0
+      border-top-right-radius: 10px
+      background-image: linear-gradient(#222, #222),
+                        linear-gradient(#222, #222),
+                        linear-gradient(#222, #222)
+      background-size: 20px 100%,
+                       20px 100%,
+                       100% 20px
+      background-position: 0 0,
+                           100% 0,
+                           0 0
