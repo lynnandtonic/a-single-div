@@ -1,0 +1,88 @@
+/*-----------------------------
+
+Fan
+
+-----------------------------*/
+
+#fan
+  background: #eee
+  background-image: linear-gradient(to top, #ddd 15%, white(0) 15%)
+
+  div
+    width: 14em
+    height: 15em
+    margin-left: -(@width/2)
+    margin-top: -4em
+    background-repeat: no-repeat
+    background-image: linear-gradient(to bottom, #ccc .3em, #443e48 .3em),
+                      linear-gradient(to bottom, #222 10em, transparent 10em),
+                      radial-gradient(ellipse at center, black(.1) 20%, black(.0) 50%)
+    background-size: 93% 8.1em, 100% 100%, 18em 1.5em
+    background-position: 50% .6em, 0 0, left 50% bottom 0
+    border-radius: 5px
+    animation: floating 1500ms infinite ease-in-out
+
+    &:after
+      width: 18em
+      height: .7em
+      left: -2em
+      top: 9.3em
+      background-color: #ccc
+      background-repeat: no-repeat
+      background-image: linear-gradient(to top, #888 20%, black(0) 40%),
+                        linear-gradient(to right, black(.3),
+                                                  black(0) 1%,
+                                                  black(0) 1.2%,
+                                                  black(.3) 2.5%,
+                                                  black(0) 5%),
+                        linear-gradient(to left, black(.3),
+                                                  black(0) 1%,
+                                                  black(0) 1.2%,
+                                                  black(.3) 2.5%,
+                                                  black(0) 5%),
+                        linear-gradient(35deg, black(0) 30%,
+                                               black(.3) 40%,
+                                               black(0) 70%),
+                        linear-gradient(-35deg, black(0) 30%,
+                                               black(.3) 40%,
+                                               black(0) 70%),
+                        linear-gradient(to top, black(.15) 20%, black(0) 30%)
+      background-size: 100% 100%, 100% 100%, 100% 100%,
+                       .5em .3em, .5em .3em, 1.8em .3em
+      background-position: 0 0, 0 0, 0 0,
+                           44% 0, 56% 0, 50% 0
+      border-radius: 1px
+      border-bottom-left-radius: 1em .3em
+      border-bottom-right-radius: 1em .3em
+
+    &:before
+      content: '☠️☠️☠️'
+      box-sizing: border-box
+      width: 4em
+      height: 11em
+      margin-left: -(@width/2)
+      padding-top: 4.5em
+      left: 50%
+      top: 0
+      background-image: linear-gradient(to right, #444 20%, #333 50%, black(0) 50%),
+                        linear-gradient(to right, #aaa, #ccc, #aaa)
+      background-repeat: repeat-x, no-repeat
+      background-size: 100% .3em, .3em 1em
+      background-position: 0 100%, 50% 100%
+      animation: fan 60ms infinite linear
+
+@keyframes fan
+  0
+    background-position: 0 100%, 50% 100%
+  100%
+    background-position: 4em 100%, 50% 100%
+
+@keyframes floating
+  0, 100%
+    transform: translate(0,0)
+    background-size: 93% 8.1em, 100% 100%, 18em 1.5em
+    background-position: 50% .6em, 0 0, left 50% bottom 0
+  50%
+    transform: translate(0,.5em)
+    background-size: 93% 8.1em, 100% 100%, 21em 1.8em
+    background-position: 50% .6em, 0 0, left 50% bottom .5em
