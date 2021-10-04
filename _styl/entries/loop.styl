@@ -1,0 +1,126 @@
+/*-----------------------------
+
+Loop
+
+-----------------------------*/
+
+#loop
+  background: #ccc
+
+  div
+    box-sizing: border-box
+    width: 14em
+    height: 4.5em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-color: #444
+    background-repeat: no-repeat
+    background-image: repeating-linear-gradient(white(0), white(0) 3px,
+                                                          white(.5) 3px, white(.5) 4px),
+                      linear-gradient(black, black),
+                      linear-gradient(crimson, crimson),
+                      linear-gradient(white(.3), white(.3)),
+                      linear-gradient(white(.3), white(.3)),
+                      linear-gradient(white(.3), white(.3)),
+                      linear-gradient(white(.3), white(.3)),
+                      repeating-linear-gradient(to right, white(0), white(0) 3px,
+                                                          white(.6) 3px, white(.6) 5px,
+                                                          white(0) 5px, white(0) 7px),
+                      linear-gradient(black, black)
+    background-size: .4em 2em,
+                      1em 2.3em,
+                      .1em 1.4em,
+                      .4em .1em, .4em .1em,
+                      3em .1em, 3em .1em,
+                      5em .1em,
+                      5em 2.3em
+    background-position: 1.3em 51.3%,
+                         .9em 51.5%,
+                         70% 65%,
+                         61% 50%, 61% 60%,
+                         85% 50%, 85% 60%,
+                         90% 73%,
+                         90% 51.3%
+    border-radius: .6em
+    border: 3px solid white
+    box-shadow: 0 0 0 2px #aaa,
+                inset 0 0 0 5px #777
+
+    &:before,
+    &:after
+      box-sizing: border-box
+
+    &:before
+      content: '6 00'
+      padding: .25em .3em .2em .4em
+      display: flex
+      align-items: center
+      left: 1.4em
+      top: .56em
+      background-color: black
+      background-repeat: no-repeat
+      background-image: linear-gradient(#444, #444),
+                        linear-gradient(#444, #444),
+                        linear-gradient(#444, #444)
+      background-size: .7em 80%
+      background-position: .3em 50%, 1.3em 50%, 2.06em 50%
+      border-radius: 3px
+      font-family: Impact
+      font-size: 26px
+      letter-spacing: 4px
+      color: white
+      
+    &:after
+      content: 'Panasonic'
+      width: 16rem
+      height: 7rem
+      padding-top: 2.2rem
+      padding-right: 2.3rem
+      left: 50%
+      margin-left: -(@width/2)
+      top: -1rem
+      background-repeat: no-repeat
+      background-image: linear-gradient(white, white), linear-gradient(#aaa, #aaa),
+                        linear-gradient(white, white), linear-gradient(#aaa, #aaa),
+                        linear-gradient(white, white), linear-gradient(#aaa, #aaa),
+                        linear-gradient(white, white), linear-gradient(#aaa, #aaa),
+                        repeating-linear-gradient(white(0), white(0) 2px,
+                                                            #aaa 2px, #aaa 3px),
+                        linear-gradient(white, white), linear-gradient(#aaa, #aaa),
+                        repeating-linear-gradient(white(0), white(0) 2px,
+                                                            #aaa 2px, #aaa 3px),
+                        linear-gradient(white, white), linear-gradient(#aaa, #aaa),
+                        linear-gradient(#aaa, #aaa),
+                        linear-gradient(60deg, white(0) 35%, #aaa 35.1%, #aaa 36.7%, white 36.8%),
+                        linear-gradient(-60deg, white(0) 35%, #aaa 35.1%, #aaa 36.7%, white 36.8%),
+                        radial-gradient(ellipse, black(.1) 60%, black(0) 63%),
+                        linear-gradient(black, black)
+      background-size: 20px 4px, 24px 6px,
+                       15px 3px, 19px 5px,
+                       4px 30px, 6px 34px,
+                       4px 30px, 6px 34px,
+                       10px 10px,
+                       10px 10px, 12px 14px,
+                       10px 10px,
+                       10px 10px, 12px 14px,
+                       59% 2px,
+                       55% 15px, 55% 15px,
+                       100% 20%,
+                       5rem 1px
+      background-position: 40px 7px, 38px 5px,
+                           190px 8px, 188px 6px,
+                           10px 36px, 8px 34px,
+                           calc(100% - 10px) 36px, calc(100% - 8px) 34px,
+                           2px 46px,
+                           2px 46px, 0 44px,
+                           calc(100% - 2px) 46px,
+                           calc(100% - 2px) 46px, 100% 44px,
+                           50% 6.29rem,
+                           0 5.45rem, 100% 5.45rem,
+                           50% 100%,
+                           3.5rem 44%
+      color: white(.8)
+      font-size: 6px
+      font-family: Arial
+      font-weight: bold
+      text-align: right
