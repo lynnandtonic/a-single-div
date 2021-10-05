@@ -1,0 +1,76 @@
+/*-----------------------------
+
+Tired
+
+-----------------------------*/
+
+#tired
+  background: gold
+
+  div
+    box-sizing: border-box
+    width: 13em
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse at 50% 0%, alpha(crimson,.5) 50%,
+                                                         alpha(crimson, 0) 55%),
+                      radial-gradient(ellipse at 50% 0%, darkorange 50%,
+                                                         alpha(darkorange, 0) 51%),
+                      radial-gradient(ellipse at 50% 0%, alpha(crimson,.5) 50%,
+                                                         alpha(crimson, 0) 55%),
+                      radial-gradient(ellipse at 50% 0%, darkorange 50%,
+                                                         alpha(darkorange, 0) 51%),
+                      radial-gradient(ellipse, darken(sienna, 10) 45%,
+                                               darken(saddlebrown, 15) 66%,
+                                               alpha(saddlebrown, 0) 68%),
+                      radial-gradient(circle at 50% 10%, lemonchiffon, gold 40%, darkorange 80%)
+    background-size: 5.8em 4em,
+                     5.8em 6em,
+                     5.8em 4em,
+                     5.8em 6em,
+                     2em 1.5em,
+                     100% 100%
+    background-position: left  .7em top 6.5em,
+                         left  .7em top 6.5em,
+                         right .7em top 6.5em,
+                         right .7em top 6.5em,
+                         50% 85%,
+                         0 0
+    border-radius: 50%
+    border: .2em solid darkorange
+    box-shadow: inset 0 1.4em .5em -1em alpha(gold, .9),
+                inset 0 0 0 .3em alpha(crimson, .2),
+                inset 0 -.6em 1em .5em alpha(darkred,.4)
+
+    &:before,
+    &:after
+      width: 4.6em
+      height: @width
+      top: 3.9em
+      background-color: white
+      background-repeat: no-repeat
+      background-image: linear-gradient(to bottom, lemonchiffon, gold, orange),
+                        linear-gradient(saddlebrown 80%, alpha(saddlebrown, 0) 100%),
+                        radial-gradient(circle, black 60%, black(0) 62%),
+                        radial-gradient(circle, black(0) 60%, black(.4) 75%),
+                        radial-gradient(circle, white 48%, tomato 75%)
+      background-size: 100% 55%,
+                       100% 60%,
+                       1.3em 1.3em,
+                       100% 100%,
+                       100% 100%
+      background-position: 0 0,
+                           0 0,
+                           50% 62%,
+                           0 0,
+                           0 0
+      border-radius: 50%
+      box-shadow: 0 -1em 1em 0 alpha(crimson, .1)
+
+    &:before
+      left: 1.3em
+
+    &:after
+      right: 1.3em
