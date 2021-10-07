@@ -1,0 +1,106 @@
+/*-----------------------------
+
+Hungry
+
+-----------------------------*/
+
+$hippo = lightpink
+$hippo-0 = alpha($hippo,0)
+$hippo-drk = darken($hippo,12)
+
+#hungry
+  background: crimson
+
+  div
+    width: 20em
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(white, white),
+                      linear-gradient(white, white),
+                      radial-gradient(ellipse, firebrick 35%,
+                                               $hippo 36%, $hippo 50%,
+                                               $hippo-0 51%),
+                      radial-gradient(circle, black 50%, black(0) 51%),
+                      radial-gradient(circle, black 50%, black(0) 51%),
+                      radial-gradient(ellipse at 50% 100%, $hippo 50%, $hippo-0 50.1%),
+                      radial-gradient(ellipse at 50% 100%, $hippo-drk 50%, $hippo-0 50.1%),
+                      radial-gradient(ellipse at 50% 100%, $hippo-drk 50%, $hippo-0 50.1%),
+                      radial-gradient(circle, $hippo-drk 50%, $hippo-0 50.1%),
+                      radial-gradient(circle, $hippo-drk 50%, $hippo-0 50.1%)
+    background-size: 1em 1em, 1em 1em,
+                     4.5em 5em,
+                     .6em .6em, .6em .6em,
+                     10em 9em,
+                     17em 16em,
+                     9em 6em,
+                     2.5em 2.5em,
+                     2.5em 2.5em
+    background-position: 42% 50%, 58% 50%,
+                         50% 50%,
+                         47% 27%, 52.5% 27%,
+                         left 50% bottom 1em,
+                         left 50% bottom 1em,
+                         50% 10%,
+                         40% 10%,
+                         60% 10%
+
+    &:before
+      width: 8em
+      height: 4em
+      left: 50%
+      margin-left: -(@width/2)
+      top: 30%
+      background-color: $hippo
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, $hippo-drk 50%, $hippo-0 51%),
+                        radial-gradient(circle, $hippo-drk 50%, $hippo-0 51%),
+                        radial-gradient(circle, $hippo-drk 50%, $hippo-0 51%),
+                        radial-gradient(circle, $hippo-drk 50%, $hippo-0 51%),
+                        radial-gradient(circle, $hippo-drk 50%, $hippo-0 51%),
+                        radial-gradient(circle, $hippo-drk 50%, $hippo-0 51%)
+      background-size: .4em .4em
+      background-position: 10% 30%,  5% 44%, 13% 48%,
+                           90% 30%, 95% 44%, 87% 48%
+      border-top-right-radius: 4em 2em
+      border-top-left-radius: 4em 2em
+      border-bottom-right-radius: 2em 2em
+      border-bottom-left-radius: 2em 2em
+
+    &:after
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, $hippo-drk 30%,
+                                                $hippo 31%, $hippo 60%,
+                                                $hippo-0 61%),
+                        radial-gradient(circle, $hippo-drk 30%,
+                                                $hippo 31%, $hippo 60%,
+                                                $hippo-0 61%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, #ddd 50%, white(0) 51%),
+                        radial-gradient(circle, #bbb 50%, white(0) 51%),
+                        radial-gradient(circle, #ccc 50%, white(0) 51%),
+                        radial-gradient(circle, #ccc 50%, white(0) 51%),
+                        radial-gradient(circle, #ddd 50%, white(0) 51%),
+                        radial-gradient(circle, #eee 50%, white(0) 51%)
+      background-size: 2em 2em, 2em 2em,
+                       4em 4em,
+                       4em 4em, 4em 4em, 4em 4em,
+                       4em 4em, 4em 4em, 4em 4em, 4em 4em, 4em 4em, 4em 4em,
+                       3.5em 3.5em, 3.3em 3.3em, 3.3em 3.3em,  3.3em 3.3em, 3.5em 3.5em, 3.5em 3.5em
+      background-position: 40% 30%, 60% 30%,
+                           18.5% 71%,
+                           9.5% 86%, 28% 85%, 65% 86%,
+                           0 100%, 20% 100%, 36% 100%, 55% 100%, 75% 100%, 100% 100%,
+                           12% 99%, 19% 83%, 30% 99%, 47% 99%, 65% 99%, 87% 99%
