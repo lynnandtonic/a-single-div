@@ -1,0 +1,119 @@
+/*-----------------------------
+
+Growing
+
+-----------------------------*/
+
+#growing
+  background: powderblue
+
+  div
+    box-sizing: border-box
+    width: 10em
+    min-height: 11em
+    max-height: calc(100% - 2em)
+    margin-left: -(@width/2)
+    bottom: 1em
+    top: auto
+    resize: vertical
+    overflow: hidden
+    transform: rotate(180deg)
+
+    background-repeat: no-repeat
+    background-image: linear-gradient(crimson, crimson),
+                      linear-gradient(to top, darken(peru,30), peru 90%),
+                      linear-gradient(black, black),
+                      linear-gradient(black, black),
+                      radial-gradient(circle at 50% 100%, peru 16%,
+                                                          crimson 16.5%),
+                      linear-gradient(black, black),
+                      linear-gradient(to bottom, transparent .3em, peru .3em),
+                      repeating-linear-gradient(to right, peru, peru .1em,
+                                                                transparent .1em,
+                                                                transparent .2em),
+                      linear-gradient(to bottom, transparent .3em, peru .3em),
+                      repeating-linear-gradient(to right, peru, peru .1em,
+                                                                transparent .1em,
+                                                                transparent .2em),
+                      linear-gradient(to right, steelblue 40%,
+                                                transparent 40%,
+                                                transparent 60%,
+                                                steelblue 60%),
+                      linear-gradient(to top, steelblue 80%, transparent 80%),
+                      linear-gradient(to top, white 70%, white(0) 70%),
+                      radial-gradient(circle at 50% 30%, saddlebrown .09em, peru .12em),
+                      linear-gradient(to right, crimson 30%,
+                                                transparent 30%,
+                                                transparent 70%,
+                                                crimson 70%),
+                      linear-gradient(to right, white 30%,
+                                                transparent 30%,
+                                                transparent 70%,
+                                                white 70%),
+                      linear-gradient(to right, peru 30%,
+                                                transparent 30%,
+                                                transparent 70%,
+                                                peru 70%),
+                      linear-gradient(10deg, white(0) 30%, white 31%),
+                      linear-gradient(-10deg, white(0) 30%, white 31%),
+                      linear-gradient(-45deg, steelblue 50%, alpha(steelblue,0) 51%)
+    background-size: 1.5em .2em,
+                     .6em 1em,
+                     .6em 3.5em, .6em 3.5em,
+                     3em 2.5em,
+                     2em 3.5em,
+                     .5em 40%, .5em 40%,
+                     .5em 40%, .5em 40%,
+                     3em 2em, 3em 2em,
+                     2.9em 2em,
+                     2.75em calc(100% - (4em + 45%)),
+                     2.4em .2em, 2.4em 2em, 2.4em 45%,
+                     1em .7em, 1em .7em,
+                     .8em .8em
+    background-position: left calc(50% - 1.5em) bottom .8em,
+                         left 50% bottom 2.1em,
+                         left calc(50% + .81em) bottom 1em, left calc(50% - .81em) bottom 1em,
+                         left 50% bottom 3em,
+                         left 50% bottom 1em,
+                         left calc(50% - 1.8em) bottom 4em, left calc(50% - 1.8em) bottom 4em,
+                         right calc(50% - 1.8em) bottom 4em, right calc(50% - 1.8em) bottom 4em,
+                         50% 47%, 50% 47%,
+                         50% calc(47% + .2em),
+                         left 50% bottom 3.2em,
+                         50% 1.5em, 50% 0, 50% 1em,
+                         calc(50% - 1.6em) 0, calc(50% + 1.6em) 0,
+                         100% 100%
+
+    &:before
+      width: 4.2em
+      height: 1.4em
+      left: 50%
+      margin-left: -(@width/2)
+      bottom 3em
+      background-image: linear-gradient(to right, crimson 1em, transparent 1em),
+                        linear-gradient(to left, crimson 1em, transparent 1em)
+      border-radius: 0 0 .8em .8em
+
+
+    &:after
+      width: 2.2em
+      height: 2.7em
+      left: 50%
+      margin-left: -(@width/2)
+      bottom: 0
+      top: auto
+      background-color: peru
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, black 50%, black(0) 51%),
+                        radial-gradient(circle, black 50%, black(0) 51%),
+                        linear-gradient(to top, crimson 1em, transparent 1em),
+                        linear-gradient(black, black),
+                        linear-gradient(black, black)
+      background-size: .4em .4em, .4em .4em,
+                       100% 100%,
+                       .4em 100%, .4em 100%
+      background-position: .6em 1em,
+                           right .6em top 1em,
+                           0 0,
+                           100% 0, 0 0
+      border-radius: 1.5em
