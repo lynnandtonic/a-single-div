@@ -1,0 +1,119 @@
+/*-----------------------------
+
+Homonym
+
+-----------------------------*/
+
+$h-gold-l = #DBB25E
+$h-gold-m = #907335
+$h-gold-d = darken(#836930,8)
+
+#homonym
+  background: linen
+  
+  div
+    width: 16em
+    height: 12em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-color: sienna
+    background-repeat: no-repeat
+    background-image: linear-gradient(#111, #111),
+                      linear-gradient(#111, #111),
+                      radial-gradient(circle at 50% 10%, transparent 35%,
+                                                         #111 36%,
+                                                         #111 50%,
+                                                         transparent 51%),
+                      linear-gradient(25deg,  transparent 65%,
+                                              #111 66%,
+                                              #111 78%,
+                                              transparent 79%),
+                      linear-gradient(-25deg, transparent 65%,
+                                              #111 66%,
+                                              #111 78%,
+                                              transparent 79%),
+                      linear-gradient(#111, #111),
+                      linear-gradient(#111, #111),
+                      linear-gradient(-20deg, transparent 70%,
+                                              #111 71%,
+                                              #111 85%,
+                                              transparent 86%),
+                      linear-gradient(30deg,  transparent 72%,
+                                              #111 73%,
+                                              #111 84%,
+                                              transparent 85%),
+                      radial-gradient(circle at 50% 0, transparent 20%,
+                                                         #111 21%,
+                                                         #111 33%,
+                                                         transparent 34%),
+                      linear-gradient(#111, #111),
+                      linear-gradient(#111, #111),
+                      radial-gradient(ellipse, transparent 34%,
+                                               #111 36%,
+                                               #111 54%,
+                                               transparent 56%),
+                      radial-gradient(ellipse, transparent 34%,
+                                               #111 36%,
+                                               #111 54%,
+                                               transparent 56%),
+                      linear-gradient(to bottom, $h-gold-l, $h-gold-m 40%, $h-gold-d),
+                      linear-gradient(#111, #111),
+                      linear-gradient(to bottom, $h-gold-l,
+                                                 $h-gold-m,
+                                                 $h-gold-d,
+                                                 $h-gold-l,
+                                                 $h-gold-m),
+                      linear-gradient(to top, black(.2) 25%, black(0) 60%),
+                      repeating-linear-gradient(to right, black(.1), black(.1) 3%,
+                                                          black(0) 7%, black(0) 8%),
+                      linear-gradient(to right, transparent 30%, alpha(firebrick,.2) 50%, transparent 70%),
+                      linear-gradient(95deg, transparent 75%, black(.1) 80%, transparent 85%),
+                      linear-gradient(102deg, transparent 25%, black(.1) 30%, transparent 40%)
+    background-size: 4.5em .1em, 3.5em .25em,
+                     .6em .6em, .3em .6em, .3em .6em,
+                     4.5em .1em, 3.5em .25em,
+                     .3em .6em, .3em .6em, .6em .6em,
+                     4.5em .1em, 3.5em .25em,
+                     1em .6em, 1em .6em,
+                     7em 3.8em,
+                     85% 82%, 90% 88%,
+                     100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%
+    background-position: 50% 3em, 50% 2.95em,
+                         calc(50% - 2.5em) 3em, calc(50% + 2.4em) 3em, calc(50% + 2.7em) 3em,
+                         50% 5em, 50% 4.95em,
+                         calc(50% - 2.35em) 5em, calc(50% - 2.61em) 5em, calc(50% + 2.45em) 5em,
+                         50% 4em, 50% 3.95em,
+                         calc(50% - 2.5em) 3.75em, calc(50% + 2.5em) 3.75em,
+                         50% 2.2em,
+                         50% 50%, 50% 50%,
+                         50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%
+    border-radius: .1em
+    border: .5em solid white(.1)
+    border-top-color: white(.4)
+    border-bottom-color: black(.08)
+    box-shadow: 0 .1em .1em alpha(saddlebrown,.5),
+                0 .2em .2em alpha(saddlebrown,.5),
+                0 .3em .3em black(.3)
+    color: $h-gold-l
+
+    &:before,
+    &:after
+      width: 100%
+      height: 2em
+      font-family: 'Comic Sans MS', sans-serif
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+
+    &:before
+      bottom: 2em
+      content: 'Plaque Attack Award'
+      background-image: linear-gradient(to top, $h-gold-l,
+                                                $h-gold-m)
+      font-size: 1.2em
+
+    &:after
+      bottom: 1em
+      content: 'Phil Crentist, DDS'
+      background-image: linear-gradient(to bottom, $h-gold-l 20%,
+                                                   $h-gold-m)
+      font-size: 1em
