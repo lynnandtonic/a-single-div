@@ -1,0 +1,259 @@
+/*-----------------------------
+
+Squeak
+
+-----------------------------*/
+
+squeak-outline(direction, opacity)
+  linear-gradient(to direction, midnightblue .2em,
+                                white(opacity) .2em, white(opacity) calc(100% - .2em),
+                                midnightblue calc(100% - .2em))
+                                
+
+squeak-border = linear-gradient(midnightblue, midnightblue)
+
+#squeak
+  background-color: lightgreen
+  
+  div
+    font-size: 10px
+    width: 20em
+    height: 35em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: squeak-outline(bottom, 0), squeak-outline(right, 1), // body
+                      squeak-outline(bottom, 0), squeak-outline(right, 1),
+                      squeak-border,
+                      squeak-border,
+                      squeak-border,
+                      squeak-border,
+                      squeak-border,
+                      squeak-outline(right, 1),
+                      squeak-border, // floor
+                      radial-gradient(ellipse at 50% 100%, white 50%, // shoes
+                                                           midnightblue 51%,
+                                                           midnightblue 56%,
+                                                           transparent 57%),
+                      radial-gradient(ellipse at 50% 100%, white 50%,
+                                                           midnightblue 51%,
+                                                           midnightblue 56%,
+                                                           transparent 57%),
+                      squeak-border, // left leg
+                      squeak-border,
+                      linear-gradient(-75deg, midnightblue 20%,
+                                              transparent 21%),
+                      linear-gradient(-75deg, white 35%,
+                                              midnightblue 36%,
+                                              midnightblue 38%,
+                                              transparent 39%),
+                      squeak-outline(right, 1),
+                      squeak-border, // right leg
+                      squeak-border,
+                      linear-gradient(75deg, midnightblue 20%,
+                                              transparent 21%),
+                      linear-gradient(75deg, white 35%,
+                                             midnightblue 36%,
+                                             midnightblue 38%,
+                                             transparent 39%),
+                      squeak-outline(right, 1),
+                      linear-gradient(65deg, transparent 40%, // right arm
+                                             midnightblue 41%,
+                                             midnightblue 42.5%,
+                                             white 43%,
+                                             white 51%,
+                                             midnightblue 51.5%,
+                                             midnightblue 53%,
+                                             transparent 54%),
+                      squeak-outline(right, 1),
+                      linear-gradient(-65deg, transparent 40%, // left arm
+                                             midnightblue 41%,
+                                             midnightblue 42.5%,
+                                             white 43%,
+                                             white 51%,
+                                             midnightblue 51.5%,
+                                             midnightblue 53%,
+                                             transparent 54%),
+                      squeak-outline(right, 1),
+                      linear-gradient( 140deg, transparent 30%, // neck
+                                               midnightblue 31%,
+                                               midnightblue 34%,
+                                               white 35%,
+                                               white 40%,
+                                               midnightblue 41%,
+                                               midnightblue 50%,
+                                               white 51%),
+                      linear-gradient(-140deg, transparent 30.5%,
+                                               midnightblue 31%,
+                                               midnightblue 34%,
+                                               white 35%,
+                                               white 40%,
+                                               midnightblue 41%,
+                                               midnightblue 60%,
+                                               white 61%),
+                      squeak-border,
+                      squeak-outline(right, 1)
+    background-size: 9em .8em, 9em .8em, // body
+                     9em .8em, 9em .8em,
+                     .8em 10em, .2em 10em,.2em 6em, .2em 8em, 1.5em 10em,
+                     8em 10em,
+                     16em .2em, // floor
+                     6em 2em, // shoes
+                     6em 2em,
+                     .2em 4em, // left leg
+                     .2em 4em,
+                     5em 4em,
+                     5em 6em,
+                     1.5em 50%, // right leg
+                     .2em 4em,
+                     .2em 4em,
+                     5em 4em,
+                     5em 6em,
+                     1.5em 50%,
+                     6em 6em, 1em 5em, // right arm
+                     6em 6em, 1em 5em, // left arm
+                     4em 3em, 4em 3em, 1em 4em, 3em 4em // neck
+    background-position: 50% 36%, 50% 36%, // body
+                         50% 64%, 50% 64%,
+                         35% 50%, 9em 50%, 11.4em 43%, 11.7em 48%, 65% 50%,
+                         50% 50%,
+                         50% 100%, // floor
+                         4.5em 100%, // shoes
+                         right 4.5em top 100%,
+                         7.3em 73%, // left leg
+                         7.6em 68%,
+                         3.1em 100%,
+                         3em 100%,
+                         7em 100%,
+                         right 7.3em top 73%, // right leg
+                         right 7.6em top 68%,
+                         right 3.1em top 100%,
+                         right 3em top 100%,
+                         right 7em top 100%,
+                         right 1.9em top 45%, // right arm
+                         right 3.2em top 65%,
+                         1.9em 45%, // left arm
+                         3.2em 65%,
+                         6em 32.5%, // neck
+                         right 6em top 32.5%,
+                         right 9em top 25%,
+                         50% 25%
+
+    &:before
+      width: .6em
+      height: .6em
+      left: 9.5em
+      top: 40.2%
+      border-radius: 50%
+      background-color: midnightblue
+      box-shadow: 0 2em 0 midnightblue,
+                  0 4em 0 midnightblue,
+                  0 6em 0 midnightblue,
+                   6.7em 5.3em 0 .2em white,
+                   6.4em 5.1em 0 .2em midnightblue,
+                   6.4em 5.1em 0 .6em white,
+                   6.4em 5.1em 0 .8em midnightblue,
+                  -6.5em 5.3em 0 .2em white,
+                  -6.2em 5.1em 0 .2em midnightblue,
+                  -6.2em 5.1em 0 .6em white,
+                  -6.2em 5.1em 0 .8em midnightblue,
+                  -2.4em 14.9em 0 .2em white,
+                  -2.1em 14.7em 0 .2em midnightblue,
+                  -2.1em 14.7em 0 .6em white,
+                  -2.1em 14.7em 0 .8em midnightblue,
+                   2.7em 14.9em 0 .2em white,
+                   2.4em 14.7em 0 .2em midnightblue,
+                   2.4em 14.7em 0 .6em white,
+                   2.4em 14.7em 0 .8em midnightblue,
+                  0 -4em 0 .4em white,
+                  0 -4em 0 .6em midnightblue,
+                  1em -4em 0 .6em white,
+                  1em -4em 0 .8em midnightblue,
+                  -1em -4em 0 .6em white,
+                  -1em -4em 0 .8em midnightblue,
+                  2.3em -11.4em 0 -.1em lightgreen,
+                  2.3em -11.4em 0 .1em midnightblue,
+                  2.3em -11.4em 0 .3em white,
+                  2.3em -11.4em 0 .5em midnightblue
+
+    &:after
+      width: 115%
+      height: 100%
+      background-repeat: no-repeat
+      background-image: squeak-border, squeak-border, squeak-border, // left hand
+                        squeak-outline(bottom, 0), squeak-outline(right, 1),
+                        squeak-border, squeak-border, squeak-border, // right hand
+                        squeak-outline(bottom, 0), squeak-outline(right, 1),
+                        squeak-border, // blade
+                        squeak-border,
+                        squeak-border,
+                        linear-gradient(101deg, transparent 24%,
+                                                midnightblue 26%,
+                                                midnightblue 30.5%,
+                                                white 32%),
+                        linear-gradient(-101deg, transparent 24%,
+                                                midnightblue 26%,
+                                                midnightblue 30.5%,
+                                                white 32%),
+                        squeak-outline(bottom, 0), squeak-outline(right, 1), // handle
+                        squeak-border, squeak-border, // bow tie lines
+                        squeak-outline(bottom, 0), squeak-outline(right, 1), // hat brim
+                        radial-gradient(ellipse at 50% 100%, midnightblue 32%, // eyes
+                                                             transparent 34%),
+                        radial-gradient(ellipse at 50% 100%, midnightblue 32%,
+                                                             transparent 34%),
+                        squeak-outline(bottom, 0), squeak-outline(right, 1),
+                        squeak-outline(bottom, 0), squeak-outline(right, 1),
+                        radial-gradient(circle, white 15%,
+                                                midnightblue 17%,
+                                                midnightblue 27%,
+                                                transparent 29%),
+                        squeak-outline(bottom, 0), // head
+                        squeak-outline(right, 1),
+                        linear-gradient( 135deg, transparent 30%, // hat
+                                                 midnightblue 31%,
+                                                 midnightblue 34%,
+                                                 white 35%),
+                        linear-gradient(-135deg, transparent 30%,
+                                                 midnightblue 31%,
+                                                 midnightblue 34%,
+                                                 white 35%,
+                                                 white 40%,
+                                                 midnightblue 41%,
+                                                 midnightblue 50%,
+                                                 white 51%),
+                        squeak-outline(bottom, 0), squeak-outline(right, 1)
+      background-size: .2em 1em, .2em 1em, .2em 1em, // left hand
+                        2.6em 1.7em, 2.6em 1.7em,
+                        .2em 1em, .2em 1em, .2em 1em, // right hand
+                        2.6em 1.7em, 2.6em 1.7em,
+                        3em .2em, 4.4em .2em, 4.9em .2em,
+                        2.5em 4.5em, 2.5em 4.5em, // blade
+                        100% 1em, 100% 1em, // handle
+                        .5em .2em, .5em .2em, // bow tie lines
+                        6em .6em, 6em .6em, // hat brim
+                        1em 1.5em, 1em 1.5em, // eyes
+                        1em 1.6em, 1em 1.6em,
+                        1em 1.6em, 1em 1.6em,
+                        2em 2em,
+                        5em 1.2em, // head
+                        5em 4em,
+                        2.8em 3.6em, 2.8em 3.6em, // hat
+                        1em 4em, 1em 4em
+      background-position: 3em 72.5%, 3.6em 72.5%, 4.2em 72.5%, // left hand
+                           2.4em 72%, 2.4em 72%,
+                           15.6em 72.5%, 16.2em 72.5%, 16.8em 72.5%, // right hand
+                           15em 72%, 15em 72%,
+                           right 1em top 69.6%, right .2em top 79%, right 0 top 82.2%, // blade
+                           right 2.4em top 79.5%, right 0 top 79.5%,
+                           0 72%, 0 72%,// handle
+                           8.5em 29.5%, 10.6em 29.5%, // bow tie lines
+                           7em 12%, 7em 12%, // hat brim
+                           8.3em 15.5%, 10.7em 15.5%, // eyes
+                           8.3em 15.5%, 8.3em 15.5%,
+                           10.7em 15.5%, 10.7em 15.5%,
+                           9em 18%,
+                           7.5em 22.5%, // head
+                           7.5em 15%,
+                           7.5em 7%, 9.7em 7%, // hat
+                           9.5em 0, 9.5em 0
