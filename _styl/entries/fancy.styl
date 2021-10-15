@@ -1,0 +1,110 @@
+/*-----------------------------
+
+Fancy
+
+-----------------------------*/
+
+#fancy
+  background-color: tomato
+
+  div
+    font-size: 10px
+    box-sizing: border-box
+    width: 20em
+    height: 8em
+    margin-left: -(@width/2)
+    margin-top: -5em
+    background-color: peru
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse, white(.2) 60%, white(0) 62%),
+                      radial-gradient(ellipse, white(.2) 60%, white(0) 62%),
+                      radial-gradient(ellipse, white(.2) 60%, white(0) 62%),
+                      radial-gradient(ellipse, white(.2) 60%, white(0) 62%)
+    background-size: 1em .5em,
+                     2em 1em,
+                     1.4em .7em,
+                     1em .5em
+    background-position: .8em 3em,
+                         1.1em 4em,
+                         9.9em 6.5em,
+                         12.2em 6.5em
+    border-radius: 50%
+    border: .2em solid saddlebrown
+    box-shadow: 0 0.6em 0 .2em burlywood,
+                0 0.6em 0 .4em saddlebrown,
+                -.3em 2.0em 0 .0em peru,
+                -.3em 2.0em 0 .2em saddlebrown,
+                -.3em 2.6em 0 .4em burlywood,
+                -.3em 2.6em 0 .6em saddlebrown,
+                .5em 4.0em 0 .0em peru,
+                .5em 4.0em 0 .2em saddlebrown,
+                .5em 4.6em 0 .4em burlywood,
+                .5em 4.6em 0 .6em saddlebrown,
+                .5em 5.7em 0 .5em alpha(saddlebrown,.4)
+
+    &:before,
+    &:after
+      box-sizing: border-box
+
+    &:before
+      width: 15em
+      height: 6em
+      left: 3em
+      top: -.6em
+      background-color: white
+      border-top-right-radius: 8em 4em
+      border-top-left-radius: 8em 4em
+      border-bottom-right-radius: 6em 2.5em
+      border-bottom-left-radius: 6em 2.5em
+      border: .2em solid saddlebrown
+      box-shadow: inset 0 -.8em 0 alpha(saddlebrown,.2),
+                  0 .8em 0 alpha(saddlebrown,.2)
+
+    &:after
+      width: .3em
+      height: @width
+      left: 8em
+      top: -.5em
+      background-color: linen
+      border-radius: 50%
+      box-shadow:  0.0em  1.0em 0 .1em forestgreen,
+                   2.0em  0.5em 0 .1em forestgreen,
+                   3.0em  1.0em 0 .1em forestgreen,
+                   5.0em  0.5em 0 .1em forestgreen,
+                  -3.6em  2.2em 0 .1em forestgreen,
+                  -2.0em  3.2em 0 .1em forestgreen,
+                  -1.0em  3.0em 0 .1em forestgreen,
+                   5.0em  3.0em 0 .1em forestgreen,
+                   7.9em  2.4em 0 .1em forestgreen,
+                  -2.6em  1.8em 0 linen,
+                  -2.4em  2.0em 0 .6em #111,
+                  -0.4em  1.8em 0 linen,
+                  -0.2em  2.0em 0 .6em #111,
+                   1.1em  2.0em 0 linen,
+                   1.2em  2.2em 0 .6em #111,
+                   3.1em  2.1em 0 linen,
+                   3.2em  2.3em 0 .6em #111,
+                   4.2em  2.0em 0 .6em #111,
+                   6.1em  2.3em 0 linen,
+                   6.2em  2.5em 0 .6em #111,
+                   0.2em  0.2em 0 .6em #111,
+                   1.6em -0.1em 0 linen,
+                   1.7em  0.1em 0 .6em #111,
+                   3.0em  0.3em 0 linen,
+                   3.1em  0.5em 0 .6em #111,
+                   4.9em  0.0em 0 linen,
+                   5.0em  0.2em 0 .6em #111,
+                  -1.0em  0.9em 0 linen,
+                  -0.9em  1.1em 0 .6em #111,
+                   1.1em  0.9em 0 linen,
+                   1.2em  1.1em 0 .6em #111,
+                   4.0em  0.9em 0 linen,
+                   4.1em  1.1em 0 .6em #111,
+                   0.3em  1.3em 0 .6em #111,
+                   2.3em  1.3em 0 .6em #111,
+                   3.1em  1.3em 0 .6em #111,
+                   5.5em  1.1em 0 .6em #111,
+                   7.0em  0.9em 0 linen,
+                   7.1em  1.1em 0 .6em #111,
+                   2.1em  3.6em 0 linen,
+                   2.2em  3.8em 0 .6em #111
