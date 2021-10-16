@@ -1,0 +1,130 @@
+/*-----------------------------
+
+Float
+
+-----------------------------*/
+
+#float
+  background-color: lightblue
+
+  div
+    font-size: 10px
+    width: 35em
+    height: 25.5em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(#444, #444),
+                      linear-gradient(#444, #444),
+                      linear-gradient(150deg, gold 35%,
+                                              goldenrod 36%,
+                                              goldenrod 60%,
+                                              gold 61%),
+                      linear-gradient( 110deg, alpha(#444,0) 55%, #444 56%),
+                      linear-gradient(-110deg, alpha(#444,0) 55%, #444 56%),
+                      linear-gradient(150deg, #444 40%, alpha(#444,0) 41%),
+                      radial-gradient(ellipse, bisque 5%,
+                                               burlywood 6%, burlywood 10%,
+                                               bisque 11%, bisque 15%,
+                                               burlywood 16%, burlywood 20%,
+                                               bisque 21%, bisque 25%,
+                                               burlywood 26%, burlywood 30%,
+                                               bisque 31%, bisque 35%,
+                                               burlywood 36%, burlywood 40%,
+                                               bisque 41%, bisque 45%,
+                                               burlywood 46%, burlywood 50%,
+                                               bisque 51%, bisque 55%,
+                                               burlywood 56%, burlywood 60%,
+                                               peru 61%, peru 65%,
+                                               alpha(peru, 0) 66%),
+                      linear-gradient(saddlebrown, saddlebrown),
+                      linear-gradient(saddlebrown, saddlebrown),
+                      linear-gradient(saddlebrown, saddlebrown),
+                      linear-gradient(saddlebrown, saddlebrown),
+                      radial-gradient(ellipse, sienna 65%, alpha(sienna, 0) 66%),
+                      linear-gradient(sienna, sienna),
+                      linear-gradient(110deg, alpha(sienna,0) 20%,
+                                              sienna 21%,
+                                              sienna 50%,
+                                              alpha(sienna,0) 51%),
+                      radial-gradient(ellipse, white(.5) 60%, white(0) 62%),
+                      radial-gradient(ellipse, crimson 70%,
+                                               alpha(crimson,0) 71%),
+                      radial-gradient(ellipse, crimson 70%,
+                                                 alpha(crimson,0) 71%),
+                      linear-gradient(sienna, sienna),
+                      radial-gradient(ellipse, white(.5) 60%, white(0) 62%),
+                      radial-gradient(ellipse, mediumseagreen 70%,
+                                               alpha(mediumseagreen,0) 71%),
+                      radial-gradient(ellipse, mediumseagreen 70%,
+                                               alpha(mediumseagreen,0) 71%),
+                      linear-gradient(sienna, sienna)
+    background-size: 20em .6em,
+                     3em 2em, 4em 3em,
+                     10.5em 15.2em, 10.5em 15.2em, 10em 4em,
+                     5em 8em,
+                     8em .2em, 6em .2em, 4em .2em, 7.8em .2em,
+                     5em 8em, 10.5em 7.4em, 4em 2em,
+                     1em 2em, 3em 4em, 3em 4em,
+                     .3em 1em,
+                     1em 2em, 3em 4em, 3em 4em,
+                     .3em 1em
+    background-position: 0 15em,
+                         8.5em 12.5em, 8em 12em,
+                         0 0, 9.5em 0, 10em 0,
+                         20em 2em,
+                         25em 3.3em, 27.6em 4.5em, 26em 6.8em, 25.3em 8.5em,
+                         30em 2em, 22.3em 2.3em, 25em .6em,
+                         right 10.5em top 13.8em,
+                         right 9em top 12.9em, right 7em top 12.9em, 
+                         right 9.3em top 12.5em,
+                         right 5em top 13.8em,
+                         right 3.4em top 12.9em, right 1.3em top 12.9em, 
+                         right 3.7em top 12.5em
+
+    &:before
+      width: 25em
+      height: 5em
+      bottom: 0
+      right: 0
+      background-color: peru
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse at 50% 10%, burlywood 50%,
+                                                            alpha(burlywood,0) 52%),
+                        radial-gradient(ellipse at 50% 10%, burlywood 50%,
+                                                            alpha(burlywood,0) 52%),
+                        radial-gradient(ellipse at 50% 10%, burlywood 50%,
+                                                            alpha(burlywood,0) 52%),
+                        radial-gradient(ellipse at 50% 10%, burlywood 50%,
+                                                            alpha(burlywood,0) 52%),
+                        radial-gradient(ellipse at 50% 10%, burlywood 50%,
+                                                            alpha(burlywood,0) 52%)
+      background-size: 1.5em 3em
+      background-position: 5em 0,
+                           8.4em 0,
+                           50% 0,
+                           right 5em top 0,
+                           right 8.4em top 0
+      border-top-left-radius: 7em 5em
+      border-top-right-radius: 7em 5em
+      border-bottom-left-radius: 2em
+      border-bottom-right-radius: 2em
+
+    &:after
+      width: 1em
+      height: 1em
+      left: 4em
+      bottom: 2.4em
+      background-color: grey
+      border-top-left-radius: .5em .6em
+      border-top-right-radius: .5em .6em
+      border-bottom-left-radius: .3em
+      border-bottom-right-radius: .3em
+      box-shadow: -1em -2em 0 -.2em grey,
+                  -2em -1em 0 -.3em grey,
+                  -1em -1em 0 -.3em grey,
+                   .2em -3em 0 -.2em grey,
+                   2em -3em 0 -.3em grey,
+                  -2.5em -3.7em 0 -.3em grey,
+                   1em -1.5em 0 -.1em grey,
+                   2em -.3em 0 -.2em grey
