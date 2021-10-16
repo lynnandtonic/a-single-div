@@ -1,0 +1,159 @@
+/*-----------------------------
+
+Snow2
+
+-----------------------------*/
+
+#snow2
+  background-color: white
+
+  div
+    font-size: 10px
+    width: 30em
+    height: 25em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(30deg, white(0) 40%, white 41%),
+                      linear-gradient(30deg, white(0) 40%, white 41%),
+                      linear-gradient(30deg, white(0) 40%, white 41%),
+                      linear-gradient(150deg, white 40%, white(0) 41%),
+                      linear-gradient(150deg, white 40%, white(0) 41%),
+                      linear-gradient(-150deg, white 40%, white(0) 41%),
+                      linear-gradient(-150deg, white 40%, white(0) 41%),
+                      linear-gradient(160deg, white(0) 40%, white 41%),
+                      linear-gradient(-160deg, white(0) 40%, white 41%),
+                      radial-gradient(circle at 100% 0, white(0) 50%, white 51%),
+                      radial-gradient(circle at 0 0, white(0) 50%, white 51%),
+                      radial-gradient(circle, black 50%, black(0) 51%),
+                      radial-gradient(circle, black 50%, black(0) 51%),
+                      radial-gradient(ellipse at 50% 100%, deepskyblue 50%,
+                                                           white(0) 50.5%),
+                      radial-gradient(circle at 100% 100%, white(0) 50%, white 51%),
+                      radial-gradient(circle at 0 100%, white(0) 50%, white 51%),
+                      linear-gradient(140deg, white 40%, white(0) 41%),
+                      linear-gradient(140deg, white 40%, white(0) 41%),
+                      linear-gradient(-140deg, white 40%, white(0) 41%),
+                      radial-gradient(ellipse at 50% 0, white(0) 44.5%,
+                                                        deepskyblue 45%,
+                                                        deepskyblue 48%,
+                                                        white 48.5%),
+                      linear-gradient(deepskyblue, deepskyblue),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 0, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 100%, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 100%, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 100%, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 100%, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 100%, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 100%, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 100%, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 100%, white 50%, white(0) 54%),
+                      radial-gradient(ellipse at 50% 100%, crimson 50%,
+                                                           alpha(crimson,0) 51%),
+                      radial-gradient(ellipse at 50% 0, black 45%,
+                                                        black(0) 46%)
+    background-size: 3em 3em, 4em 4em, 3em 3em,
+                     3em 2em, 3em 2em,
+                     3em 2em, 3em 2em,
+                     2em 1em, 2em 1em,
+                     2em 2em, 2em 2em,
+                     1em 1em, 1em 1em,
+                     28em 15em,
+                     2em 2em, 2em 2em,
+                     3em 2em, 3em 2em,
+                     3em 2em,
+                     25em 10em,
+                     16em .6em,
+                     1.2em 2.3em,
+                     1.2em 2.3em,
+                     1.2em 2.3em,
+                     1.8em 3.5em,
+                     1.2em 2.3em,
+                     1.2em 2.3em,
+                     1.2em 2.3em,
+                     1.2em 2.3em,
+                     1.8em 3.5em,
+                     1.2em 2.3em,
+                     1.2em 2.3em,
+                     1.2em 2.3em,
+                     1.2em 2.1em,
+                     1.7em 3em,
+                     1.2em 2.1em,
+                     1.2em 2.1em,
+                     1.2em 2.1em,
+                     1.2em 2.1em,
+                     1.7em 3em,
+                     1.2em 2.1em,
+                     8em 4em,
+                     25em 10em
+    background-position: 35% 1em, 45% 1em, 55% 1em,
+                         24.5% 5.5em, 19% 7.3em,
+                         75.5% 5.5em, 79% 7.3em,
+                         20% 12.5em, 80% 12.4em,
+                         4.5em 11.6em, right 4.5em top 11.6em,
+                         13.6em 11em, right 13.6em top 11em,
+                         50% -2em,
+                         5.5em 14.3em, right 5.5em top 14.3em,
+                         7em 18em, 7.5em 19.1em,
+                         right 8em top 19em,
+                         50% 100%,
+                         50% 15em,
+                          8.4em 15.4em,
+                          9.4em 15.4em,
+                         10.4em 15.4em,
+                         11.4em 15.4em,
+                         13.0em 15.4em,
+                         14.0em 15.4em,
+                         15.0em 15.4em,
+                         16.0em 15.4em,
+                         17.0em 15.4em,
+                         18.6em 15.4em,
+                         19.6em 15.4em,
+                         20.6em 15.4em,
+                         10.5em 19.5em,
+                         11.5em 18.5em,
+                         13em 19.5em,
+                         14em 19.5em,
+                         15em 19.5em,
+                         16em 19.5em,
+                         17em 18.5em,
+                         18.5em 19.5em,
+                         50% 85%,
+                         50% 100%
+
+    &:before,
+    &:after
+      width: 3.5em
+      height: 5.5em
+      top: 6em
+      background-color: white
+      border-radius: 50%
+      box-shadow: 0 .1em 0 .3em black
+
+
+    &:before
+      left: 10.5em
+      transform: rotate(35deg)
+      background-image: radial-gradient(circle at 80% 35%, black 15%, black(0) 16%)
+      box-shadow: 0 .1em 0 .3em black,
+                  -1.2em 0 0 1.2em deepskyblue,
+                  -1em .6em 0 1em black(.2)
+
+    &:after
+      right: 10.5em
+      transform: rotate(-35deg)
+      background-image: radial-gradient(circle at 20% 35%, black 15%, black(0) 16%)
+      box-shadow: 0 .1em 0 .3em black,
+                  1.2em 0 0 1.2em deepskyblue,
+                  1em .6em 0 1em black(.2)
