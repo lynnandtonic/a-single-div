@@ -1,0 +1,142 @@
+/*-----------------------------
+
+Stack
+
+-----------------------------*/
+
+#stack
+  background-color: darkolivegreen
+
+  div
+    font-size: 10px
+    width: 37em
+    height: 11em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient(white, white),
+                      linear-gradient(white, white),
+                      linear-gradient(white(.3), white(.3)),
+                      linear-gradient(black(.2), black(.2)),
+                      linear-gradient(black(.2), black(.2)),
+                      linear-gradient(white(.3), white(.3)),
+                      repeating-linear-gradient(to top, white(0),
+                                                        white(0) .2em,
+                                                        white .2em,
+                                                        white .3em),
+                      linear-gradient(white, white),
+                      linear-gradient(white, white),
+                      linear-gradient(white, white),
+                      linear-gradient(white, white),
+                      linear-gradient(white, white),
+                      linear-gradient(to right, white .2em,
+                                                white(0) .2em,
+                                                white(0) 1em,
+                                                white 1em,
+                                                white 1.1em,
+                                                white(0) 1.1em,
+                                                white(0) calc(100% - .1em),
+                                                white calc(100% - .1em)),
+                      linear-gradient(to bottom, white .1em,
+                                                 white(0) .2em,
+                                                 white(0) calc(100% - .1em),
+                                                 white calc(100% - .1em)),
+                      radial-gradient(circle at 50% 0, white(0) 65%,
+                                                       white(.25) 66%,
+                                                       white(.25) 68%,
+                                                       white(0) 69%),
+                      radial-gradient(circle at 50% 100%, black(0) 65%,
+                                                          black(.25) 66%,
+                                                          black(.25) 68%,
+                                                          black(0) 69%),
+                      radial-gradient(circle, black(0) 7%,
+                                              black(.3) 8%,
+                                              black(.3) 9.5%,
+                                              black(0) 10.5%)
+    background-size: 12em .5em,
+                     1em .5em,
+                     1em 9.5em,
+                     1.2em 10.4em,
+                     1.2em 10.4em,
+                     .6em 10.4em,
+                     9em 9em,
+                     .1em 10.6em,
+                     .1em 10.6em,
+                     10.2em .1em,
+                     1em .2em, .2em 3em,
+                     11em 10em, 11em 10em,
+                     10em 5em, 10em 5em,
+                     10em 10em
+    background-position: 0 100%,
+                         left 5.5em bottom 9.5em,
+                         5.5em 100%,
+                         1.2em 100%,
+                         9.8em 100%,
+                         8.5em 100%,
+                         left 1.5em bottom .5em,
+                         .9em 100%,
+                         11em 100%,
+                         left .9em bottom 10.5em,
+                         left 23.4em bottom 6.9em, left 24.2em bottom 4em,
+                         100% 100%, 100% 100%,
+                         100% 100%, right 0 bottom 5em,
+                         100% 100%
+
+    &:before
+      width: 9em
+      height: @width
+      left: 12.5em
+      bottom: 0
+      background-color: white(.1)
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, darkolivegreen 10%,
+                                                white 10.5%,
+                                                white 13%,
+                                                white(.2) 13.5%,
+                                                white(.2) 20%,
+                                                white(0) 20.5%),
+                        conic-gradient(white(0)  79deg,
+                                       white(.7) 80deg,
+                                       white(.7) 100deg,
+                                       white(0)  101deg),
+                        conic-gradient(white(0)  59deg,
+                                       white(.2) 60deg,
+                                       white(.2) 120deg,
+                                       white(0)  121deg),
+                        conic-gradient(white(0)  259deg,
+                                       white(.7) 260deg,
+                                       white(.7) 280deg,
+                                       white(0)  281deg),
+                        conic-gradient(white(0)  239deg,
+                                       white(.2) 240deg,
+                                       white(.2) 300deg,
+                                       white(0)  301deg),
+                        conic-gradient(black(.2) 15deg,
+                                       black(0) 11deg,
+                                       black(0) 344deg,
+                                       black(.2) 345deg),
+                        conic-gradient(black(0) 165deg,
+                                       black(.2) 166deg,
+                                       black(.2) 194deg,
+                                       black(0) 195deg)
+      border: .1em solid white
+      border-radius: 50%
+
+    &:after
+      box-sizing: border-box
+      width: .9em
+      height: 9em
+      left: 23em
+      bottom: 0
+      background-repeat: no-repeat
+      background-image: linear-gradient(to bottom, white 45%, white(0) 45%),
+                        linear-gradient(white(.4), white(.4))
+      background-size: 100% 100%,
+                       .1em 3em
+      background-position: 0 0,
+                           50% 85%
+      border-top-left-radius:.5em 3em
+      border-top-right-radius:.5em 3em
+      border-bottom-left-radius: .5em 1em
+      border-bottom-right-radius: .5em 1em
+      border: .1em solid white
