@@ -1,0 +1,80 @@
+/*-----------------------------
+
+Shine
+
+-----------------------------*/
+
+#shine
+  background-color: darken(darkslateblue,10)
+  
+  div
+    box-sizing: border-box
+    font-size: 10px
+    width: 20em
+    height: 25em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + .7em)
+    background-repeat: no-repeat
+    background-image: linear-gradient(slateblue,slateblue),
+                      repeating-linear-gradient(to bottom, mediumturquoise,
+                                                           mediumturquoise .1em,
+                                                           slateblue .1em,
+                                                           slateblue .4em,
+                                                           transparent .4em,
+                                                           transparent .9em),
+                      linear-gradient(slateblue 40%,mediumturquoise),
+                      radial-gradient(circle, mediumturquoise 30%,
+                                              alpha(mediumturquoise,0) 31%),
+                      radial-gradient(circle, aquamarine 50%,
+                                              alpha(aquamarine,0) 51%),
+                      linear-gradient(mediumturquoise,mediumturquoise),
+                      linear-gradient(60deg, transparent 40%,
+                                             darkslateblue 41%),
+                      linear-gradient(-60deg, transparent 40%,
+                                             darkslateblue 41%),
+                      linear-gradient(to right, mediumturquoise .1em,
+                                                darkslateblue .1em),
+                      linear-gradient(to bottom, darken(darkslateblue,20) 30%,
+                                                 mediumvioletred)
+    background-size: calc(100% - .4em) 2em,
+                     calc(100% - .6em) 6em,
+                     .1em 20em,
+                     1.1em 1.1em,
+                     10em 10em,
+                     5em .1em,
+                     3.5em 2em, 3.5em 2em,
+                     .4em 5em,
+                     100% 100%
+    background-position: 50% .2em,
+                         50% 2.7em,
+                         1.1em .2em,
+                         .6em 19em,
+                         80% 18%,
+                         right 3.8em bottom 2em,
+                         right 6em bottom 0, right 3em bottom 0,
+                         right 6em bottom 0,
+                         0 0
+    border: .1em solid mediumturquoise
+    border-top-color: slateblue
+    box-shadow: 0 0 0 .8em darkslateblue,
+                0 0 0 .9em slateblue
+    
+    &:after
+      width: 3em
+      height: 2em
+      bottom: 4em
+      right: 3em
+      background-color: darkslateblue
+      border-radius: 2em 0
+      border-top: .1em solid mediumturquoise
+
+    &:before
+      width: 24em
+      height: 2em
+      left: -2.1em
+      bottom: -2.2em
+      background-color: darkslateblue
+      border: .1em solid slateblue
+      border-top-color: mediumturquoise
+      box-shadow: 0 1.4em 0 -.8em darkslateblue,
+                  0 1.4em 0 -.7em slateblue
