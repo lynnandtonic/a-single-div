@@ -1,0 +1,123 @@
+/*-----------------------------
+
+Magic
+
+-----------------------------*/
+
+#magic
+  background-color: #bbb
+  font-size: 10px
+  overflow: hidden
+
+  div
+    width: 50%
+    height: 60%
+    left: -1em
+    bottom: 0
+    top: auto
+    background-repeat: no-repeat
+    background-image: radial-gradient(circle, white 50%, white(0) 51%),
+                      radial-gradient(circle, white 50%, white(0) 51%),
+                      radial-gradient(circle, white 50%, white(0) 51%),
+                      radial-gradient(circle, white 50%, white(0) 51%),
+                      radial-gradient(circle, white 50%, white(0) 51%)
+    background-size: .5em .5em,
+                     .6em .6em,
+                     1em 1em,
+                     .6em .6em,
+                     .7em .7em
+    background-position: right  6em  top 6em,
+                         right 12em  top 8em,
+                         right  2em  top 8em,
+                         right  4em  top 10em,
+                         right 2.4em top 13em
+    border-top-right-radius: 25em 10em
+    box-shadow: 1em  -2em 0 crimson,
+                1em  -4em 0 orange,
+                1em  -6em 0 gold,
+                1em  -8em 0 seagreen,
+                1em -10em 0 cornflowerblue,
+                1em -12em 0 rebeccapurple
+
+    &:before
+      width: 100%
+      height: 100%
+      left: auto
+      right: calc((100% + 2em) * -1)
+      bottom: 0
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%)
+      background-size: 1em 1em,
+                       .5em .5em,
+                       .6em .6em,
+                       .6em .6em,
+                       .7em .7em,
+                       .5em .5em
+      background-position:  6em  6em,
+                           10em  9em,
+                            2em  8em,
+                            8em  12em,
+                           2.2em 15em,
+                           15em 3em
+      border-top-left-radius: 25em 10em
+      box-shadow: -1em  -2em 0 crimson,
+                  -1em  -4em 0 orange,
+                  -1em  -6em 0 gold,
+                  -1em  -8em 0 seagreen,
+                  -1em -10em 0 cornflowerblue,
+                  -1em -12em 0 rebeccapurple
+
+    &:after
+      width: 24em
+      height: 24em
+      right: -13em
+      bottom: -7em
+      border-radius: 50%
+      background-repeat: no-repeat
+      background-image: linear-gradient(to right, #ddd 40%, white 40%),
+                        linear-gradient(to right, #222 40%, #444 40%),
+                        linear-gradient(white, white),
+                        linear-gradient(white, white),
+                        linear-gradient(white, white),
+                        linear-gradient(white, white),
+                        radial-gradient(circle, white 50%, white(0) 51%),
+                        radial-gradient(circle, white 50%, white(0) 51%)
+      background-size: 3em 4em,
+                       3em 15em,
+                       1.5em .3em,
+                       .3em 1.5em,
+                       1.5em .3em,
+                       .3em 1.5em,
+                       .6em .6em,
+                       1em 1em
+      background-position: 50% calc(50% - 5.5em),
+                           50% 50%,
+                           5em 9em,
+                           5.6em 8.4em,
+                           right 6em top 4em,
+                           right 6.6em top 3.4em,
+                           49% 7%,
+                           51% 12%
+      box-shadow:  2.3em -13.6em 0 -11.7em white,
+                   0.3em -15.6em 0 -11.5em white,
+                   5.0em -15.5em 0 -11.8em white,
+                   3.0em -16.5em 0 -11.8em white,
+                   8.0em -19.5em 0 -11.8em white,
+                   3.3em -20.0em 0 -11.6em white,
+                   6.2em -22.5em 0 -11.8em white,
+                   2.2em -22.2em 0 -11.8em white,
+                  12.2em -22.2em 0 -11.8em white,
+                  20.0em -25.7em 0 -11.8em white,
+                   0.5em -25.5em 0 -11.7em white,
+                   -3.0em -14.6em 0 -11.7em white,
+                   -1.0em -19.6em 0 -11.7em white,
+                   -4.4em -23.6em 0 -11.7em white,
+                   -5.4em -20.2em 0 -11.8em white,
+                  -10.4em -20.2em 0 -11.6em white,
+                   -8.4em -27.1em 0 -11.8em white,
+                  -20.4em -27.7em 0 -11.8em white
