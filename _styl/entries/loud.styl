@@ -1,0 +1,150 @@
+/*-----------------------------
+
+Loud
+
+-----------------------------*/
+
+khaki(alpha)
+  rgba(240,230,140,alpha)
+
+@keyframes thunk
+  0%
+    transform: scale(.1)
+  6%, 100%
+    transform: scale(1)
+
+#loud
+  background-color: mediumorchid
+  overflow: hidden
+
+  div
+    box-sizing: border-box
+    font-size: 10px
+    width: 42em
+    height: 25em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 1em)
+    background-repeat: no-repeat
+    background-image: linear-gradient(85deg, khaki(0) 50%, khaki 52%), // !
+                      linear-gradient(93deg, khaki 50%, khaki(0) 52%),
+                      linear-gradient(93deg, black 50%, black(0) 52%),
+                      radial-gradient(ellipse, khaki 50%, khaki(0) 52%),
+                      radial-gradient(ellipse, black 50%, black(0) 52%),
+                      linear-gradient(92deg, khaki(0) 38%, khaki 39%, // N
+                                             khaki 80%, khaki(0) 81%),
+                      linear-gradient(92deg, black(0) 37%, black 38%,
+                                             black 80%, black(0) 81%),
+                      linear-gradient(88deg, khaki(0) 37%, khaki 38%, // K
+                                             khaki 90%, khaki(0) 91%),
+                      linear-gradient(88deg, black(0) 37%, black 38%,
+                                             black 90%, black(0) 91%)
+    background-size: 2.4em 10em, // !
+                     2em 10em,
+                     3.4em 10em,
+                     4em 3.8em,
+                     4em 3.8em,
+                     5em 8em, // N
+                     5em 8em,
+                     5.1em 6em, // K
+                     5.1em 6em
+    background-position: right 2em bottom 4em, // !
+                         right 0 bottom 4em,
+                         right -1em bottom 3.7em,
+                         right 0 bottom 0,
+                         right -.3em bottom -.3em,
+                         left 20.3em bottom .3em, // N
+                         left 20.6em bottom 0,
+                         28.1em 14em, // K
+                         28.4em 14.3em
+    @media (prefers-reduced-motion: no-preference)
+      animation: thunk 3000ms infinite ease-in
+
+    &:before
+      width: 1.8em
+      height: 11em
+      left: 14.4em
+      bottom: 5.5em
+      border-top-right-radius: .9em 10em
+      border-top-left-radius: .9em 8em
+      border-bottom-left-radius: .9em
+      border-bottom-right-radius: .9em 1em
+      box-shadow: .5em 0 0 5.4em khaki,
+                  inset 0 21.1em 0 -20em mediumorchid,
+                  inset .4em .2em 0 black,
+                  .9em -20.7em 0 13em mediumorchid,
+                  .9em .2em 0 5.4em black
+      transform: rotate(8deg)
+
+    &:after
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-image: linear-gradient(112deg, khaki(0) 20%, khaki 21%, // T
+                                                khaki 80%, khaki(0) 81%),
+                        linear-gradient(112deg, khaki(0) 35%, khaki 36%,
+                                                khaki 50%, khaki(0) 51%),
+                        linear-gradient(112deg, black(0) 20%, black 21%,
+                                                black 80%, black(0) 81%),
+                        linear-gradient(112deg, black(0) 35%, black 36%,
+                                                black 50%, black(0) 51%),
+                        linear-gradient(112deg, khaki(0) 35%, khaki 36%, // H
+                                                khaki 52%, khaki(0) 53%),
+                        linear-gradient(khaki, khaki),
+                        linear-gradient(112deg, khaki(0) 35%, khaki 36%,
+                                                khaki 52%, khaki(0) 53%),
+                        linear-gradient(112deg, black(0) 35%, black 36%,
+                                                black 52%, black(0) 53%),
+                        linear-gradient(black, black),
+                        linear-gradient(112deg, black(0) 35%, black 36%,
+                                                black 52%, black(0) 53%),
+                        linear-gradient(100deg, khaki(0) 35%, khaki 36%, // N
+                                                khaki 55%, khaki(0) 56%),
+                        linear-gradient( 83deg, khaki 50%, khaki(0) 51%),
+                        linear-gradient(100deg, khaki(0) 35.5%, khaki 36.5%,
+                                                khaki 45%, khaki(0) 46%),
+                        linear-gradient( 82deg, khaki(0) 27%, khaki 27.5%,
+                                                khaki 45%, khaki(0) 46%),
+                        linear-gradient( 92deg, khaki(0) 25%, khaki 25.5%,
+                                                khaki 50%, khaki(0) 51%),
+                        linear-gradient( 83deg, black 50%, black(0) 51%),
+                        linear-gradient( 82deg, black(0) 27%, black 27.5%,
+                                                black 45%, black(0) 46%),
+                        linear-gradient( 92deg, black(0) 25%, black 25.5%,
+                                                black 50%, black(0) 51%),
+                        linear-gradient( 94deg, khaki(0) 35%, khaki 36%, // K
+                                                khaki 55%, khaki(0) 56%),
+                        linear-gradient( 98deg, khaki 50%, khaki(0) 51%),
+                        linear-gradient(187deg, mediumorchid 50%, alpha(mediumorchid,0) 50.5%),
+                        linear-gradient(130deg, khaki(0) 32%, khaki 33%,
+                                                khaki 57%, khaki(0) 58%),
+                        linear-gradient( 60deg, khaki(0) 32%, khaki 33%,
+                                                khaki 55%, khaki(0) 56%),
+                        linear-gradient( 98deg, black 50%, black(0) 51%),
+                        linear-gradient(187deg, mediumorchid 50%, alpha(mediumorchid,0) 50.5%),
+                        linear-gradient(130deg, black(0) 32%, black 33%,
+                                                black 57%, black(0) 58%),
+                        linear-gradient( 60deg, black(0) 33%, black 34%,
+                                                black 55%, black(0) 56%),
+                        linear-gradient(187deg, mediumorchid 50%, alpha(mediumorchid,0) 50.5%), // U
+                        linear-gradient(187deg, mediumorchid 50%, alpha(mediumorchid,0) 50.5%)
+      background-size: 12em 3em, 12em 10em, // T
+                       12em 3em, 12em 10em,
+                       12em 9em, 3.5em 3.5em, 11.5em 11.5em, // H
+                       12em 9em, 3.5em 3.5em, 11.5em 11.5em,
+                       12em 6em, // N
+                       5em 6em, 12em 6em, 18em 6em, 5em 10.7em,
+                       5em 5em, 18em 6em, 5em 10.7em,
+                       12em 10em, 4.5em 10em, 5em 4em, 8em 6em, 8.5em 8em, // K
+                                  4.5em 5em, 5em 4em, 8em 6em, 8.5em 8em,
+                       20em 15em, 10em 22.4em // U
+      background-position: -1.2em 0, -1.5em 0, // T
+                           -0.9em .3em, -1.2em .3em,
+                           .5em 3.6em, 5.8em 6.7em, 3.9em 3.2em, // H
+                           .8em 3.9em, 6.1em 7.0em, 4.2em 3.5em,
+                           17.6em 14em, // N
+                           23em 14em, 22em 14em, left 19.2em bottom .3em, left 25.8em bottom .3em,
+                           23.3em 14.3em, left 19.5em bottom 0, left 26.1em bottom 0,
+                           25.5em 8em, 30.3em 8em, 33.8em 8.4em, 31em 9em, 30em 13em, // K
+                                       30.9em 8.3em, 34.1em 8.7em, 31.1em 9.3em, 30.1em 13.3em,
+                           0 0, 16.5em 0 // U
+      transform: rotate(-8deg)
