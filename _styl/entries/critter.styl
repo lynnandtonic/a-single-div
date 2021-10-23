@@ -1,0 +1,123 @@
+/*-----------------------------
+
+Critter
+
+-----------------------------*/
+
+#critter
+  background-color: white
+  
+  div
+    box-sizing: border-box
+    font-size: 10px
+    width: 20em
+    height: 20em
+    margin-left: -(@width/2 + 2.2em)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: radial-gradient(ellipse, black 40%, black(0) 41%),
+                      linear-gradient( 80deg, white(0) 70%, #aaa 71%),
+                      linear-gradient(-80deg, white(0) 70%, #aaa 71%),
+                      linear-gradient( 150deg, white(0) 50%, #aaa 51%),
+                      linear-gradient(-150deg, white(0) 50%, #aaa 51%),
+                      radial-gradient(circle, black 40%,
+                                              white(.3) 41%,
+                                              white(.3) 50%,
+                                              white(0) 51%),
+                      radial-gradient(circle, black 40%,
+                                              white(.3) 41%,
+                                              white(.3) 50%,
+                                              white(0) 51%),
+                      radial-gradient(ellipse, #444 50%, black(0) 51%),
+                      radial-gradient(ellipse, white 50%, white(0) 51%),
+                      radial-gradient(circle at 50% 0, mediumturquoise 60%,
+                                                       alpha(mediumturquoise,0) 61%),
+                      radial-gradient(circle, alpha(gold,.6) 50%, alpha(gold,0) 51%),
+                      radial-gradient(circle, gold 50%, alpha(gold,0) 51%),
+                      radial-gradient(circle, alpha(gold,.5) 50%, alpha(gold,0) 51%),
+                      radial-gradient(circle, gold 50%, alpha(gold,0) 51%),
+                      radial-gradient(circle, gold 50%, alpha(gold,0) 51%),
+                      radial-gradient(circle, alpha(gold,.7) 50%, alpha(gold,0) 51%),
+                      radial-gradient(circle, white 50%, white(0) 51%),
+                      radial-gradient(circle, white 50%, white(0) 51%),
+                      radial-gradient(circle, white 50%, white(0) 51%),
+                      radial-gradient(circle, white 50%, white(0) 51%),
+                      radial-gradient(circle, white 50%, white(0) 51%),
+                      linear-gradient( 100deg, white(0) 20%, #aaa 21%),
+                      linear-gradient(-100deg, white(0) 20%, #aaa 21%),
+                      radial-gradient(ellipse, black(.3) 50%, black(0) 51%),
+                      radial-gradient(ellipse, #aaa 50%, white(0) 51%),
+                      radial-gradient(ellipse, black(.3) 50%, black(0) 51%),
+                      radial-gradient(ellipse, #aaa 50%, white(0) 51%)
+    background-size: 3em 2em,
+                     3em 4em,
+                     3em 4em,
+                     3em 3em,
+                     3em 3em,
+                     2em 2em,
+                     2em 2em,
+                     12em 6em,
+                     14em 7em,
+                     10em 5em,
+                     1em 1em,
+                     1em 1em,
+                     2em 2em,
+                     .6em .6em,
+                     1em 1em,
+                     1.3em 1.3em,
+                     2em 2em,
+                     4em 4em,
+                     1.5em 1.5em,
+                     3em 3em,
+                     4em 4em,
+                     10em 15em, 10em 15em,
+                     2em 3em, 4em 5em,
+                     2em 3em, 4em 5em
+    background-position: 50% 10em,
+                         left  7em top 6em,
+                         right 7em top 6em,
+                         left  7em top 9em,
+                         right 7em top 9em,
+                         left  7.4em top 8em,
+                         right 7.4em top 8em,
+                         50% 6em,
+                         50% 5.1em,
+                         left 50% bottom -1em,
+                         left  5.8em bottom 4.2em,
+                         left  7.5em bottom 5.3em,
+                         left  8.0em bottom 3.6em,
+                         left 10.0em bottom 4.9em,
+                         left 11.0em bottom 5.2em,
+                         left 11.8em bottom 4.3em,
+                         left  5.5em bottom 3.6em,
+                         left  6.5em bottom 3.3em,
+                         left  9.0em bottom 5.2em,
+                         left  9.0em bottom 3.3em,
+                         left 10.5em bottom 2.9em,
+                         left  2em bottom 0,
+                         right 2em bottom 0,
+                         left  5em top 2.5em,
+                         left  4em top 1em,
+                         right 5em top 2.5em,
+                         right 4em top 1em
+
+    &:before
+      width: 6em
+      height: 19em
+      right: -4em
+      bottom: 0
+      background-color: #aaa
+      background-repeat: no-repeat
+      background-image: repeating-linear-gradient(to bottom, #444,
+                                                             #444 2.2em,
+                                                             #aaa 2.2em,
+                                                             #aaa 4.4em)
+      border-radius: 5em 0
+
+    &:after
+      width: 10em
+      height: .6em
+      left: 5em
+      bottom: 4em
+      background-color: turquoise
+      border-radius: (@height/2)
