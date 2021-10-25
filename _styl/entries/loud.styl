@@ -7,11 +7,17 @@ Loud
 khaki(alpha)
   rgba(240,230,140,alpha)
 
-@keyframes thunk
+@keyframes thunk1
   0%
     transform: scale(.1)
   6%, 100%
     transform: scale(1)
+
+@keyframes thunk2
+  0%
+    transform: scale(.1)
+  6%, 100%
+    transform: scale(.7)
 
 #loud
   background-color: mediumorchid
@@ -57,7 +63,10 @@ khaki(alpha)
                          28.1em 14em, // K
                          28.4em 14.3em
     @media (prefers-reduced-motion: no-preference)
-      animation: thunk 3000ms infinite ease-in
+      @media (min-width: 401px)
+        animation: thunk1 3000ms infinite ease-in
+      @media (max-width: 400px)
+        animation: thunk2 3000ms infinite ease-in
 
     &:before
       width: 1.8em
