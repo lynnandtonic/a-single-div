@@ -1,0 +1,189 @@
+/*-----------------------------
+
+Dip
+
+-----------------------------*/
+
+dip-outline(direction, fill)
+  linear-gradient(direction, maroon .2em,
+                             fill .2em,
+                             fill calc(100% - .2em),
+                             maroon calc(100% - .2em))
+
+#dip
+  background-color: antiquewhite
+
+  div
+    box-sizing: border-box
+    font-size: 10px
+    width: 34em
+    height: 25em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: dip-outline(to bottom, transparent), // cup left
+                      dip-outline(to right, white(.5)),
+                      linear-gradient(-82deg, white(0) 20%,
+                                              white(.7) 21%, white(.7) 35%,
+                                              white(0) 36%),
+                      linear-gradient( 80deg, alpha(maroon,0) 20%,
+                                              maroon 21%, maroon 23.5%,
+                                              white(.3) 24.5%),
+                      linear-gradient(-80deg, alpha(maroon,0) 20%,
+                                              maroon 21%, maroon 23.5%,
+                                              white(.3) 24.5%),
+                      radial-gradient(circle, black(.2) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.5) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.6) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.4) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.5) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.8) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.7) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.2) 50%, black(0) 51%),
+                      radial-gradient(circle, black(.4) 50%, black(0) 51%),
+                      linear-gradient( 80deg, white(0) 22%,
+                                              white 23%),
+                      linear-gradient(-80deg, white(0) 22%,
+                                              white 23%),
+                      dip-outline(to bottom, transparent), // cup middle
+                      dip-outline(to right, white(.9)),
+                      radial-gradient(ellipse at 50% 100%, crimson 50%, alpha(crimson,0) 51%),
+                      dip-outline(to bottom, transparent), // cup right
+                      dip-outline(to right, white(.5)),
+                      linear-gradient(-82deg, white(0) 20%,
+                                              white(.5) 21%, white(.5) 35%,
+                                              white(0) 36%),
+                      linear-gradient(-80deg, alpha(maroon,0) 20%,
+                                              maroon 21%, maroon 23.5%,
+                                              white(.3) 24.5%),
+                      linear-gradient( 80deg, alpha(maroon,0) 20%,
+                                              maroon 21%, maroon 23.5%,
+                                              white(.3) 24.5%),
+                      linear-gradient(-80deg, alpha(goldenrod,0) 22%,
+                                              goldenrod 23%),
+                      linear-gradient( 80deg, alpha(goldenrod,0) 22%,
+                                              goldenrod 23%),
+                      dip-outline(to bottom, transparent), // basic fry
+                      dip-outline(to right, gold),
+                      dip-outline(to bottom, transparent),
+                      dip-outline(to right, goldenrod),
+                      repeating-linear-gradient(170deg, alpha(maroon,0), // curly fry
+                                                        alpha(maroon,0) 1.5em,
+                                                        maroon 1.55em,
+                                                        maroon 1.7em,
+                                                        alpha(maroon,0) 1.75em),
+                      linear-gradient(to right, maroon .2em, alpha(maroon,0) .2em),
+                      linear-gradient(to left, maroon .2em, alpha(maroon,0) .2em),
+                      linear-gradient(170deg, alpha(chocolate,0)  10%,
+                                              darken(chocolate,5) 11%,
+                                              darken(chocolate,5) 95%,
+                                              alpha(chocolate,0)  96%),
+                      linear-gradient(170deg, alpha(chocolate,0)  10%,
+                                              alpha(chocolate,.5) 11%,
+                                              alpha(chocolate,.5) 95%,
+                                              alpha(chocolate,0)  96%),
+                      linear-gradient(170deg, alpha(chocolate,0)  10%,
+                                              darken(chocolate,5) 11%,
+                                              darken(chocolate,5) 95%,
+                                              alpha(chocolate,0)  96%),
+                      linear-gradient(170deg, alpha(chocolate,0)  10%,
+                                              alpha(chocolate,.5) 11%,
+                                              alpha(chocolate,.5) 95%,
+                                              alpha(chocolate,0)  96%),
+                      linear-gradient(170deg, alpha(peru,0) 10%, peru 11%,
+                                              peru 90%, alpha(peru,0) 91%),
+                      dip-outline(to bottom, transparent),
+                      dip-outline(to right, transparent),
+                      linear-gradient(140deg, peru 40%, darken(chocolate,5) 41%),
+                      dip-outline(to bottom, transparent),
+                      dip-outline(to right, transparent),
+                      linear-gradient(-40deg, peru 40%, darken(chocolate,5) 41%)
+    background-size: 11em .7em, 11em .7em,  // cup left
+                     5em 5em, 5em 5em, 5em 5em,
+                     .4em .4em,
+                     .4em .4em,
+                     .4em .4em,
+                     .4em .4em,
+                     .4em .4em,
+                     .4em .4em,
+                     .4em .4em,
+                     .4em .4em,
+                     .4em .4em,
+                     5em 4em, 5em 4em,
+                     9em .7em, 9em .7em, // cup middle
+                     10em 4em,
+                     11em .7em, 11em .7em,  // cup right
+                     5em 5em, 5em 5em, 5em 5em,
+                     5em 4em, 5em 4em,
+                     2em 15em, 2em 15em, 2em 15em, 2em 15em, // basic fry
+                     6em 14.5em, // curly fry
+                     6em 12.5em, 6em 12.5em,
+                     1em 14.5em, 1.2em 14.5em,
+                     1em 14.5em, 1.2em 14.5em,
+                     6em 14.5em,
+                     4em 2em, 4em 2em, 4em 2em,
+                     4em 2em, 4em 2em, 4em 2em
+    background-position: left .5em bottom 5em, left .5em bottom 5em, // cup left
+                         left 5em bottom 0, left 1em bottom 0, left 6em bottom 0,
+                         left 2.5em bottom 2.8em,
+                         left 4.1em bottom 3.3em,
+                         left 5.8em bottom 2.1em,
+                         left 7.2em bottom 3.0em,
+                         left 8.3em bottom 1.3em,
+                         left 9.0em bottom 3.1em,
+                         left 3.2em bottom 1.2em,
+                         left 4.8em bottom 0.8em,
+                         left 7.0em bottom 0.5em,
+                         left 1em bottom 0, left 6em bottom 0,
+                         left 12.7em bottom 5em, left 12.7em bottom 5em, // cup middle
+                         left 12.2em bottom 3.5em,
+                         right .5em bottom 5em, right .5em bottom 5em, // cup right
+                         right 2em bottom 0, right 1em bottom 0, right 6em bottom 0,
+                         right 1em bottom 0, right 6em bottom 0,
+                         5.4em 0, 5.4em 0, 4.3em 0, 4.3em 0, // basic fry
+                         right 3em top 0, // curly fry
+                         right 3em top 1.6em, right 3em top .6em,
+                         right 7.8em top 0, right 6.7em top -.2em,
+                         right 3.1em top -.8em, right 4em top -.5em,
+                         right 3em top 0,
+                         right 3em top 0, right 3em top 0, right 3em top 0,
+                         right 5em top 12.8em, right 5em top 12.8em, right 5em top 12.8em
+    border-bottom: .2em solid maroon
+
+    &:before
+      width: 8em
+      height: 5em
+      left: 13em
+      bottom: -.2em
+      background-repeat: no-repeat
+      background-image: linear-gradient(80deg, white(0) 50%, white(.5) 51%),
+                        linear-gradient(80deg, white(0) 50%, white(.5) 51%),
+                        linear-gradient(80deg, white(0) 50%, white(.5) 51%),
+                        linear-gradient(80deg, white(0) 50%, white(.5) 51%),
+                        linear-gradient(white(.75), white(.75)),
+                        radial-gradient(ellipse at 50% 100%, crimson 80%, alpha(crimson,0) 81%)
+      background-size: 1.5em 100%,
+                       1.5em 100%,
+                       1.5em 100%,
+                       1.5em 100%,
+                       100% 100%,
+                       10em 100%
+      background-position: .2em 0,
+                           2.0em 0,
+                           3.9em 0,
+                           5.8em 0,
+                           0 0,
+                           50% 100%
+      border: .2em solid maroon
+      border-radius: 0 0 1.5em 1.5em
+
+    &:after
+      box-sizing: border-box
+      width: 4.5em
+      height: 15em
+      left: 14.5em
+      background-color: sandybrown
+      border-radius: 8em 1em 1em 8em
+      border: .2em solid maroon
+      box-shadow: inset .8em 0 0 sienna,
+                  inset 1em 0 0 maroon
