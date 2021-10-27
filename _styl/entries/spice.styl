@@ -1,0 +1,184 @@
+/*-----------------------------
+
+Spice
+
+-----------------------------*/
+
+#spice
+  background-color: ghostwhite
+
+  div
+    box-sizing: border-box
+    font-size: 10px
+    width: 26em
+    height: 25em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-image: linear-gradient(to right, darken(limegreen,25), limegreen 25%,
+                                                limegreen 75%, darken(limegreen,25)),
+                      linear-gradient(to bottom, black(0), black(.15)),
+                      repeating-linear-gradient(to right, black(0),
+                                                          black(0)  .2em,
+                                                          black(.1) .2em,
+                                                          black(.1) .3em),
+                      linear-gradient(to right, darken(limegreen,20), limegreen 20%,
+                                                limegreen 80%, darken(limegreen,20)),
+                      linear-gradient(darken(darkred,10), darken(darkred,10)),
+                      linear-gradient( 80deg, darken(darkred,6) 12%,
+                                              alpha(darkred,0)  13%),
+                      linear-gradient(-80deg, darken(darkred,6) 12%,
+                                              alpha(darkred,0)  13%),
+                      linear-gradient(darken(darkred,4), darken(darkred,4)),
+                      linear-gradient(to right, white(.5), white(.1) 40%,
+                                                white(.1) 60%, white(.5) 100%),
+                      linear-gradient(darkred, darkred),
+                      linear-gradient(to bottom, darken(darkred,8) 80%,
+                                                 alpha(darkred,0) 100%),
+                      linear-gradient( 130deg, alpha(darkred,0)  17%,
+                                               darken(darkred,6) 18%,
+                                               darken(darkred,6) 30%,
+                                               darkred 31%),
+                      linear-gradient(-130deg, alpha(darkred,0)  17%,
+                                               darken(darkred,6) 18%,
+                                               darken(darkred,6) 35%,
+                                               darkred 36%)
+    background-size: 10.2em .5em, 10em .4em, 10em 2em, 10em 2em,
+                     10.2em .2em,
+                     9.6em 2em, 9.6em 2em,
+                     1em 2em,
+                     9.6em 2em, 9.6em 2em,
+                     9.6em 2.8em,
+                     6.6em 4em, 6.6em 4em
+    background-position: 50% 2.4em, 50% 2em, 50% .8em, 50% .8em,
+                         50% 3.1em,
+                         50% 2em, 50% 2em,
+                         50% 2em,
+                         50% 2em, 50% 2em,
+                         50% 2em,
+                         calc(50% - 2.7em) 3.9em, calc(50% + 2.7em) 3.9em
+    background-repeat: no-repeat
+
+    &:before
+      width: 12em
+      height: 20em
+      margin-left: -(@width/2)
+      left: 50%
+      bottom: 0
+      background-color: darkred
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+                         repeat, repeat, repeat, repeat, repeat,
+                         no-repeat, no-repeat, no-repeat,
+                         no-repeat, no-repeat, no-repeat, no-repeat
+      background-image: linear-gradient( 178deg, darken(darkred,6) 70%,
+                                                 alpha(darkred,0)  75%),
+                        linear-gradient(-178deg, darken(darkred,6) 70%,
+                                                 alpha(darkred,0)  75%),
+                        linear-gradient(to bottom, darkred,
+                                                   darken(darkred,6) 10%,
+                                                   darken(darkred,9)),
+                        linear-gradient(to left,  white(.1) 10%, white(.3) 30%),
+                        linear-gradient(to right, white(.1) 20%, white(.3) 40%),
+                        linear-gradient(to top, black(.3), black(0)),
+                        radial-gradient(circle, khaki(.2) .2em,
+                                                alpha(crimson,.4) .3em,
+                                                alpha(crimson,0) .4em),
+                        radial-gradient(circle, khaki(.2) .2em,
+                                                alpha(crimson,.4) .3em,
+                                                alpha(crimson,0) .5em),
+                        radial-gradient(circle, khaki(.1) .2em,
+                                                khaki(0) .3em),
+                        radial-gradient(circle, khaki(.2) .2em,
+                                                khaki(0) .3em),
+                        radial-gradient(circle, khaki(.1) .2em,
+                                                khaki(0) .3em),
+                        radial-gradient(circle, khaki(.4) .2em,
+                                                alpha(crimson,.5) .3em,
+                                                alpha(crimson,0) .5em),
+                        radial-gradient(circle, khaki(.3) .2em,
+                                                alpha(crimson,.5) .3em,
+                                                alpha(crimson,0) .5em),
+                        radial-gradient(circle, khaki(.3) .2em,
+                                                alpha(crimson,.5) .3em,
+                                                alpha(crimson,0) .5em),
+                        linear-gradient(-20deg, darkred 50%, alpha(darkred,0) 51%),
+                        radial-gradient(ellipse at 0 0, alpha(darkred,0) 60%, darkred 61%),
+                        linear-gradient(to right, white(.3) 40%, white(0) 100%),
+                        linear-gradient(to left, white(.3) 40%, white(0) 100%)
+      background-size: 50% .4em, 50% .3em,
+                       1.2em 100%,
+                       50% .3em, 50% .5em,
+                       100% 40%,
+                       10em 10em, 8em 7em, 6em 5em, 6em 5em, 6em 5em,
+                       1em 1em, 1em 1em, 1em 1em,
+                       50% 90%, 70% 80%,
+                       50% 80%, 50% 80%
+      background-position: 0 3.3em, 100% 3.3em,
+                           50% 0,
+                           left 0 bottom 4em, right 0 bottom 4em,
+                           50% 100%,
+                           -2em -3em, 5em 2em, -1em 0, 1em 2em, 2em 4em,
+                           right 2em bottom 1.4em, left 2em bottom 2.8em, 7em 1.5em,
+                           0 100%, 120% 0,
+                           0 0, 100% 0
+      border-bottom-left-radius:  2em 6em
+      border-bottom-right-radius: 2em 6em
+      border-top-left-radius:  4em 1.5em
+      border-top-right-radius: 4em 1.5em
+      box-shadow: inset  1.2em .1em 0 darken(darkred,8),
+                  inset -1.2em .1em 0 darken(darkred,8),
+                  inset 0 1em .3em white(.2)
+
+    &:after
+      box-sizing: border-box
+      content: 'chili garlic sauce'
+      width: 15em
+      height: 30em
+      padding-top: 9em
+      margin-left: -(@width/2)
+      left: 50%
+      bottom: -2em
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, white(0) 40%, white(.6) 41%,
+                                                white(.6) 43%, white(0) 44%),
+                        linear-gradient(white(.6), white(.6)),
+                        repeating-linear-gradient(to right, white(.6),
+                                                            white(.6) .5em,
+                                                            white(0) .5em,
+                                                            white(0) .8em),
+                        repeating-linear-gradient(to right, white(.6),
+                                                            white(.6) .5em,
+                                                            white(0) .5em,
+                                                            white(0) .8em),
+                        repeating-linear-gradient(to bottom, white(.6),
+                                                             white(.6) .2em,
+                                                             white(0) .2em,
+                                                             white(0) .8em),
+                        repeating-linear-gradient(to bottom, white(.6),
+                                                             white(.6) .1em,
+                                                             white(0) .1em,
+                                                             white(0) 1.2em),
+                        linear-gradient(white(.6), white(.6)),
+                        radial-gradient(ellipse, darken(darkred,8) 50%, alpha(darkred,0) 52%),
+                        radial-gradient(ellipse, black(.9) 14%, black(.2) 50%, black(0) 65%)
+      background-size: 9em 9em,
+                       4em .3em,
+                       7em .2em, 9.4em .2em,
+                       .4em 10em,
+                       .4em 12.1em,
+                       .1em 12.1em,
+                       100% 2.5em,
+                       110% 3em
+      background-position: 50% 45%,
+                           50% 62%,
+                           50% 67%, 50% 70%,
+                           0 45%,
+                           100% 50%,
+                           right .4em top 50%,
+                           left 50% bottom 1em,
+                           50% 99%
+      font-family: Helvetica, Arial, sans-serif
+      font-size: 80%
+      font-weight: bold
+      text-transform: uppercase
+      color: white(.8)
+      
