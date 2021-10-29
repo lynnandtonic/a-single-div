@@ -1,0 +1,63 @@
+/*-----------------------------
+
+Dots
+
+-----------------------------*/
+
+#dots
+  background-color: #eee
+  background-repeat: no-repeat,
+                     repeat
+  background-image: linear-gradient(#eee, #eee),
+                    radial-gradient(circle, black(.2) 30%, black(0) 31%)
+  background-size: 40% 11em,
+                   1em 1em
+  background-position: 0 50%,
+                       50% 50%
+  font-size: 10px
+  @media (max-width: 400px)
+    font-size: 7px
+
+  &:before,
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    left: 40%
+    top: 50%
+
+  &:before
+    width: 4.5em
+    height: 12em
+    margin-left: -1em
+    margin-top: -5.6em
+    background-repeat: no-repeat
+    background-image: linear-gradient( 45deg, white 40%, white(0) 40%),
+                      linear-gradient( 45deg, darkgrey 40%, black(0) 40%),
+                      linear-gradient(135deg, white 40%, white(0) 40%),
+                      linear-gradient(135deg, darkgrey 40%, black(0) 40%),
+                      linear-gradient(135deg, black(.1) 40%, black(0) 40%),
+                      linear-gradient(to right, #ddd 20%, white 20%),
+                      linear-gradient(darkgrey, darkgrey),
+                      linear-gradient(black(.4), black(.4))
+    background-size: 3.2em 3em, 3.2em 3em,
+                     3.2em 3em, 3.2em 3em, 1.3em 5em,
+                     2.6em 10.8em,
+                     3em 11.2em,
+                     2.7em 11.2em
+    background-position: 2.5em 3.1em, 2.5em 2.8em,
+                         2.5em 5.1em, 2.5em 5.4em, 3em 6.5em,
+                         .2em .2em,
+                         0 0,
+                         .5em .2em
+
+  &:after
+    box-sizing: border-box
+    width: 23em
+    height: 2.8em
+    margin-left: 2.8em
+    margin-top: -(@height/2)
+    background-image: linear-gradient(to top, darkorange 50%, orange 50%)
+    border-radius: 0 .8em .8em 0
+    border: .2em solid tomato
+    box-shadow: .5em 1.5em 0 black(.1)
