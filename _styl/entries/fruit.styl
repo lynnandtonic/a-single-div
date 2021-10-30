@@ -1,0 +1,122 @@
+/*-----------------------------
+
+Fruit
+
+-----------------------------*/
+
+#fruit
+  background-color: peachpuff
+
+  div
+    font-size: 10px
+    width: 35em
+    height 15em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    background-image: linear-gradient( 45deg, crimson 50%, alpha(crimson,0) 51%),
+                      linear-gradient(-45deg, alpha(crimson,0) 50%, crimson 51%),
+                      linear-gradient(-45deg, crimson 50%, alpha(crimson,0) 51%),
+                      linear-gradient( 45deg, alpha(crimson,0) 50%, crimson 51%),
+                      linear-gradient(to bottom, black(.1) 15%, black(0) 15%),
+                      linear-gradient(to bottom, black(.3) 7%, black(0) 7%),
+                      linear-gradient(to top, black(.1) 15%, black(0) 15%),
+                      linear-gradient(to top, black(.3) 7%, black(0) 7%),
+                      radial-gradient(circle at 50% 55%, black(0) 35%,
+                                                         black 36%,
+                                                         black 38%,
+                                                         white 39%),
+                      linear-gradient(to bottom, orange 30%, crimson 80%),
+                      linear-gradient(-70deg, black(0) 40%,
+                                              black 41%,
+                                              black 44%,
+                                              black(0) 45%),
+                      linear-gradient( 70deg, black(0) 40%,
+                                              black 41%,
+                                              black 44%,
+                                              black(0) 45%),
+                      linear-gradient(70deg, black 90%, black(0) 91%),
+                      radial-gradient(circle at 55% 65%, black(0) 18%,
+                                                         black 19%,
+                                                         black 21%,
+                                                         white 22%),
+                      radial-gradient(circle at 45% 65%, black(0) 18%,
+                                                         black 19%,
+                                                         black 21%,
+                                                         white 22%),
+                      linear-gradient(to bottom, lighten(crimson,10) 50%, firebrick 75%),
+                      radial-gradient(circle at 50% 55%, black(0) 35%,
+                                                         black 36%,
+                                                         black 38%,
+                                                         white 39%),
+                      linear-gradient(to bottom, orange 30%, crimson 80%),
+                      linear-gradient(black, black),
+                      linear-gradient(white(.4), white(.4)),
+                      linear-gradient(black(.2), black(.2)),
+                      linear-gradient(black(.3), black(.3)),
+                      linear-gradient(goldenrod, goldenrod),
+                      linear-gradient(white(.3), white(.3)),
+                      linear-gradient(black(.2), black(.2)),
+                      linear-gradient(black(.3), black(.3)),
+                      linear-gradient(black(.2), black(.2)),
+                      linear-gradient(darken(goldenrod,5), darken(goldenrod,5))
+    background-size: 2em 2em, 2em 2em,
+                     2em 2em, 2em 2em,
+                     80% 80%, 80% 80%,
+                     80% 80%, 80% 80%,
+                     25% 75%,
+                     25% 75%,
+                     5em 4em, 5em 4em, 2em .5em,
+                     12.6% 75%, 12.6% 75%,
+                     25% 75%,
+                     25% 75%,
+                     25% 75%,
+                     80% 80%,
+                     90% 24%, 90% 6%, 90% 6%, 90% 100%,
+                     100% 7%, 100% 10%, 100% 10%, 94% 80%, 100% 80%
+    background-position: 8% 46%, 8% 61.5%,
+                         92% 46%, 92% 61.5%,
+                         50% 50%, 50% 50%,
+                         50% 50%, 50% 50%,
+                         left 4em center,
+                         left 4em center,
+                         44% 43%, 55% 43%, 51% 32.6%,
+                         42.8% 50%, 57.2% 50%,
+                         50% 50%,
+                         right 4em center,
+                         right 4em center,
+                         50% 50%,
+                         50% 60%, 50% 0, 50% 100%, 50% 50%,
+                         50% 65%, 50% 85%, 50% 25%, 50% 50%, 50% 50%
+
+    &:before
+      width: 2.8em
+      height: 1.8em
+      left: 5.2em
+      top: 4.4em
+      background-color: seagreen
+      border-radius: 0 2em
+      box-shadow: 0 0 0 .2em black,
+                  8.7em -1em 0 -.3em seagreen,
+                  8.7em -1em 0 -.1em black,
+                  18.5em -1.2em 0 seagreen,
+                  18.5em -1.2em 0 .2em black
+      transform: rotate(4deg)
+
+    &:after
+      width: 100%
+      height: 200%
+      background-repeat: no-repeat
+      background-image: radial-gradient(ellipse, white(.5) 50%, white(0) 51%),
+                        radial-gradient(ellipse, white(.5) 50%, white(0) 51%),
+                        radial-gradient(ellipse, white(.5) 50%, white(0) 51%),
+                        radial-gradient(ellipse, white(.5) 50%, white(0) 51%)
+      background-size: 3em 1.5em,
+                       3em 1.5em,
+                       1.5em .9em,
+                       1.5em .9em
+      background-position: 4.5em 17.5em,
+                           17.5em 4.5em,
+                           11.1em 12.6em,
+                           14em 9.8em
+      transform: rotate(45deg)
