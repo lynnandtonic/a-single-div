@@ -1,0 +1,177 @@
+/*-----------------------------
+
+Spooky
+
+-----------------------------*/
+
+#spooky
+  background-color: indigo
+
+  div
+    font-size: 10px
+    width: 20em
+    height 30em
+    margin-left: -(@width/2)
+    top: auto
+    bottom: -2em
+    background-repeat: no-repeat
+    background-image: linear-gradient(45deg, white(0) 30%, #ccc 35%, #ccc 37%, white(0) 42%),
+                      linear-gradient(-45deg, white(0) 30%, #ccc 35%, #ccc 37%, white(0) 42%),
+                      linear-gradient(45deg, white(0) 30%, #ddd 35%, #ddd 37%, white(0) 42%),
+                      linear-gradient( 140deg, black(0) 40%,
+                                               black(.2) 47%,
+                                               black(.2) 52%,
+                                               black(0) 58%),
+                      linear-gradient(-140deg, black(0) 40%,
+                                               black(.2) 47%,
+                                               black(.2) 52%,
+                                               black(0) 58%),
+                      radial-gradient(ellipse at 50% 100%, black 50%, black(0) 52%),
+                      linear-gradient(white, white)
+    background-size: 2em 2em, 2em 1em, 2em 1em,
+                     5em 5em, 5em 5em,
+                     1.5em 2.5em,
+                     80% 90%
+    background-position: 50% 12%, 48% 18.5%, 52% 22%,
+                         2em 7em, right 2em top 7em,
+                         50% 42%,
+                         50% 50%
+    border-radius: 10em 10em 0 0
+    box-shadow: inset 0 0 0 2em darken(indigo,10),
+                inset 0 0 0 4em darken(indigo,20),
+                inset 0 -16.5em 0 0 darken(indigo,20),
+                inset  4.5em 1em .4em black(.5),
+                inset  5.5em 1em .7em black(.2),
+                inset -4.5em 1em .4em black(.5),
+                inset -5.5em 1em .7em black(.2)
+
+    &:before
+      width: 3.4em
+      height: 3em
+      left: 5.9em
+      top: 9.2em
+      background-color: black
+      border-radius: 1.3em
+      box-shadow: .2em .2em 0 .1em #aaa,
+                  4.8em 0 0 black,
+                  5em .2em 0 .1em #aaa
+
+    &:after
+      width: 36em
+      height: 35em
+      left: -8em
+      top: -8em
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle, chartreuse 20%, alpha(chartreuse,0) 80%), // mouth
+                        radial-gradient(circle, chartreuse 20%, alpha(chartreuse,0) 80%),
+                        linear-gradient(black, black),
+                        repeating-linear-gradient(to right, black, black .3em,
+                                                                   black(0) .3em,
+                                                                   black(0) 1em),
+                        linear-gradient(to right, black(.3), black(0) 20%),
+                        linear-gradient(to left, black(.3), black(0) 20%),
+                        linear-gradient(white, white),
+                        linear-gradient(to right, white(.3), white(.1), white(.1), white(.3)),
+                        linear-gradient(to bottom, darken(indigo,20), black(0)), // necklace
+                        radial-gradient(ellipse at 50% 0, alpha(goldenrod,0) 50%,
+                                                          goldenrod 51%,
+                                                          goldenrod 53%,
+                                                          alpha(goldenrod,0) 54%),
+                        linear-gradient(goldenrod, goldenrod),
+                        linear-gradient(goldenrod, goldenrod),
+                        linear-gradient( 80deg, darkslateblue,  // horn left
+                                                slateblue 45%,
+                                                alpha(slateblue,0) 46%),
+                        linear-gradient( 10deg, alpha(slateblue,0) 35%,
+                                                darkslateblue 36%,
+                                                slateblue 55%,
+                                                alpha(slateblue,0) 56%),
+                        linear-gradient(160deg, alpha(slateblue,0) 25%,
+                                                slateblue 26%,
+                                                darkslateblue 32%,
+                                                alpha(slateblue,0) 33%),
+                        linear-gradient(105deg, alpha(slateblue,0) 60%,
+                                                slateblue 61%,
+                                                darkslateblue),
+                        linear-gradient(160deg, alpha(slateblue,0) 25%,
+                                                slateblue 26%,
+                                                darkslateblue 35%,
+                                                alpha(slateblue,0) 36%),
+                        linear-gradient(120deg, alpha(slateblue,0) 70%,
+                                                slateblue 71%,
+                                                darkslateblue),
+                        linear-gradient( 20deg, alpha(slateblue,0) 55%,
+                                                darkslateblue 56%,
+                                                slateblue 65%,
+                                                alpha(slateblue,0) 66%),
+                        linear-gradient( 70deg, darkslateblue,
+                                                slateblue 30%,
+                                                alpha(slateblue,0) 31%),
+                        linear-gradient(-80deg, darkslateblue,  // horn right
+                                                slateblue 45%,
+                                                alpha(slateblue,0) 46%),
+                        linear-gradient(-10deg, alpha(slateblue,0) 35%,
+                                                darkslateblue 36%,
+                                                slateblue 55%,
+                                                alpha(slateblue,0) 56%),
+                        linear-gradient(-160deg, alpha(slateblue,0) 25%,
+                                                slateblue 26%,
+                                                darkslateblue 32%,
+                                                alpha(slateblue,0) 33%),
+                        linear-gradient(-105deg, alpha(slateblue,0) 60%,
+                                                slateblue 61%,
+                                                darkslateblue),
+                        linear-gradient(-160deg, alpha(slateblue,0) 25%,
+                                                slateblue 26%,
+                                                darkslateblue 35%,
+                                                alpha(slateblue,0) 36%),
+                        linear-gradient(-120deg, alpha(slateblue,0) 70%,
+                                                slateblue 71%,
+                                                darkslateblue),
+                        linear-gradient(-20deg, alpha(slateblue,0) 55%,
+                                                darkslateblue 56%,
+                                                slateblue 65%,
+                                                alpha(slateblue,0) 66%),
+                        linear-gradient(-70deg, darkslateblue,
+                                                slateblue 30%,
+                                                alpha(slateblue,0) 31%)
+      background-size: 2em 2em, // mouth
+                       2em 2em,
+                       5em .3em,
+                       5.3em 1.5em,
+                       7em 3.5em,
+                       7em 3.5em,
+                       7em 3.5em,
+                       10em 3.5em,
+                       8em 5em, // necklace
+                       8em 7em,
+                       1em .2em,
+                       .2em 2em,
+                       2em 10em, 10em 3em, // horn left
+                       10em 3em, 2em 5em,
+                       7em 2em, 2em 3em,
+                       6em 2em, 2em 3em,
+                       2em 10em, 10em 3em, // horn right
+                       10em 3em, 2em 5em,
+                       7em 2em, 2em 3em,
+                       6em 2em, 2em 3em
+      background-position: left  14.6em bottom 15.2em, // mouth
+                           right 14.6em bottom 15.2em,
+                           left 50% bottom 11.3em,
+                           left 50% bottom 10.7em,
+                           left 50% bottom 10em,
+                           left 50% bottom 10em,
+                           left 50% bottom 10em,
+                           left 50% bottom 10em,
+                           left 50% bottom 4em, // necklace
+                           left 50% bottom 1em,
+                           left 50% bottom 1.9em,
+                           left 50% bottom 1em,
+                           5em  4em, 5.0em 13em, // horn left
+                           5em  6em, 9.0em  1em,
+                           5em 10em, 7.4em  7em,
+                           0em 11em, 1.0em  8em,
+                           right 5em top  4em, right 5.0em top 13em, // horn right
+                           right 5em top  6em, right 9.0em top  1em,
+                           right 5em top 10em, right 7.4em top  7em,
+                           right 0em top 11em, right 1.0em top  8em
