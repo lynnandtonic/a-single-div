@@ -1,0 +1,105 @@
+/*-----------------------------
+
+Eight
+
+-----------------------------*/
+
+$eight-bg = white
+
+:root
+  --eight-w: 2vw
+
+#eight
+  background: $eight-bg
+
+  div
+    width: calc(var(--eight-w) * 29 + 1px)
+    height: calc(var(--eight-w) * 9)
+    transform: translate(-50%,-50%)
+    background-repeat: no-repeat
+    background-image: linear-gradient($eight-bg, $eight-bg),
+                      linear-gradient($eight-bg, $eight-bg),
+                      linear-gradient(darkturquoise, gold),
+                      linear-gradient(blue, magenta), // E
+                      linear-gradient($eight-bg, $eight-bg),
+                      linear-gradient($eight-bg, $eight-bg),
+                      linear-gradient(darkturquoise, gold),
+                      linear-gradient(blue, magenta), // I
+                      radial-gradient(circle, white(0) 67.5%, $eight-bg 68%),
+                      linear-gradient(blue, magenta), // G
+                      linear-gradient($eight-bg, $eight-bg),
+                      linear-gradient($eight-bg, $eight-bg),
+                      linear-gradient(darkturquoise, gold),
+                      linear-gradient(blue, magenta), // H
+                      linear-gradient($eight-bg, $eight-bg),
+                      linear-gradient($eight-bg, $eight-bg),
+                      linear-gradient(darkturquoise, gold),
+                      linear-gradient(blue, magenta) // T
+    background-size: calc(var(--eight-w) * 3 + 1px) var(--eight-w),
+                     calc(var(--eight-w) * 3 + 1px) var(--eight-w),
+                     calc(var(--eight-w) * 4) calc(var(--eight-w) * 5),
+                     calc(var(--eight-w) * 5) calc(var(--eight-w) * 7), // E
+                     calc(var(--eight-w) + 1px) calc(var(--eight-w) * 3),
+                     calc(var(--eight-w) + 1px) calc(var(--eight-w) * 3),
+                     calc(var(--eight-w) * 3) calc(var(--eight-w) * 5),
+                     calc(var(--eight-w) * 3) calc(var(--eight-w) * 7), // I
+                     calc(var(--eight-w) * 7 + 6px) calc(var(--eight-w) * 7 + 6px),
+                     calc(var(--eight-w) * 7 + 4px) calc(var(--eight-w) * 7 + 4px), // G
+                     var(--eight-w) calc(var(--eight-w) * 3 + 1px),
+                     var(--eight-w) calc(var(--eight-w) * 3 + 1px),
+                     calc(var(--eight-w) * 3) calc(var(--eight-w) * 7),
+                     calc(var(--eight-w) * 5) calc(var(--eight-w) * 7), // H
+                     calc(var(--eight-w) * 2 + 1px) calc(var(--eight-w) * 5 + 1px),
+                     calc(var(--eight-w) * 2 + 1px) calc(var(--eight-w) * 5 + 1px),
+                     calc(var(--eight-w) * 5) calc(var(--eight-w) * 5),
+                     calc(var(--eight-w) * 5) calc(var(--eight-w) * 7) // T
+    background-position: calc(var(--eight-w) * 2) calc(var(--eight-w) * 3),
+                         calc(var(--eight-w) * 2) calc(var(--eight-w) * 5),
+                         var(--eight-w) 50%,
+                         0 var(--eight-w), // E
+                         calc(var(--eight-w) * 6 - 1px) calc(var(--eight-w) * 3),
+                         calc(var(--eight-w) * 8) calc(var(--eight-w) * 3),
+                         calc(var(--eight-w) * 6) calc(var(--eight-w) * 2),
+                         calc(var(--eight-w) * 6) var(--eight-w),  // I
+                         calc(var(--eight-w) * 10 - 3px) calc(var(--eight-w) - 3px),
+                         calc(var(--eight-w) * 10 - 2px) calc(var(--eight-w) - 2px), // G
+                         calc(var(--eight-w) * 20) calc(var(--eight-w) - 1px),
+                         calc(var(--eight-w) * 20) calc(var(--eight-w) * 5 + 1px),
+                         calc(var(--eight-w) * 19) var(--eight-w),
+                         calc(var(--eight-w) * 18) var(--eight-w), // H
+                         calc(var(--eight-w) * 24 - 1px) calc(var(--eight-w) * 3),
+                         calc(var(--eight-w) * 27) calc(var(--eight-w) * 3),
+                         calc(var(--eight-w) * 24) calc(var(--eight-w) * 2),
+                         calc(var(--eight-w) * 24) var(--eight-w) // T
+
+    &:before
+      width: calc(var(--eight-w) * 5)
+      height: @width
+      left: calc(var(--eight-w) * 11)
+      border-radius: 50%
+      top: calc(var(--eight-w) * 2)
+      background-repeat: no-repeat
+      background-image: radial-gradient(circle at right center,
+                                        $eight-bg 42%, white(0) 42.5%),
+                        radial-gradient(circle at center bottom,
+                                        $eight-bg 42%, white(0) 42.5%),
+                        radial-gradient(ellipse at center top,
+                                        $eight-bg 25%, white(0) 25.5%),
+                        linear-gradient(darkturquoise, gold)
+      background-size: 50% 100%,
+                       100% 50%,
+                       110% 35%,
+                       100% 100%
+      background-position: left center,
+                           center top,
+                           left 19% bottom -4%,
+                           center center
+
+    &:after
+      width: calc(var(--eight-w) * 7 + 2vw)
+      height: calc(var(--eight-w) * 7)
+      left: calc(var(--eight-w) * 10 - 1vw)
+      top: var(--eight-w)
+      background-image: conic-gradient( transparent 45deg,
+                                        $eight-bg 45.1deg 90deg,
+                                        transparent 90deg)
