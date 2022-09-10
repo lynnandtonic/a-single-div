@@ -1,0 +1,297 @@
+/*-----------------------------
+
+Mooncake
+
+-----------------------------*/
+
+#mooncake-1
+  background: maroon
+
+  div
+    width: 200px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 20px)
+    background: linear-gradient(orangered, orangered)  2.5% 45% / 1.8% 32%,
+                linear-gradient(alpha(orangered,.7), alpha(orangered,.7))  8.8% 0% / 2% 70%,
+                linear-gradient(alpha(orangered,.5), alpha(orangered,.5)) 17.5% 46% / 2% 70%,
+                linear-gradient(alpha(orangered,.5), alpha(orangered,.5)) 29.5% 62% / 2% 70%,
+                linear-gradient(alpha(orangered,.5), alpha(orangered,.5)) 42% 80% / 2% 70%,
+                linear-gradient(alpha(orangered,.5), alpha(orangered,.5)) 58% 80% / 2% 70%,
+                linear-gradient(alpha(orangered,.5), alpha(orangered,.5)) 71.1% 62% / 2% 70%,
+                linear-gradient(alpha(orangered,.5), alpha(orangered,.5)) 82.5% 46% / 2% 70%,
+                linear-gradient(alpha(orangered,.7), alpha(orangered,.7)) 91.3% 0% / 2% 70%,
+                linear-gradient(orangered, orangered) 97.4% 45% / 1.8% 32%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%) 98%  49% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%) 95%  64% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%) 88%  77% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%) 78%  87% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%) 65%  94% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%) 50%  97% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%) 36%  94% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%) 22%  87% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%) 12%  77% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%)  5%  64% / 14% 14%,
+                radial-gradient(darkorange 70%, alpha(darkorange,0) 71%)  2%  49% / 14% 14%,
+                linear-gradient(darkorange, darkorange) 50% 26% / 79% 65%,
+                linear-gradient(darkorange, darkorange) 50% 26% / 91.5% 50%,
+                linear-gradient(darkorange, darkorange) 50% 26% / 96.5% 31%,
+                radial-gradient(darkorange 53%, alpha(darkorange,0) 53%)  50%  50% / 100% 100%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%) 100%  50% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  97%  65% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  90%  79% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  79%  90% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  65%  97% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  50% 100% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  35%  97% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  21%  90% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  10%  79% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)   3%  65% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)   0%  50% / 18% 18%,
+                linear-gradient(orangered, orangered) 50% 26% / 100% 32%
+    background-repeat: no-repeat
+    transform: scaleY(.7)
+
+    &::before,
+    &::after
+      width: 100%
+      height: @width
+      left: 0
+      top: -31%
+
+    &::before
+      background: radial-gradient(circle, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 37% 15% / 17% 17%,
+                  radial-gradient(circle, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 63% 15% / 17% 17%,
+                  radial-gradient(circle, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 82% 35% / 17% 17%,
+                  radial-gradient(circle, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 82% 65% / 17% 17%,
+                  radial-gradient(circle, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 63% 85% / 17% 17%,
+                  radial-gradient(circle, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 37% 85% / 17% 17%,
+                  radial-gradient(circle, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 18% 65% / 17% 17%,
+                  radial-gradient(circle, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 18% 35% / 17% 17%,
+                  radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 50% 24% / 5% 20%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 50% 10% / 8% 40%,
+                  radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 50% 76% / 5% 20%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 50% 90% / 8% 40%,
+                  radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 76% 50% / 20% 5%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 90% 50% / 40% 10%,
+                  radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 24% 50% / 20% 5%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 10% 50% / 40% 10%,
+                  radial-gradient(darkorange 50%, alpha(darkorange,0) 51%) 50% 50% / 10% 10%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  50%   2% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  64%   5% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  78%  12% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  88%  23% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  95%  36% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  98%  50% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  95%  64% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  88%  77% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  78%  87% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  64%  94% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  50%  97% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  36%  94% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  22%  87% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  12%  77% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)   5%  64% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)   2%  50% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)   5%  36% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  12%  23% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  22%  12% / 14% 14%,
+                  radial-gradient(orange 70%, alpha(orange,0) 71%)  36%   5% / 14% 14%,
+                  radial-gradient(orange 53%, alpha(orange,0) 53%)  50%  50% / 100% 100%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  50%   0% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  65%   3% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  79%  10% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  90%  21% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  97%  35% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%) 100%  50% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  97%  65% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  90%  79% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  79%  90% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  65%  97% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  50% 100% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  35%  97% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  21%  90% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  10%  79% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)   3%  65% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)   0%  50% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)   3%  35% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  10%  21% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  21%  10% / 18% 18%,
+                  radial-gradient(orangered 70%, alpha(orangered,0) 71%)  35%   3% / 18% 18%,
+                  radial-gradient(orangered 50%, alpha(orangered,0) 51%)  50%  50% / 100% 100%
+      background-repeat: no-repeat
+      transform: scaleY(.9)
+
+    &::after
+      background: radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 50% 24% / 5% 20%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 50% 10% / 8% 40%,
+                  radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 50% 76% / 5% 20%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 50% 90% / 8% 40%,
+                  radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 76% 50% / 20% 5%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 90% 50% / 40% 10%,
+                  radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 24% 50% / 20% 5%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 10% 50% / 40% 10%
+      background-repeat: no-repeat
+      transform: scale(.9) rotate(45deg)
+
+
+#mooncake-2
+  background: lighten(maroon,3)
+
+  @media (max-width: 960px)
+    background-image: linear-gradient(to bottom, orangered 1px, transparent 1px)
+  @media (min-width: 961px)
+    background-image: linear-gradient(to right, orangered 1px, transparent 1px)
+
+  div
+    width: 200px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 15px)
+    background: radial-gradient(circle, alpha(darkorange,0) 45%,
+                                         darkorange 45%,
+                                         darkorange 65%,
+                                         alpha(darkorange,0) 70%) 37% 15% / 17% 17%,
+                radial-gradient(circle, alpha(darkorange,0) 45%,
+                                         darkorange 45%,
+                                         darkorange 65%,
+                                         alpha(darkorange,0) 70%) 63% 15% / 17% 17%,
+                radial-gradient(circle, alpha(darkorange,0) 45%,
+                                         darkorange 45%,
+                                         darkorange 65%,
+                                         alpha(darkorange,0) 70%) 82% 35% / 17% 17%,
+                radial-gradient(circle, alpha(darkorange,0) 45%,
+                                         darkorange 45%,
+                                         darkorange 65%,
+                                         alpha(darkorange,0) 70%) 18% 35% / 17% 17%,
+                radial-gradient(ellipse, darkorange 55%,
+                                         alpha(darkorange,0) 60%) 50% 24% / 5% 20%,
+                radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                         darkorange 45%,
+                                         darkorange 65%,
+                                         alpha(darkorange,0) 70%) 50% 10% / 8% 40%,
+                radial-gradient(ellipse, darkorange 55%,
+                                         alpha(darkorange,0) 60%) 76% 50% / 20% 5%,
+                radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                         darkorange 45%,
+                                         darkorange 65%,
+                                         alpha(darkorange,0) 70%) 90% 50% / 40% 10%,
+                radial-gradient(ellipse, darkorange 55%,
+                                         alpha(darkorange,0) 60%) 24% 50% / 20% 5%,
+                radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                         darkorange 45%,
+                                         darkorange 65%,
+                                         alpha(darkorange,0) 70%) 10% 50% / 40% 10%,
+                radial-gradient(darkorange 50%, alpha(darkorange,0) 51%) 50% 50% / 10% 10%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)  50%   2% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)  64%   5% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)  78%  12% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)  88%  23% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)  95%  36% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)  98%  50% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)   2%  50% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)   5%  36% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)  12%  23% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)  22%  12% / 14% 14%,
+                radial-gradient(orange 70%, alpha(orange,0) 71%)  36%   5% / 14% 14%,
+                radial-gradient(orange 53%, alpha(orange,0) 53%)  50%  10% / 100% 80%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  50%   0% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  65%   3% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  79%  10% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  90%  21% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  97%  35% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%) 100%  50% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)   0%  50% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)   3%  35% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  10%  21% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  21%  10% / 18% 18%,
+                radial-gradient(orangered 70%, alpha(orangered,0) 71%)  35%   3% / 18% 18%
+    background-repeat: no-repeat
+    transform: scale(1.03,.8)
+
+    &::before
+      width: 182px
+      height: 66px
+      left: 50%
+      margin-left: -(@width/2)
+      bottom: 32px
+      background: radial-gradient(circle, orange 21%, alpha(orange,0) 22%) 50% 50%
+      background-color: darken(saddlebrown,3)
+      border-radius: 5px
+      box-shadow: inset 0 0 0 6px darkorange,
+                  0 0 0 3px orangered
+      transform: perspective(200px) rotateX(-20deg)
+
+    &::after
+      width: 100%
+      height: @width
+      background: radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 50% 24% / 5% 20%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 50% 10% / 8% 40%,
+                  radial-gradient(ellipse, darkorange 55%,
+                                           alpha(darkorange,0) 60%) 24% 50% / 20% 5%,
+                  radial-gradient(ellipse, alpha(darkorange,0) 45%,
+                                           darkorange 45%,
+                                           darkorange 65%,
+                                           alpha(darkorange,0) 70%) 10% 50% / 40% 10%
+      background-repeat: no-repeat
+      transform: scale(.8,.9) rotate(45deg)
