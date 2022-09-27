@@ -9,14 +9,26 @@ Divtober
   line-height: 1.4
   font-size: 110%
 
+  &.divtober2020
+    background-color: mistyrose
+    
+    code
+      background-color: pink
+
   &.divtober2021
     background-color: aliceblue
     
     code
-      background-color: #222
-      color: lemonchiffon
+      background-color: paleturquoise
+
+  &.divtober2022
+    background-color: lemonchiffon
+    
+    code
+      background-color: palegoldenrod
 
   .content
+    max-width: 880px
     margin: 2em 25px
     
     & > *
@@ -28,9 +40,9 @@ Divtober
   h2
     margin-bottom: 10px
     font-size: 1.1em
-    font-weight: bold
 
-  h3
+  h2, h3,
+  strong
     font-weight: bold
 
   ul
@@ -38,12 +50,17 @@ Divtober
     list-style-type: disc
 
   code
-    padding: 0 3px
+    padding: 0 4px
     display: inline-block
     background-color: #ddd
 
+  .nav-years
+    display: flex
+    align-items: baseline
+    gap: 1em
+    // justify-content: flex-end
+
   .prompts
-    max-width: 900px
     list-style-type: decimal
     list-style-position: inside
 
