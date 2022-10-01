@@ -1,0 +1,116 @@
+/*-----------------------------
+
+Badge
+
+-----------------------------*/
+
+#badge
+  background: olive
+
+  div
+    width: 250px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-color: gold
+    background-image: repeating-conic-gradient(black(0) 0%,
+                                               black(0) .2%,
+                                               black(.3) .21%,
+                                               black(.3) .4%,
+                                               black(0) .41%,
+                                               black(0) .6%)
+    border-radius: 50%
+    box-shadow: inset 0 -1px 5px 2px black(.4),
+                inset 0 0 2px 5px gold,
+                0 0 5px 2px black(.1),
+                0 6px 3px black(.15),
+                0 12px 5px black(.1),
+                0 20px 10px black(.06)
+
+    &::before
+      width: 90%
+      height: @width
+      left: ((100% - @width) / 2)
+      top: ((100% - @width) / 2)
+      box-sizing: border-box
+      background: radial-gradient(circle, transparent 71%, goldenrod 71%) 0 0 / 100% 100%,
+                  radial-gradient(ellipse, white(.1), white(0) 50%) 50% -12% / 80% 40%,
+                  radial-gradient(ellipse, white(.2), white(0) 50%) 50%  50% / 120% 40%,
+                  radial-gradient(circle, alpha(indigo,.1) 10%, alpha(indigo,0) 30%) 10% 9.5% / 20% 50%,
+                  radial-gradient(circle, alpha(indigo,.1) 10%, alpha(indigo,0) 30%) 90% 9.5% / 20% 50%,
+                  radial-gradient(circle, alpha(indigo,.1) 10%, alpha(indigo,0) 30%) 10% 90.5% / 20% 50%,
+                  radial-gradient(circle, alpha(indigo,.1) 10%, alpha(indigo,0) 30%) 90% 90.5% / 20% 50%,
+                  repeating-linear-gradient(45deg, black(0), black(0) .4%,
+                                                             black(.2) .6%,
+                                                             black(.2) .9%,
+                                                             black(0) 1.1%) 0 0 / 100% 100%,
+                  radial-gradient(circle, mediumslateblue 71%, transparent 71%) 0 0 / 100% 100%
+      background-color: goldenrod
+      background-repeat: no-repeat
+      border: 3px dotted black(.4)
+      border-radius: 50%
+      box-shadow: 0 0 6px 1px black(.6),
+                  inset 0 3px 4px black(.2),
+                  inset 0 0 4px 4px black(.1),
+                  inset 0 -60px 40px -50px black(.2)
+
+    &::after
+      width: 60%
+      height: 40%
+      left: ((100% - @width) / 2)
+      top: ((100% - @height) / 2)
+      
+      background: linear-gradient(to right, firebrick, tomato, firebrick)          6px  6px / 4px 1px,
+                  linear-gradient(to right, firebrick, tomato)                     5px  7px / 6px 1px,
+                  linear-gradient(to right, firebrick, tomato, tomato, firebrick)  4px  8px / 8px 1px,
+                  linear-gradient(to right, firebrick, tomato, firebrick)          4px  9px / 8px 1px,
+                  linear-gradient(to right, firebrick, tomato, firebrick)          4px 10px / 8px 1px,
+                  linear-gradient(to right, firebrick, tomato, tomato, firebrick)  5px 11px / 6px 1px,
+                  linear-gradient(to right, firebrick, firebrick)                  6px 12px / 4px 1px,
+                  linear-gradient(to right, white(.4), white(.4))                  6px 13px / 4px 1px,
+                  linear-gradient(to right, goldenrod, gold, goldenrod)           17px  6px / 4px 1px,
+                  linear-gradient(to right, goldenrod, gold)                      16px  7px / 6px 1px,
+                  linear-gradient(to right, goldenrod, gold, gold, goldenrod)     15px  8px / 8px 1px,
+                  linear-gradient(to right, goldenrod, gold, goldenrod)           15px  9px / 8px 1px,
+                  linear-gradient(to right, goldenrod, gold, goldenrod)           15px 10px / 8px 1px,
+                  linear-gradient(to right, goldenrod, gold, gold, goldenrod)     16px 11px / 6px 1px,
+                  linear-gradient(to right, goldenrod, goldenrod)                 17px 12px / 4px 1px,
+                  linear-gradient(to right, white(.4), white(.4))                 17px 13px / 4px 1px,
+                  linear-gradient(to right, green, limegreen, green)              28px  6px / 4px 1px,
+                  linear-gradient(to right, green, limegreen)                     27px  7px / 6px 1px,
+                  linear-gradient(to right, green, limegreen, limegreen, green)   26px  8px / 8px 1px,
+                  linear-gradient(to right, green, limegreen, green)              26px  9px / 8px 1px,
+                  linear-gradient(to right, green, limegreen, green)              26px 10px / 8px 1px,
+                  linear-gradient(to right, green, limegreen, limegreen, green)   27px 11px / 6px 1px,
+                  linear-gradient(to right, green, green)                         28px 12px / 4px 1px,
+                  linear-gradient(to right, white(.4), white(.4))                 28px 13px / 4px 1px,
+                  linear-gradient(to right, green, lawngreen, green)             5px 26px / 4px 1px,
+                  linear-gradient(to right, green, lawngreen, lawngreen, green)  6px 27px / 4px 1px,
+                  linear-gradient(to right, green, lawngreen, green)             7px 28px / 4px 1px,
+                  linear-gradient(to right, green, lawngreen, green)             8px 29px / 4px 1px,
+                  linear-gradient(to right, green, lawngreen, lawngreen, green)  7px 30px / 4px 1px,
+                  linear-gradient(to right, green, lawngreen, green)             6px 31px / 4px 1px,
+                  linear-gradient(to right, green, lawngreen, green)             5px 32px / 4px 1px,
+                  linear-gradient(to right, green, lawngreen, green)            14px 31px / 7px 1px,
+                  linear-gradient(to right, green, lawngreen, green)            14px 32px / 7px 1px,
+                  radial-gradient(ellipse, white(.5), white(0) 60%) 100% 0% / 80% 10%,
+                  radial-gradient(ellipse, white(.05) 40%, white(0) 60%) 80% 22% / 80% 10%,
+                  repeating-linear-gradient(to bottom, white(.1),
+                                                       white(.1) 3%,
+                                                       white(0) 10%,
+                                                       black(0) 10%,
+                                                       black(.15) 20%) 0 0 / 100% 100%,
+                  repeating-linear-gradient(to right, black(.2), black(.2) 1%,
+                                                                  black(0) 1%,
+                                                                  black(0) 2%) 0 0 / 100% 100%,
+                  linear-gradient(to bottom, #ccc, #ccc) 0 0 / 100% 20%,
+                  linear-gradient(to bottom, #444, #444) 0 100% / 100% 80%
+      background-repeat: no-repeat
+      border-radius: 5px
+      box-shadow: 0 -2px 0 white(.2),
+                  0 -8px 4px black(.06),
+                  -2px 0 3px black(.06),
+                   2px 0 3px black(.06),
+                  -3px 0 1px -2px white(.2),
+                  3px 0 1px -2px white(.2),
+                  0 3px 3px -2px white(.3)
