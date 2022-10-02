@@ -1,0 +1,195 @@
+/*-----------------------------
+
+Dry
+
+-----------------------------*/
+
+dry-shadow(value)
+  alpha(chocolate, value)
+
+#dry
+  background: peachpuff
+
+  div
+    box-sizing: border-box
+    width: 300px
+    height: 320px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: repeating-linear-gradient(to bottom, white, white 10%,
+                                                     chocolate 10%, chocolate 20%) 48.5% 71% / 1em 1em,
+                linear-gradient(to right, dry-shadow(.2) 60%, dry-shadow(0)) 50% 71% / 1em 1em,
+                linear-gradient(120deg, alpha(peru,0) 10%,
+                                        peru 11%, peru 89%,
+                                        alpha(peru,0) 90%) 50% 100% / .2em 100%,
+                linear-gradient( 70deg, alpha(chocolate,0) 10%,
+                                        chocolate 11%, chocolate 89%,
+                                        alpha(chocolate,0) 90%) 48% 110% / .2em 86%,
+                linear-gradient( 80deg, alpha(peru,0) 45%,
+                                        peru 45.5%, peru 48%,
+                                        alpha(peru,0) 48.5%) 48% 90% / 4em 60%,
+                linear-gradient( 96deg, alpha(peru,0) 45%,
+                                        peru 45.5%, peru 48%,
+                                        alpha(peru,0) 48.5%) 50% 70% / 4em 70%,
+                linear-gradient(104deg, alpha(chocolate,0) 45%,
+                                        chocolate 45.5%, chocolate 48%,
+                                        alpha(chocolate,0) 48.5%) 51% 90% / 4em 70%,
+                linear-gradient( 90deg, dry-shadow(0),
+                                        dry-shadow(.2) 1%, dry-shadow(.2) 10%,
+                                        dry-shadow(0) 15%) 56% 50% / 2em 80%,
+                linear-gradient( 90deg, dry-shadow(0),
+                                        dry-shadow(.2) 1%, dry-shadow(.2) 10%,
+                                        dry-shadow(0) 15%) 54% 81% / 2em 72%,
+                linear-gradient( 80deg, dry-shadow(0) 45%,
+                                        dry-shadow(.2) 46%, dry-shadow(.2) 49%,
+                                        dry-shadow(0) 53%) 48% 90% / 4em 60%,
+                linear-gradient( 96deg, dry-shadow(0) 45%,
+                                        dry-shadow(.25) 46%, dry-shadow(.25) 48%,
+                                        dry-shadow(0) 51%) 51% 70% / 4em 70%,
+                linear-gradient(104deg, dry-shadow(0) 45%,
+                                        dry-shadow(.25) 46%, dry-shadow(.25) 46.5%,
+                                        dry-shadow(0) 50%) 52% 90% / 4em 70%,
+                radial-gradient(circle, steelblue 50%, alpha(steelblue,0) 51%) 66% 26% / 1em 1em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 70% 22% / 1em 1em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 70% 19% / .5em .5em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 75% 19% / 1em 1em,
+                radial-gradient(circle, steelblue 50%, alpha(steelblue,0) 51%) 72.5% 22% / .5em .5em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 74.5% 24% / 1em 1em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 70.5% 26% / 1em 1em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 77.5% 23% / .5em .5em,
+                radial-gradient(circle, steelblue 50%, alpha(steelblue,0) 51%) 74.5% 28% / 1em 1em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 70.5% 31% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 67% 27% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 71% 23% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 10%, dry-shadow(0) 55%) 71% 20% / .5em .5em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 76% 20% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 10%, dry-shadow(0) 55%) 71.5% 23% / .5em .5em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 75.5% 24% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 71.5% 27% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 10%, dry-shadow(0) 55%) 78.5% 24% / .5em .5em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 75.5% 29% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 71.5% 32% / 1em 1em,
+                linear-gradient(115deg, alpha(cadetblue,0) 45%,
+                                        cadetblue 45.5%, cadetblue 46.5%,
+                                        alpha(cadetblue,0) 47%) 54% 130% / 6em 80%,
+                linear-gradient(115deg, dry-shadow(0) 45%,
+                                        dry-shadow(.25) 46%, dry-shadow(.2) 46.5%,
+                                        dry-shadow(0) 49%) 54% 130% / 6em 80%,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 23% 28% / 1em 1em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 26.5% 25% / 1em 1em,
+                radial-gradient(circle, steelblue 50%, alpha(steelblue,0) 51%) 31% 28% / 1em 1em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 24% 21% / 1em 1em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 27% 32% / 1em 1em,
+                radial-gradient(circle, steelblue 50%, alpha(steelblue,0) 51%) 23.5% 25% / .5em .5em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 28.5% 22% / .5em .5em,
+                radial-gradient(circle, cadetblue 50%, alpha(cadetblue,0) 51%) 31.5% 24.5% / .5em .5em,
+                radial-gradient(circle, steelblue 50%, alpha(steelblue,0) 51%) 23.5% 33.5% / .5em .5em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 24% 29% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 27.5% 26% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 32% 29% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 25% 22% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 20%, dry-shadow(0) 55%) 28% 33% / 1em 1em,
+                radial-gradient(circle, dry-shadow(.2) 10%, dry-shadow(0) 55%) 24.5% 26% / .5em .5em,
+                radial-gradient(circle, dry-shadow(.2) 10%, dry-shadow(0) 55%) 29.5% 23% / .5em .5em,
+                radial-gradient(circle, dry-shadow(.2) 10%, dry-shadow(0) 55%) 32.5% 25.5% / .5em .5em,
+                radial-gradient(circle, dry-shadow(.2) 10%, dry-shadow(0) 55%) 24.5% 34.5% / .5em .5em,
+                linear-gradient( 65deg, alpha(cadetblue,0) 55%,
+                                        cadetblue 55.5%, cadetblue 56.5%,
+                                        alpha(cadetblue,0) 57%) 40% 140% / 6em 80%,
+                linear-gradient( 65deg, dry-shadow(0) 55%,
+                                        dry-shadow(.25) 56%, dry-shadow(.25) 56.5%,
+                                        dry-shadow(0) 58.5%) 40% 140% / 6em 80%,
+                linear-gradient( 75deg, white(0) 55%,
+                                        white 55.5%, white 56.5%,
+                                        white(0) 57%) 40% 90% / 6em 80%,
+                linear-gradient( 75deg, dry-shadow(0) 55%,
+                                        dry-shadow(.2) 56%, dry-shadow(.2) 56.5%,
+                                        dry-shadow(0) 59.5%) 40% 90% / 6em 80%,
+                linear-gradient( 81deg, white(0) 55%,
+                                        white 55.5%, white 56.5%,
+                                        white(0) 57%) 40% 70% / 6em 90%,
+                linear-gradient( 81deg, dry-shadow(0) 55%,
+                                        dry-shadow(.2) 56%, dry-shadow(.2) 56.5%,
+                                        dry-shadow(0) 61.5%) 40% 70% / 6em 90%,
+                linear-gradient(106deg, white(0) 45%,
+                                        white 45.5%, white 46.5%,
+                                        white(0) 47%) 55% 90% / 6em 85%,
+                linear-gradient(106deg, dry-shadow(0) 45%,
+                                        dry-shadow(.2) 46%, dry-shadow(.2) 46.5%,
+                                        dry-shadow(0) 49.5%) 55% 90% / 6em 85%,
+                linear-gradient(100deg, white(0) 45%,
+                                        white 45.5%, white 46.5%,
+                                        white(0) 47%) 55% 70% / 6em 90%,
+                linear-gradient(100deg, dry-shadow(0) 45%,
+                                        dry-shadow(.2) 46%, dry-shadow(.2) 46.5%,
+                                        dry-shadow(0) 49.5%) 55% 70% / 6em 90%
+    background-repeat: no-repeat
+
+    &::before
+      width: 5%
+      height: 6%
+      left: 50%
+      top: 5%
+      background-color: brown
+      border-top-left-radius: 60%
+      border-bottom-right-radius: 60%
+      box-shadow: .3em .4em .2em dry-shadow(.19),
+                  -.2em 1.4em 0 -.23em darksalmon,
+                  0 1.6em .18em -.23em dry-shadow(.2),
+                  .45em 2.3em 0 -.15em palevioletred,
+                  .6em 2.6em .2em -.15em dry-shadow(.2),
+                  -.5em 3em 0 -.2em brown,
+                  -.3em 3.2em .2em -.2em dry-shadow(.2),
+                  .3em 4em 0 -.1em coral,
+                  .5em 4.3em .2em -.1em dry-shadow(.2),
+                  1.5em 3.5em 0 -.12em darksalmon,
+                  1.8em 3.7em .18em -.12em dry-shadow(.21),
+                  1.35em 4.8em 0 -.05em coral,
+                  1.5em 5.2em .18em -.05em dry-shadow(.21),
+                  -1.6em 5.2em 0 -.1em palevioletred,
+                  -1.4em 5.4em .18em -.1em dry-shadow(.21),
+                  -1.5em 6.3em 0 -.2em brown,
+                  -1.3em 6.5em .18em -.2em dry-shadow(.22),
+                  1.8em 7.2em 0 cadetblue,
+                  2em 7.4em .18em dry-shadow(.22),
+                  -2em 8.7em 0 -.2em cadetblue,
+                  -1.8em 8.9em .2em -.2em dry-shadow(.22),
+                  1.7em -.8em .4em .1em white,
+                  2.1em -.4em .4em .1em dry-shadow(.18),
+                  2.3em 1em .4em .1em white,
+                  2.5em 1.3em .4em .1em dry-shadow(.18)
+    &::after
+      width: 5%
+      height: 6%
+      left: 42.5%
+      top: 18%
+      background-color: darksalmon
+      border-top-right-radius: 60%
+      border-bottom-left-radius: 60%
+      box-shadow: .2em .2em .18em dry-shadow(.3),
+                  .47em -2.2em 0 -.1em coral,
+                  .49em -2em .2em -.1em dry-shadow(.2),
+                  .55em -1em 0 -.15em brown,
+                  .57em -.8em .2em -.15em dry-shadow(.2),
+                  1.3em -.2em 0 -.29em coral,
+                  1.5em 0 .2em -.29em dry-shadow(.2),
+                  .2em 1.4em 0 -.2em coral,
+                  .4em 1.6em .2em -.2em dry-shadow(.3),
+                  2.3em 1.1em 0 -.2em brown,
+                  2.5em 1.3em .2em -.2em dry-shadow(.2),
+                  1em 1.8em 0 -.2em brown,
+                  1.2em 2em .2em -.2em dry-shadow(.2),
+                  1.75em 3em 0 -.2em palevioletred,
+                  1.95em 3.2em .18em -.2em dry-shadow(.21),
+                  -1.1em 2.4em 0 coral,
+                  -.9em 2.6em .18em dry-shadow(.3),
+                  -.75em 4em 0 -.15em darksalmon,
+                  -.55em 4.2em .18em -.15em dry-shadow(.3),
+                  2.5em 4.5em 0 -.15em cadetblue,
+                  -1.7em 5em 0 cadetblue,
+                  -1.2em 5.2em .2em dry-shadow(.15),
+                  -2.3em -1.1em .4em .1em white,
+                  -1.8em -.8em .4em .1em dry-shadow(.2),
+                  -1.3em -3.3em .4em .1em white,
+                  -.8em -3em .4em .1em dry-shadow(.2)
+
