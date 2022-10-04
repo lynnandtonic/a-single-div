@@ -4,9 +4,6 @@ Loud
 
 -----------------------------*/
 
-khaki(alpha)
-  rgba(240,230,140,alpha)
-
 @keyframes thunk1
   0%
     transform: scale(.1)
@@ -31,17 +28,17 @@ khaki(alpha)
     margin-left: -(@width/2)
     margin-top: -(@height/2 + 1em)
     background-repeat: no-repeat
-    background-image: linear-gradient(85deg, khaki(0) 50%, khaki 52%), // !
-                      linear-gradient(93deg, khaki 50%, khaki(0) 52%),
+    background-image: linear-gradient(85deg, alpha(khaki,0) 50%, khaki 52%), // !
+                      linear-gradient(93deg, khaki 50%, alpha(khaki,0) 52%),
                       linear-gradient(93deg, black 50%, black(0) 52%),
-                      radial-gradient(ellipse, khaki 50%, khaki(0) 52%),
+                      radial-gradient(ellipse, khaki 50%, alpha(khaki,0) 52%),
                       radial-gradient(ellipse, black 50%, black(0) 52%),
-                      linear-gradient(92deg, khaki(0) 38%, khaki 39%, // N
-                                             khaki 80%, khaki(0) 81%),
+                      linear-gradient(92deg, alpha(khaki,0) 38%, khaki 39%, // N
+                                             khaki 80%, alpha(khaki,0) 81%),
                       linear-gradient(92deg, black(0) 37%, black 38%,
                                              black 80%, black(0) 81%),
-                      linear-gradient(88deg, khaki(0) 37%, khaki 38%, // K
-                                             khaki 90%, khaki(0) 91%),
+                      linear-gradient(88deg, alpha(khaki,0) 37%, khaki 38%, // K
+                                             khaki 90%, alpha(khaki,0) 91%),
                       linear-gradient(88deg, black(0) 37%, black 38%,
                                              black 90%, black(0) 91%)
     background-size: 2.4em 10em, // !
@@ -88,46 +85,46 @@ khaki(alpha)
       width: 100%
       height: 100%
       background-repeat: no-repeat
-      background-image: linear-gradient(112deg, khaki(0) 20%, khaki 21%, // T
-                                                khaki 80%, khaki(0) 81%),
-                        linear-gradient(112deg, khaki(0) 35%, khaki 36%,
-                                                khaki 50%, khaki(0) 51%),
+      background-image: linear-gradient(112deg, alpha(khaki,0) 20%, khaki 21%, // T
+                                                khaki 80%, alpha(khaki,0) 81%),
+                        linear-gradient(112deg, alpha(khaki,0) 35%, khaki 36%,
+                                                khaki 50%, alpha(khaki,0) 51%),
                         linear-gradient(112deg, black(0) 20%, black 21%,
                                                 black 80%, black(0) 81%),
                         linear-gradient(112deg, black(0) 35%, black 36%,
                                                 black 50%, black(0) 51%),
-                        linear-gradient(112deg, khaki(0) 35%, khaki 36%, // H
-                                                khaki 52%, khaki(0) 53%),
+                        linear-gradient(112deg, alpha(khaki,0) 35%, khaki 36%, // H
+                                                khaki 52%, alpha(khaki,0) 53%),
                         linear-gradient(khaki, khaki),
-                        linear-gradient(112deg, khaki(0) 35%, khaki 36%,
-                                                khaki 52%, khaki(0) 53%),
+                        linear-gradient(112deg, alpha(khaki,0) 35%, khaki 36%,
+                                                khaki 52%, alpha(khaki,0) 53%),
                         linear-gradient(112deg, black(0) 35%, black 36%,
                                                 black 52%, black(0) 53%),
                         linear-gradient(black, black),
                         linear-gradient(112deg, black(0) 35%, black 36%,
                                                 black 52%, black(0) 53%),
-                        linear-gradient(100deg, khaki(0) 35%, khaki 36%, // N
-                                                khaki 55%, khaki(0) 56%),
-                        linear-gradient( 83deg, khaki 50%, khaki(0) 51%),
-                        linear-gradient(100deg, khaki(0) 35.5%, khaki 36.5%,
-                                                khaki 45%, khaki(0) 46%),
-                        linear-gradient( 82deg, khaki(0) 27%, khaki 27.5%,
-                                                khaki 45%, khaki(0) 46%),
-                        linear-gradient( 92deg, khaki(0) 25%, khaki 25.5%,
-                                                khaki 50%, khaki(0) 51%),
+                        linear-gradient(100deg, alpha(khaki,0) 35%, khaki 36%, // N
+                                                khaki 55%, alpha(khaki,0) 56%),
+                        linear-gradient( 83deg, khaki 50%, alpha(khaki,0) 51%),
+                        linear-gradient(100deg, alpha(khaki,0) 35.5%, khaki 36.5%,
+                                                khaki 45%, alpha(khaki,0) 46%),
+                        linear-gradient( 82deg, alpha(khaki,0) 27%, khaki 27.5%,
+                                                khaki 45%, alpha(khaki,0) 46%),
+                        linear-gradient( 92deg, alpha(khaki,0) 25%, khaki 25.5%,
+                                                khaki 50%, alpha(khaki,0) 51%),
                         linear-gradient( 83deg, black 50%, black(0) 51%),
                         linear-gradient( 82deg, black(0) 27%, black 27.5%,
                                                 black 45%, black(0) 46%),
                         linear-gradient( 92deg, black(0) 25%, black 25.5%,
                                                 black 50%, black(0) 51%),
-                        linear-gradient( 94deg, khaki(0) 35%, khaki 36%, // K
-                                                khaki 55%, khaki(0) 56%),
-                        linear-gradient( 98deg, khaki 50%, khaki(0) 51%),
+                        linear-gradient( 94deg, alpha(khaki,0) 35%, khaki 36%, // K
+                                                khaki 55%, alpha(khaki,0) 56%),
+                        linear-gradient( 98deg, khaki 50%, alpha(khaki,0) 51%),
                         linear-gradient(187deg, mediumorchid 50%, alpha(mediumorchid,0) 50.5%),
-                        linear-gradient(130deg, khaki(0) 32%, khaki 33%,
-                                                khaki 57%, khaki(0) 58%),
-                        linear-gradient( 60deg, khaki(0) 32%, khaki 33%,
-                                                khaki 55%, khaki(0) 56%),
+                        linear-gradient(130deg, alpha(khaki,0) 32%, khaki 33%,
+                                                khaki 57%, alpha(khaki,0) 58%),
+                        linear-gradient( 60deg, alpha(khaki,0) 32%, khaki 33%,
+                                                khaki 55%, alpha(khaki,0) 56%),
                         linear-gradient( 98deg, black 50%, black(0) 51%),
                         linear-gradient(187deg, mediumorchid 50%, alpha(mediumorchid,0) 50.5%),
                         linear-gradient(130deg, black(0) 32%, black 33%,
