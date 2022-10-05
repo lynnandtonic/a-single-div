@@ -1,0 +1,119 @@
+/*-----------------------------
+
+Quiet
+
+-----------------------------*/
+
+#quiet
+  background: #ddd
+
+  div
+    width: 250px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: radial-gradient(circle, black(.15) 50%, black(0) 50.8%) 14% 30% / 11% 11%,
+                radial-gradient(circle, peachpuff 50%, alpha(peachpuff,0) 50.8%) 10% 30% / 16% 16%,
+                radial-gradient(circle, saddlebrown 50%, alpha(saddlebrown,0) 50.8%) 7.5% 29% / 20% 20%,
+                radial-gradient(circle, black(.15) 50%, black(0) 50.8%) 86% 30% / 11% 11%,
+                radial-gradient(circle, peachpuff 50%, alpha(peachpuff,0) 50.8%) 90% 30% / 16% 16%,
+                radial-gradient(circle, saddlebrown 50%, alpha(saddlebrown,0) 50.8%) 92.5% 29% / 20% 20%,
+                radial-gradient(circle at 50% 0, peachpuff 29.5%,
+                                                 saddlebrown 30%,
+                                                 saddlebrown 35%,
+                                                 alpha(saddlebrown,0) 35.5%) 50% 95% / 40% 20%,
+                radial-gradient(ellipse at 50% 100%, alpha(saddlebrown,0) 49%,
+                                                     saddlebrown 49.5%,
+                                                     saddlebrown 52%,
+                                                     alpha(saddlebrown,0) 52.5%) 50% 110% / 120% 40%,
+                radial-gradient(circle at 50% 0, white(0) 35%,
+                                                 white 35%,
+                                                 white 45%,
+                                                 white(0) 45.5%) 50% 89% / 40% 13%,
+                linear-gradient(saddlebrown, saddlebrown) 37% 100% / .25em 22%,
+                linear-gradient(saddlebrown, saddlebrown) 63% 100% / .25em 22%,
+                linear-gradient( 80deg, black(0) 50%, #333 50.5%) 24% 100% / 1em 18%,
+                linear-gradient(-80deg, black(0) 50%, #333 50.5%) 76% 100% / 1em 18%,
+                linear-gradient( 162deg, black(0) 10%, #333 10%) 30% 100% / 1.5em 21%,
+                linear-gradient(-162deg, black(0) 10%, #333 10%) 70% 100% / 1.5em 21%,
+                radial-gradient(ellipse at 100% 100%, darkolivegreen 50%,
+                                                      alpha(darkolivegreen,0) 50.5%) 0 100% / 37% 29%,
+                radial-gradient(ellipse at 0 100%, darkolivegreen 50%,
+                                                      alpha(darkolivegreen,0) 50.5%) 100% 100% / 37% 29%,
+                radial-gradient(ellipse at 50% 100%, #222 51%,
+                                                     black(0) 51.5%) 50% 110% / 120% 40%,
+                radial-gradient(circle at 50% 0, black(.15) 40%, black(0) 40.5%) 50% 82% / 20% 20%,
+                linear-gradient(to right, saddlebrown 4px, alpha(saddlebrown,0) 4px) 50% 80% / 20% 20%,
+                linear-gradient(to left, saddlebrown 4px, alpha(saddlebrown,0) 4px) 50% 80% / 20% 20%,
+                linear-gradient(peachpuff, peachpuff) 50% 80% / 20% 20%,
+                linear-gradient(darken(saddlebrown,15), darken(saddlebrown,15)) 50% 100% / 65% 60%,
+                radial-gradient(circle, white 30%, white(0) 62%) 50% 50% / 100% 100%
+    background-color: #ccc
+    background-repeat: no-repeat
+    border-radius: 30%
+
+    &::before
+      box-sizing: border-box
+      width: 160px
+      height: 200px
+      left: 50%
+      top: -10%
+      margin-left: -(@width/2)
+      background: radial-gradient(circle at 50% 0, peachpuff 30%,
+                                                   saddlebrown 30.5%,
+                                                   saddlebrown 41%,
+                                                   alpha(saddlebrown,0) 41.5%) 50% 76% / 2em 2em,
+                  radial-gradient(ellipse, alpha(saddlebrown,0) 25%,
+                                           darken(saddlebrown,10) 25.5%,
+                                           darken(saddlebrown,10) 40%,
+                                           alpha(saddlebrown,0) 40.5%) 50% 100% / 100% 40%,
+                  radial-gradient(ellipse at 50% 0, saddlebrown 40%,
+                                                    peachpuff 40.5%,
+                                                    peachpuff 58%,
+                                                    alpha(peachpuff,0) 59%) 50% 83% / 3em 1em,
+                  linear-gradient(darken(saddlebrown,10), darken(saddlebrown,10)) 50% 86% / 1em 1em,
+                  radial-gradient(circle, darken(saddlebrown,10) 40%,
+                                          alpha(saddlebrown,0) 40.5%) 26% 56% / 1em 1em,
+                  radial-gradient(circle, darken(saddlebrown,10) 40%,
+                                          alpha(saddlebrown,0) 40.5%) 74% 56% / 1em 1em,
+                  radial-gradient(ellipse, alpha(saddlebrown,0) 52%,
+                                           saddlebrown 52.5%,
+                                           saddlebrown 55%,
+                                           alpha(saddlebrown,0) 55.5%) 50% 100% / 150% 80%,
+                  radial-gradient(ellipse, black(0) 46%,
+                                           black(.15) 46.5%,
+                                           black(.15) 53%,
+                                           black(0) 53%) 50% 100% / 150% 80%,
+                  radial-gradient(ellipse, peachpuff 53%,
+                                           alpha(peachpuff,0) 53.5%) 50% 100% / 150% 80%,
+                  radial-gradient(ellipse at 50% 100%, alpha(saddlebrown,0) 35.5%,
+                                                       saddlebrown 36%,
+                                                       saddlebrown 38%,
+                                                       white 38.5%) 50% -45% / 110% 60%,
+                  radial-gradient(circle, #444 23%, black(0) 24%) 30% 26% / 1em 1em,
+                  radial-gradient(circle, #444 23%, black(0) 24%) 40% 25% / 1em 1em,
+                  radial-gradient(circle, #444 23%, black(0) 24%) 50% 24.5% / 1em 1em,
+                  radial-gradient(circle, #444 23%, black(0) 24%) 60% 25% / 1em 1em,
+                  radial-gradient(circle, #444 23%, black(0) 24%) 70% 26% / 1em 1em,
+                  radial-gradient(ellipse, #666 63%,
+                                           saddlebrown 63.5%,
+                                           saddlebrown 66%,
+                                           alpha(saddlebrown,0) 66.5%) 50% 100% / 150% 80%,
+                  radial-gradient(ellipse, alpha(saddlebrown,0) 40%,
+                                           darken(saddlebrown,10) 40.5%) 50% 0 / 150% 80%,
+                  linear-gradient(black(.15), black(.15)) 50% 50% / 100% 100%
+      background-repeat: no-repeat
+      background-color: peachpuff
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%
+      border: 4px solid saddlebrown
+      box-shadow: inset 0 -.2em 0 .5em black(.15),
+                  inset 0 -1.6em 0 darken(saddlebrown,10)
+
+    &::after
+      width: 2.5em
+      height: .8em
+      left: 28.5%
+      top: 26%
+      background-color: darken(saddlebrown,10)
+      border-radius: .3em
+      box-shadow: 4.2em 0 0 darken(saddlebrown,10)
