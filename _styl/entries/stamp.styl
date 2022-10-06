@@ -1,0 +1,55 @@
+/*-----------------------------
+
+Stamp
+
+-----------------------------*/
+
+#stamp
+  background: linen
+
+  div
+    width: 250px
+    height: 350px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: radial-gradient(ellipse, white(.2) 10%, white(0) 40%) 50% 110% / 120% 40%,
+                linear-gradient(to right, darken(wheat,10), alpha(wheat,0) 25%) 50% 100% / 94% 50%,
+                linear-gradient(to  left, darken(wheat,10), alpha(wheat,0) 25%) 50% 100% / 94% 50%,
+                linear-gradient(to bottom, wheat, darken(wheat,17)) 50% 100% / 94% 50%,
+                linear-gradient(lightskyblue, lightskyblue) 50% 15% / 85% .5%,
+                linear-gradient(#ccc, #ccc) 50% 10% / .25% 60%,
+                repeating-linear-gradient(to bottom, #ccc, #ccc .5%,
+                                                     white(0) .5%,
+                                                     white(0) 10%) 50% 41% / 85% 50%,
+                linear-gradient(to bottom, white 30%, #eee) 50% 40% / 85% 40%,
+                linear-gradient(40deg, white 96%, white(0) 96.1%) 50% 10% / 85% 60%,
+                linear-gradient(to right, black(0), black(.2) 6%) 19% 15% / 70% 60%,
+                linear-gradient(to  left, black(0), black(.2) 6%) 81% 25% / 70% 60%
+    background-repeat: no-repeat
+    box-shadow: 0 .8em .4em -.65em black(.1)
+
+    &::before,
+    &::after
+      font-family: Courier New, mono
+      font-weight: bold
+      font-size: 1.2em
+      color: #444
+      text-transform: uppercase
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    &::before
+      content: 'Jun 20 1990'
+      top: 22%
+      left: 11%
+      transform: rotate(-2deg)
+      background-image: linear-gradient(45deg, transparent 50%, #999, #888, #333, #444, #999, #ddd)
+      text-shadow: .1em 0 0 black(.5)
+
+    &::after
+      content: 'Apr 14 1990'
+      top: 30%
+      left: 20%
+      transform: rotate(5deg)
+      background-image: linear-gradient(30deg, #ccc, #999, #444, #999, #bbb, #777, transparent 70%)
+      text-shadow: .07em 0 0 black(.3)
