@@ -1,0 +1,50 @@
+/*-----------------------------
+
+Meaty
+
+-----------------------------*/
+
+#meaty
+  background: gold
+
+  div
+    box-sizing: border-box
+    width: 120px
+    height: 200px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 6em)
+    background-color: white
+    background-repeat: no-repeat
+    border-radius: 1.5em
+    border: .15em solid #ccc
+    box-shadow: 0 1.5em 0 -.15em darken(#fff,5),
+                0 1.5em 0 #bbb,
+                0 2em 0 black(.1),
+                inset 0 8em 0 white,
+                inset 0 10.6em 0 -.9em black(.15)
+
+    &::before
+      width: 80%
+      height: 80%
+      left: 50%
+      top: 7%
+      margin-left: -(@width/2)
+      background-color: salmon
+      background-repeat: no-repeat
+      border-radius: 1em
+      border: .15em solid darken(salmon,15)
+      box-shadow: 0 .7em 0 -.15em darken(salmon,5),
+                  0 .7em 0 darken(salmon,15),
+                  0 1em 0 black(.1),
+                  inset 0 5em 0 salmon,
+                  inset 0 8.35em 0 alpha(firebrick,.3)
+
+    &::after
+      width: calc(100% + .3em)
+      height: 100%
+      left: -.15em
+      top: 75%
+      border-radius: 1.5em
+      box-shadow: 0 -.2em 0 forestgreen,
+                  0 -7em 0 darken(forestgreen,21),
+                  0 -7.2em 0 forestgreen
