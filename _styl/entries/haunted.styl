@@ -1,0 +1,73 @@
+/*-----------------------------
+
+Haunted
+
+-----------------------------*/
+
+#haunted
+  background-color: #222
+
+  div
+    width: 200px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: radial-gradient(circle, #aaa 50%, alpha(#aaa,0) 51%) 64% 7% / 1em 1em,
+                radial-gradient(circle, #999 50%, alpha(#999,0) 51%) 63.5% 6.5% / 1.1em 1.1em,
+                radial-gradient(circle, #aaa 50%, alpha(#aaa,0) 51%) 22% 24% / 3em 3em,
+                radial-gradient(circle, #999 50%, alpha(#999,0) 51%) 21% 23% / 3.1em 3.1em,
+                radial-gradient(circle, #aaa 50%, alpha(#aaa,0) 51%) 74% 34% / 2em 2em,
+                radial-gradient(circle, #999 50%, alpha(#999,0) 51%) 73.5% 33.5% / 2.1em 2.1em,
+                radial-gradient(circle, #aaa 50%, alpha(#aaa,0) 51%) 14% 57% / 1em 1em,
+                radial-gradient(circle, #999 50%, alpha(#999,0) 51%) 13.5% 56.5% / 1.1em 1.1em,
+                radial-gradient(circle, #aaa 50%, alpha(#aaa,0) 51%) 26% 65% / 1em 1em,
+                radial-gradient(circle, #999 50%, alpha(#999,0) 51%) 25.5% 64.5% / 1.1em 1.1em,
+                radial-gradient(circle, #aaa 50%, alpha(#aaa,0) 51%) 54% 54% / 1em 1em,
+                radial-gradient(circle, #999 50%, alpha(#999,0) 51%) 53.5% 53.5% / 1.1em 1.1em,
+                radial-gradient(circle, #aaa 50%, alpha(#aaa,0) 51%) 85% 54% / 1em 1em,
+                radial-gradient(circle, #ccc 50%, alpha(#ccc,0) 51%) 86% 54.5% / 1.2em 1.2em,
+                radial-gradient(circle, #aaa 50%, alpha(#aaa,0) 51%) 44% 94% / 2.8em 2.8em,
+                radial-gradient(circle, #ccc 50%, alpha(#ccc,0) 51%) 44% 96% / 3.1em 3.1em,
+                radial-gradient(circle, #aaa 50%, alpha(#aaa,0) 51%) 86% 75% / 1em 1em,
+                radial-gradient(circle, #999 50%, alpha(#999,0) 51%) 85.5% 74.5% / 1.1em 1.1em,
+                radial-gradient(circle, black(0) 50%, black(.1) 51%) -4.5em -4.5em / 18em 18em
+    background-repeat: no-repeat
+    background-color: #ccc
+    border-radius: 50%
+
+    $haunted-h = 40px
+
+    &::before,
+    &::after
+      width: $haunted-h * 2
+      height: $haunted-h
+      left: 50%
+      margin-left: -(@width/2)
+      animation: haunted-spin 4s linear infinite
+
+    &::before
+      top: -($haunted-h + 12em)
+      background: no-repeat radial-gradient(black 50%, black(0) 52%) 20% 70% / .6em .6em,
+                  no-repeat radial-gradient(black 50%, black(0) 52%) 20% 30% / .6em .6em,
+                  no-repeat radial-gradient(black 50%, black(0) 52%) 35% 50% / 1em 1em,
+                  no-repeat linear-gradient(white, white) 0 50% / 92% 100%,
+                   repeat-y radial-gradient(circle at 0 50%, white 38%, white(0) 39%) 113% 0 / 1em 33.333%
+      border-radius: 2em 0 0 2em
+      transform-origin: 50% 9.5em
+    
+    &::after
+      bottom: 0
+      bottom: -($haunted-h + 12em)
+      background: no-repeat radial-gradient(black 50%, black(0) 52%) 80% 70% / .6em .6em,
+                  no-repeat radial-gradient(black 50%, black(0) 52%) 80% 30% / .6em .6em,
+                  no-repeat radial-gradient(black 50%, black(0) 52%) 65% 50% / 1em 1em,
+                  no-repeat linear-gradient(white, white) 100% 50% / 92% 100%,
+                  repeat-y radial-gradient(circle at 100% 50%, white 38%, white(0) 39%) -13% 0 / 1em 33.333%
+      border-radius: 0 2em 2em 0
+      transform-origin: 50% -7em
+
+@keyframes haunted-spin
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(-180deg)
