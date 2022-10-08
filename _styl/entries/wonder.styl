@@ -1,0 +1,76 @@
+/*-----------------------------
+
+Wonder
+
+-----------------------------*/
+
+#wonder
+  z-index: 1
+
+  div
+    box-sizing: border-box
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    overflow: hidden
+    background: radial-gradient(circle, white 60%, white(0) 75%) 70% 10% / 4em 4em,
+                radial-gradient(ellipse, hotpink 10%, alpha(hotpink,0) 70%) calc(50% - 12em) calc(50% - 4em) / 4em 2em,
+                radial-gradient( circle, hotpink 10%, alpha(hotpink,0) 60%) calc(50% - 11em) calc(50% - 4.5em) / 3em 3em,
+                radial-gradient( circle, hotpink 10%, alpha(hotpink,0) 60%) calc(50% - 10em) calc(50% - 5.5em) / 4em 4em,
+                radial-gradient( circle, hotpink 10%, alpha(hotpink,0) 60%) calc(50% - 9em) calc(50% - 5em) / 3em 3em,
+                radial-gradient( circle, hotpink 10%, alpha(hotpink,0) 60%) calc(50% - 8.5em) calc(50% - 4em) / 4.5em 4.5em,
+                radial-gradient( circle, hotpink 10%, alpha(hotpink,0) 60%) calc(50% - 10.4em) calc(50% - 3.5em) / 3.7em 3.7em,
+                radial-gradient(ellipse, hotpink 10%, alpha(hotpink,0) 60%) calc(50% - 7em) calc(50% - 4em) / 4em 2.5em,
+                radial-gradient(ellipse, hotpink 10%, alpha(hotpink,0) 60%) calc(50% + 8.5em) calc(50% - .5em) / 4.5em 2.5em,
+                radial-gradient( circle, hotpink 10%, alpha(hotpink,0) 60%) calc(50% + 10em) calc(50% - 1.2em) / 4em 4em,
+                radial-gradient( circle, hotpink 10%, alpha(hotpink,0) 60%) calc(50% + 11em) calc(50% - 2.4em) / 3em 3em,
+                radial-gradient( circle, hotpink 10%, alpha(hotpink,0) 60%) calc(50% + 12.6em) calc(50% - 1.8em) / 4em 4em,
+                radial-gradient(ellipse, hotpink 10%, alpha(hotpink,0) 60%) calc(50% + 13.7em) calc(50% - .5em) / 4em 2.5em,
+                radial-gradient(ellipse, hotpink 10%, alpha(hotpink,0) 60%) calc(50% + 10.5em) calc(50% - .2em) / 4em 4em,
+                radial-gradient(ellipse, hotpink 10%, alpha(hotpink,0) 70%) calc(50% + 12.3em) calc(50% - .4em) / 4em 4em,
+                linear-gradient(to bottom, steelblue, powderblue) 50% 0 / 100% 60%,
+                radial-gradient(ellipse, black(.11) 10%, black(0) 60%) calc(50% - 10em) calc(60% + 2.2em) / 10em 2em,
+                radial-gradient(ellipse, black(.15) 10%, black(0) 60%) calc(50% + 11em) calc(60% + 1.5em) / 10em 2em,
+                radial-gradient(ellipse, black(.5) 20%, black(0) 60%) 50% calc(50% + 8em) / 12em 1em,
+                linear-gradient(to top, alpha(aliceblue,0) 40%, aliceblue 90%) 50% 100% / 100% 50%,
+                repeating-conic-gradient(from 0deg, black(0) 0deg 3deg,
+                                                    black 3.1deg 4deg,
+                                                    black(0) 4.1deg) 50% 0 / 100% 115%,
+                radial-gradient(circle, magenta, alpha(magenta,0)) 50% 50% / 100% 100%
+    background-repeat: no-repeat
+
+    &::before
+      width: 100%
+      height: 200%
+      background: linear-gradient(to bottom, orange 30%, yellow, turquoise, teal)
+      z-index: -1
+      animation: wonder-horizon 5s infinite alternate-reverse ease-in-out
+    
+    &::after
+      width: 8em
+      min-height: 12em
+      left: 50%
+      top: calc(50% - 5.5em)
+      margin-left: -(@width/2)
+      background: radial-gradient(white 10%, white(0) 100%) 20% 20% / .2em .2em,
+                  radial-gradient(white 10%, white(0) 100%) 80% 50% / .2em .2em,
+                  radial-gradient(white 10%, white(0) 100%) 70% 80% / .2em .2em,
+                  radial-gradient(white 10%, white(0) 100%) 55% 90% / .2em .2em,
+                  radial-gradient(white(.6) 10%, white(0) 70%) 40% 10% / .2em .2em,
+                  radial-gradient(white(.6) 10%, white(0) 70%) 70% 20% / .2em .2em,
+                  radial-gradient(white(.6) 10%, white(0) 70%)  5% 40% / .2em .2em,
+                  radial-gradient(white(.6) 10%, white(0) 70%) 40% 45% / .2em .2em,
+                  radial-gradient(white(.6) 10%, white(0) 70%) 15% 65% / .2em .2em,
+                  radial-gradient(white(.6) 10%, white(0) 70%) 25% 70% / .2em .2em,
+                  radial-gradient(white(.6) 10%, white(0) 70%) 90% 75% / .2em .2em,
+                  radial-gradient(white(.6) 10%, white(0) 70%) 30% 99% / .2em .2em
+      background-color: black
+      background-repeat: no-repeat
+      border-radius: 4em 4em 0 0
+
+@keyframes wonder-horizon
+  from
+    transform: translateY(0)
+  to
+    transform: translateY(-50%)
