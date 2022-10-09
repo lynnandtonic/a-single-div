@@ -1,0 +1,94 @@
+/*-----------------------------
+
+Rise
+
+-----------------------------*/
+
+$rise-pink = darken(pink,7)
+
+#rise
+  background-color: white
+
+  div
+    width: 200px
+    height: 310px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(black, black) 50% 6.5em / 1.6em .1em, // balloon stuff
+                linear-gradient( 125deg, alpha(firebrick,0) 50%, firebrick 51%) calc(50% - .4em) 6em / .8em 1em,
+                linear-gradient(-125deg, alpha(firebrick,0) 50%, firebrick 51%) calc(50% + .4em) 6em / .8em 1em,
+                linear-gradient( 125deg, alpha(maroon,0) 50%, maroon 51%)       calc(50% - .7em) 5.8em / 1.5em 1.4em,
+                linear-gradient(-125deg, alpha(maroon,0) 50%, maroon 51%)       calc(50% + .7em) 5.8em / 1.5em 1.4em,
+                linear-gradient(black, black) left calc(50% + .2em) bottom 5.05em / 5em .1em,
+                linear-gradient(173deg, black(0) 50%, black 50.5%,
+                                        black 51.5%, black(0) 52%) left calc(50% + .1em) bottom 2.6em / 5.2em 5em,
+                radial-gradient(circle, $rise-pink 50%, alpha(pink,0) 51%) left calc(50% - 4.7em) bottom 7.1em / 1.2em 1.2em, // nose
+                radial-gradient(circle, #222 50%, black(0) 51%) left calc(50% - .4em) bottom 8.4em / .4em .4em, // eyes
+                radial-gradient(circle, #222 50%, black(0) 51%) left calc(50% + .2em) bottom 8.2em / .4em .4em,
+                radial-gradient(circle at 50% 70%, #555 50%, black(0) 51%) left calc(50% + 1.2em) bottom 9.2em / 1.2em 1.2em, // ear
+                radial-gradient(circle at 50% 70%, #222 50%, black(0) 51%) left calc(50% + 1.2em) bottom 9em / 1.8em 1.8em,
+                radial-gradient(circle at 0 50%, white 55%, white(0) 55.5%) left calc(50% + .6em) bottom 7.7em / 1em 1.3em, // face
+                linear-gradient( 159deg, white(0) 50%, white 51%) left calc(50% - 2.3em) bottom 7.7em / 5em 1.3em,
+                linear-gradient( 159deg, alpha(#999,0) 50%, #999 51%) left calc(50% - 2.9em) bottom 7.5em / 6.2em 1.7em,
+                radial-gradient(circle at 50% 0, white 40%, #999 40.5%,
+                                                 #999 70%, alpha(#999,0) 70.5%) left calc(50% - 3.1em) bottom 7.15em / .8em .4em, // teeth
+                radial-gradient(circle at 50% 0, white 40%, #999 40.5%,
+                                                 #999 70%, alpha(#999,0) 70.5%) left calc(50% - 2.2em) bottom 7.15em / .8em .4em,
+                linear-gradient($rise-pink, $rise-pink) left calc(50% - 4em) bottom 6.5em / .2em .6em, // fingers
+                linear-gradient($rise-pink, $rise-pink) left calc(50% - 4.25em) bottom 6.4em / .7em .2em,
+                linear-gradient(45deg, alpha(pink,0) 35%, $rise-pink 35.5%,
+                                       $rise-pink 65%, alpha(pink,0) 65.5%) left calc(50% - 4.3em) bottom 6.5em / .5em .5em,
+                linear-gradient($rise-pink, $rise-pink) left calc(50% + 4.4em) bottom 6.6em / .2em .6em,
+                linear-gradient($rise-pink, $rise-pink) left calc(50% + 4.65em) bottom 6.4em / .7em .2em,
+                linear-gradient(-45deg, alpha(pink,0) 35%, $rise-pink 35.5%,
+                                       $rise-pink 65%, alpha(pink,0) 65.5%) left calc(50% + 4.7em) bottom 6.5em / .5em .5em,
+                linear-gradient(-160deg, #ccc 40%, alpha(#ccc,0) 40.5%) left calc(50% - 2.5em) bottom 5.1em / 2.5em 1.4em, // arms
+                linear-gradient(-160deg, #999 40%, alpha(#ccc,0) 40.5%) left calc(50% - 2.8em) bottom 4.6em / 2.5em 2.1em,
+                linear-gradient( 160deg, #ccc 40%, alpha(#ccc,0) 40.5%) left calc(50% + 2.9em) bottom 5.1em / 2.5em 1.4em,
+                linear-gradient( 160deg, #999 40%, alpha(#ccc,0) 40.5%) left calc(50% + 3.2em) bottom 4.6em / 2.5em 2.1em,
+                linear-gradient( 60deg, $rise-pink 60%, alpha(pink,0) 60.5%) left calc(50% - 4.6em) bottom 3em / .4em 2em, // toes
+                linear-gradient(-60deg, $rise-pink 60%, alpha(pink,0) 60.5%) left calc(50% + 5.1em) bottom 3em / .4em 2em,
+                linear-gradient( 160deg, alpha(#ccc,0) 60%, #ccc 60.5%) left calc(50% - 3em) bottom 3.2em / 3.3em 2em, // legs
+                linear-gradient( 160deg, alpha(#999,0) 60%, #999 60.5%) left calc(50% - 3.1em) bottom 3em / 3.3em 2.9em,
+                linear-gradient(-160deg, alpha(#ccc,0) 60%, #ccc 60.5%) left calc(50% + 3.5em) bottom 3.2em / 3.3em 2em,
+                linear-gradient(-160deg, alpha(#999,0) 60%, #999 60.5%) left calc(50% + 3.6em) bottom 3em / 3.3em 2.9em,
+                linear-gradient( 110deg, alpha(#ccc,0) 41%,
+                                               #ccc 41.5%, #ccc 56%,
+                                               #ddd 57%) left calc(50% - 1.3em) bottom 3.2em / 4em 4.5em, // body
+                linear-gradient(-100deg, alpha(#ccc,0) 38%,
+                                               #ccc 38.5%, #ccc 56%,
+                                               #ddd 57%) left calc(50% + 1.7em) bottom 3.2em / 3em 5.8em,
+                linear-gradient( 110deg, alpha(#999,0) 40%, #999 40.5%) left calc(50% - 1.45em) bottom 3em / 4.8em 4.9em,
+                linear-gradient(-100deg, alpha(#999,0) 38%, #999 38.5%) left calc(50% + 1.85em) bottom 3em / 3.8em 6.2em,
+                radial-gradient(circle, #555 50%, black(0) 51%) left calc(50% - .4em) bottom 8.9em / 1.4em 1.4em, // ear
+                radial-gradient(circle, #222 50%, black(0) 51%) left calc(50% - .4em) bottom 8.6em / 2em 2em,
+                linear-gradient( 80deg, alpha(pink,0) 45%, $rise-pink 45.5%) left calc(50% - .6em) bottom 1.1em / 1.3em 3em,// tail
+                linear-gradient(-80deg, alpha(pink,0) 45%, $rise-pink 45.5%) left calc(50% + .6em) bottom 1.1em / 1.3em 3em,
+                linear-gradient( 45deg, alpha(pink,0) 50.5%, $rise-pink 51%,
+                                        $rise-pink 80%, alpha(pink,0) 80.5%) center bottom .2em / 2em .9em,
+                linear-gradient(  3deg, $rise-pink 40%, alpha(pink,0) 40.5%) left calc(50% + 1.2em) bottom .2em / 1.5em 1em,
+                linear-gradient(-70deg, alpha(pink,0) 47.5%, $rise-pink 48%,
+                                        $rise-pink 76%, alpha(pink,0) 76.5%) left calc(50% + 2.2em) bottom .2em / 1em 1.4em,
+                linear-gradient(  5deg, alpha(pink,0) 55%, $rise-pink 55.5%) left calc(50% + 1.8em) bottom 1.1em / 1em .5em,
+                linear-gradient(110deg, $rise-pink 45%, alpha(pink,0) 45.5%) left calc(50% + 1.5em) bottom 1.1em / .5em .5em,
+                linear-gradient(black, black) 50% 0 / .13em 80%
+    background-repeat: no-repeat
+    animation: rise-balloon 2000ms infinite ease-in-out
+
+    &::before
+      width: 100px
+      height: @width
+      left: 50%
+      margin-left: -(@width/2)
+      background: radial-gradient(circle, white(.3) 50%, white(0) 50%) 80% 20% / 2em 2em
+      background-repeat: no-repeat
+      background-color: crimson
+      border-radius: 50%
+      box-shadow: 0 0 0 .2em maroon,
+                  inset 1em -1em 0 firebrick
+
+@keyframes rise-balloon
+  0, 100%
+    transform: translate(0,0)
+  50%
+    transform: translate(0,.5em)
