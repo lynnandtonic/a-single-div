@@ -1,0 +1,160 @@
+/*-----------------------------
+
+Game
+
+-----------------------------*/
+
+#game
+  background-color: dodgerblue
+
+  div
+    width: 160px
+    height: 110px
+    margin-left: -(@width/2 + 10px)
+    margin-top: -(@height/2 + 45px)
+    background: linear-gradient(#eee, #eee) 36.3% 38.5% / .45em .1em,
+                linear-gradient(#eee, #eee) 35.65% 39.5% / .55em .1em,
+                linear-gradient(#eee, #eee) 36% 52% / .5em 1.6em,
+                linear-gradient(#eee, #eee) 33.1% 43% / .2em .5em,
+                linear-gradient(#eee, #eee) 44.3% 38.5% / .45em .1em,
+                linear-gradient(#eee, #eee) 43.7% 39.5% / .55em .1em,
+                linear-gradient(#eee, #eee) 44% 52% / .5em 1.6em,
+                linear-gradient(#eee, #eee) 41% 43% / .2em .5em,
+                linear-gradient(#eee, #eee) 50% 44% / .4em .4em,
+                linear-gradient(#eee, #eee) 50% 56% / .4em .4em,
+                linear-gradient(#eee, #eee) 57.5% 38.5% / .45em .1em,
+                linear-gradient(#eee, #eee) 57.1% 39.5% / .55em .1em,
+                linear-gradient(#eee, #eee) 57.3% 52% / .5em 1.6em,
+                linear-gradient(#eee, #eee) 54.1% 43% / .2em .5em,
+                linear-gradient(#eee, #eee) 65.7% 38.5% / .45em .1em,
+                linear-gradient(#eee, #eee) 65.3% 39.5% / .55em .1em,
+                linear-gradient(#eee, #eee) 65.5% 52% / .5em 1.6em,
+                linear-gradient(#eee, #eee) 61.7% 43% / .2em .5em
+    background-repeat: no-repeat
+    background-color: #666
+    border-radius: 10px
+    box-shadow: inset 0 0 0 7px #444,
+                -2px -2px 0 2px gold,
+                21px -2px 0 2px gold,
+                -2px 80px 0 2px gold,
+                21px 80px 0 2px gold,
+                -2px 90px 0 2px orange,
+                21px 90px 0 2px orange
+    // transform: scale(1.2)
+
+    &::before
+      width: 211px
+      height: 200px
+      top: -2px
+      left: -2px
+      background: radial-gradient(#444 20%, black(0) 21%,
+                                  black(0) 50%, black(.4) 51%,
+                                  black(.4) 63%, black(0) 64%) right 1.75em top 0 / 1.2em 1.2em,
+                  radial-gradient(alpha(gold,0) 50%, gold 50.5%,
+                                  gold 79%, alpha(gold,0) 79.5%) right 1.75em top 0 / 1.2em 1.2em,
+                  repeating-conic-gradient(from 0deg, #aaa  0deg 10deg,
+                                                      #ddd 10deg 60deg,
+                                                      #aaa 60deg 90deg) right 1.9em top .1em / .9em 1em,
+                  radial-gradient(#444 20%, black(0) 21%,
+                                  black(0) 50%, black(.4) 51%,
+                                  black(.4) 63%, black(0) 64%) left 0 bottom .5em / 1.2em 1.2em,
+                  radial-gradient(alpha(gold,0) 50%, gold 50.5%,
+                                  gold 79%, alpha(gold,0) 79.5%) left 0 bottom .5em / 1.2em 1.2em,
+                  repeating-conic-gradient(from 0deg, #aaa  0deg 10deg,
+                                                      #ddd 10deg 60deg,
+                                                      #aaa 60deg 90deg) left .15em bottom .6em / .9em 1em,
+                  radial-gradient(#444 20%, black(0) 21%,
+                                  black(0) 50%, black(.4) 51%,
+                                  black(.4) 63%, black(0) 64%) right 1.75em bottom .5em / 1.2em 1.2em,
+                  radial-gradient(alpha(gold,0) 50%, gold 50.5%,
+                                  gold 79%, alpha(gold,0) 79.5%) right 1.75em bottom .5em / 1.2em 1.2em,
+                  repeating-conic-gradient(from 0deg, #aaa  0deg 10deg,
+                                                      #ddd 10deg 60deg,
+                                                      #aaa 60deg 90deg) right 1.9em bottom .6em / .9em 1em,
+                  radial-gradient(white 20%,
+                                  gold 21%,
+                                  gold 50%,
+                                  orange 51%,
+                                  orange 62%,
+                                  alpha(orange,0) 63%) right 1.75em top 1.3em / 1.2em 1.2em,
+                  radial-gradient(orange 62%,
+                                  alpha(orange,0) 63%) right 1.75em top 1.4em / 1.2em 1.2em,
+                  radial-gradient(circle, black(.6) 70%, black(0) 70.5%) right 2.31em top 3.25em / .1em .1em, // speaker
+                  radial-gradient(circle, black(.6) 70%, black(0) 70.5%) right 2.31em top 3.55em / .1em .1em,
+                  radial-gradient(circle, black(.6) 70%, black(0) 70.5%) right 2.31em top 3.85em / .1em .1em,
+                  radial-gradient(circle, black(.6) 70%, black(0) 70.5%) right 2.31em top 4.15em / .1em .1em,
+                  radial-gradient(circle, black(.6) 70%, black(0) 70.5%) right 2.31em top 4.45em / .1em .1em,
+                  radial-gradient(circle, black(.6) 70%, black(0) 70.5%) right 2.31em top 4.75em / .1em .1em,
+                  radial-gradient(circle, black(.6) 70%, black(0) 70.5%) right 2.31em top 5.05em / .1em .1em,
+                  radial-gradient(circle, #aaa 70%, alpha(#aaa,0) 70.5%) right 2.1em top 3em / .5em .5em,
+                  linear-gradient(to right, #aaa, #aaa) right 2.1em top 3.3em / .5em 1.8em,
+                  radial-gradient(circle, #aaa 70%, alpha(#aaa,0) 70.5%) right 2.1em top 4.9em / .5em .5em,
+                  linear-gradient(to bottom, alpha(gold,0) 14%,
+                                             gold 14.5%,
+                                             gold 85.5%,
+                                             alpha(gold,0) 86%) left 1.55em bottom 2.7em / 1.9em 1em, // arrows
+                  linear-gradient(to right, alpha(gold,0) 14%,
+                                            gold 14.5%,
+                                            gold 85.5%,
+                                            alpha(gold,0) 86%) left 2em bottom 2.3em / 1em 1.9em,
+                  radial-gradient(circle at 50% 100%, alpha(orange,0) 50%,
+                                                      orange 50.5%,
+                                                      orange 70%,
+                                                      alpha(orange,0) 70.5%) left 2em bottom 4.1em / 1em .5em,
+                  radial-gradient(circle at 50% 0, gold 50%,
+                                                   orange 50.5%,
+                                                   orange 70%,
+                                                   alpha(orange,0) 70.5%) left 2em bottom 1.8em / 1em .5em,
+                  radial-gradient(circle, orange 70%, alpha(orange,0) 70.5%) left 2em bottom 1.6em / 1em 1em,
+                  linear-gradient(to right, orange,
+                                            orange 14%,
+                                            alpha(orange,0) 14.5%,
+                                            alpha(orange,0) 85.5%,
+                                            orange 86%,
+                                            orange 100%) left 2em bottom 2.2em / 1em 1.9em,
+                  radial-gradient(circle at 100% 50%, gold 50%,
+                                                      orange 50.5%,
+                                                      orange 70%,
+                                                      alpha(orange,0) 70.5%) left 1.05em bottom 2.7em / .5em 1em,
+                  radial-gradient(circle, orange 70%, alpha(orange,0) 70.5%) left 1.05em bottom 2.6em / 1em 1em,
+                  radial-gradient(circle at 0 50%, gold 50%,
+                                                   orange 50.5%,
+                                                   orange 70%,
+                                                   alpha(orange,0) 70.5%) left 3.45em bottom 2.7em / .5em 1em,
+                  radial-gradient(circle, orange 70%, alpha(orange,0) 70.5%) left 2.95em bottom 2.6em / 1em 1em,
+                  linear-gradient(to bottom, orange,
+                                             orange 14%,
+                                             alpha(orange,0) 14.5%,
+                                             alpha(orange,0) 85.5%,
+                                             orange 86%,
+                                             orange 100%) left 1.55em bottom 2.7em / 1.9em 1em,
+                  linear-gradient(orange, orange) left 1.55em bottom 2.6em / 1.9em 1em,
+                  radial-gradient(white 25%, gold 26%,
+                                  gold 55%, orange 56%,
+                                  orange 65%, alpha(orange,0) 65%) right 5.6em bottom 3em / 1.8em 1.8em, // buttons
+                  radial-gradient(orange 65%, alpha(orange,0) 65%) right 5.6em bottom 2.8em / 1.8em 1.8em,
+                  radial-gradient(white 25%, gold 26%,
+                                  gold 55%, orange 56%,
+                                  orange 65%, alpha(orange,0) 65%) right 3.2em bottom 3em / 1.8em 1.8em,
+                  radial-gradient(orange 65%, alpha(orange,0) 65%) right 3.2em bottom 2.8em / 1.8em 1.8em,
+                  radial-gradient(circle, gold 45%,
+                                          black(.3) 45.5%,
+                                          black(.3) 60%,
+                                          black(0) 60.5%) right .7em top 6.1em / .5em .5em, // crank
+                  radial-gradient(circle at 50% 0, #ccc 50%, alpha(#ccc,0) 51%) right .35em top 6.3em / 1.2em .6em,
+                  linear-gradient(to bottom, #aaa, #aaa .2em,
+                                             white .2em, white .4em,
+                                             #ccc .4em, #ccc) right .52em top 3.11em / .86em 3.2em,
+                  linear-gradient(#bbb, #bbb) right 1.35em top 5.9em / .28em .8em
+                  
+      background-repeat: no-repeat
+
+    &::after
+      width: 1.8em
+      height: 1.2em
+      right: -4.5em
+      top: 3em
+      border-radius: .2em
+      background-color: gold
+      box-shadow: 0 .3em 0 orange,
+                  -.35em .15em 0 -.2em darkorange
