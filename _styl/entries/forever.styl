@@ -1,0 +1,48 @@
+/*-----------------------------
+
+Forever
+
+-----------------------------*/
+
+#forever
+  background-color: crimson
+
+  div
+    width: 28px
+    height: calc(100% - 100px)
+    margin-left: -(@width/2)
+    top: -20%
+    background: radial-gradient(circle, #ccc 50%, alpha(#ccc,0) 51%) 79% 0 / .3em .3em,
+                radial-gradient(circle, black(.3) 40%, black(0) 75%) 70% .4em / .3em .3em,
+                radial-gradient(circle, black(.2) 40%, black(0) 80%) 0 .3em / .3em .3em
+    background-repeat: repeat-y
+
+    &::before
+      width: 60px
+      height: 100px
+      left: -5px
+      bottom: -85px
+      border-radius: 2em 2em .1em .1em
+      background: radial-gradient(circle, maroon 40%, alpha(maroon,0) 41%) 78.5% 10% / .9em .9em,
+                  radial-gradient(circle, white(.5) 40%, white(0) 50%) 81% 11% / .9em .9em,
+                  linear-gradient(128deg, white(0) 20%,
+                                          white(.4) 35%,
+                                          white(0) 50%) 0 0 / 100% 100%,
+                  linear-gradient(114deg, goldenrod 34%, alpha(goldenrod,0) 35%) 0 100% / 2em 2em,
+                  linear-gradient(170deg, goldenrod 84%, alpha(goldenrod,0) 85%) 10% 70% / 2em 2em,
+                  linear-gradient(115deg, goldenrod 45%, alpha(goldenrod,0) 46%) 103% 61% / 2em 2em,
+                  linear-gradient(170deg, goldenrod 84%, alpha(goldenrod,0) 85%) 100% 35% / 2em 2em,
+                  linear-gradient(goldenrod, goldenrod) 0 0 / 2em 69%,
+                  linear-gradient(goldenrod, goldenrod) 100% 0 / 2em 50%
+      background-repeat: no-repeat
+      transform: rotate(-45deg)
+      box-shadow: -.2em 0 .1em -.3em black(.6),
+                  -.6em 0 .4em -.3em black(.3),
+                  inset .1em .1em .1em white(.6)
+
+    &::after
+      width: 100%
+      height: 100.7%
+      background: repeat-y  radial-gradient(circle, #bbb 50%, alpha(#bbb,0) 51%) 30% 100% / .3em .3em,
+                  no-repeat radial-gradient(circle, black(.5) 40%, black(0) 75%) 25% 99.2% / .3em .3em,
+                  no-repeat radial-gradient(circle, black(.5) 40%, black(0) 75%) 25% 97.8% / .3em .3em
