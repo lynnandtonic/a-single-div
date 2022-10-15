@@ -1,0 +1,69 @@
+/*-----------------------------
+
+Erase
+
+-----------------------------*/
+
+#erase
+
+  div
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: linear-gradient(to right, alpha(slateblue, 0) 15%, slateblue 15%,
+                                          slateblue 20%, gold 20%,
+                                          gold 40%, orange 40%,
+                                          orange 60%, darkorange 60%,
+                                          darkorange 80%, slateblue 80%,
+                                          slateblue 85%, alpha(slateblue, 0) 85%) 50% 50% / 5em 60%,
+                linear-gradient(to right, black(0) 20%, black(.2) 20%,
+                                          black(.2) 80%, black(0) 80%) 50% 15% / 5em .2em,
+                linear-gradient(to right, black(0) 20%, black(.2) 20%,
+                                          black(.2) 80%, black(0) 80%) 50% 16.5% / 5em .2em,
+                linear-gradient(to right, black(0) 20%, black(.2) 20%,
+                                          black(.2) 80%, black(0) 80%) 50% 18% / 5em .2em,
+                linear-gradient(to right, black(0) 20%, black(.2) 20%,
+                                          black(.2) 80%, black(0) 80%) 50% 19.5% / 5em .2em,
+                linear-gradient(to right, alpha(slateblue, 0) 15%, slateblue 15%,
+                                          slateblue 20%, #ccc 20%,
+                                          #ccc 50%, #aaa 50%,
+                                          #aaa 80%, slateblue 80%,
+                                          slateblue 85%, alpha(slateblue, 0) 85%) 50% 17.5% / 5em 20%,
+                linear-gradient(to right, alpha(slateblue, 0) 15%, slateblue 15%,
+                                          slateblue 20%, lightpink 20%,
+                                          lightpink 50%, pink 50%,
+                                          pink 80%, slateblue 80%,
+                                          slateblue 85%, alpha(slateblue, 0) 85%) 50% 7% / 5em 20%,
+                linear-gradient(to right, alpha(slateblue, 0) 15%, slateblue 15%,
+                                          slateblue 85%, alpha(slateblue, 0) 85%) 50% 5% / 5em 20%,
+                linear-gradient( 70deg, alpha(slateblue, 0) 72%, slateblue 72.2%,
+                                        slateblue 76%, tan 76.2%) calc(50% - 2.5em) 93% / 5em 14%,
+                linear-gradient(-70deg, alpha(slateblue, 0) 72%, slateblue 72.2%,
+                                        slateblue 76%, peru 76.2%) calc(50% + 2.5em) 93% / 5em 14%,
+                linear-gradient( 70deg, alpha(slateblue, 0) 90.7%, slateblue 90.9%,
+                                        slateblue 95.4%, #666 95.6%) calc(50% - 2.5em) 96.8% / 5em 3%,
+                linear-gradient(-70deg, alpha(slateblue, 0) 90.7%, slateblue 90.9%,
+                                        slateblue 95.4%, #333 95.6%) calc(50% + 2.5em) 96.8% / 5em 3%
+    background-repeat: repeat-x
+    background-color: darkslateblue
+
+    &::before
+      width: 40%
+      height: 3em
+      right: 20%
+      top: 50%
+      background: conic-gradient(white 0.25turn,
+                                 #ccc 0.25turn 0.5turn,
+                                 white 0.5turn 0.75turn,
+                                 #ccc 0.75turn) top left / 1em 1em repeat;
+      background-color: black(.1)
+      border-radius: 1.5em
+
+    &::after
+      width: 3em
+      height: 3em
+      right: 20%
+      top: 50%
+      border-radius: 50%
+      box-shadow: inset 0 0 0 .1em black
