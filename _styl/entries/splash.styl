@@ -1,0 +1,95 @@
+/*-----------------------------
+
+Splash
+
+-----------------------------*/
+
+frootloop(color)
+  radial-gradient(circle, alpha(color,0) 20%, color 20.5%, color 50%, alpha(color,0) 50.5%)
+
+#splash
+  background-color: #222
+
+  div
+    width: 300px
+    height: @width
+    margin-left: -(@width/2 + 10px)
+    margin-top: -(@height/2)
+    background: linear-gradient(royalblue, royalblue) 50% 100.5% / 100% .2em,
+                radial-gradient(circle at 50% 0, black(0) 55%,
+                                                 black(.1) 55.5%,
+                                                 black(.1) 60%,
+                                                 black(0) 60.5%) 50% 115% / 15em 7.5em,
+                linear-gradient(crimson, crimson) 50% 73% / 12.8em .2em,
+                radial-gradient(circle at 50% 0, white 60%, white(0) 60.5%) 50% 115% / 15em 7.5em,
+                frootloop(lightgreen) 19% 71% / 2em 2em,
+                frootloop(yellow)     28% 72% / 2em 2em,
+                frootloop(orange)     22% 73% / 2em 2em,
+                frootloop(tomato)     39% 70% / 2em 2em,
+                frootloop(tomato)     25% 67% / 2em 2em,
+                frootloop(aqua)       27% 70% / 2em 2em,
+                frootloop(orange)     35% 71% / 2em 2em,
+                frootloop(yellow)     45% 72% / 2em 2em,
+                frootloop(blueviolet) 34% 67% / 2em 2em,
+                frootloop(lightgreen) 32% 65% / 2em 2em,
+                frootloop(aqua)       81% 71% / 2em 2em,
+                frootloop(tomato)     77% 72% / 2em 2em,
+                frootloop(yellow)     68% 72% / 2em 2em,
+                frootloop(lightgreen) 60% 74% / 2em 2em,
+                frootloop(lightgreen) 73% 70% / 2em 2em,
+                frootloop(orange)     79% 68% / 2em 2em,
+                frootloop(blueviolet) 64% 70% / 2em 2em,
+                frootloop(tomato)     70% 67% / 2em 2em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 32% 40% / .2em .2em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 20% 50% / .2em .2em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 47% 45% / .2em .2em,
+                radial-gradient(circle at 0 100%, white(0) 40%, white 40.5%,
+                                                  white 42%, white(0) 42.5%) 52.6% 60% / 5em 2.5em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 36% 53% / .3em .3em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 42% 59% / .2em .2em,
+                radial-gradient(circle at 0 100%, white(0) 20%, white 20.5%,
+                                                  white 22%, white(0) 22.5%) 60.8% 51% / 5em 2.5em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 42.5% 51% / .2em .2em,
+                radial-gradient(circle at 100% 100%, white(0) 40%, white 40.5%,
+                                                     white 42%, white(0) 42.5%) 53.5% 64% / 5em 2.5em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 68.5% 56.5% / .3em .3em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 61.5% 61% / .2em .2em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 70% 45% / .2em .2em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 80% 52% / .2em .2em,
+                radial-gradient(circle at 100% 100%, white(0) 24%, white 24.5%,
+                                                     white 26%, white(0) 26.5%) 47% 56% / 5em 2.5em,
+                radial-gradient(circle, white 50%, white(0) 50.5%) 63.5% 54.3% / .2em .2em
+    background-repeat: no-repeat
+
+    &::before
+      width: 20%
+      height: 56.8%
+      right: 4.9em
+      bottom: 5.2em
+      border-top-left-radius: 2em
+      box-shadow: -.6em -.1em 0 white
+
+
+    &::after
+      box-sizing: border-box
+      content: "milk"
+      width: 100px
+      height: 140px
+      right: 0
+      padding: 3.2em .6em 0 0
+      background: linear-gradient(-50deg, black(0) 50%, black(.25) 50.5%) 1.56em 0 / 2em 2.6em,
+                  linear-gradient(white, white) 77% 88% / 3.2em 3.2em,
+                  linear-gradient(royalblue, royalblue) 80% 90% / 3.5em 3.5em,
+                  linear-gradient(to bottom, white 9%,
+                                             royalblue 9%,
+                                             royalblue 30%,
+                                             white 30%) 100% 0 / 75% 100%,
+                  linear-gradient(60deg, white(0) 55%, #ddd 55.5%) 0 0 / 1.8em 2.6em
+      background-repeat: no-repeat
+      border-top-right-radius: .4em
+      text-align: right
+      font-family: Helvetica, sans-serif
+      font-size: 1em
+      font-weight: bold
+      color: royalblue
+      transform: rotate(-50deg)
