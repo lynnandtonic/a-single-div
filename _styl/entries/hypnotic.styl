@@ -1,0 +1,91 @@
+/*-----------------------------
+
+Hypnotic
+
+-----------------------------*/
+
+#hypnotic
+  background-color: #222
+
+  div
+    width: 300px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    overflow: hidden
+    background-color: black
+    box-shadow: 0 0 0 .6em black
+
+    &::before
+      width: calc(100% + 40px)
+      height: 100%
+      left: -40px
+      opacity: .5
+      background: radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) -240px 50%,
+                  radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) -200px 50%,
+                  radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) -160px 50%,
+                  radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) -120px 50%,
+                  radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) -80px 50%,
+                  radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) -40px 50%,
+                  radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) 0 50%,
+                  radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) 40px 50%,
+                  radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) 80px 50%,
+                  radial-gradient(circle at 0 50%, alpha(cyan,0)  55%, alpha(cyan,.8) 55.2%,
+                                                   alpha(cyan,.8) 60%, alpha(cyan,0)  60.2%) 120px 50%
+      background-repeat: no-repeat
+      background-size: 400px 400px
+      animation: hypnotic1 2.5s linear infinite
+      @media (prefers-reduced-motion)
+        animation: none
+
+    &::after
+      width: calc(100% + 40px)
+      height: 100%
+      right: -40px
+      opacity: .5
+      background: radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) 180px 50%,
+                  radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) 140px 50%,
+                  radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) 100px 50%,
+                  radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) 60px 50%,
+                  radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) 20px 50%,
+                  radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) -20px 50%,
+                  radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) -60px 50%,
+                  radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) -100px 50%,
+                  radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) -140px 50%,
+                  radial-gradient(circle at 100% 50%, alpha(magenta,0)  55%, alpha(magenta,.8) 55.2%,
+                                                      alpha(magenta,.8) 60%, alpha(magenta,0)  60.2%) -180px 50%
+      background-repeat: no-repeat
+      background-size: 400px 400px
+      animation: hypnotic2 2.5s linear infinite
+      @media (prefers-reduced-motion)
+        animation: none
+
+@keyframes hypnotic1
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(40px)
+
+@keyframes hypnotic2
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(-40px)
