@@ -1,0 +1,104 @@
+/*-----------------------------
+
+Pun
+
+-----------------------------*/
+
+$pun-w = 14px
+
+#pun
+  background-color: midnightblue
+
+  div
+    width: 380px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient( 130deg, white(0) 49.5%,
+                                         white(.6) 50%,
+                                         white(.6) 50.5%,
+                                         white(0) 51%) 38% 41% / 5em 6em,
+                linear-gradient(-130deg, white(0) 49.5%,
+                                         white(.6) 50%,
+                                         white(.6) 50.5%,
+                                         white(0) 51%) 62% 41% / 5em 6em
+    background-repeat: no-repeat
+
+    &::before
+      width: 334px
+      height: 98px
+      left: 50%
+      bottom: 20%
+      margin-left: -(@width/2)
+      background: linear-gradient(-45deg, white(0) 32.7%, white 33%) $pun-w*3 ($pun-w*4 - .1em) / $pun-w $pun-w*2, // C
+                  linear-gradient(to left, black(.2), black(0) 25%) $pun-w ($pun-w*5 - .1em) / $pun-w*2 $pun-w,
+                  linear-gradient(45deg, white(0) 32.7%, white 33%) $pun-w ($pun-w*5 - .1em) / $pun-w*2 $pun-w,
+                  linear-gradient(to top, black(.2), black(0) 25%) $pun-w $pun-w / $pun-w $pun-w*4,
+                  linear-gradient( 138deg, white(0) 17.9%, white 18.2%) $pun-w $pun-w / $pun-w $pun-w*4,
+                  linear-gradient(-138deg, white(0) 30.5%, white 30.8%) ($pun-w*3 - .1em) $pun-w / $pun-w $pun-w*2,
+                  linear-gradient(to right, #aaa, white 35%,
+                                            white 65%, #aaa) ($pun-w*2 - .1em) $pun-w / $pun-w $pun-w,
+                  linear-gradient(45deg, white(0) 29.7%, white 30%) $pun-w*5 ($pun-w*5 - .1em) / $pun-w*2.3 $pun-w, // L
+                  linear-gradient(to top, black(.2), black(0) 25%) $pun-w*5 $pun-w / $pun-w $pun-w*4,
+                  linear-gradient(white, white) $pun-w*5 $pun-w / $pun-w $pun-w*4,
+                  linear-gradient(to right, black(.2), black(0) 25%) ($pun-w*9 - .1em) $pun-w / $pun-w*2 $pun-w, // O
+                  linear-gradient(-138deg, white(0) 34.5%, white 34.8%) ($pun-w*9 - .1em) $pun-w / $pun-w*2 $pun-w,
+                  linear-gradient(to bottom, black(.2), black(0) 25%) $pun-w*10 ($pun-w*2 - .1em) / $pun-w $pun-w*4,
+                  linear-gradient(-45deg, white(0) 20%, white 20.3%) $pun-w*10 ($pun-w*2 - .1em) / $pun-w $pun-w*4,
+                  linear-gradient(to left, black(.2), black(0) 25%) $pun-w*8 ($pun-w*5 - .1em) / $pun-w*2 $pun-w,
+                  linear-gradient(45deg, white(0) 32.7%, white 33%) $pun-w*8 ($pun-w*5 - .1em) / $pun-w*2 $pun-w,
+                  linear-gradient(to top, black(.2), black(0) 25%) $pun-w*8 $pun-w / $pun-w $pun-w*4,
+                  linear-gradient( 138deg, white(0) 17.9%, white 18.2%) $pun-w*8 $pun-w / $pun-w $pun-w*4,
+                  linear-gradient( 135deg, white(0) 39%, white 39.3%) $pun-w*12 $pun-w / $pun-w*1.5 $pun-w, // S
+                  linear-gradient(-135deg, white(0) 39%, white 39.3%) ($pun-w*13.5 - .1em) $pun-w / $pun-w*1.5 $pun-w,
+                  linear-gradient(45deg, white(0) 24.7%, white 25%,
+                                         white 75%, white(0) 75.3%) $pun-w*12 ($pun-w*3 - .1em) / $pun-w*3 $pun-w,
+                  linear-gradient( 45deg, white(0) 39%, white 39.3%) $pun-w*12 ($pun-w*5 - .1em) / $pun-w*1.5 $pun-w,
+                  linear-gradient(-45deg, white(0) 39%, white 39.3%) ($pun-w*13.5 - .1em) ($pun-w*5 - .1em) / $pun-w*1.5 $pun-w,
+                  linear-gradient(to bottom, #aaa, white 35%,
+                                             white 65%, #aaa) $pun-w*12 ($pun-w*2- .1em) / $pun-w $pun-w,
+                  linear-gradient(to bottom, #aaa, white 35%,
+                                             white 65%, #aaa) $pun-w*14 ($pun-w*4- .1em) / $pun-w $pun-w,
+                  linear-gradient( 138deg, white(0) 26%, white 26.3%) $pun-w*16 $pun-w / $pun-w*3 $pun-w, // E
+                  linear-gradient( 45deg, white(0) 25%, white 25.3%) $pun-w*16 ($pun-w*5 - .1em) / $pun-w*3 $pun-w,
+                  linear-gradient(to bottom, #aaa, white 20%,
+                                             white 80%, #aaa) $pun-w*16 ($pun-w*2 - .1em) / $pun-w $pun-w*3,
+                  linear-gradient(to right, #aaa, white 25%) ($pun-w*17 - .1em) $pun-w*3 / $pun-w $pun-w,
+                  linear-gradient(to top, #aaa, white 20%) $pun-w*20 $pun-w / $pun-w $pun-w*4, // D
+                  linear-gradient(-45deg, white(0) 25%, white 25.3%) $pun-w*20 ($pun-w*5 - .1em) / $pun-w*3 $pun-w,
+                  linear-gradient(to right, black(.2), black(0) 25%) ($pun-w*21 - .1em) $pun-w / $pun-w*2 $pun-w,
+                  linear-gradient(-138deg, white(0) 34.5%, white 34.8%) ($pun-w*21 - .1em) $pun-w / $pun-w*2 $pun-w,
+                  linear-gradient(to bottom, #aaa, white 20%,
+                                             white 80%, #aaa) $pun-w*22 ($pun-w*2 - .1em) / $pun-w $pun-w*3
+      background-repeat: no-repeat
+      background-color: crimson
+      box-shadow: 0 0 0 .2em white,
+                  0 .5em 1em 0 black(.5)
+
+    &::after
+      width: 6em
+      height: 5em
+      left: 38%
+      top: 19%
+      background: linear-gradient(135deg, alpha(maroon,0) 49%,
+                                          alpha(maroon,.4) 50%,
+                                          alpha(maroon,0) 55%)  1.87em 1.94em / .88em .88em,
+                  linear-gradient( 45deg, alpha(orange,0) 54.5%, orange 55%) .78em 1.94em / 2.1em 2.1em,
+                  linear-gradient(-85deg, alpha(maroon,0) 3%,
+                                          alpha(maroon,.5) 8.3%,
+                                          alpha(maroon,0) 8.4%) 1.28em .36em / 1.6em 1.6em,
+                  linear-gradient(-85deg, orange 7.5%, alpha(orange,0) 8.5%) 1.28em .36em / 1.6em 1.6em,
+                  linear-gradient(-45deg, tomato 50.5%, alpha(tomato,0) 51%) 1.28em .35em / 1.6em 1.6em,
+                  linear-gradient( 85deg, alpha(maroon,.7), alpha(maroon,0) 15%) 2.86em .35em / 2.5em 3.45em,
+                  linear-gradient(-45deg, alpha(tomato,0) 54%, tomato 54.5%) 2.86em .35em / 2.5em 2.5em,
+                  linear-gradient(120deg, alpha(maroon,.5) 30%, alpha(maroon,0) 40%) 2.9em 2.05em / .55em 1.75em,
+                  linear-gradient(148deg, alpha(maroon,0) 35%, alpha(maroon,.5) 50%) 1em .95em / 2em 1em,
+                  linear-gradient( 45deg, alpha(tomato,0) 22%,
+                                          tomato 22.1%,
+                                          tomato 49.2%,
+                                          alpha(tomato,0) 49.3%) 1em .3em / 5em 3.5em,
+                  linear-gradient( 24deg, tomato 53.5%, alpha(tomato,0) 54%) 1em 0 / .68em .35em,
+                  linear-gradient(-83deg, alpha(maroon,.5) 5%, alpha(maroon,0) 15%) 0em 0 / 1em 1em,
+                  linear-gradient(130deg, alpha(orange,0) 54%, orange 54.5%) 0 0 / 1em 1em
+      background-repeat: no-repeat
+      transform: scale(1.2)
