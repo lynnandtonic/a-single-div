@@ -1,0 +1,52 @@
+/*-----------------------------
+
+Ten
+
+-----------------------------*/
+
+#ten
+  background-color: #222
+
+  div
+    box-sizing: border-box
+    width: 250px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-repeat: no-repeat
+    border-radius: 1em
+    border: .15em solid white
+    box-shadow: inset 0 0 0 .2em tomato,
+                inset 0 0 1em .3em tomato,
+                inset 1em 1em .4em black(.6),
+                0 0 0 .2em tomato,
+                0 0 1em .3em tomato,
+                1em 1em .4em black(.6)
+
+    &::before
+      width: .15em
+      height: 8em
+      left: 28%
+      top: 50%
+      margin-top: -(@height/2)
+      background-color: white
+      border-radius: 1em
+      box-shadow: 0 0 0 .2em tomato,
+                  0 0 1em .3em tomato,
+                  1em 1em .4em .2em black(.6)
+
+    &::after
+      box-sizing: border-box
+      width: 4em
+      height: 8.2em
+      left: 48%
+      top: 50%
+      margin-top: -(@height/2 + .1em)
+      border-radius: 2em
+      border: .15em solid white
+      box-shadow: inset 0 0 0 .2em tomato,
+                  inset 0 0 1em .3em tomato,
+                  inset 1em 1em .4em black(.6),
+                  0 0 0 .2em tomato,
+                  0 0 1em .3em tomato,
+                  1em 1em .4em black(.6)
