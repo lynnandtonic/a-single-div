@@ -1,0 +1,158 @@
+/*-----------------------------
+
+Valuable
+
+-----------------------------*/
+
+// had to do this for Safari
+valuable-event(color)
+  background-color: color
+  box-shadow: 0 .75em 0 color,
+              0 1em 0 color,
+              0 1.25em 0 color,
+              0 2.25em 0 color,
+              0 3em 0 color,
+              0 4.5em 0 color,
+              0 5.25em 0 color,
+              0 5.5em 0 color,
+              0 5.8em 0 color,
+              0 6.75em 0 color,
+              0 7em 0 color,
+              0 7.25em 0 color,
+              2.9em -.5em 0 color,
+              2.9em .75em 0 color,
+              2.9em 1.5em 0 color,
+              2.9em 2.25em 0 color,
+              2.9em 2.5em 0 color,
+              2.9em 2.75em 0 color,
+              2.9em 3.75em 0 color,
+              2.9em 5.25em 0 color,
+              2.9em 6em 0 color,
+              5.8em 0 0 color,
+              5.8em .75em 0 color,
+              5.8em 2.25em 0 color,
+              5.8em 3.75em 0 color,
+              5.8em 4em 0 color,
+              5.8em 4.25em 0 color,
+              5.8em 5.25em 0 color,
+              5.8em 6.75em 0 color,
+              8.7em 0 0 color,
+              8.7em .75em 0 color,
+              8.7em 1em 0 color,
+              8.7em 1.25em 0 color,
+              8.7em 2.25em 0 color,
+              8.7em 3.75em 0 color,
+              8.7em 4.5em 0 color,
+              8.7em 6em 0 color,
+              11.6em .75em 0 color,
+              11.6em 2.25em 0 color,
+              11.6em 2.5em 0 color,
+              11.6em 2.75em 0 color,
+              11.6em 3.75em 0 color,
+              11.6em 4.5em 0 color,
+              11.6em 5.25em 0 color,
+              11.6em 6.75em 0 color,
+              12em -11.6em 0 20em white,
+              7em -11.6em 0 20em white,
+              2em -11.6em 0 20em white,
+              -3em -11.6em 0 20em white,
+              0 0 0 20em #ddd
+
+#valuable
+  background-color: steelblue
+  z-index: 0
+
+  div
+    width: 320px
+    height: 280px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(to right, #aaa 1px, white(0) 1px) 50% 100.5% / 90% 2em,
+                linear-gradient(to left,   #aaa 1px, white(0) 1px) 50% 100.5% / 90% 2em,
+                linear-gradient(to bottom, #aaa 1px,
+                                           black(.2) 1px,
+                                           black(0) 8px) 50% 100.5% / 90% 2em,
+                linear-gradient(to right, black(.2) 1px,
+                                          black(0) 10px) 50% 100.5% / 90% 2em,
+                linear-gradient(white, white) 0 100% / 5% 2em,
+                linear-gradient(#ddd, #ddd) 0 100% / 8.2% 1.9em,
+                linear-gradient(white, white) 100% 100% / 5% 2em,
+                linear-gradient(#ddd, #ddd) 100% 100% / 8.2% 1.9em,
+                radial-gradient(circle, #bbb 49%, alpha(#bbb,0) 50%) 3% 2.5% / 1em 1em,
+                radial-gradient(circle, #bbb 49%, alpha(#bbb,0) 50%) 7.5% 2.5% / 1em 1em,
+                radial-gradient(circle, #bbb 49%, alpha(#bbb,0) 50%) 12% 2.5% / 1em 1em,
+                linear-gradient(#ddd, #ddd) 0 0 / 100% 10%,
+                repeating-linear-gradient(to bottom, #aaa, #aaa .1em,
+                                                           transparent .1em,
+                                                           transparent .2em) 3% 14% / .7em .5em,
+                linear-gradient(to right,  #ccc 1px, white(0) 1px) 8% 13% / 2em 1em,
+                linear-gradient(to left,   #ccc 1px, white(0) 1px) 8% 13% / 2em 1em,
+                linear-gradient(to bottom, #ccc 1px, white(0) 1px) 8% 13% / 2em 1em,
+                linear-gradient(to top,    #ccc 1px, white(0) 1px) 8% 13% / 2em 1em,
+                conic-gradient(#ccc 45deg, white(0) 45deg 315deg, #ccc 315deg) 90% 15% / 1em .5em,
+                linear-gradient(to right,  #ccc 1px, white(0) 1px) 90% 13% / 2em 1em,
+                linear-gradient(to left,   #ccc 1px, white(0) 1px) 90% 13% / 2em 1em,
+                linear-gradient(to bottom, #ccc 1px, white(0) 1px) 90% 13% / 2em 1em,
+                linear-gradient(to top,    #ccc 1px, white(0) 1px) 90% 13% / 2em 1em,
+                radial-gradient(circle, #bbb 50%, alpha(#bbb,0) 51%) 99% 12% / 1.5em 1.5em,
+                linear-gradient(to top, #ccc 1px, white 1px) 0 0 / 100% 20.2%,
+                linear-gradient(to right, #ccc 1px, white 1px) right 0 bottom 1.9em / 8% 100%,
+                linear-gradient(#ddd, #ddd) 100% 34% / 85% 1px,
+                repeating-linear-gradient(to right,  #ddd, #ddd 1px,
+                                                           white(0) 1px,
+                                                           white(0) 2.9em) right 1em bottom 1.9em / 80% 60%,
+                repeating-linear-gradient(to bottom,  #ddd, #ddd 1px,
+                                                            white(0) 1px,
+                                                            white(0) 1.5em) right 1em bottom 1.9em / 82% 48%
+    background-repeat: no-repeat
+    border-radius: .7em
+    overflow: hidden
+    box-shadow: 0 .2em .6em 0 black(.3)
+
+    &::before
+      width: 2.6em
+      height: .65em
+      left: 15.5%
+      top: 37.3%
+      valuable-event(purple)
+      border-radius: .2em
+      animation: valuable-fade 6s ease-in infinite
+      z-index: -1
+
+    &::after
+      width: 200%
+      height: 100%
+      right: 0
+      background: radial-gradient(circle at 50% 105%, white(0) 70%,
+                                                      #ddd 70.5%) 57.2% 96% / 2em 1em,
+                  linear-gradient(to bottom, white, white(0)) 56.8% 92.7% / .3em .2em,
+                  linear-gradient(to top, white(.6), white(0)) 58% 98.4% / .05em 1em,
+                  linear-gradient(to right, alpha(maroon,0), alpha(maroon,.9)) 55.6% 98.4% / .5em 1.4em,
+                  linear-gradient(to left,  alpha(maroon,0), alpha(maroon,.5)) 58.2% 98.4% / .5em 1.4em,
+                  radial-gradient(circle at 50% 105%, crimson 70%,
+                                                      alpha(crimson,0) 70.5%) 57.2% 96% / 2em 1em,
+                  linear-gradient(crimson, crimson) 57.2% 98.9% / 2em .5em,
+                  linear-gradient(to bottom, black(.6), black(0)) 57.2% 100% / 2em .2em,
+                  linear-gradient(white(.6), white(.6)) 50% 95% / 100% .1em,
+                  linear-gradient(#888, #888) 50% 96% / 100% .2em,
+                  linear-gradient(white(.8), white(.8)) 50% 97% / 100% .1em,
+                  linear-gradient(to left, white(0), white 1%) 0 1em / 57.8% 80%
+      background-repeat: no-repeat
+      animation: valuable-swipe 6s ease-in infinite
+      z-index: -1
+
+@keyframes valuable-swipe
+  0%, 20%
+    transform: translateX(0)
+  30%, 37%
+    transform: translateX(36.3%)
+  45%, 100%
+    transform: translateX(0)
+
+@keyframes valuable-fade
+  0%, 34%
+    valuable-event(purple)
+  35%, 80%
+    valuable-event(white)
+  95%,100%
+    valuable-event(purple)
