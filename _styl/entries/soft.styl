@@ -1,0 +1,54 @@
+/*-----------------------------
+
+Soft
+
+-----------------------------*/
+
+#soft
+  background-color: pink
+
+  div
+    width: 280px
+    height: 24px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background-image: repeating-linear-gradient(50deg, white, 
+                                                 white .6em,
+                                                 crimson .6em,
+                                                 crimson 1.2em)
+    border-top-left-radius: 20em 1em
+    border-bottom-left-radius: 20em 1em
+    box-shadow: inset 0 .2em .3em alpha(firebrick,.4),
+                inset 0 -.2em .3em alpha(firebrick,.4)
+    transform: rotate(-90deg)
+
+    &::before
+      width: 210px
+      height: 160px
+      right: -5%
+      bottom: 50%
+      margin-bottom: -(@height/2)
+      background-image: linear-gradient(to right, plum, paleturquoise, lemonchiffon)
+      border-top-left-radius: 60% 40%
+      border-bottom-left-radius: 60% 40%
+      border-top-right-radius: 30% 40%
+      border-bottom-right-radius: 30% 40%
+      filter: blur(.3em)
+
+    &::after
+      width: 190px
+      height: 140px
+      right: 0
+      bottom: 50%
+      margin-bottom: -(@height/2)
+      background: radial-gradient(ellipse, alpha(navy,.05), alpha(navy,0) 50%) 10% 10% / 30% 70%,
+                  radial-gradient(ellipse, alpha(navy,.03), alpha(navy,0) 50%) 70% 0 / 30% 80%,
+                  radial-gradient(ellipse, alpha(navy,.05), alpha(navy,0) 50%) 50% 110% / 30% 90%,
+                  radial-gradient(ellipse, alpha(navy,.05), alpha(navy,0) 50%) 90% 90% / 30% 70%,
+                  radial-gradient(ellipse, alpha(navy,.05), alpha(navy,0) 50%) -2% 90% / 20% 70%,
+                  linear-gradient(to right, plum, paleturquoise, lemonchiffon) 0 0 / 100% 100%
+      background-repeat: no-repeat
+      border-top-left-radius: 60% 40%
+      border-bottom-left-radius: 60% 40%
+      border-top-right-radius: 30% 40%
+      border-bottom-right-radius: 30% 40%
