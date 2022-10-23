@@ -1,0 +1,90 @@
+/*-----------------------------
+
+Pop
+
+-----------------------------*/
+
+#pop
+  background-color: white
+
+  div
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background: radial-gradient(ellipse, black 60%,
+                                         black(0) 60.5%) calc(50% + 1em) calc(50% + 6em) / 12em 4.8em no-repeat,
+                linear-gradient(white, white) 0 100% / 50% calc(50% - 4.25em) no-repeat,
+                radial-gradient(black 40%, black(0) 40.5%)   0em calc(50% + 2.9em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%) .25em calc(50% + 3.2em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%)   0em calc(50% + 3.5em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%) .25em calc(50% + 3.8em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%)   0em calc(50% + 4.1em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%) .25em calc(50% + 4.4em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%)   0em calc(50% + 4.7em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%) .25em calc(50% + 5.0em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%)   0em calc(50% + 5.3em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%) .25em calc(50% + 5.6em) / .5em .5em repeat-x,
+                radial-gradient(black 40%, black(0) 40.5%)   0em calc(50% + 5.9em) / .5em .5em repeat-x,
+                linear-gradient(to bottom, black .3em, white .3em) 50% 100% / 100% calc(50% - 2.5em) no-repeat
+    background-color: gold
+
+    &::before
+      width: 8em
+      height: 15em
+      left: 50%
+      top: 50%
+      margin-left: -(@width/2)
+      margin-top: -(@height/2)
+      background: linear-gradient(black, black) 70% 0 / .3em 30%,
+                  linear-gradient(black, black) 80% 0 / .3em 30%,
+                  linear-gradient(black, black) 76% 28.6% / 10% .3em,
+                  linear-gradient(gold, gold) 76% 0 / 10% 1em,
+                  radial-gradient(ellipse at 50% 100%, white(0) 50%,
+                                                       white 50.5%) 50% 1.7% / 132% 8.5%,
+                  radial-gradient(ellipse, gold 70%, alpha(gold,0) 71%) 50% 1% / 95% 15%,
+                  radial-gradient(ellipse, black 70%, black(0) 71%) 50% 1% / 100% 17%,
+                  linear-gradient(gold, gold) 76% 20% / 10% 1.5em,
+                  radial-gradient(ellipse, maroon 70%, alpha(maroon,0) 71%) 50% 25.2% / 93% 16.5%,
+                  radial-gradient(ellipse, black 70%, black(0) 71%) 50% 24% / 100% 20%,
+                  linear-gradient(white, white) 24% 100% / 20% 70%,
+                  linear-gradient(white, white) 90% 100% / 10% 70%,
+                  radial-gradient(circle, white(0) 34%, white 34.5%,
+                                          white 60%, white(0) 60.5%) 7% 57% / .6em .6em,
+                  radial-gradient(circle, white(0) 34%, white 34.5%,
+                                          white 50%, white(0) 50.5%) 54% 50% / 1.3em 1.3em,
+                  radial-gradient(circle, white(0) 34%, white 34.5%,
+                                          white 60%, white(0) 60.5%) 68% 67% / .6em .6em,
+                  radial-gradient(circle, white(0) 34%, white 34.5%,
+                                          white 60%, white(0) 60.5%) 50% 77% / .6em .6em,
+                  linear-gradient(black, black) 65% 70% / .3em 60%,
+                  linear-gradient(black, black) 75% 70% / .3em 60%,
+                  linear-gradient(black, black) 71% 87.7% / 10% .3em,
+                  linear-gradient(maroon, maroon) 71% 80% / 10% 1em,
+                  radial-gradient(ellipse, maroon 70%, alpha(maroon,0) 71%) 50% 98.8% / 95% 22%,
+                  radial-gradient(ellipse, black 70%, black(0) 71%) 50% 99% / 100% 24%,
+                  linear-gradient(maroon,maroon) 50% 100% / 100% 70%
+      background-color: gold
+      background-repeat: no-repeat
+      border-top-left-radius: 50% 10%
+      border-top-right-radius: 50% 10%
+      border-bottom-right-radius: 50% 15%
+      border-bottom-left-radius: 50% 15%
+      box-shadow: inset 0 0 0 .3em black,
+                  inset 0 -.5em 0 white
+
+    &::after
+      width: 4em
+      height: 2em
+      left: 50%
+      top: 50%
+      margin-left: 2.16em
+      margin-top: -8.5em
+      border-top-left-radius: .4em
+      border-left: .3em solid black
+      border-top: .3em solid black
+      box-shadow: -.48em -.5em 0 gold,
+                  -.48em -.3em 0 gold,
+                  -.25em -.5em 0 gold,
+                  -.55em -.55em 0 .2em black,
+                  -.2em -.55em 0 .2em black
