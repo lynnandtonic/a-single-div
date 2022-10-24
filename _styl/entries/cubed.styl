@@ -1,0 +1,83 @@
+/*-----------------------------
+
+Cubed
+
+-----------------------------*/
+
+$cubed = 1em
+
+#cubed
+  background-color: cyan
+  z-index: 0
+
+  div
+    width: $cubed*20
+    height: $cubed*7
+    margin-left: -(@width/2 - 1em)
+    margin-top: -(@height/2 - 2em)
+    background: linear-gradient(magenta, magenta) $cubed*2 $cubed / $cubed*2 $cubed,
+                linear-gradient(magenta $cubed, pink $cubed*3) $cubed $cubed*2 / $cubed $cubed*4,
+                linear-gradient(magenta, magenta) $cubed*4 $cubed*2 / $cubed $cubed,
+                linear-gradient(pink, pink) $cubed*4 $cubed*5 / $cubed $cubed,
+                linear-gradient(pink, pink) $cubed*2 $cubed*6 / $cubed*2 $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 2.12em, alpha(blue,0) 2.12em) $cubed 0 / $cubed*3 $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 1.4em, alpha(blue,0) 1.4em) 0 $cubed / $cubed*2 $cubed,
+                linear-gradient(45deg, blue .7em, alpha(blue,0) .7em) $cubed*4 $cubed / $cubed $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 2.12em, alpha(blue,0) 2.12em) $cubed $cubed*5 / $cubed*3 $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 1.4em, alpha(blue,0) 1.4em) $cubed*3 $cubed*4 / $cubed*2 $cubed,
+                linear-gradient(45deg, alpha(navy,0) .7em, navy .7em,
+                                       navy 3.7em, alpha(navy,0) 3.7em) 0 $cubed / $cubed $cubed*5,
+                linear-gradient(navy, navy) $cubed 0 / $cubed $cubed*2,
+                linear-gradient(45deg, alpha(navy,0) .7em, navy .7em,
+                                       navy 3.7em, alpha(navy,0) 3.7em) $cubed $cubed*6 / $cubed $cubed,
+                linear-gradient(navy, navy) $cubed*3 $cubed*4 / $cubed $cubed*2,
+                linear-gradient(magenta $cubed*2, pink $cubed*4) $cubed*6 $cubed / $cubed $cubed*5,
+                linear-gradient(pink, pink) $cubed*7 $cubed*6 / $cubed*2 $cubed,
+                linear-gradient(magenta $cubed*2, pink $cubed*4) $cubed*9 $cubed / $cubed $cubed*5,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 1.4em, alpha(blue,0) 1.4em) $cubed*5 0 / $cubed*2 $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 1.4em, alpha(blue,0) 1.4em) $cubed*8 0 / $cubed*2 $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 2.12em, alpha(blue,0) 2.12em) $cubed*6 $cubed*5 / $cubed*3 $cubed,
+                linear-gradient(45deg, alpha(navy,0) .7em, navy .7em,
+                                       navy 4.7em, alpha(navy,0) 4.7em) $cubed*5 0 / $cubed $cubed*6,
+                linear-gradient(45deg, alpha(navy,0) .7em, navy .7em,
+                                       navy 4.7em, alpha(navy,0) 4.7em) $cubed*8 0 / $cubed $cubed*6,
+                linear-gradient(45deg, alpha(navy,0) .7em, navy .7em,
+                                       navy 3.7em, alpha(navy,0) 3.7em) $cubed*6 $cubed*6 / $cubed $cubed,
+                linear-gradient(magenta $cubed*2, pink $cubed*4) $cubed*11 $cubed / $cubed $cubed*6,
+                linear-gradient(magenta, magenta) $cubed*11 $cubed / $cubed*3 $cubed,
+                linear-gradient(magenta, magenta) $cubed*14 $cubed*2 / $cubed $cubed,
+                linear-gradient(magenta, pink $cubed*2) $cubed*11 $cubed*3 / $cubed*3 $cubed,
+                linear-gradient(magenta -($cubed*9), pink $cubed*1.6) $cubed*14 $cubed*4 / $cubed $cubed*2,
+                linear-gradient(pink, pink) $cubed*11 $cubed*6 / $cubed*3 $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 2.83em, alpha(blue,0) 2.83em) $cubed*10 0 / $cubed*4 $cubed,
+                linear-gradient(45deg, blue .7em, alpha(blue,0) .7em) $cubed*14 $cubed / $cubed $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 2.12em, alpha(blue,0) 2.12em) $cubed*11 $cubed*2 / $cubed*3 $cubed,
+                linear-gradient(45deg, blue .7em, alpha(blue,0) .7em) $cubed*14 $cubed*3 / $cubed $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 2.12em, alpha(blue,0) 2.12em) $cubed*11 $cubed*5 / $cubed*3 $cubed,
+                linear-gradient(45deg, alpha(navy,0) .7em, navy .7em,
+                                       navy 5em, alpha(navy,0) 5em) $cubed*10 0 / $cubed $cubed*7,
+                linear-gradient(navy, navy) $cubed*13 $cubed*2 / $cubed $cubed*4,
+                linear-gradient(magenta $cubed*2, pink $cubed*4) $cubed*16 $cubed / $cubed $cubed*6,
+                linear-gradient(magenta, magenta) $cubed*16 $cubed / $cubed*4 $cubed,
+                linear-gradient(magenta, pink $cubed*2) $cubed*16 $cubed*3 / $cubed*3 $cubed,
+                linear-gradient(pink, pink) $cubed*16 $cubed*6 / $cubed*4 $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 3.55em, alpha(blue,0) 3.55em) $cubed*15 0 / $cubed*5 $cubed,
+                linear-gradient(45deg, alpha(blue,0) .7em, blue .7em,
+                                       blue 2.12em, alpha(blue,0) 2.12em) $cubed*16 $cubed*2 / $cubed*3 $cubed,
+                linear-gradient(45deg, blue 2.83em, alpha(blue,0) 2.83em) $cubed*16 $cubed*5 / $cubed*5 $cubed,
+                linear-gradient(45deg, alpha(navy,0) .7em, navy .7em,
+                                       navy 5em, alpha(navy,0) 5em) $cubed*15 0 / $cubed $cubed*7
+    background-repeat: no-repeat
+    transform: skewY(-12deg) scale(.9)
+    transform-origin: 0 0
