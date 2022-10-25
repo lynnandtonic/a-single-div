@@ -1,0 +1,73 @@
+/*-----------------------------
+
+Luminous
+
+-----------------------------*/
+
+#luminous
+  background-color: midnightblue
+  z-index: 0
+
+  div
+    width: 100%
+    height: 400px
+    left: 0
+    margin-top: -(@height/2)
+    background: linear-gradient(to right, white(0) 44%,
+                                          midnightblue 44%,
+                                          midnightblue 56%,
+                                          white(0) 56%) 50% 40.3% / 10em 1.6em,
+                linear-gradient(to right, white(0) 42%,
+                                          white 42%,
+                                          white 58%,
+                                          white(0) 58%) 50% 40% / 10em 2em,
+                radial-gradient(circle at 61% 50%, white(0) 7%,
+                                                   white 7.5%,
+                                                   white 11%,
+                                                   white(0) 11.5%) 50% 40% / 10em 2em,
+                radial-gradient(circle at 50% 100%, white(0) 64%,
+                                                    white 64.5%,
+                                                    white 68%,
+                                                    white(0) 68.5%) calc(50% - 5em) 22% / 10em 5em,
+                linear-gradient(to right, white(0) 42%,
+                                          white 42%,
+                                          white 43%,
+                                          white(0) 43%) calc(50% + .4em) 48% / 10em 2em,
+                linear-gradient(to right, white(0) 42%,
+                                          white 42%,
+                                          white 43%,
+                                          white(0) 43%) calc(50% + 1em) 48% / 10em 2em,
+                radial-gradient(circle, white(0) 8%,
+                                        white 8.5%,
+                                        white 10%,
+                                        white(0) 10.5%) calc(50% - .3em) 54.5% / 10em 2em,
+                radial-gradient(circle, white(0) 8%,
+                                        white 8.5%,
+                                        white 10%,
+                                        white(0) 10.5%) calc(50% + .2em) 54.5% / 10em 2em,
+                radial-gradient(circle, white(0) 45%,
+                                        white 45.5%,
+                                        white 49%,
+                                        white(0) 49.5%) 50% 63% / 10em 10em,
+                radial-gradient(circle, alpha(midnightblue,0) 49.5%,
+                                        alpha(midnightblue,.3) 49.5%,
+                                        midnightblue 72%) 50% 63% / 10em 10em,
+                radial-gradient(ellipse, white(.5) 20%, white(0) 20.5%) 50% 70% / 10em 4em,
+                linear-gradient(midnightblue, midnightblue) 50% 0 / 100% 37.9%,
+                linear-gradient(midnightblue, midnightblue) 50% 100% / 100% 22.2%
+    background-repeat: repeat-x
+
+    &::before
+      width: 200%
+      height: 94%
+      top: 5%
+      background: linear-gradient(80deg, crimson 10%, orange, gold, limegreen, dodgerblue, purple 90%);
+      z-index: -1
+      animation: luminous 7s linear alternate-reverse infinite
+
+@keyframes luminous
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(-50%)
+
