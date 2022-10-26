@@ -1,0 +1,70 @@
+/*-----------------------------
+
+Vintage
+
+-----------------------------*/
+
+#vintage
+  background-color: sandybrown
+
+  div
+    font-size: 42px
+    width: 4.8em
+    height: 4.3em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(lighten(firebrick,10), lighten(firebrick,10)) 0 0 / 13.5% 3%,
+                linear-gradient(lighten(firebrick,10), lighten(firebrick,10)) 100% 0 /13.5% 3%,
+                linear-gradient(lighten(firebrick,10), lighten(firebrick,10)) 0 0 / 3% 35%,
+                linear-gradient(lighten(firebrick,10), lighten(firebrick,10)) 100% 0 / 3% 35%,
+                linear-gradient(to right, lighten(firebrick,10), lighten(firebrick,3)) 0 35% / 100% 3%,
+                linear-gradient(60deg, black(.1) 20%, black(0) 40%) 0 0 / 100% 100%,
+                linear-gradient( 110deg, firebrick 10%, transparent 11%) 50% 26% / 35% 10%,
+                linear-gradient(-110deg, firebrick 10%, transparent 11%) 50% 26% / 35% 10%,
+                linear-gradient(  55deg, darken(firebrick,16) 25%, transparent 26%) 50% 26% / 35% 10%,
+                linear-gradient( -55deg, darken(firebrick,16) 25%, #111 26%) 50% 26% / 35% 10%,
+                radial-gradient(circle at 50% -60%, transparent 42%,
+                                                    lighten(firebrick,10) 42.5%, 
+                                                    lighten(firebrick,10) 44.2%,
+                                                    firebrick 44.4%) 0 0 / 100% 100%,
+                linear-gradient(#222, #222) 50% 7% / 10% 10%,
+                linear-gradient( 160deg, transparent 41%, #222 42%) 35% 6% / 10% 10%,
+                linear-gradient(-160deg, transparent 41%, #222 42%) 65% 6% / 10% 10%,
+                radial-gradient(circle at 50% 40%, white 47%, white(0) 48%) 0 0 / 100% 100%
+    background-repeat: no-repeat
+    border-radius: .2em .2em .5em .5em / .3em .3em 2.1em 2.1em
+    box-shadow: 2.2em -1.4em 0 -1.9em darken(royalblue,5),
+                2em -1.1em 0 -1.9em wheat,
+                0 .1em 0 0 darken(firebrick,6),
+                0 .3em .2em 0 black(.2)
+
+    &:before,
+    &:after
+      box-sizing: border-box
+      width: 2em
+      height: 1.4em
+      top: 32%
+      background-color: lighten(firebrick,2)
+      background-image: radial-gradient(ellipse at 50% 40%, white(.4) 10%, white(0) 13%),
+                        radial-gradient(circle, #111 30%, 
+                                                lighten(firebrick,10) 33%, lighten(firebrick,10) 40%,
+                                                transparent 42%),
+                        repeating-linear-gradient(to bottom, transparent, transparent 5%,
+                                                             black(.2) 5%, black(.2) 10%,
+                                                             transparent 10%)
+      border: .1em solid lighten(firebrick,10)
+
+    &:before
+      left: -4%
+      border-radius: .2em .2em 2em .2em / .2em .5em .6em .2em
+      box-shadow: inset .2em .2em .3em black(.3),
+                  0 .2em 0 darken(firebrick,4),
+                  .5em .5em .5em black(.3),
+                  1.1em -.3em .3em -.2em black(.2)
+    &:after
+      right: -4%
+      border-radius: .2em .2em .2em 1.3em / .5em .2em .2em .6em
+      box-shadow: inset -.2em .2em .3em black(.2),
+                  0 .2em 0 darken(firebrick,5),
+                  -.2em .5em .5em black(.25),
+                  -1.1em -.3em .3em -.2em black(.1)
