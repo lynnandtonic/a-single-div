@@ -1,0 +1,199 @@
+/*-----------------------------
+
+Grain
+
+-----------------------------*/
+
+#grain
+  background-color: darken(saddlebrown,7)
+
+  div
+    width: 300px
+    height: 100px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 + 50px)
+    background: linear-gradient(darken(tan,30), darken(tan,30)) 100% 61.2% / 61.2% .2em,
+                linear-gradient(to bottom, alpha(saddlebrown,.2), alpha(saddlebrown,0)) 0 0 / 100% 100%,
+                radial-gradient(ellipse at 0 50%, wheat 6%,
+                                                  tan 6.5%,
+                                                  tan 13%,
+                                                  wheat 13.5%,
+                                                  wheat 23%,
+                                                  tan 23.5%,
+                                                  tan 30%,
+                                                  wheat 30.5%,
+                                                  wheat 43%,
+                                                  tan 43.5%,
+                                                  tan 50%,
+                                                  wheat 50.5%,
+                                                  wheat 60%,
+                                                  tan 60.5%,
+                                                  tan 67%,
+                                                  wheat 67.5%,
+                                                  wheat 74%,
+                                                  alpha(wheat,0) 74.5%) 0 15% / 50% 2em,
+                radial-gradient(ellipse at 0 38%, wheat 60%,
+                                                  tan 60.5%,
+                                                  tan 65%,
+                                                  alpha(tan,0) 65.5%) 19% 21% / 50% 2em,
+                radial-gradient(ellipse at 0 38%, wheat 60%,
+                                                  tan 60.5%,
+                                                  tan 63%,
+                                                  wheat 63.5%,
+                                                  wheat 65%,
+                                                  alpha(wheat,0) 65.5%) 33% 21% / 50% 2.4em,
+                linear-gradient(tan, tan) 0 44% / 8% .1em,
+                linear-gradient(tan, tan) 0 47% / 14.5% .1em,
+                linear-gradient(wheat, wheat) 0 40% / 20% 1em,
+                radial-gradient(ellipse at 100% 50%, wheat 6%,
+                                                     tan 6.5%,
+                                                     tan 13%,
+                                                     wheat 13.5%,
+                                                     wheat 23%,
+                                                     tan 23.5%,
+                                                     tan 30%,
+                                                     wheat 30.5%,
+                                                     wheat 43%,
+                                                     tan 43.5%,
+                                                     tan 50%,
+                                                     wheat 50.5%,
+                                                     wheat 60%,
+                                                     tan 60.5%,
+                                                     tan 67%,
+                                                     wheat 67.5%,
+                                                     wheat 70%,
+                                                     alpha(wheat 0) 70.5%) 100% 5% / 30% 1.4em,
+                radial-gradient(ellipse at 100% 38%, wheat 60%,
+                                                     tan 60.5%,
+                                                     tan 67%,
+                                                     wheat 67.5%,
+                                                     wheat 70%,
+                                                     alpha(wheat,0) 70.5%) 100% 9% / 40% 1.4em,
+                radial-gradient(ellipse at 70% 50%, wheat 6%,
+                                                     tan 6.5%,
+                                                     tan 13%,
+                                                     wheat 13.5%,
+                                                     wheat 23%,
+                                                     tan 23.5%,
+                                                     tan 30%,
+                                                     wheat 30.5%,
+                                                     wheat 43%,
+                                                     tan 43.5%,
+                                                     tan 50%,
+                                                     wheat 50.5%,
+                                                     wheat 60%,
+                                                     tan 60.5%,
+                                                     tan 67%,
+                                                     wheat 67.5%,
+                                                     wheat 70%,
+                                                     alpha(wheat,0) 70.5%) 120% 75% / 70% 2em,
+                radial-gradient(ellipse at 20% 50%, wheat 6%,
+                                                  tan 6.5%,
+                                                  tan 13%,
+                                                  wheat 13.5%,
+                                                  wheat 23%,
+                                                  tan 23.5%,
+                                                  tan 30%,
+                                                  wheat 30.5%,
+                                                  wheat 43%,
+                                                  tan 43.5%,
+                                                  tan 50%,
+                                                  wheat 50.5%,
+                                                  wheat 60%,
+                                                  tan 60.5%,
+                                                  tan 67%,
+                                                  wheat 67.5%,
+                                                  wheat 70%,
+                                                  alpha(wheat,0) 70.5%) 0 70% / 32% 1.4em,
+                radial-gradient(ellipse at 0 100%, wheat 6%,
+                                                   tan 6.5%,
+                                                   tan 13%,
+                                                   wheat 13.5%,
+                                                   wheat 23%,
+                                                   tan 23.5%,
+                                                   tan 30%,
+                                                   wheat 30.5%,
+                                                   wheat 43%,
+                                                   tan 43.5%,
+                                                   tan 50%,
+                                                   wheat 50.5%,
+                                                   wheat 60%,
+                                                   tan 60.5%,
+                                                   tan 67%,
+                                                   wheat 67.5%,
+                                                   wheat 70%,
+                                                   alpha(wheat,0) 70.5%) 0 100% / 50% 1em,
+                radial-gradient(ellipse at 100% 100%, wheat 6%,
+                                                   tan 6.5%,
+                                                   tan 13%,
+                                                   wheat 13.5%,
+                                                   wheat 23%,
+                                                   tan 23.5%,
+                                                   tan 30%,
+                                                   wheat 30.5%,
+                                                   wheat 43%,
+                                                   tan 43.5%,
+                                                   tan 50%,
+                                                   wheat 50.5%,
+                                                   wheat 60%,
+                                                   tan 60.5%,
+                                                   tan 67%,
+                                                   wheat 67.5%,
+                                                   wheat 70%,
+                                                   alpha(wheat,0) 70.5%) 100% 105% / 40% 1em,
+                repeating-linear-gradient(to bottom, wheat, wheat .1em,
+                                                          tan .1em,
+                                                          tan .2em) 0 0 / 100% 100%
+    background-color: wheat
+    background-repeat: no-repeat
+    transform: perspective(200px) rotateX(20deg)
+    transform-origin: center bottom
+    box-shadow: 0 1.2em .5em -.2em black(.7),
+                0 1.7em 0 .6em #ccc
+
+    &::before
+      width: 100%
+      height: 20%
+      bottom: -(@height)
+      background: linear-gradient(to bottom, alpha(saddlebrown,.2), alpha(saddlebrown,0)) 0 0 / 100% 100%,
+                  repeating-linear-gradient(45deg, alpha(saddlebrown,.4),
+                                                   alpha(saddlebrown,.4) .1em,
+                                                   alpha(saddlebrown,0) .1em,
+                                                   alpha(saddlebrown,0) .2em)
+      background-color: lighten(tan,8)
+      transform: perspective(200px) rotateX(-20deg)
+      transform-origin: center top
+      box-shadow: 0 3.9em 0 1.35em #999
+
+    &::after
+      width: 100%
+      height: 300%
+      bottom: 0
+      background: linear-gradient(45deg, white(0) 30%,
+                                         white(.2) 50%,
+                                         white(0) 70%) 45% 86% / 1em .7em,
+                  linear-gradient(-45deg, white(0) 30%,
+                                          white(.2) 50%,
+                                          white(0) 70%) 55% 86% / 1em .7em,
+                  linear-gradient(to right, black(0),
+                                            black(.2) 40%,
+                                            black(.2) 65%,
+                                            black(0) 100%) 50% 86% / 1em 1.4em,
+                  radial-gradient(circle at 50% 130%, black(0) 15%,
+                                                      black(.15) 18%,
+                                                      black(0) 22%,
+                                                      black(.15) 25%,
+                                                      black(0) 31%,
+                                                      black(.15) 34%,
+                                                      black(0) 38%,
+                                                      black(.15) 44%,
+                                                      black(0) 50%) 50% 85% / 5em 2.5em,
+                  radial-gradient(circle at 50% 130%, #aaa 45%,
+                                                      #777 48.5%,
+                                                      #777 52%,
+                                                      white(.5) 52.5%,
+                                                      white(.5) 55.5%,
+                                                      white(0) 60%) 50% 85% / 5em 2.5em
+      background-repeat: no-repeat
+      transform: perspective(200px) rotateX(-20deg)
+      transform-origin: center bottom
