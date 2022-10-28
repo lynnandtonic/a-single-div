@@ -1,0 +1,101 @@
+/*-----------------------------
+
+Monster
+
+-----------------------------*/
+
+#monster
+  background-color: mediumpurple
+
+  div
+    width: 300px
+    height: 300px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: radial-gradient(ellipse at 50% 100%, purple 50%, alpha(purple,0) 50.5%) 40% 100.1% / .5em .5em,
+                radial-gradient(ellipse at 50% 100%, purple 50%, alpha(purple,0) 50.5%) 43% 100.1% / .5em .5em,
+                radial-gradient(ellipse at 50% 100%, purple 50%, alpha(purple,0) 50.5%) 46% 100.1% / .5em .5em,
+                radial-gradient(ellipse at 50% 90%, gold 50%, alpha(gold,0) 50.5%) 42.2% 100% / 2.8em 1.2em,
+                linear-gradient(gold, gold) 43% 100% / .5em 10em,
+                radial-gradient(ellipse at 50% 100%, purple 50%, alpha(purple,0) 50.5%) 50% 100.1% / .5em .5em,
+                radial-gradient(ellipse at 50% 100%, purple 50%, alpha(purple,0) 50.5%) 53% 100.1% / .5em .5em,
+                radial-gradient(ellipse at 50% 100%, purple 50%, alpha(purple,0) 50.5%) 56% 100.1% / .5em .5em,
+                radial-gradient(ellipse at 50% 90%, gold 50%, alpha(gold,0) 50.5%) 54% 100% / 2.8em 1.2em,
+                linear-gradient(gold, gold) 53% 100% / .5em 10em,
+                linear-gradient(gold, gold) 63% 100% / .5em 10em,
+                radial-gradient(circle, gold 50%, alpha(gold,0) 50.5%) 65% 80% / 1em 1em,
+                radial-gradient(ellipse at 0 90%, purple 50%, alpha(purple,0) 50.5%) 70% 100% / .8em .4em,
+                radial-gradient(ellipse at 50% 90%, gold 50%, alpha(gold,0) 50.5%) 68% 100% / 3em 1em,
+                radial-gradient(ellipse at 50% 90%, purple 50%, alpha(purple,0) 50.5%) 72% 100% / 2em .5em,
+                radial-gradient(circle, goldenrod 50%, alpha(goldenrod,0) 50.5%) 36% 80% / 1em 1em,
+                radial-gradient(ellipse at 100% 90%, purple 50%, alpha(purple,0) 50.5%) 30% 100% / .8em .4em,
+                radial-gradient(ellipse at 50% 90%, goldenrod 50%, alpha(goldenrod,0) 48.5%) 32% 100% / 3em 1em,
+                radial-gradient(ellipse at 50% 90%, purple 50%, alpha(purple,0) 50.5%) 28% 100% / 2em .5em,
+                linear-gradient(goldenrod, goldenrod) 38% 100% / .5em 10em,
+                linear-gradient(goldenrod, goldenrod) 48% 100% / .5em 10em,
+                linear-gradient(goldenrod, goldenrod) 58% 100% / .5em 10em,
+                radial-gradient(ellipse at 50% 90%, goldenrod 50%, alpha(goldenrod,0) 50.5%) 58% 100% / 3em 1em,
+                linear-gradient(gold, gold) 28% 65% / .4em 5em,
+                radial-gradient(ellipse at 100% 20%, purple 50%, alpha(purple,0) 50.5%) 27.5% 89.5% / .4em 1.2em,
+                radial-gradient(ellipse at 100% 50%, gold 50%, alpha(gold,0) 50.5%) 25.5% 85% / 1em 3em,
+                linear-gradient(gold, gold) 72% 65% / .4em 5em,
+                radial-gradient(ellipse at 0 20%, purple 50%, alpha(purple,0) 50.5%) 72.5% 89.5% / .4em 1.2em,
+                radial-gradient(ellipse at 0 50%, gold 50%, alpha(gold,0) 50.5%) 74.5% 85% / 1em 3em
+    background-repeat: no-repeat
+
+    &::before
+      width: 10em
+      height: 8em
+      left: 50%
+      bottom: 0
+      margin-left: -(@width/2)
+      background-color: gold
+      border-radius: 7em 7em 1em 1em
+      box-shadow: 0 0 0 0 gold,
+                  0 -2em 0 2em mediumpurple
+      animation: monster-body 3s ease-in infinite alternate
+
+    &:after
+      width: 8em
+      height: 8em
+      left: 50%
+      top: 60%
+      margin-left: -(@width/2)
+      background: radial-gradient(circle, black 50%, black(0) 50.5%) 50% 30% / 1em 1em,
+                  radial-gradient(circle, white 50%, white(0) 50.5%) 50% 10% / 4em 4em,
+                  radial-gradient(circle, black 50%, black(0) 50.5%) 12% 40% / 1em 1em,
+                  radial-gradient(circle, white 50%, white(0) 50.5%) -5% 30% / 3em 3em,
+                  radial-gradient(circle, black 50%, black(0) 50.5%) 88% 40% / 1em 1em,
+                  radial-gradient(circle, white 50%, white(0) 50.5%) 105% 30% / 3em 3em,
+                  radial-gradient(ellipse, black(0) 55%,
+                                           black 55.5%,
+                                           black 70%,
+                                           black(0) 70.5%) 50% 80% / 100% 2em,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 10% 76% / 1em 1em,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 26% 76% / 1em 1.5em,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 42% 74% / 1em 1.5em,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 58% 74% / 1em 1.5em,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 74% 76% / 1em 1.5em,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 90% 76% / 1em 1em,
+                  radial-gradient(ellipse, black 70%, black(0) 70.5%) 50% 80% / 100% 2em
+      background-repeat: no-repeat
+      animation: monster-face 3s ease-in infinite alternate
+      transform: translateY(0) scale(.6)
+
+@keyframes monster-body
+  0%, 33%
+    transform: translateY(0) scale(1)
+    box-shadow: 0 0 0 0 gold,
+                0 -2em 0 2em mediumpurple
+    border-radius: 7em 7em 1em 1em
+  40%, 100%
+    transform: translateY(-8em) scale(1.4)
+    box-shadow: 0 0 1em 1em gold,
+                0 -2em 0 2em mediumpurple
+    border-radius: 9em
+
+@keyframes monster-face
+  0%, 33%
+    transform: translateY(0) scale(.6)
+  40%, 100%
+    transform: translateY(-8em) scale(1)
