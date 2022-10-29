@@ -1,0 +1,68 @@
+/*-----------------------------
+
+Free
+
+-----------------------------*/
+
+#free
+  background-color: #f7f7f7
+
+  div
+    width: 5px
+    height: 270px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    border-radius: 1em / 20em
+    background: linear-gradient(to bottom, alpha(saddlebrown,.9), alpha(saddlebrown,0)) 50% 30% / 100% 20%
+    background-repeat: no-repeat
+    background-color: tan
+    box-shadow: inset .1em 0 .2em alpha(saddlebrown,.4),
+                0 0 0 .1em saddlebrown
+
+    &::before
+      width: 220px
+      height: 60px
+      left: 50%
+      top: 8%
+      margin-left: -(@width/2)
+      border-radius: 2em
+      background-color: mediumseagreen
+      box-shadow: inset 0 -.7em 1em .4em green,
+                  0 0 0 .1em green
+
+    &::after
+      width: 250px
+      height: 100px
+      left: 50%
+      top: 0
+      margin-left: -(@width/2)
+      background: radial-gradient(circle at 50% 100%, green 40%, alpha(green,0) 40.5%) 20% 7% / 2em 1em,
+                  radial-gradient(circle at 50% 100%, green 40%, alpha(green,0) 40.5%) 80% 11% / 1.5em .75em,
+                  radial-gradient(circle, lightgreen 50%, alpha(lightgreen,0) 50.5%) 30% 30% / 1em 1em,
+                  radial-gradient(circle, lightgreen 50%, alpha(lightgreen,0) 50.5%) 38% 35% / .6em .6em,
+                  radial-gradient(circle, lightgreen 50%, alpha(lightgreen,0) 50.5%) 15% 50% / 1em 1em,
+                  radial-gradient(circle, lightgreen 50%, alpha(lightgreen,0) 50.5%) 78% 33% / .6em .6em,
+                  radial-gradient(circle, lightgreen 50%, alpha(lightgreen,0) 50.5%) 85% 40% / 1em 1em,
+                  radial-gradient(circle, green 50%, alpha(green,0) 50.5%) 25% 60% / 1em 1em,
+                  radial-gradient(circle, green 50%, alpha(green,0) 50.5%) 65% 50% / 1em 1em,
+                  radial-gradient(circle, green 50%, alpha(green,0) 50.5%) 50% 70% / 1em 1em,
+                  radial-gradient(circle, green 50%, alpha(green,0) 50.5%) 68% 65% / .6em .6em,
+                  radial-gradient(circle, green 50%, alpha(green,0) 50.5%) 75% 70% / 1em 1em,
+                  radial-gradient(circle at 50% 0, green 40%, alpha(green,0) 40.5%) 35% 93% / 1.5em .75em,
+                  linear-gradient(to right, alpha(lightgreen,0) 20%,
+                                            alpha(lightgreen,.6) 40%,
+                                            alpha(lightgreen,.6) 60%,
+                                            alpha(lightgreen,0) 80%) 50% 28% / 100% .2em,
+                  linear-gradient(to right, alpha(lightgreen,0) 10%,
+                                            alpha(lightgreen,.3) 30%,
+                                            alpha(lightgreen,.3) 50%,
+                                            alpha(lightgreen,0) 70%) 50% 40% / 100% .2em,
+                  linear-gradient(to right, alpha(lightgreen,0) 30%,
+                                            alpha(lightgreen,.3) 50%,
+                                            alpha(lightgreen,.3) 70%,
+                                            alpha(lightgreen,0) 90%) 50% 50% / 100% .2em,
+                  linear-gradient(to right, alpha(green,0) 20%,
+                                            alpha(green,.6) 40%,
+                                            alpha(green,.6) 60%,
+                                            alpha(green,0) 80%) 50% 68% / 100% .2em
+      background-repeat: no-repeat
