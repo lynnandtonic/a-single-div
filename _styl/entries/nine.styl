@@ -1,0 +1,48 @@
+/*-----------------------------
+
+Nine
+
+-----------------------------*/
+
+#nine
+  background-color: #111
+
+  div
+    width: 16em
+    height: 11em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(white, white) 0 0 / 1em 100%,
+                linear-gradient(30deg, white(0) 46.5%,
+                                       white 47%,
+                                       white 75.5%,
+                                       white(0) 76%) 0 0 / 3em 3em,
+                linear-gradient(white, white) 3em 0 / 1em 100%,
+                radial-gradient(circle, white 67%, white(0) 69%) 4.9em 0 / 1.2em 1.2em,
+                radial-gradient(circle, #111 71%, black(0) 72%) 4.8em .8em / 1.4em 1.4em,
+                linear-gradient(white, white) 5em 100% / 1em 86%,
+                linear-gradient(white, white) 7em 0 / 1em 100%,
+                linear-gradient(30deg, white(0) 46.5%,
+                                       white 47%,
+                                       white 75.5%,
+                                       white(0) 76%) 7em 0 / 3em 3em,
+                linear-gradient(white, white) 10em 0 / 1em 100%,
+                linear-gradient(white, white) 12em 50% / 1em 50%
+    background-repeat: no-repeat
+
+    &::before,
+    &::after
+      box-sizing: border-box
+      width: 4em
+      right: 0
+      border: 1em solid white
+
+    &::before
+      height: 65%
+      border-radius: 6em
+
+    &::after
+      height: 25%
+      bottom: 0
+      border-radius: 0 0 6em 6em
+      border-top: none;
