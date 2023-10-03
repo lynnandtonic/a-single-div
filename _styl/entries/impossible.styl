@@ -1,0 +1,56 @@
+/*-----------------------------
+
+Impossible
+
+-----------------------------*/
+
+$hotpink1 = lighten(hotpink, 40%)
+$hotpink2 = lighten(hotpink, 70%)
+$hotpink3 = lighten(hotpink, 90%)
+
+#impossible
+  background: hotpink
+
+  div
+    width: 20em
+    height: 8.5em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(120deg, transparent 12.5%,
+                                        $hotpink2 12.5%,
+                                        $hotpink2 87.5%,
+                                        transparent 87.5%) 0 0 / 44% 25%,
+                linear-gradient( 60deg, transparent 29.8%,
+                                        $hotpink3 29.8%,
+                                        $hotpink3 50%,
+                                        transparent 50%) 0 2.125em / 44% 75%,
+                linear-gradient( 60deg, transparent 29.8%,
+                                        $hotpink3 29.8%,
+                                        $hotpink3 50%,
+                                        transparent 50%) 5em 2.125em / 44% 75%,
+                linear-gradient($hotpink3, $hotpink3) 10% 2.125em / 25% 25%,
+                linear-gradient($hotpink3, $hotpink3) 30% 100% / 25% 25%,
+                linear-gradient(120deg, $hotpink1 50%,
+                                        $hotpink2 50%) 21% 4.25em / 5em 2.125em,
+                linear-gradient( 60deg, transparent 29.5%,
+                                        $hotpink3 29.5%,
+                                        $hotpink3 49.5%,
+                                        transparent 49.5%) 78.3% 0 / 44% 75%,
+                linear-gradient( 60deg, transparent 29.5%,
+                                        $hotpink3 29.5%,
+                                        $hotpink3 49.5%,
+                                        transparent 49.5%) 123.1% 0 / 44% 75%,
+                linear-gradient($hotpink3, $hotpink3) 70% 0 / 25% 25%,
+                linear-gradient($hotpink3, $hotpink3) 90% 4.25em / 25% 25%,
+                linear-gradient(120deg, $hotpink2 50%,
+                                        $hotpink1 50%) 79.5% 2.125em / 5em 2.125em,
+                linear-gradient(120deg, transparent 12.5%,
+                                        $hotpink2 12.5%,
+                                        $hotpink2 87.5%,
+                                        transparent 87.5%) 100% 100% / 44% 25%,
+                linear-gradient( 60deg, transparent 35%,
+                                        $hotpink1 35%,
+                                        $hotpink1 65%,
+                                        transparent 65%) 50% 50% / 100% 100%
+    // background-color: $hotpink1
+    background-repeat: no-repeat
