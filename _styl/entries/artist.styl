@@ -1,0 +1,143 @@
+/*-----------------------------
+
+Artist
+
+-----------------------------*/
+
+$frida-hair = darken(sienna,25)
+
+#artist
+  background: yellowgreen
+
+  div
+    width: 250px
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 35px)
+    background: radial-gradient(circle, white 50%, white(0) 51%) 15% 43% / 6% 6%,
+                radial-gradient(circle, lightgray 50%, white(0) 51%) 13.5% 43% / 10% 10%,
+                radial-gradient(ellipse, aquamarine 35%, alpha(aquamarine,0) 36%) 11.9% 58% / 14% 20%,
+                radial-gradient(ellipse, darkturquoise 50%, alpha(darkturquoise,0) 51%) 11.9% 58% / 14% 20%,
+                linear-gradient(lightgray, lightgray) 16.8% 51% / 1% 10%,
+                radial-gradient(circle, white 50%, white(0) 51%) 84.9% 43% / 6% 6%,
+                radial-gradient(circle, lightgray 50%, white(0) 51%) 86.5% 43% / 10% 10%,
+                radial-gradient(ellipse, aquamarine 35%, alpha(aquamarine,0) 36%) 88% 58% / 14% 20%,
+                radial-gradient(ellipse, darkturquoise 50%, alpha(darkturquoise,0) 51%) 88% 58% / 14% 20%,
+                linear-gradient(lightgray, lightgray) 83% 51% / 1% 10%,
+                radial-gradient(circle, black(.15) 50%, black(0) 50.8%) 15% 35% / 11% 11%,
+                radial-gradient(circle, sandybrown 50%, alpha(sandybrown,0) 50.8%) 11% 35% / 16% 16%,
+                radial-gradient(circle, sienna 50%, transparent 50.8%) 8.8% 34.3% / 20% 20%,
+                radial-gradient(circle, black(.15) 50%, black(0) 50.8%) 85% 35% / 11% 11%,
+                radial-gradient(circle, sandybrown 50%, alpha(sandybrown,0) 50.8%) 89% 35% / 16% 16%,
+                radial-gradient(circle, sienna 50%, transparent 50.8%) 91% 34.3% / 20% 20%,
+                radial-gradient(ellipse, white 15%, white(0) 16%) 50% 105% / 14% 20%,
+                radial-gradient(ellipse, lightgray 30%, alpha(lightgray,0) 31%) 50% 105% / 14% 20%,
+                radial-gradient(ellipse at 50% 0, transparent 29.5%,
+                                                  brown 30%,
+                                                  brown 33%,
+                                                  transparent 33.5%) 50% 109% / 46% 30%,
+                radial-gradient(ellipse at 50% 0, transparent 29.5%,
+                                                  brown 30%,
+                                                  brown 33%,
+                                                  transparent 33.5%) 50% 113% / 45% 30%,
+                radial-gradient(ellipse at 50% 0, transparent 29.5%,
+                                                  brown 30%,
+                                                  brown 33%,
+                                                  transparent 33.5%) 50% 173% / 46% 55%,
+                linear-gradient(sandybrown, sandybrown) 50% 84% / 16.8% 10%,
+                linear-gradient(to right, sienna 4px, transparent 4px) 50% 80% / 20% 20%,
+                linear-gradient(to left, sienna 4px, transparent 4px) 50% 80% / 20% 20%,
+                radial-gradient(ellipse at 50% 100%, transparent 49%,
+                                                     darken(darkslategrey,10) 49.5%,
+                                                     darken(darkslategrey,10) 52%,
+                                                     transparent 52.5%) 50% 110% / 120% 40%,
+                linear-gradient(darken(darkslategrey,10), darken(darkslategrey,10)) 37% 100% / .25em 22%,
+                linear-gradient(darken(darkslategrey,10), darken(darkslategrey,10)) 63% 100% / .25em 22%,
+                radial-gradient(ellipse at 100% 100%, darkslategrey 50%,
+                                                      alpha(darkslategrey,0) 50.5%) 0 100% / 37% 29%,
+                radial-gradient(ellipse at 0 100%, darkslategrey 50%,
+                                                   alpha(darkslategrey,0) 50.5%) 100% 100% / 37% 29%,
+                linear-gradient(to bottom, crimson 30%, goldenrod 30%) 50% 100% / 40% 6%,
+                radial-gradient(sandybrown, sandybrown) 50% 98% / 24% 20%,
+                radial-gradient(circle at 50% 0, black(.15) 40%, black(0) 40.5%) 50% 82% / 20% 20%,
+                linear-gradient(sandybrown, sandybrown) 50% 80% / 20% 20%
+    background-color: olivedrab
+    background-repeat: no-repeat
+    border-radius: 50%
+
+    &::before
+      box-sizing: border-box
+      width: 160px
+      height: 200px
+      left: 50%
+      top: -10%
+      margin-left: -(@width/2)
+      background: radial-gradient(circle at 50% 0, sandybrown 30%,
+                                                   sienna 30.5%,
+                                                   sienna 41%,
+                                                   transparent 41.5%) 50% 76% / 2em 2em,
+                  radial-gradient(circle at 50% 100%, maroon 35%,
+                                                      transparent 37%) 46% 79.5% / 1em 1em,
+                  radial-gradient(circle at 50% 100%, maroon 35%,
+                                                      transparent 37%) 54% 79.5% / 1em 1em,
+                  radial-gradient(ellipse at 50% 0, maroon 40%,
+                                                    transparent 41%) 50% 88% / 3.2em 1em,
+                  radial-gradient(circle, alpha(palevioletred,.3) 50%,
+                                          alpha(palevioletred,0) 50.5%) 16% 75% / 2.5em 2.5em,
+                  radial-gradient(circle, alpha(palevioletred,.3) 50%,
+                                          alpha(palevioletred,0) 50.5%) 84% 75% / 2.5em 2.5em,
+                  radial-gradient(circle, darken(sienna,15) 40%,
+                                          transparent 40.5%) 26% 56% / 1em 1em,
+                  radial-gradient(circle, darken(sienna,15) 40%,
+                                          transparent 40.5%) 74% 56% / 1em 1em,
+                  linear-gradient($frida-hair, $frida-hair) 22% 45% / 2.4em .6em,
+                  linear-gradient($frida-hair, $frida-hair) 78% 45% / 2.4em .6em,
+                  repeating-linear-gradient(to right, $frida-hair,
+                                                      $frida-hair .2em,
+                                                      transparent .2em,
+                                                      transparent .4em) 50% 45% / 1em .6em,
+                  radial-gradient(ellipse at 100% 100%, transparent 47%,
+                                                        $frida-hair 47.5%) -2.4em 0 / 7em 7em,
+                  radial-gradient(ellipse at 0 100%, transparent 47%,
+                                                     $frida-hair 47.5%) right -2.4em top 0 / 7em 7em
+      background-repeat: no-repeat
+      background-color: sandybrown
+      border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%
+      border: 4px solid sienna
+      border-top: none
+      box-shadow: inset 0 -.2em 0 .5em black(.1)
+
+    &::after
+      width: 100%
+      height: 9em
+      left: 0
+      top: -4.25em
+      background: radial-gradient(circle, lightpink 40%, alpha(hotpink,0) 41%) 34% 38% / 2em 2em,
+                  radial-gradient(circle, lightpink 40%, alpha(hotpink,0) 41%) 50% 40% / 2em 2em,
+                  radial-gradient(circle, lightpink 40%, alpha(hotpink,0) 41%) 66% 38% / 2em 2em,
+                  radial-gradient(circle, hotpink   40%, alpha(hotpink,0) 41%) 42% 42% / 2.5em 2.5em,
+                  radial-gradient(circle, crimson   40%, alpha(hotpink,0) 41%) 40% 30% / 2em 2em,
+                  radial-gradient(circle, crimson   40%, alpha(hotpink,0) 41%) 54% 28% / 2em 2em,
+                  radial-gradient(circle, hotpink   40%, alpha(hotpink,0) 41%) 47% 25% / 2.5em 2.5em,
+                  radial-gradient(circle, hotpink   40%, alpha(hotpink,0) 41%) 58% 40% / 2.5em 2.5em,
+                  radial-gradient(circle, hotpink   40%, alpha(hotpink,0) 41%) 62% 30% / 2em 2em,
+                  radial-gradient(ellipse, green 40%, alpha(green,0) 41%) 29% 40% / 2em 1em,
+                  radial-gradient(ellipse, green 40%, alpha(green,0) 41%) 71% 40% / 2em 1em,
+                  radial-gradient(ellipse, green 40%, alpha(green,0) 41%) 37% 47% / 1em 2em,
+                  radial-gradient(ellipse, green 40%, alpha(green,0) 41%) 64% 45% / 1em 2em,
+                  radial-gradient(ellipse at 50% 120%, transparent 51.5%,
+                                                       crimson 52%,
+                                                       crimson 53%,
+                                                       transparent 53.5%) 50% 52% / 13.2em 5.5em,
+                  radial-gradient(circle, $frida-hair 50%, transparent 51%) 50% 0 / 5em 5em,
+                  radial-gradient(circle, $frida-hair 50%, transparent 51%) 29% 10% / 4em 4em,
+                  radial-gradient(circle, $frida-hair 50%, transparent 51%) 16% 35% / 3.5em 3.5em,
+                  radial-gradient(circle, $frida-hair 50%, transparent 51%) 13% 70% / 3em 3em,
+                  radial-gradient(circle, $frida-hair 50%, transparent 51%) 15.5% 85% / 1.6em 1.6em,
+                  linear-gradient($frida-hair, $frida-hair) 18% 100% / .4em 2em,
+                  radial-gradient(circle, $frida-hair 50%, transparent 51%) 71% 10% / 4em 4em,
+                  radial-gradient(circle, $frida-hair 50%, transparent 51%) 84% 35% / 3.5em 3.5em,
+                  radial-gradient(circle, $frida-hair 50%, transparent 51%) 87% 70% / 3em 3em,
+                  radial-gradient(circle, $frida-hair 50%, transparent 51%) 85.5% 85% / 1.6em 1.6em,
+                  linear-gradient($frida-hair, $frida-hair) 82% 100% / .4em 2em
+      background-repeat: no-repeat
