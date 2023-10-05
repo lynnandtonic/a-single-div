@@ -1,0 +1,172 @@
+/*-----------------------------
+
+Crawl
+
+-----------------------------*/
+
+#crawl
+  background: #eee
+
+  div
+    width: 100%
+    height: 8em
+    left: 0
+    margin-top: -(@height/2)
+
+    &::before,
+    &::after
+      min-width: 1900px
+      width: calc(100% + 32rem)
+      height: 50%
+      left: -18em;
+      animation: crawl 18s steps(18) infinite
+
+    &::before
+      background: radial-gradient(circle at 50% 100%, black(0) 4%,
+                                                    black 4.2%,
+                                                    black 14%,
+                                                    black(0) 14.1%) -7.5em 0 / 18em 50%,
+                  linear-gradient(to right, black(0) 2.1%,
+                                            black 2.2%,
+                                            black 7.1%,
+                                            black(0) 7.25%) 1.5em 2em / 18em 20%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) -.19em 100% / 18em 50%,
+                  radial-gradient(circle at 0 100%, black(0) 2.2%,
+                                                    black 2.3%,
+                                                    black 7.2%,
+                                                    black(0) 7.3%) 4.5em 0 / 18em 50%,
+                  radial-gradient(circle at 0 0, black(0) 2.2%,
+                                                 black 2.3%,
+                                                 black 7.2%,
+                                                 black(0) 7.3%) 4.5em 3.3em / 18em 50%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) 3.2em .7em / 18em 22.2%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) 3.2em 100.5% / 18em 7.8%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) 2.8em 100.5% / 18em 83%,
+                  linear-gradient(to right, black(0) 2.2%,
+                                            black 2.2%,
+                                            black 7.3%,
+                                            black(0) 7.32%) 4.5em 1.95em / 18em 35%,
+                  radial-gradient(circle at 50% 100%, black(0) 4%,
+                                                    black 4.2%,
+                                                    black 14%,
+                                                    black(0) 14.2%) -1.5em 0 / 18em 50%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.2%,
+                                            black 7.3%,
+                                            black(0) 7.35%) 5.8em 1.95em / 18em 60%,
+                  linear-gradient(to right, black(0) 2.1%,
+                                            black 2.15%,
+                                            black 7.25%,
+                                            black(0) 7.3%) 7.49em 1.95em / 18em 60%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 10%,
+                                            black(0) 10%) 6.6em 100.5% / 18em 10%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) 8.8em 100% / 18em 81.5%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) 10.5em 100% / 18em 81.5%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.2%,
+                                            black(0) 7.3%) 12.2em 100% / 18em 81.5%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.2%,
+                                            black(0) 7.3%) 13.6em 100% / 18em 81.5%
+      background-repeat: repeat-x
+
+    &::after
+      bottom: 0
+      background: radial-gradient(circle at 50% 0, black(0) 4%,
+                                                   black 4.2%,
+                                                   black 14%,
+                                                   black(0) 14.1%) -7.5em 100% / 18em 50%,
+                  linear-gradient(to right, black(0) 2.1%,
+                                            black 2.2%,
+                                            black 7.1%,
+                                            black(0) 7.2%) 1.5em 1.21em / 18em 20%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) -.19em 0 / 18em 50%,
+                  radial-gradient(circle at 0 100%, black(0) 2%,
+                                                    black 2.2%,
+                                                    black 7.1%,
+                                                    black(0) 7.2%) 4.5em -1.3em / 18em 50%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) 3.4em -.46em / 18em 20.6%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) 2.8em 0 / 18em 77%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.2%,
+                                            black(0) 7.25%) 4.5em .7em / 18em 59.5%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 10%,
+                                            black(0) 10%) 6.6em -.5% / 18em 10%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.2%,
+                                            black 7.2%,
+                                            black(0) 7.3%) 5.8em 0 / 18em 77%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.2%,
+                                            black(0) 7.3%) 7.49em 0/ 18em 77%,
+                  radial-gradient(circle at 50% 0, black(0) 4%,
+                                                   black 4.2%,
+                                                   black 14.2%,
+                                                   black(0) 14.3%) 1.5em 100% / 18em 50%,
+                  radial-gradient(circle at 50% 0, black(0) 4%,
+                                                   black 4.2%,
+                                                   black 14.2%,
+                                                   black(0) 14.25%) 3.2em 100% / 18em 50%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) 8.8em 0 / 18em 50%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.3%,
+                                            black(0) 7.3%) 10.5em 0 / 18em 50%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.2%,
+                                            black(0) 7.3%) 12.2em 0 / 18em 50%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 7.2%,
+                                            black(0) 7.3%) 13.6em 0 / 18em 77%,
+                  linear-gradient(to right, black(0) 2.15%,
+                                            black 2.15%,
+                                            black 16%,
+                                            black(0) 16%) 13.6em 2.22em / 18em 22%
+      background-repeat: repeat-x
+      animation-delay: .5s
+
+@keyframes crawl
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(18em)
