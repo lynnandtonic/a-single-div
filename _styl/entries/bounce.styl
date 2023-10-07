@@ -1,0 +1,157 @@
+/*-----------------------------
+
+Bounce
+
+-----------------------------*/
+
+#bounce
+  background: tan
+
+  div
+    width: 20em
+    height: 15em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(  45deg, black(0) 5%,
+                                         black 5%) 11.6% 9.2% / 50% 2%,
+                linear-gradient( -45deg, black(0) 5%,
+                                         black 5%) 88% 9.2% / 50% 2%,
+                linear-gradient( 135deg, black(0) 3.6%,
+                                         #444 3.6%) 11.6% 90.9% / 50% 1%,
+                linear-gradient(-135deg, black(0) 3.6%,
+                                         #444 3.6%) 88% 90.9% / 50% 1%,
+                linear-gradient(#111, #111) 50% 50% / 86% 82%
+    background-color: #222
+    background-repeat: no-repeat
+    border-radius: .6em
+    
+    &::before
+      width: 94%
+      height: 1.5em
+      left: 50%
+      margin-left: -(@width/2)
+      bottom: -(@height)
+      background: linear-gradient(black(.5), black(.5)) 50% 0 / 100% 20%,
+                  linear-gradient(black, black) 5% 55% / 5% 20%,
+                  linear-gradient(black, black) 12% 55% / 5% 20%,
+                  linear-gradient(black, black) 19% 55% / 5% 20%,
+                  radial-gradient(circle, limegreen 20%, alpha(limegreen,0) 20.2%) 26% 55% / 5% 25%
+      background-color: #222
+      background-repeat: no-repeat
+      border-radius: 0 0 .2em .2em
+
+    &::after
+      content: 'v i d e o'
+      width: 2.5rem
+      height: 2.5rem
+      box-sizing: border-box
+      padding-top: 1.75rem
+      top: 1.6rem
+      left: 1.5rem
+      background: radial-gradient(ellipse, black(0) 10%,
+                                           black 12%,
+                                           black 50%,
+                                           black(0) 52%) 50% 60% / 100% 20%,
+                  linear-gradient(black, black) 35% 22.5% / 15% 6%,
+                  linear-gradient(100deg, black(0) 30%,
+                                          black 32%,
+                                          black 70%,
+                                          black(0) 72%) 17.2% 35.7% / 15% 15.5%,
+                  linear-gradient(100deg, black(0) 30%,
+                                          black 32%,
+                                          black 76%,
+                                          black(0) 78%) 19.6% 22.5% / 15% 6.2%,
+                  radial-gradient(ellipse at 0 50%, black(0) 35%,
+                                                    black 35.5%,
+                                                    black 70%,
+                                                    black(0) 70.5%) 33% 28% / 15% 25%,
+                  linear-gradient(black, black) 21% 42.4% / 10% 6%,
+                  linear-gradient( 70deg, black(0) 27%,
+                                          black 27.5%,
+                                          black 58%,
+                                          black(0) 58.5%) 50% 28% / 15% 25%,
+                  linear-gradient(115deg, black(0) 28%,
+                                          black 28.5%,
+                                          black 60%,
+                                          black(0) 60.5%) 61% 28% / 15% 25%,
+                  linear-gradient( 70deg, black(0) 70%,
+                                          black 70.5%) 47% 49% / 10% 10%,
+                  linear-gradient(-70deg, black(0) 70%,
+                                          black 70.5%) 59% 49% / 10% 10%,
+                  linear-gradient(black, black) 52% 50% / 3% 10%,
+                  linear-gradient(black, black) 71.7% 22.5% / 13% 6%,
+                  linear-gradient(100deg, black(0) 30%,
+                                          black 32%,
+                                          black 70%,
+                                          black(0) 72%) 72.2% 35.7% / 15% 15.5%,
+                  radial-gradient(ellipse at 0 50%, black(0) 35%,
+                                                    black 35.5%,
+                                                    black 70%,
+                                                    black(0) 70.5%) 88% 28% / 15% 25%,
+                  linear-gradient(black, black) 75% 42.4% / 10% 6%
+      background-color: gold
+      background-repeat: no-repeat
+      text-transform: uppercase
+      font-family: Futura, Helvetica, sans-serif
+      font-weight: bold
+      font-size: .35rem
+      animation: dvd-bounce 20s linear infinite alternate, dvd-color 20s linear infinite alternate
+
+$dvd-left = 0rem
+$dvd-right = 14.45rem
+$dvd-top = 0rem
+$dvd-bottom = 9.4rem
+
+@keyframes dvd-bounce
+  0%
+    transform: translate(2em, $dvd-top)
+  11%
+    transform: translate(9rem, $dvd-bottom)
+  18.5%
+    transform: translate($dvd-right, 2rem)
+  24%
+    transform: translate(10rem, $dvd-top)
+  36%
+    transform: translate($dvd-left, 8rem)
+  39%
+    transform: translate(2rem, $dvd-bottom)
+  48.5%
+    transform: translate(7rem, $dvd-top)
+  59%
+    transform: translate(13rem, $dvd-bottom)
+  61%
+    transform: translate($dvd-right, 8rem)
+  74%
+    transform: translate(6rem, $dvd-top)
+  84%
+    transform: translate(1rem, $dvd-bottom)
+  86%
+    transform: translate($dvd-left, 8rem)
+  100%
+    transform: translate($dvd-right, $dvd-top)
+
+@keyframes dvd-color
+  0%, 10.999%
+    background-color: gold
+  11%, 18.499%
+    background-color: deepskyblue
+  18.5%, 23.999%
+    background-color: limegreen
+  24%, 35.999%
+    background-color: crimson
+  36%, 38.999%
+    background-color: pink
+  39%, 48.499%
+    background-color: mediumpurple
+  48.5%, 58.999%
+    background-color: cyan
+  59%, 60.999%
+    background-color: coral
+  61%, 73.999%
+    background-color: green
+  74%, 83.999%
+    background-color: darkorange
+  84%, 85.999%
+    background-color: yellowgreen
+  86%, 100%
+    background-color: darkturquoise
