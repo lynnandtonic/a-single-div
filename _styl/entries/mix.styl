@@ -1,0 +1,72 @@
+/*-----------------------------
+
+Mix
+
+-----------------------------*/
+
+#mix
+  background-color: white
+  z-index: 1
+
+  div
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background: linear-gradient(peachpuff, peachpuff) 0 100% / 100% calc(50% - 6em),
+                linear-gradient(white, white) calc(50% + 2.5em) calc(50% - 5em) / 3em 1em,
+                linear-gradient(white, white) calc(50% + 4.5em) calc(50% - 3.5em) / 1em 4em,
+                linear-gradient( -80deg, white(0) 4em,
+                                         white(.3) 4em,
+                                         white(.3) 4.5em,
+                                         peachpuff 4.5em) 0 calc(50% + 1em) / 50% 10em,
+                linear-gradient(  79deg, white(0) 4em, peachpuff 4em) 100% 50% / 50% 12em,
+                linear-gradient(-125deg, alpha(peachpuff,0) 3.45em, peachpuff 3.45em) 0 calc(50% - 5em) / 50% 2em
+    background-repeat: no-repeat
+
+    &::before
+      width: 20em
+      height: 10em
+      left: 50%
+      top: 50%
+      margin-left: -15em
+      margin-top: -3.6em
+      background: radial-gradient(circle at 30% 120%, blueviolet 25.7%,
+                                                      alpha(blueviolet,0) 25.9%) 0 -2.7em / 4em 4em,
+                  radial-gradient(circle at 30% -20%, alpha(blueviolet,0) 21.1%,
+                                                      blueviolet 21.3%) 2em 1.2em / 4em 4em,
+                  linear-gradient(blueviolet, blueviolet) 0 100% / 100% 50%
+      background-repeat: repeat-x
+      opacity: .6
+      z-index: -1
+      animation: mixdrink 2s linear infinite
+
+    &::after
+      width: calc(100% + 4em)
+      height: 100%
+      left: -2.4em
+      background: radial-gradient(ellipse at 50% 0, black(.2) 30%,
+                                                    black(0) 30.5%) calc(50% + -.5em) calc(50% + 4.5em) / 3.5em 3em,
+                  radial-gradient(ellipse, peru 50%,
+                                           alpha(peru,0) 50.5%) calc(50% + -.5em) calc(50% + 3em) / 3.5em 5em,
+                  linear-gradient(to bottom, black(.1) 20%,
+                                             white(.2) 20%,
+                                             white(.2) 25%,
+                                             white(0) 25%) calc(50% + -.5em) calc(50% - 2.5em) / .8em 10em,
+                  linear-gradient(to bottom, peru, peru) calc(50% + -.5em) calc(50% - 2.5em) / .8em 10em,
+                  linear-gradient(peachpuff, peachpuff) 0 0 / 100% calc(50% - 5.5em)
+      background-repeat: no-repeat
+      z-index: -2
+      animation: mix 500ms linear infinite alternate
+
+@keyframes mixdrink
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(4em)
+
+@keyframes mix
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(1em)
