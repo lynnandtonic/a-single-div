@@ -1,0 +1,136 @@
+/*-----------------------------
+
+Space
+
+-----------------------------*/
+
+#space
+  background-color: darkturquoise
+  
+  div
+    box-sizing: border-box
+    width: 15em
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@width/2)
+    background-image: conic-gradient(at 50%  20%, paleturquoise 55deg,
+                                                  transparent 55deg 305deg,
+                                                  paleturquoise 305deg),
+                      conic-gradient(at 50%  80%, transparent 125deg,
+                                                  darkslateblue 125deg 235deg,
+                                                  transparent 235deg),
+                      conic-gradient(at 50%   0%, paleturquoise 120deg,
+                                                  turquoise 120deg 150deg,
+                                                  transparent 150deg 210deg,
+                                                  mediumseagreen 210deg 240deg,
+                                                  paleturquoise 240deg),
+                      conic-gradient(at 50% 100%, transparent 30deg,
+                                                  turquoise 30deg 60deg,
+                                                  darkslateblue 60deg 300deg,
+                                                  mediumseagreen 300deg 330deg,
+                                                  transparent 330deg),
+                      linear-gradient(to right, turquoise 50%, mediumseagreen 50%)
+    background-position: 50% calc(50% + (3.5em / 2)),
+                         50% calc(50% - (3.5em / 2)),
+                         50% 50%,
+                         50% 50%,
+                         50% 50%
+    background-size: 2em 3.5em
+    border-radius: 50%
+    border: .2em solid aquamarine
+    box-shadow: inset 0 -2em 2em alpha(darkslateblue,.9)
+    
+    &::before
+      width: 17em
+      height: 18em
+      left: -1em
+      bottom: -2em
+      background: linear-gradient(aquamarine, aquamarine) left 3.5em bottom 5em / 1.2em .2em,
+                  linear-gradient(120deg, transparent .2em,
+                                          aquamarine .2em) left .5em bottom 0 / 3.8em .2em,
+                  linear-gradient(120deg, transparent 2.6em,
+                                          aquamarine 2.61em,
+                                          aquamarine 2.8em,
+                                          turquoise 2.81em,
+                                          turquoise 4em,
+                                          transparent 4em) left .5em bottom 0 / 3.6em 5.2em,
+                  linear-gradient(105deg, transparent 1em,
+                                          turquoise 1.01em,
+                                          turquoise 2em,
+                                          aquamarine 2.01em,
+                                          aquamarine 2.2em,
+                                          transparent 2.2em) left 2.6em bottom 0 / 3em 5.2em,
+                  linear-gradient(turquoise, turquoise) left 2em bottom 0 / 1em 1.5em,
+                  linear-gradient(100deg, transparent 1em,
+                                          mediumseagreen 1.01em,
+                                          mediumseagreen 2em,
+                                          aquamarine 2.01em,
+                                          aquamarine 2.2em,
+                                          transparent 2.2em) left 2.9em bottom 0 / 3em 4.2em,
+                  linear-gradient(80deg, mediumseagreen 1.27em,
+                                         aquamarine 1.28em,
+                                         aquamarine 1.46em,
+                                         transparent 1.47em) left 3.63em bottom 4.2em / 3em 1em,
+                  linear-gradient(aquamarine, aquamarine) right 3.5em bottom 5em / 1.2em .2em,
+                  linear-gradient(-120deg, transparent .2em,
+                                           aquamarine .2em) right .5em bottom 0 / 3.8em .2em,
+                  linear-gradient(-120deg, transparent 2.6em,
+                                           aquamarine 2.61em,
+                                           aquamarine 2.8em,
+                                           turquoise 2.81em,
+                                           turquoise 4em,
+                                           transparent 4em) right .5em bottom 0 / 3.6em 5.2em,
+                  linear-gradient(-105deg, transparent 1em,
+                                           turquoise 1.01em,
+                                           turquoise 2em,
+                                           aquamarine 2.01em,
+                                           aquamarine 2.2em,
+                                           transparent 2.2em) right 2.6em bottom 0 / 3em 5.2em,
+                  linear-gradient(turquoise, turquoise) right 2em bottom 0 / 1em 1.5em,
+                  linear-gradient(-100deg, transparent 1em,
+                                           mediumseagreen 1.01em,
+                                           mediumseagreen 2em,
+                                           aquamarine 2.01em,
+                                           aquamarine 2.2em,
+                                           transparent 2.2em) right 2.9em bottom 0 / 3em 4.2em,
+                  linear-gradient(-80deg, mediumseagreen 1.27em,
+                                          aquamarine 1.28em,
+                                          aquamarine 1.46em,
+                                          transparent 1.47em) right 3.63em bottom 4.2em / 3em 1em,
+                  linear-gradient(aquamarine, aquamarine) left 50% bottom -.1em / 2.6em .3em,
+                  linear-gradient(aquamarine, aquamarine) left 50% bottom 3.9em / .6em .2em,
+                  linear-gradient(to right, aquamarine .2em,
+                                            turquoise .2em,
+                                            turquoise .4em,
+                                            aquamarine .4em) 50% 100% / .6em 4em,
+                  linear-gradient(aquamarine, aquamarine) left 50% bottom 3.4em / 1.6em .2em,
+                  linear-gradient(to right, aquamarine .2em,
+                                            mediumseagreen .2em,
+                                            mediumseagreen 1.4em,
+                                            aquamarine 1.4em) 50% 100% / 1.6em 3.5em,
+                  linear-gradient(aquamarine, aquamarine) left 50% bottom 2.9em / 2.6em .2em,
+                  linear-gradient(to right, aquamarine .2em,
+                                            darkslateblue .2em,
+                                            darkslateblue 2.4em,
+                                            aquamarine 2.4em) 50% 100% / 2.6em 3em
+      background-repeat: no-repeat
+
+    &::after
+      width: 24em
+      height: 20em
+      left: 50%
+      margin-left: -(@width/2)
+      bottom: -2em
+      background: radial-gradient(circle, white 50%, white(0) 50.5%) 10% 20% / .3em .3em,
+                  radial-gradient(circle, white 50%, white(0) 50.5%) 20% 80% / .3em .3em,
+                  radial-gradient(circle, white 50%, white(0) 50.5%) 5% 90% / .3em .3em,
+                  radial-gradient(circle, white 50%, white(0) 50.5%) 90% 10% / .3em .3em,
+                  radial-gradient(circle, white 50%, white(0) 50.5%) 85% 35% / .3em .3em,
+                  radial-gradient(circle, white 50%, white(0) 50.5%) 90% 85% / .3em .3em,
+                  linear-gradient(white, white) 10em 1em / .7em .2em,
+                  linear-gradient(white, white) 10.25em .75em / .2em .7em,
+                  linear-gradient(white, white) 2em 10em / .7em .2em,
+                  linear-gradient(white, white) 2.25em 9.75em / .2em .7em,
+                  linear-gradient(white, white) 22em 11em / .7em .2em,
+                  linear-gradient(white, white) 22.25em 10.75em / .2em .7em
+      background-repeat: no-repeat
