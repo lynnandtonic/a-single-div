@@ -1,0 +1,169 @@
+/*-----------------------------
+
+Sparkle
+
+-----------------------------*/
+
+#sparkle
+  background-color: tomato
+
+  div
+    width: 19em
+    height: 12em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(white, white) 8.5em 2em / .1em 3em,
+                linear-gradient(white, white) 7.6em 3.5em / 2em .1em,
+                radial-gradient(white 10%, white(0) 10.5%) 8.05em 1.05em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 8.05em .55em / 1em 1em,
+                radial-gradient(white 40%, white(0) 40.5%) 8.05em 3.05em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 8.05em 4.85em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 6.75em 3.05em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 9.45em 3.05em / 1em 1em,
+                linear-gradient(white, white) 1.35em 6em / .1em 3em,
+                linear-gradient(white, white) 0.4em 7.5em / 2em .1em,
+                radial-gradient(white 10%, white(0) 10.5%) .94em 5.05em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) .94em 4.55em / 1em 1em,
+                radial-gradient(white 40%, white(0) 40.5%) .94em 7.05em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) .94em 8.85em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) -.4em 7.05em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 2.15em 7.05em / 1em 1em,
+                linear-gradient(white, white) 5.2em 1.1em / .5em 1em,
+                linear-gradient(white, white) 5.9em 1.1em / .2em 1em,
+                linear-gradient(salmon, salmon) 4.6em 1.2em / 2.8em .8em,
+                linear-gradient(white, white) 4.5em 1.1em / 3em 1em,
+                linear-gradient(maroon, maroon) 5.2em 0 / 1.6em 1.3em,
+                linear-gradient(to right, white .1em,
+                                          salmon .1em,
+                                          salmon .6em,
+                                          alpha(salmon,0) .6em) 4.88em 1.39em / 2em 1.7em,
+                linear-gradient(to left,  white .1em,
+                                          salmon .1em,
+                                          salmon .6em,
+                                          alpha(salmon,0) .6em) 5.1em 1.39em / 2em 1.7em,
+                radial-gradient(circle at 50% 50%, alpha(salmon,0) 60%,
+                                                   salmon 60.5%,
+                                                   salmon 67.5%,
+                                                   white 67.8%,
+                                                   white 69%,
+                                                   white(0) 69.2%) 1em 100.5% / 10em 9em,
+                radial-gradient(circle, tomato 50%, alpha(tomato,0) 51%) 3em 8em / 1em 1em,
+                radial-gradient(circle, tomato 50%, alpha(tomato,0) 51%) 4em 9em / .5em .5em,
+                radial-gradient(circle at 100% 100%, white(0) 31%,
+                                                     white 31.5%,
+                                                     white 36%,
+                                                     white(0) 36.5%) -.3em 1.1em / 6em 6em,
+                radial-gradient(circle at 50% 0, maroon 50%,
+                                                 alpha(maroon,0) 50.5%) -.5em 108% / 13em 5em,
+                linear-gradient(white, white) 13.4em 5.85em / .1em 2em,
+                linear-gradient(white, white) 12.5em 6.8em / 2em .1em,
+                radial-gradient(white 10%, white(0) 10.5%) 12.97em 4.8em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 12.97em 4.3em / 1em 1em,
+                radial-gradient(white 40%, white(0) 40.5%) 12.97em 6.35em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 12.97em 7.8em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 12.97em 8.3em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 11.45em 6.35em / 1em 1em,
+                radial-gradient(white 10%, white(0) 10.5%) 14.35em 6.35em / 1em 1em,
+                radial-gradient(white 12%, white(0) 12.5%) 10.6em 5em / 1em 1em,
+                radial-gradient(white 12%, white(0) 12.5%) 16.2em 4em / 1em 1em,
+                radial-gradient(white 12%, white(0) 12.5%) 15.6em 3em / 1em 1em,
+                radial-gradient(white 12%, white(0) 12.5%) 17.2em 10.5em / 1em 1em,
+                linear-gradient(white, white) 12em 3.85em / 3.4em .1em,
+                linear-gradient(  88deg, white(0) .98em,
+                                         white 1em,
+                                         white 1.1em,
+                                         tomato 1.12em) 12.2em 100% / 1.5em 8.1em,
+                linear-gradient( -88deg, white(0) .98em,
+                                         white 1em,
+                                         white 1.1em,
+                                         tomato 1.12em) 13.7em 100% / 1.5em 8.1em,
+                linear-gradient(  85deg, white(0) .98em,
+                                         white 1em,
+                                         white 1.1em,
+                                         salmon 1.12em) 11.6em 100% / 2em 8.1em,
+                linear-gradient( -85deg, white(0) .98em,
+                                         white 1em,
+                                         white 1.1em,
+                                         lightsalmon 1.12em) 13.8em 100% / 2em 8.1em,
+                linear-gradient( 112deg, white(0) 1.1em,
+                                         white 1.12em,
+                                         white 1.22em,
+                                         white(0) 1.24em) 12.4em 2.2em / 1.5em 1.7em,
+                linear-gradient(-112deg, white(0) 1.1em,
+                                         white 1.12em,
+                                         white 1.22em,
+                                         white(0) 1.24em) 13.5em 2.2em / 1.5em 1.7em,
+                linear-gradient( 112deg, white(0) 1.2em,
+                                         lightsalmon 1.24em) 12.4em 2.2em / 1.3em 1.7em,
+                linear-gradient(-112deg, white(0) 1.2em,
+                                         lightsalmon 1.24em) 13.7em 2.2em / 1.4em 1.7em,
+                linear-gradient( 135deg, white(0) 1.5em,
+                                         white 1.52em,
+                                         white 1.62em,
+                                         tomato 1.64em) 11.75em 1.9em / 1.95em 2em,
+                linear-gradient(-135deg, white(0) 1.5em,
+                                        white 1.52em,
+                                        white 1.62em,
+                                        salmon 1.64em) 13.7em 1.9em / 1.95em 2em
+    background-repeat: no-repeat
+    overflow: hidden
+    border-bottom: .1em solid white
+
+    &::before,
+    &::after
+      width: 100%
+      height: 100%
+      background: radial-gradient(white 10%, white(0) 10.5%) 14.3em 6.3em / 1em 1em,
+                  radial-gradient(white 10%, white(0) 10.5%) 12.2em 8.3em / 1em 1em,
+                  radial-gradient(white 10%, white(0) 10.5%) 13.2em 5.3em / 1em 1em,
+                  radial-gradient(white 10%, white(0) 10.5%) 12.9em 5.6em / 1em 1em,
+                  radial-gradient(white 10%, white(0) 10.5%) 13.2em 2.6em / 1em 1em,
+                  linear-gradient(white, white) 12em 3.85em / 3.4em .1em,
+                  linear-gradient(  88deg, white(0) .98em,
+                                           white 1em,
+                                           white 1.1em,
+                                           var(--sparkle-color2) 1.12em) 12.2em 100% / 1.6em 8.1em,
+                  linear-gradient( -88deg, white(0) .98em,
+                                           white 1em,
+                                           white 1.1em,
+                                           var(--sparkle-color2) 1.12em) 13.7em 100% / 1.5em 8.1em,
+                  linear-gradient(  85deg, white(0) .98em,
+                                           white 1em,
+                                           white 1.1em,
+                                           var(--sparkle-color1) 1.12em) 11.6em 100% / 2em 8.1em,
+                  linear-gradient( -85deg, white(0) .98em,
+                                           white 1em,
+                                           white 1.1em,
+                                           var(--sparkle-color3) 1.12em) 13.8em 100% / 2em 8.1em,
+                  linear-gradient( 112deg, white(0) 1.1em,
+                                           white 1.12em,
+                                           white 1.22em,
+                                           white(0) 1.24em) 12.4em 2.2em / 1.5em 1.7em,
+                  linear-gradient(-112deg, white(0) 1.1em,
+                                           white 1.12em,
+                                           white 1.22em,
+                                           white(0) 1.24em) 13.47em 2.2em / 1.5em 1.7em,
+                  linear-gradient( 112deg, white(0) 1.2em,
+                                           var(--sparkle-color3) 1.24em) 12.4em 2.2em / 1.3em 1.7em,
+                  linear-gradient(-112deg, white(0) 1.2em,
+                                           var(--sparkle-color3) 1.24em) 13.7em 2.2em / 1.4em 1.7em,
+                  linear-gradient( 135deg, white(0) 1.5em,
+                                           white 1.52em,
+                                           white 1.62em,
+                                           var(--sparkle-color2) 1.64em) 11.75em 1.9em / 1.95em 2em,
+                  linear-gradient(-135deg, white(0) 1.5em,
+                                          white 1.52em,
+                                          white 1.62em,
+                                          var(--sparkle-color1) 1.64em) 13.7em 1.9em / 1.95em 2em
+      background-repeat: no-repeat
+
+    &::before
+      --sparkle-color1: lightsalmon
+      --sparkle-color2: salmon
+      --sparkle-color3: tomato
+      transform: rotate(25deg) translate(3em,-1em)
+    &::after
+      transform: rotate(-30deg) translate(-5em,3em)
+      --sparkle-color1: tomato
+      --sparkle-color2: lightsalmon
+      --sparkle-color3: salmon
