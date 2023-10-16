@@ -1,0 +1,86 @@
+/*-----------------------------
+
+Remember
+
+-----------------------------*/
+
+$rmbSpace = 7px
+$rmbLine = $rmbSpace*1.5
+$rmbLetter = $rmbLine*2 + $rmbSpace
+$rmbStripe = $rmbLine*2 + $rmbSpace*3
+
+$rmbLeft = $rmbSpace
+$rmbCenter = $rmbLine + $rmbSpace
+$rmbRight = $rmbLine + $rmbSpace*2
+
+#remember
+  background-color: paleturquoise
+
+  div
+    width: $rmbStripe*7
+    height: 100%
+    margin-left: -(@width/2)
+    top: 0
+    background-image: linear-gradient(to right, crimson       $rmbStripe,
+                                                darkorange    $rmbStripe   $rmbStripe*2,
+                                                gold          $rmbStripe*2 $rmbStripe*3,
+                                                seagreen      $rmbStripe*3 $rmbStripe*4,
+                                                dodgerblue    $rmbStripe*4 $rmbStripe*5,
+                                                royalblue     $rmbStripe*5 $rmbStripe*6,
+                                                rebeccapurple $rmbStripe*6)
+    background-repeat: no-repeat
+
+    &::before
+      width: $rmbLine*2 + $rmbSpace
+      height: $rmbStripe*2
+      left: $rmbSpace
+      bottom: $rmbSpace
+      background-color: transparent
+      border-radius: $rmbLine
+      box-shadow: 0 ($rmbStripe*-2) 0 lightsalmon,
+                  $rmbStripe 0 0 moccasin,
+                  $rmbStripe ($rmbStripe*-1) 0 moccasin,
+                  $rmbStripe ($rmbStripe*-2) 0 moccasin,
+                  $rmbStripe*3 0 0 limegreen,
+                  $rmbStripe*3 ($rmbStripe*-1) 0 limegreen,
+                  $rmbStripe*3 ($rmbStripe*-2) 0 limegreen,
+                  $rmbStripe*4 ($rmbStripe*-2) 0 deepskyblue,
+                  $rmbStripe*4 0 0 deepskyblue
+    
+    &::after
+      width: 100%
+      height: $rmbStripe*4
+      left: 0
+      bottom: $rmbSpace
+      background: linear-gradient(crimson, crimson) $rmbCenter $rmbLine / $rmbSpace $rmbLine*6,
+                  linear-gradient(lightsalmon, lightsalmon) $rmbLeft 0 / $rmbLine 100%,
+                  linear-gradient(45deg, alpha(lightsalmon,0) 45%,
+                                         lightsalmon 45.2%, lightsalmon 53.5%,
+                                         alpha(lightsalmon,0) 53.7%) $rmbLeft 0 / $rmbLetter 100%,
+                  linear-gradient(lightsalmon, lightsalmon) $rmbRight 100% / $rmbLine $rmbLine*7,
+                  linear-gradient(darkorange, darkorange) $rmbStripe+$rmbCenter $rmbLine / $rmbSpace $rmbLine*14,
+                  linear-gradient(lemonchiffon, lemonchiffon) $rmbStripe*2+$rmbLeft 0 / $rmbLine $rmbLine*7,
+                  linear-gradient(45deg, alpha(lemonchiffon,0) 45%,
+                                         lemonchiffon 45.2%, lemonchiffon 53.5%,
+                                         alpha(lemonchiffon,0) 53.7%) $rmbStripe*2+$rmbLeft 0 / $rmbLetter 100%,
+                  linear-gradient(lemonchiffon, lemonchiffon) $rmbStripe*2+$rmbRight 0 / $rmbLine 100%,
+                  linear-gradient(limegreen, limegreen) $rmbStripe*3+$rmbCenter*1.25 50% / $rmbLine*1.5 $rmbLine,
+                  linear-gradient(seagreen, seagreen) $rmbStripe*3+$rmbCenter $rmbLine / $rmbSpace $rmbLine*14,
+                  linear-gradient(seagreen, seagreen) $rmbStripe*3+$rmbCenter $rmbLine*4 / $rmbLine*2 $rmbLine*4,
+                  linear-gradient(dodgerblue, dodgerblue) $rmbStripe*4+$rmbCenter $rmbLine / $rmbSpace $rmbLine*6,
+                  linear-gradient(45deg, alpha(deepskyblue,0) 45%,
+                                         deepskyblue 45.2%, deepskyblue 53.5%,
+                                         alpha(deepskyblue,0) 53.7%) $rmbStripe*4+$rmbLeft 0 / $rmbLetter 100%,
+                  linear-gradient(dodgerblue, dodgerblue) $rmbStripe*4+$rmbRight $rmbLine*8 / $rmbLine $rmbLine*1,
+                  linear-gradient(dodgerblue, dodgerblue) $rmbStripe*4+$rmbCenter $rmbLine*8 / $rmbSpace $rmbLine*7,
+                  linear-gradient(deepskyblue, deepskyblue) $rmbStripe*4+$rmbLeft 0 / $rmbLine 100%,
+                  linear-gradient(cornflowerblue, cornflowerblue) $rmbStripe*5+$rmbLeft 0 / $rmbLetter $rmbLine,
+                  linear-gradient(cornflowerblue, cornflowerblue) $rmbStripe*5+$rmbCenter*.9 100% / $rmbLine 100%,
+                  linear-gradient(cornflowerblue, cornflowerblue) $rmbStripe*5+$rmbLeft 100.1% / $rmbLetter $rmbLine,
+                  linear-gradient(mediumpurple, mediumpurple) $rmbStripe*6+$rmbLeft 0 / $rmbLine $rmbLine*14,
+                  linear-gradient(45deg, alpha(mediumpurple,0) 9%,
+                                         mediumpurple 9.2%, mediumpurple 17.5%,
+                                         alpha(mediumpurple,0) 17.7%) $rmbStripe*6+$rmbLeft 0 / $rmbLetter 100%,
+                  linear-gradient(mediumpurple, mediumpurple) $rmbStripe*6+$rmbRight 0 / $rmbLine 100%
+      background-repeat: no-repeat
+
