@@ -1,0 +1,51 @@
+/*-----------------------------
+
+Tangled
+
+-----------------------------*/
+
+tangled(angle, color, start, end)
+  linear-gradient(angle, transparent start, color start (start + (end - start)*.4), aliceblue (start + (end - start)*.4) (start + (end - start)*.6), color (start + (end - start)*.6) end, transparent end)
+
+$tangled = 12em
+
+
+/* If you’re wondering why I added a color to the mixin here since they
+   are all the same color, it’s so I could temporarily change the
+   color and see which one I was working with 😄 */
+#tangled
+  background-color: powderblue
+  background-image: tangled(127deg, midnightblue, 28.3%, 31.6%),
+                    tangled( 30deg, midnightblue, 10%, 15%),
+                    tangled( 15deg, midnightblue, 81.7%, 83.2%),
+                    tangled( 70deg, midnightblue, 46.7%, 56.7%),
+                    tangled( 30deg, midnightblue, 86.7%, 91.7%),
+                    tangled(140deg, midnightblue, 7.2%, 11.4%),
+                    tangled( 20deg, midnightblue, 46.1%, 51.7%),
+                    tangled(115deg, midnightblue, 92.5%, 95%),
+                    tangled(130deg, midnightblue, 48.4%, 50.4%),
+                    tangled( 80deg, midnightblue, 19.4%, 22.3%),
+                    tangled( 70deg, midnightblue, 10%, 15%),
+                    tangled(119deg, midnightblue, 79.9%, 86.7%),
+                    tangled(140deg, midnightblue, 61.6%, 65.8%),
+                    tangled(131deg, midnightblue, 82.2%, 85.7%),
+                    tangled(100deg, midnightblue, 57.2%, 62.1%),
+                    tangled( 80deg, midnightblue, 35%, 42%),
+                    tangled(100deg, midnightblue, 35%, 42%),
+                    tangled( 80deg, midnightblue, 15%, 22%),
+                    tangled(100deg, midnightblue, 15%, 22%),
+                    tangled(  5deg, midnightblue, 70.5%, 72.4%),
+                    tangled(  7deg, midnightblue, 48%, 54%),
+                    tangled(170deg, midnightblue, 48.4%, 54%),
+                    tangled(  5deg, midnightblue, 35%, 40%),
+                    tangled( 70deg, midnightblue, 60%, 66%),
+                    tangled(110deg, midnightblue, 60%, 66%),
+                    tangled(100deg, midnightblue, 77%, 84%),
+                    tangled( 80deg, midnightblue, 77%, 84%),
+                    tangled( 90deg, midnightblue, 60%, 64%),
+                    tangled(110deg, midnightblue, 8%, 10%),
+                    tangled( 30deg, midnightblue, 4%, 5%),
+                    tangled( 30deg, midnightblue, 40.7%, 41.5%),
+                    tangled(133deg, midnightblue, 45%, 46%),
+                    tangled(133deg, midnightblue, 96.7%, 97.7%)
+  background-size: $tangled $tangled
