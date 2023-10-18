@@ -1,0 +1,112 @@
+/*-----------------------------
+
+Brave
+
+-----------------------------*/
+
+#brave
+  background-color: tomato
+
+  div
+    width: 10em
+    height: 8em
+    margin-left: -(@width/2 + -.75em)
+    margin-top: -(@height/2)
+    background-color: lightsteelblue
+    border-top-left-radius: 8em 4em
+    border-top-right-radius: 8em 4em
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
+    box-shadow: 0 0 0 .05em black,
+                inset .4em .2em 0 lavender,
+                -.4em 0 0 lavender,
+                -3.85em -1.7em 0 -3em darken(lightsteelblue,10),
+                -.75em -.5em 0 -.5em darken(lightsteelblue,10),
+                -1.05em -.6em 0 -.6em darkslategray,
+                -1.15em -.5em 0 -.5em darken(lightsteelblue,10),
+                -1.5em -.7em 0 -.7em darkslategray,
+                -1.5em 0 0 darken(lightsteelblue,10),
+                -1em 0 0 darken(lightsteelblue,10),
+                -1.5em 0 0 .05em black,
+                -1em 0 0 .05em black
+
+    &::before
+      width: 11.5em
+      height: 10em
+      left: -1.5em
+      top: 0
+      background: linear-gradient(lavender, lavender) 0 1.7em / 1.4em 1.4em,
+                  linear-gradient(darkslategray, darkslategray) .4em 3.6em / .45em 3.9em,
+                  linear-gradient(darken(lightsteelblue,10), darken(lightsteelblue,10)) 0 3em / 1.1em 5em,
+                  linear-gradient( 83deg, black(0) 1.8%, black 2%) 0 8em / 60% 1em,
+                  linear-gradient(-85deg, black(0) 1%, black 1.2%) 100% 8em / 60% 1em,
+                  linear-gradient( 105deg, black(0) 12%,
+                                           black 12.2% 35%,
+                                           black(0) 35.2%) 0 8.95em / 2em 1em,
+                  linear-gradient( 105deg, black(0) 12%,
+                                           black 12.2% 60%,
+                                           black(0) 60.2%) .8em 8.95em / 2em 1em,
+                  linear-gradient(-110deg, black(0) 14%,
+                                           black 14.2% 55%,
+                                           black(0) 55.2%) 100% 8.95em / 2em 1em,
+                  linear-gradient(-110deg, black(0) 14%,
+                                           black 14.2% 40%,
+                                           black(0) 40.2%) 87% 8.95em / 2em 1em,
+                  radial-gradient(ellipse at 50% 180%, black(0) 40%,
+                                                       black    41.5%,
+                                                       black    44.5%,
+                                                       black(0) 46%) 3.9em .92em / 2.5em .4em,
+                  radial-gradient(ellipse at 50% 180%, black(0) 40%,
+                                                       black    41.5%,
+                                                       black    44.5%,
+                                                       black(0) 46%) 7.7em .92em / 2.5em .4em,
+                  radial-gradient(ellipse, black(0) 50.5%,
+                                           black 51.5% 52.5%,
+                                           lightsteelblue 53% 70%,
+                                           alpha(lightsteelblue,0) 70.5%) 3.3em .8em / 3.7em 4.3em,
+                  conic-gradient(white(0) 315deg, white 315deg) 3.9em 2.6em / 1.3em 1.3em,
+                  radial-gradient(ellipse, black 19.5%, black(0) 20.2%) 3.15em 1.85em / 3.2em 3.6em,
+                  radial-gradient(ellipse, maroon 50%, alpha(maroon,0) 50.5%) 3.6em 2.3em / 2.3em 2.6em,
+                  radial-gradient(ellipse, white 60%, white(0) 60.5%) 3.3em .8em / 3.7em 4.3em,
+                  radial-gradient(ellipse, black(0) 50.5%,
+                                           black 51.5% 52.5%,
+                                           lightsteelblue 53% 70%,
+                                           alpha(lightsteelblue,0) 70.5%) 7.1em .8em / 3.7em 4.3em,
+                  conic-gradient(white(0) 315deg, white 315deg) 7.7em 2.6em / 1.3em 1.3em,
+                  radial-gradient(ellipse, black 19.5%, black(0) 20.2%) 6.95em 1.85em / 3.2em 3.6em,
+                  radial-gradient(ellipse, maroon 50%, alpha(maroon,0) 50.4%) 7.5em 2.3em / 2.3em 2.6em,
+                  radial-gradient(ellipse, white 60%, white(0) 60.5%) 7.1em .8em / 3.7em 4.3em,
+                  linear-gradient(black, black) 3em 5.3em / 1em .05em,
+                  linear-gradient(black, black) 9.5em 5.3em / 1em .05em,
+                  radial-gradient(ellipse at 50% 0, black(0) 60%,
+                                                    black    60.5%,
+                                                    black    61%,
+                                                    black(0) 61.8%) 2.9em 5.3em / 7.7em 2.2em,
+                  radial-gradient(ellipse at 50% 80%, black(0)  55%,
+                                                       black    55.5%,
+                                                       black    60%,
+                                                       black(0) 60.5%) 3.3em 0em / 3em 4em,
+                  radial-gradient(ellipse at 50% 80%, black(0)  55%,
+                                                       black    55.5%,
+                                                       black    60%,
+                                                       black(0) 60.5%) 7.5em -.25em / 3em 4em
+      background-repeat: no-repeat
+      border-top-left-radius: 5em 2.5em
+
+    &::after
+      width: 15em
+      height: 1.7em
+      left: -3.55em
+      top: 4.6em
+      background: linear-gradient(black, black) 0 0 / 3.15em .05em,
+                  linear-gradient( 37deg, black(0) 24%, #333 24.2%) 0 0 / 3em .5em,
+                  linear-gradient(-100deg, black(0) 23%,
+                                           black 23.5% 24.5%,
+                                           #333 24.2%) .9em 0 / 3em .5em,
+                  linear-gradient(black, black) 0 101% / 3.28em 1.23em,
+                  linear-gradient(black, black) 0 0 / 3em 100%,
+                  linear-gradient(black, black) 100% 0 / 1.45em .05em,
+                  linear-gradient( -37deg, black(0) 40%, #333 40.2%) 100% 0 / 1.41em .5em,
+                  linear-gradient(black, black) 100% 0 / 1.41em 100%
+      background-repeat: no-repeat
+      border-radius: .5em .5em 1.5em 1.5em
