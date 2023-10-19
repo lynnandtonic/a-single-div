@@ -1,0 +1,119 @@
+/*-----------------------------
+
+Component
+
+-----------------------------*/
+
+component(color1, color2, position)
+  linear-gradient(to right, color1 10%, transparent 10%) position 15% \/ 70em 3%\,
+  linear-gradient(to right, color1 10%, transparent 10%) position 100% \/ 70em 2%\,
+  linear-gradient(to right, color1 .1%,
+                            transparent .1% 9.9%,
+                            color1 9.9% 10%,
+                            transparent 10%) position 100% \/ 70em 85%\,
+  linear-gradient(to right, darken(color2,2) 2%,
+                            color2,
+                            darken(color2,4) 10%,
+                            transparent 10%) position 100% \/ 70em 85%\,
+  linear-gradient(to right, transparent .7%,
+                            color1 .7% 2.7%,
+                            transparent 2.7% 4%,
+                            color1 4% 6%,
+                            transparent 6% 7.3%,
+                            color1 7.3% 9.3%,
+                            transparent 9.3%) position 0 \/ 70em 2.5%\,
+  linear-gradient(to right, transparent 2.6%,
+                            color1 2.6% 2.7%,
+                            transparent 2.7% 5.9%,
+                            color1 5.9% 6%,
+                            transparent 6% 9.2%,
+                            color1 9.2% 9.3%,
+                            transparent 9.3%) position 100% \/ 70em 100%\,
+  linear-gradient(to right, white(0) 1.2%,
+                            white(.3) 1.5%,
+                            white(0) 1.7%,
+                            white(.3) 2%,
+                            white(0) 2.3% 4.5%,
+                            white(.3) 4.8%,
+                            white(0) 5%,
+                            white(.3) 5.3%,
+                            white(0) 5.6% 7.8%,
+                            white(.3) 8.1%,
+                            white(0) 8.3%,
+                            white(.3) 8.6%,
+                            white(0) 8.9%) position 100% \/ 70em 100%\,
+  linear-gradient(to right, transparent .7%,
+                            color1 .7%,
+                            color2 1.9%,
+                            darken(color2,10) 2.7%,
+                            transparent 2.7% 4%,
+                            color1 4%,
+                            color2 5.2%,
+                            darken(color2,10) 6%,
+                            transparent 6% 7.3%,
+                            color1 7.3%,
+                            color2 8.5%,
+                            darken(color2,10) 9.3%,
+                            transparent 9.3%) position 100% \/ 70em 100%
+
+#component
+  background-color: lightgrey
+
+  div
+    width: 100%
+    left: 0
+    top: 60%
+
+    &::before,
+    &::after
+      width: calc(100% + 60em)
+
+    &::before
+      top: -2.9em
+      left: -40em
+      animation: component 3s ease-in-out infinite alternate-reverse
+      --component-y: -1.3em
+
+      @media (prefers-reduced-motion)
+        animation: none
+        top: -5em
+        left: -25em
+
+    &::after
+      top: -5.8em
+      left: -60em
+      animation: component 3s ease-in-out infinite alternate
+      --component-y: -2.6em
+
+      @media (prefers-reduced-motion)
+        animation: none
+        top: -10em
+
+  div,
+  div::before,
+  div::after
+    height: 3.5em
+    background: component(darkred, crimson, 10em),
+                component(mediumblue, royalblue, 20em),
+                component(green, mediumseagreen, 30em),
+                component(tomato, darkorange, 40em),
+                component(#bbb, #eee, 50em),
+                component(goldenrod, gold, 60em),
+                component(rebeccapurple, mediumpurple, 70em)
+    background-repeat: repeat-x
+
+@keyframes component
+  0%, 30%
+    transform: translate(0,0)
+  45%
+    transform: translate(0,var(--component-y))
+  55%
+    transform: translate(10em,var(--component-y))
+  70%, 100%
+    transform: translate(10em,0)
+
+
+
+
+
+
