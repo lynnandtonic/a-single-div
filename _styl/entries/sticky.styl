@@ -1,0 +1,109 @@
+/*-----------------------------
+
+Sticky
+
+-----------------------------*/
+
+$stickyBG = turquoise
+
+#sticky
+  background-color: $stickyBG
+
+  div
+    width: 9em
+    height: 15.9em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(black, black) 50% 7.12em / 92% .05em,
+                linear-gradient(black, black) 0 6.15em / .05em 2em,
+                linear-gradient(black, black) 100.1% 6.15em / .06em 2em,
+                conic-gradient(white(0) 225deg,
+                               white 225deg 315deg,
+                               white(0) 315deg) 0 5.4em / 2em 3.5em,
+                conic-gradient(black(0) 225deg,
+                               black 225deg 315deg,
+                               black(0) 315deg) 0 5.4em / 2.15em 3.5em,
+                conic-gradient(white(0) 45deg,
+                               white 45deg 135deg,
+                               white(0) 135deg) 100% 5.4em / 2em 3.5em,
+                conic-gradient(black(0) 45deg,
+                               black 45deg 135deg,
+                               black(0) 135deg) 100% 5.4em / 2.15em 3.5em,
+                radial-gradient(circle at 50% 100%, black(0) 67.4%,
+                                                    black 67.6% 69%,
+                                                    $stickyBG 69.2%) 50% 10.15em / 5.1em 2.5em,
+                radial-gradient(circle at 50% 0, black(0) 67.4%,
+                                                 black 67.6% 69%,
+                                                 black(0) 69.2%) 50% 12.65em / 5.1em 2.5em,
+                radial-gradient(circle at 50% 0, black(0) 67.4%,
+                                                 black 67.6% 69%,
+                                                 $stickyBG 69.2%) 50% 13.4em / 5.1em 2.5em,
+                linear-gradient(to right, $stickyBG 1.5%,
+                                          black 1.8% 2.7%,
+                                          black(0) 2.9%) 50% 12.5em / 5.1em 1em,
+                linear-gradient(to left,  $stickyBG 1.5%,
+                                          black 1.8% 2.7%,
+                                          black(0) 2.9%) 50% 12.5em / 5.1em 1em,
+                linear-gradient($stickyBG, $stickyBG) calc(50% - 3em) 100% / 1em 5em,
+                linear-gradient($stickyBG, $stickyBG) calc(50% + 3em) 100% / 1em 5em,
+                radial-gradient(ellipse at 50% -1em, black(0) 55%,
+                                                     black(.3) 55.4% 67.6%) 50% 13.2em / 6.5em 2.7em,
+                radial-gradient(circle, white 40%, white(0) 40.2%) 50% 10.2em / 5em 5em,
+                linear-gradient(crimson, crimson) calc(50% - 2.45em) 13.2em / .2em 2em,
+                linear-gradient(  white,   white) calc(50% + 2.45em) 13.2em / .2em 2em,
+                linear-gradient(  white,   white) calc(50% - 2.35em) 13.4em / .3em 2em,
+                linear-gradient(crimson, crimson) calc(50% + 2.25em) 13.4em / .5em 2em,
+                linear-gradient(crimson, crimson) calc(50% - 1.95em) 14.4em / .5em 1em,
+                linear-gradient(  white,   white) calc(50% + 1.95em) 14.4em / .5em 1em,
+                linear-gradient(  white,   white) calc(50% - 1.63em) 14.4em / .5em 1em,
+                linear-gradient(crimson, crimson) calc(50% + 1.36em) 14.6em / .7em 1em,
+                linear-gradient(crimson, crimson) calc(50% - 1.01em) 14.8em / .8em 1em,
+                linear-gradient(  white,   white) calc(50% - 0.61em) 15.0em / .8em .9em,
+                linear-gradient(  white,   white) calc(50% + 1.03em) 15.0em / .8em .9em,
+                linear-gradient(crimson, crimson) 50% 15.0em / 1.5em .9em,
+                repeating-conic-gradient(from 45deg at 50% 50%,
+                                         crimson 0deg 10deg,
+                                         crimson 10deg 20deg,
+                                         white 20deg 30deg) 50% 10.2em / 5em 5em
+    background-repeat: no-repeat
+
+    &::before
+      width: 7em
+      height: 3.2em
+      left: 50%
+      margin-left: -(@width/2)
+      top: 5.6em
+      background-image: linear-gradient(to top, black(.2) 40%, black(0) 40%),
+                        linear-gradient(to right, white 5%,
+                                                  crimson 5% 15%,
+                                                  transparent 15%),
+                        linear-gradient(to left, white 5%,
+                                                  crimson 5% 15%,
+                                                  transparent 15%)
+      background-color: darken(saddlebrown,10)
+      border-radius: .6em
+      box-shadow: inset 0 0 0 .05em black
+
+    &::after
+      width: 5.5em
+      height: 4em
+      left: 50%
+      top: .1em
+      margin-left: -(@width/2)
+      background: linear-gradient(white(.7), white(.7)) 25% 15% / .2em .2em,
+                  linear-gradient(white(.8), white(.8)) 30% 30% / .2em .2em,
+                  linear-gradient(white(.8), white(.8)) 35% 20% / .2em .2em,
+                  linear-gradient(white(.8), white(.8)) 45% 10% / .2em .2em,
+                  linear-gradient(white(.7), white(.7)) 44% 25% / .2em .2em,
+                  linear-gradient(white(.7), white(.7)) 65% 15% / .2em .2em,
+                  linear-gradient(white(.8), white(.8)) 70% 25% / .2em .2em,
+                  linear-gradient(white(.8), white(.8)) 50% 40% / .2em .2em,
+                  linear-gradient(white(.9), white(.9)) 66% 50% / .2em .2em,
+                  linear-gradient(white(.7), white(.7)) 20% 55% / .2em .2em,
+                  linear-gradient(white(.7), white(.7)) 80% 45% / .2em .2em
+      background-repeat: no-repeat
+      background-color: peru
+      border-radius: .4em
+      box-shadow: inset 0 0 0 .05em black,
+                  inset 0 -1em 0 darken(peru,15),
+                  inset 0 -1em 0 .05em black
