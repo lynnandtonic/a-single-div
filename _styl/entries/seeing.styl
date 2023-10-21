@@ -1,0 +1,152 @@
+/*-----------------------------
+
+Seeing
+
+-----------------------------*/
+
+seeingWide(position)
+  radial-gradient(ellipse at 50% 120%, black(0) 30%,
+                                       black 30.1% 33%,
+                                       black(0) 33.1%) (position * 16em) calc(50% - 2.5em) \/ 16em 5em\,
+  radial-gradient(ellipse at 50% -15%, black(0) 30%,
+                                       black 30.1% 32%,
+                                       black(0) 32.1%) (position * 16em) calc(50% + 2em) \/ 16em 4em\,
+  radial-gradient(ellipse at 140% 50%, white 46%,
+                                       black 46.2% 52%,
+                                       black(0) 52.2%) (position * 16em + 4.8em) calc(50% - .05em) \/ 1em 3.28em\,
+  radial-gradient(ellipse at -40% 50%, white 46%,
+                                       black 46.2% 52%,
+                                       black(0) 52.2%) (position * 16em + 10.2em) calc(50% - .03em) \/ 1em 3.28em\,
+  radial-gradient(circle, white 50%, white(0) 50.3%) (position * 16em + 7em) calc(50% - .6em) \/ 1em 1em\,
+  radial-gradient(circle at 50% 35%, black .6em,
+                                     limegreen .63em,
+                                     darkolivegreen 1.25em,
+                                     black 1.28em 1.4em,
+                                     black(0) 1.43em) (position * 16em + 6em) calc(50% + .3em) \/ 4em 4em\,
+  radial-gradient(ellipse, white 57%, white(0) 57%) (position * 16em + 4.53em) calc(50% - .07em) \/ 6.93em 3.85em\,
+  radial-gradient(ellipse at 50% 120%, darkolivegreen 32%,
+                                       black(0) 32.1%) (position * 16em) calc(50% - 2.5em) \/ 16em 5em\,
+  radial-gradient(ellipse at 50% -15%, darkolivegreen 32%,
+                                       black(0) 32.1%) (position * 16em) calc(50% + 2em) \/ 16em 4em
+
+seeingNarrow(position)
+  radial-gradient(ellipse at 50% 120%, black(0) 30%,
+                                       black 30.1% 33%,
+                                       black(0) 33.1%) (position * 16em) calc(50% - 1.38em) \/ 16em 2.8em\,
+  radial-gradient(ellipse at 50% -15%, black(0) 30%,
+                                       black 30.1% 32%,
+                                       black(0) 32.1%) (position * 16em) calc(50% + 2em) \/ 16em 4em\,
+  radial-gradient(ellipse at 140% 20%, white 46%,
+                                       black 46.2% 52%,
+                                       black(0) 52.2%) (position * 16em + 4.8em) calc(50% + .55em) \/ 1em 2.06em\,
+  radial-gradient(ellipse at -40% 20%, white 46%,
+                                       black 46.2% 52%,
+                                       black(0) 52.2%) (position * 16em + 10.2em) calc(50% + .55em) \/ 1em 2.06em\,
+  radial-gradient(circle, white 50%, white(0) 50.3%) (position * 16em+ 7em) calc(50% - .6em) \/ 1em 1em\,
+  radial-gradient(circle at 50% 14%, black .6em,
+                                     limegreen .63em,
+                                     darkolivegreen 1.25em,
+                                     black 1.28em 1.4em,
+                                     black(0) 1.43em) (position * 16em + 6em) calc(50% + 1.11em) \/ 4em 4em\,
+  radial-gradient(ellipse, white 56%, white(0) 56%) (position * 16em + 4.49em) calc(50% + .2em) \/ 7em 2.97em\,
+  radial-gradient(ellipse at 50% 120%, darkolivegreen 32%,
+                                       black(0) 32.1%) (position * 16em) calc(50% - 1.38em) \/ 16em 2.8em\,
+  radial-gradient(ellipse at 50% -15%, darkolivegreen 32%,
+                                       black(0) 32.1%) (position * 16em) calc(50% + 2em) \/ 16em 4em
+
+#seeing
+  background-color: darkolivegreen
+  z-index: 1
+
+  div
+    width: 100%
+    height: 16em
+    left: 0
+    margin-top: -(@height/2)
+    background: linear-gradient(darkolivegreen, darkolivegreen) 50% 100% / 100% 6.2%,
+                linear-gradient(darkolivegreen, darkolivegreen) 50% 0 / 100% 6.2%,
+                conic-gradient(at 50% 2%, darkolivegreen 151deg,
+                                          alpha(darkolivegreen,0) 151.1deg 209deg,
+                                          darkolivegreen 209.1deg) 50% 50% / 100% 94%,
+                conic-gradient(at 50% 4%, black 151deg,
+                                          white(0) 151.1deg 209deg,
+                                          black 209.1deg) 50% 50% / 100% 94%,
+                linear-gradient(black, black) 50% 99% / 100% 6.5%,
+                conic-gradient(at 50% 7%, darkolivegreen 151deg,
+                                          alpha(darkolivegreen,0) 151.1deg 209deg,
+                                          darkolivegreen 209.1deg) 50% 50% / 100% 94%,
+                linear-gradient(darkolivegreen, darkolivegreen) 50% 99% / 100% 8%,
+                conic-gradient(at 50% 10%, white 151deg,
+                                           white(0) 151.1deg 209deg,
+                                           white 209.1deg) 50% 50% / 100% 94%,
+                linear-gradient(white, white) 50% 99% / 100% 9%
+    background-repeat: no-repeat
+
+    &::before
+      width: 100%
+      height: 94%
+      top: 4%
+      background-image: repeating-conic-gradient(at 50% 60%, alpha(yellowgreen,0) 0deg 3deg, yellowgreen 3deg 5deg)
+      z-index: -2
+
+    &::after
+      width: 112em
+      height: 65%
+      left: 50%
+      bottom: 0
+      margin-left: -8em
+      background: seeingWide(0),
+                  seeingNarrow(1),
+                  radial-gradient(ellipse at 50% -15%, black(0) 29%,
+                                                       black 29.1% 32%,
+                                                       black(0) 32.1%) 32em calc(50% + 2.15em) / 16em 4em, // 3
+                  radial-gradient(ellipse at 50% -15%, black(0) 29%,
+                                                       black 29.1% 32%,
+                                                       black(0) 32.1%) 48em calc(50% + 2.3em) / 16em 4em, // 4
+                  radial-gradient(ellipse at 50% 120%, black(0) 27%,
+                                                       black 27.1% 33%,
+                                                       black(0) 33.1%) 64em calc(50% - .68em) / 16em 1.4em, // 5
+                  radial-gradient(ellipse at 50% -15%, black(0) 30%,
+                                                       black 30.1% 32%,
+                                                       black(0) 32.1%) 64em calc(50% + 2em) / 16em 4em,
+                  radial-gradient(ellipse at 180% -20%, white 49%,
+                                                       black 49.2% 53%,
+                                                       black(0) 53.2%) 68.6em calc(50% + .92em) / 1em 2em,
+                  radial-gradient(ellipse at -80% -20%, white 49%,
+                                                        black 49.2% 53%,
+                                                        black(0) 53.2%) 74.4em calc(50% + .92em) / 1em 2em,
+                  radial-gradient(circle at 50% -20%, white 30%, white(0) 30.3%) 71em calc(50% + .06em) / 1em 1em,
+                  radial-gradient(circle at 50% 0%, black .6em,
+                                                     limegreen .63em,
+                                                     darkolivegreen 1.25em,
+                                                     black 1.28em 1.4em,
+                                                     black(0) 1.43em) 70em calc(50% + 1.6em) / 4em 4em,
+                  radial-gradient(ellipse, white 56%, white(0) 56%) 69em calc(50% + .49em) / 6em 2.35em,
+                  linear-gradient( 20deg, white(0) 7%, white 7%) 69.52em calc(50% + .4em) / 3em 1.35em,
+                  linear-gradient(-20deg, white(0) 7%, white 7%) 71.46em calc(50% + .4em) / 3em 1.35em,
+                  radial-gradient(ellipse at 50% 120%, darkolivegreen 32%,
+                                                       black(0) 32.1%) 64em calc(50% - .69em) / 16em 1.4em,
+                  radial-gradient(ellipse at 50% -15%, darkolivegreen 32%,
+                                                       black(0) 32.1%) 64em calc(50% + 2em) / 16em 4em,
+                  seeingNarrow(5),
+                  seeingWide(6)
+      background-repeat: no-repeat
+      transform: translateX(0)
+      z-index: -1
+      animation: seeing 4s linear infinite
+
+@keyframes seeing
+  0%, 30%
+    transform: translateX(0)
+  30.01%, 31%
+    transform: translateX(-16em)
+  31.01%, 32%
+    transform: translateX(-32em)
+  32.01%, 33%
+    transform: translateX(-48em)
+  33.01%, 34%
+    transform: translateX(-64em)
+  34.01%, 35%
+    transform: translateX(-80em)
+  35.01%, 100%
+    transform: translateX(-96em)
