@@ -1,0 +1,102 @@
+/*-----------------------------
+
+Faraway
+
+-----------------------------*/
+
+farawayBoxY(position, size)
+  linear-gradient(to bottom, black .1em,
+                             transparent .1em calc(100% - .1em),
+                             black calc(100% - .1em)) position \/ size
+
+farawayBoxX(color, position, size)
+  linear-gradient(to right, black .1em,
+                            color .1em calc(100% - .1em),
+                            black calc(100% - .1em)) position \/ size
+
+farawayBox(color, position, size)
+  linear-gradient(to bottom, black .1em,
+                             transparent .1em calc(100% - .1em),
+                             black calc(100% - .1em)) position \/ size\,
+  linear-gradient(to right, black .1em,
+                            color .1em calc(100% - .1em),
+                            black calc(100% - .1em)) position \/ size
+
+#faraway
+
+  div
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background: farawayBox(sienna, calc(50% + 4.7em) calc(50% + 4.6em), 2em .5em),
+                linear-gradient(black, black) 50% calc(50% + 1.8em) / 12em .1em,
+                farawayBoxY(50% calc(50% + 2.1em), 12em 4em),
+                linear-gradient(to bottom, black .1em,
+                                           transparent .1em) calc(50% - 4.7em) calc(50% + 3.8em) / 1em .6em,
+                farawayBoxX(sienna, calc(50% - 4.7em) calc(50% + 3.8em), 1em .6em),
+                linear-gradient(to left, alpha(saddlebrown,0) 10%,
+                                          alpha(saddlebrown,.5) 20% 50%,
+                                          alpha(saddlebrown,.7) 50% 80%,
+                                          alpha(saddlebrown,0) 90%) 50% calc(50% + 2.9em) / 12em 2.3em,
+                radial-gradient(circle at 100% 0, alpha(saddlebrown,.7),
+                                                  alpha(saddlebrown,0) 15%) calc(50% - 7.5em) calc(50% + 1.1em) / 8em 2em,
+                radial-gradient(circle at 0 0, alpha(saddlebrown,.5),
+                                               alpha(saddlebrown,0) 15%) calc(50% + 7.5em) calc(50% + 1.1em) / 8em 2em,
+                linear-gradient(to right, black .1em,
+                                          peru .1em 50%,
+                                          sandybrown 50% calc(100% - .1em),
+                                          black calc(100% - .1em)) 50% calc(50% + 2.1em) / 12em 4em,
+                farawayBox(darkseagreen, calc(50% - 7.1em) calc(50% + 3.37em), .4em 1.4em),
+                farawayBox(saddlebrown, calc(50% - 7.5em) calc(50% + 3.5em), 1.2em 1.2em),
+                radial-gradient(circle, seashell 50%, white(0) 50.2%) calc(50% + 6em) calc(50% - 5em) / 1.5em 1.5em,
+                radial-gradient(circle, deeppink 50%, white(0) 50.2%) calc(50% + 9.5em) calc(50% - 2em) / 1.5em 1.5em,
+                linear-gradient(black, black) calc(50% - 10em) calc(50% + 1.8em) / .1em 2.3em,
+                farawayBoxX(transparent, calc(50% - 10em) calc(50% + 1.8em), 1.6em 2.3em),
+                farawayBox(lightgray, calc(50% - 10em) calc(50% + 3.3em), 1em .5em),
+                farawayBox(lightgray, calc(50% - 10em) calc(50% + 2.3em), .7em 1em),
+                farawayBox(silver, calc(50% - 10em) calc(50% + 1.0em), .7em 1.2em),
+                farawayBox(transparent, calc(50% - 10em) calc(50% - 0.7em), .5em .6em),
+                farawayBox(lightgray, calc(50% - 10em) calc(50% - 0.7em), .5em 1.6em),
+                linear-gradient(black, black) calc(50% - 10em) calc(50% + 1em) / 1.6em .1em,
+                linear-gradient(black, black) calc(50% - 10em) calc(50% + .5em) / .1em 6em,
+                linear-gradient(black, black) calc(50% - 10em) calc(50% - 2.5em) / .6em .1em,
+                farawayBox(lightgray, calc(50% - 10.5em) calc(50% - 2.5em), .4em .4em),
+                farawayBox(lightgray, calc(50% - 9.5em) calc(50% - 2.5em), .4em .4em),
+                linear-gradient(to bottom, black .1em,
+                                           wheat .1em) 0 100% / 100% calc(50% - 2.2em),
+                linear-gradient(to bottom, salmon, mediumpurple) 0 0 / 100% calc(50% + 3em)
+    background-repeat: no-repeat
+
+    &::before
+      width: 8em
+      height: 6em
+      left: 50%
+      top: calc(50% - 2.1em)
+      margin-left: -(@width/2)
+      border-radius: 4.5em 4.5em 0 0
+      background: farawayBox(darken(darkseagreen,7), 5% calc(100% + .1em), 1em 1em),
+                  farawayBox(chocolate, 90% calc(100% + .1em), .5em 1em),
+                  farawayBox(chocolate, 98% calc(100% + .1em), .5em .7em),
+                  radial-gradient(circle at 100% 50%, peru 56%, alpha(peru,0) 56.2%) calc(50% - 1em) 77% / 2em 3em,
+                  radial-gradient(circle at 0 50%, sandybrown 56%, alpha(sandybrown,0) 56.2%) calc(50% + 1em) 77% / 2em 3em,
+                  radial-gradient(circle at 50% 100%, black 53%, black(0) 53.3%) 50% 45.2% / 4em 2em,
+                  linear-gradient(black, black) 94% 73% / .8em .5em,
+                  linear-gradient(black, black) 50% 63% / 11em .1em,
+                  linear-gradient(black, black) 20% 100% / .1em 2.2em,
+                  linear-gradient(black, black) 80% 100% / .1em 2.2em,
+                  linear-gradient(to right, alpha(saddlebrown,.4), alpha(saddlebrown,0)) 88% 100% / 10% 2.2em,
+                  linear-gradient(to left, alpha(saddlebrown,.7), alpha(saddlebrown,0)) 12% 100% / 10% 2.2em,
+                  linear-gradient(to left, sandybrown 50%, peru 50%) 0 0 / 100% 100%
+      background-repeat: no-repeat
+      border: .1em solid black
+
+    &::after
+      width: 2em
+      height: 3.2em
+      left: 50%
+      top: calc(50% + .73em)
+      margin-left: -(@width/2)
+      border-radius: 1.2em 1.2em 0 0
+      background-image: linear-gradient(to left, saddlebrown 50%, darken(saddlebrown,5) 50%)
+      border: .1em solid black
