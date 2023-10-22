@@ -1,0 +1,95 @@
+/*-----------------------------
+
+Alive
+
+-----------------------------*/
+
+#alive
+  background: darken(darkolivegreen,15)
+
+  div
+    width: 18em
+    height: @width
+    margin-left: -(@width/2)
+    margin-top: -(@width/2)
+    background: radial-gradient(circle, darkgreen 50%, alpha(darkgreen,0) 50.5%) 42% 74% / 2em 2em,
+                radial-gradient(circle, darkgreen 50%, alpha(darkgreen,0) 50.5%) 50% 76% / 2em 2em,
+                radial-gradient(circle, darkgreen 50%, alpha(darkgreen,0) 50.5%) 58% 74% / 2em 2em,
+                linear-gradient( 45deg, transparent 10%, forestgreen 10%) 32% 81% / 20% .1em,
+                linear-gradient(-45deg, transparent 10%, forestgreen 10%) 68% 81% / 20% .1em,
+                radial-gradient(ellipse at 50% 120%, limegreen 50%, alpha(limegreen,0) 50.5%) 19% 81% / 50% 8%,
+                radial-gradient(ellipse at 50% -20%, limegreen 50%, alpha(limegreen,0) 50.5%) 18.5% 89.5% / 40% 8%,
+                radial-gradient(ellipse at 50% 120%, limegreen 50%, alpha(limegreen,0) 50.5%) 81% 81% / 50% 8%,
+                radial-gradient(ellipse at 50% -20%, limegreen 50%, alpha(limegreen,0) 50.5%) 81.5% 89.5% / 40% 8%,
+                radial-gradient(ellipse at 0 100%, alpha(limegreen,0) 60%, limegreen 60.3%) 38% 100% / 20% 50%,
+                radial-gradient(ellipse at 100% 100%, alpha(limegreen,0) 60%, limegreen 60.3%) 62% 100% / 20% 50%,
+                radial-gradient(ellipse, darkgreen 50%, alpha(darkgreen,0) 50.5%) 50% -50% / 100% 80%,
+                radial-gradient(ellipse, forestgreen 50%, alpha(forestgreen,0) 50.5%) 10% 45% / 60% 65%,
+                radial-gradient(ellipse, forestgreen 50%, alpha(forestgreen,0) 50.5%) 90% 45% / 60% 65%
+    background-repeat: no-repeat
+    
+    &::before
+      width: 12em
+      height: 12em
+      left: 50%
+      margin-left: -(@width/2)
+      top: 1em
+      background: radial-gradient(ellipse at 50% 120%, alpha(crimson,0) 65%,
+                                                       crimson 65.5% 77%,
+                                                       alpha(crimson,0) 77%) 50% 46% / 72% 20%,
+                  radial-gradient(ellipse at 50% -20%, alpha(crimson,0) 66%,
+                                                       crimson 66.5% 78%,
+                                                       alpha(crimson,0) 78%) 50% 66% / 72% 16%,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 28% 47% / 1.5em 1.5em,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 42% 44% / 1.5em 1.5em,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 57% 44% / 1.5em 1.5em,
+                  radial-gradient(ellipse at 50% 0, white 50%, white(0) 50.5%) 72% 47% / 1.5em 1.5em,
+                  radial-gradient(ellipse at 50% 100%, white 50%, white(0) 50.5%) 28% 65% / 1.4em 1.1em,
+                  radial-gradient(ellipse at 50% 100%, white 50%, white(0) 50.5%) 42% 68% / 1.5em 1.2em,
+                  radial-gradient(ellipse at 50% 100%, white 50%, white(0) 50.5%) 57% 68% / 1.5em 1.2em,
+                  radial-gradient(ellipse at 50% 100%, white 50%, white(0) 50.5%) 72% 65% / 1.4em 1.1em,
+                  radial-gradient(ellipse at 50% 130%, lightcoral 50%, alpha(lightcoral,0) 50.5%) 50% 60.5% / 7em 3em,
+                  radial-gradient(ellipse at 50% 120%, black 65%, black(0) 65.5%) 50% 46.5% / 78% 23%,
+                  radial-gradient(ellipse at 50% -20%, black 25%, black(0) 25.5%) 50% 160% / 222% 65%,
+                  radial-gradient(ellipse at 50% 120%, crimson 31%,alpha(crimson,0) 31.4%) 50% -120% / 193% 80%,
+                  radial-gradient(ellipse at 50% -20%, crimson 30.1%, alpha(crimson,0) 30.4%) 50% 279% / 200% 80%,
+                  radial-gradient(ellipse at 70% 100%, crimson 40%, transparent 40.5%) -25.5% 2% / 65% 55%,
+                  radial-gradient(ellipse at 30% 100%, crimson 40%, transparent 40.5%) 125.5% 2% / 65% 55%,
+                  radial-gradient(ellipse at 50% 160%, alpha(forestgreen,0) 40%,
+                                                       forestgreen 40.4%, 45%,
+                                                       alpha(forestgreen,0) 45.4%) 50% -2% / 52% 8%,
+                  radial-gradient(ellipse at 50% 200%, alpha(forestgreen,0) 40%,
+                                                       forestgreen 40.4%, 45%,
+                                                       alpha(forestgreen,0) 45.4%) 50% 1% / 52% 8%,
+                  radial-gradient(ellipse at 50% -60%, forestgreen 50%, alpha(forestgreen,0) 52%) 30% 0 / 7% 22%,
+                  radial-gradient(ellipse at 50% -20%, forestgreen 50%, alpha(forestgreen,0) 52%) 50% 0 / 7% 22%,
+                  radial-gradient(ellipse at 50% -60%, forestgreen 50%, alpha(forestgreen,0) 52%) 70% 0 / 7% 22%
+      background-color: limegreen
+      background-repeat: no-repeat
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%
+
+    &::after
+      width: 7.2em
+      height: 4.2em
+      display: grid
+      place-content: center
+      left: 50%
+      bottom: -1em
+      margin-left: -(@width/2)
+      background-image: linear-gradient(to bottom, silver .2em,
+                                                   gray .2em .3em,
+                                                   silver .3em .5em,
+                                                   transparent .5em),
+                        linear-gradient(to top, silver .2em,
+                                                gray .2em .3em,
+                                                silver .3em .5em,
+                                                transparent .5em)
+      background-color: dodgerblue
+      box-shadow: inset  .8em 0 0 black(.15),
+                  inset -.8em 0 0 black(.15)
+      content: 'Maxwell House'
+      font-family: Helvetica, sans-serif
+      font-weight: bold
+      font-size: 10px
+      color: peachpuff
+      text-transform: uppercase
