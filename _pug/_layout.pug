@@ -1,6 +1,6 @@
 doctype html
 html(lang="en")
-  //-
+  //
     -----------------------------------------------
     This is a CSS drawing experiment to see what's possible with a single div. 
     To learn more about this project: 
@@ -8,8 +8,8 @@ html(lang="en")
     Mozilla Hacks: https://hacks.mozilla.org/2014/09/single-div-drawings-with-css/ 
     Talk from CSSDay: https://lynnandtonic.com/thoughts/entries/talk-illustration-with-css/ 
     Codepen: https://codepen.io/lynnandtonic
-    Twitter: @lynnandtonic
     Mastodon: @lynnandtonic@front-end.social
+    Twitter: @lynnandtonic
     -----------------------------------------------
 
   //- Variable block for page-specific info
@@ -24,10 +24,7 @@ html(lang="en")
     meta(name='description', content=pageDescription)
     link(rel="icon", href="/images/favicon.ico")
 
-    if bodyClass == 'main'
-      link(rel='stylesheet', href='/css/main.css')
-    else
-      link(rel='stylesheet', href='/css/pages.css')
+    link(rel='stylesheet', href=cssPath)
 
   body(class=bodyClass)
 
@@ -37,7 +34,10 @@ html(lang="en")
         = ': '
         span a CSS drawing project by 
         a(href="https://lynnandtonic.com") Lynn Fisher
-      a.share-link(href="https://ctt.ec/DidfP") Tweet
+      if bodyClass == '2014-2019'
+        a.archive-link(href="/") 2020-2023
+      if bodyClass == '2020-2024'
+        a.archive-link(href="/2014-2019") 2014-2019
       a.github-link(href="https://github.com/lynnandtonic/a-single-div") GitHub
       a.divtober-link(href="/divtober2023") #divtober
       a.coffee(href="https://www.buymeacoffee.com/lynnandtonic") Buy me a coffee

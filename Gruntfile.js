@@ -20,8 +20,9 @@ module.exports = function(grunt) {
                 // },
 
                 files: {
-                    'public/css/main.css':  ['_styl/main.styl'],
-                    'public/css/pages.css': ['_styl/pages.styl']
+                    'public/css/main.css':      ['_styl/main.styl'],
+                    'public/css/2014-2019.css': ['_styl/pages/2014-2019.styl'],
+                    'public/css/divtober.css':  ['_styl/pages/divtober.styl']
                 }
             }
         },

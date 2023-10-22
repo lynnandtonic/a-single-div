@@ -5,6 +5,8 @@ Header and global styles
 -----------------------------*/
 
 header
+  box-sizing: border-box
+  width: 100%
   position: relative
   background: #333
   color: white
@@ -13,7 +15,7 @@ header
   line-height: 1.2
   z-index: 10
 
-  @media screen and (min-width: 541px)
+  @media screen and (min-width: 651px)
     padding: 10px 15px
     display: flex
     justify-content: flex-end
@@ -26,7 +28,7 @@ header
     & > a
       margin-left: 15px
 
-  @media screen and (max-width: 540px)
+  @media screen and (max-width: 650px)
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -34,7 +36,7 @@ header
     h1
       width: 100%
       padding: 10px
-      background-color: black
+      background-color: #222
 
     & > a
       margin: 8px

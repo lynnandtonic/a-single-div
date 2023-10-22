@@ -16,9 +16,6 @@ Entry styles
   &.tall
     min-height: 450px
 
-  // &.tiny
-  //   min-height: 200px
-
   div
     position: absolute
     left: 50%
@@ -29,16 +26,12 @@ Entry styles
       content: ''
       position: absolute
 
-body,
-.cf
-  &:before,
-  &:after
-    content: " "
-    display: table
+body
+  display: flex
+  flex-wrap: wrap
 
-  &:after
-    clear: both
-
+.entry
+  width: 100%
 
 @media (max-width: 400px)
 
@@ -48,7 +41,6 @@ body,
 @media all and (min-width: 650px) and (max-width: 959px)
 
   .entry
-    float: left
     width: 100%
 
     &.fours,
@@ -58,7 +50,6 @@ body,
 @media all and (min-width: 960px)
 
   .entry
-    float: left
     width: 50%
 
     &.wide
