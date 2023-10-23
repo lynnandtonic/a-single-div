@@ -1,0 +1,92 @@
+/*-----------------------------
+
+Fake
+
+-----------------------------*/
+
+#fake
+
+  div
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-image: repeating-linear-gradient(90deg, alpha(midnightblue,.2),
+                                                       alpha(midnightblue,.2) .02em,
+                                                       alpha(midnightblue,0) .02em,
+                                                       alpha(midnightblue,0) .05em),
+                      repeating-linear-gradient(30deg, alpha(midnightblue,0),
+                                                       alpha(midnightblue,0) .05em,
+                                                       alpha(midnightblue,.5) .1em .15em,
+                                                       alpha(midnightblue,0) .2em .25em),
+                      radial-gradient(circle at 30% 0, alpha(midnightblue,.3), alpha(midnightblue,0) 50%),
+                      radial-gradient(circle at 60% 100%, alpha(midnightblue,.2), alpha(midnightblue,0) 50%),
+                      radial-gradient(circle at 10% 90%, alpha(aliceblue,.2), alpha(aliceblue,0) 40%),
+                      radial-gradient(circle at 70% 10%, alpha(aliceblue,.2), alpha(aliceblue,0) 40%)
+    background-color: darken(steelblue,10)
+
+    &::before
+      box-sizing: border-box
+      width: 10em
+      height: 5.8em
+      padding-top: 4.35em
+      left: 50%
+      top: 50%
+      margin-left: -(@width/2)
+      margin-top: -(@height/2)
+      background: linear-gradient(to right, white(0),
+                                            white(.8) 20% 80%,
+                                            white(0) 100%) 10% 6% / 15% 2%,
+                  repeating-linear-gradient(to right, black(0),
+                                                      black(0) 8.4%,
+                                                      black 8.4% 10.2%) 50% .63em / 8.7em 3.4em,
+                  repeating-linear-gradient(to bottom, black(0),
+                                                       black(0) 16%,
+                                                       black 16% 20.5%) 50% .63em / 8.7em 3.4em,
+                  linear-gradient( to right, black 1.8%, black(0) 1.8%) 50% .6em / 9em 3.4em,
+                  linear-gradient(  to left, black 1.8%, black(0) 1.8%) 50% .6em / 9em 3.4em,
+                  linear-gradient(to bottom, black 4.5%, black(0) 4.5%) 50% .5em / 9em 3.61em,
+                  linear-gradient(   to top, black 4.5%, black(0) 4.5%) 50% .5em / 9em 3.61em,
+                  linear-gradient( to right, limegreen 20%, white(0) 20%) 45% 52% / .85em .7em,
+                  linear-gradient(to bottom, limegreen 25%, white(0) 25%) 45% 52% / .85em .7em,
+                  linear-gradient(  to left, white(.6) 20%, white(0) 20%) 45% 52% / .85em .7em,
+                  linear-gradient(   to top, white(.6) 25%, white(0) 25%) 45% 52% / .85em .7em,
+                  linear-gradient(lightgreen, lightgreen) 45% 52% / .85em .7em,
+                  linear-gradient( to right, limegreen 20%, white(0) 20%) 65% 11% / .85em .7em,
+                  linear-gradient(to bottom, limegreen 25%, white(0) 25%) 65% 11% / .85em .7em,
+                  linear-gradient(  to left, white(.6) 20%, white(0) 20%) 65% 11% / .85em .7em,
+                  linear-gradient(   to top, white(.6) 25%, white(0) 25%) 65% 11% / .85em .7em,
+                  linear-gradient(lightgreen, lightgreen) 65% 11% / .85em .7em,
+                  linear-gradient( to right, forestgreen 20%, white(0) 20%) 16% 25% / .85em .7em,
+                  linear-gradient(to bottom, forestgreen 17%, white(0) 17%) 16% 25% / .85em .7em,
+                  linear-gradient(  to left, white(.6) 20%, white(0) 20%)   16% 25% / .85em .7em,
+                  linear-gradient(   to top, white(.6) 25%, white(0) 25%)   16% 25% / .85em .7em,
+                  linear-gradient(limegreen, limegreen) 16% 26% / .85em .7em,
+                  repeating-linear-gradient(to bottom, darkgray 0 3.3%,
+                                                       black(0) 3.3% 20.5%) 50% .63em / 8.7em 3.4em,
+                  repeating-linear-gradient( to right, darkgray 0 1.2%,
+                                                       black(0) 1.2% 10.2%)   50% .63em / 8.7em 3.4em,
+                  repeating-linear-gradient( to right, white(0) 0 7.2%,
+                                                       white 7.2% 10.2%)    50% .63em / 8.7em 3.4em,
+                  repeating-linear-gradient(to bottom, white(0) 0 13%,
+                                                       white 13% 20.5%)   50% .63em / 8.7em 3.4em,
+                  linear-gradient(#ddd, #ddd) 50% .6em / 8.9em 3.4em,
+                  linear-gradient(158.1deg, white(.7) 49.8%, white(0) 50%) .43em .43em / 9.13em 3.74em,
+                  linear-gradient(black(.3), black(.3)) .43em .43em / 9.13em 3.74em,
+                  linear-gradient(to bottom, silver, gray)
+      background-repeat: no-repeat
+      border-radius: .5em
+      box-shadow:  .15em .3em .2em black(.3),
+                   .4em .5em 1em black(.4),
+                   inset .01em .04em .05em white(.7),
+                   inset 0 -.03em .05em white(.4),
+                   inset 0 0 0 .2em black,
+                   inset -.06em -.06em 0 .22em white(.55),
+                   inset .08em .08em 0 .2em black(.4)
+      content: 'fake developer'
+      font-family: Courier, mono
+      font-weight: bold
+      color: black
+      text-transform: uppercase
+      text-shadow: -.04em -.04em 0 white(.4),
+                    .04em .04em 0 black(.3)
