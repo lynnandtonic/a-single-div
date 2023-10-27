@@ -1,0 +1,91 @@
+/*-----------------------------
+
+Cold
+
+-----------------------------*/
+
+$cold-bg = #fff
+
+#cold
+  background-color $cold-bg
+  
+  div
+    width: 20em
+    height: 13em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(20deg, black(0) 40%,
+                                       black 40.5% 42.5%,
+                                       black(0) 43%) 5.5% 70% / 2.6em 3em,
+                conic-gradient(at 50% 100%, $cold-bg 27deg,
+                                            transparent 27.2deg 333.8deg,
+                                            $cold-bg 334deg) 1.5% 81% / 4.5em 4em,
+                conic-gradient(at 50% 100%, black 27deg,
+                                            transparent 27.2deg 333.8deg,
+                                            black 334deg) 1.5% 83% / 4.5em 4.3em,
+                radial-gradient(circle, white 50%, white(0) 50.5%)      9.0% 32% / .2em .2em,
+                radial-gradient(circle, white 50%, white(0) 50.5%)     14.0% 33% / .2em .2em,
+                radial-gradient(circle, white(.6) 50%, white(0) 50.5%) 20.0% 38% / .2em .2em,
+                radial-gradient(circle, white(.9) 50%, white(0) 50.5%) 16.0% 40% / .2em .2em,
+                radial-gradient(circle, white(.8) 50%, white(0) 50.5%)  6.5% 38% / .2em .2em,
+                radial-gradient(circle, white(.6) 50%, white(0) 50.5%)  7.0% 42% / .2em .2em,
+                radial-gradient(circle, white(.7) 50%, white(0) 50.5%)  4.0% 50% / .2em .2em,
+                radial-gradient(circle, white(.9) 50%, white(0) 50.5%)  2.5% 45% / .2em .2em,
+                radial-gradient(circle, white 50%, white(0) 50.5%)      5.0% 40% / .2em .2em,
+                radial-gradient(circle, white 50%, white(0) 50.5%)     10.0% 48% / .2em .2em,
+                radial-gradient(circle, white(.6) 50%, white(0) 50.5%) 21.5% 48% / .2em .2em,
+                radial-gradient(circle, white(.8) 50%, white(0) 50.5%) 20.0% 51% / .2em .2em,
+                radial-gradient(circle, alpha($cold-bg,0) 60%, $cold-bg 60.2%) 0 43.5% / 5em 5em,
+                linear-gradient(to right, deepskyblue, limegreen, yellow, orange, crimson) 2% 45% / 4.5em 4.5em,
+                linear-gradient(to right, black .1em, transparent .1em) 50% 60% / 4.2em 1em,
+                linear-gradient(to left,  black .1em, transparent .1em) 50% 60% / 4.2em 1em,
+                linear-gradient(to top,   black .1em, transparent .1em) 50% 60% / 4.2em 1em,
+                linear-gradient($cold-bg, $cold-bg) 50% 60% / 4.2em 1em,
+                linear-gradient(to right,  black .1em, transparent .1em) 50% 74% / 3em .3em,
+                linear-gradient(to left,   black .1em, transparent .1em) 50% 74% / 3em .3em,
+                linear-gradient(to bottom, black .1em, transparent .1em) 50% 74% / 3em .3em,
+                linear-gradient(to top,    black .1em, transparent .1em) 50% 74% / 3em .3em,
+                linear-gradient($cold-bg, $cold-bg) 50% 74% / 3em .3em,
+                linear-gradient(black, black) 50% 79% / 2.6em .1em,
+                linear-gradient(black, black) 50% 84% / 2.6em .1em,
+                linear-gradient(black, black) 46.5% 87% / .1em 1.9em,
+                linear-gradient(black, black) 50% 87% / .1em 1.9em,
+                linear-gradient(black, black) 53.5% 87% / .1em 1.9em,
+                linear-gradient(to right, black .1em, transparent .1em) 50% 87% / 2.7em 1.9em,
+                linear-gradient(to left,  black .1em, transparent .1em) 50% 87% / 2.7em 1.9em,
+                linear-gradient(to top,   black .1em, transparent .1em) 50% 87% / 2.7em 1.9em,
+                linear-gradient($cold-bg, $cold-bg) 50% 87% / 2.7em 1.9em,
+                radial-gradient(circle at 50% 0, $cold-bg 57%,
+                                                 black 57.2% 60%,
+                                                 black(0) 60.5%) 50% 76% / 4.6em 2.3em,
+                radial-gradient(circle, lightpink 60%, alpha(lightpink,0) 60.2%) 50% 7% / 5em 5em,
+                radial-gradient(circle, lightpink 60%, alpha(lightpink,0) 60.2%) 50% 45% / 5em 5em,
+                radial-gradient(circle at 50% 59%, saddlebrown 60%,
+                                                   alpha(saddlebrown,0) 60.2%) 95% 41.2% / 4.5em 4.5em,
+                radial-gradient(circle, saddlebrown 60%, alpha(saddlebrown,0) 60.2%) 99% 25% / 3em 3em,
+                radial-gradient(circle, saddlebrown 60%, alpha(saddlebrown,0) 60.2%) 82.5% 25% / 3em 3em
+    background-repeat: no-repeat
+
+    &::before
+      width: 4.4em
+      height: .1em
+      top: 55%
+      left: 1.5%
+      background-color: $cold-bg
+      border-radius: 1em
+      box-shadow: 0 0 0 .1em black,
+                  7.5em 0 0 $cold-bg,
+                  7.5em 0 0 .1em black
+
+    &::after
+      box-sizing: border-box
+      width: 1em
+      height: 3.6em
+      top: 61.5%
+      right: 12.5%
+      background-color: $cold-bg
+      border-radius: 0 0 .5em .5em
+      border: .12em solid black
+      border-top: none
+      box-shadow: -8.0em -2.5em 0 -.25em lightpink,
+                  -7.2em -3.4em 0 -.25em lightpink
