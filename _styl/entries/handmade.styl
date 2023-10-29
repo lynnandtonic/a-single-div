@@ -1,0 +1,96 @@
+/*-----------------------------
+
+Handmade
+
+-----------------------------*/
+
+$hm-w = 2em
+$hm-h = ($hm-w * .75)
+
+#handmade
+
+  div
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background: repeat linear-gradient(to right, black 2.5%, black(0) 2.5%) 0 0 / $hm-w $hm-h,
+                repeat linear-gradient( to left, black 2.5%, black(0) 2.5%) 0 0 / $hm-w $hm-h,
+                repeat linear-gradient(to right, black(0) 48%,
+                                          black 48% 52%,
+                                          black(0) 52%) 0 0 / $hm-w $hm-h,
+                repeat linear-gradient(  50deg, black(0) 90%,
+                                                black 90.5%) ($hm-w * -.5) ($hm-w * .4) / $hm-w $hm-h,
+                repeat linear-gradient( -50deg, black(0) 90%,
+                                                black 90.5%) ($hm-w *  .5) ($hm-w * .4) / $hm-w $hm-h,
+                repeat linear-gradient( -50deg, black(0) 29%,
+                                                black 29.5% 30.5%,
+                                                black(0) 31%) ($hm-w * -.01) ($hm-w * -.154) / $hm-w $hm-h,
+                repeat linear-gradient(  50deg, black(0) 29%,
+                                                black 29.5% 30.5%,
+                                                black(0) 31%) ($hm-w * .01) ($hm-w * -.154) / $hm-w $hm-h,
+                repeat linear-gradient(  50deg, black 12%,
+                                                black(0) 12.5%) 0 ($hm-w * -.51) / $hm-w $hm-h,
+                repeat linear-gradient( -50deg, black 12%,
+                                                black(0) 12.5%) 0 ($hm-w * -.51) / $hm-w $hm-h,
+                repeat linear-gradient( 130deg, black 5%,
+                                                black(0) 5.5%) 0 ($hm-w * .23) / $hm-w $hm-h,
+                repeat linear-gradient(-130deg, black 5%,
+                                                black(0) 5.5%) 0 ($hm-w * .23) / $hm-w $hm-h,
+                repeat linear-gradient( 130deg, black(0) 95%,
+                                                black 95.5%) ($hm-w * -.5) ($hm-w * -.35) / $hm-w $hm-h,
+                repeat linear-gradient(-130deg, black(0) 95%,
+                                                black 95.5%) ($hm-w * .5) ($hm-w * -.35) / $hm-w $hm-h,
+                repeat repeating-linear-gradient(to right, black(0),
+                                             black(0) 4%,
+                                             black(.2) 4% 6.5%,
+                                             black(0) 6.5%) ($hm-w * .21) 0 / $hm-w * 1.5 $hm-h,
+                repeat linear-gradient( 50deg, alpha(sandybrown,0) 86%,
+                                               sandybrown 86%) ($hm-w * -.5) ($hm-h + ($hm-h * 12.46)) / $hm-w $hm-h * 15,
+                repeat linear-gradient(-50deg, alpha(sandybrown,0) 86%,
+                                               sandybrown 86%) ($hm-w *  .5) ($hm-h + ($hm-h * 12.46)) / $hm-w $hm-h * 15,
+                repeat linear-gradient( 50deg, alpha(lightpink,0) 86%,
+                                               lightpink 86%) ($hm-w * -.5) ($hm-h + ($hm-h * 2.45)) / $hm-w $hm-h * 15,
+                repeat linear-gradient(-50deg, alpha(lightpink,0) 86%,
+                                               lightpink 86%) ($hm-w *  .5) ($hm-h + ($hm-h * 2.45)) / $hm-w $hm-h * 15,
+                repeat linear-gradient(to bottom, lightpink 33%,
+                                                  alpha(lightpink,0) 33%) 0 0 / 100% $hm-h * 15,
+                repeat linear-gradient( 50deg, alpha(hotpink,0) 86%,
+                                               hotpink 86%) ($hm-w * -.5) ($hm-h + ($hm-h * 5.45)) / $hm-w $hm-h * 15,
+                repeat linear-gradient(-50deg, alpha(hotpink,0) 86%,
+                                               hotpink 86%) ($hm-w *  .5) ($hm-h + ($hm-h * 5.45)) / $hm-w $hm-h * 15,
+                repeat linear-gradient(to bottom, hotpink 20%,
+                                                  alpha(hotpink,0) 20%) 0 ($hm-h + ($hm-h * 4.2)) / 100% $hm-h * 15,
+                repeat linear-gradient( 50deg, alpha(mediumvioletred,0) 86%,
+                                               mediumvioletred 86%) ($hm-w * -.5) ($hm-h + ($hm-h * 8.45)) / $hm-w $hm-h * 15,
+                repeat linear-gradient(-50deg, alpha(mediumvioletred,0) 86%,
+                                               mediumvioletred 86%) ($hm-w *  .5) ($hm-h + ($hm-h * 8.45)) / $hm-w $hm-h * 15,
+                repeat linear-gradient(to bottom, mediumvioletred 20%,
+                                                  alpha(mediumvioletred,0) 20%) 0 ($hm-h + ($hm-h * 7.2)) / 100% $hm-h * 15
+    background-color sandybrown
+    
+    &::before
+      width: 100%
+      height: $hm-h
+      top: $hm-h
+      background: linear-gradient(to right, black(.1) 20%,
+                                            black(0) 20%) ($hm-w * .05) 0 / $hm-w * 1.5 100%,
+                  linear-gradient(to top, peru 25%,
+                                          burlywood 25% 50%,
+                                          wheat 50% 80%,
+                                          burlywood 80%) 0 0 / 100% 100%
+      box-shadow: 0 ($hm-h * -1) 0 #222,
+                  0 ($hm-h * .5) 0 black(.4)
+
+    &::after
+      width: 100%
+      height: $hm-h + 1.5em
+      left: $hm-w * .21
+      top: $hm-h - .15em
+      background: linear-gradient(to right, black(0) 4%,
+                                            black(.15) 4% 6.5%,
+                                            black(0) 7% 10.5%,
+                                            black(.15) 10% 13.5%,
+                                            black(0) 13.5%) 0 0,
+                  linear-gradient(to right, lightpink 18%, alpha(lightpink, 0) 18%) 0 0
+      background-size: $hm-w * 1.5 100%
