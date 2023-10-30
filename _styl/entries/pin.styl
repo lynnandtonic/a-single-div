@@ -1,0 +1,91 @@
+/*-----------------------------
+
+Pin
+
+-----------------------------*/
+
+#pin
+  background-color: turquoise
+  
+  div
+    width: 18em
+    height: 14em
+    margin-left: -(@width/2)
+    margin-top: -(@height/2 - 1em)
+    background: repeating-linear-gradient( 160deg, white(0),
+                                                   white(0) .95em,
+                                                   white .95em 1em) 1% 40% / 24% 75%,
+                linear-gradient(white, white)  7.0% 60% / .2% 75%,
+                linear-gradient(white, white) 13.0% 55% / .2% 75%,
+                linear-gradient(white, white) 19.0% 43% / .2% 75%,
+                linear-gradient(white, white) 24.8% 30% / .2% 75%,
+                linear-gradient( 160deg, white(0) 17%,
+                                         paleturquoise 17% 82%,
+                                         white(0) 82%) 3.25% 0 / 22.5% 100%,
+                linear-gradient( 160deg, white(0) 15%,
+                                         white 15% 85%,
+                                         white(0) 85%) 0 0 / 25% 100%,
+                repeating-linear-gradient(-160deg, white(0),
+                                                   white(0) .95em,
+                                                   paleturquoise .95em 1em) 33.33% 48% / 25% 79%,
+                linear-gradient(paleturquoise, paleturquoise) 32% 35% / .2% 75%,
+                linear-gradient(paleturquoise, paleturquoise) 38% 50% / .2% 75%,
+                linear-gradient(paleturquoise, paleturquoise) 44% 60% / .2% 75%,
+                linear-gradient(-160deg, white(0) 18%,
+                                         darken(paleturquoise,8) 18% 82%,
+                                         white(0) 82%) 33.33% 0 / 25% 100%,
+                linear-gradient(-160deg, white(0) 15%,
+                                         paleturquoise 15% 85%,
+                                         white(0) 85%) 33.33% 0 / 25% 100%,
+                repeating-linear-gradient( 160deg, white(0),
+                                                   white(0) .95em,
+                                                   white .95em 1em) 66.66% 48% / 25% 79%,
+                linear-gradient(white, white) 56% 60% / .2% 75%,
+                linear-gradient(white, white) 62% 50% / .2% 75%,
+                linear-gradient(white, white) 68% 40% / .2% 75%,
+                linear-gradient(white, white) 75% 30% / .2% 75%,
+                linear-gradient( 160deg, white(0) 18%,
+                                         paleturquoise 18% 82%,
+                                         white(0) 82%) 66.66% 0 / 25% 100%,
+                linear-gradient( 160deg, white(0) 15%,
+                                         white 15% 85%,
+                                         white(0) 85%) 66.66% 0 / 25% 100%,
+                repeating-linear-gradient(-160deg, white(0),
+                                                   white(0) .95em,
+                                                   paleturquoise .95em 1em) 99% 40% / 24% 75%,
+                linear-gradient(paleturquoise, paleturquoise) 81% 35% / .2% 75%,
+                linear-gradient(paleturquoise, paleturquoise) 87% 50% / .2% 75%,
+                linear-gradient(paleturquoise, paleturquoise) 93% 60% / .2% 75%,
+                linear-gradient(-160deg, white(0) 17%,
+                                         darken(paleturquoise,8) 17% 82%,
+                                         white(0) 82%) 96.75% 0 / 22.5% 100%,
+                linear-gradient(-160deg, white(0) 15%,
+                                         paleturquoise 15% 85%,
+                                         white(0) 85%) 100% 0 / 25% 100%,
+                linear-gradient(-10deg, alpha(turquoise,0) 48.5%, darken(turquoise,10) 49%) 0 100% / 25% 17%,
+                linear-gradient( 10deg, alpha(turquoise,0) 48.5%, darken(turquoise,10) 49%) 33.33% 100% / 25% 17%,
+                linear-gradient(-10deg, alpha(turquoise,0) 48.5%, darken(turquoise,10) 49%) 66.66% 100% / 25% 17%,
+                linear-gradient( 10deg, alpha(turquoise,0) 48.5%, darken(turquoise,10) 49%) 100% 100% / 25% 17%
+    background-repeat: no-repeat
+    
+    &::before
+      width: 2em
+      height: 2em
+      left: 12%
+      top: -1%
+      background-color: crimson
+      border-radius: 50%
+      border-bottom-left-radius: 0
+      box-shadow: 2.7em 15.6em 0 royalblue
+      transform: rotate(-45deg)
+
+    &::after
+      width: 15em
+      height: 11.5em
+      left: 6%
+      top: -22%
+      border-top-left-radius: 10em 12em
+      border-top-right-radius: 10em 12em
+      border-left:  .15em dashed transparent
+      border-top:   .15em dashed white
+      border-right: .15em dashed white
