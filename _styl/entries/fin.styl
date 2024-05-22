@@ -1,0 +1,60 @@
+/*-----------------------------
+
+Fin
+
+-----------------------------*/
+
+$fin = 20px
+
+#fin
+  background: #111
+
+  div
+    width: $fin*10
+    height: $fin*6
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    background: linear-gradient(white, white) 100% 0 / $fin 100%,
+                linear-gradient(white, white) $fin*8 0 / $fin $fin,
+                linear-gradient(white, white) $fin*7 0 / $fin 100%,
+                linear-gradient(white, white) $fin*5 0 / $fin $fin,
+                linear-gradient(white, white) $fin*5 $fin*2 / $fin $fin,
+                linear-gradient(white, white) $fin*5 100% / $fin $fin
+    background-repeat: no-repeat
+    border-top-right-radius: 10px
+    animation: fin1 10000ms linear infinite 
+
+    &::before
+      background: linear-gradient(white, white) $fin*4 0 / $fin 100%,
+                  linear-gradient(white, white) $fin 0 / $fin 100%,
+                  linear-gradient(white, white) $fin*2 0 / $fin $fin
+      animation: fin2 10000ms linear infinite 
+
+    &::after
+      background: linear-gradient(white, white) 0 0 / $fin $fin,
+                  linear-gradient(white, white) $fin $fin*2 / $fin $fin
+      animation: fin3 10000ms linear infinite 
+
+    &::before,
+    &::after
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+
+@keyframes fin1
+  0%, 25%, 100%
+    transform: translateX(0)
+  50%, 75%
+    transform: translateX(-($fin))
+
+@keyframes fin2
+  0%, 25%, 100%
+    transform: translateX(0)
+  50%, 75%
+    transform: translateX($fin)
+
+@keyframes fin3
+  0%, 25%, 100%
+    transform: translateX(0)
+  50%, 75%
+    transform: translateX($fin*2)
